@@ -14,6 +14,7 @@
 | 1군 실험 결론 | overlap grid ADOPT 없음 → **F1_V2_STRICT 유지** |
 | LSTM WF clean (1131~1231) | AVG matched=**0.766** (무작위 0.8) vs DB leaked **1.919** |
 | LSTM 역질의 (20260710) | READ-ONLY 완료 → **보류 유지** · 보고서 `20260710_LSTM누수_판단근거_역질의답변.md` |
+| LSTM 4방식 WF (20260711) | A/B/C/D 전부 0.8 수렴 · **재학습 튜닝 가치 없음** · 보고서 `20260710_1군_LSTM재학습방식_inmemory비교실험.md` |
 
 체크포인트: `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
