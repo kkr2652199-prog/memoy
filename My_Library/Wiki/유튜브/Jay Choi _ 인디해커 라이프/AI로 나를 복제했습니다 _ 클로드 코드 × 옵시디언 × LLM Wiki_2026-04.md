@@ -1,0 +1,120 @@
+# AI로 나를 복제했습니다 | 클로드 코드 × 옵시디언 × LLM Wiki
+
+> **원본**: [[Raw_Materials/2026-04-20_AI로 나를 복제했습니다 _ 클로드 코드 × 옵시디언 × LLM Wiki.md]]
+> **출처**: YouTube: Jay Choi | 인디해커 라이프 | **날짜**: 2026-04-18
+> **분류**: 유튜브 > Jay Choi | 인디해커 라이프 > AI, 지식관리, 생산성
+
+---
+
+## 핵심 요약
+
+본 문서는 Andrej Karpathy가 제안한 'LM-Milky' 아이디어를 기반으로 LLM(대규모 언어 모델)을 활용하여 개인 지식 위키를 구축하는 방법을 설명합니다. 기존 LLM의 대화 기억 휘발성 문제를 해결하고, RAG(Retrieval Augmented Generation) 방식의 한계를 넘어 AI가 직접 지식 위키를 생성하고 유지보수하는 시스템을 제안합니다. 이 시스템은 개인의 경험, 실패 기록, 인사이트, 사고 과정 등 비정형적인 정보를 AI가 이해하고 활용할 수 있는 형태로 구조화하여 '또 다른 나'를 만드는 것을 목표로 합니다. Obsidian과 Claude Code를 주요 도구로 사용하여 지식을 저장하고 활성화하며, 지속적인 정보 축적을 통해 감정 없는 객관적인 판단과 지식의 복리 성장을 가능하게 합니다.
+
+## 상세 분석
+
+**1. LLM의 기억 휘발성 문제와 LM-Milky의 등장**
+기존 LLM은 대화가 끝나면 대부분의 기억을 잃어버려 매번 같은 설명을 반복해야 하는 구조적 문제가 있습니다. 이를 해결하기 위해 RAG(Retrieval Augmented Generation) 방식이 주로 사용되지만, 이는 질문마다 원본 문서를 검색하여 답변을 생성하는 방식입니다. Andrej Karpathy는 4월 초 X(구 트위터)와 GitHub를 통해 'LM-Milky'라는 혁신적인 아이디어를 공개했습니다. 이는 RAG처럼 매번 원본을 검색하는 대신, LLM이 직접 위키를 만들고 유지보수하게 하는 개념입니다. Karpathy는 이를 프로그래밍의 '컴파일'에 비유하며, 흩어진 원재료를 AI가 연결되고 탐색 가능한 위키 형태로 번역하는 작업이라고 설명했습니다.
+
+**2. LM-Milky의 구조 및 작동 방식**
+LM-Milky는 세 가지 레이어와 세 가지 핵심 작업으로 구성됩니다.
+
+*   **세 가지 레이어:**
+    *   **Raw (원재료):** 논문, 기사, 개인 메모 등 불변의 원본 지식입니다. LLM은 여기서 읽기만 하고 수정하지 않습니다.
+    *   **Wiki (위키):** AI가 전적으로 소유하고 관리하는 마크다운 파일 디렉토리입니다. 요약, 엔티티, 분석 파일 등으로 구성되며, AI가 생성, 업데이트, 교차 참조를 유지합니다. 사람은 읽기만 합니다.
+    *   **Schema (스키마):** `claude.md`와 같은 설정 파일로, AI에게 시스템 사용법을 알려주는 설계도 역할을 합니다.
+
+*   **세 가지 핵심 작업:**
+    *   **Ingest (정보 소화):** 새로운 Raw 데이터를 시스템에 넣으면, AI가 이를 읽고 요약 페이지를 작성하며, 인덱스를 업데이트하고 관련 페이지를 수정합니다. 정보를 위키에 통합하는 과정입니다.
+    *   **Query (질문):** 위키에 질문을 던지면, AI가 관련 페이지를 찾아 근거 있는 답변을 합성합니다. 좋은 답변은 다시 위키에 저장하여 지식을 확장할 수 있습니다.
+    *   **Lint (검증):** 주기적으로 위키 전체를 공간 검증하여 모순, 오래된 정보, 누락된 연결 등을 찾아내고 수정합니다. AI가 유지보수 비용을 거의 0으로 만들어 위키의 지속적인 건강성을 보장합니다.
+
+**3. 개인 AI 위키 구축 사례: '또 다른 나' 만들기**
+영상 제작자는 LM-Milky 아이디어를 자신의 개인 지식 관리에 적용했습니다. 논문 정리나 트렌드 분석보다는, 자신에 대한 정보(서비스 실패 경험, 느낀 점, 개인적인 고민과 문제 해결 과정 등)를 기록하여 '찾아도 안 나오는 정보'를 체계화하는 데 집중했습니다. 목표는 어떤 AI가 오더라도 이 위키 하나만 읽으면 자신을 완벽히 이해할 수 있는 '또 하나의 나'를 만드는 것입니다.
+
+*   **핵심 도구:**
+    *   **Obsidian (뇌):** 모든 정보를 마크다운 파일로 로컬에 저장하는 정보 저장소 역할을 합니다.
+    *   **Claude Code (신경):** Obsidian에 저장된 지식을 읽고 새로운 연결을 만들며 지식을 활성화시키는 역할을 합니다.
+
+*   **구축 과정:**
+    1.  **Obsidian 설치 및 설정:** Obsidian을 다운로드하고 새 보관함(폴더)을 생성합니다. 외형 테마를 설정하고, 커뮤니티 플러그인(Git, Terminal 등)을 설치합니다. Obsidian CLI를 활성화하고 웹 기사를 마크다운으로 변환하는 확장 프로그램을 설치합니다.
+    2.  **GitHub 연동:** 새 프라이빗 GitHub 레포지토리(예: 'second')를 생성하고 Obsidian 보관함과 연동하여 버전 관리 및 팀 공유를 가능하게 합니다.
+    3.  **Claude Code를 통한 위키 구조화:** Karpathy의 LLM 전문을 Claude Code에 붙여 넣어 기본 폴더 구조를 잡습니다. Claude와 대화하며 `claude.md` (스키마) 파일을 목적에 맞게 커스터마이징하고, Ingest, Query, Lint 작업을 Claude Code 스킬로 만듭니다.
+    4.  **개인 데이터 입력 (나를 재료로 넣기):**
+        *   Claude에게 자신에 대한 글을 요청하여 'Raw Memories' 폴더에 저장합니다. (GPT 사용자는 ChatGPT의 전체 메모리를 복사하거나 인터뷰 방식을 활용할 수 있습니다.)
+        *   Notion 등 기존에 작성된 메모나 기획 파일들을 내보내기하여 'Raw Information' 폴더에 옮깁니다.
+        *   매일 작업 과정에서 발생하는 주요 결정, 배운 점, 아이디어, 후회 등을 지속적으로 기록하여 위키를 성장시킵니다.
+    5.  **정보 처리 및 활용:** Ingest 작업을 실행하여 Raw 데이터를 위키 폴더에 통합하고, Lint 작업을 주기적으로 돌려 위키의 건강성을 유지합니다. 이후 Query 작업을 통해 위키에 질문을 던져 감정 없는 객관적인 판단과 분석 결과를 얻습니다.
+
+**4. 레니프 유니백 체어 프로 (Lenif Uniback Chair Pro) 소개**
+장시간 작업 시의 불편함을 해소하기 위해 소개된 의자로, 9가지 커스텀 기능(등판 높이, 요추 받침대, 좌판, 팔걸이 등)을 통해 몸에 완벽하게 맞춰줍니다. 특히 목 뒤 C-커브를 받쳐주는 헤드레스트와 16cm 두께의 변형 없는 좌판 스펀지가 특징입니다. 이를 통해 거북목 방지 및 엉덩이 통증 감소 효과를 제공하며, 장시간 집중 작업이 가능하게 합니다.
+
+## 핵심 포인트
+
+*   LLM의 기억 휘발성 문제를 해결하고 지식을 축적하기 위한 'LM-Milky' 시스템이 핵심입니다.
+*   LM-Milky는 AI가 직접 위키를 생성, 유지보수하며, Raw, Wiki, Schema의 3계층과 Ingest, Query, Lint의 3가지 작업으로 구성됩니다.
+*   AI가 유지보수를 담당하므로 인간의 지식 정리 부담이 거의 사라집니다.
+*   개인적인 경험과 사고 과정을 기록하여 '또 다른 나'를 만드는 데 LM-Milky를 활용할 수 있습니다.
+*   Obsidian(정보 저장소)과 Claude Code(지식 활성화)를 연동하여 시스템을 구축합니다.
+*   기존 대화 기록, 메모, 일일 작업 내용을 지속적으로 입력하여 위키를 성장시킵니다.
+*   구축된 위키는 감정에 휘둘리지 않는 객관적인 분석과 판단을 제공하며, 지식이 복리로 쌓입니다.
+*   시스템 구축은 Obsidian 설치, 플러그인 설정, GitHub 연동, Claude Code를 통한 구조화, 개인 데이터 입력 및 지속적인 관리를 포함합니다.
+
+## 활용 방안
+
+*   **개인 지식 베이스 구축:** 자신의 업무 경험, 학습 내용, 프로젝트 기록, 아이디어 등을 체계적으로 정리하여 언제든 AI의 도움을 받아 인사이트를 얻을 수 있습니다.
+*   **의사결정 지원:** 감정이나 편향 없이 객관적인 데이터를 기반으로 한 AI의 분석을 통해 중요한 의사결정에 도움을 받을 수 있습니다.
+*   **자기 성찰 및 성장:** 자신의 실패와 성공 경험, 사고 과정을 기록하고 AI가 이를 분석하게 함으로써 자기 성찰을 심화하고 지속적인 개인 성장을 도모할 수 있습니다.
+*   **팀/조직 지식 공유:** GitHub 연동을 통해 여러 명이 함께 지식 베이스를 공유하고 발전시켜 팀의 집단 지성을 강화할 수 있습니다.
+*   **연구 및 학습 효율 증대:** 논문, 기사 등 방대한 자료를 LM-Milky 시스템에 Ingest하여 AI가 요약하고 연결 관계를 파악하게 함으로써 연구 및 학습 효율을 극대화할 수 있습니다.
+*   **콘텐츠 생성 보조:** 축적된 개인 지식을 바탕으로 AI에게 콘텐츠 아이디어를 얻거나 초안 작성을 요청하여 창작 활동을 지원받을 수 있습니다.
+*   **디지털 트윈 구현:** 자신만의 디지털 트윈을 구축하여, AI가 사용자의 사고방식과 지식을 모방하고 확장하는 데 활용할 수 있습니다.
+
+## 🔄 정보 업데이트
+
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [프리 출근 전 이력서 살피기, 진행 중인 작업(kiki) 간단 소개, LLM Wiki 엔진으로 엮은 MD 그래프]에 의해 대체됨: 새 자료는 기존 자료 ID=37에서 언급된 'LLM Wiki 엔진'을 활용한 지식 그래프 구축의 일반적인 개념을 넘어, Andrej Karpathy의 'LM-Milky' 아이디어를 기반으로 한 구체적인 3계층 구조(
+- 🔄 [Fix Karpathy’s LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus]에 의해 대체됨: 기존 자료 ID=38이 Karpathy의 LLM Wiki의 '자기 인식 부족' 문제를 지적하고 지식 그래프의 필요성을 제안한 반면, 새 자료는 'AI가 직접 위키를 생성하고 유지보수하도록 하는 것'을 핵심으로 하는
+- 🔄 [How To Do PHD-Level Research with AI (Karpathy's LLM Wiki)]에 의해 대체됨: 기존 자료 ID=39가 Karpathy의 LLM Wiki를 활용한 개인 지식 기반 구축의 기본적인 개념(LLM이 입력된 텍스트/PDF를 분류하고 연결)을 소개했다면, 새 자료는 'LM-Milky'라는 구체적인 3계층
+- 🔄 [Build Your Second Brain With Claude Code, Karpathy’s Method]에 의해 대체됨: 기존 자료 ID=40이 Obsidian과 Claude Code를 사용하여 Karpathy의 개념 기반 개인 지식 관리 시스템을 설정하는 방법을 설명했다면, 새 자료는 동일한 도구(클로드 코드, 옵시디언)를 사용하면서
+- 🔄 [MindVault를 폐기합니다 — Karpathy LLM Wiki를 오해했습니다]에 의해 대체됨: 기존 자료 ID=41이 Karpathy LLM Wiki 개념에 대한 오해로 인해 MindVault 프로젝트가 실패했음을 밝힌 반면, 새 자료는 Karpathy의 'LM-Milky' 아이디어를 활용하여 개인 AI 지식
+- 🔄 [상위 1% AI 채널들이 '자동화 툴'보다 목숨 거는 '이것'!!!]에 의해 대체됨: 기존 자료 ID=142가 LLM의 '기억 상실과 환각' 문제를 해결하기 위한 '컨텍스트 엔지니어링'의 중요성을 강조했다면, 새 자료는 '기존 LLM의 휘발성 기억 문제를 해결'하기 위해 AI가 직접 위키를 생성하고
+- 🔄 [The easiest way to buildwith open models]에 의해 대체됨: 새 자료는 Ollama를 사용하여 Claude Code를 빠르고 쉽게 실행하는 방법을 제시한다. 이는 기존 자료(ID=213)에서 Claude Code를 활용하기 위한 설정 및 구동 방식에 대한 더 쉽고 자동화된 '
+
+## 관련 키워드
+
+`LLM`, `LM-Milky`, `Andrej Karpathy`, `개인 지식 관리`, `AI 위키`, `Obsidian`, `Claude Code`, `RAG`, `생산성`, `자기계발`, `지식 그래프`, `정보 소화`, `지식 유지보수`, `디지털 트윈`

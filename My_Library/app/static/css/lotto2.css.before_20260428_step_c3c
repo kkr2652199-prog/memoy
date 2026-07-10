@@ -1,0 +1,102 @@
+/*
+ * 역전 로또 (V11) 전용 스타일
+ *
+ * 원칙:
+ * - lotto.css 클래스를 그대로 재사용 (UI 1군 동일)
+ * - lotto2-* 스코프로 미세 조정만 추가
+ * - 1군 lotto.css 0줄 수정
+ */
+
+#tab-lotto-reverse {
+  /* 1군 lotto-layout 스타일 그대로 사용 */
+}
+
+#tab-lotto-reverse .lotto2-layout {
+  /* 동일 레이아웃 사용 */
+}
+
+/* 역전 로또 식별용 액센트 (1군 톤에 맞춤: lotto.css의 포인트 컬러 계열) */
+#tab-lotto-reverse h2 {
+  border-left: 4px solid #e94560;
+  padding-left: 12px;
+}
+
+#tab-lotto-reverse .lotto2-sidebar .lotto-sidebar-item.active {
+  background: linear-gradient(135deg, #0f3460, #16213e);
+  color: #ffffff;
+}
+
+#tab-lotto-reverse .lotto-rank-card {
+  border-top: 2px solid #e94560;
+}
+
+#tab-lotto-reverse .lotto-dashboard-scores h3 {
+  color: #e94560;
+}
+
+/* V11 가중치 카드 */
+#lotto2WeightsContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.lotto2-weight-card {
+  background: rgba(233, 69, 96, 0.06);
+  border: 1px solid rgba(233, 69, 96, 0.28);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.lotto2-weight-card .brain-name {
+  font-weight: 600;
+  color: #e94560;
+}
+
+.lotto2-weight-card .brain-value {
+  font-size: 1.4em;
+  margin-top: 4px;
+  color: #ffffff;
+}
+
+/* 예측 결과 카드 (1군 lotto-set-card 재사용) */
+#lotto2PredictionResults .lotto-set-card {
+  border-left: 3px solid #e94560;
+}
+
+/* 6뇌 통계 테이블 */
+#lotto2BrainStatusContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+#lotto2BrainStatusContent th,
+#lotto2BrainStatusContent td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(233, 69, 96, 0.18);
+}
+
+#lotto2BrainStatusContent th {
+  background: rgba(233, 69, 96, 0.10);
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* 명예의 전당 */
+#lotto2HofContent .hof-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(233, 69, 96, 0.12);
+}
+
+#lotto2HofContent .hof-rank {
+  font-weight: 700;
+  color: #ffd700;
+  min-width: 60px;
+}
+

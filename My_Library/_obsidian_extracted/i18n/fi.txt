@@ -1,0 +1,2517 @@
+Asetukset
+Lisäosa
+Sisäänrakennetut lisäosat
+Lisäosan asetukset
+esim. kansio 1/kansio 2
+esim. kansio/muistiinpano
+Tämän asetuksen vaihtaminen vaatii ohjelman uudelleenkäynnistyksen.
+Muokkain
+Toiminnot
+Näkymä
+Oikoluku
+Ottaa käyttöön oikoluvun.
+Oikoluvun kielet
+Valitse oikoluettavat kielet.
+macOS:n sisäänrakennettu oikolukuohjelmisto automaattisesti tunnistaa käyttämäsi kielen.
+Oikoluvun sanakirja
+Oikoluvun sanakirja on tyhjä.
+Otsikko asiakirjassa
+Näyttää tiedostonimen muokattavana otsikkona tiedoston sisällön yhteydessä.
+Luettava rivin pituus
+Rajoittaa rivin pituutta. Näytölle mahtuu vähemmän sisältöä, mutta pitkiä kappaleita voi olla silloin helpompi lukea.
+Markdown-rivinvaihdot
+Sivuuttaa yksittäiset rivinvaihdokset lukunäkymässä Markdownin sääntöjen mukaisesti. Ota tämä asetus pois päältä näyttääksesi yksittäiset rivinvaihdokset.
+Tiedoston määreet
+Valitse, miten määreet näytetään muokkaimessa. Valitse ”Lähdekoodi” näyttääksesi määreet YAML-muodossa.
+Piilotettu
+Näkyvissä
+Lähdekoodi
+Parita sulkeet automaattisesti
+Parittaa sulkeet ja lainausmerkit automaattisesti.
+Parita Markdownin syntaksia automaattisesti
+Parittaa merkit automaattisesti lihavointia, kursivointia, koodia, ym. varten.
+Älykkäät sisennykset
+Huolehtii sisennyksestä ja luettelomerkeistä puolestasi.
+Kutista kappaleet
+Antaa kutistaa kaiken otsikon alla olevan sisällön.
+Kutista sisennys
+Antaa kutistaa osan samasta sisennyksestä, kuten luetteloissa.
+Uusien välilehtien oletusnäkymä
+Oletusnäkymä, jossa uusi Markdown-välilehti avataan.
+Muokkausnäkymä
+Lukunäkymä
+Vaihda uusiin välilehtiin aina välittömästi
+Kun avaat linkin uudessa välilehdessä, vaihtaa siihen välittömästi.
+Oletusmuokkaustila
+Oletusmuokkaustila, jossa uusi paneeli aluksi on.
+Lähdekooditila
+Visuaalinen muokkaus
+Rivinumerot
+Näyttää rivinumerot marginaalissa.
+Sisennysopasteet
+Näyttää pystysuorat yhteysviivat luettelon sarakkeiden välissä.
+Käytä sarkaimia
+Käytä sarkaimia sisennykseen, kun painat Tab-näppäintä. Aseta tämä pois päältä, jos haluat käyttää välilyöntejä (4).
+Sarkainväli
+Välilyöntien määrä, jota sarkain vastaa.
+Oikealta vasemmalle (RTL)
+Asettaa muistiinpanojen tekstin suunnan näyttämään oikealta vasemmalle.
+Muunna HTML automaattisesti
+Muuntaa HTML:n automaattisesti Markdowniksi, kun liität verkkosivuilta. Pikanäppäin Ctrl/Cmd+Shift+V liittää muuntamatta.
+Vim-näppäinyhdistelmät
+Sallii Vim-näppäinyhdistelmien käytön lähdekoodimuokkaimessa.
+Mobiililaitteilla tämä asetus on laitekohtainen, eikä sitä synkronoida asetustiedoston kautta.
+Kokoa holvin välimuisti uudelleen
+Holvin välimuistin kokoaminen voi viedä sekunneista minuutteihin koosta riippuen.
+Kokoa uudelleen
+Vahvista siirtyminen Vim-tilaan
+Vim on tarkoitettu tehokkaaseen tekstinmuokkaukseen, mutta se voi olla melko haasteellinen. Jos et tunne Vimiä, tämä vaihtoehto saattaa saada sinut luulemaan, että Obsidian on lakannut toimimasta.
+Todista Vim-taitosi kirjoittamalla alle komento Vimin lopettamiseksi ilman tallentamista:
+Vastauksesi
+Kirjoita komento...
+Salli minun ottaa Vim käyttöön
+Komento oli oikein. Vim-tila on nyt käytössä.
+Komento oli virheellinen. Vim-tila pysyy poissa käytöstä suojelemiseksesi.
+Kirjoita komento ottaaksesi Vim-tilan käyttöön
+Tiedostot ja linkit
+Vahvista ennen tiedostojen poistamista
+Vältä tiedostojen vahingossa poistamista.
+Roskakori
+Poistetut tiedostot
+Mitä tiedostoille tehdään poistamisen jälkeen.
+Siirrä järjestelmän roskakoriin
+Siirrä Obsidian-roskakoriin (.trash-kansio)
+Poista pysyvästi
+Poista liitteet, kun tiedostoja poistetaan
+Poista automaattisesti poistettuun tiedostoon linkitetyt liitteet, jos niitä ei käytetä muualla.
+Aina
+Kysy joka kerta
+Ei koskaan
+Oletuksena avattava tiedosto
+Valitse, mikä tiedosto on auki, kun ohjelma avataan.
+Viimeksi avattu
+Uusi muistiinpano
+Tietty tiedosto
+Päivän muistiinpano
+Avattava tiedosto
+Valitse tiedosto, joka on auki, kun ohjelma avataan.
+Päivitä sisäiset linkit aina
+Jos otat tämän pois käytöstä, sinulta kysytään linkkien päivittämisestä, kun muutat tiedoston nimeä.
+Uuden muistiinpanon oletussijainti
+Minne luodut muistiinpanot laitetaan.
+Holvin juurikansio
+Sama kansio kuin nykyisellä tiedostolla
+Alla määritelty kansio
+Kansio, mihin uudet muistiinpanot luodaan
+Luodut muistiinpanot näkyvät tässä kansiossa.
+Käytä [[wikilinkkejä]]
+Generoi wikilinkit automaattisesti [[linkeille]] ja ![[kuville]] Markdown-linkkien ja -kuvien sijaan. Ota tämä valinta pois päältä luodaksesi Markdown-linkkejä.
+Tunnista kaikki tiedostopäätteet
+Näyttää tiedostot millä tahansa päätteellä, vaikka Obsidian ei voisi avata niitä itse. Tämän avulla voit luoda niihin linkkejä sekä nähdä ne tiedostoselaimessa ja pikavaihtimessa.
+Linkit
+Uuden linkin muoto
+Millainen linkki sijoitetaan, kun sisäinen linkki luodaan automaattisesti.
+Lyhyin polku, kun mahdollista
+Suhteellinen polku tiedostoon
+Absoluuttinen polku holvissa
+Uusien liitteiden oletussijainti
+Minne uudet liitteet sijoitetaan.
+Liitteet
+Alikansioon nykyisessä kansiossa
+Liitekansion polku
+Täällä näkyy luodut liitetiedostot, kuten raahaamalla ja pudottamalla luodut kuvat sekä äänitteet.
+Alikansion nimi
+Jos tiedostosi on kansiossa ”vault/kansio”, ja alikansiosi nimi on ”liitteet”, liitteet tallennetaan kansioon ”vault/kansio/liitteet”.
+Pois jätettävät tiedostot
+Pois jätettävät tiedostot ovat joko piilotettuja tai vähemmän esillä eri paikoissa, kuten pikavaihtimessa, linkkiehdotuksissa, haussa ja verkkonäkymässä.
+Poisjättösuodattimia ei ole käytössä. Lisää suodatin alta.
+Alla olevia suodattimia vastaavat tiedostot jätetään tällä hetkellä pois:
+Suodatin
+Suodatin ei voi olla tyhjä
+Syötä polku tai ”/regex/”...
+Salli takaisinkutsuosoitteet
+Sallii x-callback-url-osoitteiden käytön (x-success tai x-error) Obsidian-URI-osoitetta käytettäessä.
+Ulkoasu
+Pohjateema
+Valitse oletuksena käytettävä Obsidian-väriteema.
+Korostusväri
+Valitse sovelluksessa käytettävä korostusväri.
+Tumma
+Vaalea
+Järjestelmän mukainen
+Kirjasin
+Lisäasetukset
+Käyttöliittymä
+Käyttöliittymän kirjasin
+Aseta Obsidian-sovelluksessa oletuksena käytettävä kirjasin.
+Käyttöliittymän koko
+Hallitsee sovelluksen yleistä suurennustasoa ja siten käyttöliittymän kokoa.
+Tekstin kirjasin
+Aseta kirjasin muokkaus- ja lukunäkymiin.
+Tasalevyinen kirjasin
+Aseta kirjasin tasalevyiselle sisällölle, kuten koodilohkoille ja alkulehdille.
+ Tällä hetkellä käytössä oleva kirjasin: 
+ Seuraavat kirjasimet ovat tällä hetkellä käytössä:
+Syötä kirjasimen nimi...
+Mitään mukautettua kirjasinta ei ole käytössä tällä hetkellä. Lisää kirjasin alta.
+Sovellus käyttää tästä luettelosta ensimmäistä kirjasinta, joka on järjestelmässä saatavilla.
+Tätä kirjasinta ei löytynyt järjestelmästäsi.
+Tämä kirjasin löydettiin järjestelmässäsi.
+Kirjasimen nimi
+Yhteisön teemat
+Esikatsele ja käytä mahtavia yhteisön luomia teemoja.
+Selaa
+Kirjasinkoko
+Kirjasimen koko pikseleissä. Vaikuttaa muokkaus- ja lukunäkymiin.
+Nopea kirjasinkoon säätö
+Säädä kirjasinkokoa Ctrl:lla ja hiiren rullalla tai kosketuslevyn nipistyseleellä.
+Teemat
+Hallinnoi asennettuja teemoja ja selaa yhteisön teemoja.
+Hallinnoi
+Ei mitään
+Natiivivalikot
+Sovelluksen valikot tulevat käyttöjärjestelmältä, jolloin teemat eivät vaikuta niihin.
+Lataa teemat uudelleen
+Mukautetut CSS-teemat ladattiin uudelleen.
+Avaa teemakansio
+CSS-pätkät
+CSS-pätkiä ei löytynyt pätkäkansiosta.
+CSS-pätkät ovat kansiossa ”{{path}}”.
+Lataa pätkät uudelleen
+Avaa pätkäkansio
+CSS-pätkät ladattiin uudelleen.
+Käytä CSS-pätkää polussa ”{{path}}”.
+Asennetut teemat
+Kuvaa ei saatavilla
+Oletus
+Suurenna napsauttamalla
+Päivitä
+Käytössä
+Ikkunan reunan tyyli
+Määrittää Obsidian-sovelluksen ikkunoiden otsikkorivin tyylin. Vaatii täyden uudelleenkäynnistyksen tullakseen voimaan.
+Piilotettu (oletus)
+Obsidian-reuna
+Natiivi reuna
+Mukautettu kuvake
+Aseta sovellukselle mukautettu kuvake
+Valitse mukautettu kuvake
+Nauhavalikko
+Määritä nauhavalikossa näytettävät komennot.
+Nauhavalikon pikavalinta
+Valitse, mitä tapahtuu, kun siirtymisvalikon nauhavalikon nappia painetaan. Oletuksena tämä avaa valikon kaikista nauhavalikon vaihtoehdoista.
+Avaa nauhavalikko
+Määritä
+Näytä valintanauha
+Näytä pystysuuntainen työkalupalkki ikkunan laidassa.
+Muut nauhan vaihtoehdot
+Nauhavalikko
+Valitse nauhavalikossa näytettävät vaihtoehdot. Voit muuttaa järjestystä raahaamalla.
+Näytä välilehden otsikkorivi
+Näytä otsikko jokaisen välilehden yläosassa.
+Kelluva navigointi
+Navigointipainikkeet kelluvat sisällön päällä sen sijaan, että ne olisivat kiinnitettyinä.
+Liukuvat sivupalkit
+Sivupalkit liukuvat sisällön reunaan sen sijaan, että ne kelluisivat sen päällä.
+Koko näyttö
+Piilottaa käyttöliittymän elementit automaattisesti lukemisen aikana.
+{{count}} teemalle on päivitys.
+{{count}} teemalle on päivitys.
+Tarkista päivitykset
+Näytä päivitykset
+Päivitä kaikki
+Nykyiset yhteisön teemat
+Sinulla on {{count}} teema asennettuna.
+Sinulla on {{count}} teemaa asennettuna.
+Pikanäppäimet
+Etsi pikanäppäimistä
+Näytetään {{count}} pikanäppäin. 
+Näytetään {{count}} pikanäppäintä. 
+{{count}} komento, jolla on ristiriitoja.
+{{count}} komentoa, joilla on ristiriitoja.
+Suodata...
+Poista pikanäppäin
+Paina pikanäppäintä...
+Kaikki
+Asettamatta
+Asetettu
+Minun asettamani
+Palauta oletus
+Mukauta tätä komentoa
+Tämä pikanäppäin on ristiriidassa komennon ”{{command}}” kanssa.
+Tämä pikanäppäin on ristiriidassa {{count}} muun komennon kanssa
+Ei mitään
+Avainnippu
+Sala-avaimet
+Lisää sala-avain
+Muokkaa sala-avainta
+Näytä sala-avain
+Piilota sala-avain
+Tunnus
+Sala-avain
+sala-avaimen-nimi
+Vain pieniä kirjaimia (a–z), numeroita (0–9) ja yhdysviivoja (-).
+Syötä sala-avain.
+Ei käytetty koskaan
+Sala-avainta ei voitu muuttaa.
+Sala-avainta ei voitu lisätä.
+Tällä tunnuksella on jo sala-avain.
+Sala-avain ei voi olla tyhjä.
+Tunnus on virheellinen. Käytä vain pieniä kirjaimia (a–z), numeroita (0–9) ja yhdysviivoja (-), enintään 64 merkkiä.
+Sala-avaimia ei ole lisätty. Niihin voi tallentaa esimerkiksi rajapintojen avaimia (API-avaimia) tai salasanoja lisäosien käytettäväksi.
+Valitse sala-avain
+Hae sala-avainta...
+Lisää sala-avain...
+Linkki...
+Sala-avaimet tallennetaan ilman salausta, koska tässä järjestelmässä ei ole salaisuussäilöä käytettävissä.
+Sala-avaimia ei salata
+Älä näytä uudelleen
+Salaus ei käytettävissä
+Salaus tarjotaan käyttöjärjestelmäsi salaisuussäilön kautta. Jos sellaista ei ole saatavilla, salaisuutesi tallennetaan ilman salausta.
+Linuxissa tuettuja salaisuussäilöjä ovat:
+Tietoja
+Kaupallinen lisenssi
+Lisenssiavain
+Lisenssiavaimesi...
+Aktivoi lisenssi
+Aktivoi
+Tuntematon
+Versio {{version}}
+Asennusohjelman versio: {{version}}
+Lue muutosloki.
+Obsidian tarvitsee merkittävän asennusohjelman päivityksen tukeakseen uusimpia ominaisuuksia ja vastaanottaakseen uusimmat turvallisuuskorjaukset. Sinun täytyy manuaalisesti ladata ja asentaa Obsidian uudelleen.
+Uusi versio on valmis ladattavaksi. 
+Päivitykset ovat poissa käytöstä.
+Käynnistä uudelleen
+Tarkista päivitykset
+Automaattiset päivitykset
+Poista tämä käytöstä estääksesi sovellusta tarkistamasta päivityksiä.
+Ilmoita, jos sovellus käynnistyy hitaasti
+Tutkii mahdollisia ongelmia, jotka voivat hidastaa sovelluksen käynnistymistä.
+Tarkista nyt
+Komentoliittymä
+Sallii Obsidian-sovelluksen käyttäminen komentoliittymästä.
+Ota komentoliittymä käyttöön päätteessäsi
+Rekisteröi "obsidian" PATH-muuttujaan, jotta voisit käyttää "obsidian"-komentoa päätteestä koska tahansa.
+Rekisteröi
+Apua
+Opi käyttämään Obsidian-sovellusta ja pyydä apua yhteisöltä.
+Avaa
+Kieli
+Vaihtaa näyttökieltä.
+Käytä kokeiluversioita
+Päivitä automaattisesti kokeiluversioihin kokeillaksesi uusia ominaisuuksia. Huomaa, että nämä versiot ovat upouusia ja saattavat olla epävakaita.
+Lisäasetukset
+Laitteistokiihdytys
+Ottaa käyttöön laitteistokiihdytyksen, joka tekee Obsidian-sovelluksen käytöstä sulavampaa näytönohjaimesi avulla.
+Jos poistat tämän käytöstä, sovelluksen suorituskyky heikkenee huomattavasti.
+Mukautettu määrityskansio
+Käytä muuta määrityskansiota kuin oletuskansiota. Sen täytyy alkaa pisteellä.
+Määrityksien sijainti tulee olla kelvollinen kansion nimi, joka alkaa pisteellä.
+Lisenssi
+Kaupallinen lisenssiavaimesi on ”{{key}}”.
+Rekisteröity yritykselle ”{{company}}”, jossa on {{seats}} käyttäjää. Lisenssi on voimassa {{expiry}} asti.
+Tarkistetaan...
+Lisenssi on virheellinen: 
+Poista
+Catalyst-lisenssi
+Sinulla on tällä hetkellä {{tier}} Catalyst-lisenssi. Kiitos tuestasi!
+Sinulla ei tällä hetkellä ole Catalyst-lisenssiä. Catalyst-lisenssi on kertalahjoitus, jonka avulla Obsidian voi olla täysin käyttäjiensä tukema. Lisenssi oikeuttaa pääsyn uusiin toiminnallisuuksiin ensimmäisten joukossa.
+Sovellus
+Lue, kuinka voit kääntää Obsidian-sovelluksen omalle kielellesi.
+Tili
+Käyttäjätilisi
+Olet kirjautunut tilille {{name}} ({{email}}).
+Et ole kirjautunut sisään. Käyttäjätili vaaditaan vain Obsidian Synciin, Obsidian Publishiin ja kokeiluversioihin.
+Päivitä
+Kaupallinen lisenssi
+Auta Obsidian-sovellusta pysymään täysin käyttäjiensä rahoittamana.
+Osta
+Kirjaudu ulos
+Kirjaudu sisään
+Rekisteröidy
+Sähköpostiosoite
+Sähköpostiosoitteesi...
+Koko nimi
+Salasana
+Salasanasi...
+Unohtuiko salasana?
+Kirjaudu
+Sähköpostiosoite ei voi olla tyhjä.
+Sähköpostiosoite ei ole kelvollinen.
+Salasana ei voi olla tyhjä.
+Kirjautuminen epäonnistui. Tarkista sähköpostiosoitteesi ja salasanasi.
+Rekisteröinti epäonnistui
+Eikö sinulla ole käyttäjätiliä? 
+Rekisteröidy nyt
+Kuusinumeroinen kertakoodi
+Kaksivaiheisen todennuksen koodissa pitää olla kuusi numeroa.
+Kaksivaiheisen todennuksen koodi on väärin. Tarkista todennussovelluksesi uudelleen.
+Lisäosalista
+Etsi sisäänrakennettuja lisäosia
+Suodata lisäosia nimen tai kuvauksen perustella.
+Hae lisäosia...
+Yhteisön lisäosat
+Rajoitettu tila
+Rajoitettu tila on pois päältä. Laita päälle poistaaksesi yhteisön lisäosat käytöstä.
+Ota käyttöön ja lataa uudelleen
+Tarkista lisäosien päivitykset automaattisesti
+Tarkistaa väliajoin, onko lisäosiin tullut päivityksiä.
+Yhteisön lisäosat
+Selaa ja asenna yhteisön lisäosia, joita meidän mahtava yhteisömme on tehnyt.
+Selaa
+Poistu rajoitetusta tilasta
+Yhteisön lisäosat voivat tavallisten ohjelmistojen tavoin aiheuttaa eheys- ja tietoturvaongelmia, jos asennat niitä.
+Lisäosien turvallisuus on meille tärkeää. Toimimme siksi näin:
+Ponnisteluistamme huolimatta on aina pieni mahdollisuus, että yhteisön lisäosa voi tehdä jotain sopimatonta.
+Alustava koodin tarkastus
+Tiimimme tarkastaa lisäosan koodin ennen kuin lisäosa lisätään viralliselle yhteisön lisäosalistalle.
+Avoin lähdekoodi
+Suurin osa lisäosista ovat avointa lähdekoodia GitHubissa, joten voit tarkastella koodia itsekin.
+Vertaisarviointi
+Meillä on suuri yhteisö ohjelmistokehittäjiä, jotka huolehtivat toisistaan.
+Ilmoitusjärjestelmä
+Käyttäjäraporttien pohjalta voimme poistaa väärin toimivia lisäosia.
+Haluatko poistua rajoitetusta tilasta ja ottaa käyttöön yhteisön lisäosat? Suosittelemme vahvasti sinua ottamaan varmuuskopion tiedoistasi ennen sitä.
+Lue lisää lisäosien turvallisuudesta
+Ota yhteisön lisäosat käyttöön
+Luotatko tämän holvin tekijään?
+Olet avaamassa tämän holvin ensimmäistä kertaa, ja se sisältää joitain lisäosia.
+Jos sait tämän holvin joltain muulta, huomaa että tuntemattomasta lähteestä tulevat lisäosat voivat aiheuttaa tietoturvariskejä.
+Jos et täysin luota tämän holvin tekijään, suosittelemme pysymään rajoitetussa tilassa, jolloin holvin käyttämiä lisäosia ei ajeta.
+Luota tekijään ja ota lisäosat käyttöön
+Selaa holvia rajoitetussa tilassa
+Hae yhteisön lisäosia...
+Yhteisön lisäosien lataaminen epäonnistui.
+Asennettu
+Asenna
+Ota käyttöön
+Poista käytöstä
+Kopioi jakamislinkki
+Lahjoita
+Ei tuloksia.
+Ei äskettäin avattuja tiedostoja. Kirjoita hakeaksesi...
+Lisäosan manifestin lataaminen epäonnistui.
+Versio: {{version}}
+ (asennettuna: {{version}})
+Tekijä: 
+Koodivarasto: 
+Viimeisin päivitys: 
+Tarkista viimeisin päivitys
+Tämä lisäosa ei tue laitettasi.
+Päivitä
+Tämä lisäosa ei ole toimittanut README-tiedostoa.
+Asennetaan lisäosaa ”{{name}}”...
+Lisäosan ”{{name}}” asentaminen epäonnistui.
+Lisäosan ”{{name}}” asentaminen onnistui.
+Lisäosan ”{{id}}” poistaminen epäonnistui.
+Lisäosan ”{{id}}” käytöstä poistaminen epäonnistui.
+Asennetut lisäosat
+Lataa lisäosat uudelleen
+Kolmannen osapuolen lisäosat ladattiin uudelleen.
+Poista
+Poista lisäosa
+Haluatko varmasti poistaa tämän lisäosan? Tämä poistaa lisäosan kansion.
+Avaa lisäosien kansio
+Tarkista päivitykset
+Päivitä kaikki
+Nykyiset lisäosat
+Tarkistetaan päivityksiä...
+Sinulla on tällä hetkellä {{count}} lisäosa asennettuna.
+Sinulla on tällä hetkellä {{count}} lisäosaa asennettuna.
+Päivityksiä lisäosille ei löytynyt.
+Päivitys löytyi {{count}} lisäosalle.
+Päivityksiä löytyi {{count}} lisäosalle.
+Päivitä versioon {{version}}
+Etsi asennetuista lisäosista
+Suodata asennettuja lisäosia nimen tai kuvauksen perusteella.
+Hae asennetuista lisäosista...
+Näytä vain asennetut
+Tue lisäosaa {{name}} lahjoittamalla
+Lisäosien kehittäjät ovat vapaaehtoisia yhteisön jäseniä, jotka tekevät mahtavia asioita intohimostaan. Jos tämä lisäosa on mielestäsi hyödyllinen, harkitse sen kehityksen rahoittamista.
+100% tuestasi menee lisäosan kehittäjälle; Obsidian ei ota osuutta. Rahoitusalusta saattaa kuitenkin periä maksun.
+Kiitos anteliaasta tuestasi!
+Tue tätä lisäosaa:
+Näytetään {{pluginCount}}:
+Ladatuimmat
+Viimeksi julkaistu
+Viimeksi päivitetty
+Aakkosittain
+Päivitetty {{time}}
+Työkalupalkki
+Määritä pikavalinta
+Määritä, mikä komento suorittuu, kun vedät alas ylhäältä. Nykyinen komento on ”{{command}}”.
+Ei määritelty
+Määritä
+Valitse pikavalinta...
+Ei mitään
+Hallinnoi työkalupalkin vaihtoehtoja
+Lisää sisäinen linkki
+Lisää upote
+Lisää tunniste
+Otsikko päälle/pois
+Yliviivaus päälle/pois
+Korostus päälle/pois
+Koodi päälle/pois
+Lainaus päälle/pois
+Kaava päälle/pois
+Matematiikkalohko päälle/pois
+Lisää Markdown-linkki
+Luettelomerkitty luetelma päälle/pois
+Numeroitu luetelma päälle/pois
+Sisennä luettelokohtaa
+Ulonna luettelokohtaa
+Kumoa
+Tee uudelleen
+Siirrä kohdistinta ylös
+Siirrä kohdistinta alas
+Siirrä kohdistinta vasemmalle
+Siirrä kohdistinta oikealle
+Siirry ensimmäiselle riville
+Siirry viimeiselle riville
+Näytä/piilota näppäimistö
+Mukauta työkalupalkkia
+Lisätyt vaihtoehdot
+Lisää vaihtoehtoja
+Lisää liite
+Etsi...
+Korvaa...
+Poistu hausta
+Seuraava
+Edellinen
+Etsi kaikki
+Korvaa
+Korvaa kaikki
+Kirjoita #
+linkittääksesi otsikon
+Kirjoita ^
+linkittääksesi lohkoja
+Kirjoita |
+vaihtaaksesi näytettävää tekstiä
+Näytettävä teksti
+Otsikko
+Tuloksia ei löytynyt
+Kuvan koko: {{size}}px leveä
+hyväksyy
+Uusi alaviite...
+Ei ehdotuksia...
+Lisää sanakirjaan
+Muokkaa linkkiä
+Muokkaa tunnistetta
+Muokkaa lohkoa
+Poista alaviite ja viittaus
+Palauta koko
+Poista kuva
+Ei otsikkoa
+Otsikko {{level}}
+Vie PDF-tiedosto
+Vie ”{{filename}}” PDF-tiedostoksi alla määritellyllä asetuksella.
+Sivun koko
+Laita tiedoston nimi otsikoksi
+Vaakasuuntainen
+Marginaali
+Oletus
+Minimaalinen
+Ei mitään
+Pienennysprosentti
+Vie PDF-tiedosto
+Seuraa linkkiä
+Avaa linkki
+Hae tunnistetta
+Ei löytynyt:
+Kohtaa “{{subpath}}” ei löytynyt tiedostosta {{file}}
+Avaa oletussovelluksessa
+Sivupalkki on tyhjä. Kokeile raahata välilehti tänne.
+Laajenna
+Kutista
+Tiedoston ”{{filepath}}” tallennus epäonnistui. {{message}}. Tee varmuuskopio tämän tiedoston sisällöstä välittömästi, tai saatat menettää tietoja.
+Lisäosan “{{plugin}}” lataus epäonnistui
+Lisäosaa ”{{plugin}}” ladattaessa tapahtui virhe
+Tiedoston “{{filepath}}” avaus epäonnistui
+Kohdetta “{{href}}” ei voitu avata
+Ei tiedostoa
+Tiedostoa ”{{file}}” on muokattu muualta. Muutokset yhdistetään automaattisesti.
+Hallitse holveja...
+Apua
+Asetukset
+Järjestele raahaamalla
+Lukunäkymä on nyt oletusnäkymä.
+Muokkausnäkymä on nyt oletusnäkymä.
+Tämä toiminto vaatii, että asennat asennusohjelman uudelleen verkkosivuiltamme.
+Sovellus vaikuttaa käynnistyvän hitaasti.
+Tämä toiminnallisuus on saatavilla vain työpöytäsovelluksessa.
+Palauta oletusasetukset
+Kopioi leikepöydälle
+Kopioi
+Kopioitiin leikepöydälle
+{{item}} kopioitiin leikepöydälle
+Leikepöydälle kopiointi epäonnistui
+Suodata...
+Koodilohkoa esitettäessä tapahtui virhe.
+Tiedosto ”{{path}}” avattiin
+Tiedostoa ”{{name}}” ei löytynyt.
+URI-toimintoa ei tunnistettu: {{action}}
+Poista
+Luodaan holvin indeksiä...
+Jotkin toiminnot toimivat vasta, kun indeksi on valmis.
+Indeksi on valmis.
+Tämä on leikkiholvi.\nTähän holviin tehtyjä muutoksia ei tallenneta.
+IndexedDB vaaditaan tähän toimintoon, mutta se ei ole käytössä.
+Jos olet asettanut iOS:n Sulkutilaan, sinun tulee jättää Obsidian pois Sulkutilasta sen asetusten ”Määritä verkkoselaus” -kohdasta.
+Luo Enterillä
+Päivitys saatavilla
+Virheenkorjaustiedot
+Lue lisää
+Ei nyt
+Lisää
+Hallinnoi
+Uusi välilehti
+Piilota valintanauha
+Välilehdellä on jotain kesken, yritä myöhemmin uudelleen
+Muotoilu
+Kappale
+Lisää
+Lisää linkki
+Lisää ulkoinen linkki
+Nostolaatikko
+Vaakaviiva
+Koodilohko
+Matematiikkalohko
+Taulukko
+Alaviite
+Lihavointi
+Koodi
+Kommentti
+Korostus
+Kursivointi
+Yliviivaus
+Kaava
+Luettelomerkitty luetelma
+Tehtäväluettelo
+Numeroitu luetelma
+Otsikko {{level}}
+Leipäteksti
+Poista muotoilu
+Lainaus
+Tyhjä
+Tiedostoja ei ole auki
+Luo uusi tiedosto
+Siirry tiedostoon
+Katso viimeisimmät tiedostot
+Sulje
+Sulje kaikki tyypin ”{{id}}” välilehdet ({{count}})
+Lisäosa ei ole enää käytössä
+Tämän välilehden ({{type}}) luonut lisäosa on kadonnut.
+Julkaisutiedot ({{version}})
+Julkaisutietoja ei ole saatavilla versiolle {{version}}.
+Julkaisutietoja ei voitu ladata versiolle {{version}}.
+Julkaistiin {{date}}
+Uutta versiossa {{version}}
+Olet muokkausnäkymässä
+Olet lukunäkymässä
+Nauha
+Vasen sivupalkki
+Oikea sivupalkki
+Muokkaa napsauttamalla
+Lue napsauttamalla
+{{key}}+napsautus avaa uudessa välilehdessä
+{{key}}+C kopioi lähdekoodin
+Etsi...
+Korvaa...
+Muokkaa
+Poista
+Poista luettelosta
+Muuta nimeä
+Esikatsele
+Lisää vaihtoehtoja
+Sulje
+Sulje kaikki
+Sulje {{count}} välilehti
+Sulje {{count}} välilehteä
+Sulje muut
+Sulje välilehdet oikealta
+Kiinnitä
+Irrota kiinnitys
+Irrota vierityskytkös
+Kytke vieritys välilehteen...
+Lähdekooditila
+Lukunäkymä
+Lisää tiedostolle määre
+Poista tiedosto
+Luo tämä tiedosto
+Avaa linkki
+Avaa uudessa välilehdessä
+Avaa oikealle
+Kopioi osoite
+Kopioi
+Leikkaa
+Liitä
+Kopioi polku
+Kopioi kuva
+Kopioi Obsidian-osoite
+järjestelmän juurikansiosta
+holvikansiosta
+Liitä ilman muotoilua
+Etsi “{{selection}}”
+Valitse kaikki
+Muuta otsikon nimeä...
+Muuta lohkon tunnusta...
+Avaa uudessa ikkunassa
+Siirrä uuteen ikkunaan
+Avaa selaimessa
+Pinoa välilehdet
+Irrota välilehdet pinosta
+Avaa linkkinäkymä
+Laajenna napsauttamalla
+Kutista napsauttamalla
+
+Ei vielä luotu, valitse luodaksesi
+Versio
+Luo paikallinen holvi
+Avaa kansio holvina
+Valitse olemassa oleva kansio, joka sisältää Markdown-tiedostoja.
+Luo uusi holvi
+Luo uusi Obsidian-holvi kansioon.
+Avaa holvi Obsidian Syncistä
+Ota synkronoitu holvi käyttöön olemassa olevan etäholvin kanssa.
+Holvin nimi
+Valitse mahtavalle holvillesi nimi.
+Sijainti
+Valitse sijainti uudelle holvillesi.
+Uuden holvisi sijainti: 
+Näytä holvi järjestelmän tiedostonhallinnassa
+Näytä holvi Finderissa
+Muuta holvin nimeä...
+Kopioi holvin tunnus
+Tämänniminen holvi on jo olemassa.
+Holvia ei voi siirtää sen omaan alikansioon.
+Avatun holvin nimeä ei voi muuttaa.
+Holvin nimen muuttaminen epäonnistui.
+Holvin nimi muutettiin onnistuneesti.
+Siirrä holvia...
+Valitse kohdekansio.
+Kohteessa on jo holvi.
+Avattua holvia ei voida siirtää.
+Holvin siirtäminen epäonnistui.
+Holvi siirrettiin onnistuneesti.
+Poista listasta
+Pika-aloitus
+Avaa
+Selaa
+Yhdistä
+Luo
+Takaisin
+Holvin nimi ei voi olla tyhjä.
+Holvin nimi ei voi päättyä pisteeseen.
+Valitse kelvollinen kansio.
+Holvin luominen epäonnistui.
+Holvia ei voitu luoda annettuun sijaintiin. Tarkista sijanti ja käyttöoikeudet.
+Avaaminen epäonnistui.
+Avattua holvia ei voida poistaa.
+Pyydä apua
+Sähköposti
+Sähköpostiosoitteesi...
+Salasana
+Salasanasi...
+Kirjaudu
+Aloita
+Luo synkronoitu holvi tälle laitteelle.
+Tämä on sinun omistamasi etäholvi.
+Tämä on sinun kanssasi jaettu etäholvi.
+Ajatukset kuuluvat sinulle.
+synkronoitu
+ei synkronoitu
+Ei mitään
+Suositeltu
+Obsidian tallentaa muistipanosi laitteellesi. Näin pääset niihin aina nopeasti myös ilman verkkoyhteyttä - ja ne pysyvät yksityisinä.\nTietosi tallennetaan turvallisesti paikalliseen kansioon, jota kutsutaan **holviksi**.
+Luo uusi holvi
+Käytä valmista holvia
+Synkronoimalla voit siirtää muistiinpanojasi helposti laitteelta toiselle.
+Obsidian tallentaa muistiinpanosi laitteellesi, joten sinun pitää synkronoida ne, jos haluat käyttää niitä toiselta puhelimelta tai tietokoneelta.\nVoit ottaa synkronoinnin käyttöön nyt tai myöhemmin.
+Ota käyttöön
+Jatka ilman
+Ei nyt
+Säädä holvisi haluamaksesi.
+Luo holvi
+Synkronoinnin käyttööonotto
+Luo Obsidian-tilillesi synkronoitu holvi, jota voit käyttää usealta laitteelta.
+Synkronoinnin salaus
+Salaus päästä päähän
+Turvallisin, mutta vaatii sinua muistamaan salasanan
+Tavallinen salaus
+Obsidian tarjoaa salausavaimen, joka suojaa tietosi matkalla ja palvelimillamme.
+Synkronoinnin asetukset
+Haluatko jättää pois kansioita tai tiedostoja tällä laitteella?
+Aloita synkronointi
+Luo Obsidian-tili tai kirjaudu
+Luo tili
+Kirjaudu
+Lähetä sähköposti uudelleen
+Sinulla on jo synkronoituja holveja
+Haluatko luoda uuden holvin vai yhdistää jo synkronoituun holviin?
+Luo uusi synkronoitu holvi
+Valitse jo luotu holvi
+Kirjaudu ulos
+Salasana unohtui
+Holvin nimi
+Holvin sijainti
+Laitetallennustila
+Sallii Obsidian-datan käytön muissa sovelluksissa.
+Vaatii lisäkäyttöoikeuksia.
+Sovellustallennustila
+Tietosi eivät ole muiden sovellusten käytettävissä.
+Android poistaa tietosi, jos poistat Obsidian-sovelluksen.
+Uuden holvisi sijainti on {{vaultLocation}}
+Alue
+Valitse synkronointipalvelimen alue.
+Salausavain
+Tätä salasanaa ei voi vaihtaa. Jos unohdat salasanasi, menetät pääsyn kaikkiin palvelimelle synkronoituihin tietoihin pysyvästi.
+Holvini
+Automaattinen
+Valitse holvi
+Tililläsi **{{email}}** on jo holveja, joihin voit yhdistää.
+Kirjaudu Obsidian-tilillesi
+Salasana unohtui
+Nollaa salasana
+Lähetimme osoitteeseen {{email}} sähköpostiviestin, jolla voisit nollata salasanasi.
+Valitse kuinka synkronointi toimii
+Tietosi pitää synkronoida, jotta voit käyttää Obsidian-sovellusta usealta laitteelta.
+Saumaton joka laitteella ja käyttöjärjestelmällä.
+Salattu vahvimmalla salausstandardilla päästä päähän.
+Vaatii Obsidian-tilin.
+Vain iOS:lle ja macOS:lle.
+Ei salattu oletuksena.
+Vaatii ulkoisia työkaluja tai lisäosia.
+Ei välttämättä salattu oletuksena.
+Käytä Obsidian Syncia
+Käytä iCloudia
+Käytä ulkoista ratkaisua
+Muut synkronointitavat
+Käytä tuettua synkronointitapaa
+Missä holvisi sijaitsee?
+Jokin muu
+Ulkoinen ratkaisu
+Tällä laitteella
+Yhdistä iCloudiin
+Yhdistä eri palveluun
+Yhdistä Obsidian Synciin
+Valitse kansio
+Muut synkronointitavat
+Obsidian tukee kahta virallista synkronointitapaa: **Obsidian Sync** ja **iCloud**.\nObsidian kuitenkin antaa sinun hallinnoida tietojasi niin kuin haluat, joten voit synkronoida ne myös muin tavoin.\nUlkoiset lisäosat ja työkalut voivat auttaa tässä, mutta niiden käyttöönotto vaatii osaamista.\nJos haluat synkronoida tietosi muuten, **luo holvi** ja noudata lisäosasi tai palveluntarjoajasi ohjeita.
+Syötä sähköpostisi
+Obsidian-tilin luomiseen vaaditaan sähköpostiosoite.
+Syötä nimesi ja salasanasi
+Yhdistä Obsidian Synciin
+Lähetimme osoitteeseen **{{email}}** sähköpostin, jossa on ohjeet Obsidian Syncin käyttöönottoa varten.
+iCloud-holviasi ei havaittu. Tähän voi olla useita syitä:
+Holvisi on eri iCloud-tilillä kuin mikä tässä laitteessa on käytössä.
+Holvisi ei sijaitse iCloudin ylätasolla Obsidian-kansiossa.
+iCloudia ei tueta
+Synkronointi iCloudin kautta toimii vain Applen laitteilla. Jos holvisi on tällä hetkellä iCloudissa, se tulee siirtää eri palveluun.
+Salli pääsy tiedostoihin
+Kirjaudutaan sisään...
+Holvin nimi vaaditaan
+Vahvistusviesti lähetettiin.
+Vahvistusviestin lähettäminen epäonnistui.
+Holvin sijainnin on oltava kansio.
+Tervetuloa
+Tämä on uusi *holvisi*.\n\nKirjoita muistiinpano, [[luo linkki]] tai kokeile [tuontityökalua](https://help.obsidian.md/Plugins/Importer)!\n\nKun olet valmis, poista tämä muistiinpano ja tee holvista omasi.
+Lisää linkki tänne
+Lisää linkkejä tänne
+Siirrä kansioon ”{{folder}}”
+Merkitse tiedosto tähdellä
+Merkitse tiedostot tähdellä
+Avaa tässä välilehdessä
+Avaa uutena välilehtenä
+Suurenna
+Pienennä
+Palauta
+Sulje ikkuna
+Takaisin
+Eteenpäin
+Obsidian latautuu...
+Obsidian-sovelluksen lataamisessa tapahtui virhe.
+Lataa sovellus uudelleen
+Lataa sovellus uudelleen rajoitetussa tilassa
+Avaa toinen holvi
+Ladataan lisäosia...
+Lisäosa “{{plugin}}” latautuu liian hitaasti. 
+Ladataan holvia...
+Holvin lataaminen epäonnistui: 
+Ladataan välimuistia...
+Ladataan työtilaa...
+Tuo holviin
+Lisää teksti tiedostoon:
+Valitse tiedosto johon lisätä...
+
+Lisää linkki tiedostoon ”{{filename}}”
+Näytä välilehtikatsaus
+Tuodaan...
+Tuonti onnistui
+Tiedoston {{filename}} tuominen epäonnistui
+Paina takaisin poistuaksesi.
+Palaute
+Pidätkö Obsidian-sovelluksesta? Auta meitä arvostelemalla sovellus.
+Arvostele sovellus
+Ei nyt
+Määritystiedostot ladattiin iCloudista, pitää ladata uudelleen
+Lataa uudelleen
+Virallinen ohjesivusto
+Lue virallinen Obsidian-ohjekirja, joka on saatavilla usealla eri kielellä.
+Vieraile
+Discord-chatti
+Discord on paras paikka keskustella muiden kokeneiden Obsidian-käyttäjien kanssa ympäri maailmaa.
+Liity
+Virallinen foorumi
+Auta muita, pyydä toiminnallisuuksia, ilmoita bugeista ja käy syvällisiä keskusteluja tiedonhallinnasta.
+Leikkiholvi
+Leiki ja kokeile eri toimintoja. Huomaa, että muutoksia ei tallenneta.
+Tallenna nykyinen tiedosto
+Lataa nykyisen tiedoston liitteet
+Seuraa kohdistettua linkkiä
+Avaa kohdistettu linkki uudessa välilehdessä
+Avaa kohdistettu linkki oikealle
+Avaa kohdistettu linkki uudessa ikkunassa
+Kohdista ylempään välilehtiryhmään
+Kohdista alempaan välilehtiryhmään
+Kohdista vasempaan välilehtiryhmään
+Kohdista oikeaan välilehtiryhmään
+Kiinnitä tai irrota kiinnitys
+Jaa näkymä oikealle
+Jaa näkymä alas
+Pinoa välilehdet tai irrota pinosta
+Luettava rivin pituus päälle/pois
+Rivinumerot päälle/pois
+Siirry taaksepäin
+Siirry eteenpäin
+Vaihda vaaleaan/tummaan tilaan
+Vaihda teemaa...
+Vaihda holvia...
+Avaa holvi...
+Hallinnoi holveja
+Etsi nykyisestä tiedostosta
+Etsi ja korvaa nykyisessä tiedostossa
+Lisää tiedostolle määre
+Nimen mukaan (A–Ö)
+Nimen mukaan (Ö–A)
+Lisää alias
+Tyhjennä tiedoston määreet
+Avaa asetukset
+Avaa ohje
+Vaihda luku- ja muokkaustilan välillä
+Vaihda visuaalisen ja lähdekooditilan välillä
+Poista nykyinen tiedosto
+Uusi välilehti
+Uusi ikkuna
+Näytä roskakori
+Sulje kaikki välilehdet
+Sulje nykyinen välilehti
+Sulje välilehtiryhmän muut välilehdet
+Sulje kaikki muut välilehdet
+Sulje nykyinen välilehtiryhmä
+Näytä tai piilota vasen sivupalkki
+Näytä tai piilota valintanauha
+Näytä tai piilota oikea sivupalkki
+Vaihda uusien välilehtien oletustilaa
+Uusi kohdistin yläpuolelle
+Uusi kohdistin alapuolelle
+Kohdista muistiinpanoon
+Laajenna tai kutista tiedoston määreet
+Laajenna tai kutista rivi
+Kutista otsikot ja luetelmat
+Laajenna otsikot ja luetelmat
+Kutista enemmän
+Kutista vähemmän
+Siirrä riviä ylöspäin
+Siirrä riviä alaspäin
+Poista otsikko
+Aseta otsikoksi {{level}}
+Lihavointi päälle/pois
+Kursivointi päälle/pois
+Korostus päälle/pois
+Kommentti päälle/pois
+Poista muotoilu
+Lisää Markdown-linkki
+Oikoluku päälle/pois
+Poista kappale
+Tehtävä tehty/tekemättä
+Vaihda luetelman tyyppiä
+Lisää nostolaatikko
+Lisää koodilohko
+Lisää matematiikkalohko
+Lisää vaakaviiva
+Lisää taulukko
+Lisää alaviite
+Muuta tiedoston nimeä
+Kopioi tiedoston polku
+Kopioi nykyisen tiedoston polku järjestelmän juuresta
+Kopioi Obsidian-osoite
+Vie PDF-tiedostoksi
+Lataa sovellus uudelleen tallentamatta
+Avaa viimeksi suljettu välilehti
+Näytä kontekstivalikko kohdistimelle
+Näytä virheenkorjaustiedot
+Avaa leikkiholvi
+Ikkuna aina päällimmäisenä päälle/pois
+Lähennä
+Loitonna
+Palauta mittakaava
+Vaihda luku-/muokkaustilaan
+Siirrä nykyinen välilehti uuteen ikkunaan
+Avaa nykyinen välilehti uudessa ikkunassa
+Muuta nykyisen tiedoston nimeä
+Siirry edelliseen välilehteen
+Siirry seuraavaan välilehteen
+Siirry viimeiseen välilehteen
+Siirry välilehteen #{{n}}
+Näytä julkaisutiedot
+{{links}} päivittyy; {{files}} muuttuu.
+{{links}} päivittyi; {{files}} muuttui.
+Päivitä linkit
+Haluatko päivittää sisäiset linkit, jotka linkittävät tähän tiedostoon?
+Päivitä aina
+Vain kerran
+Älä päivitä
+Haluatko varmasti poistaa tiedoston ”{{filename}}”?
+Se siirretään järjestelmäsi roskakoriin.
+Se siirretään Obsidian-sovelluksen roskakoriin, joka sijaitsee piilotetussa ”.trash”-kansiossa holvissasi.
+Tiedosto poistetaan pysyvästi.
+Tämä kansio ei ole tyhjä.
+Jos jatkat, kaikki tämän kansion tiedostot poistetaan.
+Poista kansio
+Poista
+Älä kysy uudelleen
+Tällä hetkellä {{count}} linkki osoittaa tähän tiedostoon.
+Tällä hetkellä {{count}} linkkiä osoittaa tähän tiedostoon.
+Poista tiedosto
+Lataa liitteet
+Tässä muistiinpanossa ei ole liitteitä.
+{{count}} liite ladattiin.
+{{count}} liitettä ladattiin.
+{{count}} tiedostoon tehtiin muutoksia.
+{{count}} tiedostoon tehtiin muutoksia.
+{{count}} tiedoston muutokset palautettiin.
+{{count}} tiedoston muutokset palautettiin.
+Ei verkkoyhteyttä
+Ladataan...
+Hallinnoi
+Näytä
+Vahvista
+Peruuta
+Ohita
+Lataa
+Valmis
+Tallenna
+Pysäytä
+Muuta
+Jatka
+Valitse
+Yritä uudelleen
+Päivitä
+Kumoa
+Valmistellaan PDF-tiedostoa...
+Tiedoston otsikko
+Tiedostonimi
+Uusi nimi
+Virhe
+Valittu
+Tiedoston nimeä muutettiin onnistuneesti.
+Muistiinpanojen yhdistäminen epäonnistui: {{message}}
+Tiedostoa tai kansiota “{{path}}” ei ole.
+Otsikko ei voi olla tyhjä
+Lohkon tunnus ei voi olla tyhjä
+Lohkon tunnuksessa voi olla vain aakkosia (A–Z), numeroita ja yhdysviivoja
+Muuta otsikon nimeä
+Muuta lohkon tunnusta
+Poistetaanko tiedoston liitteet?
+Tätä liitettä ei enää käytetä missään muistiinpanossa. Haluatko poistaa sen?
+Näitä {{count}} liitettä ei enää käytetä missään muistiinpanossa. Haluatko poistaa ne?
+Tiedostopuu
+Galleria
+Uusi muistiinpano
+Uusi muistiinpano oikealle
+Uusi välilehti
+Uusi Ikkuna
+Avaa pikaisesti...
+Avaa holvi...
+Sulje välilehti
+Sulje ikkuna
+Etsi
+Korvaa
+Nostolaatikko
+Markdown-linkki
+Linkki
+Otsikko {{level}}
+Ei otsikkoa
+Lainaus
+Vie PDF...
+Lisää liite...
+Koodilohko
+Matematiikkalohko
+Taulukko
+Alaviite
+Otsikko asiakirjassa
+Rivinumerot
+Luettelomerkitty luetelma
+Numeroitu luetelma
+Tehtäväluettelo
+Lihavoi
+Koodi
+Kommentti
+Kursivoi
+Kaava
+Korosta
+Yliviivaa
+Kommentti
+Kutistus
+Kutista kaikki
+Laajenna kaikki
+Kutista enemmän
+Kutista vähemmän
+Lähdekooditila
+Lukunäkymä
+Näytä virheenkorjaustiedot
+Avaa leikkiholvi
+Siirrä uuteen ikkunaan
+Siirry taaksepäin
+Siirry eteenpäin
+Vasen sivupalkki
+Oikea sivupalkki
+Nauha
+Jaa näkymä oikealle
+Jaa näkymä alas
+Julkaisutiedot
+Lisäosat
+Tiedostot
+Selaa holvisi tiedostoja.
+Avaa tiedostoselain
+Näytä tiedostoselain
+Luo uusi muistiinpano
+Luo uusi kansio
+Luo uusi muistiinpano nykyiseen välilehteen
+Luo muistiinpano oikealle
+Kohdista nykyiseen tiedostoon automaattisesti
+Kutista kaikki kansiot
+Laajenna kaikki kansiot
+Uusi muistiinpano
+Uusi kansio
+Vaihda järjestystä
+Näytä tiedosto selaimessa
+Näytä nykyinen tiedosto selaimessa
+Tee kopio nykyisestä tiedostosta
+Tee kopio nykyisestä tiedostosta
+Siirrä tiedosto toiseen kansioon
+Uusi kansio valinnasta ({{count}} kohde)
+Uusi kansio valinnasta ({{count}} kohdetta)
+Siirrä tiedosto...
+Siirrä kansio...
+Siirrä {{count}} kohdetta...
+Kirjoita kansio
+Kansioita ei löytynyt.
+siirtyy
+siirtää
+luo
+sulkee
+Tiedostonimi (A–Ö)
+Tiedostonimi (Ö–A)
+Muokkausaika (uusi-vanha)
+Muokkausaika (vanha-uusi)
+Luomisaika (vanha-uusi)
+Luomisaika (uusi-vanha)
+Uusi muistiinpano
+Uusi kansio
+Muuta nimeä...
+Poista
+Tee kopio
+Tee kopio
+Tiedostonimi ei voi sisältää mitään seuraavista merkeistä: 
+Linkit eivät toimi tiedostonimiin, jotka sisältävät joitain näistä merkeistä: 
+Samanniminen tiedosto on jo olemassa
+Tiedostonimi ei voi olla tyhjä.
+Tiedostonimi ei saa alkaa pisteellä.
+Muokattu viimeksi {{time}}
+Luotu {{time}}
+Nimetön
+Nimetön
+Liitetiedostot tallennetaan jatkossa sijaintiin ”{{path}}”.
+Etsi
+Etsi sanaa kaikista tiedostoista.
+Etsi kaikista tiedostoista
+Kutista tulokset
+Kirjainkoolla on väliä
+Selitä hakusyntaksi
+Näytä enemmän kontekstia
+{{count}} tulos
+{{count}} tulosta
+Hakuasetukset
+Hae...
+Tekstillä: 
+Regexillä: 
+Sisältää tasan tekstin: 
+Suurempi kuin: 
+Pienempi kuin: 
+On tosi
+On epätosi
+On tyhjä
+Jolla on määre:
+Nämä kaikki: 
+Edes yksi näistä: 
+Paitsi: 
+Kirjainkoolla on väliä
+Kirjainkoolla ei ole väliä
+Tiedoston polulla: 
+Tiedostonimellä: 
+Tiedoston sisällöllä: 
+Tehtävällä: 
+Tehtävällä (tekemätön): 
+Tehtävällä (tehty): 
+Rivillä: 
+Lohkolla: 
+Osiolla: 
+Tunnisteella: 
+Tuloksia ei löytynyt.
+...ja {{count}} tulos lisää.
+...ja {{count}} tulosta lisää.
+Kopioi hakutulokset
+Kopioi tulokset
+Tulokset kopioitiin leikepöydälle.
+Näytä polku
+Näyttää koko polun pelkän tiedostonimen sijaan.
+Linkin tyyli
+Voit tehdä kaikista tiedostotuloksista linkin.
+Ei mitään
+Wikilinkki
+Markdown-linkki
+Luettelointi
+Voit lisätä jokaisen kohdan alkuun tekstiä.
+Ei mitään
+Yhdysviiva (-)
+Asteriski (*)
+Numeroitu
+Tyhjennä haku
+Hakukomennot
+Määreet
+Tunnisteet
+Lue lisää
+Historia
+Tyhjennä hakuhistoria
+hae tiedostopolulla
+hae tiedostonimellä
+hae tunnisteita
+hae avainsanoja samalla rivillä
+hae avainsanoja saman otsikon alla
+hae määreellä
+Hae tekstiä ”{{keyword}}”
+Hae kansiosta
+Pikavaihdin
+Siirry eri tiedostoon pelkän näppäimistön avulla.
+Vaihdin
+Avaa pikavaihdin
+siirtyy
+avaa
+avaa uudessa välilehdessä
+avaa oikealle
+luo
+sulkee
+valitsee
+Muistiinpanoa ei löytynyt. Paina Enter luodaksesi uuden.
+Hae tiedostoa tai luo uusi...
+Enter luo uuden
+Ei vielä luotu, luo valitsemalla
+Näytä vain olemassa olevat
+Näyttää tulokset vain niistä tiedostoista, jotka ovat jo olemassa. Linkit vielä luomattomiin tiedostoihin piilotetaan.
+Näytä liitteet
+Näyttää liitetiedostot kuten kuvat, videot, ja PDF:t.
+Näytä kaikki tiedostotyypit
+Näyttää kaikki tiedostot, vaikka Obsidian ei osaisi itse avata niitä. Tiedosto avataan tyypille määritetyssä oletussovelluksessa.
+Verkkonäkymä
+Näe muistiinpanosi väliset suhteet helposti.
+Avaa verkkonäkymä
+Avaa lähiverkko
+Kopioi kuvakaappaus
+Verkko: {{displayText}}
+Suodattimet
+Hae tiedostoja...
+Syvyys
+Näytä solmut näin monen kaaren päähän
+Naapurien väliset linkit
+Näyttää naapurien väliset linkit
+Lähtevät linkit
+Näyttää linkit muihin tiedostoihin
+Saapuvat linkit
+Näyttää linkit muista tiedostoista
+Tunnisteet
+Tunnisteet linkittyvät tiedostoihin, joissa niitä esiintyy
+Liitteet
+Näyttää tiedostojen sisältämät liitteet
+Vain olemassa olevat
+Kun tämä on valittu, linkkejä vielä luomattomiin tiedostoihin ei näytetä
+Orvot
+Näyttää tiedostot, joista ei ole linkkiä mihinkään muuhun tiedostoon
+Näkymä
+Nuolet
+Näyttää nuolet kun tarpeeksi lähellä
+Tekstin piilotuskynnys
+Solmujen koko
+Linkkien paksuus
+Voimat
+Keskuksen voima
+Linkin voima
+Linkin etäisyys
+Hyljintävoima
+Avaa verkon asetukset
+Kuvakaappaus kopioitiin leikepöydälle.
+Ryhmät
+Syötä kysely...
+Poista ryhmä
+Uusi ryhmä
+Vaihda väriä napsauttamalla\nJärjestele ryhmiä raahaamalla
+Toista verkon kehittymisanimaatio
+Aloita kehittymisanimaatio
+Animoi
+Paluulinkit
+Näyttää linkit muista tiedostoista nykyiseen tiedostoon. Paluulinkit voi näyttää erikseen omassa näkymässään tai muistiinpanon alla.
+Avaa paluulinkit
+Näytä paluulinkit
+Avaa nykyisen tiedoston paluulinkit
+Näytä tai piilota tiedoston paluulinkit
+Tiedoston paluulinkit
+Linkilliset maininnat
+Paluulinkkejä ei löytynyt.
+Linkittömät maininnat
+Näytä hakusuodatin
+Linkki
+Paluulinkit: {{displayText}}
+Linkittömiä mainintoja ei löytynyt.
+
+Näytä paluulinkit muistiinpanon alla
+Näyttää paluulinkit oletuksena uusissa välilehdissä.
+Lähtevät linkit
+Näyttää lähtevät linkit ja tunnistaa linkittömät maininnat muista muistiinpanoista nykyisessä muistiinpanossa.
+Avaa lähtevät linkit
+Näytä lähtevät linkit
+Avaa nykyisestä tiedostosta lähtevät linkit
+Lähtevät linkit: {{displayText}}
+Linkit
+Linkkejä ei löytynyt.
+Linkittömät maininnat
+Linkitä tämä tiedosto
+Vielä luomatta
+Tunnistenäkymä
+Tunnisteet
+Näyttää listan tunnisteista ja siitä, montako kertaa niitä on käytetty.
+Näytä tunnisteet
+Tunnisteita ei löytynyt.
+Nimi (A–Ö)
+Nimi (Ö–A)
+Yleisyys (yleisin ensin)
+Yleisyys (harvinaisin ensin)
+Näytä sisäkkäiset tunnisteet
+Kutista kaikki
+Laajenna kaikki
+Alaviitenäkymä
+Alaviitteet
+Näyttää nykyisen muistiinpanon alaviitteet.
+Näytä alaviitteet
+Alaviitteitä ei löytynyt.
+Määrenäkymä
+Näyttää tiedoston metatiedot sivupalkissa.
+Kaikki määreet
+Tiedoston määreet
+Tiedoston {{displayText}} määreet
+Näytä kaikki määreet
+Näytä tiedoston määreet
+Poista määre
+Poista määreet
+Automaattinen
+Automaattinen ({{type}})
+Määreitä ei löytynyt.
+Määreet ovat virheellisiä.
+Määreen nimi (A–Ö)
+Määreen nimi (Ö–A)
+Yleisyys (yleisin ensin)
+Yleisyys (harvinaisin ensin)
+Yhdistetäänkö määre “{{oldKey}}” määreeseen “{{newKey}}”?
+Jos ilmenee ristiriitoja, arvot yhdistetään tai määreen “{{oldKey}}” arvoa käytetään.
+Kutista kaikki
+Laajenna kaikki
+Avaa tiedoston määreet
+Avaa päivän muistiinpanot
+Sivun esikatselu
+Kohdista sisäistä linkkiä, niin näet esikatselun. Muokkaustilassa pitää painaa Ctrl/Cmd pohjaan.
+Liitettä “{{linktext}}” ei löytynyt.
+Muistiinpanoa ”{{linktext}}” ei löytynyt. Luo napsauttamalla.
+Alaviitettä {{id}} ei löytynyt. Luo napsauttamalla.
+Muokkausnäkymä
+Lukunäkymä
+Haku, paluulinkit ja lähtevät linkit
+Välilehden otsikko
+Vaadi {{key}}-näppäin esikatselun näyttämiseksi
+Kirjanmerkit
+Tallenna kirjanmerkkejä tiedostoihin, hakuihin, otsikoihin ja verkkoihin.
+Näytä kirjanmerkit
+Kutista kaikki
+Kirjanmerkki tähän välilehteen...
+Uusi ryhmä
+Kirjanmerkki...
+Lisää kirjanmerkki
+Muokkaa kirjanmerkkiä
+Kirjanmerkki kohdistettuun lohkoon...
+Kirjanmerkki kohdistettuun otsikkoon...
+Kirjanmerkki nykyiseen hakuun...
+Poista kirjanmerkki tiedostosta
+Kirjanmerkki {{count}} välilehteen...
+Kirjanmerkki {{count}} välilehteen...
+Kirjanmerkki kaikkiin välilehtiin...
+Kirjanmerkki tähän verkkoon...
+Kirjanmerkki
+Kirjanmerkitty
+{{count}} kirjanmerkki
+{{count}} kirjanmerkkiä
+Kirjanmerkkejä ei löytynyt
+Kirjanmerkkejä ei voitu ladata.
+Kirjanmerkkitiedosto on vioittunut.
+Nimetön ryhmä
+Nimetön verkko
+Muokkaa...
+Poista
+Muuta nimeä
+Kirjanmerkki tähän lohkoon...
+Kirjanmerkki tähän otsikkoon...
+Kirjanmerkkiä ei voi lisätä tyhjään hakuun.
+Polku
+Kysely
+Otsikko
+Kirjanmerkkiryhmä
+Kirjanmerkit
+Mukautettu CSS
+Lue ja ota käyttöön “obsidian.css” holvin kansiossa.
+Yhteisön teemat
+Haetaan yhteisön teemojen tietoja...
+Suodata...
+Vain tummat teemat
+Vain vaaleat teemat
+Käytä tätä teemaa
+Lopeta tämän teeman käyttö
+Asenna ja käytä
+Päivitä
+Tässä teemassa ei ole README-tiedostoa.
+Poista teema
+Näytä GitHubissa
+Yhteisön teemoja ei voitu ladata. Tarkista verkkoyhteytesi.
+Käytät nyt CSS-teemaa {{title}}.
+Teema {{title}} poistettiin.
+Teemaa {{title}} muutettiin.
+Asennettu
+Vanhaa muotoa
+Päivitä kaikki
+Yhteisön teemoja ei voitu ladata.
+Teemoille ei löytynyt päivityksiä.
+Päivitys löytyi {{count}} teemalle.
+Päivityksiä löytyi {{count}} teemalle.
+Teemaa ”{{name}}” ei voitu asentaa.
+Teema ”{{name}}” asennettiin onnistuneesti.
+Teemaa ”{{name}}” asennetaan...
+Näytetään {{themeCount}}:
+Päivitys saatavilla
+Komentovalikko
+Suorita komento painamalla Cmd/Ctrl+P ja kirjoittamalla se.
+Avaa komentovalikko
+siirtyy
+suorittaa
+sulkee
+Komentoja ei löytynyt.
+Kirjoita komento...
+Kiinnitetyt komennot
+Muotoilumuunnin
+Muuntaa muiden sovellusten Markdown-tekstiä Obsidian-sovelluksen käyttämään muotoon.
+Avaa muotoilumuunnin
+Roam Research -tunnisteiden korjaus
+Muuntaa tunnisteet ”#tag” ja ”#[[tag]]” -muodosta ”[[tag]]”-muotoon.
+Roam Research -korostusten korjaus
+Muuntaa korostukset ”^^highlight^^”-muodosta ”==highlight==”-muotoon.
+Roam Research -tehtävien muuntaminen
+Muuntaa tehtävät ”{{[[TODO]]}}”-muodosta ”[ ]”-muotoon.
+Bear-korostusten korjaus
+Muuntaa korostukset ”::highlight::”-muodosta ”==highlight==”-muotoon.
+Zettelkasten-linkkien korjaus
+Korjaa ”[[UID]]”-linkit täyteen ”[[UID File Name]]” -muotoon.
+Zettelkasten-linkkien siistiminen
+Korjaa ”[[UID]]”-linkit ja siistii ne ”[[UID File Name|File Name]]” -muotoon.
+Alkulehtien muuntaminen
+Muuntaa alkulehtien tunnisteet, aliakset ja CSS-luokat Obsidian-sovelluksen versioiden v1.9+ vaatimaan täsmällisempään muotoon.
+Varoitus: muunnin muuntaa kaikki holvin tiedostot, ei ainoastaan nykyistä tiedostoa.
+Tiedostosi korvataan. Luo varmuuskopio ennen muuntamista.
+Aloita muuntaminen
+Lopeta
+Palaa
+Valmis
+Käsitellään...
+Peruutetaan...
+Valmista!
+Käsitellyt tiedostot
+Muokatut tiedostot
+Korvauksia yhteensä
+Epäonnistui
+Päivittäiset muistiinpanot
+Luo tai avaa muistiinpanot tälle päivälle.
+Tänään
+Avaa tämän päivän muistiinpanot
+Avaa edellisen päivän muistiinpanot
+Avaa seuraavan päivän muistiinpanot
+Tämän päivän muistiinpanot
+Lisää linkki tämän päivän muistiinpanoihin
+Muistiinpanoa ei voitu luoda tälle päivälle. ”{{format}}” ei kelpaa muodoksi.
+Muistiinpanoa ei voitu luoda tälle päivälle. Kansiota ”{{folderOption}}” ei löytynyt.
+Muistiinpanoa ei voitu luoda tälle päivälle. Pohjatiedostoa ”{{template}}” ei löytynyt.
+Muistiinpanoja ei ole edelliselle päivälle.
+Muistiinpanoja ei ole seuraavalle päivälle.
+Päiväyksen muoto
+Valitse päivittäisten muistiinpanojen nimeämisperiaate.
+Mukautettu muoto
+Mukautettu
+Virheellinen päiväyksen muoto
+Päivittäisen muistiinpanon kansiota ei löydy.
+Lisätietoja syntaksista löytyy 
+muoto-ohjeesta
+Syntaksin tulos näyttää täältä: 
+Uuden tiedoston sijainti
+Kansio, johon uudet muistiinpanot luodaan.
+Pohjatiedoston sijainti
+Tiedosto, jota käytetään pohjana uusille muistiinpanoille.
+Uniikkien muistiinpanojen luonti
+Luo muistiinpanoja uniikeilla aikaleimaetuliitteillä, kuten zettelkasten- tai slip box -työnkuluille.
+Uniikki
+Luo uusi yksilöllinen muistiinpano
+Uusi yksilöllinen muistiinpano
+Lisää uniikki sisäinen linkki
+Uuden tiedoston sijainti
+Uusien uniikkien muistiinpanojen kansion polku.
+Uniikin muistiinpanon luominen epäonnistui. Kansiota ”{{folderOption}}” ei löytynyt.
+Pohjatiedoston sijainti
+Tiedostopolku jota käytetään pohjana.
+esim. kansio1/muistiinpano
+Uniikki etuliitemuoto
+Uniikin muistiinpanon luominen epäonnistui. Pohjatiedostoa ”{{template}}” ei löytynyt.
+Uniikin muistiinpanon luominen muodolla ”{{format}}” epäonnistui
+Satunnainen muistiinpano
+Avaa satunnaisen muistiinpanon. Hyödyllinen kertaamiseen ja arkistojen kaiveluun.
+Satunnainen
+Avaa satunnainen muistiinpano
+Sisällysluettelo
+Näyttää sisällysluettelon nykyiselle muistiinpanolle.
+Avaa sisällysluettelo
+Näytä sisällysluettelo
+Avaa nykyisen tiedoston sisällysluettelo
+Sisällysluettelo: {{displayText}}
+Otsikoita ei löytynyt.
+Kohdista nykyinen kohta automaattisesti
+Sanamäärä
+Näyttää sanamäärän tilarivillä.
+Diaesitys
+Luo diaesityksiä, jossa dioja erottaa ”---”-erotin.
+Aloita diaesitys
+Äänitys
+Äänitä ja tallenna äänite liitteeksi.
+Aloita äänitys
+Lopeta äänitys
+Aloita/lopeta äänitys
+Sovelluksella ei ole pääsyä mikrofoniin. Salli se asetuksista.
+Salli pääsy mikrofoniin äänittääksesi.
+Mikrofonia ei ole yhdistetty.
+Avaa oletussovelluksessa
+Lisää napin nykyisen tiedoston avaamiseksi oletussovelluksessa.
+Avaa oletussovelluksessa
+Jaa
+Näytä järjestelmän tiedostonhallinnassa
+Näytä Finderissa
+Mallineet
+Lisää mallinekansiosta sisältöä tiedostoihin.
+Lisää malline
+Lisää nykyinen päivämäärä
+Lisää nykyinen kellonaika
+Mallinetiedostojen sijainti
+Tämän kansion tiedostoja voi käyttää mallineina.
+Päiväyksen muoto
+Mallineessa oleva {{date}} korvataan tällä arvolla.
+Esimerkiksi syntaksilla {{date:YYYY-MM-DD}} voi määrittää muodon erikseen joka kohdassa.
+Ajan muoto
+Mallineessa oleva {{time}} korvataan tällä arvolla.
+Esimerkiksi syntaksilla {{time:HH:mm}} voi määrittää muodon erikseen joka kohdassa.
+siirtyy
+lisää mallineen
+sulkee
+Mallineita ei löytynyt
+Mallineita ei voitu ladata. Mallinekansio on virheellinen.
+Mallineita ei voitu ladata. Kansiota ”{{folderOption}}” ei löytynyt.
+Mallinetta ei voitu lisätä tiedostoon. Mallinetiedostojen määreitä ei voitu lukea.
+Mallineita ei voitu ladata. Mallinekansiota ei ole määritetty.
+Kirjoita mallineen nimi...
+Läpikuultava ikkuna
+Tee ikkunasta läpikuultava lisätäksesi syvyysvaikutelmaa. Toimii parhaiten tumman teeman kanssa. Ei tuettu Linuxilla.
+Vinoviivakomennot
+Aja komentoja suoraan muokkaimesta vinoviivanäppäimellä.
+Näytä muokkaustila tilapalkissa
+Näyttää muokkaustilan tilapalkissa.
+Lukunäkymä
+Lähdekoodi
+Visuaalinen
+Julkaisu
+Julkaise muistiinpanosi verkkosivulla, wikissä tai dokumentoinnissa.
+Julkaise muutokset...
+Julkaise nykyinen tiedosto
+Verkkoyhteys vaaditaan julkaisemiseen.
+Obsidian Publish on maksullinen lisäpalvelu, jolla voit julkaista Obsidian-muistiinpanosi verkossa.
+Luo Obsidian-tili tai kirjaudu tilille julkaistaksesi.
+Sinulla ei ole vielä Obsidian Publish -tilausta.
+Osta
+Hallinnoi sivustoja
+Et ole määritellyt sivustoja.
+Valitse
+Muokkaa sivuston tunnusta
+Poista sivusto
+Haluatko varmasti poistaa tämän sivuston?
+Tämä poistaa sivuston välittömästi ja pysyvästi.
+Vahvista sivuston ”{{site}}” poisto
+Sivuston tunnus
+Sivustosi osoite on https://publish.obsidian.md/{sivuston tunnus}. Voit vaihtaa tätä myöhemmin. Tunnuksessa voi olla vain kirjaimia (A–Z), numeroita ja yhdysviivoja.
+Valitse tunnus
+Luo
+Sivuston tunnuksessa voi olla vain kirjaimia (A–Z), numeroita ja yhdysviivoja.
+Sivuston tunnus on varattu. Kokeile muuta tunnusta.
+Sivuston luonnissa tapahtui virhe.
+Sivuston asetukset
+Yleiset
+Komponentit
+Ulkoasu
+Lukukokemus
+Muut sivuston asetukset
+Sivuston nimi
+Julkaistun sivuston nimi, joka näkyy otsikkona.
+Sivuston nimi
+Kotisivu
+Sivuston käyttäjille ensiksi näytettävä sivu
+Valitse julkaistu tiedosto
+
+Valitse kuva sivustosi logoksi.
+Mikä tahansa kuva holvistasi...
+Sivuston toimittajat
+Hallinnoi muita sivuston toimittajia.
+Mukauta siirtymistä
+Mukauta näytettävien kohteiden järjestystä tai piilota kansioita tai tiedostoja.
+Kohteiden esitysjärjestys
+Piilota sivuja tai kansioita
+Napsauta kohdetta oikealla hiiren painikkeella ja valitse ”Piilota” piilottaaksesi sen sivuston hakemistosta. Piilotetuille sivuille pääsee yhä linkkien tai suoraan verkko-osoitteen kautta.
+Näytä piilotetut
+Hallinnoi
+Siirtyminen
+Voit raahata muuttaaksesi järjestystä, jossa kohteet näytetään Publish-sivustolla.
+Piilota hakemistosta
+Hallinnoi
+Teema
+Valitse sivustosi oletusteema.
+Järjestelmän mukainen
+Vaalea/tumma
+Antaa käyttäjien vaihtaa omaa näkymäänsä vaalean ja tumman teeman väliltä.
+Näytä hakemisto
+Näyttää luettelon julkaistuista sivuista sivuston vasemmalla laidalla.
+Näytä hakupalkki
+Näyttää sivuston ylälaidalla hakupalkin, jolla kävijät voivat hakea sivuja, aliaksia tai otsikoita.
+Näytä verkkonäkymä
+Näyttää joka sivulla pienen verkkonäkymän.
+Näytä sisällysluettelo
+Näyttää sisällysluettelon joka sivulla.
+Näytä paluulinkit
+Näyttää paluulinkit joka sivun lopussa.
+Vierekkäiset sivut
+Linkit aukeavat nykyisen sivun viereen samaan ikkunaan, ja sivuja voi vierittää vaakasuunnassa.
+Näytä esikatselu kohdistettaessa
+Näyttää esikatselun, kun linkkiä kohdistetaan.
+Piilota sivun otsikko
+Piilottaa sivuotsikon, jos haluat lisätä omat otsikot joka sivun alkuun.
+Luettava rivin pituus
+Rajoittaa rivin pituutta. Näytölle mahtuu vähemmän sisältöä, mutta pitkiä kappaleita voi olla silloin helpompi lukea.
+Salasanat
+Rajoita pääsyä sivustolle salasanalla.
+Google Analytics -seurantakoodi
+Määritä Google Analytics sivustollesi. Toimii vain, jos kävijät tulevat omalta verkkotunnukseltasi. Tarkista ensin alueesi lait ja säädökset.
+Hallinnoi
+Tallenna sivuston asetukset
+Sivuston asetuksia muutettiin.
+Takaisin
+Julkaistaan sivustolla
+Vaihda sivustoa
+Lisää linkitetyt
+Lisää tiedostot, joihin on linkki valituista kohteista
+{{count}} linkitetty tiedosto lisättiin.
+{{count}} linkitettyä tiedostoa lisättiin.
+Muuta sivuston asetuksia
+Muutoksia ei havaittu.
+Muutettu
+Muuttamatta (valitse peruaksesi julkaisun)
+ valittu
+Valitse kaikki
+Sivuston kohteet
+Poista valinnat
+Uusi
+Julkaise
+Sinulla ei ole oikeuksia julkaista tällä sivustolla.
+Valitse ainakin yksi tiedosto.
+Lataa sivustolle
+Valmis
+Pysäytä
+Lähetetään
+Julkaistaan
+Poistetaan
+Julkaistu
+Poistettu
+Virhe
+Peruttu
+Muuta
+Muutosten ilmestymisessä sivustolle saattaa kestää muutama minuutti. Jos muutoksia ei näy, kokeile tyhjentää välimuisti selaimestasi.
+Sivustosi osoite on: 
+Jotain meni pieleen.
+Tapahtui verkkovirhe.
+Hallinnoi salasanoja
+Lisää salasana
+Uusi salasana
+Sivustollasi ei ole salasanoja, joten kuka tahansa voi käydä siellä.
+Sivustosi on suojattu salasanalla. Jos sinulla on monta salasanaa, kävijöiden pitää tietää niistä vain yksi päästäksesi sivustollesi.
+Salasana
+Salasanastasi lasketaan tiiviste, joka tallennetaan turvallisesti. Salasanaa ei voi enää näyttää, kun se on asetettu.
+Salasanasi
+Nimimerkki (valinnainen)
+Voit asettaa nimimerkin muistuttaaksesi itseäsi salasanan tarkoituksesta.
+Lisää tämä salasana
+Nimetön salasana
+Luotiin {{time}}
+Uusi salasana lisättiin.
+Mukautettu verkkotunnus
+Voit käyttää omaa verkkotunnusta https://publish.obsidian.md/{sivuston tunnus}-osoitteen sijaan.
+Estä hakukoneiden indeksointi
+Estää hakukoneita indeksoimasta sivustoasi.
+Määritä
+Määritä mukautettu verkkotunnus
+Mukautettu verkko-osoite
+Syötä sivustosi verkko-osoite ilman ”www.”-alkuosaa.
+Ohjaa mukautettuun verkkotunnukseesi
+Ohjaa publish.obsidian.md/id-osoitteen kävijät automaattisesti mukautettuun verkkotunnukseesi.
+Muuta verkkotunnusasetuksia
+Ohjesivuillamme on ohje {{link}}.
+oman verkkotunnuksen käyttöönottoon
+Käytössä {{site}}, raja {{limit}}.
+Lisää enemmän sivustoja
+Et ole ostanut sivustoja.
+Hanki sivusto
+Hallinnoi sivuston ”{{name}}” jakamista
+Tämä sivusto on jaettu seuraaville henkilöille:
+Tätä sivustoa ei ole jaettu kenellekään.
+Vireillä
+Poista käyttäjä
+Kutsu käyttäjä
+Syötä sähköpostiosoite...
+Syötä kutsuttavan henkilön sähköpostiosoite.
+Ota julkaisulisäosa käyttöön asetuksista -> Sisäänrakennetut lisäosat katsellaksesi sivustojen sisältöä.
+Sivustosi
+Sinulle jaetut sivustot
+Eroa sivun toimittajan tehtävästä
+Vahvista eroaminen
+Tämä poistaa sivuston sinulle jaetuista sivustoista, eikä tätä voi perua.
+Ota yhteyttä sivuston omistajaan, jos haluat taas sen toimittajaksi.
+Eroa
+Vertaa sivuston versioon
+Käytä sivuston versiota
+Vahvista paikallisen version korvaaminen
+Haluatko varmasti korvata paikallisen version?
+Sivuston versiota käytetään, ja paikallinen versiosi hylätään. Ota varmuuskopio, jos tarpeen.
+Jatka
+Paikallinen versio korvattiin sivuston versiolla.
+Avaa sivuston versio
+Avaa tiedosto
+Hallinnoi julkaisusuodattimia
+Sisällytetyt kansiot
+Näiden kansioiden alla olevat tiedostot valitaan automaattisesti, kun haluat julkaista muutoksia.
+ Nämä kansiot on tällä hetkellä sisällytetty:
+Pois jätetyt kansiot
+Näiden kansioiden alla olevia tiedostoja ei näytetä, kun haluat julkaista muutoksia. Tämä asetus ohittaa yllä olevan sisällytysasetuksen.
+{{folders}} on sisällytetty Obsidian Publishilla.
+{{folders}} on jätetty pois Obsidian Publishilla.
+Hallinnoi sisällytettyjä kansioita
+Hallinnoi pois jätettyjä kansioita
+Sisällytä kansio
+Voit sisällyttää olemassa olevia kansioita ja sellaisiakin kansioita, joita ei ole vielä luotu.
+Ota yhteyttä tukeen
+Hakemiston esikatselu
+Työtilat
+Tallentaa ja lataa työtilojen asetteluita.
+Lataa työtilan asettelu
+Hallinnoi työtilojen asetteluita
+Tallenna asettelu
+Tallenna asettelu ja lataa toinen
+Tallenna työtilan asettelu nimellä...
+Tallenna
+Lataa
+Poista asettelu
+Syötä nimi uudelle asettelulle.
+Asettelu tallennettiin.
+Tallennettuja asetteluita ei löytynyt.
+Muokattu {{time}}
+Syötä asettelun nimi...
+
+Synkronoi tiedostosi Obsidian Syncin avulla.
+Näytä nykyisen tiedoston versiohistoria
+Ota Sync käyttöön
+Avaa versiohistoria
+Näytä Sync-historia
+Avaa synkronointiloki
+Lataa enemmän
+Näytä muutokset
+Kopioi leikepöydälle
+Palauta
+Tämä versio on jo uusin versio.
+Versio {{time}} palautettiin
+Tiedosto poistettiin
+Poistettiin laitteelta {{ device }}
+Nimi muutettiin, ei enää ”{{filepath}}”
+Nimi muutettiin: “{{from}}” -> “{{to}}”
+Siirrettiin, ei enää sijainnissa ”{{from}}”
+Siirrettiin: ”{{from}}” -> ”{{to}}”
+1 versio
+{{revisions}} versiota
+laitteella {{device}}
+Tällä tiedostolla ei ole synkronointihistoriaa.
+Ei sisältöä
+Versiohistoriaa ei voitu ladata
+Asetustiedostot
+Poistetut tiedostot
+Versiohistoria
+Napsauta tiedostoa avataksesi sen historian.
+Luo etäholvi
+Syötä salasana.
+Holvin nimi ei voi olla tyhjä.
+Etäholvi ”{{name}}” luotiin.
+Etäholvit synkronoivat holvin laitteiden välillä.
+Holvin nimi
+Muistuttaa sinua holvin tarkoituksesta.
+Alue
+Automaattinen
+Valitse etäholvin synkronoivan palvelimen alue. Sen kannattaa olla sinua lähin alue. Tätä ei voi muuttaa luonnin jälkeen.
+Suurenmoinen holvi
+Salaus
+Salaus päästä päähän on turvallisin, mutta vaatii sinua muistamaan salasanan. Tavallinen salaus käyttää Obsidian-palvelun tarjoamaa salausavainta, joka suojaa tiedon matkalla sekä palvelimillamme.
+Tätä ei voi muuttaa luonnin jälkeen.
+Salaus päästä päähän
+Tavallinen salaus
+Salaussalasana
+Tätä salasanaa ei voi muuttaa luonnin jälkeen.
+Jos unohdat salasanan, menetät pääsyn kaikkiin etätietoihin pysyvästi.
+Tämä ei päde paikallisiin tietoihin.
+Etäholvi “{{name}}” on salattu. Syötä salasana.
+Salasanasi
+Avaa etäholvi
+Avaa holvi
+Etäholvisi
+Luotiin {{time}}
+Poista
+Muuta nimeä
+Muuta etäholvin ”{{name}}” nimeä
+Syötä etäholvillesi uusi nimi.
+Hallinnoi jakoa
+Vahvista holvin poistaminen
+Haluatko varmasti poistaa etäholvin ”{{name}}”?
+Kaikki palvelimilla olevat tiedot, kuten versiohistoria, poistetaan. Paikalliset tiedostosi säilytetään.
+Tätä ei voi perua.
+{{name}} on poistettu.
+Obsidian Sync: etäholvia ei ole enää olemassa.
+Yhdistä
+Katkaise yhteys
+
+Sinulla ei ole etäholveja.
+Sinulla ei ole Obsidian Sync -tilausta.
+Käy osoitteessa
+Tyypin {{type}} tiedostoja ei voi esikatsella.
+Luo uusi holvi
+Sync-loki
+Kaikki
+Virheet
+Ohitetut
+Yhdistämiskonfliktit
+Kopioi synkronointiloki
+Synkronointiloki kopioitiin.
+Yritä uudelleen
+Osto
+Synkronointipalveluristiriita havaittiin
+Varoitus: holvisi vaikuttaa käyttävän palvelua {{service}} synkronointiin. Obsidian Syncin käyttö yhdessä sen kanssa voi johtaa konflikteihin, tiedostojen vioittumiseen tai tietojen menettämiseen.
+Jos käytät iCloud Driveä, Dokumentit- ja Työpöytä-kansiosi saattavat synkronoitua iCloudin kautta. Tämä voi johtaa ongelmiin Obsidian Syncin kanssa.
+Etäholvi
+Valitse
+Hallinnoi
+Yhdistetty etäholviin ”{{name}}”.
+Ei yhteyttä mihinkään etäholviin.
+Syncin tila
+Obsidian Sync on keskeytetty.
+Obsidian Sync on käynnissä.
+Laitteen nimi
+Tämä nimi näkyy synkronointilokissa. Jos se jätetään tyhjäksi, oletusnimeä käytetään.
+Jatka
+Keskeytä
+Poistetut tiedostot
+Tarkastele ja palauta poistettuja tiedostoja.
+Sisäinen loki
+Tarkista synkronointitietoja virheenkorjausta varten.
+Näytä
+Usean tiedoston palautus
+Palauta tiedostoja
+Palauta {{count}} tiedosto
+Palauta {{count}} tiedostoa
+Palautetaan...
+Palautus valmis: {{succeeded}} onnistui ja {{failed}} epäonnistui.
+Tallennustilan käyttö
+Käytössä {{size}}, raja {{limit}}
+Holvin kokoa ei voitu määrittää.
+Holvin kokoa selvitetään...
+Holvin koko ylittää rajan
+Holvin koko on lähellä rajaa
+Näytä suurimmat tiedostot
+Nämä tiedostot vievät eniten tallennustilaa etäholvissa. Kun liitteitä on poistettu, vapauta tallennustilaa Siivoa-painikkeella.
+Lisää tallennustilaa
+Siivoa
+Piilota muutokseni
+Siivoaa poistetut liitteet pysyvästi pois, mikä vapauttaa tallennustilaa etäholvista.
+Siivous valmis.
+Estä lepotila
+Estää laitetta menemästä lepotilaan, kun synkronointi on kesken.
+Valikoiva synkronointi
+Pois jätettävät kansiot
+Estää joitain kansioita synkronoitumasta.
+ Nämä kansiot jätetään pois:
+Hallinnoi
+Synkronoi kuvat
+Synkronoi kuvatiedostot seuraavilla tiedostopäätteillä: {{extensions}}.
+Synkronoi äänitiedostot
+Synkronoi äänitiedostot seuraavilla tiedostopäätteillä: {{extensions}}.
+Synkronoi videot
+Synkronoi videotiedostot seuraavilla tiedostopäätteillä: {{extensions}}.
+Synkronoi PDF:t
+Synkronoi PDF-asiakirjat.
+Synkronoi muut tiedostot
+Synkronoi tiedostot, joiden tyyppiä Obsidian ei tue.
+Synkronoi holvin asetukset
+Asetusten versiohistoria
+Tarkastele asetusten versiohistoriaa tai palauta vanhoja asetuksia.
+Pääasetukset
+Synkronoi muokkaimen asetukset, tiedosto- ja linkkiasetukset, jne.
+Ulkoasuasetukset
+Synkronoi ulkoasuasetukset, kuten tumman tilan, käytössä olevan teeman ja käytössä olevat pätkät.
+Teemat ja pätkät
+Synkronoi ladatut teemat ja pätkät. Niiden käytössäolotila riippuu edellisestä asetuksesta.
+Pikanäppäimet
+Synkronoi mukautetut pikanäppäimet.
+Käytettävät sisäänrakennetut lisäosat
+Synkronoi käytössä olevat sisäänrakennetut lisäosat.
+Sisäänrakennettujen lisäosien asetukset
+Synkronoi sisäänrakennettujen lisäosien asetukset.
+Käytössä olevat yhteisön lisäosat
+Synkronoi käytössä olevat yhteisön lisäosat.
+Asennetut yhteisön lisäosat
+Synkronoi asennetut yhteisön lisäosat (.js-, .css-, ja manifest.json-tiedostot) ja niiden asetukset.
+Sync lataa vielä, päivitä sivu myöhemmin.
+Obsidian Sync on Obsidian-lisäpalvelu synkronointiin, joka salaa tiedot päästä päähän ja tukee versiohistoriaa.
+Kirjaudu Obsidian-tilillesi tai luo sellainen käyttääksesi Synciä.
+Nykyinen tiedosto
+Synkronoi muutokset
+Tänään
+Eilen
+Tällä viikolla
+Aiemmin
+Viimeksi synkronoitu
+{{count}} lisää
+Luo tili
+Kirjaudu
+Hallinnoi pois jätettäviä kansioita
+{{folders}} jätetään pois Obsidian Syncistä.
+Jätä kansio pois
+Voit jättää pois sekä olemassa olevia että vielä luomattomia kansioita.
+Poista pois jätettävistä
+Määrittele yhteys
+Yhdistetään...
+Yhdistäminen epäonnistui
+Etäholviin yhdistäminen epäonnistui.
+Olet yhdistänyt etäholviin ”{{name}}”.
+Aloita synkronointi
+Vahvista holvien yhdistäminen
+Paikallisessa holvissasi on jo muistiinpanoja.
+Jos yhdistät etäholviin ”{{name}}”, niiden muistiinpanot yhdistetään etäholviin. Jos muistiinpano on olemassa molemmissa, vain uusin versio säilytetään.
+Muuta asetusta ja käynnistä sovellus uudelleen kaikilla laitteilla, jotta se tulee voimaan.
+Etäholvi on jaettu seuraaville henkilöille:
+Etäholvia ei ole jaettu kenellekään.
+Kanssasi jaetut holvit
+Lähde holvista
+Vahvista lähtö holvista
+Tämä poistaa holvin kanssasi jaetuista holveista. Tätä ei voi perua.
+Ota yhteyttä holvin omistajaan, jos haluat siihen taas pääsyn.
+Lähde
+Etäholveja ei voitu ladata.
+Holviin yhdistämiseen tarvitaan Obsidian Sync -tilaus.
+Ota yhteyttä tukeen
+Jos kohtaat ongelmia Obsidian Syncin kanssa, ota meihin yhteyttä. Voimme auttaa! Tukeemme voi ottaa yhteyttä (englanniksi) sähköpostitse: support@obsidian.md.
+Kopioi virheenkorjaustiedot
+Sähköpostituki
+Synciä ei ole yhdistetty etäholviin.
+Olet luonut jo enimmäismäärän etäholveja. Jos haluat luoda enemmän holveja, poista jo yksi luomistasi holveista, tai vaihda tilisi tilausvaihtoehtoa.
+Päivitä holvia
+Päivitä holvin salausta
+Kaikille etäholveille on saatavilla uusi salausmenetelmä.
+Uudenna etäholvi
+Etäholvin määritykset
+Uudenna
+Tämä poistaa etäholvin ja luo sen uudelleen uudella salauksella. Paikallisiin tiedostoihin ei kosketa, mutta versiohistoria menetetään.
+Vahvista holvin uudennus
+Salauksen päivittämista varten kaikki holvin tiedot siirretään Obsidian Syncin palvelimille uudella salauksella. Tässä yhteydessä vanhalla menetelmällä salatut tiedot poistetaan pysyvästi, kuten tiedostojen versiohistoria.
+Tärkeää: suosittelemme vahvasti, että luot varmuuskopion holvisi tiedosta ennen kuin jatkat, jotta et mahdollisesti menetä tietoja.
+Päivityksen jälkeen sinun pitää yhdistää kaikki laitteesi etäholviin uudelleen.
+Holvin päivitys voi kestää jonkin aikaa. Sinun on pidäettävä Obsidian auki tällä laitteella, jotta tiedostot ja liitteet siirtyvät sinne. Tämä on parasta tehdä pääasialliselta laitteeltasi.
+Haluatko jatkaa?
+Holvia uudennetaan.
+Holvin uudennos on valmis.
+Jos ilmenee ristiriita
+Valitse, kuinka ristiriidat ratkaistaan, jos muistiinpanoa on muokattu usealta eri laitteelta samaan aikaan.
+Yhdistä automaattisesti
+Luo ristiriitatiedosto
+Tiedoston palautus
+Voit palauttaa viimeisimmät tilannevedokset, jotta vältyt vahingossa tapahtuvilta tietojen menetyksiltä. Tilannevedoksia tallennetaan vain Markdown-tiedostoille.
+Avaa paikallinen historia
+Tilannevedosten tallennusväli
+Vähimmäisväli minuutteina kahden tilannevedoksen välillä.
+Historian pituus
+Montako päivää tilannevedoksia säilytetään.
+Tilannevedokset
+Tarkastele ja palauta tallennettuja tilannevedoksia.
+Tarkastele
+Tyhjennä historia
+Poista kaikki tilannevedokset
+Tyhjennä
+Haluatko varmasti poistaa kaikki tilannevedokset? Huomaa, että vain tilannevedokset poistetaan. Kaikki holvissa olevat tiedostot säilyvät.
+Paikallinen historia tyhjennettiin
+Ei tilannevedoksia.
+Valitse tiedosto...
+Valitse tiedosto vasemmalta nähdäksesi tilannevedokset.
+Muistiinpanojen koostin
+Yhdistää ja pilkkoo muistiinpanoja.
+Vahvista tiedostojen yhdistäminen
+Kysyy ennen tiedostojen yhdistämistä.
+Teksti eriyttämisen jälkeen
+Mitä näytetään valitun tekstin tilalla sen eriyttämisen jälkeen.
+Linkitä uuteen tiedostoon
+Upota uusi tiedosto
+Tyhjä
+Pohjatiedoston sijainti
+Pohjatiedosto jota käytetään yhdistäessä tai eriyttäessä. Käytettävissä olevat muuttujat: {{content}} (sisältö), {{fromTitle}} (vanha otsikko), {{newTitle}} (uusi otsikko), {{date:MUOTO}} (päiväys), esim. {{date:YYYY-MM-DD}}.
+Yhdistä nykyinen tiedosto toiseen tiedostoon...
+Yhdistä tiedostoon...
+Tiedostoja ei löytynyt.
+siirtyy
+yhdistää
+luo uuden
+yhdistää ylös
+sulkee
+Valitse tiedosto johon yhdistetään...
+Yhdistä tiedosto
+Oletko varma että haluat yhdistää tiedoston ”{{file}}” tiedostoon ”{{destination}}”? ”{{file}}” tullaan poistamaan.
+Yhdistä
+Eriytä nykyinen valinta...
+Eriytä tämä otsikko...
+siirtää alas
+siirtää ylös
+Mallitiedoston lataaminen epäonnistui: mallitiedostoa ”{{template}}” ei löytynyt.
+Otsikon löytäminen epäonnistui
+Sisäinen verkkoselain
+Verkkohistoria
+Avaa ulkoiset linkit Obsidian-sovelluksen sisäisessä selaimessa.
+Avaa sisäinen verkkoselain
+Näytä historia
+Lukutila päälle/pois
+Kopioi osoite
+Poista historiasta
+Tyhjennä historia
+Avaa linkki
+Avaa linkki uudessa välilehdessä
+Avaa linkki oikealle
+Avaa linkki uudessa ikkunassa
+Avaa linkki oletusselaimessa
+Avaa linkki sisäisessa selaimessa
+Kopioi linkin osoite
+Luo kirjanmerkki linkkiin
+Hae “{{query}}”
+Eriytä valinta uuteen muistiinpanoon
+Kopioi
+Leikkaa
+Liitä
+Poista
+Valitse kaikki
+Tallenna holviin
+Tallenna kuva holviin
+Kopioi linkki kuvaan
+Takaisin
+Seuraava
+Lataa uudelleen
+Kirjanmerkki sivulle
+Avaa oletusselaimessa
+Kohdista osoitepalkki
+Hae verkosta
+Tyhjennä tiedot
+Evästeet
+Saattaa kirjautua ulos verkkosivuilta.
+Välimuisti
+Historia
+Kaikki selaimen tiedot
+Poistaa kaikki yllä mainitut tiedot, paikallisen tallennusdatan ja istunnot.
+Uusi selainpaneeli
+Sivustoa ei voitu ladata.
+Tarkista, että osoite on oikein.
+Hae verkosta
+Sisäisen selaimen tiedot
+Tyhjennä sisäisen selaimen tiedot
+Avaa ulkoiset linkit
+Avaa ulkoiset linkit Obsidian-sovelluksen sisäisessä selaimessa oletusselaimen sijasta.
+Kotisivu
+Oletuksena sisäisessä selaimessa avattava sivu
+Tallennettujen sivujen kansio
+Markdown-muodossa tallennetut verkkosivut tallennetaan tänne.
+Hakukone
+Osoitepalkin kautta haettaessa käytettävä hakukone.
+Mukautettu hakukone
+Kyselymuuttuja on %s.
+Mukautettu
+Estä mainokset
+Mainostenesto käyttää alla määriteltyjä suodatinlistoja kaikissa välilehdissä.
+Mainosteneston säännöt
+Yksi suodatinlistan osoite joka rivillä. Tämä asetus ei ole holvikohtainen.
+Mainosteneston sääntöjen päivitysväli
+Montako päivää päivitysten välillä. 0 poistaa päivitykset käytöstä. Tämä asetus ei ole holvikohtainen.
+Tyhjennä sisäisen selaimen tiedot
+Sisällön eriyttämisessä tapahtui odottamaton virhe.
+Eriytettävää sisältöä ei löytynyt.
+Valkotaulu
+Järjestele ja yhdistele muistiinpanoja loputtomalla valkotaululla.
+Lisää muistiinpano holvista
+Lisää mediaa holvista
+Lisää kortti
+Lisää verkkosivu
+Luo ryhmä
+Luo tietynkokoinen kortti
+Muunna tiedostoksi...
+Lisää muistiinpano holvista raahaamalla
+Lisää mediaa holvista raahaamalla
+Lisää kortti raahaamalla
+Muokkaa leimaa
+Poista leima
+Etsi tiedostoa
+Aseta väri
+Asettele
+Aseta vasemmalle
+Aseta keskelle
+Aseta oikealle
+Aseta ylös
+Aseta puoliväliin
+Aseta alas
+Hajauta vaakasuoraan
+Hajauta pystysuoraan
+Tasaa vaakasuoraan
+Tasaa pystysuoraan
+Järjestä riviin
+Järjestä sarakkeeseen
+Järjestä ruudukkoon
+Vie kuvana
+Siirry ryhmään
+Aseta tausta
+Muokkaa taustaa
+Korvaa tausta
+Poista tausta
+Kuvia ei löytynyt.
+Mediaa ei löytynyt.
+Vie ”{{title}}” PNG-tiedostona alla olevilla asetuksilla.
+Arvioidut kuvan mitat: {{dimensions}}
+Hajauta
+Tasaa
+Järjestä
+Aina
+Kohdistettaessa
+Ei koskaan
+Osiota ei löytynyt
+Hiiren rullan oletustoiminto
+{{key}}-yhdistelmän oletustoiminto
+Näytä valikko
+Oletussijainti uusille valkotauluille
+Uudet valkotaulutiedostot sijoitetaan tänne.
+Uusien valkotaulujen kansio
+Uudet valkotaulutiedostot sijoitetaan tähän kansioon.
+Näytä korttien nimet
+Kiinnitä ruudukkoon
+Kiinnittää kortit taustan ruudukkoon siirtäessä tai kokoa muuttaessa.
+Kiinnitä muihin esineisiin
+Kiinnittää kortit lähellä oleviin esineisiin siirtäessä tai kokoa muuttaessa.
+Sisällön piilotuskynnys loitontaessa
+Pienemmät arvot parantavat suorituskykyä, mutta korttien sisältö häviää nopeammin loitontaessa.
+Näytä logo
+Lisää Obsidian-logon vasempaan alakulmaan.
+Yksityinen tila
+Peittää valkotaululla olevan tekstin kuvasta.
+Suurennus
+Korkeammalla suurennuksella luodaan kuva, jolla on suuremmat mitat.
+Kuvassa näkyvä osa
+Päätä, näytetäänkö kuvassa koko valkotaulu vai pelkästään siitä paneelissa näkyvä osa.
+Koko taulu
+Vain näkyvä osa
+Peitä
+Pidä kuvasuhde
+Toista
+Uusi valkotaulu
+Kahdenna
+Poista
+Typistä osioon...
+Typistä lohkoon...
+Kiinnitä näkymä...
+Vaihda tiedosto...
+Vaihda osoite...
+Loitonna koko taulu näkymään
+Lähennä valintaan
+Lataa sivu uudelleen
+Seuraa yhteyttä
+Luo uusi valkotaulu
+Muunna tiedostoksi...
+upottaa osion
+upottaa lohkon
+siirtyy ryhmään
+Hae tiedostoa, otsikkoa tai lohkoa
+Syötä osoite
+Kohdetta ”{{linktext}}” ei löytynyt.
+Lisää tekstiä...
+Hae kirjoittamalla...
+Valkotaulun ohje
+Valkotaulun asetukset
+Näytä koko tiedosto
+Näytä oletusnäkymä
+Lukutila
+Salli muokkaus
+Liiku
+Liiku vaakasuunnassa
+Suurenna
+Valitse kaikki
+Valitse/poista valinnasta
+Kahdenna kortti
+Rajoita kortin liike akseliin
+Älä kiinnitä ruudukkoon raahatessa
+Poista kortti
+Raahaa alta tai kaksoisnapsauta
+Lisää/liikuta/valitse pitämällä pohjassa
+Liiku raahaamalla
+Suurenna nipistämällä
+Liiku raahaamalla välilyönti pohjassa
+Suurenna vierittämällä
+Nimetön ryhmä
+Viivan suunta
+Suuntaamaton
+Yksisuuntainen
+Kaksisuuntainen
+Kuva
+Tyyli
+Ryhmiä ei löytynyt
+Tyhjää valkotaulua ei voi viedä
+Valkotaulu havaitsi {{count}} valkotaulutiedostoon vaikuttavan nimimuutoksen, päivitetään...
+Valkotaulu havaitsi {{count}} valkotaulutiedostoon vaikuttavan nimimuutoksen, päivitetään...
+Valkotaulun korteista {{count}} päivitettiin
+Valkotaulun korteista {{count}} päivitettiin
+Kannat
+Luo kantoja eli eräänlaisia tietokantoja muistiinpanojen määreistä.
+Uusi kanta
+Lisää määre ”{{name}}”
+Lisää yhteenveto ”{{name}}”
+Lisää kaava
+Piilota kaikki
+Näytä tai piilota
+Poista kaava
+Oletusnäkymä
+Kahdenna näkymä
+Poista näkymä
+Poista yhteenveto
+Vie CSV-tiedosto...
+Luo uusi kanta
+Lisää uusi kanta
+Kopioi taulu leikepöydälle
+Vaihda näkymää
+Lisää näkymä
+Lisää kohde
+Lisää näkymä
+Lisää suodatin
+Lisää suodatinryhmä
+Näytä kaikki
+Näytä kaikki ({{count}})
+Lisää yhteenveto
+Piilota yhteenveto
+Kaikki näkymät
+Tämä näkymä
+Etsi tai luo...
+Johdannaismääreet
+Määreen tyyppi
+Piilota määre
+Näytä määre
+Muokkaa määrettä
+Muokkaa määrettä {{name}}
+Mukauta näkymää
+Asettelu
+Yleiset suodattimet
+Näytä suodattimet
+Näytä nimi
+Näytä
+Taulu
+Näyttönimi
+Yhteenvedon nimi
+Kaava
+Näkymät
+Järjestä
+Suodata
+Hae
+Määreet
+Uusi
+Näytetään {{count}}
+Uuden kohteen pohjatiedosto
+Uuden kohteen kansio
+Mikä tahansa seuraavista
+Kaikki seuraavista
+Ei mikään seuraavista
+ehdolla
+tai
+ja
+Määre
+Nimetön
+tiedosto
+tiedostonimi
+tiedoston kantanimi
+tiedoston koko nimi
+tiedoston polku
+kansio
+tiedostopääte
+luontiaika
+muokkausaika
+tiedostokoko
+tiedoston paluulinkit
+tiedoston linkit
+tiedoston upotteet
+tiedoston tunnisteet
+Lisää järjestys
+Ryhmitä
+Järjestä
+Rajoita tulosten lukumäärää
+A → Ö
+Ö → A
+Vanha → uusi
+Uusi → vanha
+
+
+Näkymän nimessä ei saa olla: 
+Tämänniminen näkymä on jo olemassa.
+Näkymän nimi ei saa olla tyhjä.
+Tätä suodatinta ei voi esittää suodatinavustimella.
+Suodatinta ei voitu jäsentää. Suodatinavustinta ei voi käyttää.
+Määreiden määritykset ovat virheellisiä.
+Määreen ”{{ name }}” määritys on virheellinen.
+Uutta kantanäkymää ”{{ viewId }}” ei voitu lisätä. Tämä tunnus on jo käytössä toisella näkymällä.
+Kantatiedostoa ei voitu jäsentää:
+Näkymää ”{{ view }}” ei löytynyt
+Kannan näkymätyyppi on tuntematon: {{ viewtype }}
+Näkymien eli arvon ”views” on oltava taulukko
+Esitysarvojen on oltava merkkijonoja. Määreen {{ key }} arvo ei ole.
+Arvon ”{{ key }}” on oltava tyyppiä {{ type }}
+Arvon ”filters” on oltava merkkijono tai olio
+”{{ conjunction }}” -suodattimen on oltava taulukko
+”filters” saa sisältää vain yhden ”and”-, ”or”- tai ”not”-avaimista.
+Suodatinta ei voitu suorittaa: {{ message }}
+Kaavan arvojen on oltava merkkijonoja. Määreen {{ key }} arvo ei ole.
+Johdannaismääreen ”{{ key }}” arvoa ei voitu laskea: {{ message }}
+Kyselyn muoto on virheellinen. Sen on oltava YAML-olio.
+”view”:n alkioiden on oltava YAML-olioita, mutta alkio {{ index }} ei ole
+”name” puuttuu tai on virheellinen näkymässä {{ index }}
+”{{ key }}” vaaditaan näkymässä ”{{ viewName }}”
+Arvon ”{{ key }}” on oltava tyyppiä {{ type }} näkymässä ”{{ viewName }}”
+Kaikkien arvojen ”{{ key }}” on oltava tyyppiä {{ type }} näkymässä ”{{ viewName }}”
+Suodattimia ei voitu järjestää näkymässä ”{{ viewName }}”: {{ message }}
+Kaava johtaa päättymättömään silmukkaan
+Virheellinen määre
+Muistiinpanoa ei näytetä, koska se ei täytä suodattimen ehtoja
+Edistynyt suodatin
+esim. 10
+Edistynyt suodatin
+Yksinkertainen suodatin
+Poista suodatin
+Ei mitään
+Luettelo
+Merkit
+Sisennysasetukset
+Määre-erotin
+Ympyrä
+Numero
+Ei mitään
+Kortit
+Kortin koko
+Kuvamääre
+Kuvan sovitus
+Peitä koko alue
+Näytä koko kuva
+Kuvasuhde
+Taulukko
+Piilota sarake
+Muokkaa määrettä...
+Muokkaa kaavaa...
+Oletusjärjestys
+Järjestys: A → Ö
+Järjestys: Ö → A
+Rivin korkeus
+Matala
+Keskikorkea
+Korkea
+Hyvin korkea
+Yhteenveto...
+Ryhmitä määreen mukaan
+Tyhjennä arvot
+Yhteenveto
+Kaavaa ”{{ formula }}” ei voitu jäsentää
+Funktiota ”{{ function }}” ei löytynyt
+Funktiota ”{{ function }}” ei löydy tyypille {{ type }}
+Funktiota ”{{ function }}” ei voi kutsua, argumentteja ei ole tarpeeksi.
+Funktiota ”{{ function }}” ei voi kutsua, argumentteja on liikaa.
+Tyyppivirhe funktiossa ”{{ function }}”, parametri ”{{ parameter }}”. Pitää olla {{ expected }}, mutta oli {{ given }}.
+Indeksillä {{ index }} ei voi hakea arvoa toisesta arvosta, joka ei ole taulukko
+Indeksiä {{ index }} ei löytynyt tyypin {{ type }} arvosta
+Korosta kaikki
+Tarkkeilla on väliä
+Koko sanat
+Pienoiskuvat
+Sisällysluettelo
+Näytä sivu sisällysluettelossa
+Näytä/piilota sivupalkki
+Edellinen sivu
+Seuraava sivu
+Sovita leveyteen
+Sovita korkeuteen
+Tallenna nykyinen sijainti asiakirjassa
+Kopioi merkintä
+Kopioi lainauksena
+Kopioi linkki valintaan
+Kopioi linkki merkintään
+Kopioi linkki osioon
+Kopioi linkki otsikkoon “{{title}}”
+Kopioi linkki sivulle {{page}}
+{{current}}/yli {{limit}} tulosta
+{{current}}/{{total}} tulos
+{{current}}/{{total}} tulosta
+Tämä PDF on suojattu salasanalla
+Väärä salasana
+Syötä salasana alle
+/ {{count}}
+({{current}} / {{count}})
+Yksi sivu
+Kaksi sivua (pariton)
+Kaksi sivua (parillinen)
+Sivupalkin asetukset
+Näyttöasetukset
+Sopeuta teemaan
+sivu {{page}}
+Sivu {{page}}
+Sivu {{page}}
+Sivu {{page}}
+[Merkintä: {{type}}]
+
+Luettelo
+Tuntematon
+Teksti
+Aliakset
+Tunnisteet
+Kansio
+Tiedosto
+Määre
+Päiväys
+Päiväys ja kellonaika
+Numero
+Tehtäväruutu
+Kirjoita [[
+linkittääksesi muistiinpanon
+sulkeaksesi
+Määreen tyyppi
+Järjestä
+Määreen nimi ei voi olla tyhjä.
+Määre on jo olemassa
+Virheellinen tunnisteen nimi
+Virheellinen luku
+Määreitä ei voitu lukea.
+Tyhjä
+Määreet
+Virheelliset määreet
+Näytä lähdekoodi
+Syntaksivirhe. Alkulehdet ovat virheellisiä.
+Lisää määre
+Tyyppi ei täsmää, pitäisi olla {{type}}
+Tyyppi ei täsmää
+Esitetäänkö tyyppinä {{type}}?
+Tyypin {{oldType}} tiedot eivät ole yhteensopivia. Ne mukautetaan uuteen muotoon.
+Sarake
+Rivi
+Uusi rivi alle
+Uusi sarake oikealle
+Uusi rivi ylle
+Siirrä riviä ylös
+Siirrä riviä alas
+Uusi sarake vasemmalle
+Siirrä saraketta vasemmalle
+Siirrä saraketta oikealle
+Kahdenna rivi
+Kahdenna sarake
+Poista rivi
+Poista sarake
+Tasaa vasemmalle
+Tasaa keskelle
+Tasaa oikealle
+Poista ruudut
+Tyhjennä ruudut
+Järjestä sarakeittain (A → Ö)
+Järjestä sarakeittain (Ö → A)
+Taulukko: {{command}}
+Nostolaatikon tyyppi
+Tietoa
+Tärkeää
+Vinkki
+Hyvä asia
+Kysymys
+Varoitus
+Lainaus
+Esimerkki
+Ei mitään
+Muu...
+Nostolaatikon tyyppi...
+
+{{count}} sana
+{{count}} sanaa
+{{count}} tulos
+{{count}} tulosta
+{{count}} merkki
+{{count}} merkkiä
+{{count}} linkki
+{{count}} linkkiä
+{{count}} tiedosto
+{{count}} tiedostoa
+{{count}} kansio
+{{count}} kansiota
+{{count}} paluulinkki
+{{count}} paluulinkkiä
+{{count}} välilehti
+{{count}} välilehteä
+{{count}} määre
+{{count}} määrettä
+{{count}} sijainti
+{{count}} sijaintia
+{{count}} lisäosa
+{{count}} lisäosaa
+{{count}} käytössä
+{{count}} pätkä
+{{count}} pätkää
+{{count}} teema
+{{count}} teemaa

@@ -1,0 +1,2517 @@
+Opties
+Plug-in
+Ingebouwde plug-ins
+Plug-inopties
+Voorbeeld: map 1/map 2
+Voorbeeld: map/notitie
+Deze optie aanpassen vereist een herstart om effect te hebben..
+
+Gedrag
+Scherm
+Spellingscontrole
+Activeert spellingscontrole. Dit werkt momenteel alleen voor Amerikaans Engels.
+Spellingscontroletalen
+Kies de talen die de spellingscontrole controleert.
+De standaard spellingscontrole detecteert automatisch de taal die gebruikt wordt op macOS.
+Woordenboek spellingscontrole
+Het woordenboek voor spellingscontrole is momenteel leeg.
+Titelregel
+Toon de bestandsnaam als een bewerkbare titelregel in het document.
+Leesbare regellengte
+Beperk maximale regellengte. Hierdoor past er minder op het scherm, maar het maakt langere alinea's leesbaarder.
+Strikt regeleinde
+Negeer in voorbeeldmodus enkele regeleindes als volgens de Markdownspecificaties. Zet dit af om enkele regeleindes te tonen in het voorbeeld.
+Eigenschappen in het document
+Kies hoe eigenschappen weergegeven worden in de editor. Selecteer "bron" om de eigenschappen als YAML weer te geven.
+Verborgen
+Zichtbaar
+Bron
+Automatisch haakjes toevoegen
+Haakjes en aanhalingstekens automatisch toevoegen.
+Automatisch Markdownsyntaxis toevoegen
+Automatisch symbolen voor vet- en cursief drukken toevoegen.
+Slim lijsten inspringen
+Automatisch inspringen en opmaken van lijsten.
+Koppen opvouwen
+Alles onder een kop kan opgevouwen worden.
+Opvouwen van inspringing
+Laat je een deel van hetzelfde ingesprongen stuk opvouwen, zoals een lijst.
+Standaardweergave voor nieuwe tabbladen
+De standaard weergave waarin een nieuw tabblad geopend wordt.
+Bewerkingsweergave
+Leesweergave
+Altijd de focus leggen op nieuwe tabbladen
+Wanneer je een link in een nieuw tabblad opent, schakel er dan onmiddellijk naar over.
+Standaard bewerkingsmodus
+De standaard bewerkingsmodus waarin een nieuw venster begint.
+Bronmodus
+Live-voorbeeld
+Regelnummers
+Toon regelnummer in de kantlijn.
+Inspringingshulplijnen
+Toon verticale verbindingslijnen tussen opsommingstekens voor visuele ondersteuning.
+Gebruik inspringen
+Gebruik inspringen om in te springen wanneer de"Tab"-toets gebruikt wordt. Schakel dit uit om spaties te gebruiken.
+Tab-breedte
+Het aantal spaties dat een tab breed is.
+Rechts-naar-links
+Stelt de tekstrichting van de te tonen notities in van rechts naar links.
+Automatisch HTML omzetten
+Zet automatisch HTML om naar Markdown wanneer de inhoud van een website via drag-and-drop wordt ingevoegd. Gebruik Ctrl/Cmd+Shift+V om te plakken zonder het om te zetten.
+Vim-sneltoetsen
+Hiermee gebruikt u Vim-sneltoetsen bij het bewerken van het bronbestand..
+Op mobiele apparaten is deze instelling per apparaat en wordt deze niet gesynchroniseerd via het configuratiebestand.
+Kluiscache opnieuw opbouwen
+Het opnieuw opbouwen van de cache kan enkele seconden tot enkele minuten duren, afhankelijk van de grootte van uw kluis.
+Opnieuw opbouwen
+Bevestig vim-modus invoeren
+Vim-modus is efficiënt voor tekstbewerking maar kan verwarrend zijn. Als je niet bekend bent met Vim, kan deze optie ervoor zorgen dat het lijkt alsof Obsidian niet meer werkt
+Om te bevestigen dat je weet hoe Vim werkt, voer hieronder de opdracht in om Vim te sluiten zonder op te slaan:
+Jouw antwoord
+Voer opdracht in...
+Laat me Vim aanzetten
+Opdracht is correct. Vim-modus is nu aan.
+Opdracht is incorrect. Vim-modus blijft uit om jou te beschermen.
+Voer de opdracht in om Vim-modus aan te zetten
+Bestanden & Links
+Bevestigen voor het verwijderen van bestanden
+Voorkom dat je per ongeluk bestanden verwijdert.
+Prullenbak
+Verwijderde bestanden
+Wat te doen met bestanden nadat ze zijn verwijderd.
+Verplaatsen naar de systeemprullenbak
+Verplaatsen naar de Obsidian-prullenbak (.trash map)
+Permanent verwijderen
+Bijlagen verwijderen bij het verwijderen van bestanden
+Verwijder automatisch bijlagen die aan het verwijderde bestand zijn gekoppeld als ze elders niet worden gebruikt.
+Altijd
+Elke keer vragen
+Nooit
+Standaard te openen bestand
+Kies welk bestand wordt geopend wanneer de app start.
+Laatst geopend
+Nieuwe notitie
+Specifiek bestand
+Dagelijkse notitie
+Te openen bestand
+Selecteer een specifiek bestand dat standaard wordt geopend.
+Altijd interne links bijwerken
+Of links automatisch moeten worden bijgewerkt na het hernoemen van een bestand of prompt.
+Standaardlocatie voor nieuwe notitie
+Locatie waar nieuwe notities moeten bewaard. Plugin-instellingen zullen dit overschrijven.
+Kluis root
+Dezelfde map waarin het bestand zich bevindt
+In de onderstaande map
+Map om nieuwe notities in te maken
+Nieuwe notities verschijnen in deze map. Plugin-instellingen zullen dit overschrijven.
+Gebruik [[Wikilinks]]
+Automatisch genereren van Wikilinks voor [[links]] en ![[images]] in plaats van Markdown links en afbeeldingen. Schakel deze optie uit om daarvoor in de plaats Markdown links te genereren.
+Toon alle bestandsextenties
+Toon bestanden met alle extensies zelfs als Obsidian ze niet standaard ondersteund, zodat je er een link naar kunt maken en kunt openen in Verkenner en Snel wisselen
+
+Notatie van een nieuwe link
+Welke links moeten worden ingevoegd bij het automatisch genereren van interne links.
+Kortste pad indien mogelijk
+Relatief pad naar bestand
+Absoluut pad in kluis
+Standaard locatie voor nieuwe bijlagen
+Waar nieuwe bijlagen geplaatst worden.
+Bijlagen
+In een submap in de huidige map
+Mappad voor bijlagen
+Nieuwe bijlages verschijnen hier. Deze omvatten oa afbeeldingen die zijn gemaakt via slepen en plaatsen of plakken, en audio-opnamen.
+Naam van submap
+Als je bestand in "vault/folder" staat, en je submapnaam is "attachments", dan worden bijlagen opgeslagen in "vault/folder/attachments".
+Uitgesloten bestanden
+Uitgesloten bestanden worden verborgen of zijn minder opvallend op verschillende plekken, zoals in snel wisselen, linksuggesties en grafiekweergave.
+Op het moment wordt er geen uitsluitingsfilter toegepast. Voeg er beneden één toe.
+Bestanden die onder de volgende mappen vallen worden uitgesloten:
+
+Filter mag niet leeg zijn
+Voer pad of "/regex/" in ...
+URI-callbacks toestaan
+Sta het gebruik van x-callback-url toe via x-success of x-error bij het afhandelen van Obsidian-URI’s.
+Uiterlijk
+Basisthema
+Kies het standaard kleurenschema voor Obsidian.
+Accentkleur
+Kies de accentkleur die de app gebruikt.
+Donker
+Licht
+Aan systeem aanpassen
+Lettertype
+Geavanceerd
+
+Interface-lettertype
+Stel het standaard lettertype in voor Obsidian.
+Zoomniveau
+Bepaalt het zoomniveau van de app.
+Lettertype voor tekst
+Stel het lettertype in voor de bewerkings–/ en leesweergave.
+Monospacelettertype
+Stel het lettertype in voor codesecties en voorwerk.
+ Huidig gebruikt lettertype: 
+ De volgende lettertypes worden gebruikt:
+Voer lettertypenaam in...
+Geen eigen lettertype in gebruik. Voeg hier beneden één toe.
+Het eerste lettertype van deze lijst dat beschikbaar is op je systeem wordt gebruikt.
+Dit lettertype is niet gevonden op je systeem.
+Dit lettertype is gevonden op je systeem.
+Lettertypenaam
+Openen communitythema's
+Bekijk en gebruik geweldige thema's die door de community zijn gemaakt.
+Bladeren
+Lettertypegrootte
+Lettertypegrootte in pixels voor de bewerk- en voorbeeldmodus.
+Snelle lettertypegrootte aanpassing
+Pas de lettertypegrootte aan met Ctrl + Scroll, or door de trackpad zoombeweging
+Thema's
+Beheer geïnstalleerde thema's en doorzoek cummunitythema's.
+Beheer
+Geen
+Systeemmenu's
+Appmenu's worden aangepast aan het besturingssysteem. Ze worden niet aangepast door het thema dat je selecteert.
+Laad thema's opnieuw
+Aangepaste CSS-thema's opnieuw geladen.
+Open de themamap
+CSS-fragmenten
+Geen CSS-fragmenten gevonden in de fragmentenmap.
+CSS-fragmenten worden opgeslagen in "{{path}}".
+Herlaad fragmenten
+Open de map met fragmenten
+Herladen CSS-fragmenten.
+Pas het CSS-fragment toe op "{{path}}".
+Geïnstalleerde thema's
+Schermopname niet beschikbaar
+Standaard
+Klik om te vergroten
+Bijwerken
+Actief
+Titelbalk stijl
+Bepaalt de vormgeving van de titelbalk van Obsidian Vensters. Vereist een volledige herstart om van kracht te worden.
+Verborgen (standaard)
+Obsidian titelbalk
+Oorspronkelijk frame
+Eigen appicoon
+Stel een eigen appicoon in
+Kies een eigen icoon
+Lintmenu
+Configureer welke opdrachten verschijnen in het lintmenu in die navigatiebalk.
+Lintitem voor snelle toegang
+Door op het lintitem in het navigatiemenu te tikken, wordt dit lintitem geactiveerd. Tikken en vasthouden geeft nog steeds het menu weer.
+Open lintmenu
+Configureer
+Lint tonen
+Toon een verticale werkbalk aan de zijkant van het venster.
+Andere lintitems
+Lint configuratie
+Kies welke items u actief wilt hebben in het lint. Slepen en neerzetten om de volgorde te wijzigen.
+Toon titelbalk van tabblad
+Toon de kop bovenaan elk tabblad.
+Zwevende navigatie
+Navigatieknoppen zweven boven de inhoud in plaats van vast te staan.
+Schuivende zijbalken
+Zijbalken schuiven naast de inhoud in plaats van erboven te zweven.
+Volledig scherm
+Verberg interface-elementen automatisch tijdens het lezen.
+{{count}} thema gevonden om te updaten.
+{{count}} thema's gevonden om te updaten.
+Controleer op updates
+Toon updates
+Update alles
+Huidige community thema's
+U hebt momenteel {{count}} thema geinstalleerd.
+U hebt momenteel {{count}} thema's geinstalleerd.
+Sneltoetsen
+Zoek sneltoetsen
+Toon {{count}} sneltoets. 
+Toon {{count}} sneltoetsen. 
+{{count}} opdracht met conflicten.
+{{count}} opdracht met conflicten.
+
+Sneltoets wissen
+Druk sneltoets in...
+Allemaal
+Niet toegewezen
+Toegewezen
+Door mij toegewezen
+Herstel standaard
+Pas deze opdracht aan
+Deze sneltoets conflicteert met "{{command}}"
+Deze sneltoets conflicteert met {{count}} andere opdrachten.
+Blanco
+Sleutelbos
+Geheimen
+Geheim toevoegen
+Geheim bewerken
+Geheim tonen
+Geheim verbergen
+
+Geheim
+geheim-naam
+Alleen kleine letters, cijfers en streepjes.
+Voer uw geheim in.
+Nooit geopend
+Bijwerken van geheim mislukt.
+Toevoegen van geheim mislukt.
+Er bestaat al een geheim met dit ID.
+Geheime waarde mag niet leeg zijn.
+Geheim-ID is ongeldig. Gebruik alleen kleine letters, cijfers en streepjes. Maximaal 64 tekens.
+Er zijn nog geen geheimen toegevoegd. Geheimen worden gebruikt om informatie zoals API-sleutels en wachtwoorden op te slaan die plug-ins kunnen gebruiken.
+Geheim selecteren
+Geheim zoeken...
+Geheim toevoegen...
+Koppelen...
+Geheimen worden zonder versleuteling opgeslagen omdat er op dit systeem geen geheimenopslag beschikbaar is.
+Geheimen zijn niet versleuteld
+Niet meer weergeven
+Versleuteling niet beschikbaar
+Versleuteling wordt geleverd door de geheimenopslag van je besturingssysteem. Zonder geheimenopslag worden je geheimen zonder versleuteling opgeslagen.
+Op Linux zijn ondersteunde geheimenopslagen onder andere:
+Over
+Commerciële licentie
+Licentiesleutel
+Uw licentiesleutel...
+Activeer licentie
+Activeer
+Onbekend
+Versie {{version}}
+Installatieprogramma-versie: {{version}}
+Lees het wijzigingslogboek.
+Om de nieuwste functies te ondersteunen en de nieuwste beveiligingspatches te ontvangen, heeft Obsidian een grote update van het installatieprogramma nodig. U moet Obsidian handmatig downloaden en opnieuw installeren.
+Een nieuwe versie is klaar om te worden geïnstalleerd. 
+Updates zijn uitgeschakeld.
+Herstart
+Controleer op updates
+Automatisch bijwerken
+Schakel dit uit om te voorkomen dat de applicatie automatisch bijwerkt.
+Waarschuwen bij trage start
+Diagnoseer problemen door te zien waardoor de app langzaam start.
+Nu controleren
+Opdrachtregelinterface
+Sta interacties met Obsidian toe via de opdrachtregel.
+CLI instellen om in de terminal te werken
+Registreer "obsidian" in PATH om het commando "obsidian" overal vanuit je terminal te kunnen gebruiken.
+Registreren
+Hulp krijgen
+Krijg hulp bij het gebruik van Obsidian.
+Openen
+Taal
+Wijzig de weergavetaal.
+Ontvang insider-builds
+Automatisch bijwerken naar insider-builds om nieuwe functies uit te proberen. Merk op dat deze builds geavanceerd en mogelijk minder stabiel zijn.
+Geavanceerd
+Hardwareversnelling
+Schakelt harwardversnelling in, dit gebruikt je grafische kaart om Obsidian een gladder uiterlijk te geven.
+Als je dit uitschakelt, neemt de prestatie van de app significant af.
+Configuratiemap overschrijven
+Gebruik een andere configuratiemap dan de standaard. Moet met een punt beginnen.
+Configuratielocatie moet een geldige mapnaam zijn die met een punt begint,
+Licentie
+Uw commerciële licentiesleutel is "{{key}}".
+Geregistreerd door "{{company}}" voor {{seats}} gebruikers. Geldig tot {{expiry}}.
+Valideren...
+Licentie ongeldig: 
+Verwijderen
+Catalystlicentie
+U heeft momenteel de {{tier}} Catalystlicensie. Bedankt voor uw steun!
+U heeft op dit moment geen Catalystlicentie. Een Catalystlicentie is een eenmalige donatie om de ontwikkeling van Obsidian te ondersteunen.
+
+Zie hier hoe je je eigen taal aan Obsidian kunt toevoegen.
+
+Uw account
+U bent momenteel ingelogd {{name}} ({{email}}).
+U bent momenteel niet ingelogd. Een account is alleen nodig voor Obsidian Sync, Obsidian Publish en Catalyst insider-builds.
+Upgraden
+Commerciële licentie
+Help Obsidian 100% door gebruikers ondersteund te houden.
+Aankoop
+Uitloggen
+Inloggen
+Aanmelden
+E-mailadres
+Uw e-mailadres...
+Volledige naam
+Wachtwoord
+Uw wachtwoord...
+Wachtwoord vergeten?
+Inloggen
+E-mailadresveld mag niet leeg zijn.
+E-mailadresveld is niet geldig.
+Wachtwoordveld mag niet leeg zijn.
+Inloggen mislukt, controleer uw e-mail en wachtwoord nogmaals.
+Registreren mislukt
+Heeft u geen account? 
+Schrijf je nu in
+zescijferige tweestapsverificatiecode
+De tweestapsverificatiecode bestaat uit zes cijfers.
+Tweestapsverificatiecode is onjuist, controleer je verificatie-app.
+Plug-in lijst
+Doorzoek kern plug-ins
+Filter plug-ins op naam of beschrijving.
+Doorzoek plug-ins...
+Externe plug-in
+Beperkte modus
+Beperkte Modus staat uit. Zet deze aan om het gebruik van communityplug-ins uit te schakelen.
+Aanzetten
+Automatisch controleren op plug-inupdates
+Controleer periodiek op updates voor plug-ins.
+Communityplug-ins
+Blader door en installeer plug-ins van derden die zijn gemaakt door onze geweldige community.
+Doorbladeren
+Verlaat beperkte modus
+Communityplug-ins, zoals elke andere software die u installeert, kan mogelijk gegevensintegriteit en beveiligingsproblemen veroorzaken.
+Beveiliging van plug-ins is belangrijk voor ons. Dit is wat we doen:
+Ondanks onze inspanningen is er nog steeds een kleine kans dat een communityplug-in zich misdraagt.
+Eerste codebeoordeling
+Plugins ondergaan een eerste codebeoordeling door ons team voordat ze in de winkel verschijnen..
+
+De meeste plug-ins zijn open source op GitHub, dus kunt u de code zelf op GitHub inspecteren.
+Peer-audit
+We hebben een grote gemeenschap van ontwikkelaars die op elkaar letten.
+Meldingsmechanisme
+We volgen en verwijderen defecte plug-ins na gebruikersmelding.
+Wilt u de beperkte modus afsluiten om communityplug-ins in te schakelen? We raden ten zeerste aan om back-ups van uw gegevens te maken voordat u dit doet.
+Meer informatie over plug-inbeveiliging
+Schakel communityplug-ins in
+Vertrouw je de auteur van deze kluis?
+Je opent deze kluis voor de eerste keer en er worden enkele plug-ins meegeleverd.
+Als u deze kluis van iemand anders heeft verkregen, houd er dan rekening mee dat plug-ins van onbekende oorsprong beveiligingsrisico's kunnen vormen.
+Als u de auteur van deze kluis niet volledig vertrouwt, raden we u aan in de beperkte modus te blijven, zodat de plug-ins in deze kluis niet worden uitgevoerd.
+Auteur vertrouwen en plug-ins inschakelen
+Blader door de kluis in de beperkte modus
+Vindt communityplug-ins...
+Het laden van communityplug-ins is mislukt.
+Geinstalleerd
+Installeren
+Activeer
+Deactiveer
+Kopieer link om te delen
+Doneer
+Geen resultaten gevonden.
+Geen recente bestanden gevonden. Typ om te zoeken...
+Kan het plug-inoverzicht niet laden.
+Versie: {{version}}
+ (momenteel geïnstalleerd: {{version}})
+Door 
+Opslagplaats: 
+Laatste update: 
+Toon de laatst update
+Deze plug-in ondersteund jouw apparaat niet.
+Bijwerken
+Deze plug-in heeft geen README-bestand.
+Plug-in installeren "{{name}}"...
+Kan plug-in niet installeren "{{name}}".
+Plug-in geïnstalleerd "{{name}}".
+Verwijderen van plug-in “{{id}}” mislukt.
+Uitschakelen van plug-in “{{id}}” mislukt.
+Geïnstalleerde plug-ins
+Laad plug-ins opnieuw
+Opnieuw laden vam plug-ins van derden.
+Installatie verwijderen
+Verwijder de geinstalleerde plug-in
+Weet u zeker dat u deze plug-in wilt verwijderen? Hierdoor wordt de map van de plug-in ook verwijderd.
+Open plug-inmap
+Controleer op updates
+Alles updaten
+Huidige plug-ins
+Controleren op updates...
+Je hebt op dit moment {{count}} plug-in geïnstalleerd.
+Je hebt op dit moment {{count}} plug-ins geïnstalleerd.
+Geen updates voor plug-ins gevonden.
+{{count}} plug-in met beschikbare update gevonden.
+{{count}} plug-ins met beschikbare updates gevonden.
+Update naar versie {{version}}
+Doorzoek geïnstalleerde plug-ins
+Filter geïnstalleerde plug-ins op naam of beschrijving.
+Doorzoek geïnstalleerde plug-ins...
+Toon alleen geïnstalleerde
+Doneer om {{name}} te ondersteunen
+Plug-inontwikkelaars zijn vrijwilligers uit de gemeenschap die geweldige dingen maken uit passie. Als u deze plug-in nuttig vindt, overweeg dan om de ontwikkeling ervan te financieel te ondersteunen.
+100% van uw bijdrage gaat naar de ontwikkelaar van de plug-in; Obsidian krijgt er niets van. Het financieringsplatform dat de ontwikkelaar kiest, kan kosten in rekening brengen.
+Bedankt voor uw gulle steun!
+Steun deze plug-in:
+{{pluginCount}} weergegeven:
+Meest gedownload
+Recent uitgebracht
+Recent bijgewerkt
+Alfabetisch
+Om {{time}} bijgewerkt
+Mobiele werkbalk
+Configureer mobiele snelle actie
+Configureer welke opdracht uitgevoerd wordt wanneer men van boven naar beneden veegt. De huidig ingestelde opdracht is "{{command}}".
+Actie niet geconfigureerd
+Configureer
+Selecteer snelle actie...
+Geen snelle acties
+Beheer werkbalk opties
+Voeg interne link toe
+Voeg ingeloten link toe.
+Voeg een label toe
+Koppen aan-/uitzetten
+Doorstreping aan-/uitzetten
+Markering aan-/uitzetten
+Code aan-/uitzetten
+Blokcitaat aan-/uitzetten
+Wiskundeinvoer in lopende tekst aan-/uitzetten
+Wiskundesectie aan-/uitzetten
+Voeg Markdown link toe
+Ongenummerde lijst aan-/uitzetten
+Genummerde lijst aan-/uitzetten
+Lijst laten inspringen
+Lijst niet laten inspringen
+Ongedaan maken
+Opnieuw uitvoeren
+Verplaats inlasteken naar boven
+Verplaats inlasteken naar beneden
+Verplaats inlasteken naar links
+Verplaats inlasteken naar rechts
+Ga naar de eerste regel
+Ga naar de laatste regel
+Schakel toetsenbord aan/uit
+Cofigureer mobiele werkbalk
+Toegevoegde opties
+Meer werkbalk opties
+Bijlage invoegen
+Zoek
+Vervang
+Sluit het zoeken af
+Volgende
+Vorige
+Alles zoeken
+Vervangen
+Vervang alles
+Typ #
+linken van kop
+Typ ^
+linken van blok
+Typ |
+om de weergavetekst te wijzigen
+Weergavetekst
+Kop
+geen overeenkomst gevonden
+Afbeeldingsgrootte: {{size}}px breed
+om te accepteren
+Nieuwe voetnoot...
+Geen suggesties...
+Toevoegen aan woordenboek
+Link aanpassen
+Tag bewerken
+Dit blok aanpassen
+Voetnoot en verwijzing verwijderen
+Grootte herstellen
+Afbeelding verwijderen
+Geen kop
+Kop {{level}}
+Exporteer naar PDF
+Exporteer "{{filename}}" naar PDF met de instelling hierbeneden.
+Paginagrootte
+Bestandsnaam als titel toevoegen
+Liggend
+Marge
+Standaard
+Minimaal
+Geen
+Verklein percentage
+Exporteer naar PDF
+Volg link
+Link openen
+Zoek label
+Niet gevonden:
+Kan “{{subpath}}” niet vinden in {{file}}
+Open in standaard app
+De zijbalk is leeg, probeer hier een venster naartoe te slepen.
+Uitbreiden
+Inklappen
+Bestand opslaan mislukt "{{filepath}}". {{message}}.
+Laden van plug-in “{{plugin}}” mislukt
+Plug-in “{{plugin}}” heeft een fout veroorzaakt tijdens het laden
+Kan “{{filepath}}” niet openen
+Kan locatie “{{href}}” niet openen
+Geen bestand
+"{{file}}" is ergens anders gewijzigd, automatisch veranderingen samenvoegen.
+Kluisen beheren...
+Hulp
+Instellingen
+Sleep om te herschikken
+Standaard weergavemodus ingesteld op leesmodus.
+Standaard weergavemodus ingesteld op editor.
+Om deze functie te gebruiken, moet u deze opnieuw installeren met het nieuwste installatieprogramma dat beschikbaar is op onze website.
+Trage opstarttijd gedetecteerd.
+Deze functie is alleen beschikbaar in de desktopapp.
+Standaardinstellingen terugzetten
+Kopieer naar klembord
+Kopiëren
+Naar klembord gekopieerd
+{{item}} gekopieerd naar je klembord
+Kopiëren naar het klembord mislukt
+
+Er is een fout opgetreden bij het renderen van het codeblok.
+Bestand "{{path}}" geopend
+Bestand "{{name}}" niet gevonden.
+Onbekende URI-actie: {{action}}
+Verwijderen
+Obsidian indexeert de kluis...\nDit gebeurt maar één keer.\nBepaalde functies zijn nog niet beschikbaar tot dat dit afgerond is.
+Sommige functies zijn mogelijk niet beschikbaar totdat dit is voltooid.
+Indexering afgerond.
+Dit is een sandbox-kluis.\nWijzigingen die u in deze kluis aanbrengt, gaan verloren.
+IndexedDB is vereist voor deze functie, maar is momenteel uitgeschakeld.
+Als je iOS gebruikt in Lockdown-modus, sluit Obsidian dan uit in de instelling "Webbrowsen configureren" van Lockdown-modus.
+Enter om te creëren
+Recentere versie beschikbaar
+Info voor het debuggen
+Meer informatie
+Niet nu
+Toevoegen
+Beheer
+Nieuw tabblad
+Werkbalk verbergen
+Dit tabblad is momenteel bezet, probeer het later opnieuw
+Vormgeven
+Alinea
+Invoegen
+Link invoegen
+Externe link toevoegen
+Kader toevoegen
+Horizontale lijn
+Codesectie
+Wiskundesectie
+Tabel
+Voetnoot
+Vet
+
+Opmerking
+Markering
+Cursief
+Doorhalen
+Wiskunde
+Ongenummerde lijst
+Takenlijst
+Genummerde lijst
+Kop {{level}}
+Hoofdtekst
+Vormgeving verwijderen
+Citaat
+Leeg
+Er is geen bestand geopend
+Maak een nieuw bestand
+Ga naar Bestand
+Zie recente bestanden
+Sluiten
+Alle “{{id}}”-tabbladen sluiten ({{count}})
+Plug-in niet meer actief
+De plug-in die dit venster ({{type}}) heeft geopend is weg.
+
+Geen release notes beschikbaar voor {{version}}.
+Kon release notes voor {{version}} niet laden.
+Uitgebracht op {{date}}
+Wat is nieuw in {{version}}
+Huidige modus: bewerken
+Huidige modus: lezen
+Werkbalk
+Linkerzijbalk
+Rechterzijbalk
+Klik om te bewerken
+Klik om te lezen
+{{key}}+klik om als nieuw tabblad te openen
+Druk op {{key}}+C om de bron te kopiëren
+Vinden...
+Vervangen...
+Bewerken
+Verwijderen
+Verwijderen uit lijst
+Hernoemen
+Voorbeschouwen
+Meer opties
+Sluiten
+Alles sluiten
+{{count}} tabblad sluiten
+{{count}} tabbladen sluiten
+Sluit alle anderen
+Tabbladen sluiten na
+Vastzetten
+Losmaken
+Tabblad loskoppelen
+Linken met tabblad...
+Bronweergave
+Leesweergave
+Voeg bestandseigenschap toe
+Verwijder bestand
+Maak dit bestand aan
+Link openen
+Open in nieuw tabblad
+Open aan de rechterkant
+Kopieer URL
+Kopiëren
+Knippen
+Plakken
+Pad kopiëren
+Afbeelding kopiëren
+als Obsidian-URL
+vanaf systeemroot
+vanaf kluismap
+Plak als platte tekst
+“{{selection}}” opzoeken
+Selecteer alles
+Kop hernoemen...
+Hernoem dit blok ID...
+Open in nieuw venster
+Verplaats naar nieuw venster
+In browser openen
+Stapel tabbladen
+Losmaken stapel tabbladen
+Gelinkte weergave openen
+Klik om uit te breiden
+Klik om in te klappen
+
+Nog niet aangemaakt, selecteer om te aan te maken
+Versie
+Maak een lokale kluis aan
+Open map als kluis
+Kies een bestaande map met Markdown-bestanden.
+Maak een nieuwe kluis aan
+Maak een nieuwe Obsidian-kluis aan in een map.
+Verbinden met Obsidian Sync
+Stel een gesynchroniseerde kluis in met een bestaande externe kluis.
+Kluisnaam
+Kies een naam voor je geweldige kluis.
+Locatie
+Selecteer een plek voor je nieuwe kluis.
+Je nieuwe kluis zal geplaatst worden in: 
+Toon kluis in systeemverkenner
+Toon kluis in Finder
+Hernoem kluis...
+Kluis-id kopiëren
+Er bestaat al een kluis met deze naam.
+Kan een kluis niet verplaatsen naar een subfolder van zichzelf.
+Kan een kluis die nu geopend is niet hernoemen.
+Hernoemen van kluis mislukt.
+Kluis succesvol hernoemd.
+Kluis verplaatsen...
+Selecteer bestemmingsfolder
+Er bestaat al een kluis op de bestemming.
+Kan een kluis die nu geopend is niet verplaatsen.
+Verplaatsen van kluis mislukt.
+Kluis succesvol verplaatst.
+Verwijderen uit lijst
+Snelle start
+Openen
+Bladeren
+Verbinden
+Aanmaken
+Terug
+Naam van de kluis mag niet leeg zijn.
+De kluisnaam mag niet eindigen met een punt.
+Kies alstublieft een geldige map.
+Kluis creëren mislukt.
+Kon geen kluis maken op de opgegeven locatie. Controleer de locatie en de machtigingen.
+Openen mislukt.
+Een open kluis kan niet worden verwijderd.
+Hulp krijgen
+E-mailadres
+Uw e-mailadres...
+Wachtwoord
+Uw wachtwoord...
+Inloggen
+Installatie
+Maak een gesynchroniseerde kluis aan op dit apparaat.
+Dit is een kluis-op-afstand waarvan u de eigenaar bent.
+Dit is een kluis-op-afstand die met u gedeeld wordt.
+Je gedachten zijn van jou.
+gesynchroniseerd
+niet gesynchroniseerd
+Geen
+Aanbevolen
+Obsidian slaat notities op je apparaat op, zodat je er snel en privé toegang toe hebt, zelfs offline.\nJe gegevens worden opgeslagen in een beveiligde lokale map die een **kluis** heet.
+Een kluis maken
+Mijn bestaande kluis gebruiken
+Om je notities op andere apparaten te openen, moet je sync instellen.
+Omdat Obsidian je notities op je apparaten opslaat, moet je sync instellen als je je notities op een andere telefoon of computer wilt openen.\nJe kunt sync nu instellen, of gewoon beginnen met schrijven en het later instellen.
+Sync instellen
+Skip for now
+Overslaan
+Choose a name for your vault.
+Kluis maken
+Sync instellen
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Sync-versleuteling
+End-to-end-encryptie
+Biedt de sterkste beveiliging maar vereist dat je je versleutelingswachtwoord veilig bewaart
+Standaard versleuteling
+Gebruikt een door Obsidian beheerde sleutel om je gegevens te beschermen tijdens overdracht en op onze servers.
+Sync-instellingen
+Wil je bij het synchroniseren met dit apparaat mappen of bestanden uitsluiten?
+Beginnen met synchroniseren
+Maak een Obsidian-account aan of log in
+Registreren
+Inloggen
+E-mail opnieuw verzenden
+Je hebt bestaande Sync-kluizen
+Wil je een nieuwe kluis maken of verbinden met een bestaande gesynchroniseerde kluis?
+Nieuwe Sync-kluis maken
+Een bestaande kluis kiezen
+Log Out
+Wachtwoord vergeten
+Kluisnaam
+Kluislocatie
+Apparaatopslag
+Hiermee zijn Obsidian-gegevens toegankelijk voor andere apps.
+Vereist extra machtigingen.
+Appopslag
+Je gegevens zijn niet toegankelijk voor andere apps.
+Android verwijdert je gegevens als je Obsidian verwijdert.
+Je nieuwe kluis wordt geplaatst in {{vaultLocation}}
+Regio
+Kies een serverregio bij jou in de buurt om het synchroniseren sneller te maken.
+Versleutelingssleutel
+Dit wachtwoord kan later niet worden gewijzigd. Als je je wachtwoord vergeet, zijn alle externe gegevens op Sync-servers voor altijd ontoegankelijk.
+Mijn kluis
+Automatisch
+Kies een kluis
+Je account **{{email}}** heeft bestaande kluizen waarmee je verbinding kunt maken.
+Inloggen op je Obsidian-account
+Wachtwoord vergeten
+Wachtwoord opnieuw instellen
+We hebben een e-mail naar {{email}} gestuurd om je wachtwoord opnieuw in te stellen.
+Kies hoe je je notities wilt synchroniseren
+Om Obsidian op je apparaten te gebruiken, moet je je gegevens synchroniseren.
+Naadloos op elk apparaat en besturingssysteem.
+Beveiligd met de sterkste end-to-end-encryptiestandaard.
+Vereist een Obsidian-account.
+Alleen voor iOS en macOS.
+Standaard niet versleuteld.
+Vereist plug-ins of tools van derden.
+Mogelijk standaard niet versleuteld.
+Obsidian Sync gebruiken
+iCloud gebruiken
+Use Third-party sync
+Andere synchronisatiemethoden
+Ondersteunde synchronisatiemethoden gebruiken
+Waar bevindt je kluis zich?
+Overig
+Synchronisatie van derden
+Op dit apparaat
+Verbinden met iCloud
+Verbinden met andere synchronisatiedienst
+Verbinden met Obsidian Sync
+Map kiezen
+Andere synchronisatiemethoden
+Obsidian ondersteunt officieel twee synchronisatiemethoden: **Obsidian Sync** en **iCloud**.\nMaar omdat Obsidian je controle geeft over je gegevens, zijn er andere synchronisatieopties die je kunt gebruiken.\nDeze opties omvatten plug-ins van derden en andere tools waarvoor mogelijk een meer geavanceerde set-up nodig is.\nOm een alternatieve synchronisatiemethode te gebruiken, **maak een kluis** en volg de instructies van de plug-in of de synchronisatieprovider van derden.
+Voer je e-mail in
+Je e-mail is vereist om een Obsidian-account aan te maken.
+Voer je naam en wachtwoord in
+Verbind met Obsidian Sync
+Je ontvangt binnenkort een e-mail naar **{{email}}** met instructies om verbinding te maken met Obsidian Sync.
+Je iCloud-kluis is niet gedetecteerd. Dit kan komen door een van de volgende redenen:
+Je kluis staat op een ander iCloud-account dan waarmee je momenteel op dit apparaat bent ingelogd.
+Je kluis is niet opgeslagen in de Obsidian-map op het hoogste niveau van je iCloud Drive.
+iCloud wordt niet ondersteund
+iCloud-synchronisatie is alleen beschikbaar op Apple-apparaten. Als je kluis momenteel via iCloud synchroniseert, lees dan hoe je je kluis kunt migreren naar een andere synchronisatiedienst.
+Bestandstoegang toestaan
+Je wordt ingelogd...
+Kluizenaam is vereist
+Nieuwe bevestigingsmail verzonden.
+E-mail opnieuw verzenden mislukt.
+Kluislocatie moet een map zijn.
+Welkom
+Dit is jouw nieuwe *kluis*.\n\nMaak een notitie over iets, [[verwijs ergens naar]], of probeer [iets te importeren](https://help.obsidian.md/Plugins/Importer)!\n\nAls je klaar bent kun je deze notitie verwijderen en de kluis naar jouw smaak inrichten.
+Voeg hier de link in
+Voeg hier links in
+Verplaats naar "{{folder}}"
+Geef bestand een ster
+Geef bestanden een ster
+Open in huidig tabblad
+Open als nieuw tabblad
+Maximaliseren
+Minimaliseren
+Formaat van venster herstellen
+Venster sluiten
+Ga terug
+Ga verder
+Obsidian laden...
+Er is een fout opgetreden tijdens het laden van Obsidian.
+App herladen
+Herlaad app in veilige modus
+Een andere kluis openen
+Plug-ins laden...
+Plug-in “{{plugin}}” doet er lang over om te laden. 
+Kluis laden...
+Kluis laden mislukt: 
+Cachegeheugen laden...
+Werkblad laden...
+Importeren naar kluis
+Tekst aan bestand toevoegen:
+Kies een bestand om in te voegen
+Tekst invoegen in {{filename}}
+Link invoegen in {{filename}}
+Tabbladoverzicht weergeven
+Importeren...
+Importeren geslaagd
+Importeren van bestand {{filename}} is mislukt
+Opnieuw indrukken om af te sluiten.
+
+Vind je Obsidian fijn? Help ons door een beoordeling te geven.
+De app beoordelen
+Sluiten
+Configuratiebestanden bijgewerkt vanuit iCloud, opnieuw laden vereist
+Opnieuw laden
+Officiële ondersteuningswebsite
+Lees de officiële ondersteuningshandleiding van Obsidian, in verschillende talen beschikbaar.
+Bezoeken
+Discord-chat
+Discord is de beste app om te chatten met andere ervaren Obsidiangebruikers van overal ter wereld.
+Aanmelden
+Officieel forum
+Help elkaar, vraag functieuitbereidingen aan, meld bugs en voer uitgebreide discussies over kennismanagement.
+Sandbox-kluis
+Experimenteer met verschillende functies. Wijzigingen die u in deze kluis aanbrengt, gaan verloren.
+Sla huidig bestand op
+Bijlagen downloaden voor huidig bestand
+Volg link onder de aanwijzer
+Open de link onder de aanwijzer in een nieuw tabblad
+Open de link onder de aanwijzer rechts
+Open de link onder de aanwijzer in een nieuw scherm
+Focus op de bovenste tabbladgroep
+Focus op de onderste tabbladgroep
+Focus op de linker tabbladgroep
+Focus op de rechter tabbladgroep
+Speld aan-/uitzetten
+Rechts opdelen
+Beneden opdelen
+Gestapelde tabbladen aan-/uitzetten
+Leesbare regelbreedte in-/uitschakelen
+Regelnummers in-/uitschakelen
+Navigeer terug
+Navigeer vooruit
+Lichte/donkere modus in-/uitschakelen
+Thema veranderen...
+Kluis wijzigen...
+Kluis openen...
+Kluizen beheren
+Doorzoek huidig bestand
+Doorzoek & vervang in huidig bestand
+Voeg bestandseigenschap toe
+Naam (A tot Z)
+Naam (Z tot A)
+Alias toevoegen
+Verwijder alle bestandseigenschappen
+Open instellingen
+Help openen
+Wissel bewerk- en leesmodus
+Wissel live-voorbeeld- en bronmodus
+Verwijder huidig bestand
+Nieuw tabblad
+Nieuw venster
+Prullenbak weergeven
+Alle tabbladen sluiten
+Huidig tabblad sluiten
+Sluit andere tabbladen in tabbladgroep
+Alle andere tabbladen sluiten
+Deze tabbladgroep sluiten
+Linker zijbalk openen/sluiten
+Werkbalk in-/uitschakelen
+Rechter zijbalk openen/sluiten
+Standaardweergave voor nieuwe tabbladen wisselen
+Aanwijzer boven toevoegen
+Aanwijzer beneden toevoegen
+Focus op de editor
+In–/uitvouwen van eigenschappen in dit document
+In-/uitvouwen van de huidge regel
+Alle koppen en lijsten invouwen
+Alle koppen en lijsten uitvouwen
+Meer invouwen
+Minder invouwen
+Omwisselen met regel boven
+Omwisselen met regel beneden
+Kop verwijderen
+Kopniveau {{level}} instellen
+Selectie vet maken
+Selectie cursief maken
+Selectie markeren
+Opmerking plaatsen bij selectie
+Vormgeving verwijderen
+Link invoegen
+Spellingscontrole aan-/uitzetten
+Alinea verwijderen
+Checkliststatus wisselen
+Opsommingstekens wisselen
+Kader invoegen
+Codesectie invoegen
+Wiskundesectie invoegen
+Horizontale lijn invoegen
+Tabel invoegen
+Voetnoot invoegen
+Titel van het bestand bewerken
+Kopieer bestandspad
+Huidig bestandspad kopiëren vanaf de systeemroot
+Kopieer Obsidian-URL
+Exporteer naar PDF
+App herladen zonder op te slaan
+Tabblad sluiten ongedaan maken
+Contextmenu laten zien onder de cursor
+Info voor debuggen laten zien
+Open sandbox-kluis
+Scherm altijd vooraan aan-/uitzetten
+Inzoomen
+Uitzoomen
+Standaardzoomniveau
+Wissel bewerk- en voorbeeldmodus
+Move current pane to new window
+Open current pane in new window
+Huidige bestand hernoemen
+Ga naar het vorige tabblad
+Ga naar het volgende tabblad
+Ga naar het laatste tabblad
+Ga naar tabblad #{{n}}
+Toon de versie-informatie
+Dit heeft betrekking op {{links}} in {{files}}.
+{{links}} in {{files}} bijgewerkt.
+Links bijwerken
+Wil je de interne links die naar dit bestand verwijzen bijwerken?
+Altijd bijwerken
+Slechts eenmaal
+Niet bijwerken
+Weet je zeker dat je "{{filename}}" wilt verwijderen?
+Het wordt verplaatst naar de systeemprullenbak
+Het wordt verplaatst naar de Obsidian-prullenbak. Deze bevindt zich in de verborgen ".trash" map in je kluis.
+Het bestand wordt permanent verwijderd.
+Deze map is niet leeg.
+Als je doorgaat worden alle bestanden in deze map verwijderd.
+Map verwijderen
+Verwijderen
+Niet opnieuw vragen
+Er is momenteel {{count}} link die naar dit bestand verwijst.
+Er zijn momenteel {{count}} links die naar dit bestand verwijzen.
+Bestand verwijderen
+Bijlagen downloaden
+Er zijn geen externe bijlagen in deze notitie.
+{{count}} bijlage gedownload.
+{{count}} bijlagen gedownload.
+{{count}} bestand bijgewerkt.
+{{count}} bestanden bijgewerkt.
+Wijzigingen aan {{count}} bestand teruggedraaid.
+Wijzigingen aan {{count}} bestanden teruggedraaid.
+Geen internetverbinding
+Laden...
+Beheren
+Weergeven
+Bevestigen
+Annuleren
+Overslaan
+Downloaden
+Voltooid
+Opslaan
+Stoppen
+Wijzigen
+Doorgaan
+Kiezen
+Opnieuw proberen
+
+Ongedaan maken
+PDF voorbereiden...
+Bestand hernoemen
+Bestandsnaam
+Nieuwe naam
+Fout
+Geselecteerd
+Bestand hernoemen geslaagd.
+Kan notities niet samenvoegen: {{message}}
+Het bestand of de map “{{path}}” bestaat niet.
+Kop mag niet leeg zijn
+Blok-ID mag niet leeg zijn
+Blok-ID mag alleen alfanumerieke tekens of een streepje bevatten
+Kop hernoemen
+Blok-id hernoemen
+Bestandsbijlagen verwijderen?
+Deze bijlage wordt niet meer in notities gebruikt. Wil je deze verwijderen?
+Deze {{count}} bijlagen worden niet meer in notities gebruikt. Wil je ze verwijderen?
+Bestandsstructuur
+Galerij
+Notitie aanmaken
+Rechts een nieuwe notitie aanmaken
+Nieuw tabblad
+Nieuw scherm
+Snel openen...
+Kluis openen...
+Tabblad sluiten
+Scherm sluiten
+Zoeken
+Vervangen
+Bijschrift
+Markdown-link
+Koppeling
+Kop {{level}}
+Geen kop
+Citaat
+Exporteer naar PDF
+Voeg bijlage toe...
+Codesectie
+wiskundesectie
+Tabel
+Voetnoot
+Inline titel
+Regelnummers
+Ongenummerde lijst
+Genummerde lijst
+Takenlijst
+Vet
+
+Opmerking
+Cursief
+Wiskunde
+Arceren
+Doorstrepen
+Opmerking
+Vouwen
+Alles invouwen
+Alles uitvouwen
+Meer invouwen
+Minder invouwen
+Bronweergave
+Leesweergave
+Info voor debuggen laten zien
+Sandbox-kluis openen
+Verplaatsen naar nieuw venster
+Vorige
+Volgende
+Linker zijbalk openen/sluiten
+Rechter zijbalk openen/sluiten
+Werkbalk
+Rechts opdelen
+Beneden opdelen
+Versie-informatie
+Plug-ins
+Verkenner
+Zie alle bestanden in je kluis.
+Open verkenner
+Toon verkenner
+Maak nieuwe notitie aan
+Nieuwe map maken
+Nieuwe notitie in huidig tabblad aanmaken
+Rechts een nieuwe notitie aanmaken
+Huidig bestand automatisch tonen
+Alles inklappen
+Alles uitklappen
+Nieuwe notitie
+Nieuwe map
+Sorteervolgorde aanpassen
+Toon bestand in verkenner
+Toon het actieve bestand in verkenner
+Dupliceer huidig bestand
+Huidig bestand dupliceren
+Verplaats bestand naar een andere map
+Nieuwe map met selectie ({{count}} item)
+Nieuwe map met selectie ({{count}} items)
+Verplaats bestand naar ...
+Verplaats map naar ...
+Verplaats {{count}} objecten naar...
+Typ een mapnaam
+Geen mappen gevonden.
+navigeren
+verplaatsen
+aanmaken
+afwijzen
+Sorteer op bestandsnaam (A tot Z)
+Sorteer op bestandsnaam (Z tot A)
+Sorteer op recente wijziging (nieuw naar oud)
+Sorteer op recente wijziging (oud naar nieuw)
+Aangemaakt (oud naar nieuw)
+Aangemaakt (nieuw naar oud)
+Nieuwe notitie
+Nieuwe map
+Hernoemen
+Verwijderen
+Dupliceren
+Dupliceren
+Bestandsnaam mag de volgende tekens niet bevatten: 
+Links werken niet met bestandsnamen die de volgende tekens bevatten: 
+Er is al een bestand met deze naam
+Bestandsnaam mag niet leeg zijn.
+Bestandsnaam mag niet met een punt beginnen.
+Laatste wijziging om {{time}}
+Aangemaakt om {{time}}
+Naamloos
+Naamloos
+Bijlagen worden vanaf nu opgeslagen in "{{path}}".
+Zoeken
+Zoeken naar trefwoord in alle notities.
+In alle bestanden zoeken
+Resultaten samenvouwen
+Hoofdletters moeten overeenkomen
+Leg zoekterm uit
+Toon meer context
+{{count}} resultaat
+{{count}} resultaten
+Zoekinstellingen
+Typ om te beginnen met zoeken...
+Match tekst: 
+Match regex: 
+Bevat exacte tekst: 
+Groter dan: 
+Kleiner dan: 
+Is waar
+Is onwaar
+Is leeg
+Heeft eigenschap:
+Match alle: 
+Match één van: 
+Exclusief: 
+Hoofdlettergevoelig
+Niet hoofdlettergevoelig
+Match bestandspad: 
+Match bestandsnaam: 
+Match bestandsinhoud: 
+Match taak: 
+Match taak (onvoltooid): 
+Match taak (voltooid): 
+Match regel: 
+Match blok: 
+Match sectie: 
+Match label: 
+Geen match gevonden.
+... en {{count}} verdere match.
+... en {{count}} verdere matches.
+Zoekresultaten kopiëren
+Resultaten kopiëren
+Resultaten naar het klembord gekopieerd.
+Toon bestandspad
+Toon volledig bestandspad in plaats van slechts de bestandsnaam.
+Stijl van de link
+Verander elk bestandsresultaat in een link (optioneel).
+Geen
+Wiki-link
+Markdown-link
+Opsommingstekens
+Voeg een opsommingsteken toe aan elk bestandsresultaat (optioneel).
+Geen
+Liggend streepje (-)
+
+Genummerd
+Zoekterm verwijderen
+Zoekopties
+Eigenschappen
+Labels
+Meer lezen
+Geschiedenis
+Zoekgeschiedenis verwijderen
+match bestandspad
+match bestandsnaam
+zoek naar labels
+zoek trefwoorden op dezelfde regel
+zoek trefwoorden in dezelfde sectie.
+gelijke eigenschappen
+Zoeken naar "{{keyword}}"
+In map zoeken
+Snel wisselen
+Spring naar elk bestand zonder je toetsenbord lost te laten. Ctrl/Cmd+O om te activeren.
+Wisselen
+Open snel wisselen
+navigeren
+openen
+om in een tabblad te openen
+om rechts te openen
+aanmaken
+afwijzen
+om te selecteren
+Geen notities gevonden. Druk op Enter om een nieuwe te maken.
+Typ de bestandsnaam om ernaar te wisselen of te creëren...
+Druk op Enter om te creëren
+Nog niet aangemaakt, selecteer om aan te maken
+Toon alleen bestaande
+Toon links naar bestanden die nog niet zijn aangemaakt wel of niet.
+Toon bijlagen
+Toon bijlagebestanden als afbeeldingen, video's en PDF's.
+Toon alle bestandsextenties
+Toon alle bestanden, inclusief degene die Obsidian niet kan openen. Het bestand wordt geopend in de standaard applicatie voor de bestandsextensie.
+Grafiek weergave
+Zie een grafische weergave van de links tussen de notities.
+Open grafiek weergave
+Open locale grafiek
+Kopieer schermopname
+Grafiek van {{displayText}}
+
+Doorzoek bestanden...
+Diepte
+Toon nodes zoveel links verwijderd
+Buur-links
+Toon links tussen buren.
+Uitgaande links
+Toon links naar andere bestanden
+Ingaande links
+Toon links van andere bestanden
+Labels
+Labels zijn gelinkt aan de bestanden die de labels bevatten
+Bijlagen
+Toon bijlagen in bestanden besloten
+Alleen bestaande bestanden
+Wanneer actief worden links naar niet-bestaande bestanden niet getoond
+Wezen
+Toon bestanden zonder links naar andere bestanden
+Weergave
+Pijlen
+Toon pijlen indien ingezoomd.
+Tekstvervagingsdrempel
+Node grootte
+Link dikte
+Krachten
+Centrale kracht
+Link kracht
+Link afstand
+Weerstandskracht
+Open grafiekinstellingen
+Schermopname naar het klembord gekopieerd.
+Groepen
+Voer vraag in...
+Groep verwijderen
+Nieuwe groep
+Klik om de kleur te veranderen\nSleep om groepen te ordenen
+Start grafiek time-lapse animatie
+Start time-lapse animatie
+Animeer
+Terugverwijzing
+Toon aantal terugverwijzingen in de statusbalk.
+Open terugverwijzingen
+Toon het terugverwijzingenvenster
+Open terugverwijzingen naar het huidige bestand
+Terugverwijzingen in het document aan-/uitzetten
+Teruglinks in document
+Gelinkte vermeldingen
+Geen terugverwijzingen gevonden.
+Ongelinkte vermeldingen
+Toon zoekfilter
+Koppeling
+Terugverwijzingen voor {{displayText}}
+Geen ongelinkte vermeldingen gevonden.
+
+Terugverwijzing in document
+Toon terugverwijzingen in document standaard wanneer nieuwe vensters geopend worden.
+Uitgaande verwijzingen
+Toon uitgaande verwijzingen en detecteer ongelinkte vermeldingen van andere notities in de huidige notitie.
+Open uitgaande verwijzingen
+Toon uitgaande verwijzingen venster
+Uigaande verwijzingen van het huidige bestand openen
+Uitgaande verwijzingen van {{displayText}}
+Koppelingen
+Geen verwijzingen gevonden.
+Ongelinkte vermeldingen
+Verwijs naar dit bestand
+Nog niet aangemaakt
+Labelvenster
+Labels
+Toont al je labels en hoe vaak ze voorkomen.
+Toon label venster
+Geen labels gevonden.
+Tagnaam (A tot Z)
+Tagnaam (Z tot A)
+Aantal vermeldingen (hoog naar laag)
+Aantal vermeldingen (laag naar hoog)
+Toon ingebedde labels
+Alles inklappen
+Alles uitklappen
+Voetnotenweergave
+Voetnoten
+Toon een lijst met voetnoten uit de huidige notitie.
+Voetnoten tonen
+Geen voetnoten gevonden.
+Eigenschappenvenster
+Toon de metadata van je bestanden.
+Alle eigenschappen
+Bestandseigenschappen
+Bestandseigenschappen van {{displayText}}
+Toon alle eigenschappen
+Toon bestandseigenschappen
+Eigenschap verwijderen
+Eigenschappen verwijderen
+Automatisch
+Automatisch ({{type}})
+Geen eigenschappen gevonden.
+Ongeldige eigenschappen.
+Eigenschap (A tot Z)
+Eigenschap (Z tot A)
+Aantal (groot naar klein)
+Aantal (klein naar groot)
+Eigenschap “{{oldKey}}” en “{{newKey}}” samenvoegen?
+Indien er conflicten ontstaan worden de waardes samengevoegd of wordt de waarde van “{{oldKey}}” gebruikt.
+Alles inklappen
+Alles uitklappen
+Bestandseigenschappen openen
+Dagelijkse notitie openen
+Paginavoorbeeld
+Bekijk een voorbeeld van een notitie wanneer de cursor boven een interne link zweeft. Ctrl/Cmd + zweven in editor-modus.
+“{{linktext}}” kon niet worden gevonden.
+"{{linktext}}" is nog niet aangemaakt. Klik om aan te maken.
+Voetnoot {{id}} niet gevonden. Klik om te maken.
+Editor
+Voorbeschouwing
+Zoeken, terugverwijzingen, en uitgaande verwijzingen
+Tabbladkop
+Vereis {{key}} om de paginavoorvertoning te activeren bij zweven.
+Bladwijzers
+Voeg vaak gebruikte bestanden en zoekopdrachten toe als bladwijzers.
+Toon bladwijzers
+Alles inklappen
+Maak een bladwijzer van het actieve tabblad...
+Nieuwe bladwijzer groep
+Bladwijzer...
+Bladwijzer toevoegen
+Bladwijzer bewerken
+Bewaar blok onder aanwijzer...
+Bewaar kop onder aanwijzer...
+Bewaar huidige zoekopdracht...
+Bladwijzer voor huidig bestand verwijderen
+Bewaar {{count}} tabblad...
+Bewaar {{count}} tabbladen...
+Bewaar alle tabbladen...
+Bewaar deze grafiek...
+Bewaren
+Bewaard
+{{count}} bladwijzer
+{{count}} bladwijzers
+Geen bladwijzers gevonden
+Kan bladwijzers niet laden.
+Het databestand is corrupt.
+Naamloze groep
+Naamloze grafiek
+Bewerken...
+Verwijderen
+Hernoemen
+Dit blok in bladwijzers opslaan...
+Deze kop in bladwijzers opslaan...
+Geen zoekopdracht om te bewaren.
+Pad
+Term
+Titel
+Bewaar groep
+Bladwijzer
+Aangepaste CSS
+Lees en pas “obsidian.css” toe in de kluismap.
+Community-thema's
+Data van het community-thema ophalen...
+
+Alleen donkere thema's
+Alleen lichte thema's
+Gebruik
+Dit thema niet meer gebruiken
+Installeren en gebruiken
+Bijwerken
+Dit thema heeft geen README-bestand.
+Thema verwijderen
+Op GitHub bekijken
+Kon community-thema's niet laden, controleer je netwerkverbinding.
+Je gebruikt nu {{title}} als je CSS-thema.
+Het thema {{title}} is verwijderd.
+Het thema {{title}} is bijgewerkt.
+Geinstalleerd
+Verouderd
+Alle updaten
+Community-thema's laden mislukt.
+Geen thema-updates gevonden.
+{{count}} thema gevonden om te updaten.
+{{count}} thema's gevonden om te updaten.
+Thema "{{name}}" installeren is mislukt.
+Thema "{{name}}" is succesvol geïnstalleerd.
+Thema "{{name}}" installeren...
+Toon {{themeCount}}:
+Update beschikbaar
+Opdrachtenpaneel
+Typ een opdracht om het te gebruiken. De gebruikersinterface gebruiken of de sneltoets onthouden is niet nodig.
+Open opdrachtenpaneel
+navigeren
+gebruiken
+afwijzen
+Geen opdrachten gevonden.
+Typ een opdracht...
+Bewaarde opdrachten
+Markdown-indeling importeren
+Converteer Markdown van andere apps naar de Obsidian-indeling.
+Open Markdown-importeur
+Roam Research-labelcorrectie
+Converteert "#label" en "#[[label]]" naar "[[label]]".
+Roam Research-markeringcorrectie
+Converteert "^^markering^^" naar "==markering==".
+Roam Research-takencorrectie
+Converteert "{{[[Taak]]}}" naar "[ ]".
+Bear-markeringcorrectie
+Converteert "::markering::" naar "==markering==".
+Zettelkastenverwijzingencorrectie
+Corrigeert "[[UID]]" verwijzingen naar de volledige "[[UID bestandsnaam]]".
+Zettelkastenverwijzingen mooier maken
+Corrigeert "[[UID]]" verwijzingen en maakt ze mooier "[[UID bestandsnaam|bestandsnaam]]".
+Migratie van voormetadata
+Migreer voormetadata-tags, aliassen en cssclasses naar het strikte formaat dat vereist is door Obsidian v1.9+
+Waarschuwing: de import converteer alle bestanden in je kluis, niet alleen het huidige bestand.
+Je bestanden worden overschreven. Maak een back-up van al je bestanden voordat je ze converteert.
+Conversie starten
+Stoppen
+Ga terug
+Klaar
+Verwerken...
+Annuleren...
+Voltooid!
+Verwerkte bestanden
+Aangepaste bestanden
+Totaal aantal vervangingen
+Mislukt
+Dagnotities
+Open de dagnotitie van vandaag, of maak er een aan als er nog geen is.
+Vandaag
+Open de notitie van vandaag
+Open vorige dagnotitie
+Open volgende dagnotitie
+Voeg tekst in in de dagnotitie
+Voeg verwijzing in in de dagnotitie
+Dagnotitie aanmaken mislukt. "{{format}}" is geen geldige bestandsextensie.
+Dagnotitie aanmaken mislukt. Map "{{folderOption}}" niet gevonden.
+Dagnotitie aanmaken mislukt. Sjabloonbestand "{{template}}" niet gevonden.
+Er is geen dagnotitie voor de huidige.
+Er is geen dagnotitie na de huidige.
+Datumindeling
+Kies hoe dagelijkse notities in je kluis worden benoemd.
+Aangepast formaat
+Aangepast
+Ongeldig datumformaat
+Map voor dagelijkse notities niet gevonden.
+Voor meer syntaxis, zie: 
+formatteer referentie
+Dit is hoe het eruit zal zien: 
+Nieuwe bestandslocatie
+De maplocatie voor de nieuwe dagnotitie.
+Sjabloonbestandslocatie
+De bestandslocatie voor te gebruiken sjablonen.
+Uniekenotitiesmaker
+Maak notites aan met unieke tijdsstempel in de bestandsnaam, voor bijvoorbeeld zettelkasten of kaartenbak.
+Uniek
+Maak een nieuwe unieke notities aan
+Nieuwe unieke notitie
+Unieke interne koppeling toevoegen
+Nieuwe bestandslocatie
+De maplocatie voor de nieuwe unieke notitie.
+Unieke notities maken mislukt. Map "{{folderOption}}" is niet gevonden.
+Sjabloonbestandslocatie
+Het bestand om als sjabloon te gebruiken.
+Voorbeeld: map1/notitie
+Unieketijdsstempelindeling
+Unieke notitie aanmaken mislukt. Sjabloonbestand "{{template}}" niet gevonden.
+Unieke notitie aanmaken mislukt met de indeling "{{format}}
+Willekeurige notitie
+Opent een willekeurige notitie. Handig om te herzien en te ontdekken.
+Willekeurig
+Open een willekeurige notitie
+Overzicht
+Toont een overzicht van het huidige bestand of een gelinkt venster.
+Open overzicht
+Toon overzichtsvenster
+Open het overzicht van het huidige bestand
+Overzicht van {{displayText}}
+Geen koppen gevonden.
+Automatisch scrollen naar huidige sectie
+Woordenaantal
+Toon woordenaantal in de statusbalk
+Dia's
+Presenteer vanuit Markdown. Gebruik "---" om dia's te onderscheiden.
+Start presentatie
+Geluidsrecorder
+Neem geluid op en sla het op als bijlage.
+Start geluidsopname
+Stop geluidsopname
+Start/stop opname
+Toegang tot de microfoon was ontzegd, schakel dit in vanuit het instellingenvenster.
+Geef toestemming om de microfoon te bruiken om een opname te starten.
+Er is geen microfoon aangesloten.
+Open in standaardapplicatie
+Voeg knop toe om het huidge bestand in de standaardapplicatie te openen.
+Open in standaardapplicatie
+Delen
+Toon in map
+Toon in Finder
+Sjablonen
+Voeg sjablooninhoud in vanuit een map met sjabloonbestanden.
+Sjabloon invoegen
+Voeg huidige datum in
+Voeg huidige tijd in
+Sjabloonmaplocatie
+Bestanden in deze map zijn beschikbaar als sjablonen.
+Datumindeling
+{{date}} in het sjabloon wordt door deze waarde vervangen.
+Je kunt ook {{date:YYYY-MM-DD}} gebruiken om de indeling eenmalig te overschrijven.
+Tijdsindeling
+{{time}} in het sjabloon wordt door deze waarde vervangen.
+Je kunt ook {{time:HH:mm}} gebruiken om de indeling eenmalig te overschrijven.
+navigeren
+sjabloon invoegen
+afwijzen
+Geen sjablonen gevonden
+Sjablonen ophalen mislukt. Sjabloon map is ongeldig.
+Sjablonen ophalen mislukt. Map "{{folderOption}}" werd niet gevonden.
+Sjabloon invoegen mislukt, de eigenschappen van het sjabloonbestand konden niet worden gelezen.
+Sjablonen ophalen mislukt. Geen sjabloonmap ingesteld.
+Typ de naam van een sjabloon...
+Doorzichtig venster
+Schakel een doorzichtig effect in om het gevoel van diepte te verbeteren. Werkt het best in de donkere modus. Niet ondersteund op Linux.
+Slash-opdrachten
+Schakel de mogelijkheid in om slash-opdrachten te gebruiken in de editor door de voorwaardse slash te typen.
+Editorstatus
+Voegt een statusbalkonderdeel toe om de huidige editormodus te tonen en veranderen.
+Lezen
+Bronweergave
+Live-voorbeeld
+Publiceer
+Publiceer je notities met Obsidian Publish.
+Publiceer veranderingen
+Huidig bestand publiceren
+Je hebt toegang tot het internet nodig om veranderingen te publiceren.
+Obsidian Publish is een betaalde uitbereidende service waarmee je je notities rechtstreeks vanuit Obsidian online kunt publiceren.
+Log in of maak een nieuw Obsidian-account aan om te beginnen met publiceren.
+Je hebt nog geen Obsidian Publishabonnement.
+Kopen
+Sites beheren
+Je hebt geen sites.
+Kiezen
+Site-ID aanpassen
+Site verwijderen
+Weet je zeker dat je deze site wilt veranderen?
+Dit verwijdert je site direct en voor altijd.
+Site "{{site}}" verwijderen bevestigen
+Site-ID
+Je site is te vinden via https://publish.obsidian.md/{site id}. Dit kan je later aanpassen. Alleen kleine letters, nummers en streepjes zijn toegestaan.
+Kies een site-id
+Aanmaken
+Site-ID mag alleen kleine letters, nummers en streepjes bevatten.
+Deze site-ID is in gebruik, probeer een andere.
+Dat was een probleem voor het aanmaken van je site.
+Site-instellingen
+Algemeen
+Onderdelen
+Uiterlijk
+Leeservaring
+Andere site-instellingen
+Site-naam
+Naam van je gepubliceerde site. Dit wordt getoon in de pagina titel van je site.
+Naam van je site.
+Homepagina van je site
+De eerste pagina de gebruiker ziet als je op je gepubliceerde site beland
+Kies een gepubliceerd bestand
+
+Kies een afbeeldingsbestand als het logo voor je site.
+Een geüploade afbeelding in je bestand...
+Site-samenwerking
+Beheer samenwerkingen voor deze site.
+Navigatie aanpassen
+De volgorde van navigatieonderdelen overschrijven en pagina's en mappen verbergen.
+Volgorde van navigatieonderdelen
+Pagina's en mappen uit de navigatie verbergen
+Klik met rechtermuisknop en selecteer "Hide" om specifieke pagina's niet te tonen in de navigatie van de website te tonen. De pagina's blijven wel beschikbaar via links en de directe URL's.
+Toon verborgen onderdelen
+Beheren
+Navigatie
+Sleep om de volgorde van de navigatieonderdelen aan te passen op je Publish-website aan te passen.
+In navigatie verbergen
+Beheren
+Thema
+Kies het standaard kleurenschema voor je site.
+Aan systeem aanpassen
+Licht/donker schakelaar
+Laat de bezoeker zelf wisselen tussen het lichte en donkere thema.
+Toon navigatie
+Toon een lijst van alle gepubliceerde pagina's aan de linkerkant van je gepubliceerde site.
+Toon zoekbalk
+Toon een zoekbalk bovenaan de navigatie waarmee bezoekers naar pagina's en koppen op je site kunnen zoeken.
+Toon grafiekweergave
+Toon een kleine, locale grafiek op elke pagina.
+Toon inhoudstabel
+Toon het koppenoverzicht op elke pagina.
+Toon terugverwijzingen
+Toon terugverwijzingensectie onderaan elke pagina.
+Gebruik schuivende vensters
+Open pagina's in nieuwe vensters rechts. Maakt horizontaal scrollen door vensters mogelijk.
+Toon zwevend voorbeeld
+Toon paginavoorbeeld wanneer de cursor over links zweeft.
+Paginatitel verbergen
+De paginatitel verbergen. Handig als jij je eigen koppen aan het begin van elke pagina hebt.
+Leesbaare regellengte
+Limiteer de maximale regellengte. Er past minder inhoud op het scherm, maar het maakt lange paragrafen beter leesbaar.
+Wachtwoorden
+Beperk toegang tot je site met wachtwoorden.
+Google Analytics traceringscode
+Configureer Google Analytics voor je site. Alleen beschikbaar voor bezoekers vanaf jouw aangepaste domein URL. Controleer alsjeblieft eerst de plaatselijke wetten en regelingen.
+Beheren
+Site-instellingen opslaan
+Bijgewerkte opties voor jouw site.
+Terug
+Publiceren naar
+Site veranderen
+Voeg gelinkte toe
+Voeg alle bestanden toe waarnaar verwezen wordt door de huidige selectie bestanden
+{{count}} gelinkte bestand is toegevoegd.
+{{count}} gelinkte bestanden zijn toegevoegd.
+Verander site-opties
+Er werden geen veranderingen gevonden.
+Veranderingen
+Onveranderd (selecteer om te veranderen)
+ geselecteerd
+Selecteer alles
+navigatieonderdelen
+Alles deselecteren
+Nieuw
+Publiceren
+Je hebt geen toestemmingen om naar de huidge site te publiceren.
+Selecteer op z'n minst één bestand alsjeblieft.
+Veranderingen uploaden
+Klaar
+Stoppen
+Aan het uploaden
+Te publiceren
+Te verwijderen
+Gepubliceerd
+Verwijderd
+Mislukt
+Afgebroken
+Veranderen
+Het kan een paar minuten duren voordat de veranderingen getoond worden op je site. Als je je laatste aanpassingen niet kunt zien, probeer dan het cachegeheugen van je browser op te ruimen.
+Je kunt site hier bezoeken: 
+Er ging iets fout. Controleer de ontwikkelaarsconsole voor details.
+Een netwerkfout heeft plaatsgevonden.
+Wachtwoorden beheren
+Wachtwoord toevoegen
+Nieuw wachtwoord
+Je site heeft op dit moment geen wachtwoorden. Iedereen kan het bezoeken.
+Je website is beveiligd met een wachtwoord. Als je meerdere wachtwoorden hebt, dan kunnen bezoekers je website bezoeken door er één van in te voeren.
+Wachtwoord
+Een hash van je wachtwoord wordt veilig opgeslagen. Als het wachtwoord eenmaal ingesteld is, dan kan het niet ontdekt worden als tekst.
+Je wachtwoord
+Roepnaam (optional)
+Stel een naam in als herinnering waarvoor of voor wie het wachtwoord is.
+Wachtwoord toevoegen
+Wachtwoord zonder naam
+Aangemaakt op {{time}}
+Nieuw wachtwoord toegevoegd.
+Aangepast domein
+Gebruik je eigen domein in plaats van de https://publish.obsidian.md/{site id} URL.
+Zoekmachineindexering niet toestaan
+Voorkom dat zoekmachines je site indexeren.
+Configureren
+Configureer een aangepast domein
+Aangepaste URL
+De URL waar je website zich bevindt.
+Doorverwijzen naar je aangepaste domein
+Verwijs bezoekers door op publish.obsidian.md/id naar je aangepaste domein.
+Domeininstellingen bijwerken
+Raadpleeg onze {{link}} op onze help-site voor meer informatie.
+Handleiding voor het instellen van een aangepast domein
+Je gebruikt {{site}} van je {{limit}}.
+Meer sites aanschaffen
+Je hebt geen sites gekocht.
+Een website maken
+Beheer delen voor "{{name}}"
+De huidige website is momenteel niet gedeeld met de volgende mensen.
+De website wordt op het moment niet gedeeld met iemand.
+In behandeling
+Verwijder gebruiker
+Gebruiker uitnodigen
+Voer hun e-mail in...
+Voer alstublieft een geldig e-mailadres in om iemand uit te nodigen.
+Activeer de Publish kernplug-in in Instellingen -> Kernplug-ins om sites the zien..
+Jouw sites
+Sites gedeeld met u
+Stop samenwerking voor deze site
+Bevestig het stoppen van samenwerken
+Dit verwijdert deze website van de lijst van met u gedeelde websites. Deze actie kan niet ongedaan gemaakt worden.
+Neem contact op met de eigenaar van de site als je weer wilt samenwerken aan deze website.
+Verlaten
+Vergelijk met de live-versie
+Gebruik live-versie
+Bevestig het overschrijven van de lokale versie
+Weet je zeker dat je de lokale versie wilt overschrijven?
+De live-versie zal worden gebruikt en de lokale versie zal worden verwijderd. Maak een back-up indien nodig.
+Ga verder
+Het overschrijven van de lokale versie door de live-versie is geslaagd.
+Openen op live site
+Bestand openen
+Publicatiefilters beheren
+Geselecteerde mappen
+Bestanden in deze mappen worden automatisch geselecteerd wanneer je wijzigingen controleert om te publiceren.
+ Deze mappen zijn op het moment geselecteerd:
+Uitgesloten mappen
+Bestanden in deze mappen worden niet getoond wanneer je wijziging controleert om te publiceren. Deze instelling overschrijft mappen die je hierboven selecteert.
+Obsidian Publish selecteert momenteel {{folders}}.
+Obsidian Publish sluit momenteel {{folders}} uit.
+Geselecteerde mappen beheren
+Uitgesloten mappen beheren
+Een map selecteren
+U kunt zowel bestaande als nog niet aangemaakte mappen selecteren.
+Neem contact op met de klantenservice
+Navigatievoorbeeld
+Werkbladen
+Werkbladindeling opslaan en laden.
+Laad werkblad lay-out
+Beheer werkblad lay-outs
+Indeling opslaan
+Opslaan en een ander lay-out laden
+Huidige workspace lay-out opslaan als...
+Opslaan
+Laden
+Verwijder lay-out
+Voer alstublieft een naam in voor de nieuwe lay-out.
+Lay-out succesvol opgeslagen.
+Geen opgeslagen lay-out gevonden.
+Gewijzigd {{time}}
+Voer lay-out naam in...
+Synchronisatie
+Synchroniseer je bestanden met Obsidian Sync.
+Toon versiegeschiedenis
+Sync instellen
+Open versiegeschiedenis
+Toon synchronisatiegeschiedenis
+Open activiteitsverslag
+Meer laden
+Toon verschil
+Naar klembord kopiëren
+Deze versie terugzetten
+Deze versie is al de meest recente.
+Versie van {{time}} succesvol teruggezet
+Dit bestand is verwijderd
+Verwijderd op {{ device }}
+Dit bestand heette eerst "{{filepath}}"
+Hernoemd van “{{from}}” naar “{{to}}”
+Verplaatst van “{{from}}”
+Verplaatst van “{{from}}” naar “{{to}}”
+1 correctie
+{{revisions}} correcties
+op {{device}}
+Geen Sync-geschiedenis voor dit bestand.
+Leeg
+Kan de versiegeschiedenis niet ophalen
+Configuratiebestanden
+Verwijderde bestanden
+Versiegeschiedenis
+Klik op een verwijderd bestand om er de gescheidenis van te zien.
+Maak een kluis-op-afstand aan
+Voer een wachtwoord in.
+Kluisnaam mag niet leeg zijn.
+Kluis-op-afstand "{{name}}" aanmaken geslaagd.
+Kluizen-op-afstand synchroniseren je kluis veilig tussen apparaten.
+Kluisnaam
+Helpt je herinneren waar deze kluis voor is.
+Regio
+Automatisch
+Selecteer de serverregio die het meest dichtbij jou is om de kluis-op-afstand op te slaan. Dit kan in de toekomst niet veranderd worden.
+Mijn geweldige kluis
+Versleuteling
+End-to-end-encryptie biedt de sterkste beveiliging, maar vereist dat je je versleutelingswachtwoord veilig bewaart. Standaard versleuteling gebruikt een sleutel die door Obsidian wordt beheerd om je gegevens te beschermen tijdens overdracht en op onze servers.
+Deze optie kan later niet worden gewijzigd.
+End-to-end versleuteling
+Standaardversleuteling
+Wachtwoord voor versleuteling
+Dit wachtwoord kan later niet aangepast worden.
+Als je dit wachtwoord vergeet is alle data op afstand voor altijd onbruikbaar.
+Dit heeft geen invloed op je locale data.
+De externe kluis “{{name}}” is momenteel versleuteld. Voer je wachtwoord in om te ontgrendelen.
+Je wachtwoord
+Ontgrendel je externe kluis
+Kluisverleuteling openen
+Je kluizen-op-afstand
+Aangemaakt op {{time}}
+Verwijder
+Naam wijzigen
+Naam wijzigen van  de kluis-op-afstand "{{name}}"
+Voer een nieuwe naam in voor deze kluis op afstand.
+Beheer delen
+Kluis verwijderen bevestigen
+Weet je zeker dat je deze kluis-op-afstand wilt verwijderen?
+Alle data op onze server, inclusief versiegeschiedenis, wordt verwijderd. Je lokale bestanden blijven intact.
+Deze actie is permanent en niet terug te draaien.
+{{name}} is verwijderd.
+Obsidian Sync: de gekoppelde externe kluis bestaat niet meer.
+Verbinden
+Verbinding verbreken
+
+Je hebt geen kluizen-op-afstand.
+Je hebt geen actief Obsidian-Syncabonnement.
+Bezoek
+Kan geen voorbeeld weergeven van bestanden van het type {{type}}.
+Nieuwe kluis aanmaken
+Synchronisatieverslag
+Alle
+Fouten
+Overgeslagen
+Samenvoegingsconflicten
+Synchronisatieverslag kopiëren
+Synchronisatieverslag kopiëren geslaagd.
+Opnieuw proberen
+Aanschaffen
+Conflicterende bestandssynchronisatiesoftware gedetecteerd
+Waarschuwing: Het lijkt erop dat uw kluis {{service}} gebruikt als synchronisatieservice. Als u Obsidian Sync gebruikt voor deze kluis kan dat leiden tot conflicten, corrupte bestanden of gegevensverlies.
+Als u iCloud Drive gebruikt worden uw documenten en mappen misschien door iCloud gesynchroniseerd. Dit kan tot conflicten met Obsidian Sync leiden.
+Kluis-op-afstand
+Kiezen
+Beheren
+Momenteel verbonden met de kluis-op-afstand "{{name}}".
+Momenteel niet verbonden met een kluis-op-afstand.
+Synchronisatiestatus
+Obsidian Sync is momenteel gepauzeerd.
+Obsidian Sync is momenteel actief.
+Apparaatnaam
+Deze naam wordt weergegeven in het Synchronisatieverslag. Leeglaten om de standaardnaam te gebruiken.
+Hervatten
+Pauzeren
+Verwijderde bestanden
+Toon en herstel verwijderde bestanden.
+Synchronisatieactiviteit
+Toon recente synchronisatieactiviteit voor het debuggen.
+Tonen
+In bulk terugzetten
+Bestanden herstellen
+{{count}} bestand herstellen
+{{count}} bestanden herstellen
+Terugzetten...
+`Terugzetten voltooid: {{succeeded}} geslaagd en {{failed}} mislukt.`
+Kluisgrootte
+Je gebruikt momenteel {{size}} van de {{limit}}
+Kluisgrootte ophalen mislukt.
+Jouw kluisgrootte ophalen...
+Kluisgrootte over de limiet
+Kluisgrootte nadert de limiet
+Toon grootste bestanden
+Dit zijn de bestanden op afstand die het meeste ruimte opnemen. Gebruik na het verwijderen van bijlagen de opruimknop om ruimte vrij te maken in de kluis op afstand.
+Opslagruimte opwaarderen
+Opruimen
+Mijn wijzigingen verbergen
+Ruim verwijderde bijlagen permanent op van de kluis op afstand om ruimte te besparen.
+Opruimen geslaagd.
+Voorkomen dat apparaat in slaapstand gaat
+Voorkomen dat apparaat in slaapstand gaat als er bestanden nog gesynchroniseerd moeten worden.
+Selectieve synchronisatie
+Uitgesloten mappen
+Voorkom dat bepaalde mappen gesynchroniseerd worden.
+ Deze mappen zijn momenteel uitgesloten:
+Beheren
+Afbeeldingen synchroniseren
+Synchroniseer afbeeldingsbestanden met deze bestandsextensies: {{extensions}}.
+Audio synchroniseren
+Synchroniseer audiobestanden met deze bestandsextensies: {{extensions}}.
+Video's synchroniseren
+Synchroniseer videobestanden met deze bestandsextensies: {{extensions}}.
+PDF's synchroniseren
+Synchroniseer PDF's.
+Alle andere typen synchroniseren
+Synchroniseer niet-ondersteunde bestandsindelingen.
+Kluisconfiguratiesynchronisatie
+Versiegeschiedenis van instellingen
+Toon en herstel versiegeschiedenis van instellingsbestanden.
+Hoofdinstellingen
+Inschakelen om editorinstellingen, bestands- en verwijzingsinstellingen, aangepaste sneltoetsen etc. te synchroniseren.
+Uiterlijke instellingen
+Synchroniseer uiterlijke instellingen zoals donkere modus, actief thema en ingeschakelde fragmenten.
+Thema's en fragmenten
+Gedownloade thema's en fragmenten synchroniseren. Of ze ingeschakeld zijn is afhankelijk van de vorige optie.
+Sneltoetsen
+Aangepaste sneltoetsen synchroniseren.
+Actieve kernplug-in-lijst
+Synchroniseer welke kernplug-ins ingeschakeld zijn.
+Kernplug-in-instellingen
+Synchroniseer kernplug-in-instellingen.
+Actieve communityplug-in-lijst
+Synchroniseer welke communityplug-ins ingeschakeld zijn.
+Geïnstalleerde comminityplug-ins
+Synchroniseer geïnstalleerde communityplug-ins (.js, .css, en manifest.json bestanden) en bijbehorende instellingen.
+Sync is nog aan het laden; vernieuw deze pagina later.
+Obsidian Sync is Obsidians uitbereidende synchronisatieservice met end-to-end-versleuteling en versiegeschiedenis.
+Log in of maak een nieuw Obsidian-account aan om te beginnen met synchroniseren.
+Huidig bestand
+Sync-wijzigingen
+Vandaag
+Gisteren
+Deze week
+Ouder
+Laatste sync
+Nog {{count}}
+Aanmelden
+Inloggen
+Uitgesloten mappen beheren
+{{folders}} zijn momenteel uitgesloten van synchronisatie.
+Een map uitsluiten
+Zowel bestaande als nog niet bestaande mappen kunnen worden uitgesloten.
+Van de uitsluitlijst verwijderen
+Verbinding instellen
+Verbinden...
+Verbinding mislukt
+Verbinding met kluis-op-afstand mislukt.
+Je bent nu verbonden met "{{name}}".
+Synchronisatie starten
+Kluis samenvoegen bevestigen
+Je lokale kluis bevat al enkele notities.
+Als u met de kluis-op-afstand "{{name}}" verbindt dan worden notities in uw lokale kluis samengevoegd met notities uit de kluis-op-afstandnotes. Indien er een conflict optreedt dan wordt de meest recente versie van de notities behouden.
+Werk deze optie bij en start de applicatie opnieuw op alle apparaten waar je dit wilt toepassen.
+Deze kluis-op-afstand is momenteel gedeeld met de volgende personen.
+Deze kluis-op-afstand is momenteel met niet met iemand gedeeld.
+Met u gedeelde kluizen
+Stop samenwerking aan deze kluis
+Bevestig het stoppen van de samenwerking aan deze kluis
+De kluis zal worden verwijderd uit de lijst met u gedeelde kluizen. Deze actie kan niet ongedaan gemaakt worden.
+Neem alstublieft contact op met de eigenaar van de kluis als u opnieuw wilt samenwerken.
+Verlaten
+Laden van kluizen-op-afstand mislukt.
+Een Obsidian Sync-abonnement is vereist om verbinding met deze kluis te maken.
+Neem contact op met de klantenservice
+Neem contact op met de klantenservice als u problemen heeft met Obsidian Sync, dan kunnen we u helpen! Wij zijn te bereiken via support@obsidian.md.
+Kopieer debuginformatie
+E-mailondersteuning
+Sync is niet verbonden met een externe kluis.
+Met Obsidian Sync kunt u tot 5 kluizen-op-afstand aanmaken. Verwijder een bestaande om een nieuwe kluis-op-afstand aan te maken.
+Kluis upgraden
+Versleuteling van kluis upgraden
+Er is een nieuwe versleutelingversie beschikbaar voor kluizen op afstand.
+Kluis-op-afstand migreren
+Kluis-op-afstand configuratie
+Migreren
+Dit verwijdert uw kluis-op-afstand en maakt hem opnieuw aan met de nieuwste encryptie. Lokale bestanden worden niet beïnvloed, maar uw versiegeschiedenis zal gewist worden.
+Bevestig kluismigratie
+Om uw versleuteling te upgraden wordt alle data in uw kluis opnieuw geüpload naar de Obsidian Sync servers met de nieuwe versleutelmethode. Dit proces verwijdert permanent alle data die beveiligd was met de oude versleuteling, waaronder uw versiegeschiedenis.
+N.B.: We raden u sterk aan om een back-up van uw kluis te maken voordat u doorgaat, om potentieel gegevensverlies te voorkomen.
+Na het upgraden moet u al uw apparaten opnieuw verbinden met de nieuwe kluis-op-afstand.
+Het migreren van uw kluis kost wat tijd. U moet Obsidian actief houden op dit apparaat om uw notities en bijlagen opnieuw te uploaden. U kunt dit het beste doen op uw meestgebruikte apparaat.
+Wilt u verdergaan?
+Bezig met kluismigratie.
+Kluis-migratie voltooid.
+Conflictoplossing
+Kies hoe conflicten worden opgelost wanneer een notitie onafhankelijk op meerdere apparaten wordt gewijzigd.
+Automatisch samenvoegen
+Conflictbestand maken
+Bestanden herstellen
+Vind recente momentopnames terug om onvoorzien verlies van data te herstellen. Er worden alleen momentopnames gemaakt voor Markdown-bestanden.
+Open opgeslagen momentopnames
+Momentopname-interval
+Mimimum interval tussen twee momentopnames in minuten.
+Geschiedenisduur
+Hoe lang momentopnames bewaard blijven in dagen.
+Momentopnames
+Opgeslagen momentopnames tonen en herstellen.
+Bekijken
+Geschiedenis wissen
+Alle momentopnames verwijderen.
+Wissen
+Weet u zeker dat u alle momentopnames wilt verwijderen? Alleen de momentopnames worden verwijderd. De bestanden in uw kluis blijven onveranderd.
+Momentopnames gewist.
+Geen momentopnames gevonden.
+Kies een bestand...
+Selecteer links een bestand om momentopnames te tonen.
+Notitiesamensteller
+Splits, refactor en voeg notities samen.
+Samenvoegen van bestanden bevestigen
+Vraag voordat twee bestanden worden samengevoegd.
+Tekst na extractie
+Wat te tonen in plaats van de geselecteerde tekst na de extractie.
+Verwijzing naar nieuw bestand
+Nieuw bestand insluiten
+Geen
+Sjabloonbestandslocatie
+Gebruik dit sjabloonbestand voor samenvoegen of extraheren. Beschikbare variabelen: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, bijv. {{date:YYYY-MM-DD}}.
+Huidige bestand met een ander bestand samenvoegen...
+Volledig bestand samenvoegen met...
+Geen bestanden gevonden.
+Navigeer
+Voeg samen
+Nieuwe aanmaken
+bovenaan samenvoegen
+Wijs af
+Selecteer bestand om het huidige in te voegen...
+Bestand samenvoegen
+Weet u zeker dat u "{{file}}" in "{{destination}}" wilt voegen? "{{file}}" zal worden verwijderd.
+Samenvoegen
+Huidige selectie extraheren...
+Deze op extraheren...
+naar bodem verplaatsen
+naar de top verplaatsen
+Sjabloon kon niet worden opgehaald: "{{template}}" niet gevonden.
+Kop kon niet worden gevonden
+Webviewer
+Webgeschiedenis
+Externe koppelingen naar webpagina's openen binnen Obsidian.
+Webviewer openen
+Geschiedenis weergeven
+Leesmodus in-/uitschakelen
+URL kopiëren
+Verwijderen uit geschiedenis
+Geschiedenis wissen
+Koppeling openen
+Koppeling openen in nieuw tabblad
+Koppeling naar rechts openen
+Koppeling openen in nieuw venster
+Koppeling openen in standaardbrowser
+Koppeling openen in webviewer
+Koppelingsadres kopiëren
+Koppeling als bladwijzer opslaan
+Zoeken naar “{{query}}”
+Selectie extraheren naar nieuwe notitie
+Kopiëren
+Knippen
+Plakken
+Verwijderen
+Alles selecteren
+Opslaan in kluis
+Afbeelding opslaan in kluis
+Afbeeldingskoppeling kopiëren
+Terug
+Vooruit
+Opnieuw laden
+Pagina als bladwijzer opslaan
+Openen in standaardbrowser
+Adresbalk focussen
+Zoeken op het web
+Gegevens wissen
+
+Hierdoor kun je worden uitgelogd van websites.
+Gegevens in cache
+Geschiedenis
+Alle webviewer-gegevens
+Verwijdert al het bovenstaande, evenals lokale opslag en actieve sessies.
+Nieuwe webviewer
+Unable to load that site.
+Please make sure you have the correct address.
+Zoeken op het web
+Webviewer-gegevens
+Webviewer-gegevens wissen
+Externe koppelingen openen
+Open koppelingen in Obsidian in plaats van de systeemstandaard.
+Startpagina
+Welke pagina moet worden weergegeven wanneer een webviewer wordt geopend
+Map voor opgeslagen pagina’s
+Websites die als Markdown zijn opgeslagen, worden hier geplaatst.
+Zoekmachine
+Zoekmachine die wordt gebruikt bij het zoeken vanuit de adresbalk.
+Aangepaste zoekmachine
+Gebruik %s in plaats van de zoekopdracht.
+Aangepast
+Adblocker inschakelen
+Indien ingeschakeld, worden de onderstaande filterlijsten toegepast op alle webviewer-tabbladen.
+Adblockregels
+Eén URL van een adblocklijst per regel. Gedeeld door alle kluizen.
+Frequentie van adblock-updates
+Aantal dagen tussen het bijwerken van filterlijsten. 0 betekent uitgeschakeld. Gedeeld door alle kluizen.
+Webviewer-gegevens wissen
+Unexected error extracting content.
+Kan geen inhoud vinden om te extraheren.
+Doek
+Plaats en verbind notities op een oneindig doek.
+Notitie uit de kluis toevoegen
+Media uit de kluis toevoegen
+Kaart toevoegen
+Webpagina toevoegen
+Groep aanmaken
+Kaart met specifieke afmetingen aanmaken
+Naar bestand omzetten...
+Sleep om notities uit de kluis toe te voegen
+Sleep om media uit de kluis toe te voegen
+Sleep om kaart toe te voegen
+Label aanpassen
+Label verwijderen
+Bestand zoeken
+Kleur instellen
+Uitlijnen
+Links uitlijnen
+Centraal uitlijnen
+Rechts uitlijnen
+Bovenaan uitlijnen
+In het midden uitlijnen
+Onderaan uitlijnen
+Verdeel horizontale ruimte
+Verdeel vertical ruimte
+Horizontaal uitvullen
+Verticaal uitvullen
+In een rij opstellen
+In een kolom opstellen
+In een raster opstellen
+Exporteer als afbeelding
+Naar groep springen
+Achtergrond instellen
+Achtergrond wijzigen
+Achtergrond vervangen
+Achtergrond verwijderen
+Geen afbeeldingen gevonden.
+Geen media gevonden.
+Exporteer "{{title}}" als een PNG-bestand met de instellingen hierbeneden.
+Verwachte afbeeldingsafmetingen: {{dimensions}}
+Verdelen
+Uitvullen
+Opstellen
+Altijd
+Als de muisaanwijzer erboven zweeft
+Nooit
+Geen sectie gevonden
+Standaard muiswielgedrag
+Standaard {{key}}-gedrag
+Toon menu
+Standaardlocatie voor nieuwe doek-bestanden
+Hier worden nieuwe doek-bestanden geplaatst.
+Map om nieuwe doek-bestanden in te plaatsen
+In deze map worden nieuwe doek-bestanden geplaatst.
+Kaartlabel tonen
+In raster laten springen
+Laat kaarten in het achtergrondsraster springen tijdens verplaatsen en vergroten/verkleinen.
+Naar objecten laten springen
+Laat kaarten naar objecten in de buurt springen tijdens verplaatsen en vergroten/verkleinen.
+Zoomdrempel voor het verbergen van kaartinhoud
+Lagere waardes zullen de presetaties verbeteren maar kaartinhoud wordt eerder verborgen tijdens het uitzoomen.
+Logo tonen
+Dit toont een Obsidianlogo linksonder.
+Privacyweergave
+Dit verbergt alle tekst op uw doek.
+Zoomen
+Een grotere zoom zal een afbeelding van hogere resolutie genereren.
+Weergave
+Het gehele doek of slechts de huidige weergave exporteren.
+Volledige doek
+Allen huidige weergave
+Omslag
+Verhouding behouden
+Herhalen
+Nieuw doek
+Dupliceren
+Verwijderen
+Versmal naar de kop...
+Versmal naar blok...
+Weergave vastmaken...
+Bestand omruilen...
+URL wijzigen...
+Passend zoomen
+Naar selectie zoomen
+Pagina opnieuw laden
+Connectie volgen
+Nieuw doek aanmaken
+Naar bestand omzetten...
+om kop in te sluiten
+om blok in te sluiten
+om naar groep te navigeren
+Naam van de kop invoeren
+URL invoeren
+"{{linktext}}" kon niet worden gevonden.
+Tekst toevoegen...
+Type om te zoeken...
+Doekondersteuning
+Doekinstellingen
+Het gehele bestand tonen
+Standaardweergave tonen
+Alleen-lezen
+Alleen-lezen uitzetten
+Draaien
+Horizontaal draaien
+Zoomen
+Alles selecteren
+Aan selectie toevoegen / verwijderen
+Kaart klonen
+Beperk kaart beweging tot as
+Springen tijdens slepen uitzetten
+Kaart verwijderen
+Sleep vanaf onderen of dubbelklik
+Raak aan en houd vast om toe te voegen / te bewegen / te selecteren
+Slepen om te draaien
+Gebruik twee vingers om te zoomen
+Spatie + slepen om te draaien
+Scroll om te zoomen
+Naamloze groep
+Lijnrichting
+Geen richting
+In één richting
+In twee richtingen
+Afbeelding
+Stijl
+Geen groepen gevonden
+Kan een leeg doek niet exporteren
+Canvas heeft bestandsnaamswijzigingen gedetecteerd die van invloed zijn op {{count}} Canvas-bestand, wordt bijgewerkt...
+Canvas heeft bestandsnaamswijzigingen gedetecteerd die van invloed zijn op {{count}} Canvas-bestanden, wordt bijgewerkt...
+Canvas heeft {{count}} ingesloten kaart bijgewerkt
+Canvas heeft {{count}} ingesloten kaarten bijgewerkt
+
+Create bases by querying note properties.
+Nieuwe basis
+Add property
+Samenvatting "{{name}}" toevoegen
+Formule toevoegen
+Alles verbergen
+Zichtbaarheid wisselen
+Formule verwijderen
+Standaardweergave
+Weergave dupliceren
+Weergave verwijderen
+Samenvatting verwijderen
+CSV exporteren...
+Nieuwe basis maken
+Nieuwe basis invoegen
+Tabel naar klembord kopiëren
+Change view
+Weergave toevoegen
+Item toevoegen
+Weergave toevoegen
+Filter toevoegen
+Filtergroep toevoegen
+Alles tonen
+Alles tonen ({{count}})
+Samenvatting toevoegen
+Samenvatting verbergen
+Alle weergaven
+Deze weergave
+Zoeken of maken...
+Berekende eigenschappen
+Type eigenschap
+Eigenschap verbergen
+Eigenschap tonen
+Eigenschap bewerken
+{{name}} bewerken
+Weergave configureren
+Lay-out
+Globale filters
+Weergavefilters
+Naam van weergave
+Weergave
+Tabel
+Weergavenaam
+Samenvattingsnaam
+Formule
+Weergaven
+Sorteren
+
+Zoeken
+Eigenschappen
+Nieuw
+{{count}} weergegeven
+Sjabloonbestand voor nieuw item
+Map voor nieuw item
+Een van de volgende is waar
+Alle volgende zijn waar
+Geen van de volgende is waar
+waar
+of
+en
+Eigenschap
+Naamloos
+bestand
+name
+basisnaam van bestand
+volledige bestandsnaam
+path
+map
+extension
+tijdstip gemaakt
+tijdstip gewijzigd
+bestandsgrootte
+teruglinks van bestand
+koppelingen van bestand
+insluitingen van bestand
+tags van bestand
+Sortering toevoegen
+Groeperen op
+Sorteren op
+Aantal resultaten beperken
+
+
+Oud naar nieuw
+Nieuw naar oud
+
+
+Naam van weergave mag niet bevatten: 
+Naam van weergave bestaat al.
+Naam van weergave mag niet leeg zijn.
+Deze filter kan niet worden weergegeven met de eenvoudige filterbouwer.
+Filter kan niet worden verwerkt. De basisfilterbouwer kan niet worden gebruikt.
+Ongeldige eigenschappenconfiguratie.
+Ongeldige eigenschapconfiguratie voor "{{ name }}".
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+Kan je basisbestand niet verwerken:
+Weergave "{{ view }}" niet gevonden
+Base configured with an unknown view type: {{ viewtype }}
+Weergaven moeten een array zijn
+Weergavewaarden moeten strings zijn. De waarde voor eigenschap {{ key }} is dat niet.
+"{{ key }}" moet een {{ type }} zijn
+"filters" moet een string of een object zijn
+Filter "{{ conjunction }}" moet een array zijn
+"filters" mag alleen een van de sleutels "and", "or" of "not" bevatten.
+Evalueren van een filter is mislukt: {{ message }}
+Formulewaarden moeten strings zijn. De waarde voor eigenschap {{ key }} is dat niet.
+Berekenen van de waarde van eigenschap "{{ key }}" is mislukt: {{ message }}
+Query heeft een ongeldig formaat. Het moet een YAML-object zijn.
+"view"-items moeten een YAML-object zijn, maar item {{ index }} is dat niet
+Ontbrekende of ongeldige "name" in weergave {{ index }}
+"{{ key }}" is vereist in weergave "{{ viewName }}"
+"{{ key }}" moet een {{ type }} zijn in weergave "{{ viewName }}"
+Alle waarden van "{{ key }}" moeten van het type {{ type }} zijn in weergave "{{ viewName }}"
+Kan filters in weergave "{{ viewName }}" niet verwerken: {{ message }}
+Oneindige lus gedetecteerd in formule
+Ongeldige eigenschap
+Deze notitie wordt uitgefilterd omdat deze niet aan je criteria voldoet
+Geavanceerde filter
+bijv. 10
+Geavanceerde filter
+Eenvoudige filter
+Filter verwijderen
+Geen
+Lijst
+Markeringen
+Eigenschappen inspringen
+Scheidingsteken voor eigenschappen
+Opsommingsteken
+Nummer
+Geen
+Kaarten
+Kaartgrootte
+Afbeeldingseigenschap
+Afbeelding passend maken
+Bedekken
+Inpassen
+Beeldverhouding van afbeelding
+Tabel
+Kolom verbergen
+Eigenschap bewerken...
+Formule bewerken...
+Sortering wissen
+Sorteren A → Z
+Sorteren Z → A
+Rijhoogte
+Kort
+Gemiddeld
+Hoog
+Extra hoog
+Samenvatten...
+Groeperen op deze eigenschap
+Waarden wissen
+Samenvatting
+Kan formule "{{ formula }}" niet parseren
+Kan functie "{{ function }}" niet vinden
+Kan functie "{{ function }}" niet vinden op type {{ type }}
+Kan functie "{{ function }}" niet aanroepen, onvoldoende argumenten.
+Kan functie "{{ function }}" niet aanroepen, te veel argumenten.
+Typefout in "{{ function }}", parameter "{{ parameter }}". Verwacht {{ expected }}, gekregen {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Alles markeren
+Vergelijk diakrieten
+Hele woorden
+Miniaturen
+Inhoudsopgave
+Laat de pagina zien in de inhoudsopgave
+Toon/verberg zijpaneel
+Vorige pagina
+Volgende pagina
+Scherm in de breedte vullen
+Scherm in de hoogte vullen
+Positie in het document opslaan
+Annotatie kopiëren
+Als citaat kopiëren
+Link naar selectie kopiëren
+Link naar annotatie kopiëren
+Link naar sectie kopiëren
+Link naar “{{title}}” kopiëren
+Link naar pagina {{page}} kopiëren
+{{current}} van meer dan {{limit}} matches
+{{current}} van {{total}} match
+{{current}} van {{total}} matches
+Deze PDF is met een wachtwoord beveiligd
+Ongeldig wachtwoord
+Voer beneden het wachtwoord in
+van {{count}}
+({{current}} van {{count}})
+Enkele pagina
+Twee pagina's (oneven)
+Twee pagina's (even)
+Zijpaneelopties
+Weergaveopties
+Aan thema aanpassen
+pagina {{page}}
+Pagina {{page}}
+Pagina {{page}}
+Pagina {{page}}
+[{{type}} Annotatie]
+
+Lijst
+Onbekend
+Tekst
+Aliassen
+Labels
+Map
+Bestand
+Eigenschap
+Datum
+Datum & tijd
+Getal
+Selectievakje
+Typ [[
+om een notitie te linken
+te stoppen
+Eigenschapstype
+Sorteren
+Eigenschapsnaam mag niet leeg zijn.
+Eigenschap bestaat al
+Ongeldige nam voor label
+Ongeldig getal
+Kan eigenschappen niet lezen.
+Geen waarde
+Eigenschappen
+Ongeldige eigenschappen
+Bron weergeven
+Syntaxfout. Je voormetadata is ongeldig.
+Voeg eigenschap toe
+Incorrect type, verwacht type: {{type}}
+Type komt niet overeen
+Weergeven als {{type}}?
+Je {{oldType}}-gegevens zijn niet compatibel. Ze worden aangepast zodat ze in het nieuwe formaat passen.
+Kolom
+Rij
+Onder rij toevoegen
+Rechts kolom toevoegen
+Boven rij toevoegen
+Rij naar boven verplaatsen
+Rij naar onder verplaatsen
+Kolom links toevoegen
+Kolom naar links verplaatsen
+Kolom naar rechts verplaatsen
+Rij dupliceren
+Kolom dupliceren
+Rij verwijderen
+Kolom verwijderen
+Links uitlijnen
+Centraal uitlijnen
+Rechts uitlijnen
+Vakken verwijderen
+Vakken leegmaken
+Op kolom sorteren (A tot Z)
+Op kolom sorteren (Z tot A)
+Tabel: {{command}}
+Berichttype
+Informatie
+Belangrijk
+
+Voltooid
+Vraag
+Waarschuwing
+Citaat
+Voorbeeld
+Geen
+Anders...
+Berichttype...
+
+{{count}} woord
+{{count}} woorden
+{{count}} resultaat
+{{count}} resultaten
+{{count}} teken
+{{count}} tekens
+{{count}} koppeling
+{{count}} koppelingen
+{{count}} bestand
+{{count}} bestanden
+{{count}} map
+{{count}} mappen
+{{count}} terugverwijzing
+{{count}} terugverwijzingen
+{{count}} tabblad
+{{count}} tabbladen
+{{count}} eigenschap
+{{count}} eigenschappen
+
+
+{{count}} plug-in
+{{count}} plug-ins
+{{count}} actief
+
+
+{{count}} thema
+{{count}} thema's

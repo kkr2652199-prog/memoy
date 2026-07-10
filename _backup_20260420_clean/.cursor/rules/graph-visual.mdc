@@ -1,0 +1,21 @@
+---
+description: 그래프 시각화 원칙 (library.js, style.css 작업 시 적용)
+globs: app/static/js/library.js,app/static/css/style.css
+alwaysApply: false
+---
+
+# 시각화 원칙 (P-Reinforce 섹션 6 기준)
+- Progressive Disclosure: 기본 뷰(material+brand만) → 클릭 → 이웃 뱃지 → 패널 상세
+- 그래프 SVG에는 material, brand 노드만 렌더링. entity/concept 노드는 그래프에 추가하지 않음.
+- 라벨: 기본 뷰에서 brand 라벨만 표시. material 라벨은 클릭/호버 시에만.
+- 엣지 투명도: 기본 0.12, 호버 시 연결된 엣지 0.5, 비연결 0.05.
+- 번호 뱃지: 클릭한 노드의 이웃에 날짜 내림차순으로 표시, 브랜드 색상 배경.
+- 노드 형태: 원(circle)만 사용. 다이아몬드/삼각형은 그래프에서 사용하지 않음.
+
+# 현재 확정 수치 (변경 금지)
+- charge: -100
+- centerForce: 0.3
+- linkDistance: belongs_to 50, shared_topic 150
+- brand node: base 4, multiplier 3
+- material node: base 2, multiplier 2
+- 라벨 opacity: log2(scale) + 0.15

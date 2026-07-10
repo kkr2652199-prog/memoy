@@ -1,0 +1,42 @@
+{
+  "range": "50~150",
+  "elapsed_sec": 46.1,
+  "elapsed_min": 0.77,
+  "total_ok": 101,
+  "total_error": 0,
+  "error_draws_first10": [],
+  "checkpoints": [
+    {
+      "n_done": 25,
+      "current_draw": 74,
+      "elapsed_sec": 11.0,
+      "ok": 25,
+      "error": 0,
+      "rate_sec_per_draw": 0.439
+    },
+    {
+      "n_done": 50,
+      "current_draw": 99,
+      "elapsed_sec": 22.6,
+      "ok": 50,
+      "error": 0,
+      "rate_sec_per_draw": 0.452
+    },
+    {
+      "n_done": 75,
+      "current_draw": 124,
+      "elapsed_sec": 34.2,
+      "ok": 75,
+      "error": 0,
+      "rate_sec_per_draw": 0.456
+    },
+    {
+      "n_done": 100,
+      "current_draw": 149,
+      "elapsed_sec": 45.4,
+      "ok": 100,
+      "error": 0,
+      "rate_sec_per_draw": 0.454
+    }
+  ]
+}

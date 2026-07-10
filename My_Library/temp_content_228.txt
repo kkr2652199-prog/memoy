@@ -1,0 +1,25 @@
+복잡한 부가세 신고, 이제 단 몇 번의 클릭으로 끝내고 본업에 집중하세요.배달대행사 사장이 직접 개발한 프로그램이 사장님의 소중한 시간과 노력을 지켜드립니다.
+안녕하세요! 복잡한 엑셀 파일 앞에서 머리를 쥐어뜯던 지난날의 제가 떠오릅니다. 😵 저는 배달대행사 사장입니다. 매 분기 부가세 신고 때마다 여러 업체의 정산서를 며칠 밤낮으로 정리해야 했죠. '나만 이렇게 고생하나?'라는 생각에 '이건 아니다!' 싶었습니다. 그래서 직접 코딩을 배웠고, 저와 같은 고충을 겪는 사장님들을 위해 이 프로그램을 만들었습니다. 이 앱은 단순한 파일이 아닌, 저의 고통과 노력이 담긴 '부가세 해방' 솔루션입니다. 😎​
+부가세 신고, 아직도 이렇게 하고계신가요? 🤯
+비효율적인 수작업:여러 정산 파일을 직접 취합하고 수정하는 데 며칠이 소요됩니다.잦은 오류와 반복:수기로 입력하는 과정에서 발생하는 작은 실수 하나가 전체 작업을 처음부터 다시 시작하게 만듭니다.본업을 방해하는 스트레스:중요 업무에 집중해야 할 시간을 부가세 신고 준비에 빼앗기게 됩니다.​​초간단 서비스 이용 방법 (3단계)🚀​정말 이게 끝인가 싶을 정도로 간단합니다. 아래 3단계만 기억해 주세요!
+📝 파일만 보내면 끝! 초간단 프로세스문의하기 :카카오톡이나 이메일로 "부가세 신고 변환 문의합니다"라고 편하게 연락 주세요.파일 전송:가지고 계신 정산서 엑셀 파일을 그대로 전달해 주세요.파일 받기:홈택스 일괄 등록용 최종 엑셀 파일을 바로 받아보세요.
+어때요, 정말 간단하죠? 사장님은 그저 파일을 전달하고, 완성된 파일을 받아서 홈택스에 등록만 하시면 됩니다.니다.​홈텍스 클릭 로그인
+국세청 홈택스hometax.go.kr
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfNTcg/MDAxNzU3NzU5MTI5MjM2.VMgQ6UB4uqk84YFbdqw7sD9v4VGGPWyONfEY9WEACYIg._Z5fvCrC29emCG1bv1CplVrijUEqc7LOqdMOu6N72K8g.JPEG/1%ED%99%88%ED%85%8D%EC%8A%A4_%EB%A1%9C%EA%B7%B8%EC%9D%B81.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfMjg2/MDAxNzU3NzU5MTI5NzMx.VxVMFgf5CgP3Kj-lo2OOgKdU38xmtYLh-x_9__6KwTYg.cMNdzHVhSaOIOE4ln--358Kt6UiTWwaaibwnkLDr79Eg.JPEG/2%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EC%A0%84%ED%99%981.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfMTE0/MDAxNzU3NzU5MTI5NzU2.OGvgwpM7uw2lj3gBtgChpDzvYnimn_M-yO6ok-GLnr8g.7AWXu3MQU1YirtMn9flaTDIhC_zKYUFr_GpkUJdEKXEg.JPEG/3%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EA%B3%84%EC%82%B0%EC%84%9C_%EC%98%81%EC%88%98%EC%A6%9D_%EC%B9%B4%EB%93%9C_%ED%81%B4%EB%A6%AD.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfMjc1/MDAxNzU3NzU5MTI4NDMy.6yP41RTRO9FS4nKAkfvJFFdyCRzlJyqJJ2B7PQHIduwg.aisDDYizsfs3E8WTaxVfqDiFVhgJiVW7oRtcc9m0xJ4g.JPEG/4%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EC%9D%BC%EA%B4%84%EB%93%B1%EB%A1%9D_%ED%81%B4%EB%A6%AD.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfOTIg/MDAxNzU3NzU5MTI4NDM4.4bwr4xt3bVVLihTiVuxgL9B_7fwVIryUbPQPzzFf-BIg.ppTxonHgkndq4oNGkHZIn9CWFLlC5ymip7RXcslFMsAg.JPEG/5%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EC%9D%BC%EA%B4%84%EB%93%B1%EB%A1%9D_%ED%81%B4%EB%A6%AD1.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfMTAw/MDAxNzU3NzU5MTI4NDQy.wHWsieQXRMwKg0xlxBGnyrTvubgaXaCbuMOn0BSjfhAg.9eD0hGRalCF8wtLDhB-S6MsOAY8L_mViEIuSDOrT8l0g.JPEG/6%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%ED%8C%8C%EC%9D%BC%EC%84%A0%ED%83%9D.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfNzkg/MDAxNzU3NzU5MTI4NDQ2.aP8hhVyow5TEG1FeXFO-MQHkIRyFcIEx6Z5XaRvsKW0g.2dZm2h2suSxYOUsEmPCRdA2pARlpmayto7yHb0EwX1Yg.JPEG/7%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EC%97%91%EC%85%80%ED%8C%8C%EC%9D%BC_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfMTQ1/MDAxNzU3NzU5MTI4NDQ1.A15iUAWJxd5ucueyObNkL-6UqxBHFJChh4_PkvLOO3wg.p4nt2k96PQePH58INyZB-ST5ZpOSntclVQj38kYWgn8g.JPEG/8%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EA%B2%B0%EA%B3%BC%EB%AC%BC_%ED%99%95%EC%9D%B8.jpg)
+![블로그 이미지](https://mblogthumb-phinf.pstatic.net/MjAyNTA5MTNfNjcg/MDAxNzU3NzU5MTI4NDQ2.ujaPJ9ovtq4_j6wdzD8dZmLSSw83RLaAxBolPQ9VHAMg.DkKJE9umgWs9jXO0xYiB2zrzrcDdHPamj5J88Dpiv6Qg.JPEG/9%ED%99%88%ED%85%8D%EC%8A%A4_%EC%82%AC%EC%97%85%EC%9E%90_%EA%B2%B0%EA%B3%BC%EB%AC%BC_%ED%99%95%EC%9D%B8.jpg)
+Previous imageNext image
+받으신 파일, 홈택스에 올리는 법(전자세금계산서 일괄발급) 🖥️
+저희가 드린 파일로 홈택스에서 전자세금계산서를 한 번에 발급하는 방법, 정말 간단합니다.사장님, 아래 그림처럼 따라하시면 금방 끝나요!
+📝 홈택스 일괄 발급, 그대로 따라하기홈택스에 접속해로그인합니다.상단에서[사업장 선택]을 클릭해 사업자로 전환합니다.[전자(세금)계산서·현금영수증·신용카드]메뉴를 클릭합니다.[전자(세금)계산서 발급] >[일괄발급]을 차례로 클릭합니다.보이는 화면에서[파일선택]을 눌러 저희가 드린 파일을 첨부합니다.[엑셀파일 변환하기]를 클릭합니다.변환된 내용을 확인(거래처, 공급가액, 세액) 후 하단의[일괄발급(50건)]을 클릭합니다.​공인인증서나 보안카드로 인증하면 발급이완료됩니다!
+⚠️ 꼭 확인하세요!홈택스에서는 한 번에 최대 50건까지만 일괄 발급이 가능합니다. 100건이면 2번, 150건이면 3번, 이런 식으로 나누어 발급해주시면 됩니다.
+저희 서비스가 믿을 수 있는 이유 🔒​개인정보 즉시 파기:변환이 완료된 후, 업로드하신 모든 파일은 서버에서 즉시 영구 삭제됩니다.오직 자료 변환:본 서비스는 사장님의 소중한 정산 파일을 홈택스 양식에 맞게 변환해드리는'자료 변환 도구'입니다. 세무 신고 대리, 세금 계산이나 상담 등 세무 관련 업무는 일절 제공하지 않습니다. 이 앱은 복잡한 서류 작업을 줄여 사장님이 본업에 더 집중할 수 있도록 돕는 보조 도구임을 명확히 알려드립니다.현장 전문가의 경험:저희는 배달대행사 운영 현장의 불편함을 직접 겪으며 개발했기에, 사장님의 입장에서 필요한 기능을 정확히 구현했습니다.​지금 바로, 무료로 경험해 보세요 🚀
+현재 베타 테스트 기간 동안 모든 기능을무료로 제공하고 있습니다. 더 완벽한 서비스를 위해 사장님들의 솔직한 피드백이 절실히 필요합니다. 정식 서비스가 유료로 전환되더라도, 사장님들의 부담을 최소화하는합리적인 금액을 약속드립니다.
+📞 궁금한 점은 언제든 문의하세요저의 작은 해결책이 한 지역을 넘어, 대한민국 모든 사장님들의 번거로움을 덜어드릴 수 있기를 바랍니다.배달대행업이 아니더라도, 다양한 정산 서류로 어려움을 겪는 다른 업종의 사장님들도 언제든지 편하게 문의주세요.카카오톡 채널: [ID 입력] kweon4309이메일: [주소 입력] kweon4308@naver.com
+자주 묻는 질문 ❓​Q: 어떤 엑셀 파일이든 상관없나요?A: 네, 배달대행 본사나 쇼핑몰 등에서 받으신 정산서 엑셀 원본 파일이라면 어떤 양식이든 괜찮습니다. 편하게 그대로 보내주세요.Q: 정말 금일 안에 가능한가요?A: 네, 저희가 자체 개발한  프로그램을 통해 파일 수령 후 최단시간 이내에 변환된 홈택스 파일을 전달해 드립니다.Q: 비용은 어떻게 되나요?A: 비용은 처리 건수에 따라 합리적으로 책정됩니다. 자세한 내용은 카카오톡이나 이메일로 문의주시면 친절하게 안내해 드리겠습니다. 첫 달 할인 혜택도 놓치지 마세요!Q: 제 개인정보나 데이터는 안전하게 관리되나요?A: 그럼요. 보내주신 모든 파일은 작업 완료 후 즉시 파기되며, 철저한 보안을 약속드립니다.저희는 고객 정보에는 관심이 없으며, 오직 정산 파일을 변환하는 작업에만 집중합니다.

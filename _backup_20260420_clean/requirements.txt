@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+aiohttp
+python-multipart
+apscheduler
+jinja2
+PyPDF2
+openpyxl
+python-docx
+pytesseract
+Pillow
+beautifulsoup4
+requests
+lxml
+youtube-transcript-api

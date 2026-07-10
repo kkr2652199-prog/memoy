@@ -1,0 +1,2517 @@
+Roghanna
+Breiseán
+Breiseáin lárnacha
+Roghanna breiseán
+Sampla: fillteán 1/fillteán 2
+Sampla: fillteán/nóta
+Éilíonn an rogha seo a athrú chun atosú a bheith i bhfeidhm.
+Eagarthóir
+Iompar
+Taispeáin
+Seiceáil litrithe
+Cas ar an seiceálaí litrithe.
+Teangacha seiceála litrithe
+Roghnaigh na teangacha chun an seiceálaí litrithe a úsáid.
+Braithfidh an seiceálaí litrithe dúchasach an teanga atá á úsáid duit ar macOS go huathoibríoch.
+Foclóir seiceála litrithe
+Tá an foclóir seiceála litrithe folamh.
+Teideal inlíne
+Taispeánann ainm an chomhaid mar theideal in-eagarthóireachta inlíne le hábhar an chomhaid.
+Fad líne inléite
+Fad líne uasta a theorannú. Oireann níos lú ábhar ar an scáileán, ach tá bloic fhada téacs níos inléite.
+Sosanna líne dhian
+Déanann sonraíochtaí Markdown neamhaird le sosanna líne aonair i radharc léithe Múch é seo chun sosanna líne aonair a dhéanamh le feiceáil.
+Airíonna sa doiciméad
+Roghnaigh conas a thaispeántar airíonna ag barr na nótaí. Roghnaigh “foinse” chun airíonna a thaispeáint mar YAML amh.
+I bhfolach
+Infheicthe
+Foinse
+Lúibíní uath-péire
+Péireáil lúibíní agus luachana go huathoibr
+Comhréir Markdown uathoibríoch péire
+Péireáil siombailí go huathoibríoch le haghaidh trom, iodálach, cód agus go leor eile.
+Liostaí cliste
+Socraigh ionchur go huathoibríoch agus cuir míreanna liosta i gceart.
+Ceannteideal fillte
+Ligeann duit gach ábhar a fhilleadh faoi cheannteideal.
+Fill an bhliain
+Ligeann duit cuid de ionbhrú a fhilleadh, mar shampla liostaí.
+Féach réamhshocraithe do chluaisíní nua
+An dearcadh réamhshocraithe ina n-osclaítear cluaisín Markdown nua isteach.
+Féach eagarthóireachta
+Féach léitheoire
+Déan cluaisíní nua a dhíriú
+Nuair a osclaíonn tú nasc i gcluaisín nua, aistrigh chuige láithreach.
+Modh eagarthóireachta réamh
+An modh eagarthóireachta réamhshocraithe tosóidh cluaisín nua leis.
+Modh foinse
+Réamhamharc Beo
+Uimhreacha líne
+Taispeáin uimhreacha líne sa gutter.
+Treoracha ionghabhála
+Taispeáin línte caidrimh ingearacha idir earraí liosta.
+Ionchur ag baint úsáide as cluaisíní
+Úsáid cluaisíní chun ísliú tríd an eochair “Tab” a bhrú. Mhúchadh é seo go dtí an bhliain ag baint úsáide as 4 spás.
+Leithead amhairc insint
+Líon na spásanna a thabharfaidh carachtar cluaisín mar.
+Ar dheis go clé (RTL)
+Socraíonn treo réamhshocraithe téacs na nótaí ar dheis go clé.
+Tiontaigh HTML greamaithe go Markdown
+Tiontaigh HTML go Markdown go huathoibríoch agus tú ag greamú agus tarraingt-agus-scaoil ó leathanaigh ghréasáin. Úsáid Ctrl/Cmd+Shift+V chun HTML a ghreamú gan tiontú.
+Ceangail eochair Vim
+Úsáid eochrcheangail Vim agus tú ag eagarthóireacht
+Ar ghléasanna soghluaiste, tá an socrú seo in aghaidh an fheiste agus níl sé sioncronaithe tríd an gcomhad cumraithe.
+Taisce clár a thógáil
+D'fhéadfadh cúpla soicind go cúpla nóiméad a thógáil an taisce a aththógáil ag brath ar mhéid do chluiche.
+Ag tógáil
+Deimhnigh dul isteach i mód Vim
+Tá modh Vim le haghaidh eagarthóireacht éifeachtach téacs ach is féidir a bheith frith-iomasach go leor Mura bhfuil tú eolach ar Vim, d'fhéadfadh an rogha seo go mbeadh cuma air go bhfuil Obsidian stop ag obair.
+Chun a fhíorú go bhfuil a fhios agat do bhealach timpeall Vim, cuir isteach an t-ordú chun Vim a scor gan sábháil thíos:
+Do fhreagra
+Cuir isteach an t-ordú...
+Lig dom Vim a chumasú
+Tá an t-ordú ceart. Modh Vim cumasaithe anois.
+Tá an t-ordú mícheart. Tá modh Vim faoi dhíchumasacht chun tú a chosaint.
+Cuir isteach an t-ordú chun mód Vim a chumasú
+Comhaid agus naisc
+Deimhnigh roimh scriosadh comhad
+Seachain comhaid a scriosadh trí thimpiste.
+Bruscar
+Comhaid scriosta
+Cad a tharlaíonn do chomhad tar éis duit é a scriosadh.
+Bogadh chuig bruscar an chórais
+Bogadh chuig bruscar Obsidian (fillteán.trash)
+Scrios go buan
+Scrios ceangaltáin nuair a scriostar comhaid
+Bain ceangaltáin atá nasctha leis an gcomhad scriosta go huathoibríoch mura n-úsáidtear in áit ar bith eile iad.
+I gcónaí
+Fiafraigh gach uair
+Riamh
+Comhad réamhshocraithe le hoscailt
+Roghnaigh cén comhad le hoscailt nuair a thosaíonn an aip.
+Oscailte go deireanach
+Nóta nua
+Comhad ar leith
+Nóta laethúil
+Comhad le hoscailt
+Roghnaigh comhad ar leith le hoscailt de réir réamhshocraithe.
+Nuashonraigh naisc inmheánacha
+Mhúchadh chun tú a spreagadh chun naisc a nuashonrú tar éis comhad a athainmniú.
+Suíomh réamhshocraithe le haghaidh nótaí nua
+Nuair a chuirtear nótaí nua-chruthaithe. Déanfaidh socruithe breiseán athshlánú é seo.
+Fillteán Vault
+An fillteán céanna leis an comhad reatha
+Sa fhillteán a shonraítear thíos
+Fillteán chun nótaí nua a chruthú i
+Feicfidh nótaí nua-chruthaithe faoin bhfillteán seo. Déanfaidh socruithe breiseán athshlánú é seo.
+Úsáid [[Wikilinks]]
+Giniúint Wikilinks go huathoibríoch le haghaidh [[naisc]] agus! [[íomhánna]] in ionad naisc agus íomhánna Markdown. Díchumasaigh an rogha seo chun naisc Markdown a ghiniúint ina ionad sin.
+Gach síneadh comhaid a bhrath
+Taispeáin comhaid le haon síneadh fiú mura féidir le Obsidian iad a oscailt go dúchasach, ionas gur féidir leat nasc a dhéanamh leo agus iad a fheiceáil i File Explorer agus Quick Switcher.
+Naisc
+Formáid nasc nua
+Cad iad na naisc atá le cur isteach agus naisc inmheánacha á ghiniúint agat
+Conair is giorra nuair is féidir
+Conair choibhneasta chuig comhad
+Conair iomlán i gclár
+Suíomh réamhshocraithe do cheangaltán nua
+Nuair a chuirtear ceangaltáin nua-bhreise.
+ceangaltáin
+Sa fhofhillteán faoin bhfillteán reatha
+Conair fillteán ceangal
+Cuir comhaid ceangaltán nua-chruthaithe, mar íomhánna a cruthaíodh trí thaifeadtaí tarraing-agus-scaoil nó fuaime, san fhillteán seo
+Ainm an fho-fhillteáin
+Má tá do chomhad faoi “vault/folder”, agus má shocraíonn tú ainm an fho-fhillteáin go “ceangaltáin”, sábhálfar ceangaltáin chuig “vault/fillteán/ceangaltáin”.
+Comhaid eisiata
+Beidh comhaid eisiata i bhfolach i gCuardach, Amharc Graf, agus Luanna Neamhnasctha, nach bhfuil chomh suntasach i gQuick Switcher agus moltaí nasc.
+Ní chuirtear aon scagaire eisiata i bhfeidhm anois. Cuir ceann thíos.
+Tá comhaid a mheaitseálann leis na scagairí seo a leanas eisiata
+Scagaire
+Ní féidir leis an scagaire a bheith folamh
+Cuir isteach cosán nó “/regex/”...
+Ceadaigh aisghlaonna URI
+Cumasaigh úsáid x-callback-url trí x-success nó x-error agus URIs Obsidian á láimhseáil.
+Dealramh
+Scéim dathanna bonn
+Roghnaigh scéim dathanna réamhshocraithe Obsidian.
+Dath blas
+Roghnaigh an dath blas a úsáidtear ar fud an aip.
+Dorcha
+Solas
+Oiriúnaigh don chóras
+Cló
+Ardleibhéal
+Comhéadan
+Cló comhéadan
+Socraigh cló bonn do Obsidian go léir.
+Leibhéal súmáil
+Rialaíonn sé leibhéal súmáil foriomlán an aip.
+Cló téacs
+Socraigh cló chun tuairimí a chur in eagar agus a léamh
+Cló Monospace
+Socraigh cló d'áiteanna cosúil le bloic cód agus tosaigh.
+ Cló atá i bhfeidhm faoi láthair: 
+ Tá na clónna seo a leanas i bhfeidhm faoi láthair:
+Cuir isteach ainm cló...
+Ní chuirtear aon chló saincheaptha i bhfeidhm faoi láthair. Cuir ceann thíos.
+Cuirfear an chéad chló ón liosta seo atá ar fáil ar do chóras i bhfeidhm.
+Ní bhraitear an cló seo ar do chóras.
+Braitear an cló seo ar do chóras.
+Ainm cló
+Téamaí pobail
+Réamhamharc agus bain úsáid as téamaí iontacha a chruthaigh an pobal.
+Brabhsáil
+Méid cló
+Méid cló i bpicteilíní a théann i bhfeidhm ar eagarthóireacht agus
+Coigeartú tapa ar mhéid cló
+Coigeartaigh méid an cló ag baint úsáide as Ctrl + Scroll, nó ag baint úsáide as an gcomhartha súmáil brúnt-súmá
+Téamaí
+Bainistigh téamaí suiteáilte agus téamaí pobail a
+Bainistiú
+Níl aon
+Biachláir dúchasacha
+Meaitneoidh biachláir ar fud an aip an córas oibriúcháin. Ní bheidh tionchar ag do théama orthu.
+Athluchtaigh téamaí
+Téamaí saincheaptha CSS athluchtaithe.
+Fillteán téamaí osc
+Snippets CSS
+Níor aimsíodh aon snippets CSS.
+Stóráiltear Snippets CSS i “{{path}}”.
+Athluchtaigh sraitheanna
+Oscail fillteán snippets
+Snippets CSS athluchtaithe.
+Cuir snippet CSS i bhfeidhm ag “{{path}}”.
+Téama suiteáilte
+Scáileán ar fáil
+Réamhshocraithe
+Cliceáil chun méadú
+Nuashonraigh
+Gníomhach
+Stíl fráma fuinneoige
+Cinneann sé stíl an bharra teidil de fhuinneoga Obsidian. Éilíonn atosú iomlán chun dul i bhfeidhm.
+I bhfolach (réamhshocraithe)
+Fráma Obsidian
+Fráma Dúchasach
+Deilbhín aip saincheaptha
+Socraigh deilbhín saincheaptha don aip
+Roghnú deilbhín saincheaptha
+Cumraíocht roghchlár ribín
+Cumraigh na horduithe atá le feiceáil sa roghchlár ribín.
+Mír ribín rochtana tapa
+Roghnaigh iompar an cnaipe ribín a thapáil sa roghchlár nascleanúna. De réir réamhshocraithe, osclóidh sé seo roghchlár a thaispeánann do chuid míreanna ribín
+Oscail roghchlár ribín
+Cumraigh
+Taispeáin ribín
+Taispeáin uirlisí ingearach ar thaobh na fuinneoige.
+Míreanna ribín eile
+Roghchlár ribín
+Roghnaigh na míreanna is mian leat a bheith gníomhach sa ribín. Tarraing agus scaoil chun an t-ordú a athrú.
+Taispeáin barra teidil cluaisín
+Taispeáin an ceanntásc ag barr gach cluaisín.
+Nascleanúint ar snámh
+Snámhann cnaipí nascleanúna os cionn an ábhair in ionad a bheith ancraithe.
+Taobhbharraí sleamhnáin
+Sleamhnaíonn na taobhbharraí go taobh an ábhair in ionad snámh os a chionn.
+Lánscáileán
+Folaigh eilimintí an chomhéadain go huathoibríoch agus tú ag léamh.
+Aimsíodh téama {{count}} le nuashonrú.
+Aimsíodh téamaí {{count}} le nuashonrú.
+Seiceáil nuashonruithe
+Féach nuashonruithe
+Nuashonraigh gach
+Téamaí pobail reatha
+Tá téama {{count}} suiteáilte agat faoi láthair.
+Tá téamaí {{count}} suiteáilte agat faoi láthair.
+Aicearraí méarchláir
+Cuardaigh hotkeys
+Ag taispeáint hotkey {{count}}. 
+Ag taispeáint hotkeys {{count}}. 
+Ordú {{count}} le coinbhleachtaí.
+Orduithe {{count}} le coinbhleachtaí.
+Scagaire...
+Scrios hotkey
+Brúigh hotkey...
+Gach
+Neamhshannaithe
+Sannaithe
+Sannaithe agam
+Athshocraigh réamhshoc
+Saincheapadh an t-ordú seo
+Déanann an hotkey seo i gcoinbhleacht le “{{command}}”
+Déanann an hotkey seo i gcoinbhleacht le {{count}} orduithe eile
+Bán
+Slabhra eochrach
+Rúin
+Cuir rún leis
+Cuir rún in eagar
+Taispeáin rún
+Folaigh rún
+Aitheantas
+Rún
+ainm-rúin
+Litreacha beaga, uimhreacha agus fleiscíní amháin.
+Cuir isteach do rún.
+Níor rochtainíodh riamh é
+Theip ar an rún a nuashonrú.
+Theip ar an rún a chur leis.
+Tá rún leis an Aitheantas seo ann cheana.
+Ní féidir luach an rúin a bheith folamh.
+Tá Aitheantas an rúin neamhbhailí. Ná húsáid ach litreacha beaga, uimhreacha agus fleiscíní. 64 carachtar ar a mhéad.
+Níor cuireadh aon rúin leis. Úsáidtear rúin chun faisnéis a stóráil, mar eochracha API agus focail faire, ar féidir le breiseáin a úsáid.
+Roghnaigh rún
+Aimsigh rún...
+Cuir rún leis...
+Nasc...
+Stóráiltear rúin gan criptú toisc nach bhfuil aon stór rúin ar fáil ar an gcóras seo.
+Níl na rúin criptithe
+Ná taispeáin arís
+Níl criptú ar fáil
+Soláthraíonn stór rúin do chórais oibriúcháin an criptiú. Gan stór rúin, stórálfar do rúin gan criptú.
+Ar Linux, áirítear na stórtha rúin tacaithe:
+Ginearálta
+Ceadúnas tráchtá
+Eochair ceadúnais
+Do eochair cheadúnais...
+Ceadúnas gníomh
+Gníomhachtú
+Anaithnid
+Leagan {{version}}
+Leagan suiteálaí: {{version}}
+Léigh an changelog.
+Chun tacú leis na gnéithe is déanaí agus na paistí slándála is déanaí a fháil, teastaíonn nuashonrú mór suiteálaí ó Obsidian. Ní mór duit Obsidian a íoslódáil agus a athshuiteáil de láimh.
+Tá leagan nua réidh le suiteáil. 
+Tá nuashonruithe díchumasaithe.
+Athsheoladh
+Seiceáil nuashonruithe
+Nuashonruithe uath
+Múch é seo chun an aip a chosc ó sheiceáil le haghaidh nuashonruithe.
+Cuir in iúl má thógann tosú níos faide ná mar a
+Déan saincheisteanna a dhiagnóisiú le d'aip trí fheiceáil cad atá ina chúis leis an aip a luchtú go mall.
+Seiceáil anois
+Comhéadan líne ordaithe
+Ceadaigh idirghníomhaíochtaí le Obsidian ón líne ordaithe.
+Socraigh CLI le bheith ag obair sa teirminéal
+Cláraigh "obsidian" i PATH chun rochtain ar an ordú "obsidian" a chumasú ó áit ar bith i do theirminéal.
+Cláraigh
+Cabhair
+Foghlaim conas Obsidian a úsáid agus cabhair a fháil ón bpobal.
+Oscailte
+Teanga
+Athraigh an teanga taispeána.
+Faigh leaganacha luathrochtana
+Nuashonrú uathoibríoch go dtí an leagan luathrochtana Cuimsíonn na leaganacha seo gnéithe nua ach d'fhéadfadh a bheith chomh cobhsaí
+Ardleibhéal
+Luathú crua-earraí
+Casann sé ar Luasghéarú Crua-earraí, a úsáideann do GPU chun Obsidian a dhéanamh níos réidh.
+Má mhúchfaidh tú é seo, déanfar díghrádú mór ar fheidhmíocht an aip.
+Fillteán cumraithe a fhilleadh
+Úsáid fillteán cumraithe difriúil ná an ceann réamhshocraithe. Ní mór tosú le ponc.
+Ní mór go mbeadh suíomh cumraithe ina ainm bailí fillteán a thosaíonn le ponc.
+Ceadúnas
+Is é “{{key}}” d'eochair ceadúnais tráchtála.
+Cláraithe chuig “{{company}}” d'úsáideoirí {{suíocháin}}. Bailí go dtí {{in éag}}.
+Bailíochtú...
+Ceadúnas míbhailí: 
+Bain
+Ceadúnas catalaíoch
+Tá an ceadúnas Catalaíoch {{tier}} agat faoi láthair. Go raibh maith agat as do thacaíocht!
+Níl ceadúnas Catalaíoch agat. Is síntiús aon-uaire é Catalyst a chuidíonn le Obsidian fanacht 100% le tacaíocht ó úsáideoir agus a thugann rochtain luath duit ar ghnéithe nua.
+Aip
+Foghlaim conas teanga nua a chur le Obsidian.
+Cuntas
+Do chuntas
+Tá tú sínithe isteach faoi láthair mar {{name}} ({{email}}).
+Níl tú logáilte isteach anois. Níl cuntas ag teastáil ach le haghaidh Obsidian Sync, Obsidian Publish, agus leaganacha luathrochtana.
+Uasghrádú
+Ceadúnas tráchtá
+Cuidigh le Obsidian a choinneáil tacaíocht ó úsáideoir 100%.
+Ceannach
+Logáil amach
+Logáil isteach
+Cláraigh
+Ríomhphost
+Do r-phost...
+Ainm iomlán
+Pasfhocal
+Do phasfhocal...
+Dearmad ar phasfhocal?
+Logáil isteach
+Ní féidir le ríomhphost a bheith folamh.
+Níl ríomhphost bailí.
+Ní féidir le pasfhocal a bheith folamh.
+Theip ar logáil isteach, seiceáil faoi dhó do r-phost agus do phasfhocal.
+Theip ar chlárú
+Níl cuntas agat? 
+Cláraigh anois
+Cód 2FA 6-dhigit
+Caithfidh cód fíordheimhnithe 2FA a bheith 6 dhigit.
+Tá cód 2FA mícheart, seiceáil do aip fíordheimhnithe faoi dhó le do thoil.
+Liosta breiseáin
+Cuardaigh croíbhreiseáin
+Scagaigh breiseáin de réir ainm nó tuairisc.
+Cuardaigh breiseáin...
+Breiseáin pobail
+Modh srianta
+Tá modh srianta as. Cas air chun breiseáin phobail a dhíchumasú.
+Cas air agus athluchtaigh
+Seiceáil go huathoibríoch le haghaidh nuashonruithe breiseán
+Seiceáil go tréimhsiúil le haghaidh nuashonruithe breiseán.
+Breiseáin pobail
+Brabhsáil agus suiteáil breiseáin pobail a rinne ár bpobal iontach.
+Brabhsáil
+Mód Srianta Scoir
+D'fhéadfadh breiseáin phobail, cosúil le haon bhogearraí eile a shuiteálann tú, fadhbanna sláine agus slándála sonraí a bheith
+Tá slándáil breiseán tábhachtach dúinn. Seo an méid a dhéanaimid:
+In ainneoin ár n-iarrachtaí, tá seans beag ann fós go bhféadfadh breiseán pobail mí-iompar.
+Athbhreithniú tosaigh
+Déanann ár bhfoireann athbhreithniú tosaigh ar chód breiseáin san eolaire pobail oifigiúil sula ndéantar iad a liostáil
+Foinse oscailte
+Tá an chuid is mó de na breiseáin foinse oscailte ar GitHub, ionas gur féidir leat an cód a iniúchadh duit féin.
+Iniúchadh piaraí
+Tá pobal mór forbróirí againn a faire amach dá chéile.
+Meicníocht tuar
+Leanaimid suas agus bainimid breiseáin lochtacha ar thuarascáil an úsáideora.
+Ar mhaith leat an Mód Srianta a fhágáil chun breiseáin phobail a chumasú? Molaimid go láidir cúltacaí a dhéanamh de do shonraí sula ndéanann tú é sin.
+Tuilleadh eolais a fháil faoi shlándáil
+Cas ar bhreiseáin pobail
+An bhfuil muinín agat as údar an chluiche seo?
+Tá tú ag oscailt an clár seo den chéad uair, agus tagann sé le roinnt breiseáin.
+Má fuair tú an clúdach seo ó dhuine eile, tabhair faoi deara le do thoil go bhféadfadh rioscaí slándála a bheith i mbun breiseáin
+Mura bhfuil muinín iomlán agat as údar an chabhán seo, molaimid fanacht sa Mód Srianta, ionas nach ritheann na breiseáin sa chabhán seo.
+Cuir muinín as an údar agus cumasaigh
+Brabhsáil cruinneachán i mód srianta
+Cuardaigh breiseáin pobail...
+Theip ar breiseáin pobail a luchtú.
+Suiteáilte
+Suiteáil
+Cumasaigh
+Díchumasaigh
+Cóipeáil nasc roinnt
+Deontas
+Níor aimsíodh aon torthaí.
+Ní bhfuarthas aon chomhaid le déanaí. Clóscríobh le cuardach...
+Theip ar léiriú breiseán a luchtú.
+Leagan: {{version}}
+ (suiteáilte faoi láthair: {{version}})
+De réir 
+Stóráil: 
+Nuashonrú deireanach: 
+Féach an nuashonrú is déanaí
+Ní thacaíonn an breiseán seo le do ghléas.
+Nuashonraigh
+Níor chuir an breiseán seo comhad README ar fáil.
+Suiteáil breiseán “{{name}}”...
+Theip ar an breiseán “{{name}}” a shuiteáil.
+Breiseán “{{name}}” a shuiteáilte go rathúil.
+Theip ar an breiseán “{{id}}” a dhíshuiteáil.
+Theip ar an breiseán “{{id}}” a dhíchumasú.
+Breiseáin suiteáil
+Breiseáin a athlódáil
+Breiseáin tríú páirtí a athlódáil
+Díshuiteáil
+Díshuiteáil breiseán
+An bhfuil tú cinnte gur mhaith leat an breiseán seo a dhíshuiteáil? Scriosfaidh sé seo fillteán an bhreiseáin.
+Oscail fillteán breise
+Seiceáil nuashonruithe
+Nuashonraigh gach
+Breiseáin reatha
+Ag seiceáil le haghaidh nuashonruithe...
+Tá breiseán {{count}} suiteáilte agat faoi láthair.
+Tá breiseáin {{count}} suiteáilte agat faoi láthair.
+Ní bhfuarthas aon nuashonruithe breiseán
+Fuarthas breiseán {{count}} le nuashonrú.
+Fuarthas breiseáin {{count}} le nuashonrú.
+Nuashonrú go leagan {{version}}
+Cuardaigh breiseáin suiteá
+Scagaigh breiseáin suiteáilte de réir ainm nó tuairisc
+Cuardaigh breiseáin suiteáilte
+Taispeáin suiteáilte amháin
+Deonaigh chun tacú le {{name}}
+Is saorálaithe pobail iad forbróirí breiseán a dhéanann rudaí iontacha as paisean. Má aimsíonn an breiseán seo úsáideach, smaoinigh ar a fhorbairt a mhaoiniú.
+Rachaidh 100% de do ranníocaíocht chuig an bhforbróir breiseán; Ní ghlacann Obsidian gearradh. D'fhéadfadh an t-ardán maoinithe a roghnaíonn siad táille a ghearradh
+Go raibh maith agat as do thacaíocht flaithiúil!
+Tacaigh leis an mbreiseán seo:
+Ag taispeáint {{pluginCount}}:
+Is mó a íoslódáil
+Scaoilte le déana
+Nuashonraithe le dé
+Aibítreach
+Nuashonraithe {{time}}
+Barra uirlisí
+Cumraigh Gníomh Tapa sogh
+Cumraigh an t-ordú atá le spreagadh agus tú ag tarraingt síos ón mbarr. Tá an t-ordú reatha socraithe go “{{command}}”.
+Gníomh nach bhfuil cumraithe
+Cumraigh
+Roghnaigh Gníomh Tapa...
+Níl aon
+Bainistigh roghanna uir
+Cuir nasc inmheánach leis
+Cuir leabú leis
+Cuir clib leis
+Ceannteideal toggle
+Athraigh strikethrough
+Athraigh buaicphointe
+Cód toggle
+Athraigh blockquote
+Athraigh matamaitic inlíne
+Athraigh bloc matamaitice
+Cuir nasc Markdown leis
+Athraigh liosta piléar
+Athraigh liosta uimhrithe
+Mír liosta íosrúcháin
+Mír liosta neamhchinnte
+Cealaigh
+Athchóirigh
+Bogadh caret suas
+Bog ceart síos
+Bogadh caret ar chlé
+Bog ceart ar dheis
+Téigh go dtí an chéad líne
+Téigh go dtí an líne dheireanach
+Toggle méarchlár
+Cumraigh barras uirlisí
+Roghanna breise
+Roghanna uirlisí níos mó
+Cuir isteach ceangaltán
+Aimsigh...
+Cuir in ionad...
+Cuardach imeachta
+Ar Aghaidh
+Roimhe Seo
+Aimsigh go léir
+athsholáthair
+Cuir gach duine in ionad
+Cineál #
+chun ceannteideal a nascadh
+Cineál ^
+chun bloic a nascadh
+Cineál |
+téacs taispeána a athrú
+Taispeáin téacs
+Ceannteideal
+Níl aon mheaitseáil le fáil
+Méid an íomhá: {{size}} px ar leithead
+glacadh le
+Foot nua...
+Gan aon mholtaí...
+Cuir leis an bhfoclóir
+Athraigh nasc
+Cuir clib in eagar
+Cuir an bloc seo in eagar
+Scrios fónóta agus tagairt
+Athshocraigh méid
+Scrios íomhá
+Gan ceannteideal
+Ceannteideal {{level}}
+Easpórtáil go PDF
+Easpórtáil “{{filename}}” chuig PDF leis na socruithe thíos.
+Méid an leathanaigh
+Cuir ainm comhaid san áireamh mar theideal
+Tírdhreach
+Corrlaigh
+Réamhshocraithe
+Íosta
+Níl aon
+Céatadán íoscála
+Easpórtáil go PDF
+Lean an nasc
+Oscail nasc
+Clib cuardaigh
+Ní féidir teacht ar:
+Ní féidir teacht ar “{{subpath}}” i {{file}}
+Oscail san aip réamhshocraithe
+Tá an barra taobh folamh, déan iarracht cluaisín a tharraingt anseo.
+Leathnaigh
+Titim
+Theip ar chomhad “{{filepath}}” a shábháil. {{message}}. Déan cúltaca d'ábhar an chomhaid seo anois chun sonraí a chailleadh a sheachaint.
+Theip ar an breiseán “{{plugin}}” a luchtú
+Bhí earráid ag an mbreiseán “{{plugin}}” agus é á luchtú
+Theip ar oscailt “{{filepath}}”
+Ní féidir suíomh “{{href}}” a oscailt
+Gan aon chomhad
+Tá “{{file}}” modhnaithe go seachtrach, ag cumasc athruithe go huathoibríoch.
+Bainistigh luchtanna...
+Cabhair
+Socruithe
+Tarraing chun athshocrú
+Athraigh modh amharc réamhshocraithe go léitheoire
+Aistrigh modh amharc réamhshocraithe go radharc eag
+Chun an ghné seo a úsáid, athshuiteáil le do thoil leis an suiteálaí is déanaí ar fáil ónár suíomh
+Braithíodh am tosaithe mall.
+Níl an ghné seo ar fáil ach san aip deisce.
+Socruithe réamhshocraithe a
+Cóipeáil chuig gearr
+Cóipeáil
+Cóipeáil chuig do ghearr
+{{item}} cóipeáilte chuig do ghearrthaisce
+Ní féidir cóipeáil chuig do ghearrthaisce
+Scagaire...
+Bhí earráid agam agus tú ag rindreáil bloc cód.
+Comhad oscailte “{{path}}”
+Níor aimsíodh comhad “{{name}}”.
+Gníomh URI anaithnid: {{action}}
+Scrios
+Cruinneas innéacsúcháin...
+B'fhéidir nach mbeidh roinnt feidhmiúlachta ar fáil go dtí go mbeidh sé seo críochnai
+Innéacsú críochnaithe.
+Is clúdach bosca gainimh é seo.\nCaillfear na hathruithe a dhéanann tú sa treoir seo.
+Tá IndexedDB ag teastáil don ghné seo, ach tá sé díchumasaithe faoi láthair.
+Má tá iOS á úsáid agat i Mód Lockdown, eisiamh Obsidian ón socrú "Cumraigh Brabhsáil Gréasáin" den Mód Lockdown.
+Iontráil chun a chruthú
+Nuashonrú atá ar fáil
+Eolas dífhabhtaithe
+Tuilleadh eolais
+Ní anois
+Cuir
+Bainistiú
+Cluaisín nua
+Folaigh ribín
+Tá an cluaisín seo gnóthach faoi láthair, déan iarracht arís níos dé
+Formáid
+Mír
+Cuir isteach
+Cuir nasc leis
+Cuir nasc seachtrach leis
+Glaoigh
+Riail chothrománach
+Bloc cód
+Bloc matamaitice
+Tábla
+Fónót
+trom
+Cód
+Trácht
+Aibhsigh
+Iodálach
+Líne tríd
+Matamaitic
+Liosta piléar
+Liosta tascanna
+Liosta uimhrithe
+Ceannteideal {{level}}
+Comhlacht
+Formáidiú Glan
+Sleachta
+Folamh
+Níl aon chomhad oscailte
+Cruthaigh nóta nua
+Téigh go dtí an comhad
+Féach na comhaid le déanaí
+Dún
+Dún gach cluaisín “{{id}}” ({{count}})
+Níl an breiseán gníomhach a
+Tá an breiseán a chruthaigh an cluaisín seo ({{type}}) imithe.
+Nótaí Scaoilte {{version}}
+Níl aon nótaí scaoilte ar fáil do {{version}}.
+Níor féidir nótaí scaoilte a luchtú do {{version}}.
+Scaoilte ar {{date}}
+Cad atá nua i {{version}}
+Amharc reatha: eagarthóireacht
+Amharc reatha: léamh
+Ribbón
+Taobh na taobh clé
+Taobh na taobh deise
+Cliceáil chun cur in eagar
+Cliceáil chun léamh
+{{key}} +Cliceáil chun oscailt ar dheis
+Brúigh {{key}}+C chun an foinse a chóipeáil
+Aimsigh...
+Cuir in ionad...
+Cuir in eagar
+Bain
+Bain den liosta
+Athainmnigh
+Réamhamharc
+Tuilleadh roghanna
+Dún
+Dún go léir
+Dún cluaisín {{count}}
+Dún cluaisíní {{count}}
+Dún daoine eile
+Dún cluaisíní tar éis
+Bioráin
+Díphoráil
+Cluaisín Dínasc
+Nasc le cluaisín...
+Modh foinse
+Féach léitheoire
+Cuir maoin comhad leis
+Scrios comhad
+Cruthaigh an comhad seo
+Oscail nasc
+Oscail i gcluaisín nua
+Oscailte ar dheis
+Cóipeáil URL
+Cóipeáil
+Gearradh
+Greamaigh
+Cóipeáil an cosán
+Íomhá cóipeáil
+mar URL Obsidian
+ón bhfréamhchomhadlann córais
+ón bhfillteán boghta
+Greamaigh mar théacs simplí
+Cuardaigh suas “{{selection}}”
+Roghnaigh go léir
+Athainmnigh an ceannteideal seo...
+Athainmnigh an ID bloc seo...
+Oscail i bhfuinneog nua
+Bogadh chuig fuinneog nua
+Oscail nasc seachtrach
+Cluaisíní cruach
+Cluaisíní a dhíchuir
+Oscail radharc nasctha
+Cliceáil chun leathnú
+Cliceáil chun titim
+Leasainm
+Níl cruthaithe fós, roghnaigh chun a chruthú
+Leagan
+Cruthaigh clúdach áitiúil
+Oscail fillteán mar chabhair
+Roghnaigh fillteán atá ann cheana de chomhaid Markdown.
+Cruthaigh clúdach nua
+Cruthaigh clúdach Obsidian nua faoi fhillteán.
+Cruinneog oscailte ó Obsidian Sync
+Cuir clúdach sioncronaithe ar bun leis an gclár iargúlta atá ann cheana.
+Ainm clár
+Roghnaigh ainm do do chluiche uamhnach.
+Suíomh
+Roghnaigh áit chun do chluiche nua a chur.
+Cuirfear do ghabhálaí nua i: 
+Nocht cruinneas i taiscéalaí córais
+Nochtadh cruinneachán in Finder
+Athainmnigh cruinneas...
+Cóipeáil ID clár
+Tá clúdach leis an ainm seo cheana féin.
+Ní féidir gluaiseán a bhogadh isteach i bhfo-fhillteán de féin.
+Ní féidir gluaiseán atá oscailte faoi láthair a athainmniú.
+Theip ar an gclár a athainmniú.
+Athainmniú go rathúil ar chab
+Bogadh cruinneachán...
+Roghnaigh an fillteán
+Tá cruinneachán ag an gceann scríbe cheana féin.
+Ní féidir gluaiseán oscailte faoi láthair a bhogadh.
+Theip ar chabhair a bhogadh.
+Cruinneas a bhogadh go rathúil.
+Bain ón liosta
+Tús tapa
+Oscailte
+Brabhsáil
+Ceangail
+Cruthaigh
+Ar ais
+Ní féidir ainm an treoir a bheith folamh.
+Ní féidir deireadh a chur le ponc ainm an trealaimh.
+Roghnaigh fillteán bailí le do thoil.
+Theip ar chluiche a chruthú.
+Ní raibh sé in ann cruthú clúdach ag an áit ar leith. Seiceáil faoi dhó an suíomh agus an cead.
+Theip ar oscailt.
+Ní féidir clár a bhaint atá oscailte faoi láthair.
+Faigh Cabhair
+Ríomhphost
+Do r-phost...
+Pasfhocal
+Do phasfhocal...
+Sínigh isteach
+Socrú
+Cruthaigh clúdach sioncronaithe ar an bhfeiste seo.
+Is clár iargúlta é seo atá faoi úinéireacht agat.
+Is clár iargúlta é seo a roinntear leat.
+Is leatsa iad do chuid smaointe.
+sioncronaithe
+nach bhfuil sioncrónaithe
+Níl aon
+Molta
+Stórálann Obsidian nótaí ar do ghléas, ionas gur féidir leat rochtain a fháil orthu go tapa agus go príobháideach, fiú as líne.\nStóráiltear do chuid sonraí i bhfillteán áitiúil slán ar a dtugtar **vault**.
+Cruthaigh clúdach
+Úsáid mo ghabháil atá ann cheana
+Chun rochtain a fháil ar do nótaí ar ghléasanna eile ní mór duit sioncrónú a chur ar bun.
+Toisc go stórálann Obsidian do nótaí ar do ghléasanna, beidh ort sioncrónú a chur ar bun más mian leat rochtain a fháil ar do nótaí ar ghuthán nó ar ríomhaire eile.\nIs féidir leat sioncrónú a chur ar bun anois, nó tosú ag scríobh agus é a chur ar bun níos déanaí.
+Syncrónú Socraithe
+Lean ar aghaidh gan sioncronú
+Scipeáil
+Cumraigh do ghabhálaí nua.
+Cruthaigh clúdach
+Socrú sioncrónaithe
+Cruthaigh clár sincronaithe ar do chuntas Obsidian ionas gur féidir leat rochtain a fháil ar do chuid sonraí ó ghléasanna eile.
+Criptiú sioncronú
+Criptiú deireadh go deireadh
+Cuireann an slándáil is láidre ar fáil ach éilíonn ort do phasfhocal criptithe a stóráil
+Criptiú caighde
+Úsáideann sé eochair a bhainistíonn Obsidian chun do chuid sonraí a chosaint agus ar ár bhfreastalaithe.
+Socruithe Sync
+Ar mhaith leat aon fhillteáin nó comhaid a eisiamh agus tú ag sioncrónú leis an bhfeiste seo?
+Tosaigh sioncrónú
+Cruthaigh cuntas Obsidian nó logáil isteach
+Cláraigh
+Sínigh isteach
+Seol ríomhphost arís
+Tá clúdaigh Sync agat cheana féin
+Ar mhaith leat clár nua a chruthú nó ceangal a dhéanamh le cruinneas comhshonraithe atá ann cheana?
+Cruthaigh clár Sync nua
+Roghnaigh clúdach atá ann cheana
+Logáil amach
+Dearmad focal faire
+Ainm clár
+Suíomh an chabhála
+Stóráil ghléis
+Ligeann sé seo rochtain a fháil ar shonraí Obsidian ag aipeanna eile.
+Teastaíonn ceadanna breise.
+Stóráil na hAipe
+Ní bheidh rochtain ag aipeanna eile ar do shonraí.
+Scriosfaidh Android do shonraí má dhíshuiteálann tú Obsidian.
+Cuirfear do chluiche nua i {{vaultLocation}}
+Réigiún
+Roghnaigh réigiún freastalaí in aice leat chun sioncrónú a dhéanamh níos gasta.
+Eochair criptithe
+Ní féidir an pasfhocal seo a athrú níos déanaí. Má dhéanann tú dearmad ar do phasfhocal, beidh aon sonraí iargúlta ar fhreastalaithe Sync inrochtana go deo.
+Mo clár
+Uathoibrithe
+Roghnaigh cruinneachán
+Tá do chuntas** {{email}} ** tá clóirí ann cheana ar féidir leat nasc a dhéanamh leo.
+Sínigh isteach i do chuntas Obsidian
+Dearmad focal faire
+Athshocraigh pasfhocal
+Chuireamar ríomhphost chuig {{email}} chun do phasfhocal a athshocrú.
+Roghnaigh conas do nótaí a shioncronú
+Chun Obsidian a úsáid ar do ghléasanna beidh ort do chuid sonraí a shioncronú.
+Gan uaim ar fud gach feiste agus OS.
+Daingnithe leis an gcaighdeán criptithe deireadh go deireadh is láidre
+Teastaíonn cuntas Obsidian.
+Ní amháin le haghaidh iOS agus macOS.
+Gan criptithe de réir réamhshocraithe.
+Teastaíonn breiseáin nó uirlisí tríú
+Ní féidir é a chriptiú de réir réamhshocraithe.
+Úsáid Obsidian Sync
+Úsáid iCloud
+Úsáid sioncronú tríú
+Modhanna sioncrónaithe eile
+Úsáid modhanna sioncronaithe tacaithe
+Cá bhfuil do chluibheán suite?
+Eile
+Syncrónú tríú
+Ar an bhfeiste seo
+Ceangail le iCloud
+Ceangail le seirbhís sioncrónaithe eile
+Ceangail le Obsidian Sync
+Roghnaigh fillte
+Modhanna sioncrónaithe eile
+Tacaíonn Obsidian le dhá mhodh sioncrónaithe go hoifigiúil: **Obsidian Sync** agus **iCloud**.\nMar sin féin, toisc go dtugann Obsidian smacht duit ar do chuid sonraí tá roghanna sioncrónaithe eile is féidir leat a úsáid.\nI measc na roghanna seo tá breiseáin tríú páirtí agus uirlisí eile a d'fhéadfadh go mbeadh níos airde\nChun modh sioncrónaithe malartach a úsáid, **cruthaigh vault** agus lean na treoracha a sholáthraíonn an breiseán nó an soláthraí sioncrónaithe tríú páirtí.
+Cuir isteach do r-phost
+Teastaíonn do r-phost chun cuntas Obsidian a chruthú.
+Cuir isteach d'ainm agus do phasfhocal
+Ceangail le Obsidian Sync
+Ba chóir duit ríomhphost a fháil go luath chuig ** {{email}} ** le treoracha chun nasc a dhéanamh le Obsidian Sync.
+Níor aimsíodh do chluibheán iCloud. D'fhéadfadh sé seo a bheith mar gheall ar aon cheann de na cúiseanna seo a leanas:
+Tá do ghabhálaí ar chuntas iCloud difriúil ná an ceann a bhfuil tú sínithe isteach faoi láthair ar an bhfeiste seo.
+Ní stóráiltear do chluibheán ar an bhfillteán Obsidian barrleibhéil de do iCloud Drive.
+Ní thacaítear le iCloud
+Níl sioncrónú iCloud ar fáil ach ar ghléasanna Apple. Má tá do ghabhálaí ag sioncrónú trí iCloud faoi láthair, foghlaim conas do ghabháil a aistriú chuig seirbhís sioncrónaithe difriúil.
+Ceadaigh rochtain ar chomhad
+Tú a logáil isteach...
+Tá ainm clár ag teastáil
+Seoltar ríomhphost dearbhaithe nua.
+Theip ar ríomhphost a athsheoladh.
+Caithfidh fillteán a bheith i suíomh an chosca.
+Fáilte
+Seo d'* vault* nua.\n\nDéan nóta ar rud éigin, [[cruthaigh nasc]], nó bain triail as [an Allmhaireoir] (https://help.obsidian.md/Plugins/Importer)!\n\nNuair a bheidh tú réidh, scrios an nóta seo agus déan an clúdach duit féin.
+Cuir isteach nasc anseo
+Cuir naisc isteach anseo
+Bogadh isteach i “{{folder}}”
+Réalta an comhad seo
+Réalta na comhaid seo
+Oscail sa chluaisín seo
+Oscail mar chluaisín nua
+A mhéadú
+Íoslaghdú
+Athchóirigh síos
+Dún an fhuinneog
+Téigh ar ais
+Téigh ar aghaidh
+Á lódáil Obsidian...
+Tharla earráid agus Obsidian á luchtú.
+Athluchtaigh aip
+Athluchtaigh aip i mód srianta
+Oscail cruinneas eile
+Breiseáin á lódáil...
+Tá breiseán “{{plugin}}” ag glacadh fada le luchtú. 
+Á lódáil vault...
+Theip ar luchtú clúdach: 
+Á lódáil cache...
+Spás oibre á lódáil...
+Iompórtáil isteach i g
+Cuir téacs leis an gcomhad:
+Roghnaigh comhad...
+
+Cuir isteach an nasc isteach i “{{filename}}”
+Taispeáin léargas cluaisín
+Allmhairiú...
+Rath iompórtála
+Theip ar an comhad “{{filename}}” a iompórtáil
+Brúigh ar ais arís chun imeacht.
+Aiseolas
+An bhfuil tú taitneamh as Obsidian? Cabhair linn trí rátáil a thabhairt dó.
+Rátáil an aip
+Díbhunaigh
+Nuashonraíodh comhaid chumraíochta ó iCloud, teastaíonn athlódáil
+Athlódáil
+Suíomh cabhrach oifigiúil
+Léigh cáipéisíocht chabhrach oifigiúil Obsidian, atá ar fáil i iliomad teangacha.
+Tabhair cuairt
+Comhrá Discord
+Is é Discord an áit is fearr chun comhrá a dhéanamh le húsáideoirí Obsidian eile a bhfuil taithí acu ó gach cearn den domhan.
+Bí páirt
+Fóram oifigiúil
+Cuidigh lena chéile, iarrataí gné a phostáil, fabhtanna a thuairisciú, agus bíodh plé domhain agat faoi bhainistíocht
+Cruinneamh Bosca Gaineamh
+Seinn timpeall agus déan triail as gnéithe éagsúla. Tabhair faoi deara le do thoil nach sábhálfar d'athruithe.
+Sábháil an comhad reatha
+Íoslódáil ceangaltán don chomhad reatha
+Lean an nasc faoi chúrsóir
+Oscail nasc faoi chúrsóir i gcluaisín nua
+Oscail nasc faoi chúrsóir ar dheis
+Oscail nasc faoi chúrsóir i bhfuinneog nua
+Dírigh ar ghrúpa cluaisíní thuas
+Dírigh ar ghrúpa cluaisíní thíos
+Dírigh ar ghrúpa cluaisíní ar chlé
+Dírigh ar ghrúpa cluaisíní ar dheis
+Togla bioráin
+Roinn ar dheis
+Roinn síos
+Athraigh cluaisíní cruachta
+Scoránaigh fad líne inléite
+Scoránaigh uimhreacha línte
+Nascleanúint ar ais
+Nascleanúint ar aghaidh
+Scoránaigh mód éadrom/dorcha
+Athraigh téama...
+Athraigh boghta...
+Oscail boghta...
+Bainistigh boghtaí
+Cuardaigh an comhad reatha
+Cuardaigh agus athsholáthair sa chomhad reatha
+Cuir maoin comhad leis
+Ainm (A go Z)
+Ainm (Z go A)
+Cuir alias leis
+Airíonna comhad soiléir
+Socruithe oscailte
+Cabhair oscailte
+Athraigh amharc eagarthóireachta/léithe
+Athraigh Réamhamharc Beo/Modh Foinse
+Scrios an comhad reatha
+Cluaisín nua
+Fuinneog nua
+Taispeáin bruscar
+Dún gach cluaisín
+Dún cluaisín reatha
+Dún daoine eile i ngrúpa cluaisíní
+Dún gach cluaisín eile
+Dún an grúpa cluaisín seo
+Athraigh an taobh taobh clé
+Athraigh ribín
+Athraigh an taobh na taobh deise
+Athraigh modh réamhshocraithe do chluaisíní nua
+Cuir cúrsóir thuas
+Cuir cúrsóir thíos
+Dírigh ar an nóta deireanach
+Athraigh airíonna folláin sa chomhad reatha
+Toglaigh filleadh ar an líne reatha
+Fill gach ceannteideal agus liosta
+Déan gach ceannteideal agus liosta a oscailt
+Fill níos mó
+Fill níos lú
+Bog líne suas
+Bogadh líne síos
+Bain ceannteideal
+Socraigh mar cheannteideal {{level}}
+Athraigh trom
+Athraigh iodálach
+Athraigh buaicphointe
+Athraigh trácht
+Formáidiú Glan
+Cuir isteach nasc Markdown
+Athraigh seiceáil litrithe
+Scrios mír
+Athraigh stádas bosca seiceála
+Bulléad rothaíochta/bosca seiceála
+Cuir isteach glaonna
+Cuir isteach bloc cód
+Cuir isteach bloc matamaitice
+Cuir isteach riail chothrománach
+Cuir isteach tábla
+Cuir isteach fónóta
+Athainmnigh comhad
+Cóipeáil cosán comh
+Cóipeáil cosán an chomhaid reatha ó fhréamh an chórais
+Cóipeáil URL Obsidian
+Easpórtáil go PDF...
+Athlódáil aip gan sábháil
+Cealaigh cluaisín dún
+Taispeáin roghchlár comhthéacs faoin
+Taispeáin faisnéis dífhabhtaithe
+Oscailte bosca gainimh
+Togla fuinneog i gcónaí ar bharr
+Zúmáil isteach
+Súmáil amach
+Athshocraigh súmáil
+Déan amharc léitheoireachta
+Bog cluaisín reatha chuig fuinneog nua
+Oscail cluaisín reatha i bhfuinneog nua
+Athainmnigh an comhad reatha
+Téigh chuig cluaisín roimhe seo
+Téigh go dtí an chluaisín eile
+Téigh chuig an cluaisín deireanach
+Téigh go dtí cluaisín # {{n}}
+Taispeáin nótaí scaoilte
+Beidh tionchar aige seo ar {{links}} i {{files}}.
+Nuashonraithe {{links}} i {{files}}.
+Nuashonraigh naisc
+Ar mhaith leat naisc inmheánacha a nascann leis an gcomhad seo a nuashonrú?
+Nuashonraigh i g
+Díreach uair amháin
+Ná nuashonraigh
+An bhfuil tú cinnte gur mhaith leat “{{filename}}” a scriosadh?
+Aistreofar é chuig bruscar do chórais.
+Aistreofar é chuig do bhruscar Obsidian, atá suite san fhillteán “.trash” i do chluiche.
+Scriosfar an comhad go buan.
+Níl an fillteán seo folamh.
+Má leanann tú ar aghaidh, scriosfar gach comhad taobh istigh den fhillteán seo.
+Scrios fillteán
+Scrios
+Ná iarr arís
+Tá nasc {{count}} ann faoi láthair ag díriú chuig an gcomhad seo.
+Tá naisc {{count}} ann faoi láthair ag díriú ar an gcomhad seo.
+Scrios comhad
+Íoslódáil ceangal
+Níl aon cheangaltáin sheachtracha sa nóta seo.
+Ceangaltán {{count}} íoslódáilte.
+Ceangaltáin {{count}} íoslódáilte.
+Comhad {{count}} nuashonraithe.
+Comhaid {{count}} nuashonraithe.
+Athruithe ar ais ar an gcomhad {{count}}.
+Athruithe ar ais ar chomhaid {{count}}.
+Níl nasc idirlín ann
+Á lódáil...
+Bainistiú
+Féach
+Deimhnigh
+Cealaigh
+Scipeáil
+Íoslódáil
+Déanta
+Sábháil
+
+Athraigh
+Lean ar aghaidh
+Roghnaigh
+Déan iarracht arís
+Nuashonraigh
+Cealaigh
+Ullmhú PDF...
+Teideal nótaí
+Ainm an chomhaid
+Ainm nua
+Earráid
+Roghnaithe
+Athainmnigh go rathúil comhad.
+Theip ar nótaí a chumasc: {{message}}
+Níl an comhad nó an fillteán “{{path}}” ann.
+Ní féidir ceannteideal a bheith folamh
+Ní féidir le Bloc ID a bheith folamh
+Ní féidir ach carachtair alfauméireacha nó sraith a bheith ag ID bloc
+Athainmnigh ceannteideal
+Athainmnigh ID bloc
+Scrios ceangaltáin chomhaid?
+Ní úsáidtear an ceangaltán seo in aon nótaí a thuilleadh. Ar mhaith leat é a scrios?
+Ní úsáidtear na {{count}} ceangaltán seo in aon nótaí a thuilleadh. Ar mhaith leat iad a scrios?
+Crann comhad
+Gailearaí
+Nóta Nua
+Nóta Nua ar an gceart
+Cluaisín nua
+Fuinneog Nua
+Oscail go tapa...
+Oscail Vault...
+Dún cluaisín
+Dún Fuinneog
+Aimsigh
+athsholáthair
+Glaoigh
+Nasc Markdown
+Nasc
+Ceannteideal {{level}}
+Comhlacht
+Sleachta
+Easpórtáil chuig PDF...
+Cuir isteach Ceangaltán...
+Bloc Cód
+Bloc Matamaitice
+Tábla
+Fónót
+Teideal inlíne
+Uimhreacha línte
+Liosta piléar
+Liosta uimhrithe
+Liosta Tascanna
+trom
+Cód
+Trácht
+Iodálacha
+Matamaitic
+Aibhsigh
+Líne tríd
+Trácht
+Filleadh
+Fill Gach
+Fill Gach
+Fill Níos Mó
+Fill Níos Lú
+Mód Foinse
+Féach Léitheoire
+Taispeáin Faisnéis Dífhabhtaithe
+Oscail Vault Bosca Gaineamh
+Bog go fuinneog nua
+Nascleanúint ar ais
+Nascleanúint ar aghaidh
+Taobh na taobh clé
+Taobh na taobh dheis
+Ribbón
+Scoilt ar dheis
+Roinn síos
+Nótaí Scaoilte
+Breiseáin
+Comhaid
+Brabhsáil na comhaid agus na fillteáin i do chluiche.
+Oscail taiscéalaí comhad
+Taispeáin taispeántóir comhad
+Cruthaigh nóta nua
+Cruthaigh fillteán nua
+Cruthaigh nóta nua sa chluaisín reatha
+Cruthaigh nóta ar dheis
+Nochtadh go huathoibríoch
+Thit go léir
+Leathnaigh go léir
+Nóta nua
+fillteán nua
+Athraigh ord sórtála
+Nocht comhad sa nascleanúint
+Nocht an comhad reatha i nascleanúint
+Déan cóip den chomhad reatha
+Comhad reatha dúbailte
+Bog an comhad reatha chuig fillteán eile
+Fillteán nua le roghnú ({{count}} mír)
+Fillteán nua le roghnú ({{count}} earraí)
+Bogadh comhad chuig...
+Bogadh fillteán chuig...
+Bog míreanna {{count}} chuig...
+Clóscríobh fillteán
+Ní bhfuarthas aon fhillteáin ann cheana.
+nascleanúint a dhéanamh
+bogadh
+chun a chruthú
+a dhíscríobh
+Ainm an chomhaid (A go Z)
+Ainm an chomhaid (Z go A)
+Am modhnaithe (nua go sean)
+Am modhnaithe (sean go nua)
+Am cruthaithe (sean go nua)
+Am cruthaithe (nua go sean)
+Nóta nua
+fillteán nua
+Athainmnigh...
+Scrios
+Déan cóip
+Dúblach
+Ní féidir aon cheann de na carachtair seo a bheith san ainm comhaid: 
+Ní oibreoidh naisc le hainmneacha comhaid ina bhfuil aon cheann de na carachtair seo: 
+Tá comhad ann cheana leis an ainm céanna
+Ní féidir ainm an chomhaid a bheith folamh.
+Níor chóir go dtosóidh ainm an chomhaid le ponc.
+Athraigh go deireanach ag {{time}}
+Cruthaithe ag {{time}}
+Gan teideal
+Gan teideal
+Sábhálfar ceangaltáin chuig “{{path}}” as seo amach.
+Cuardaigh
+Cuardaigh eochairfhocal sna nótaí go léir.
+Cuardaigh i ngach comhad
+Torthaí titim
+Cás meaitseála
+Téarmaí cuardaigh mínigh
+Taispeáin níos mó comhthéacs
+Toradh {{count}}
+Torthaí {{count}}
+Socruithe cuardaigh
+Cuardaigh...
+Téacs a mheaitseáil: 
+Meaitseálacha regex: 
+Tá téacs cruinn ann: 
+Níos mó ná: 
+Níos lú ná: 
+Tá sé fíor
+Tá sé bréagach
+Tá sé folamh
+Tá maoin ann:
+Meaitseáil gach ceann de: 
+Meaitseáil aon cheann de: 
+Gan a áireamh: 
+Cás-íogair
+Cás neamhíogair
+Conair comhad a mheaitseáil: 
+Meaitseáil ainm an chomhaid: 
+Meaitseáil ábhar comhad: 
+Tasc meaitseála: 
+Tasc meaitseála (todo): 
+Tasc meaitseála (déanta): 
+Líne meaitseála: 
+Bloc meaitseála: 
+Rannóg meaitseála: 
+Clib meaitseála: 
+Níor aimsíodh aon chluichí.
+... agus {{count}} níos mó meaitseála.
+... agus {{count}} níos mó cluichí.
+Cóipeáil na torthaí
+Torthaí cóipeáil
+Torthaí cóipeáilte chuig do ghearr
+Taispeáin cosán
+Taispeáin cosán iomlán an chomhaid seachas ainm an chomhaid amháin.
+Stíl nasc
+Casadh gach toradh comhad go roghnach go nasc.
+Níl aon
+Nasc wiki
+Nasc Markdown
+Réimír liosta
+Cuir réimír mír liosta go roghnach le gach toradh comhad.
+Níl aon
+Dráth (-)
+Réiltín (*)
+Uimhrithe
+Cuardach soiléir
+Roghanna cuardaigh
+Airíonna
+Clibeanna
+Léigh tuilleadh
+Stair
+Glan stair chuardaigh
+cosán meaitseála an chomhaid
+ainm comhad meaitseála
+cuardaigh clibeanna
+cuardaigh eochairfhocail ar líne chéanna
+cuardaigh eochairfhocail faoin gce
+maoin meaitseála
+Cuardaigh “{{keyword}}”
+Cuardaigh san fhillteán
+Athraitheoir tapa
+Léim chuig comhaid eile le do mhéarchlár.
+Athraitheoir
+Oscail lascaire tapa
+nascleanúint a dhéanamh
+a oscailt
+chun oscailt i gcluaisín nua
+chun oscailt ar dheis
+chun a chruthú
+a dhíscríobh
+a roghnú
+Níor aimsíodh aon nótaí. Iontráil chun ceann nua a chruthú.
+Faigh nó cruthaigh nóta...
+Iontráil chun a chruthú
+Níl cruthaithe fós, roghnaigh chun a chruthú
+Taispeáin atá ann cheana amháin
+Taispeáin ach torthaí ó chomhaid atá ann cheana. Beidh naisc le comhaid nach cruthaíodh fós i bhfolach.
+Taispeáin ceangaltán
+Taispeáin comhaid ceangaltán cosúil le híomhánna, físeáin agus PDFanna.
+Taispeáin gach cineál comhaid
+Taispeáin gach comhad lena n-áirítear cinn nach féidir le Obsidian a oscailt. Osclófar an comhad leis an aip réamhshocraithe don chineál comhaid sin.
+Amharc graif
+Samhlaigh na caidrimh idir do nótaí.
+Radharc graf oscailte
+Oscail graf áitiúil
+Cóipeáil íomh
+Graf de {{displayText}}
+Scagairí
+Cuardaigh comhaid...
+Doimhneacht
+Taispeáin nóid an líon naisc seo ar shiúl
+Naisc comharsa
+Taispeáin naisc idir comharsana
+Naisc amach
+Taispeáin naisc chuig comhaid eile
+Naisc ag teacht isteach
+Taispeáin naisc ó chomhaid eile
+Clibeanna
+Tá clibeanna nasctha leis na comhaid ina bhfuil siad
+Ceangaltáin
+Taispeáin ceangaltán
+Comhaid atá ann cheana amháin
+Nuair a chumasaítear é, ní thaispeántar naisc le comhaid nach bhfuil ann
+Dílíthithe
+Taispeáin comhaid nach bhfuil nasctha le haon chomhad eile
+Taispeáin
+Saigheada
+Taispeáin saigheada nuair a dhéantar súmáil
+Tairseach éadaithe téacs
+Méid nód
+Tiús nasc
+Fórsaí
+Fórsa ionaid
+Fórsa nasc
+Fad nasc
+Fórsa a dhíbirt
+Socruithe graf oscail
+Scáileán cóipeáilte chuig an gearr
+Grúpaí
+Cuir isteach ceist...
+Scrios grúpa
+Grúpa nua
+Cliceáil chun dath a athrú\nTarraing chun grúpaí a athordú
+Tosaigh beochan timelapse graf
+Tosaigh beochan timelapse
+Beochan
+Cúlnaisc
+Taispeáin naisc ó chomhaid eile chuig an gcomhad reatha. Is féidir backlinks a thaispeáint i radharc ar leithligh nó ag bun an nóta.
+Backlinks oscailte
+Taispeáin backlinks
+Oscail backlinks don nóta reatha
+Athraigh backlinks sa doiciméad
+Backlinks sa doiciméad
+Luanna nasctha
+Níor aimsíodh aon backlinks.
+Luanna neamhnasctha
+Taispeáin scagaire cuardaigh
+Nasc
+Cúlnaisc do {{displayText}}
+Níor aimsíodh aon lua neamhnasctha.
+
+Taispeáin backlinks ag bun na nótaí
+Déan backlinks le feiceáil i gcluaisíní nua de réir réamhshocraithe.
+Naisc amach
+Taispeáin naisc amach agus braite luaitheanna neamhnasctha ar nótaí eile sa nóta reatha.
+Oscail naisc amach
+Taispeáin naisc amach
+Oscail naisc amach don chomhad reatha
+Naisc amach ó {{displayText}}
+Naisc
+Níl aon naisc le fáil.
+Luanna neamhnasctha
+Nasc an comhad seo
+Níor cruthaíodh go fóill
+Amharc Clibeanna
+Clibeanna
+Taispeáin liosta de na clibeanna go léir agus a líon na n-imeachtaí.
+Taispeáin clibeanna
+Níl aon chlibeanna le fáil.
+Ainm clib (A go Z)
+Ainm tag (Z go A)
+Minicíocht (ard go íseal)
+Minicíocht (íseal go ard)
+Taispeáin clibeanna neadaithe
+Thit go léir
+Leathnaigh go léir
+Amharc fónótaí
+Fonótaí
+Taispeáin liosta de na fónótaí ón nóta reatha.
+Taispeáin fónótaí
+Níor aimsíodh aon fhonótaí.
+Amharc airíonna
+Taispeáin na meiteashonraí do do chuid comhad sa bharra taobh.
+Gach airíonna
+Airíonna comhad
+Airíonna comhad do {{displayText}}
+Taispeáin gach airíonna
+Taispeáin airíonna comhad
+Scrios airí
+Scrios airíonna
+Uathoibríoch
+Uathoibríoch ({{type}})
+Níor aimsíodh aon airíonna.
+Airíonna neamhbhailí.
+Ainm maoine (A go Z)
+Ainm maoine (Z go A)
+Minicíocht (ard go íseal)
+Minicíocht (íseal go ard)
+Maoin “{{oldKey}}” a chumasc le “{{newKey}}”?
+I gcás coinbhleachtaí, cuirfear na luachanna a chumasc nó úsáidfear an luach ó “{{oldKey}}”.
+Thit go léir
+Leathnaigh go léir
+Airíonna comhad oscail
+Nóta laethúil oscailte
+Réamhamharc leathanach
+Cuir nasc inmheánach chun réamhamharc a ábhar. I mód eagarthóra, brúigh Ctrl/Cmd agus tú ag crochadh.
+Ní raibh “{{linktext}}” a aimsiú.
+Níl “{{linktext}}” cruthaithe go fóill. Cliceáil chun a chruthú.
+Níor aimsíodh foot {{id}}. Cliceáil chun a chruthú.
+Féach eagarthóireachta
+Féach léitheoire
+Cuardaigh, Backlinks, agus naisc amach
+Ceanntásc cluaisín
+Éilíonn {{key}} chun réamhamharc leathanaigh a spreagadh ar hover
+Leabharmharcanna
+Sábháil aicearraí chuig comhaid, cuardaigh, ceannteidil agus graif.
+Taispeáin leabharmharcanna
+Thit go léir
+Leabharmharcáil an cluaisín gníomhach...
+Grúpa nua
+Leabharmharc...
+Cuir leabharmharc leis
+Cuir leabharmharc in eagar
+Bloc leabharmharc faoi chúrsóir...
+Ceannteideal leabharmharc faoi chúrsóir...
+Cuardach reatha leabharmharcáil...
+Bain leabharmharc don chomhad reatha
+Leabharmharc {{count}} cluaisín...
+Cluaisíní leabharmharcáil {{count}}...
+Leabharmharcáil gach cluaisín...
+Leabharmharcáil an graf seo...
+Leabharmharc
+Leabharmharcáilte
+Leabharmharc {{count}}
+Leabharmharcanna {{count}}
+Níor aimsíodh aon leabharmharcanna
+Theip ar leabharmharcanna a luchtú.
+Tá an comhad sonraí truaillithe.
+Grúpa gan theideal
+Graf gan teideal
+Cuir in eagar...
+Bain
+Athainmnigh
+Leabharmharcáil an bloc seo...
+Leabharmharcáil an ceannteideal seo...
+Níl aon cheist cuardaigh le leabharmharc.
+Conair
+Fiosrú
+Teideal
+Grúpa leabharmharc
+Leabharmharcanna
+CSS saincheaptha
+Léigh agus cuir i bhfeidhm “obsidian.css” san fhillteán boghta.
+Téamaí pobail
+Sonraí téama pobail a fháil...
+Scagaire...
+Téamaí dorcha amháin
+Téamaí éadroma amháin
+Úsáid an téama seo
+Stop úsáid a bhaint as an téama seo
+Suiteáil agus úsáid
+Nuashonraigh
+Níor chuir an téama seo comhad README ar fáil.
+Bain téama
+Tabhair cuairt ar GitHub
+Ní féidir téamaí pobail a luchtú, seiceáil do líonra le do thoil.
+Tá {{title}} á úsáid agat anois mar do théama CSS.
+Tá an téama {{title}} scriosta.
+Tá an téama {{title}} nuashonraithe.
+Suiteáilte
+Oidhreacht
+Nuashonraigh gach
+Theip ar théamaí pobail a luchtú.
+Níl aon nuashonruithe téama le fáil.
+Aimsíodh téama {{count}} le nuashonrú.
+Aimsíodh téamaí {{count}} le nuashonrú.
+Theip ar théama “{{name}}” a shuiteáil.
+Téama suiteáilte go rathúil “{{name}}”.
+Téama “{{name}}” a shuiteáil...
+Ag taispeáint {{themeCount}}:
+Nuashonrú ar fáil
+Pailéad ordaithe
+Úsáid Cmd/Ctrl+P agus tosú ag clóscríobh chun ordú a ghairm.
+Oscailte pailéad ordaithe
+nascleanúint a dhéanamh
+le húsáid
+a dhíscríobh
+Níor aimsíodh aon orduithe.
+Roghnaigh ordú...
+Orduithe brionnaithe
+Tiontaire formáid
+Tiontaigh Markdown ó aipeanna eile go formáid Obsidian.
+Tiontaire formáid oscail
+Socraitheoir clibeanna Roam Research
+Athraíonn “#tag” agus “# [[tag]]” go “[[tag]]”.
+Socraitheoir aibhsithe Roam Research
+Athraíonn sé “^^highlight^^” go “==Highlight ==”.
+Tiontaire TODO Roam Research
+Athraíonn sé “{{[[TODO]]}}” go “[ ]”.
+Socraitheoir aibhsithe béar
+Tiontaíonn “::highlight::” go “==Highlight ==”.
+Socraitheoir nasc lámhaire
+Socraíonn nasc “[[UID]]” chuig “[[Ainm Comhaid UID]]” iomlán.
+Áilleoir nasc Zettelkasten
+Socraíonn naisc “[[UID]]” agus déanann sé iad a áilleamh freisin “[[Ainm Comhaid UID |Ainm Comhaid]]”.
+Imirce Frontmatter
+Aimirgh clibeanna tosaigh, ainmneacha agus cssclasses go dtí an fhormáid dhian a theastaíonn ag Obsidian v1.9 +
+Rabhadh: tiontóidh an tiontaire na comhaid go léir i do ghabhán, ní hamháin an comhad reatha.
+Déanfar do chuid comhad a fhorscríobh. Cuir cúltaca ar do chuid comhad go léir sula ndéanann tú iarracht
+Tosaigh comhshó
+
+Téigh ar ais
+Déanta
+Próiseáil...
+Ag cealú...
+Críochnaithe!
+comhaid próiseáilte
+Comhaid modhnaithe
+Athsholáthairtí iomlána
+Theip
+Nótaí laethúla
+Cruthaigh nó oscail nóta laethúil an lae inniu.
+lá atá inniu ann
+Oscail nóta laethúil an lae inniu
+Oscail nóta laethúil roimhe
+Oscail an nóta laethúil eile
+Nóta laethúil an lae inniu
+Cuir nasc isteach sa nóta laethúil
+Theip ar nóta laethúil a chruthú. Ní formáid bailí é “{{format}}”.
+Theip ar nóta laethúil a chruthú. Níor aimsíodh fillteán “{{folderOption}}”.
+Theip ar nóta laethúil a chruthú. Níor aimsíodh comhad teimpléad “{{template}}”.
+Níl aon nóta laethúil roimh an gceann seo.
+Níl aon nóta laethúil ann tar éis an cheann seo.
+Formáid dáta
+Roghnaigh conas a ainmnítear nótaí laethúla i do bhoghta.
+Formáid shaincheaptha
+Saincheaptha
+Formáid dáta neamhbhailí
+Níor aimsíodh fillteán na nótaí laethúla.
+Le haghaidh tuilleadh comhréireachta, féach 
+formáid tagartha
+Tá cuma seo ar do chomhréir reatha: 
+Suíomh nua an chomhaid
+Cuirfear nótaí laethúla nua anseo.
+Suíomh comhad teimpléad
+Roghnaigh an comhad le húsáid mar theimpléad.
+Cruthaitheoir nótaí uath
+Cruthaigh nótaí le réamhshamhlacha ama uathúla, le haghaidh sreafaí oibre cosúil le zettelkasten nó bosca duillín.
+Uathúil
+Cruthaigh nóta uathúil nua
+Nóta uathúil nua
+Cuir nasc inmheánach uathúil
+Suíomh nua an chomhaid
+An cosán fillteán chun an nóta uathúil nua a chruthú isteach.
+Theip ar nóta uathúil a chruthú. Níor aimsíodh fillteán “{{folderOption}}”.
+Suíomh comhad teimpléad
+An cosán comhad le húsáid mar theimpléad.
+Sampla: fillteán1/nóta
+Formáid réimír uathúil
+Theip ar nóta uathúil a chruthú. Níor aimsíodh comhad teimpléad “{{template}}”.
+Theip ar nóta uathúil a ghiniúint leis an bhformáid “{{format}}”
+Nóta randamach
+Oscail nóta randamach chun athfhionnú nó athbhreithniú a dhéanamh.
+Randamach
+Nóta randamach oscail
+Imlíne
+Taispeáin an tábla ábhair don nóta reatha.
+Imlíne oscailte
+Taispeáin imlíne
+Imlíne oscailte ar an gcomhad reatha
+Imlíne ar {{displayText}}
+Níor aimsíodh aon cheannteidil.
+Scrollaigh go huathoibríoch go dt
+Líon focal
+Taispeáin comhaireamh focal sa bharra stádais.
+Sleamhnáin
+Cruthaigh cur i láthair trí úsáid a bhaint as “---” chun sleamhnáin a scaradh.
+Tosaigh cur i láthair
+Taifeadán fuaime
+Taifeadadh nótaí fuaime agus sábháil iad mar cheangaltáin.
+Tosaigh taifeadadh fuaime
+Stop ag taifeadadh fuaime
+Tos/stop taifeadadh
+Diúltaíodh rochtain micreafón, cumasaigh é ón bpána roghanna le do thoil.
+Tabhair cead micreafóin chun taifeadadh a thosú.
+Níl aon mhicreafón ceangailte.
+Oscail san aip réamhshocraithe
+Cuir cnaipe leis chun an comhad reatha a oscailt ina aip réamhshocraithe.
+Oscail san aip réamhshocraithe
+Comhroinn
+Taispeáin i taiscéalaí córais
+Nochtadh i Finder
+Teimpléid
+Cuir isteach ábhar teimpléid ó fhillteán comhaid teimpléad.
+Cuir isteach teimpléad
+Cuir isteach an dáta reatha
+Cuir isteach an t-am reatha
+Suíomh fillteán teimplé
+Beidh comhaid san fhillteán seo ar fáil mar theimpléid.
+Formáid dáta
+Cuirfear an luach seo in ionad {{date}} sa chomhad teimpléid.
+Is féidir leat {{date:YYYY-MM-DD}} a úsáid freisin chun an fhormáid a shárú uair amháin.
+Formáid ama
+Cuirfear an luach seo in ionad {{time}} sa chomhad teimpléid.
+Is féidir leat {{time:HH:mm}} a úsáid freisin chun an fhormáid a shárú uair amháin.
+nascleanúint a dhéanamh
+teimpléad a chur isteach
+a dhíscríobh
+Níl aon teimpléid le fáil
+Theip ar theimpléid a liostáil. Tá fillteán teimpléad nebhailí
+Theip ar theimpléid a liostáil. Níor aimsíodh fillteán “{{folderOption}}”.
+Ní féidir teimpléad a chur isteach, ní fhéadfaí na hairíonna sa chomhad teimpléid a léamh.
+Theip ar theimpléid a liostáil. Gan aon fhillteán teimpléad cumraithe
+Cineál ainm teimpléad...
+Fuinneog trédhearcach
+Cas ar éifeacht trédhearcachta chun mothú doimhneachta a fheabhsú. Is fearr a úsáidtear le modh dorcha. Níl tacaíocht ar Linux.
+Orduithe Slash
+Orduithe a spreagadh san eagarthóir tríd an eochair slash ar aghaidh a úsáid.
+Taispeáin modh eagarthóireachta sa bharra stádais
+Taispeáin an toggle modh eagarthóireachta sa bharra stádais.
+Léamh
+Modh foinse
+Réamhamharc Beo
+Foilsiú
+Óstáil do nótaí ar líne mar shuíomh Gréasáin, wiki nó doiciméadú.
+Foilsigh athruithe...
+Foilsigh an comhad reatha
+Ní mór duit rochtain ar an idirlíon chun athruithe a fhoilsiú.
+Is seirbhís íoctha breiseán é Obsidian Publish a ligeann duit do nótaí a fhoilsiú ar líne go díreach ó Obsidian.
+Chun tosú ag foilsiú, logáil isteach nó cruthaigh cuntas nua Obsidian.
+Níl síntiús Obsidian Publish agat fós.
+Ceannach
+Bainistigh láithreáin
+Níl aon suíomhanna agat.
+Roghnaigh
+Athraigh ID an láithreáin
+Scrios an láithreán
+An bhfuil tú cinnte gur mhaith leat an suíomh seo a scriosadh?
+Scriosfaidh sé seo do shuíomh láithreach agus go buan.
+Deimhnigh an láithreán scriosadh “{{site}}”
+ID Láithreáin
+Beidh do shuíomh ag https://publish.obsidian.md/{site id}. Is féidir leat é seo a athrú níos déanaí. Ní cheadaítear ach litreacha, uimhreacha agus sraitheanna íochtaracha.
+Roghnaigh ID láithreáin
+Cruthaigh
+Ní féidir ach litreacha beaga, uimhreacha agus sraitheanna a bheith ag ID Láithreáin.
+Tá an ID láithreáin seo in úsáid, bain triail as ceann eile le do thoil.
+Bhí saincheist ann agus tú ag cruthú do shuíomh.
+Roghanna láithreáin
+Ginearálta
+comhpháirteanna
+Dealramh
+Taithí léamh
+Socruithe suímh eile
+Ainm an láithreáin
+Ainm do shuíomh foilsithe. Taispeánfaidh sé suas i dteideal leathanaigh do shuíomh.
+Ainm do shuíomh
+Comhad leathanach baile
+An chéad leathanach a fheiceann an t-úsáideoir nuair a bhíonn tú ag tuirlingt ar do
+Roghnaigh comhad foilsithe
+Lógó
+Roghnaigh comhad íomhá mar lógó do shuíomh.
+Aon íomhá uaslódáilte i do chluiche
+Comhoibriú láithreáin
+Bainistigh comhoibritheoirí don suíomh seo.
+Saincheapadh nascleanúint
+Athraigh ord na n-earraí nascleanúna agus folaigh leathanaigh nó fillteáin ó thaispeáint.
+Ordú taispeána earra loingseo
+Folaigh leathanaigh nó fillteáin ó nascleanúint
+Cliceáil ar dheis agus roghnaigh “Folaigh” chun leathanaigh shonracha a chosc ó bheith le feiceáil sa nascleanúint Beidh na leathanaigh inrochtana fós trí naisc nó trí rochtain a fháil go díreach ar an URL.
+Taispeáin i bhfolach
+Bainistiú
+Nascleanúint
+Tarraing agus scaoil chun an t-ord ina bhfuil earraí nascleanúna le feiceáil ar do shuíomh Foilsithe a shaincheapadh.
+Folaigh i nascleanúint
+Bainistiú
+Téama
+Roghnaigh scéim datha réamhshocraithe do do shuíomh.
+Oiriúnaigh don chóras
+Togla éadrom/dorcha
+Lig do chuairteoirí aistriú idir téama éadrom agus dorcha leo féin.
+Taispeáin nascleanúint
+Taispeáin liosta de na leathanaigh foilsithe go léir ar an taobh clé de do shuíomh foilsithe.
+Taispeáin barra cuardaigh
+Taispeáin barra cuardaigh a ligeann do chuairteoirí leathanaigh, ainmneacha agus ceannteidil a chuardach ar do shuíomh.
+Taispeáin amharc graf
+Taispeáin graf áitiúil beag ar gach leathanach.
+Taispeáin tábla na n-ábhar
+Taispeáin imlíne na gceannteidil ar gach leathanach.
+Taispeáin backlinks
+Taispeáin an chuid backlink ag deireadh gach leathanaigh.
+Leathanaigh cruach
+Osclóidh naisc in aice leis an leathanach reatha san fhuinneog chéanna. Scrollaigh go cothrománach chun leathanaigh chruachaithe
+Taispeáin réamhamharc hover
+Taispeáin réamhamharc leathanaigh agus naisc á choinneáil.
+Folaigh teideal an leathanaigh
+Folaigh ceannteideal an leathanaigh. Úsáideach nuair a bhíonn do cheannteidil féin agat ag tús gach leathanaigh.
+Fad líne inléite
+Fad líne uasta a theorannú. Oireann sé níos lú ábhar ar an scáileán, ach déanann sé míreanna fada níos inléite.
+Pasfhocail
+Cuir srian ar rochtain ar do shuíomh le pasfhocail.
+Cód rianaithe Google Analytics
+Cumraigh Google Analytics do do shuíomh. Ar fáil ach amháin do chuairteoirí ó do URL fearainn saincheaptha. Seiceáil le do dhlíthe agus rialacháin áitiúla ar dtús.
+Bainistiú
+Sábháil socruithe láithreáin
+Roghanna nuashonraithe do do shuíomh.
+Ar ais
+Foilsiú chuig
+Athraigh suíomh
+Cuir nasctha leis
+Cuir na comhaid go léir atá nasctha le míreanna roghnaithe faoi láthair
+Cuireadh comhad nasctha {{count}} leis.
+Cuireadh comhaid nasctha {{count}} leis.
+Athraigh roghanna láithreáin
+Níor aimsíodh aon athruithe.
+Athraithe
+Gan athrú (roghnaigh chun dífhoilsiú)
+ roghnaithe
+Roghnaigh go léir
+míreanna nascleanúna
+Díroghnaigh go léir
+Nua
+Foilsiú
+Níl ceadanna agat chun foilsiú ar an suíomh reatha.
+Roghnaigh comhad amháin ar a laghad.
+Uaslódáil athruithe
+Déanta
+
+Uaslódáil
+Foilsiú
+Chun scriosadh
+Foilsithe
+Scriosta
+Theip
+Cealaíodh
+Athraigh
+Tógann sé suas le cúpla nóiméad chun na hathruithe a thaispeáint ar do shuíomh. Mura bhfeiceann tú d'athruithe is déanaí, déan iarracht an taisce a ghlanadh i do bhrabhsálaí.
+Is féidir leat cuairt a thabhairt ar do shuíomh anseo: 
+Chuaigh rud éigin mícheart.
+Tharla earráid líonra.
+Bainistigh pasfhocal
+Cuir pasfhocal leis
+Pasfhocal nua
+Níl aon phasfhocail ag do shuíomh faoi láthair. Is féidir le duine ar bith cuairt air.
+Tá do shuíomh faoi chosaint ar phasfhocal. Má tá iliomad pasfhocail agat, is féidir le cuairteoirí rochtain a fháil ar do shuíomh trí aon cheann acu a iontráil.
+Pasfhocal
+Stórálfar hash de do phasfhocal go sábháilte. Nuair a bheidh an pasfhocal socraithe, ní féidir é a nochtadh i dtéacs simplí.
+Do phasfhocal
+Leasainm (roghnach)
+Socraigh leasainm chun a mheabhrú duit féin cad é nó cé dó an pasfhocal.
+Cuir an pasfhocal seo leis
+Pasfhocal gan teideal
+Cruthaithe {{time}}
+Cuireadh pasfhocal nua leis.
+Fearainn saincheaptha
+Úsáid do fhearann féin seachas an URL https://publish.obsidian.md/{site id}.
+Dícheadaigh innéacsú inneall cuardaigh
+Cosc ar innill chuardaigh ó do shuíomh a innéacsú.
+Cumraigh
+Cumraigh fearann saincheaptha
+URL saincheaptha
+Cuir isteach URL do shuíomh saincheaptha, ná cuir “www.”
+Atreoraigh chuig do fearainn saincheaptha
+Cuairteoirí a atreorú ar publish.obsidian.md/id chuig do fearainn saincheaptha.
+Nuashonraigh suíomh fearainn
+Féach ar ár {{link}} ar ár suíomh cabhrach le haghaidh tuilleadh eolais.
+treoir socraithe fearainn saincheaptha
+Tá {{site}} á úsáid agat as do {{limit}}.
+Cuir tuilleadh suíomhanna
+Níor cheannaigh tú aon suíomhanna.
+Faigh suíomh
+Comhroinnt a bhainistiú le haghaidh “{{name}}”
+Tá an suíomh seo roinnte faoi láthair leis na daoine seo a leanas:
+Ní roinntear an suíomh seo le duine ar bith faoi láthair.
+Ar feitheamh
+Bain úsáideoir
+Cuireadh d'úsáideoir
+Cuir isteach a r-phost...
+Cuir isteach ríomhphost bailí chun cuireadh a thabhairt do dhuine.
+Cumasaigh an croí-breiseán Foilsigh i Socruithe -> Breiseáin lárnacha chun suíomhanna a fheiceáil
+Do shuíomhanna
+Láithreáin roinnte leat
+Stop ag comhoibriú ar an suíomh seo
+Deimhnigh comhoibriú stop láithre
+Bainfidh sé seo an suíomh seo as liosta na suíomhanna a roinntear leat. Ní féidir an gníomh seo a chur ar ais.
+Téigh i dteagmháil le húinéir an láithreáin más mian leat comhoibriú ar an suíomh seo arís.
+Fágáil
+Déan comparáid idir leagan beo
+Úsáid leagan beo
+Deimhnigh leagan áitiúil foráitiúil
+An bhfuil tú cinnte gur mhaith leat an leagan áitiúil a shárú?
+Úsáidfear an leagan beo agus cuirfear deireadh le do leagan áitiúil. Déan cúltacaí más gá.
+Lean ar aghaidh
+Úsáidtear leagan beo go rathúil chun do leagan áitiúil a shárú.
+Oscailte ar an suíomh beo
+Oscail comhad
+Scagairí foilsithe a
+Filteáin san áireamh
+Roghnófar comhaid faoi na fillteáin seo go huathoibríoch nuair a dhéanann tú athbhreithniú ar
+ Tá na fillteáin seo san áireamh faoi láthair:
+Fillteáin eisiata
+Ní thaispeánfaidh na comhaid faoin bhfillteáin seo nuair a dhéanann tú athbhreithniú ar athruithe Glacann an socrú seo tosaíocht ar fhillteáin a chuimsítear
+Tá {{folders}} san áireamh ag Obsidian Publish faoi láthair.
+Tá Obsidian Publish {{folders}} san áireamh faoi láthair.
+Bainistigh fillteáin san
+Bainistigh fillteáin eisi
+Fillteán san áireamh
+Is féidir leat fillteáin agus fillteáin atá ann cheana nach cruthaíodh fós a áireamh.
+Tacaíocht teagmhála
+Réamhamharc nasclean
+Spásanna Oibre
+Sábháil agus luchtaigh leagan amach spáis oibre.
+Luchtaigh leagan amach spáis oibre
+Bainistigh leagan amach spáis oibre
+Sábháil leagan amach
+Sábháil agus luchtaigh leagan amach eile
+Sábháil leagan amach reatha an spáis oibre mar...
+Sábháil
+Luchtaigh
+Scrios leagan amach
+Cuir isteach ainm don leagan amach nua le do thoil.
+An leagan amach shábháilte go rathúil “{{name}}”
+Níl aon leagan amach sábháilte le fáil
+Athraithe {{time}}
+Cineál ainm leagan amach...
+Sioncronú
+Sioncrónaigh do chuid comhad trí Obsidian Sync.
+Oscail stair an leagan don chomhad reatha
+Socraigh Sync
+Stair leagan oscailte
+Taispeáin stair Sync
+Logáil gníomhaíochta oscail
+Luchtaigh níos mó
+Taispeáin athruithe
+Cóipeáil chuig gearr
+Athchóirigh
+Is é an leagan seo an leagan is déanaí cheana féin.
+Leagan athchóirithe go rathúil ó {{time}}
+Scriosadh an comhad seo
+Scriosta trí {{ device }}
+Athainmnithe ó “{{from}}”
+Athainmnithe ó “{{from}}” go “{{to}}”
+Bogadh ó “{{from}}”
+Ag bogadh ó “{{from}}” go “{{to}}”
+Athbhreithniú {{count}}
+Athbhreithnithe {{count}}
+trí {{device}}
+Níl aon stair sioncrónaithe don chomhad seo.
+Ábhar folamh
+Ní féidir stair an leagan a aisghabháil
+Comhaid a shocrú
+Comhaid scriosta
+Stair leagan
+Cliceáil ar chomhad chun a stair a fheiceáil.
+Cruthaigh cianghabhál
+Cuir isteach pasfhocal le do thoil.
+Ní féidir ainm an treoir a bheith folamh.
+Cruthaíodh go rathúil ceann iargúlta “{{name}}”.
+Sioncrónaigh luchtanna iargúlta do ghabhála go daingean
+Ainm clár
+Cuidíonn sé leat cuimhneamh ar a bhfuil an clúdach seo.
+Réigiún
+Uathoibrithe
+Roghnaigh an réigiún freastalaí is gaire duit chun an clár iargúlta a stóráil. Ní féidir é seo a athrú sa todhchaí.
+Mo clár uamhnach
+Criptiú
+Cuireann criptiú deireadh go deireadh an tslándáil is láidre ar fáil ach éilíonn sé ort do phasfhocal criptithe a stóráil Úsáideann criptiú caighdeánach eochair a bhainistíonn Obsidian chun do chuid sonraí a chosaint agus ar ár bhfreastalaithe.
+Ní féidir an rogha seo a athrú níos déanaí.
+Criptiú deireadh go deireadh
+Criptiú caighde
+Pasfhocal criptithe
+Ní féidir an pasfhocal seo a athrú níos déanaí.
+Má dhéanann tú dearmad ar an bhfocal faire seo, fanfaidh aon sonraí iargúlta neamhúsáidte go deo.
+Ní dhéanann sé seo difear do shonraí áitiúla.
+Tá an clár iargúlta “{{name}}” criptithe faoi láthair. Cuir isteach do phasfhocal chun díghlasáil.
+Do phasfhocal
+Díghlasáil do chluibhseán
+Díghlasáil clúdach
+Do chláir iargúlta
+Cruthaithe {{time}}
+Scrios
+Athainmnigh
+Athainmnigh cruinneas iargúlta “{{name}}”
+Cuir isteach ainm nua don chluiche iargúlta seo.
+Comhroinnt a bhainistiú
+Deimhnigh scríobhán
+An bhfuil tú cinnte gur mhaith leat an clár iargúlta "{{name}}" a scriosadh?
+Scriosfar na sonraí go léir ar ár bhfreastalaí, lena n-áirítear stair na leaganacha. Fanfaidh do chuid comhad áitiúla slán.
+Tá an gníomh seo buan agus dochúlghabháilte.
+Scriosadh {{name}}.
+Sync Obsidian: Níl an clúdach iargúlta ceangailte ann a thuilleadh.
+Ceangail
+Dícheangail
+Sionc: {{status}}
+Níl aon chláir iargúlta agat.
+Níl síntiús gníomhach Obsidian Sync agat.
+Tabhair cuairt
+Ní féidir réamhamharc a dhéanamh ar chomhaid {{type}}.
+Cruthaigh clúdach nua
+Logáil sioncrónaithe
+Gach
+Earráidí
+Scaipeáilte
+Cumaisc coinbhleachtaí
+Cóipeáil log sioncronaithe
+Cóipeáil go rathúil log sioncronaithe.
+Déan iarracht arís
+Ceannach
+Braithíodh seirbhís sioncrónú comhaid
+Rabhadh: Is cosúil go bhfuil {{service}} á úsáid ag do ghabháil mar sheirbhís sioncrónaithe tríú páirtí. Má úsáideann tú Obsidian Sync leis an gclár seo, d'fhéadfadh go mbeadh coinbhleachtaí, éilliú comhad nó caillteanas sonraí ort.
+Má tá iCloud Drive á úsáid agat, d'fhéadfadh iCloud do dhoiciméid agus fillteáin Deisce a shioncronú. D'fhéadfadh sé seo a bheith ina chúis le coinbhleachtaí le Obsidian Sync.
+Iargúlta
+Roghnaigh
+Bainistiú
+Faoi láthair ceangailte leis an gclár iargúlta “{{name}}”.
+Faoi láthair níl sé ceangailte le haon chluibhse
+Stádas sioncrónaithe
+Tá Obsidian Sync stop faoi láthair.
+Tá Obsidian Sync ag rith faoi láthair.
+Ainm gléas
+Taispeánfar an t-ainm seo sa log gníomhaíochta. Fág folamh chun an t-ainm réamhshocraithe a úsáid.
+Ag atosú
+Sos
+Comhaid scriosta
+Féach agus athchóirigh comhaid scriosta.
+Logáil gníomhaíochta
+Féach ar ghníomhaíochtaí sioncrónaithe le déanaí le haghaidh
+Féach
+Bulc athchóiriú
+Athchóirigh comhaid
+Athchóirigh comhad {{count}}
+Athchóirigh comhaid {{count}}
+Ag athshlánú...
+Athchóirigh iomlán: D'éirigh le {{succeeded}} agus theip ar {{failed}}.
+Úsáid stórála
+Tá {{size}} á úsáid agat as {{limit}}
+Ní féidir méid do ghabhála a aisghabháil.
+Aisghabháil méid do ghabhála...
+Méid an chabhair thar an teorainn
+Méid an ghabhála ag druidim
+Féach ar na comhaid is mó
+Is iad seo na comhaid iargúlta atá ag glacadh an spáis is mó. Tar éis ceangaltáin a scriosadh, bain úsáid as an gcnaipe glantacháin chun spás iargúlta a shaor
+Uasghrádú stórá
+Glanadh
+Folaigh mo chuid athruithe
+Déan ceangaltáin scriosta a ghlanadh go buan ó ghabháil iargúlta chun spás
+Glanadh críochnaithe.
+Cosc a dhéanamh ar chodladh glé
+Cuireann sé cosc ar an bhfeiste dul chun codladh nuair a bhíonn comhaid fós le sioncrónú.
+Syncrónú roghnach
+Fillteáin eisiata
+Cosc ar fhillteáin áirithe ó shioncronú.
+ Tá na fillteáin seo eisiata faoi láthair:
+Bainistiú
+Íomhánna sioncronú
+Sync comhaid íomhá leis na síntí seo: {{extensions}}.
+Fuaim sioncrónaithe
+Sync comhaid fuaime leis na síntí seo: {{extensions}}.
+Físeáin Sync
+Sync comhaid físe leis na síntí seo: {{extensions}}.
+Sioncronaigh PDFanna
+Comhaid PDF a sioncrónú.
+Sync gach cineál eile
+Sync cineálacha comhaid gan tacaíocht.
+Syncrónú cumraíochta Vault
+Stair leagan socruithe
+Féach agus athchóirigh stair leagan comhaid a shocrú.
+Príomh-shocruithe
+Cumasaigh socruithe eagarthóra, comhaid & socruithe naisc, srl a shioncronú.
+Socruithe Dealramh
+Socraigh socruithe cuma cosúil le modh dorcha, téama gníomhach, agus snippets cumasaithe.
+Téamaí agus snippets
+Sync téamaí agus snippets íoslódáilte. Braitheann cibé an bhfuil siad cumasaithe ar an socrú roimhe seo.
+Aicearraí méarchláir
+Sync hotkeys saincheaptha.
+Liosta croí breiseán gníomhach
+Sync na croí-bhreiseáin atá cumasaithe.
+Socruithe lárnacha breiseán
+Socraigh croíshuíomhanna breiseán.
+Liosta breiseán gníomhach pobail
+Sync na breiseáin pobail atá cumasaithe.
+Breiseáin pobail suiteáil
+Sync breiseáin pobail suiteáilte (comhaid .js, .css, agus manifest.json) agus a gcuid socruithe.
+Tá sioncrónú fós á luchtú, athnuachan an leathanach seo níos déanaí.
+Is é Obsidian Sync seirbhís sioncrónaithe breiseán Obsidian le criptiú deireadh go deireadh agus stair leaganacha.
+Chun sioncrónú a thosú, logáil isteach nó cruthaigh cuntas nua Obsidian.
+Comhad reatha
+Athruithe sioncraithe
+lá atá inniu ann
+Inné
+An tseachtain seo
+Níos Sine
+Syncrónú deireanach
+{{count}} níos mó
+Cláraigh
+Logáil isteach
+Bainistigh fillteáin eisi
+Tá Sync Obsidian in áireamh faoi láthair ag {{folders}}.
+Eisiamh fillteán
+Is féidir leat fillteáin agus fillteáin atá ann cheana nach cruthaíodh fós a eisiamh.
+Bain ón liosta eisiata
+Nasc socraithe
+Ag nascadh...
+Theip ar an nasc
+Theip ort nascadh le clúdach iargúlta.
+Tá tú ceangailte anois le “{{name}}”.
+Tosaigh sioncrónú
+Deimhnigh Merge Vault
+Tá roinnt nótaí i do ghabháil áitiúil cheana féin.
+Má cheanglaíonn tú leis an gclár iargúlta “{{name}}”, cuirfear nótaí i do ghabhálaí áitiúil le nótaí ó do ghabháil iargúlta. I gcás coinbhleachtaí, caomhnófar an leagan is déanaí den nóta.
+Nuashonraigh an rogha seo le do thoil agus atosaigh an aip ar na feistí go léir inar mian leat go dtiocfadh sé i bhfeidhm.
+Tá an clúdach iargúlta seo roinnte faoi láthair leis na daoine seo a leanas:
+Ní roinntear an clúdach iargúlta seo le duine ar bith faoi láthair.
+Vaults roinnte leat
+Stop ag comhoibriú ar an gclár seo
+Deimhnigh comhoibriú stop clár
+Bainfidh sé seo an clúdach seo ón liosta na gclóthaí a roinntear leat. Ní féidir an gníomh seo a chur ar ais.
+Téigh i dteagmháil le húinéir an chabhán, le do thoil, más mian leat comhoibriú arís ar an gclár
+Fágáil
+Theip ar luchtanna iargúlta a luchtú.
+Teastaíonn síntiús Obsidian Sync uait chun nascadh leis an gclár seo.
+Tacaíocht teagmhála
+Má bhíonn aon cheisteanna agat le Obsidian Sync, déan teagmháil linn ionas gur féidir linn cabhrú leat! Is féidir leat teacht orainn ag support@obsidian.md.
+Cóipeáil faisnéis dífhabht
+Tacaíocht ríomhphoist
+Níl an sioncrónú ceangailte le cruinneachán iargúlta.
+Chruthaigh tú an líon uasta na gclóthaí iargúlta. D'fhonn cruinneas iargúlta nua a chruthú, uasghrádaigh do chuntas nó bain ceann atá ann cheana.
+Uasghrádú a dhéanamh
+Uasghrádaigh criptiú
+Tá leagan nua criptithe ar fáil do luchtanna iargúlta.
+Aimirce iargúlta
+Cumraíocht cianda clúdach
+Aimirce
+Scriosfaidh sé seo do ghabháil iargúlta agus é a athchruthú leis an criptiú is déanaí. Ní bheidh tionchar ag comhaid áitiúla, ach caillfear do stair leagan.
+Deimhnigh imirce clár
+Chun do chriptiú a uasghrádú, athuaslódófar na sonraí go léir sa chríobhán chuig freastalaithe Obsidian Sync ag baint úsáide as an modh criptithe nua. Scriosfaidh an próiseas seo go buan na sonraí go léir atá criptithe leis an sean-chriptiú, lena n-áirítear stair an leagan do do ghabhá
+Tábhachtach: molaimid go láidir cúltaca de do chluiche a chruthú sula dtéann tú ar aghaidh chun aon chaillteanas sonraí féide
+Tar éis duit an t-uasghrádú a chríochnú, beidh ort do ghléasanna go léir a athnascadh leis an gclúdach iargúlta nu
+D'fhéadfadh go dtógfadh sé tamall a thógáil d'imirce. Beidh ort Obsidian a choinneáil gníomhach ar an bhfeiste seo chun do nótaí agus ceangaltáin go léir a athuaslódáil. Is fearr é seo a dhéanamh ar do phríomhghléas.
+Ar mhaith leat dul ar aghaidh?
+Imirce trealbhachán ar siúl.
+Tá imirce an bhoghta críochnaithe.
+Réiteach coimhlinte
+Roghnaigh conas a réitítear coimhlinte nuair a mhodhnófar nóta go neamhspleách ar ilghléasanna.
+Cumaisc go huathoibríoch
+Cruthaigh comhad coimhlinte
+Aisghabháil comhad
+Athchóirigh léargas le déanaí chun aisghabháil ó chaillteanas sonraí Ní shábháiltear snapshots ach le haghaidh comhaid Markdown.
+Oscail stair áitiúil
+Eatramh snapshot
+Eatramh íosta i nóiméid idir dhá shamhlú.
+Fad staire
+Líon na laethanta a choinnítear na snapshots dóibh.
+Grianghraif
+Féach agus athchóirigh léargas sábháilte.
+Féach
+Stair soiléir
+Scrios gach snapshot.
+Soiléir
+An bhfuil tú cinnte gur mhaith leat gach snapshot a scriosadh? Ní bheidh tionchar ag comhaid taobh istigh de do ghabhán.
+Glanadh stair áitiúil.
+Fuarthas snapshots.
+Roghnaigh comhad...
+Roghnaigh comhad ar chlé le do thoil chun snapshots a fheiceáil.
+Nóta cumadóir
+Cumaisc dhá nóta nó roinn ceann amháin ina dhá cheann.
+Deimhnigh cumasc comhaid
+Pras sula ndéantar dhá chomhad a chumasc.
+Téacs tar éis eastóscadh
+Cad atá le taispeáint in ionad an téacs roghnaithe tar éis é a bhaint.
+Nasc le comhad nua
+Leabaigh comhad nua
+Níl aon
+Suíomh comhad teimpléad
+Comhad teimpléad le húsáid agus tú ag cumasc nó ag eastóscadh. Athróga atá ar fáil: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, m.sh. {{date:YYYY-MM-DD}}.
+Cumaisc an comhad reatha le comhad eile...
+Cumaisc an comhad iomlán le...
+Níor aimsíodh aon chomhaid.
+nascleanúint a dhéanamh
+a chumasc
+chun nua a chruthú
+a chumasc ag an mbarr
+a dhíscríobh
+Roghnaigh comhad le cumasc i...
+Comhad a chumasc
+An bhfuil tú cinnte gur mhaith leat “{{file}}” a chumasc isteach i “{{destination}}”? Scriosfar “{{file}}”.
+Cumaisc
+Bain an rogha reatha a bhaint...
+Bain an ceannteideal seo...
+bogadh go bun
+bogadh go dtí an barr
+Theip ar chomhad teimpléad a fháil: “{{template}}” ní aimsíodh.
+Theip ar cheannteideal a aimsiú
+Breathnóir gréasáin
+Stair an ghréasáin
+Oscail naisc sheachtracha le leathanaigh ghréasáin taobh istigh de Obsidian.
+Féachtóir gréasáin oscailte
+Taispeáin stair
+Athraigh modh léitheora
+Cóipeáil URL
+Bain ón stair
+Stair soiléir
+Oscail nasc
+Oscail nasc i gcluaisín nua
+Oscail nasc ar dheis
+Oscail nasc i bhfuinneog nua
+Oscail an nasc sa bhrabhsálaí
+Oscail nasc i bhféachtóir gréasáin
+Seoladh nasc cóipeáil
+Nasc leabharmharc
+Cuardaigh do “{{query}}”
+Roghnú a bhaint chuig nóta nua
+Cóipeáil
+Gearradh
+Greamaigh
+Scrios
+Roghnaigh go léir
+Sábháil chuig cruinneachán
+Sábháil íomhá chuig cruinneas
+Nasc íomhá cóipeáil
+Ar Cúl
+Ar aghaidh
+Athluchtaigh
+Leathanach leabharmharc
+Oscailte i mbrabhsálaí
+Barra seoladh fócas
+Cuardaigh ar an ngréasán
+Sonraí soiléir
+Fianáin
+Féadfaidh tú a shíniú as láithreáin ghréasáin.
+Sonraí taisceáilte
+Stair
+Gach sonraí féachana gréasáin
+Baintear gach ceann de na rudaí thuas chomh maith le stóráil áitiúil agus seisiúin ghníomh
+Breathnóir gréasáin nua
+Ní féidir an láithreán a luchtú.
+Déan cinnte go bhfuil an seoladh ceart agat.
+Cuardaigh ar an ngréasán
+Sonraí féachana gréasáin
+Sonraí féachana gréasáin a ghlanadh
+Oscail naisc sheachtracha
+Naisc oscail i Obsidian seachas réamhshocrú an chórais.
+Leathanach baile
+Cén leathanach le breathnú nuair a osclaítear breathnóir gréasáin
+Fillteán leathanach sábhál
+Cuirfear láithreáin ghréasáin a shábháiltear mar mharcáil anseo.
+Inneall cuardaigh
+Inneall cuardaigh a úsáidtear agus tú ag cuardach ón mbarra seoltaí.
+Inneall cuardaigh saincheaptha
+Úsáid %s in ionad an cheistiúcháin.
+Saincheaptha
+Cumasaigh blocaire fógraí
+Má tá sé cumasaithe, cuirfear na liostaí scagaire thíos i bhfeidhm ar gach cluaisín féachana gréasáin.
+Rialacha blocála fógraí
+URL liosta bloc fógraí amháin in aghaidh an líne. Roinnte ag gach ceann.
+Minicíocht nuashonrú bloc fógraí
+Laethanta idir liostaí scagaire a nuashonrú. Léiríonn 0 míchum Roinnte ag gach ceann.
+Sonraí féachana gréasáin a ghlanadh
+Earráid gan choinne ag eastóscadh ábhar.
+Ní féidir ábhar a fháil le bhaint.
+Canbhás
+Socraigh agus ceangail nótaí ar chanbhás gan teorainn.
+Cuir nóta leis ó ghabhán
+Cuir meáin leis ó ghabhálaí
+Cuir cárta
+Cuir leathanach gréasáin leis
+Cruthaigh grúpa
+Cruthaigh cárta le méid ar leith
+Tiontaigh go comhad...
+Tarraing chun nóta a chur leis ó chabhair
+Tarraing chun meáin a chur leis ó ghabhán
+Tarraing chun cárta a chur leis
+Athraigh lipéad
+Bain lipéad
+Cuardaigh comhad
+Socraigh dath
+Ailínigh
+Ailínigh ar chlé
+Ionad ailínigh
+Ailínigh ar dheis
+Ailínigh barr
+Ailínigh lár
+Ailínigh bun
+Dáileadh spásáil chothrománach
+Spásanna ingearach a dháileadh
+Údar go cothrománach
+Údar go hingearach
+Socraigh i ndiaidh a chéile
+Socraigh i gcolún
+Socraigh i ngreille
+Easpórtáil mar íomhá
+Léim chuig an ngrúpa
+Socraigh cúlra
+Athraigh cúlra
+Athsholáthair cúlra
+Bain cúlra
+Níl aon íomhánna le fáil.
+Níor aimsíodh aon mheáin.
+Easpórtáil “{{title}}” mar chomhad PNG leis na socruithe thíos.
+Toisí íomhá measta: {{dimensions}}
+Dáileadh
+Cuir údar
+Socraigh
+I gcónaí
+Ar hover
+Ná riamh
+Níl aon rannán le fáil
+Iompar roth luiche réamhshoc
+Iompar réamhshocraithe {{key}}
+Taispeáin roghchlár
+Suíomh réamhshocraithe do chomhaid canbhás
+Áit a gcuirtear comhaid chanbhás nua-chruthaithe.
+Fillteán chun comhaid chanbhás nua a chruthú i
+Beidh comhaid chanbhás nuachruthaithe le feiceáil faoin bhfillte
+Taispeáin ainm cárta
+Snap chuig an eangach
+Snap cártaí chuig an eangach cúlra agus tú ag bogadh agus ag athrú méid.
+Snap chuig rudaí
+Snap cártaí chuig rudaí in aice láimhe agus tú ag bogadh agus ag athrú
+Tairseach zúmáil chun ábhar cárta
+Méadóidh luachanna níos ísle feidhmíocht ach folóidh sé ábhar cárta níos luaithe agus iad ag súmáil
+Taispeáin lógó
+Cuirfidh sé seo lógó Obsidian leis an taobh clé bun.
+Modh príobháideachta
+Déanfaidh sé seo aon téacs ar do chanbhás a fhoilsiú.
+Súmáil
+Ghinfidh súmáil níos airde íomhá taifigh níos airde.
+Amharc
+Roghnaigh an chanbhás iomlán a rindreáil nó díreach an radharc infheicthe reatha.
+Canbhás iomlán
+Viewport amháin
+Clúdach
+Coinnigh cóimheas gné
+Déan arís
+Canbhás nua
+Dúbláil
+Bain
+Cúng go ceannteideal...
+Cúng chun bac a chur ar...
+Amharc bioráin...
+Comhad malartaigh...
+Athraigh URL...
+Súmáil chun oiriúnach
+Súmáil go roghnú
+Athluchtaigh an leathanach
+Lean nasc
+Cruthaigh canbhás nua
+Tiontaigh go comhad...
+chun ceannteideal a leabú
+chun bloc a leabú
+chun nascleanúint a dhéanamh go dtí an
+Clóscríobh chun comhad, ceannteideal nó bloc a aimsiú
+Cuir isteach URL
+Ní raibh “{{linktext}}” a aimsiú.
+Cuir téacs leis...
+Clóscríobh le cuardach...
+Cabhair chanbhás
+Socruithe canbhás
+Taispeáin an comhad iomlán
+Taispeáin amharc réamhshoc
+Léitheoireacht amháin
+Díchumasaigh léitheoireacht amháin
+Panáil
+Pan go cothrománach
+Súmáil
+Roghnaigh go léir
+Cuir chuig/bain ó roghnú
+Cárta Clón
+Cuir srian ar ghluaiseacht cárta go ais
+Díchumasaigh snapping agus tú ag tarraingt
+Bain cárta
+Tarraing ó thíos nó cliceáil faoi dhó
+Téigh i dteagmháil agus coinnigh chun a chur leis/bogadh/ro
+Tarraing go pan
+Pinch chun súmáil
+Spás + Tarraing go pan
+Scrollaigh chun súmáil
+Grúpa gan theideal
+Treo líne
+Neamhthreorach
+Aon-threorach
+Déthreorach
+Íomhá
+Stíl
+Níl aon ghrúpaí le fáil
+Ní féidir canbhás folamh a easpórtá
+Athainmneacha comhad braite Canbhás a théann i bhfeidhm ar chomhad canbhás {{count}}, nu
+Athainmneacha comhaid braite Canbhás a théann i bhfeidhm ar chomhaid chanbhás {{count}},
+Cárta leabaithe canbhás nuashonraithe {{count}}
+Cártaí leabaithe canbhás nuashonraithe {{count}}
+Bonn
+Cruthaigh bonn trí airíonna nótaí a cheistiú.
+Bonn nua
+Cuir maoin "{{name}}" leis
+Cuir achoimre "{{name}}" leis
+Cuir foirmle leis
+Folaigh go léir
+Athraigh infheictheacht
+Scrios foirmle
+Amharc réamhshocraithe
+Amharc dúblach
+Scrios amharc
+Scrios achoimre
+Easpórtáil CSV...
+Cruthaigh bonn nua
+Cuir isteach bonn nua
+Cóipeáil tábla chuig gearr
+Athraigh radharc
+Cuir amharc leis
+Cuir mír leis
+Cuir amharc leis
+Cuir scagaire
+Cuir grúpa scagaire leis
+Taispeáin go léir
+Taispeáin gach ({{count}})
+Cuir achoimre leis
+Folaigh achoimre
+Gach tuairimí
+An dearcadh seo
+Faigh nó cruthaigh...
+Airíonna ríomhaithe
+Cineál maoine
+Folaigh maoin
+Taispeáin maoin
+Athraigh maoin
+Cuir in eagar {{name}}
+Cumraigh radharc
+leagan amach
+Scagairí domhanda
+Féach ar scagairí
+Féach ar ainm
+Féach
+Tábla
+Ainm taispeána
+Ainm na hachoimre
+Foirmle
+Amhairc
+Sórtáil
+Scagaire
+Cuardaigh
+Airíonna
+Nua
+Á thaispeáint: {{count}}
+Comhad teimpléad earra nua
+Fillteán mír nua
+Tá aon cheann de na nithe seo a leanas fíor
+Tá na nithe seo a leanas go léir fíor
+Níl aon cheann de na nithe seo a leanas fíor
+cá háit
+nó
+agus
+Maoin
+Gan teideal
+comhad
+ainm an chomhaid
+ainm bonn comhad
+ainm iomlán an chomhaid
+cosán comhad
+fillteán
+síneadh comhad
+am cruthaithe
+am modhnaithe
+méid an chomhaid
+cúl-naisc comhaid
+naisc comhad
+comhaid leabaithe
+clibeanna comhad
+Cuir sórtáil leis
+Grúpáil de réir
+Sórtáil de réir
+Líon na dtorthaí a theorannú
+
+
+Sean go nua
+Nua go sean
+
+
+Ní féidir leis an ainm amharc a bheith: 
+Tá ainm an amhairc ann cheana.
+Ní féidir ainm an amhairc a fhágáil folamh.
+Ní féidir leis an tógálaí scagaire simplí an scagaire seo a léiriú.
+Ní féidir scagaire a pháirseáil. Ní féidir tógálaí scagaire bunúsach a úsáid.
+Cumraíocht airíonna nebhailí.
+Cumraíocht maoine neamhbhailí do "{{name}}".
+Ní féidir amharc nua Bunanna "{{viewId}}" a chur leis. Tá dearcadh leis an aitheantas seo ann cheana féin.
+Ní féidir do bhunchomhad a pháirseáil:
+Féach "{{ view }}" nach bhfuarthas
+Bonn cumraithe le cineál amharc anaithnid: {{ viewtype }}
+Caithfidh tuairimí a bheith ina eagar
+Ní mór luachanna taispeána a bheith ina teaghráin Níl luach do mhaoin {{ key }}.
+Caithfidh "{{ key }}" a bheith ina {{ type }}
+caithfidh "scagairí" a bheith ina shreang nó ina rud
+Caithfidh an scagaire "{{conjunction}}" a bheith ina eagar
+Ní fhéadfaidh "scagairí" ach ceann d'eochracha "agus", "nó", nó "nach" a bheith ag "scagairí".
+Theip ar scagaire a mheas: {{ message }}
+Ní mór luachanna foirmle a bheith ina teaghráin Níl luach do mhaoin {{key}}.
+Theip ar luach maoine "{{key}}" a ríomh: {{message}}
+Is formáid neamhbhailí é an cheist. Ba chóir go mbeadh sé ina réad YAML.
+Caithfidh míreanna "amharc" a bheith ina réad YAML, ach níl mír {{index}}
+“Ainm” atá ar iarraidh nó neamhbhailí i radharc {{index}}
+Tá "{{key}}" ag teastáil i bhféachaint "{{ViewName}}"
+Caithfidh "{{key}}" a bheith ina {{cineál}} i bhféachaint "{{ViewName}}"
+Caithfidh luachanna "{{key}}" go léir a bheith de chineál {{type}} i bhféachaint "{{viewName}}"
+Ní féidir scagairí a pháirseáil i radharc "{{viewName}}": {{ message }}
+Lúb gan teorainn braite sa fhoirmle
+Maoin neamhbhailí
+Déanfar an nóta seo a scagadh amach toisc nach n-oireann sé do chritéir
+Scagaire chun cinn
+m.sh. 10
+Scagaire chun cinn
+Scagaire simplí
+Bain scagaire
+Gan cheann
+Liosta
+Marcóirí
+Eangú airíonna
+Deighilteoir airí
+Urchar
+Uimhir
+Gan cheann
+Cártaí
+Méid an chárta
+Maoin íomhá
+Íomhá oiriúnach
+Clúdach
+Cuimsíonn
+cóimheas gné íomhá
+Tábla
+Folaigh colún
+Athraigh maoin...
+Athraigh an fhoirmle...
+Sórtáil ghlan
+Sórtáil A → Z
+Sórtáil Z → A
+Airde na sraithe
+Gearr
+Meánach
+Ard
+An-ard
+Déan achoimre...
+Grúpáil de réir an airí seo
+Glan luachanna
+Achoimre
+Theip ar fhoirmle "{{ formula }}" a pháirseáil
+Ní féidir feidhm "{{ function }}" a aimsiú
+Ní féidir feidhm "{{ function }}" a aimsiú ar chineál {{ type }}
+Ní féidir glaoch ar fheidhm "{{ function }}", ní leor argóintí.
+Ní féidir glaoch ar fheidhm "{{ function }}", an iomarca argóintí.
+Earráid clóscríobh i "{{ function }}", paraiméadar "{{ parameter }}". Táthar ag súil leis {{ expected }}, i bhfianaise {{ given }}.
+Ní féidir rochtain a fháil ar innéacs {{ index }} de luach neamh-eagar
+Ní féidir {{ index }} a aimsiú ar chineál {{ type }}
+Aibhsigh ar fad
+Meaitseáil diacritics
+Focail iomlána
+Mionsamhlacha
+Tábla na n-ábhar
+Nocht leathanach sa tábla ábhair
+Athraigh barra taobh
+Leathanach roimhe seo
+An chéad leathanach eile
+Leithead oiriúnach
+Airde oiriúnach
+Sábháil an suíomh reatha sa doiciméad
+Cóipeáil anótáil
+Cóipeáil mar luachan
+Cóipeáil nasc leis an rogha
+Cóipeáil nasc chuig anótáil
+Cóipeáil nasc leis an rannóg
+Cóipeáil nasc chuig “{{ title }}”
+Cóipeáil nasc chuig an leathanach {{page}}
+{{current}} de na cluichí os cionn {{limit}}
+Meaitseáil {{current}} de {{total}}
+{{current}} de {{total}} cluichí
+Tá an PDF seo faoi chosaint ar phasfhocal
+Pasfhocal nebhailí
+Cuir isteach an pasfhocal thíos
+de {{count}}
+({{current}} de {{count}})
+Leathanach aonair
+Dhá leathanach (aisteach)
+Dhá leathanach (fiú)
+Roghanna barra taobh
+Roghanna taispeána
+Oiriúnaigh don téama
+leathanach {{page}}
+Leathanach {{page}}
+Leathanach {{page}}
+Leathanach {{page}}
+[{{type}} Annotáil]
+
+Liosta
+Anaithnid
+Téacs
+Ainmneacha
+Clibeanna
+fillteán
+Comhad
+Airí
+Dáta
+Dáta & am
+Uimhir
+Bosca Seiceála
+Cineál [[
+chun nóta a nascadh
+a dhíscríobh
+Cineál maoine
+Sórtáil
+Ní féidir ainm maoine a bheith folamh.
+Tá maoin ann cheana féin
+Ainm clib neamhbhailí
+Líon neamhbhailí
+Theip ar airíonna a léamh.
+folamh
+Airíonna
+Airíonna míbhailí
+Taispeáin foinse
+Earráid comhréireachta. Tá d'ábhar tosaigh neamhbhailí.
+Cuir maoin leis
+Neamhchomhoiriúnú cineál, ag súil leis {{type}}
+Neamhchomhoiriúnú cineál
+Taispeáin mar {{time}}?
+Níl do chuid sonraí {{oldType}} comhoiriúnach. Cuirfear é in oiriúint chun an fhormáid nua a fheistiú.
+Colún
+Sraith
+Cuir an tsraith thíos
+Cuir colún ar dheis
+Cuir an tsraith thuas
+Bog an tsraith suas
+Bog an tsraith síos
+Cuir colún leis an taobh clé
+Bogadh colún ar chlé
+Bog colún ar dheis
+Sraith dúblach
+Colún dúblach
+Scrios an tsraith
+Scrios colún
+Ailínigh ar chlé
+Ionad ailínigh
+Ailínigh ar dheis
+Scrios cealla
+Cealla soiléir
+Sórtáil de réir colún (A go Z)
+Sórtáil de réir colún (Z go A)
+Tábla: {{command}}
+Cineál glaonna
+Eolas
+Tábhachtach
+Leid
+Rath
+Ceist
+Rabhadh
+Sleachta
+Sampla
+Níl aon
+Eile...
+Cineál glaonna...
+
+{{count}} focal
+{{count}} focail
+Toradh {{count}}
+Torthaí {{count}}
+{{count}} carachtar
+Carachtair {{count}}
+Nasc {{count}}
+Naisc {{count}}
+Comhad {{count}}
+Comhaid {{count}}
+Fillteán {{count}}
+Fillteáin {{count}}
+{{count}} nasc siar
+Cúlnaisc {{count}}
+Cluaisín {{count}}
+Cluaisíní {{count}}
+Maoin {{count}}
+Airíonna {{count}}
+{{count}} láithreán
+Láithreáin {{count}}
+Breiseán {{count}}
+Breiseáin {{count}}
+{{count}} gníomhach
+Snipppet {{count}}
+Snippets {{count}}
+{{count}} téama
+{{count}} téamaí

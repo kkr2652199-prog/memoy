@@ -1,0 +1,3 @@
+DEBUG asyncio Using proactor: IocpProactor
+DEBUG asyncio Using proactor: IocpProactor
+DEBUG asyncio Using proactor: IocpProactor

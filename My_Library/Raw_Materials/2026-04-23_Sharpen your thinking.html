@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<script>
+	(function(){
+		var defined = ["en","ar","de","es","fr","it","ja","ko","pt-BR","ru","zh"];
+		var dflt = 'en';
+		var cur = 'en';
+		var pref = null;
+		try { pref = localStorage.getItem('lang'); } catch(e) {}
+		if (!pref && cur === dflt) return;
+		if (pref && pref === cur) return;
+		var target = pref;
+		if (!target) {
+			var langs = (navigator.languages || [navigator.language || '']);
+			for (var i = 0; i < langs.length; i++) {
+				var code = langs[i].toLowerCase().split('-')[0];
+				if (defined.indexOf(code) !== -1) { target = code; break; }
+			}
+		}
+		if (!target || target === cur) return;
+		var p = location.pathname;
+		// Strip any locale prefix from path
+		p = p.replace(new RegExp('^/(' + defined.join('|') + ')(/|$)'), '/');
+		// Don't redirect app routes
+		if (/^\/(account|buy)(\/|$)/.test(p)) return;
+		// Add target locale prefix
+		if (target !== dflt) p = '/' + target + (p === '/' ? '/' : p);
+		if (p.replace(/\/$/, '') === location.pathname.replace(/\/$/, '')) return;
+		location.replace(p + location.search + location.hash);
+	})();
+	</script>
+	<title>Obsidian - Sharpen your thinking</title>
+	<meta name="description" content="The free and flexible app for your private thoughts.">
+	<meta name="copyright" content="Obsidian">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="i18n-hash" content="ac49b39b">
+
+	<link rel="stylesheet" href="/tailwind.css?v=d8f07010">
+	<link rel="icon" href="/favicon.ico" sizes="32x32">
+	<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+	<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Obsidian Blog">
+	<link rel="alternate" type="application/feed+json" href="/feed.json" title="Obsidian Blog">
+	<link rel="alternate" type="application/atom+xml" href="/changelog.xml" title="Obsidian Changelog">
+	<link rel="alternate" type="application/feed+json" href="/changelog.json" title="Obsidian Changelog">
+
+	<meta property="og:site_name" content="Obsidian">
+	<meta property="og:title" content="Obsidian - Sharpen your thinking">
+	<meta property="og:description" content="The free and flexible app for your private thoughts.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://obsidian.md/images/banner.png">
+
+	<meta name="twitter:title" content="Obsidian - Sharpen your thinking">
+	<meta name="twitter:description" content="The free and flexible app for your private thoughts.">
+	<meta name="twitter:site" content="@obsdmd">
+	<meta name="twitter:domain" content="obsidian.md">
+	<meta name="twitter:creator" content="@obsdmd">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://obsidian.md/images/banner.png">
+
+</head>
+<body class="theme-dark">
+<div class="header-height"></div>
+<header class="header">
+	
+	
+	<div class="container flex items-center">
+		<div class="flex items-center">
+			<a class="header-logo me-4 flex items-center gap-x-2 transition-colors -mt-[3px]" href="/" aria-label="Go to the Obsidian home page">
+				<svg alt="Obsidian" height="22" viewBox="0 0 143 25" width="126" xmlns="http://www.w3.org/2000/svg"><path fill="#A88BFA" d="m6.91927 14.5955c.64053-.1907 1.67255-.4839 2.85923-.5565-.71191-1.7968-.88376-3.3691-.74554-4.76905.15962-1.61678.72977-2.9662 1.28554-4.11442.1186-.24501.2326-.47313.3419-.69198.1549-.30984.3004-.60109.4365-.8953.2266-.48978.3948-.92231.4798-1.32416.0836-.39515.0841-.74806-.0148-1.08657-.099-.338982-.3093-.703864-.7093-1.1038132-.5222-.1353116-1.1017-.0165173-1.53613.3742922l-5.15591 4.638241c-.28758.25871-.47636.60929-.53406.99179l-.44455 2.94723c.69903.6179 2.42435 2.41414 3.47374 4.90644.09364.2224.1819.4505.26358.6838z"/><path fill="#A88BFA" d="m2.97347 10.3512c-.02431.1037-.05852.205-.10221.3024l-2.724986 6.0735c-.279882.6238-.15095061 1.3552.325357 1.8457l4.288349 4.4163c2.1899-3.2306 1.87062-6.2699.87032-8.6457-.75846-1.8013-1.90801-3.2112-2.65683-3.9922z"/><path fill="#A88BFA" d="m5.7507 23.5094c.07515.012.15135.0192.2281.0215.81383.0244 2.18251.0952 3.29249.2997.90551.1669 2.70051.6687 4.17761 1.1005 1.1271.3294 2.2886-.5707 2.4522-1.7336.1192-.8481.343-1.8075.7553-2.6869l-.0095.0033c-.6982-1.9471-1.5865-3.2044-2.5178-4.0073-.9284-.8004-1.928-1.1738-2.8932-1.3095-1.60474-.2257-3.07497.1961-4.00103.4682.55465 2.3107.38396 5.0295-1.48417 7.8441z"/><path fill="#A88BFA" d="m17.3708 19.3102c.9267-1.3985 1.5868-2.4862 1.9352-3.0758.1742-.295.1427-.6648-.0638-.9383-.5377-.7126-1.5666-2.1607-2.1272-3.5015-.5764-1.3785-.6624-3.51876-.6673-4.56119-.0019-.39626-.1275-.78328-.3726-1.09465l-3.3311-4.23183c-.0117.19075-.0392.37998-.0788.56747-.1109.52394-.32 1.04552-.5585 1.56101-.1398.30214-.3014.62583-.4646.95284-.1086.21764-.218.4368-.3222.652-.5385 1.11265-1.0397 2.32011-1.1797 3.73901-.1299 1.31514.0478 2.84484.8484 4.67094.1333.0113.2675.0262.4023.0452 1.1488.1615 2.3546.6115 3.4647 1.5685.9541.8226 1.8163 2.0012 2.5152 3.6463z"/><path fill="currentColor" d="m39.752 4.5038c-5.952 0-10.248 3.744-10.248 8.88s4.296 8.88 10.248 8.88c5.928 0 10.224-3.744 10.224-8.88s-4.296-8.88-10.224-8.88zm0 3.47999c3.576 0 6.144 2.13601 6.144 5.40001s-2.568 5.4-6.144 5.4c-3.6 0-6.168-2.136-6.168-5.4s2.568-5.40001 6.168-5.40001z"/><path fill="currentColor" d="m55.4847 20.5598c.864.936 2.472 1.704 4.584 1.704 4.32 0 6.8401-2.976 6.8401-6.576 0-3.624-2.5201-6.60001-6.8401-6.60001-2.112 0-3.72.79201-4.584 1.70401v-6.02401h-3.84v17.23201h3.84zm-.12-4.944c0-1.992 1.704-3.432 3.912-3.432 2.112 0 3.888 1.248 3.888 3.504s-1.776 3.48-3.888 3.48c-2.208 0-3.912-1.416-3.912-3.408z"/><path fill="currentColor" d="m67.3181 19.9118c1.464 1.488 4.272 2.352 7.2 2.352 3.96 0 6.936-1.44 6.936-4.392 0-2.88-2.832-3.432-6.072-3.816-2.736-.312-3.576-.384-3.576-1.08 0-.648.864-1.056 2.496-1.056 1.968 0 3.672.6 4.824 1.656l1.992-2.304c-1.272-1.224-3.648-2.18401-6.624-2.18401-4.008 0-6.48 1.72801-6.48 4.32001 0 2.712 2.52 3.312 5.544 3.696 2.832.336 4.032.336 4.032 1.176 0 .792-1.056 1.128-2.784 1.128-2.16 0-4.152-.672-5.664-2.064z"/><path fill="currentColor" d="m82.8395 8.05579h3.912v-3.288h-3.912zm3.864 1.29601h-3.84v12.648h3.84z"/><path fill="currentColor" d="m99.8264 20.5598v1.44h3.8396v-17.23201h-3.8396v6.02401c-.864-.912-2.472-1.70401-4.584-1.70401-4.32 0-6.84 2.97601-6.84 6.60001 0 3.6 2.52 6.576 6.84 6.576 2.112 0 3.72-.768 4.584-1.704zm.12-4.944v.144c0 1.992-1.704 3.408-3.912 3.408-2.112 0-3.888-1.224-3.888-3.48s1.776-3.504 3.888-3.504c2.208 0 3.912 1.44 3.912 3.432z"/><path fill="currentColor" d="m105.996 8.05579h3.912v-3.288h-3.912zm3.864 1.29601h-3.84v12.648h3.84z"/><path fill="currentColor" d="m116.863 22.2638c2.232 0 4.056-.648 5.208-1.656.648 1.2 2.184 1.92 4.992 1.392v-2.832c-1.344.288-1.632-.024-1.632-.696v-4.608c0-3.168-2.376-4.77601-6.408-4.77601-3.48 0-6.264 1.51201-7.056 3.79201l3.456.936c.384-.984 1.704-1.704 3.432-1.704 2.04 0 2.856.768 2.856 1.728v.072l-5.04.456c-2.976.288-5.16 1.512-5.16 3.984 0 2.496 2.232 3.912 5.352 3.912zm4.848-5.112c0 1.464-2.184 2.304-4.152 2.304-1.488 0-2.328-.432-2.328-1.248 0-.84.672-1.152 1.992-1.272l4.488-.456z"/><path fill="currentColor" d="m128.379 21.9998h3.84v-6.048c0-2.184 1.2-3.456 3.288-3.456 1.968 0 3 1.296 3 3.432v6.072h3.84v-7.2c0-3.504-2.232-5.71201-5.52-5.71201-2.04 0-3.624.76801-4.608 1.80001v-1.536h-3.84z"/></svg>
+			</a>
+		</div>
+		<div class="group w-full">
+			<ul class="text-sm hidden md:flex items-center">
+				<li><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/download">Download</a></li>
+				<li><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/pricing">Pricing</a></li>
+				<li><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/sync">Sync</a></li>
+				<li><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/publish">Publish</a></li>
+				<li class="hidden lg:block"><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/enterprise">Enterprise</a></li>
+				<li class="flex-grow" aria-hidden="true"></li>
+				<li class="relative">
+					<button class="header-lang-toggle px-2 py-2 me-2 rounded-lg ring-1 ring-inset ring-white/10 text-muted hover:text-white hover:bg-gray-800 flex items-center gap-1" aria-label="Change language">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+						<i data-lucide="chevron-down" class="icon-xs"></i>
+					</button>
+					<ul class="header-lang-menu hidden absolute end-0 top-full mt-1 bg-gray-800 ring-1 ring-inset ring-white/10 rounded-lg p-1 min-w-[10rem] shadow-xl z-50 flex flex-col gap-0.5">
+						
+						<li><a href="/" onclick="try{localStorage.setItem('lang','en');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-normal font-medium bg-gray-700 hover:text-normal">English</a></li>
+						
+						<li><a href="/ar/" onclick="try{localStorage.setItem('lang','ar');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">العربية</a></li>
+						
+						<li><a href="/de/" onclick="try{localStorage.setItem('lang','de');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Deutsch</a></li>
+						
+						<li><a href="/es/" onclick="try{localStorage.setItem('lang','es');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Español</a></li>
+						
+						<li><a href="/fr/" onclick="try{localStorage.setItem('lang','fr');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Français</a></li>
+						
+						<li><a href="/it/" onclick="try{localStorage.setItem('lang','it');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Italiano</a></li>
+						
+						<li><a href="/ja/" onclick="try{localStorage.setItem('lang','ja');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">日本語</a></li>
+						
+						<li><a href="/ko/" onclick="try{localStorage.setItem('lang','ko');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">한국어</a></li>
+						
+						<li><a href="/pt-BR/" onclick="try{localStorage.setItem('lang','pt-BR');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Português (Brasil)</a></li>
+						
+						<li><a href="/ru/" onclick="try{localStorage.setItem('lang','ru');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Русский</a></li>
+						
+						<li><a href="/zh/" onclick="try{localStorage.setItem('lang','zh');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">简体中文</a></li>
+						
+					</ul>
+				</li>
+				<li><a class="px-3 py-2 rounded-lg font-medium hover:text-white text-muted hover:bg-gray-800" href="/community">Community</a></li>
+				<li><a class="px-3 py-2 rounded-lg font-medium text-muted hover:text-white hover:bg-gray-800" href="/account">Account</a></li>
+			</ul>
+		</div>
+		<div class="ms-auto md:hidden z-10 flex items-center gap-4">
+			<div class="relative">
+				<button class="header-lang-toggle-mobile px-2 py-2 text-gray-400 flex items-center gap-1" aria-label="Change language">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+					
+				</button>
+				<ul class="header-lang-menu-mobile hidden absolute end-0 top-full mt-1 bg-gray-800 ring-1 ring-inset ring-white/10 rounded-lg p-1 min-w-[10rem] shadow-xl z-50 flex flex-col gap-0.5">
+					
+					<li><a href="/" onclick="try{localStorage.setItem('lang','en');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-normal font-medium bg-gray-700 hover:text-normal">English</a></li>
+					
+					<li><a href="/ar/" onclick="try{localStorage.setItem('lang','ar');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">العربية</a></li>
+					
+					<li><a href="/de/" onclick="try{localStorage.setItem('lang','de');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Deutsch</a></li>
+					
+					<li><a href="/es/" onclick="try{localStorage.setItem('lang','es');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Español</a></li>
+					
+					<li><a href="/fr/" onclick="try{localStorage.setItem('lang','fr');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Français</a></li>
+					
+					<li><a href="/it/" onclick="try{localStorage.setItem('lang','it');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Italiano</a></li>
+					
+					<li><a href="/ja/" onclick="try{localStorage.setItem('lang','ja');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">日本語</a></li>
+					
+					<li><a href="/ko/" onclick="try{localStorage.setItem('lang','ko');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">한국어</a></li>
+					
+					<li><a href="/pt-BR/" onclick="try{localStorage.setItem('lang','pt-BR');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Português (Brasil)</a></li>
+					
+					<li><a href="/ru/" onclick="try{localStorage.setItem('lang','ru');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Русский</a></li>
+					
+					<li><a href="/zh/" onclick="try{localStorage.setItem('lang','zh');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md text-sm whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">简体中文</a></li>
+					
+				</ul>
+			</div>
+			<a class="header-mobile-nav text-gray-200 hover:text-gray-100" href="#" aria-label="Open the navigation menu">
+				<div class="header-mobile-nav-button">
+					<div class="header-mobile-nav-button-inner"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div class="header-mobile-nav-menu fixed top-0 right-0 bottom-0 left-0 overflow-scroll overscroll-contain block md:hidden">
+	<div class="container py-4">
+		<ul class="text-xl font-medium grid sm:grid-cols-2 pb-4 border-b border-gray-800">
+			<li><a class="flex py-1 items-center gap-2" href="/download">
+				Download</a></li>
+			<li><a class="flex py-1 items-center gap-2" href="/account">
+				Account</a></li>
+			<li><a class="flex py-1 items-center gap-3" href="/sync">
+				Sync</a></li>
+			<li><a class="flex py-1 items-center gap-3" href="/publish">
+				Publish</a></li>
+			<li><a class="flex py-1 items-center gap-3" href="/pricing">
+				Pricing</a></li>
+			<li><a class="flex py-1 items-center gap-3" href="/plugins">
+				Plugins</a></li>
+			<li><a class="flex py-1 items-center gap-2" href="/enterprise">
+				Enterprise</a></li>
+			<li><a class="flex py-1 items-center gap-2" href="/clipper">
+				Web Clipper</a></li>
+		</ul>
+		<div class="text-muted mt-6">Learn more</div>
+		<ul class="font-medium grid grid-cols-2 my-2 pb8">
+			<li><a class="block py-1" href="https://obsidian.md/help/">Help</a></li>
+			<li><a class="block py-1" href="/about">About</a></li>
+
+			<li><a class="block py-1" href="/blog">Blog</a></li>
+			<li><a class="block py-1" href="https://discord.gg/obsidianmd" rel="noopener noreferrer" target="_blank">Discord</a></li>
+
+			<li><a class="block py-1" href="/changelog">Changelog</a></li>
+			<li><a class="block py-1" href="/community">Community</a></li>
+
+			<li><a class="block py-1" href="/roadmap">Roadmap</a></li>
+			<li><a class="block py-1" href="/security">Security</a></li>
+
+			<li><a class="block py-1" href="/softwear">Merch store</a></li>
+			<li><a class="block py-1" href="/privacy">Privacy</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+(function() {
+	document.querySelectorAll('.header-lang-toggle, .header-lang-toggle-mobile').forEach(function(btn) {
+		var menu = btn.nextElementSibling;
+		if (!menu) return;
+		btn.addEventListener('click', function(e) {
+			e.stopPropagation();
+			document.querySelectorAll('.header-lang-menu, .header-lang-menu-mobile').forEach(function(m) {
+				if (m !== menu) m.classList.add('hidden');
+			});
+			menu.classList.toggle('hidden');
+		});
+	});
+	document.addEventListener('click', function() {
+		document.querySelectorAll('.header-lang-menu, .header-lang-menu-mobile').forEach(function(m) {
+			m.classList.add('hidden');
+		});
+	});
+})();
+</script>
+
+
+	<div class="pt-24 sm:pt-24 relative bg-basalt">
+		<div class="container mb-12">
+			<div>
+				<div class="max-w-[42rem] text-center sm:text-start">
+					<h1 class="text-[13vw] font-semibold leading-[1.1] tracking-tight sm:text-title mb-8">
+						Sharpen your thinking.
+					</h1>
+					<p class="text-3xl sm:text-4xl text-muted mb-6 max-w-xl text-pretty mx-auto sm:mx-0">
+						The free and flexible app for your private thoughts.
+					</p>
+				</div>
+
+				<div class="py-6 mt-4 flex items-center gap-6 flex-col sm:flex-row">
+					<a class="download-button button button-primary text-xl py-4 px-6"
+						href="/download">
+							Get Obsidian for <span class="download-os">Windows</span>
+							<script>
+								(function() {
+									let os = 'Windows';
+									if (/iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+										os = 'iOS';
+									} else if (/Android/.test(navigator.appVersion)) {
+										os = 'Android';
+									} else if (navigator.appVersion.indexOf('Mac') !== -1) {
+										os = 'macOS';
+									} else if (navigator.appVersion.indexOf('Linux') !== -1 || navigator.appVersion.indexOf('X11') !== -1) {
+										os = 'Linux';
+									}
+									const el = document.currentScript.previousElementSibling;
+									el.textContent = os;
+									el.style.visibility = 'visible';
+								})();
+							</script>
+					</a>
+					<a class="text-accent text-lg hidden sm:block font-medium" href="/download">
+							More platforms
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container relative">
+			
+<div class="mock-overflow">
+	<div class="relative w-[56rem] max-w-none md:w-auto lg:mx-auto">
+	<div class="aspect-[1.9/1] overflow-hidden">
+	<div class="dir-reverse relative w-full h-full ui" aria-hidden="true" data-nosnippet>
+
+	<!-- Desktop window -->
+	<div class="absolute inset-0 end-[14%]">
+	
+<div class="app-window relative h-full overflow-hidden shadow-2xl flex flex-col rounded-lg">
+
+	<!-- Top row: sidebar header + pane tabs -->
+	<div class="app-titlebar">
+		<!-- Sidebar: traffic lights + toolbar icons -->
+		<div class="flex items-center shrink-0 app-border border-e gap-0.5 w-[200px] px-3.5">
+			<div class="mock-macos-dots flex items-center">
+				<div class="app-dot bg-[#ff5f57]"></div>
+				<div class="app-dot bg-[#febc2e] ms-2"></div>
+				<div class="app-dot bg-[#28c840] ms-2 me-2"></div>
+			</div>
+			<i data-lucide="folder-closed" class="app-toolbar-icon is-active"></i>
+			<i data-lucide="search" class="app-toolbar-icon"></i>
+			<i data-lucide="tags" class="app-toolbar-icon"></i>
+			<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-toolbar-icon ms-auto rtl-mirror"><rect x="1" y="2" width="22" height="20" rx="4"></rect><rect x="4.5" y="6" width="4" height="12" rx="1" fill="currentColor"></rect></svg>
+		</div>
+		<script>
+			if (navigator.platform && navigator.platform.indexOf('Win') > -1) {
+				document.querySelectorAll('.mock-macos-dots').forEach(function(el) { el.style.display = 'none'; });
+			}
+		</script>
+		<!-- Left pane tabs -->
+		<div class="app-tab-bar flex-1 app-border lg:border-e">
+			<div class="app-tab is-active">
+				<span>Writing is telepathy</span>
+				<i data-lucide="x" class="app-tab-close app-icon-muted"></i>
+			</div>
+			<div class="app-tab">
+				<span>Evergreen notes</span>
+			</div>
+			<div class="app-tab-new">
+				<i data-lucide="plus" class="app-tab-icon app-icon-faint"></i>
+			</div>
+			<div class="flex-1 min-w-2"></div>
+		</div>
+		<!-- Right pane tabs (hidden on small screens) -->
+		<div class="app-tab-bar hidden lg:flex w-[38%]">
+			<div class="app-tab is-active">
+				<i data-lucide="git-fork" class="app-tab-icon app-icon-muted"></i>
+				<span>Graph of Writing is t...</span>
+				<i data-lucide="x" class="app-tab-close app-icon-muted"></i>
+			</div>
+			<div class="app-tab-new">
+				<i data-lucide="plus" class="app-tab-icon app-icon-faint"></i>
+			</div>
+			<div class="flex-1"></div>
+		</div>
+	</div>
+
+	<!-- Body: sidebar + split panes -->
+	<div class="flex flex-1 min-h-0">
+
+		<!-- Sidebar -->
+		<div class="app-sidebar w-[200px] min-w-0">
+			<div class="flex-1 hide-scroll overflow-y-auto px-2 pb-3">
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-right" class="app-icon-sm app-icon-faint"></i>
+					<span>Clippings</span>
+				</div>
+				
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-right" class="app-icon-sm app-icon-faint"></i>
+					<span>Daily</span>
+				</div>
+				
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-down" class="app-icon-sm app-icon-faint"></i>
+					<span>Ideas</span>
+				</div>
+				
+				<div class="app-sidebar-file is-child is-active">
+					<span>Writing is telepathy</span>
+				</div>
+				
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-right" class="app-icon-sm app-icon-faint"></i>
+					<span>Meta</span>
+				</div>
+				
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-right" class="app-icon-sm app-icon-faint"></i>
+					<span>Projects</span>
+				</div>
+				
+			
+				<div class="app-sidebar-folder">
+					<i data-lucide="chevron-right" class="app-icon-sm app-icon-faint"></i>
+					<span>References</span>
+				</div>
+				
+			
+				<div class="app-sidebar-file">
+					<span>Evergreen notes</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Calmness is a superpower</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Travel</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Creativity is combinatory u...</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Emergence</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Recipes</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Books</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Health</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>What if it were easy</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Tools</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Specialization is for insects</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>First principles</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>Philosophy</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>A little bit every day</span>
+				</div>
+			
+				<div class="app-sidebar-file">
+					<span>1,000 true fans</span>
+				</div>
+			
+			</div>
+			<!-- Vault name footer -->
+			<div class="app-vault-footer app-border border-t">
+				<i data-lucide="chevrons-up-down" class="app-icon-md app-icon-faint"></i>
+				<span class="app-text-normal font-medium">Notes</span>
+				<div class="flex-1"></div>
+				<div class="flex items-center">
+					<i data-lucide="help-circle" class="app-toolbar-icon app-text-normal"></i>
+					<i data-lucide="settings" class="app-toolbar-icon app-text-normal"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left pane: editor -->
+		<div class="app-pane">
+			<!-- Editor content (scrollable + editable) -->
+			<div class="flex-1 hide-scroll app-editor overflow-y-auto py-5 px-7">
+				<div class="outline-0 cursor-text" contenteditable="true" spellcheck="false">
+					<div class="app-h1">Writing is telepathy</div>
+
+					<div class="mb-2.5"><span class="app-tag">#evergreen</span></div>
+
+					<p>From <span class="text-accent-400 hover:text-accent-300 underline">On Writing</span></p>
+
+					<div class="app-h2">Ideas can travel through time and space</div>
+
+					<p>Ideas can travel through time and space without being uttered out loud. The process of telepathy requires two places:</p>
+
+					<ul class="list-disc ps-5">
+						<li>A <strong>sending place</strong>, a transmission place — where the writer sends ideas, such as a desk</li>
+						<li>A <strong>receiving place</strong> — where the reader receives the ideas/imagery such as a couch, a comfortable chair, in bed</li>
+					</ul>
+
+					<div class="app-h2">Quote</div>
+
+					<blockquote>Look, here’s a table covered with red cloth. On it is a cage the size of a small fish aquarium. In the cage is a white rabbit with a pink nose and pink-rimmed eyes. On its back, clearly marked in blue ink, is the numeral 8. The most interesting thing here isn’t even the carrot-munching rabbit in the cage, but the number on its back. I never opened my mouth and you never opened yours. We’re not even in the same year together, let alone the same room... except we are together. We are close. We’re having a meeting of the minds. We’ve engaged in an act of telepathy.</blockquote>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right pane: graph (hidden on small screens) -->
+		<div class="hidden lg:flex flex-col select-none cursor-default min-w-0 w-[38%]">
+			<!-- Graph content -->
+			<div class="flex-1 min-h-0 overflow-hidden flex items-center justify-center p-2">
+				
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 472">
+	<path stroke-width="1" stroke="rgba(255,255,255,0.2)" d="m270.3 151-47.8-1m48.1-.6-66.3-47.8m66.3 48.4-38.1-71.8m38.5 70.9-8.1-92.8m63.3 47.3L271 151m38.4-78.8-38.7 79.3m-.4-.4L218 219.6m52.6-69L206 184m-.4.7-35.7 7.8m-43.3 83.1 17.4-44.5m0 .7 26.8-39.6m-44.1 83-66.5-31.6m26.5-57.8 39.8 90.1m-.5-.2-70.6-68.6m76.6-38.6-5.5 107.2m.3-.3-14.3 54.4m-52.2-86.3-16.5 46.2m1.1-1.3-19.2-32.8m30-48.2-3.2-82.8m56-26.6-56.7 26.1m102.6-60.7-11.5 53m.2-.7L109 98m94.3 4.4-59.8 13m-.3 1.2 19.5 30.6m.1-.3-30.6 21.4m.6 0-80.5-44.1m170.5 26.1-60.8-3.4m.4.9 41.6-45.5m106.4-29.6-.3-38m35.7 38.6-19.9 31M418.8 56l-72.4 17.4M161.9 147l8 45m.5-.2L131.7 168M271 151.7l11.6 120.7m1.1 1.1 43.8-43.7M282 272.9l-42.2 33.7m141.3 42.2L338 327.6m43.3 20.9-47.6 15.2m47.2-14.5-76.6-7.3m75.7 7.8 13.2 56.3m.7-1.4-59.7-40.8m60.4 40.1-62.9-3.7m61.7 5.3L364.8 437m29.2-31.5-65.5 30.8M126.7 274.8 240 306m97.7 21.5L283.5 272m-.1.8 58.4 19.2m-.7-1.2 39 58.6m-37.8-58.2 12-34.5m-.3-1.2-26.3-26.7m-2.7-1.1 41.8-4.7m0-.7-13.2 33.5m13.8-32 11.4-38.7m39 18.9-40.2-18.6M418 204l-75.6-9.3m35.8-9.4L352.6 159m64.1 44.2 15.3 35.3m1 .4-36.4 4.7m20.1-39.5-20.4 39.7m-.5-.5-27-19.6m-17-64.4-69.5 112.5m1 0 43.6-167.1m-1.4.1 26.3 54.7m85.3-10-82.6 10.2m82-10.7-19.4 55.5m32.7-20.8L437.5 149m59.4-22.8-48.2 58m-16.1 54.6 17-54.1M431.8 238 381 348.8m1 0 15.2-104.7m-.2-.4L342.6 291m-214.7-16.7 155.2-2.4M126 275.4 270.8 152m126.7 90L354 255.6m-27.3-26.1 15.7 62.5m-.6-97.9-15.1 35.1m25.5-70.6-10.1 35.7m114-75.9-19.4 31.3m-293.6-35.1-11 53.8M127 276.2l-82.5 12.9m260.2 52.6-64.2-35.6m215.7-185.8 41 6.7m-48.3 55.5-32 21.4M218 219.3l-73.3 12.1"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 121.3 265)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 265.4 141)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 410.6 193.9)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 426.7 228)" fill="#fff"/>
+	<circle cx="11.1" cy="11.1" r="11.1" transform="matrix(0 1 1 0 372.5 336)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 277.3 262.2)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 387.9 395.6)" fill="#fff"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 361.3 430.4)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 329.5 357.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 300.3 335.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 323.3 222.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 362.7 216.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 374.1 179.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 350 249.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 392.8 237.3)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 433.3 142.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 453 112.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 445.4 177)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 324.8 430)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 327.9 394)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 333.7 321.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 338 284.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 236.3 300)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 140.3 225.5)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 56.1 237.3)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 40.8 281.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 21.4 249)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 166.2 186.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 202.3 177.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 158.5 140.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 48.2 117.8)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 51.9 199.9)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 83.6 179.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 105 91)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 150.9 56)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 139.8 108.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 128.6 161.9)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 214.5 213)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 218.6 143.8)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 338.5 188.4)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 348.4 152.4)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 305.7 28)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 414.7 49)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 492.9 120)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 342.7 67)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 305.6 65.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 322.7 97.8)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 108.7 323)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 258.5 49.5)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 228.2 71.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 200.1 95.2)" fill="#AAA"/>
+</svg>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Status bar (floating bottom-right of window) -->
+	<div class="app-statusbar absolute bottom-0 end-0">
+		<span>1 backlink</span>
+		<i data-lucide="book-open" class="w-[11px] h-[11px]"></i>
+		<span>206 words</span>
+		<span>1139 char</span>
+	</div>
+</div>
+
+	</div>
+
+	</div>
+	</div>
+	</div>
+	<!-- Mobile phone (outside overflow-hidden, inside relative wrapper) -->
+	<div class="absolute start-0 -bottom-[8%] w-[220px] z-10" aria-hidden="true" data-nosnippet>
+	<div class="dir-reverse app-phone rounded-[30px] overflow-hidden shadow-2xl flex flex-col select-none cursor-default ui">
+		<!-- Status bar -->
+		<div class="flex items-center justify-between shrink-0 pt-3 px-4 pb-1 text-[10px] text-white font-semibold">
+			<span class="mock-local-time">18:20</span>
+			<div class="flex items-center gap-1 text-[8px]">
+				<i data-lucide="signal" class="app-icon-md"></i>
+				<i data-lucide="wifi" class="app-icon-md"></i>
+				<i data-lucide="battery-full" class="app-icon-md"></i>
+			</div>
+		</div>
+
+		<!-- App header -->
+		<div class="flex items-center shrink-0 py-1 px-2.5">
+			<div class="app-phone-bubble-round flex items-center justify-center w-6 h-6">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-phone-icon rtl-mirror"><rect x="1" y="2" width="22" height="20" rx="4"></rect><rect x="5" y="6" width="1" height="12" rx="1" fill="currentColor"></rect></svg>
+			</div>
+			<div class="flex-1"></div>
+			<div class="app-phone-bubble flex items-center gap-2 py-1 px-2">
+				<i data-lucide="book-open" class="app-phone-icon"></i>
+				<i data-lucide="more-horizontal" class="app-phone-icon"></i>
+			</div>
+		</div>
+
+		<!-- Note content -->
+		<div class="flex-1 overflow-hidden outline-0 cursor-text select-text p-4" contenteditable="true" spellcheck="false">
+			<div class="text-lg font-bold app-text-normal mb-2">Japan Trip Planning</div>
+
+			<div class="flex gap-1.5 flex-wrap mb-3">
+				<span class="app-tag app-tag-sm">#projects</span>
+				<span class="app-tag app-tag-sm">#travel</span>
+			</div>
+
+			<div class="text-[13px] font-semibold app-text-normal mb-1.5">To-do</div>
+
+			<div class="text-[10px] app-text-muted leading-[2]">
+				<div class="app-task"><span class="app-checkbox"></span> Schedule flights</div>
+				<div class="app-task"><span class="app-checkbox"></span> Ask for recommendations</div>
+				<div class="app-task is-sub"><span class="app-checkbox is-checked">&#10003;</span> Keiko</div>
+				<div class="app-task is-sub"><span class="app-checkbox is-checked">&#10003;</span> Andrew</div>
+				<div class="app-task is-sub"><span class="app-checkbox"></span> Garrett</div>
+				<div class="app-task"><span class="app-checkbox"></span> Research ryokans in <span class="text-accent-400 underline">Kyoto</span></div>
+				<div class="app-task"><span class="app-checkbox"></span> Itinerary</div>
+			</div>
+		</div>
+
+		<!-- Bottom toolbar -->
+		<div class="shrink-0 px-5 pt-2 pb-3.5">
+			<div class="app-phone-bubble flex items-center justify-around py-2 px-1 text-[#999]">
+				<i data-lucide="chevron-left" class="app-icon-lg"></i>
+				<i data-lucide="chevron-right" class="app-icon-lg"></i>
+				<i data-lucide="search" class="app-icon-lg"></i>
+				<i data-lucide="plus" class="app-icon-lg"></i>
+				<span class="w-3.5 h-[13px] border-[1.5px] border-[#999] rounded-[3px] inline-flex items-center justify-center text-[7px] text-[#999] font-semibold">1</span>
+				<i data-lucide="menu" class="app-icon-lg"></i>
+			</div>
+		</div>
+	</div>
+	<script>!function(){var e=document.querySelector(".mock-local-time");if(e){var t=new Date,o=new Intl.DateTimeFormat(void 0,{hour:"numeric"}).resolvedOptions(),r="h23"===o.hourCycle||"h24"===o.hourCycle||!1===o.hour12,i=new Intl.DateTimeFormat(void 0,{hour:"numeric",minute:"2-digit",...r?{hour12:!1}:{hour12:!0}}).formatToParts(t);e.textContent=i.filter((e=>"hour"===e.type||"minute"===e.type||"literal"===e.type)).map((e=>e.value)).join("").trim()}}();</script>
+	</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+
+	<div class="mb-8 sm:mb-12"></div>
+
+	<div class="py-16 lg:pb-24">
+		<div class="relative gap-y-12 items-center md:bg-basalt container grid grid-cols-1 lg:grid-cols-2 logo-shimmer sm:px-8">
+			<div class="max-w-2xl mx-auto lg:mx-0">
+				<dl class="text-xl md:text-2xl flex flex-col gap-y-4 divide-y divide-gray-800">
+
+					<div>
+						<dt class="font-medium">
+						Your thoughts are yours.
+						</dt>
+						<dd class="text-muted mt-1"><span class="text-normal font-semibold"></span> Obsidian stores notes privately on your device, so you can access them quickly, even offline. No one else can read them, not even us.</dd>
+					</div>
+
+					<div class="pt-4">
+						<dt class="font-medium">
+						Your mind is unique.
+						</dt>
+						<dd class="text-muted mt-1"><span class="text-normal font-semibold"></span> With <a href="/plugins" class="underline">thousands of plugins</a> and themes, you can shape Obsidian to fit your way of thinking.</dd>
+					</div>
+
+					<div class="pt-4">
+						<dt class="font-medium">
+						Your knowledge should last.
+						</dt>
+						<dd class="text-muted mt-1"><span class="text-normal font-semibold"></span> Obsidian uses open file formats, so you’re never locked in. You own your data for the long term.</dd>
+					</div>
+				</dl>
+			</div>
+
+			<div class="flex items-center justify-center cards select-none">
+				<div class="pt-12 sm:pt-8">
+					<a class="download-button logo-shimmer" href="/download" aria-label="Download Obsidian">
+						<div class="mx-auto card card-logo card-shimmer flex items-center justify-center bg-secondary rounded-[20%] w-48 h-48 lg:w-64 lg:h-64 shadow-2xl hover:shadow-3xl">
+							<img src="/images/obsidian-logo-gradient.svg" width="85%" height="85%" alt="Obsidian" class="sm:hidden" />
+<svg fill="none" class="hidden sm:inline-block" height="100%" width="100%" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+	<radialGradient id="logo-bottom-left" cx="0" cy="0" gradientTransform="matrix(-59 -225 150 -39 161.4 470)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".4"/>
+		<stop offset="1" stop-opacity=".1"/>
+	</radialGradient>
+	<radialGradient id="logo-top-right" cx="0" cy="0" gradientTransform="matrix(50 -379 280 37 360 374.2)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".6"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".1"/>
+	</radialGradient>
+	<radialGradient id="logo-top-left" cx="0" cy="0" gradientTransform="matrix(69 -319 218 47 175.4 307)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".8"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".4"/>
+	</radialGradient>
+	<radialGradient id="logo-bottom-right" cx="0" cy="0" gradientTransform="matrix(-96 -163 187 -111 335.3 512.2)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+		<stop offset="1" stop-opacity=".3"/>
+	</radialGradient>
+	<radialGradient id="logo-top-edge" cx="0" cy="0" gradientTransform="matrix(-36 166 -112 -24 310 128.2)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity="0"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".2"/>
+	</radialGradient>
+	<radialGradient id="logo-left-edge" cx="0" cy="0" gradientTransform="matrix(88 89 -190 187 111 220.2)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".2"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".4"/>
+	</radialGradient>
+	<radialGradient id="logo-bottom-edge" cx="0" cy="0" gradientTransform="matrix(9 130 -276 20 215 284)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".2"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+	</radialGradient>
+	<radialGradient id="logo-middle-edge" cx="0" cy="0" gradientTransform="matrix(-198 -104 327 -623 400 399.2)" gradientUnits="userSpaceOnUse" r="1">
+		<stop offset="0" stop-color="#fff" stop-opacity=".2"/>
+		<stop offset=".5" stop-color="#fff" stop-opacity=".2"/>
+		<stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+	</radialGradient>
+	<clipPath id="clip">
+		<path d="M.2.2h512v512H.2z"/>
+	</clipPath>
+	<g clip-path="url(#clip)">
+		<path d="M382.3 475.6c-3.1 23.4-26 41.6-48.7 35.3-32.4-8.9-69.9-22.8-103.6-25.4l-51.7-4a34 34 0 0 1-22-10.2l-89-91.7a34 34 0 0 1-6.7-37.7s55-121 57.1-127.3c2-6.3 9.6-61.2 14-90.6 1.2-7.9 5-15 11-20.3L248 8.9a34.1 34.1 0 0 1 49.6 4.3L386 125.6a37 37 0 0 1 7.6 22.4c0 21.3 1.8 65 13.6 93.2 11.5 27.3 32.5 57 43.5 71.5a17.3 17.3 0 0 1 1.3 19.2 1494 1494 0 0 1-44.8 70.6c-15 22.3-21.9 49.9-25 73.1z" fill="#6c31e3"/>
+		<path d="M165.9 478.3c41.4-84 40.2-144.2 22.6-187-16.2-39.6-46.3-64.5-70-80-.6 2.3-1.3 4.4-2.2 6.5L60.6 342a34 34 0 0 0 6.6 37.7l89.1 91.7a34 34 0 0 0 9.6 7z" fill="url(#logo-bottom-left)"/>
+		<path d="M278.4 307.8c11.2 1.2 22.2 3.6 32.8 7.6 34 12.7 65 41.2 90.5 96.3 1.8-3.1 3.6-6.2 5.6-9.2a1536 1536 0 0 0 44.8-70.6 17 17 0 0 0-1.3-19.2c-11-14.6-32-44.2-43.5-71.5-11.8-28.2-13.5-72-13.6-93.2 0-8.1-2.6-16-7.6-22.4L297.6 13.2a34 34 0 0 0-1.5-1.7 96 96 0 0 1 2 54 198.3 198.3 0 0 1-17.6 41.3l-7.2 14.2a171 171 0 0 0-19.4 71c-1.2 29.4 4.8 66.4 24.5 115.8z" fill="url(#logo-top-right)"/>
+		<path d="M278.4 307.8c-19.7-49.4-25.8-86.4-24.5-115.9a171 171 0 0 1 19.4-71c2.3-4.8 4.8-9.5 7.2-14.1 7.1-13.9 14-27 17.6-41.4a96 96 0 0 0-2-54A34.1 34.1 0 0 0 248 9l-105.4 94.8a34.1 34.1 0 0 0-10.9 20.3l-12.8 85-.5 2.3c23.8 15.5 54 40.4 70.1 80a147 147 0 0 1 7.8 24.8c28-6.8 55.7-11 82.1-8.3z" fill="url(#logo-top-left)"/>
+		<path d="M333.6 511c22.7 6.2 45.6-12 48.7-35.4a187 187 0 0 1 19.4-63.9c-25.6-55-56.5-83.6-90.4-96.3-36-13.4-75.2-9-115 .7 8.9 40.4 3.6 93.3-30.4 162.2 4 1.8 8.1 3 12.5 3.3 0 0 24.4 2 53.6 4.1 29 2 72.4 17.1 101.6 25.2z" fill="url(#logo-bottom-right)"/>
+		<g clip-rule="evenodd" fill-rule="evenodd">
+			<path d="M254.1 190c-1.3 29.2 2.4 62.8 22.1 112.1l-6.2-.5c-17.7-51.5-21.5-78-20.2-107.6a174.7 174.7 0 0 1 20.4-72c2.4-4.9 8-14.1 10.5-18.8 7.1-13.7 11.9-21 16-33.6 5.7-17.5 4.5-25.9 3.8-34.1 4.6 29.9-12.7 56-25.7 82.4a177.1 177.1 0 0 0-20.7 72z" fill="url(#logo-top-edge)"/>
+			<path d="M194.3 293.4c2.4 5.4 4.6 9.8 6 16.5L195 311c-2.1-7.8-3.8-13.4-6.8-20-17.8-42-46.3-63.6-69.7-79.5 28.2 15.2 57.2 39 75.7 81.9z" fill="url(#logo-left-edge)"/>
+			<path d="M200.6 315.1c9.8 46-1.2 104.2-33.6 160.9 27.1-56.2 40.2-110.1 29.3-160z" fill="url(#logo-bottom-edge)"/>
+			<path d="M312.5 311c53.1 19.9 73.6 63.6 88.9 100-19-38.1-45.2-80.3-90.8-96-34.8-11.8-64.1-10.4-114.3 1l-1.1-5c53.2-12.1 81-13.5 117.3 0z" fill="url(#logo-middle-edge)"/>
+		</g>
+	</g>
+</svg>
+
+						</div>
+
+						<div class="text-center flex justify-center mt-12 mb-2 text-white">
+							<svg height="30" viewBox="0 0 114 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path d="M10.7519 0.503906C4.79991 0.503906 0.503906 4.24791 0.503906 9.38391C0.503906 14.5199 4.79991 18.2639 10.7519 18.2639C16.6799 18.2639 20.9759 14.5199 20.9759 9.38391C20.9759 4.24791 16.6799 0.503906 10.7519 0.503906ZM10.7519 3.98391C14.3279 3.98391 16.8959 6.11991 16.8959 9.38391C16.8959 12.6479 14.3279 14.7839 10.7519 14.7839C7.15191 14.7839 4.58391 12.6479 4.58391 9.38391C4.58391 6.11991 7.15191 3.98391 10.7519 3.98391Z"/>
+	<path d="M26.4847 16.5599C27.3487 17.4959 28.9567 18.2639 31.0687 18.2639C35.3887 18.2639 37.9087 15.2879 37.9087 11.6879C37.9087 8.06391 35.3887 5.08791 31.0687 5.08791C28.9567 5.08791 27.3487 5.87991 26.4847 6.79191V0.767906H22.6447V17.9999H26.4847V16.5599ZM26.3647 11.6159C26.3647 9.62391 28.0687 8.18391 30.2767 8.18391C32.3887 8.18391 34.1647 9.43191 34.1647 11.6879C34.1647 13.9439 32.3887 15.1679 30.2767 15.1679C28.0687 15.1679 26.3647 13.7519 26.3647 11.7599V11.6159Z"/>
+	<path d="M38.318 15.9119C39.782 17.3999 42.59 18.2639 45.518 18.2639C49.478 18.2639 52.454 16.8239 52.454 13.8719C52.454 10.9919 49.622 10.4399 46.382 10.0559C43.646 9.74391 42.806 9.67191 42.806 8.97591C42.806 8.32791 43.67 7.91991 45.302 7.91991C47.27 7.91991 48.974 8.51991 50.126 9.57591L52.118 7.27191C50.846 6.04791 48.47 5.08791 45.494 5.08791C41.486 5.08791 39.014 6.81591 39.014 9.40791C39.014 12.1199 41.534 12.7199 44.558 13.1039C47.39 13.4399 48.59 13.4399 48.59 14.2799C48.59 15.0719 47.534 15.4079 45.806 15.4079C43.646 15.4079 41.654 14.7359 40.142 13.3439L38.318 15.9119Z"/>
+	<path d="M53.8394 4.05591H57.7514V0.767906H53.8394V4.05591ZM57.7034 5.35191H53.8634V17.9999H57.7034V5.35191Z"/>
+	<path d="M70.8263 16.5599V17.9999H74.6663V0.767906H70.8263V6.79191C69.9623 5.87991 68.3543 5.08791 66.2423 5.08791C61.9223 5.08791 59.4023 8.06391 59.4023 11.6879C59.4023 15.2879 61.9223 18.2639 66.2423 18.2639C68.3543 18.2639 69.9623 17.4959 70.8263 16.5599ZM70.9463 11.6159V11.7599C70.9463 13.7519 69.2423 15.1679 67.0343 15.1679C64.9223 15.1679 63.1463 13.9439 63.1463 11.6879C63.1463 9.43191 64.9223 8.18391 67.0343 8.18391C69.2423 8.18391 70.9463 9.62391 70.9463 11.6159Z"/>
+	<path d="M76.9957 4.05591H80.9077V0.767906H76.9957V4.05591ZM80.8597 5.35191H77.0197V17.9999H80.8597V5.35191Z"/>
+	<path d="M87.8626 18.2639C90.0946 18.2639 91.9186 17.6159 93.0706 16.6079C93.7186 17.8079 95.2546 18.5279 98.0626 17.9999V15.1679C96.7186 15.4559 96.4306 15.1439 96.4306 14.4719V9.86391C96.4306 6.69591 94.0546 5.08791 90.0226 5.08791C86.5426 5.08791 83.7586 6.59991 82.9666 8.87991L86.4226 9.81591C86.8066 8.83191 88.1266 8.11191 89.8546 8.11191C91.8946 8.11191 92.7106 8.87991 92.7106 9.83991V9.91191L87.6706 10.3679C84.6946 10.6559 82.5106 11.8799 82.5106 14.3519C82.5106 16.8479 84.7426 18.2639 87.8626 18.2639ZM92.7106 13.1519C92.7106 14.6159 90.5266 15.4559 88.5586 15.4559C87.0706 15.4559 86.2306 15.0239 86.2306 14.2079C86.2306 13.3679 86.9026 13.0559 88.2226 12.9359L92.7106 12.4799V13.1519Z"/>
+	<path d="M99.379 17.9999H103.219V11.9519C103.219 9.76791 104.419 8.49591 106.507 8.49591C108.475 8.49591 109.507 9.79191 109.507 11.9279V17.9999H113.347V10.7999C113.347 7.29591 111.115 5.08791 107.827 5.08791C105.787 5.08791 104.203 5.85591 103.219 6.88791V5.35191H99.379V17.9999Z"/>
+</svg>
+
+						</div>
+					</a>
+					<div class="text-center text-xl sm:text-2xl mt-12 font-medium">
+						Free without limits.<br>
+						<a class="download-button text-accent"
+							href="/download">
+								Download now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="py-16 sm:py-24">
+		<div class="container cards">
+			<div>
+				<div class="lg:mx-auto max-w-2xl mb-16">
+					<h2 class="text-title mb-4">Spark ideas.</h2>
+					<p class="text-xl text-muted sm:text-2xl">From personal notes to journaling, knowledge bases, and project management, Obsidian gives you the tools to come up with ideas and organize them.</p>
+				</div>
+
+				<div class="text-lg md:text-xl col-span-2 grid grid-cols-1 gap-6 md:grid-cols-2">
+
+					<div class="card card-shimmer ring-1 ring-inset ring-white/5 flex flex-col bg-secondary rounded-xl overflow-hidden">
+						<dl class="p-6">
+							<dt class="md:text-2xl font-semibold mb-1">
+							Links
+							</dt>
+							<dd class="text-muted leading-tight">Create connections between your notes. Link anything and everything — ideas, people, places, books, and beyond. Invent your own personal Wikipedia.
+							</dd>
+						</dl>
+						<div class="md:h-96 w-full overflow-hidden mt-auto pt-6 ps-6 sm:ps-12 relative">
+							<div class="relative ui bg-gray-900 border-t border-s border-gray-800 h-96 rounded-ss-xl shadow-xl pt-8 ps-12 pe-2 text-sm md:text-base leading-5" aria-hidden="true" data-nosnippet>
+								<p class="mt-4 mb-2 outline-0" contenteditable="true" spellcheck="false">In <span class="text-accent-400 hover:text-accent-300 underline">Meditations on First Philosophy</span> the philosopher <span class="text-accent-400 hover:text-accent-300 underline">René Descartes</span> describes a series of doubts about the nature of reality, arriving at the famous phrase:</p>
+
+								<div class="relative my-2 ">
+									<ul class="list-disc ps-4 marker:text-faint">
+										<li class="text-accent-400"><span class="text-faint">[[</span>I thin<span class="text-faint">]]</span></li>
+									</ul>
+									<div class="select-none absolute start-4 rounded-lg text-sm bg-gray-800 shadow-xl border border-gray-700 p-1.5 sm:p-2 min-w-[250px]">
+										<ul class="cursor-default">
+											<li class="hover:bg-gray-700 rounded py-1 px-2">I <strong>thin</strong>k therefore I am</li>
+											<li class="hover:bg-gray-700 rounded py-1 px-2">Just <strong>thin</strong>k about it</li>
+											<li class="rounded py-1 px-2 hover:bg-gray-700 mt-1"><strong>Thin</strong>king, Fast and Slow<br><div class="text-xs text-gray-400">Books/</div></li>
+											<li class="rounded py-1 px-2 hover:bg-gray-700 mt-1">The <strong>Thin</strong>g<br><div class="text-xs text-gray-400">Movies/</div></li>
+										</ul>
+									</div>
+								</div>
+								<p class="outline-0" contenteditable="true" spellcheck="false">He argues that doubting requires thinking, and therefore, the act of thinking confirms his existence.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="group card card-shimmer ring-1 ring-inset ring-white/5 flex flex-col bg-secondary rounded-xl overflow-hidden">
+						<dl class="p-6">
+							<dt class="md:text-2xl font-semibold mb-1">
+							Graph
+							</dt>
+							<dd class="text-muted leading-tight">Visualize the relationships between your notes. Find hidden patterns in your thinking through a visually engaging and interactive graph.</dd>
+						</dl>
+						<div class="md:h-96 w-full overflow-hidden mt-auto pt-6 ps-6 sm:ps-12 relative">
+							<div class="relative ui border-t border-s bg-gray-900 border-gray-800 rounded-ss-xl ps-6 pt-2 select-none cursor-default min-h-[100%] max-w-[180%] demo-graph" data-graph-labels="{&quot;Philosophy&quot;:&quot;Philosophy&quot;,&quot;Books&quot;:&quot;Books&quot;,&quot;René Descartes&quot;:&quot;René Descartes&quot;}">
+							<div class="min-h-[100%] max-w-[180%] relative">
+								
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 472">
+	<path stroke-width="1" stroke="rgba(255,255,255,0.2)" d="m270.3 151-47.8-1m48.1-.6-66.3-47.8m66.3 48.4-38.1-71.8m38.5 70.9-8.1-92.8m63.3 47.3L271 151m38.4-78.8-38.7 79.3m-.4-.4L218 219.6m52.6-69L206 184m-.4.7-35.7 7.8m-43.3 83.1 17.4-44.5m0 .7 26.8-39.6m-44.1 83-66.5-31.6m26.5-57.8 39.8 90.1m-.5-.2-70.6-68.6m76.6-38.6-5.5 107.2m.3-.3-14.3 54.4m-52.2-86.3-16.5 46.2m1.1-1.3-19.2-32.8m30-48.2-3.2-82.8m56-26.6-56.7 26.1m102.6-60.7-11.5 53m.2-.7L109 98m94.3 4.4-59.8 13m-.3 1.2 19.5 30.6m.1-.3-30.6 21.4m.6 0-80.5-44.1m170.5 26.1-60.8-3.4m.4.9 41.6-45.5m106.4-29.6-.3-38m35.7 38.6-19.9 31M418.8 56l-72.4 17.4M161.9 147l8 45m.5-.2L131.7 168M271 151.7l11.6 120.7m1.1 1.1 43.8-43.7M282 272.9l-42.2 33.7m141.3 42.2L338 327.6m43.3 20.9-47.6 15.2m47.2-14.5-76.6-7.3m75.7 7.8 13.2 56.3m.7-1.4-59.7-40.8m60.4 40.1-62.9-3.7m61.7 5.3L364.8 437m29.2-31.5-65.5 30.8M126.7 274.8 240 306m97.7 21.5L283.5 272m-.1.8 58.4 19.2m-.7-1.2 39 58.6m-37.8-58.2 12-34.5m-.3-1.2-26.3-26.7m-2.7-1.1 41.8-4.7m0-.7-13.2 33.5m13.8-32 11.4-38.7m39 18.9-40.2-18.6M418 204l-75.6-9.3m35.8-9.4L352.6 159m64.1 44.2 15.3 35.3m1 .4-36.4 4.7m20.1-39.5-20.4 39.7m-.5-.5-27-19.6m-17-64.4-69.5 112.5m1 0 43.6-167.1m-1.4.1 26.3 54.7m85.3-10-82.6 10.2m82-10.7-19.4 55.5m32.7-20.8L437.5 149m59.4-22.8-48.2 58m-16.1 54.6 17-54.1M431.8 238 381 348.8m1 0 15.2-104.7m-.2-.4L342.6 291m-214.7-16.7 155.2-2.4M126 275.4 270.8 152m126.7 90L354 255.6m-27.3-26.1 15.7 62.5m-.6-97.9-15.1 35.1m25.5-70.6-10.1 35.7m114-75.9-19.4 31.3m-293.6-35.1-11 53.8M127 276.2l-82.5 12.9m260.2 52.6-64.2-35.6m215.7-185.8 41 6.7m-48.3 55.5-32 21.4M218 219.3l-73.3 12.1"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 121.3 265)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 265.4 141)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 410.6 193.9)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 426.7 228)" fill="#fff"/>
+	<circle cx="11.1" cy="11.1" r="11.1" transform="matrix(0 1 1 0 372.5 336)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 277.3 262.2)" fill="#fff"/>
+	<circle cx="8.3" cy="8.3" r="8.3" transform="matrix(0 1 1 0 387.9 395.6)" fill="#fff"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 361.3 430.4)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 329.5 357.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 300.3 335.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 323.3 222.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 362.7 216.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 374.1 179.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 350 249.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 392.8 237.3)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 433.3 142.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 453 112.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 445.4 177)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 324.8 430)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 327.9 394)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 333.7 321.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 338 284.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 236.3 300)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 140.3 225.5)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 56.1 237.3)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 40.8 281.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 21.4 249)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 166.2 186.2)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 202.3 177.6)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 158.5 140.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 48.2 117.8)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 51.9 199.9)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 83.6 179.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 105 91)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 150.9 56)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 139.8 108.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 128.6 161.9)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 214.5 213)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 218.6 143.8)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 338.5 188.4)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 348.4 152.4)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 305.7 28)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 414.7 49)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 492.9 120)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 342.7 67)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 305.6 65.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 322.7 97.8)" fill="#22c55e"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 108.7 323)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 258.5 49.5)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 228.2 71.7)" fill="#AAA"/>
+	<circle cx="5.6" cy="5.6" r="5.6" transform="matrix(0 1 1 0 200.1 95.2)" fill="#AAA"/>
+</svg>
+
+								<svg class="absolute inset-0 w-full h-full" viewBox="0 0 522 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<text x="90" y="305" class="transition-all opacity-0 text-base text-white group-hover:opacity-100" fill="currentColor">Philosophy</text>
+									<text x="250" y="180" class="transition-all opacity-0 text-base text-white group-hover:opacity-100" fill="currentColor">Books</text>
+									<text x="230" y="300" class="transition-all opacity-0 text-base text-white group-hover:opacity-100" fill="currentColor">René Descartes</text>
+								</svg>
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" card card-shimmer ring-1 ring-inset ring-white/5 flex flex-col bg-secondary rounded-xl overflow-hidden">
+						<a href="/canvas" class="group p-6">
+							<dl>
+								<dt class="md:text-2xl font-semibold mb-2 group-hover:text-normal">
+								Canvas
+								</dt>
+								<dd class="text-muted leading-tight">An infinite space to research, brainstorm, diagram, and lay out your ideas. Canvas is a limitless playground for your mind. <span class="text-accent font-medium hover:text-accent-300">Learn more.</span></dd>
+							</dl>
+						</a>
+						<div class="md:h-96 w-full overflow-hidden mt-auto pt-6 ps-6 sm:ps-12 relative">
+							<div class="mock-mirror relative ui bg-gray-900 border-t border-l border-gray-800 h-96 rounded-tl-xl shadow-xl pt-8 pl-8 pr-2 text-sm md:text-base leading-5" aria-hidden="true" data-nosnippet>
+								<div class="absolute left-8 top-8 w-[280px]">
+									<span class="select-none cursor-grab active:cursor-grabbing bg-green-500 rounded-sm px-0.5 text-black text-xs">Lecture 1</span>
+									<div class="w-full h-[112px] rounded bg-green-900 border border-green-400 opacity-30">
+									</div>
+								</div>
+								<div class="absolute hide-scroll overflow-auto h-[95px] left-[40px] w-[100px] top-[65px] text-[6px] leading-[8px] px-2 pb-1 rounded border-gray-700 border hover:border-accent-500 focus:outline-accent-500" contenteditable="true" spellcheck="false">
+									<p class="my-1">Rationalists</p>
+									<ul class="list-disc ps-2">
+										<li>Reason and innate knowledge → acquire knowledge</li>
+										<li class="my-1">Fundamental truths and principles can be known independent of experience</li>
+										<li class="my-1">A priori reasoning</li>
+										<li class="my-1">Reason and deduction</li>
+									</ul>
+								</div>
+								<svg class="absolute top-[245px] left-[152px]" width="70px" height="40px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 325"><path d="M.4 2.6C379.8 2.6 232.8 322 584.6 322" stroke-linecap="square" stroke="#777" stroke-width="10"/></svg>
+								<div class="absolute hide-scroll overflow-auto h-[95px] left-[150px] w-[130px] top-[65px] text-[6px] leading-[8px] px-2 pb-1 rounded border-gray-700 border hover:border-accent-500 focus:outline-accent-500" contenteditable="true" spellcheck="false">
+									<p class="my-1">Empiricists</p>
+									<ul class="list-disc ps-2">
+										<li>Experience and sensory perception → acquire knowledge</li>
+										<li class="my-1">All knowledge is derived from experience and observation of the external world</li>
+										<li class="my-1">A posteriori reasoning</li>
+									</ul>
+								</div>
+								<div class="absolute left-8 w-[120px] h-[140px] top-[180px] text-[6px] leading-[9px] p-2 rounded border-gray-700 border hover:border-accent-500 focus:outline-accent-500 hide-scroll overflow-auto" contenteditable="true" spellcheck="false">
+									<div class="font-semibold text-[9px] mb-1.5">Cogito, ergo sum</div>
+									<p class="my-1">In <span class="text-accent-400 hover:text-accent-300 underline">Meditations on First Philosophy</span> the philosopher <span class="text-accent-400 hover:text-accent-300 underline">René Descartes</span> describes a series of doubts about the nature of reality, arriving at the famous phrase:</p>
+									<p class="my-1"><span class="text-accent-400 hover:text-accent-300 underline">I think therefore I am</span></p>
+									<p class="my-1">He argues that doubting requires thinking, and therefore, the act of thinking confirms his existence.</p>
+								</div>
+								<div class="absolute w-[500px] top-[200px] left-[200px]">
+									<span class="select-none cursor-grab active:cursor-grabbing bg-yellow-500 rounded-sm px-0.5 text-black text-xs">Philosophers</span>
+									<div class="w-full h-[400px] rounded bg-yellow-900 border border-yellow-400 opacity-30">
+									</div>
+								</div>
+								<div class="cursor-grab active:cursor-grabbing absolute top-[240px] left-[220px] border border-gray-600 hover:border-gray-500 rounded overflow-hidden">
+									<img src="/images/home-descartes.jpg" width="68" height="83" alt="Image of Rene Descartes embedded in Obsidian Canvas" class="max-w-none">
+								</div>
+								<div class="cursor-grab active:cursor-grabbing absolute top-[240px] left-[300px] border border-gray-600 hover:border-gray-500 rounded overflow-hidden">
+									<img src="/images/home-spinoza.png" width="68" height="83" alt="Image of Baruch Spinoza embedded in Obsidian Canvas" class="max-w-none">
+								</div>
+								<div class="bg-white hide-scroll absolute top-[35px] left-[335px] h-[160px] overflow-auto border border-gray-600 hover:border-accent-400 rounded">
+									<img src="/images/home-wiki-hume.png" width="120" height="200" alt="Wikipedia page about David Hume embedded in Obsidian Canvas" class="max-w-none">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-shimmer ring-1 ring-inset ring-white/5 flex flex-col bg-secondary rounded-xl overflow-hidden hover:text-">
+						<a href="/plugins" class="group p-6">
+							<dl>
+								<dt class="md:text-2xl font-semibold mb-2 group-hover:text-normal">
+								Plugins
+								</dt>
+								<dd class="text-muted leading-tight">Build your ideal thinking space. With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow. <span class="text-accent font-medium hover:text-accent-300">Learn more.</span></dd>
+							</dl>
+						</a>
+						<div class="md:h-96 w-full overflow-hidden mt-auto pt-6 ps-6 sm:ps-12 relative">
+							<div class="select-none cursor-default relative ui bg-gray-900 border-t border-s border-gray-800 h-96 rounded-ss-xl shadow-xl pt-8 ps-12 pe-4 text-normal text-sm md:text-base leading-5" aria-hidden="true" data-nosnippet>
+								<div class="text-xl font-semibold border-b pb-4 border-gray-700">Community plugins</div>
+								<div class="border-b py-4 border-gray-700 flex items-center gap-1">
+									<div>
+										<div id="plugins-calendar">Calendar <span class='text-xs text-muted'>by Liam Cain</span></div>
+										<div class="text-xs sm:text-sm text-muted pt-1 flex items-center">Calendar view of your daily notes.</div>
+									</div>
+									<div class="shrink-0 ms-auto checkbox-container is-enabled bg-gray-600"><input type="checkbox" aria-labelledby="plugins-calendar"></div>
+								</div>
+								<div class="border-b py-4 border-gray-700 flex items-center gap-1">
+									<div>
+										<div id="plugins-kanban">Kanban <span class='text-xs text-muted'>by Matthew Meyers</span></div>
+										<div class="text-xs sm:text-sm text-muted pt-1">Markdown-backed kanban boards.</div>
+									</div>
+									<div class="ms-auto checkbox-container is-enabled bg-gray-600"><input type="checkbox" aria-labelledby="plugins-kanban"></div>
+								</div>
+								<div class="border-b py-4 border-gray-700 flex items-center gap-1">
+									<div>
+										<div id="plugins-dataview">Dataview <span class='text-xs text-muted'>by Michael Brenan</span></div>
+										<div class="text-xs sm:text-sm text-muted pt-1">Advanced queries for the data-obsessed.</div>
+									</div>
+									<div class="ms-auto checkbox-container bg-gray-600"><input type="checkbox" aria-labelledby="plugins-dataview"></div>
+								</div>
+								<div class="border-b py-4 border-gray-700 flex items-center gap-1">
+									<div>
+										<div id="plugins-outliner">Outliner <span class='text-xs text-muted'>by Viacheslav Slinko</span></div>
+										<div class="text-xs sm:text-sm text-muted pt-1">Work with your lists.</div>
+									</div>
+									<div class="ms-auto checkbox-container bg-gray-600"><input type="checkbox" aria-labelledby="plugins-outliner"></div>
+								</div>
+								<div class="border-b py-4 border-gray-700 flex items-center gap-1">
+									<div>
+										<div id="plugins-tasks">Tasks <span class='text-xs text-muted'>by Martin Schenck and Clare Macrae</span></div>
+										<div class="text-xs sm:text-sm text-muted pt-1">Track tasks across your entire vault.</div>
+									</div>
+									<div class="ms-auto checkbox-container bg-gray-600"><input type="checkbox" aria-labelledby="plugins-tasks"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overflow-hidden py-12 xl:py-24">
+		<div class="container tab-container" style="--active-tab: 1;">
+		<div class="mx-auto grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2 items-center">
+			<div class="lg:pe-8 lg:pt-4">
+				<div class="lg:max-w-lg">
+					<h2 class="text-title mb-4">Sync securely.</h2>
+					<p class="mt-6 text-xl sm:text-2xl text-muted">Access your notes on any device, secured with end-to-end encryption. <a href="/sync" class="text-accent font-medium">Learn more.</a></p>
+					<div class="mt-8 relative max-w-xl lg:max-w-none">
+						<div class="tab-glider absolute md:bg-secondary -start-[3%] h-1/3 rounded-lg w-[106%] transition-all duration-100" style="transform: translateY(calc(100% * var(--active-tab)))"></div>
+						<dl class="grid grid-cols-1 auto-rows-fr text-muted text-lg leading-normal">
+							<div class="tab-button relative ps-9 pe-3 rounded-lg py-4" data-tab="tab-history">
+								<dt><i data-lucide="history" class="icon-xl absolute start-0 top-4 text-accent-400"></i></dt>
+								<dd class="inline"><strong class="font-semibold text-normal">Version history.</strong> Easily track changes between revisions, with one year of version history for every note.</dd>
+							</div>
+
+							<div class="tab-button active relative ps-9 pe-3 rounded-lg py-4" data-tab="tab-collab">
+								<dt><i data-lucide="users" class="icon-xl absolute start-0 top-4 text-accent-400"></i></dt>
+								<dd class="inline"><strong class="font-semibold text-normal">Collaboration.</strong> Work with your team on shared files without compromising your private data.</dd>
+							</div>
+
+							<div class="tab-button relative ps-9 pe-3 rounded-lg py-4" data-tab="tab-encryption">
+								<dt><i data-lucide="settings" class="icon-xl absolute start-0 top-4 text-accent-400"></i></dt>
+								<dd class="inline"><strong class="font-semibold text-normal">Fine-grained control.</strong> Decide which files and preferences you want to sync to which devices.</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content max-w-none md:-ms-4 lg:-ms-0 lg:aspect-square">
+				<!-- Settings tab -->
+				<div class="tab-pane lg:aspect-square relative rounded-xl sm:rounded-3xl isolate overflow-hidden bg-accent-400 ps-6 pt-8 sm:ps-12 sm:pe-0 sm:pt-12" data-tab="tab-encryption" style="height: auto;" aria-hidden="true" data-nosnippet>
+					<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none h-full">
+					<div class="ui ui-light rounded-ss-xl shadow-xl pt-8 ps-8 pe-8 bg-white" style="min-height: 400px; height: 100%;">
+						<div class="text-lg sm:text-xl font-semibold border-b pb-4 border-gray-200">Selective sync</div>
+						<div class="border-b py-4 border-gray-200 flex items-center gap-4">
+							<div class="flex-1 min-w-0">
+								<div>Images</div>
+								<div class="text-sm text-gray-500 pt-1">Sync image files to this device</div>
+							</div>
+							<div class="shrink-0 checkbox-container is-enabled"><input type="checkbox"></div>
+						</div>
+						<div class="border-b py-4 border-gray-200 flex items-center gap-4">
+							<div class="flex-1 min-w-0">
+								<div>Audio</div>
+								<div class="text-sm text-gray-500 pt-1">Sync audio files to this device</div>
+							</div>
+							<div class="shrink-0 checkbox-container is-enabled"><input type="checkbox"></div>
+						</div>
+						<div class="border-b py-4 border-gray-200 flex items-center gap-4">
+							<div class="flex-1 min-w-0">
+								<div>Video</div>
+								<div class="text-sm text-gray-500 pt-1">Sync video files to this device</div>
+							</div>
+							<div class="shrink-0 checkbox-container"><input type="checkbox"></div>
+						</div>
+						<div class="border-b py-4 border-gray-200 flex items-center gap-4">
+							<div class="flex-1 min-w-0">
+								<div>PDFs</div>
+								<div class="text-sm text-gray-500 pt-1">Sync PDF files to this device</div>
+							</div>
+							<div class="shrink-0 checkbox-container is-enabled"><input type="checkbox"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<!-- Version history tab -->
+				<div class="tab-pane lg:aspect-square relative rounded-xl sm:rounded-3xl isolate overflow-hidden bg-accent-400 ps-6 pt-8 sm:ps-12 sm:pe-0 sm:pt-12" data-tab="tab-history" style="height: auto;" aria-hidden="true" data-nosnippet>
+					<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none h-full">
+					<div class="ui ui-light rounded-ss-xl shadow-xl bg-white text-sm flex" style="min-height: 400px; height: 100%;">
+						<!-- History sidebar -->
+						<div class="shrink-0 pt-8 ps-8 pe-8 w-1/2">
+							<div class="text-lg sm:text-xl font-semibold pb-4 border-b border-gray-200">Version history</div>
+
+							<div class="flex items-center gap-2 py-3">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-green-500 text-white">LC</div>
+								<span class="flex-1 min-w-0 text-xs text-gray-500 mock-date" data-days="1" data-time="8:48 AM"></span>
+							</div>
+
+							<div class="flex items-center gap-2 py-3">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-red-400 text-white">TG</div>
+								<span class="flex-1 min-w-0 text-xs text-gray-500 mock-date" data-days="3" data-time="12:24 PM"></span>
+							</div>
+
+							<div class="flex items-center gap-2 py-3 -mx-2 px-2 rounded-lg" style="background: #f3f4f6;">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0" style="background: hsl(258,88%,66%); color: white;">SA</div>
+								<span class="flex-1 min-w-0 text-xs font-semibold text-gray-800 mock-date" data-days="4" data-time="6:19 PM"></span>
+							</div>
+
+							<div class="flex items-center gap-2 py-3">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-green-500 text-white">LC</div>
+								<span class="flex-1 min-w-0 text-xs text-gray-500 mock-date" data-days="5" data-time="3:02 PM"></span>
+							</div>
+
+							<div class="flex items-center gap-2 py-3">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-red-400 text-white">TG</div>
+								<span class="flex-1 min-w-0 text-xs text-gray-500 mock-date" data-days="7" data-time="9:15 AM"></span>
+							</div>
+
+							<div class="flex items-center gap-2 py-3">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0" style="background: hsl(258,88%,66%); color: white;">SA</div>
+								<span class="flex-1 min-w-0 text-xs text-gray-500 mock-date" data-days="9" data-time="7:30 PM"></span>
+							</div>
+							<script>document.querySelectorAll('.mock-date').forEach(function(el){var d=new Date();d.setDate(d.getDate()-parseInt(el.dataset.days));el.textContent=d.toLocaleDateString(document.documentElement.lang,{month:'short',day:'numeric',year:'numeric'})+' '+el.dataset.time;});</script>
+						</div>
+
+						<!-- Diff content -->
+						<div class="flex-1 pt-8 ps-6 pe-4 bg-gray-50 border-s border-gray-200">
+							
+							<div class="font-mono text-xs leading-relaxed space-y-0.5">
+								<div class="py-0.5 px-2 text-gray-500">&nbsp;&nbsp;# Writing is telepathy</div>
+								<div class="py-0.5 px-2 text-gray-500">&nbsp;</div>
+								<div class="py-0.5 px-2 rounded" style="background: rgba(239,68,68,0.1); color: #dc2626;">- Obsidian saves notes as text files.</div>
+								<div class="py-0.5 px-2 rounded" style="background: rgba(34,197,94,0.1); color: #16a34a;">+ Obsidian stores your notes locally as plain text Markdown files.</div>
+								<div class="py-0.5 px-2 text-gray-500">&nbsp;</div>
+								<div class="py-0.5 px-2 text-gray-500">&nbsp;&nbsp;- Create links between your notes</div>
+								<div class="py-0.5 px-2 text-gray-500">&nbsp;&nbsp;- Use tags to organize your ideas</div>
+								<div class="py-0.5 px-2 rounded" style="background: rgba(34,197,94,0.1); color: #16a34a;">+ - Build your own personal wiki</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<!-- Collaboration tab -->
+				<div class="tab-pane active lg:aspect-square relative rounded-xl sm:rounded-3xl isolate overflow-hidden bg-accent-400 ps-6 pt-8 sm:ps-12 sm:pe-0 sm:pt-12" data-tab="tab-collab" style="height: auto;" aria-hidden="true" data-nosnippet>
+					<div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none h-full">
+					<div class="ui ui-light rounded-ss-xl shadow-xl pt-8 ps-8 pe-8 bg-white" style="min-height: 400px; height: 100%;">
+						<div class="text-lg sm:text-xl font-semibold border-b pb-4 border-gray-200">Shared vaults</div>
+						<div class="py-4">
+							<div class="flex gap-2 mb-4">
+								<div class="flex-1 rounded-lg px-3 py-2 text-sm border border-gray-200 text-gray-400">Invite by email...</div>
+							</div>
+							<div class="flex items-center gap-3 py-3 border-t border-gray-200">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-indigo-500 text-white">EX</div>
+								<div class="flex-1 text-sm font-medium text-gray-800">Erica Xu</div>
+								<div class="text-xs text-gray-400">Owner</div>
+							</div>
+							<div class="flex items-center gap-3 py-3 border-t border-gray-200">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 text-white" style="background: hsl(258,88%,66%);">SA</div>
+								<div class="flex-1 text-sm font-medium text-gray-800">Steph Ango</div>
+								<div class="text-xs text-gray-400">Can edit</div>
+							</div>
+							<div class="flex items-center gap-3 py-3 border-t border-gray-200">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-green-500 text-white">LC</div>
+								<div class="flex-1 text-sm font-medium text-gray-800">Liam Cain</div>
+								<div class="text-xs text-gray-400">Can edit</div>
+							</div>
+							<div class="flex items-center gap-3 py-3 border-t border-gray-200">
+								<div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold shrink-0 bg-red-400 text-white">TG</div>
+								<div class="flex-1 text-sm font-medium text-gray-800">Tony Grosinger</div>
+								<div class="text-xs text-gray-400">Can edit</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="py-16 xl:py-24 cards">
+		<div class="container">
+			<div class="mx-auto grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2">
+				<div>
+				<h2 class="text-title mb-4">Publish instantly.</h2>
+				<p class="mt-6 text-xl sm:text-2xl text-muted">Turn your notes into an online wiki, knowledge base, documentation, or digital garden. <a href="/publish" class="text-accent font-medium">Learn more.</a></p>
+				</div>
+				<dl class="col-span-2 grid grid-cols-1 gap-y-8 gap-x-12 sm:grid-cols-3">
+					<div class="text-lg sm:text-xl flex flex-row sm:flex-col gap-y-2 gap-x-3">
+						<div>
+							<i data-lucide="square-pen" class="icon-xl text-accent h-8 w-8 -mt-1 sm:mt-0"></i>
+						</div>
+						<div>
+							<dt class="font-semibold inline sm:block">
+								Seamless editing<span class="sm:hidden">.</span>
+							</dt>
+							<dd class="mt-2 text-lg leading-6 text-muted inline sm:block">
+								Publish your notes instantly from the Obsidian app, and make it easy for readers to explore your web of ideas.
+							</dd>
+						</div>
+					</div>
+					<div class="text-lg sm:text-xl flex flex-row sm:flex-col gap-y-2 gap-x-3">
+						<div>
+							<i data-lucide="palette" class="icon-xl text-accent h-8 w-8 -mt-1 sm:mt-0"></i>
+						</div>
+						<div>
+							<dt class="font-semibold inline sm:block">
+								Customization<span class="sm:hidden">.</span>
+							</dt>
+							<dd class="mt-2 text-lg leading-6 text-muted inline sm:block">
+								Control the look and feel of your site with themes, custom domains, password protection, and more.
+							</dd>
+						</div>
+					</div>
+					<div class="text-lg sm:text-xl flex flex-row sm:flex-col gap-y-2 gap-x-3">
+						<div class="">
+							<i data-lucide="line-chart" class="icon-xl text-accent h-8 w-8 -mt-1 sm:mt-0"></i>
+						</div>
+						<div>
+							<dt class="font-semibold inline sm:block">
+								Optimized for performance<span class="sm:hidden">.</span>
+							</dt>
+							<dd class="mt-2 text-lg leading-6 text-muted inline sm:block">
+								Obsidian Publish sites are fast, mobile-friendly, and optimized for SEO, no configuration required.
+							</dd>
+						</div>
+					</div>
+				</dl>
+			</div>
+		</div>
+		<div class="relative overflow-hidden pt-16 mb-24">
+			<div class="container">
+				<div class="w-[48rem] md:w-auto">
+					<img src="/images/publish-example-dark.png" alt="Example of Obsidian Help site powered by Obsidian Publish" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/20" width="2899" height="1757">
+					<div class="relative" aria-hidden="true">
+					<div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-primary pt-[7%]"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="-mt-12 text-center text-muted sm:text-lg">Explore the <a href="https://obsidian.md/help/" class="underline">Obsidian Help</a> site, powered by <a href="/publish" class="underline">Obsidian Publish</a>.</div>
+	</div>
+
+
+	<div class="sm:py-32 mt-12">
+		<div class="mx-auto container sm:mb-32 text-center">
+			<h2 class="text-title mb-12">It’s your time to shine.</h2>
+
+			<a class="button button-primary text-xl py-4 px-8" href="/download">Get Obsidian</a>
+		</div>
+
+		<div class="container cards mt-12">
+				<div class="text-lg grid grid-cols-1 gap-y-4 gap-x-6 md:grid-cols-3">
+
+					<a href="https://discord.gg/obsidianmd" target="_blank" class="card card-shimmer card-grow ring-1 ring-inset ring-white/5 bg-secondary rounded-xl p-6">
+							<div class="md:text-xl font-semibold mb-3">
+							Join us on Discord
+							</div>
+							<div class="text-muted leading-tight">Get help, ask questions, meet other Obsidian users, and learn about their setup.</div>
+					</a>
+
+					<a href="https://forum.obsidian.md/" target="_blank" class="card card-shimmer card-grow ring-1 ring-inset ring-white/5 bg-secondary rounded-xl p-6">
+						<div class="md:text-xl font-semibold mb-3">
+						Discussion forum
+						</div>
+						<div class="text-muted leading-tight">Post feature requests, report bugs, and explore in-depth discussions about knowledge management.</div>
+					</a>
+
+					<a href="https://docs.obsidian.md" target="_blank" class="card card-shimmer card-grow ring-1 ring-inset ring-white/5 bg-secondary rounded-xl p-6">
+						<div class="md:text-xl font-semibold mb-3">
+						Developer docs
+						</div>
+						<div class="text-muted leading-tight">Learn how to build your own Obsidian plugins and themes, using our open API and documentation.</div>
+					</a>
+
+				</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<footer class="container flex flex-row-reverse flex-wrap pt-24 pb-12 sm:pt-24 md:pb-32">
+	<div class="grid grid-cols-2 gap-3 gap-y-6 md:grid-cols-3 justify-between w-full mb-24 ms-auto md:w-3/5 lg:w-1/2 md:mb-0 leading-tight md:ps-6 [&_li]:mt-2">
+
+		<div>
+			<ul class="">
+				<li class="text-faint mb-3">Get started</li>
+				<li><a class="font-medium" href="/download">Download</a></li>
+				<li><a class="font-medium" href="/pricing">Pricing</a></li>
+				<li><a class="font-medium" href="/enterprise">Enterprise</a></li>
+				<li><a class="font-medium" href="/account">Account</a></li>
+			</ul>
+			<ul class="mt-8">
+				<li class="text-faint mb-3">Obsidian</li>
+				<li><a class="font-medium" href="/">Overview</a></li>
+				<li><a class="font-medium" href="/sync">Sync</a></li>
+				<li><a class="font-medium" href="/publish">Publish</a></li>
+				<li><a class="font-medium" href="/canvas">Canvas</a></li>
+				<li><a class="font-medium" href="/mobile">Mobile</a></li>
+				<li><a class="font-medium" href="/clipper">Web Clipper</a></li>
+				<li><a class="font-medium" href="/cli">CLI</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<ul class="">
+				<li class="text-faint mb-3">Learn</li>
+				<li><a class="font-medium" href="https://obsidian.md/help/">Help</a></li>
+				<li><a class="font-medium" href="https://docs.obsidian.md/" target="_blank">Developers</a></li>
+				<li><a class="font-medium" href="/changelog">Changelog</a></li>
+				<li><a class="font-medium" href="/about">About</a></li>
+				<li><a class="font-medium" href="/roadmap">Roadmap</a></li>
+				<li><a class="font-medium" href="/blog">Blog</a></li>
+			</ul>
+			<ul class="mt-8">
+				<li class="text-faint mb-3">Resources</li>
+				<li><a class="font-medium" href="https://status.obsidian.md" rel="noopener noreferrer">System status</a></li>
+				<li><a class="font-medium" href="/license">License overview</a></li>
+				<li><a class="font-medium" href="/terms">Terms of service</a></li>
+				<li><a class="font-medium" href="/privacy">Privacy policy</a></li>
+				<li><a class="font-medium" href="/security">Security</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<ul class="">
+				<li class="text-faint mb-3">Community</li>
+				<li><a class="font-medium" href="/plugins">Plugins</a></li>
+				<li><a class="font-medium" href="/community">Join the community</a></li>
+				<li><a class="font-medium" href="https://discord.gg/obsidianmd" rel="noopener noreferrer" target="_blank">Discord</a></li>
+				<li><a class="font-medium" href="https://forum.obsidian.md" target="_blank">Forum</a> <span class="text-gray-600">/</span> <a class="font-medium" href="https://forum-zh.obsidian.md" target="_blank">中文论坛</a></li>
+				<li><a class="font-medium" href="/softwear">Merch store</a></li>
+				<li><a class="font-medium" href="/brand">Brand guidelines</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="me-auto w-full sm:w-auto">
+		<a class="header-logo me-4 flex items-center gap-x-2 transition-colors" href="/" aria-label="Go to the Obsidian home page">
+			<svg alt="Obsidian" height="22" viewBox="0 0 143 25" width="126" xmlns="http://www.w3.org/2000/svg"><path fill="#A88BFA" d="m6.91927 14.5955c.64053-.1907 1.67255-.4839 2.85923-.5565-.71191-1.7968-.88376-3.3691-.74554-4.76905.15962-1.61678.72977-2.9662 1.28554-4.11442.1186-.24501.2326-.47313.3419-.69198.1549-.30984.3004-.60109.4365-.8953.2266-.48978.3948-.92231.4798-1.32416.0836-.39515.0841-.74806-.0148-1.08657-.099-.338982-.3093-.703864-.7093-1.1038132-.5222-.1353116-1.1017-.0165173-1.53613.3742922l-5.15591 4.638241c-.28758.25871-.47636.60929-.53406.99179l-.44455 2.94723c.69903.6179 2.42435 2.41414 3.47374 4.90644.09364.2224.1819.4505.26358.6838z"/><path fill="#A88BFA" d="m2.97347 10.3512c-.02431.1037-.05852.205-.10221.3024l-2.724986 6.0735c-.279882.6238-.15095061 1.3552.325357 1.8457l4.288349 4.4163c2.1899-3.2306 1.87062-6.2699.87032-8.6457-.75846-1.8013-1.90801-3.2112-2.65683-3.9922z"/><path fill="#A88BFA" d="m5.7507 23.5094c.07515.012.15135.0192.2281.0215.81383.0244 2.18251.0952 3.29249.2997.90551.1669 2.70051.6687 4.17761 1.1005 1.1271.3294 2.2886-.5707 2.4522-1.7336.1192-.8481.343-1.8075.7553-2.6869l-.0095.0033c-.6982-1.9471-1.5865-3.2044-2.5178-4.0073-.9284-.8004-1.928-1.1738-2.8932-1.3095-1.60474-.2257-3.07497.1961-4.00103.4682.55465 2.3107.38396 5.0295-1.48417 7.8441z"/><path fill="#A88BFA" d="m17.3708 19.3102c.9267-1.3985 1.5868-2.4862 1.9352-3.0758.1742-.295.1427-.6648-.0638-.9383-.5377-.7126-1.5666-2.1607-2.1272-3.5015-.5764-1.3785-.6624-3.51876-.6673-4.56119-.0019-.39626-.1275-.78328-.3726-1.09465l-3.3311-4.23183c-.0117.19075-.0392.37998-.0788.56747-.1109.52394-.32 1.04552-.5585 1.56101-.1398.30214-.3014.62583-.4646.95284-.1086.21764-.218.4368-.3222.652-.5385 1.11265-1.0397 2.32011-1.1797 3.73901-.1299 1.31514.0478 2.84484.8484 4.67094.1333.0113.2675.0262.4023.0452 1.1488.1615 2.3546.6115 3.4647 1.5685.9541.8226 1.8163 2.0012 2.5152 3.6463z"/><path fill="currentColor" d="m39.752 4.5038c-5.952 0-10.248 3.744-10.248 8.88s4.296 8.88 10.248 8.88c5.928 0 10.224-3.744 10.224-8.88s-4.296-8.88-10.224-8.88zm0 3.47999c3.576 0 6.144 2.13601 6.144 5.40001s-2.568 5.4-6.144 5.4c-3.6 0-6.168-2.136-6.168-5.4s2.568-5.40001 6.168-5.40001z"/><path fill="currentColor" d="m55.4847 20.5598c.864.936 2.472 1.704 4.584 1.704 4.32 0 6.8401-2.976 6.8401-6.576 0-3.624-2.5201-6.60001-6.8401-6.60001-2.112 0-3.72.79201-4.584 1.70401v-6.02401h-3.84v17.23201h3.84zm-.12-4.944c0-1.992 1.704-3.432 3.912-3.432 2.112 0 3.888 1.248 3.888 3.504s-1.776 3.48-3.888 3.48c-2.208 0-3.912-1.416-3.912-3.408z"/><path fill="currentColor" d="m67.3181 19.9118c1.464 1.488 4.272 2.352 7.2 2.352 3.96 0 6.936-1.44 6.936-4.392 0-2.88-2.832-3.432-6.072-3.816-2.736-.312-3.576-.384-3.576-1.08 0-.648.864-1.056 2.496-1.056 1.968 0 3.672.6 4.824 1.656l1.992-2.304c-1.272-1.224-3.648-2.18401-6.624-2.18401-4.008 0-6.48 1.72801-6.48 4.32001 0 2.712 2.52 3.312 5.544 3.696 2.832.336 4.032.336 4.032 1.176 0 .792-1.056 1.128-2.784 1.128-2.16 0-4.152-.672-5.664-2.064z"/><path fill="currentColor" d="m82.8395 8.05579h3.912v-3.288h-3.912zm3.864 1.29601h-3.84v12.648h3.84z"/><path fill="currentColor" d="m99.8264 20.5598v1.44h3.8396v-17.23201h-3.8396v6.02401c-.864-.912-2.472-1.70401-4.584-1.70401-4.32 0-6.84 2.97601-6.84 6.60001 0 3.6 2.52 6.576 6.84 6.576 2.112 0 3.72-.768 4.584-1.704zm.12-4.944v.144c0 1.992-1.704 3.408-3.912 3.408-2.112 0-3.888-1.224-3.888-3.48s1.776-3.504 3.888-3.504c2.208 0 3.912 1.44 3.912 3.432z"/><path fill="currentColor" d="m105.996 8.05579h3.912v-3.288h-3.912zm3.864 1.29601h-3.84v12.648h3.84z"/><path fill="currentColor" d="m116.863 22.2638c2.232 0 4.056-.648 5.208-1.656.648 1.2 2.184 1.92 4.992 1.392v-2.832c-1.344.288-1.632-.024-1.632-.696v-4.608c0-3.168-2.376-4.77601-6.408-4.77601-3.48 0-6.264 1.51201-7.056 3.79201l3.456.936c.384-.984 1.704-1.704 3.432-1.704 2.04 0 2.856.768 2.856 1.728v.072l-5.04.456c-2.976.288-5.16 1.512-5.16 3.984 0 2.496 2.232 3.912 5.352 3.912zm4.848-5.112c0 1.464-2.184 2.304-4.152 2.304-1.488 0-2.328-.432-2.328-1.248 0-.84.672-1.152 1.992-1.272l4.488-.456z"/><path fill="currentColor" d="m128.379 21.9998h3.84v-6.048c0-2.184 1.2-3.456 3.288-3.456 1.968 0 3 1.296 3 3.432v6.072h3.84v-7.2c0-3.504-2.232-5.71201-5.52-5.71201-2.04 0-3.624.76801-4.608 1.80001v-1.536h-3.84z"/></svg>
+		</a>
+		<div class="mt-6 text-base md:text-sm text-faint mb-3 md:mb-2">Follow us</div>
+		<div class="text-base md:text-sm grid gap-y-2 grid-cols-2 gap-x-4 md:gap-y-1 mb-4">
+			<a class="font-medium" href="https://discord.com/invite/obsidianmd" rel="noopener noreferrer" target="_blank">Discord</a>
+			<a class="font-medium" href="https://x.com/obsdmd" rel="noopener noreferrer" target="_blank">Twitter</a>
+			<a class="font-medium" href="https://bsky.app/profile/obsidian.md" rel="me noopener noreferrer" target="_blank">Bluesky</a>
+			<a class="font-medium" href="https://www.threads.net/@obsdmd" rel="me noopener noreferrer" target="_blank">Threads</a>
+			<a class="font-medium" href="https://mas.to/@obsidian" rel="me noopener noreferrer" target="_blank">Mastodon</a>
+			<a class="font-medium" href="https://www.youtube.com/@obsdmd" rel="noopener noreferrer" target="_blank">YouTube</a>
+			<a class="font-medium" href="https://github.com/obsidianmd" rel="noopener noreferrer" target="_blank">GitHub</a>
+		</div>
+		<details class="relative text-sm mb-4 group">
+			<summary class="list-none cursor-pointer text-faint hover:text-normal flex items-center gap-1.5 select-none px-3 py-3 sm:py-1.5 rounded-lg ring-1 ring-inset ring-white/10 hover:bg-gray-800 min-w-[10rem] whitespace-nowrap">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+				English
+				<i data-lucide="chevron-down" class="icon-xs ms-auto"></i>
+			</summary>
+			<ul class="absolute bottom-full start-0 mb-1 bg-gray-800 ring-1 ring-inset ring-white/10 rounded-lg p-1 min-w-[10rem] shadow-xl flex flex-col gap-0.5">
+				
+				<li><a href="/" onclick="try{localStorage.setItem('lang','en');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-normal font-medium bg-gray-700 hover:text-normal">English</a></li>
+				
+				<li><a href="/ar/" onclick="try{localStorage.setItem('lang','ar');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">العربية</a></li>
+				
+				<li><a href="/de/" onclick="try{localStorage.setItem('lang','de');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Deutsch</a></li>
+				
+				<li><a href="/es/" onclick="try{localStorage.setItem('lang','es');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Español</a></li>
+				
+				<li><a href="/fr/" onclick="try{localStorage.setItem('lang','fr');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Français</a></li>
+				
+				<li><a href="/it/" onclick="try{localStorage.setItem('lang','it');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Italiano</a></li>
+				
+				<li><a href="/ja/" onclick="try{localStorage.setItem('lang','ja');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">日本語</a></li>
+				
+				<li><a href="/ko/" onclick="try{localStorage.setItem('lang','ko');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">한국어</a></li>
+				
+				<li><a href="/pt-BR/" onclick="try{localStorage.setItem('lang','pt-BR');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Português (Brasil)</a></li>
+				
+				<li><a href="/ru/" onclick="try{localStorage.setItem('lang','ru');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">Русский</a></li>
+				
+				<li><a href="/zh/" onclick="try{localStorage.setItem('lang','zh');sessionStorage.setItem('scrollY',scrollY)}catch(e){}" class="block px-3 py-1.5 rounded-md whitespace-nowrap text-muted hover:text-normal hover:bg-gray-700">简体中文</a></li>
+				
+			</ul>
+		</details>
+		<div class="text-sm text-faint">&copy; 2026 Obsidian</div>
+	</div>
+</footer>
+<script>
+document.addEventListener('click', function(e) {
+	document.querySelectorAll('footer details[open]').forEach(function(d) {
+		if (!d.contains(e.target)) d.removeAttribute('open');
+	});
+});
+</script>
+
+</div>
+
+<script src="/static.js?v=61251c37"></script>
+<script src="/download.js"></script>
+<script src="/graph.js?v=2"></script>
+</body>
+
+</html>

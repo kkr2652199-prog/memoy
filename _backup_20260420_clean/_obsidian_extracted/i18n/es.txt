@@ -1,0 +1,2517 @@
+Opciones
+Complemento
+Complementos principales
+Opciones de complementos
+Ejemplo: carpeta1/carpeta2
+Ejemplo: carpeta/nota
+Al cambiar esta opción, es necesario reiniciar la aplicación para que surta efecto.
+
+Comportamiento
+Pantalla
+Revisión ortográfica
+Activar el corrector ortográfico.
+Idiomas del corrector ortográfico
+Elija los idiomas que utilizará el corrector ortográfico.
+El corrector ortográfico nativo detectará automáticamente el idioma que se está utilizando en macOS.
+Diccionario del corrector ortográfico
+El diccionario del corrector ortográfico está vacío.
+Título en línea
+Mostrar el nombre de archivo como un título editable en línea con el contenido del archivo.
+Longitud de línea legible
+Limita la longitud de línea máxima. Muestra menos contenido en pantalla, pero los párrafos largos son más legibles.
+Saltos de línea estrictos
+En modo previsualización, ignora los saltos de una sola línea según las especificaciones de Markdown. Desactívelo para que los saltos de una sola línea se muestren en previsualización.
+Propiedades en el documento
+Elija cómo se muestran las propiedades en el editor. Seleccione "Fuente" para mostrar las propiedades en formato YAML.
+Ocultas
+Visibles
+Fuente
+Emparejamiento automático de corchetes
+Empareja automáticamente los corchetes y las comillas.
+Emparejamiento automático de sintaxis Markdown
+Empareja automáticamente los símbolos para negrita y cursiva.
+Listas con sangrado inteligente
+La aplicación gestiona la sangría y las viñetas.
+Colapsar encabezado
+Permite colapsar el contenido bajo un encabezado.
+Colapsar texto sangrado
+Permite colapsar una porción con el mismo indentado, por ejemplo, listas.
+Vista por defecto para nuevas pestañas
+La vista por defecto en que se abre una nueva pestaña de Markdown.
+Vista de edición
+Vista de lectura
+Siempre fijar el foco en las pestañas nuevas
+Al abrir un enlace en una nueva pestaña, cambiar a esta inmediatamente.
+Modo de edición predeterminado
+Seleccione el modo de edición predeterminado al abrir un nuevo panel.
+Modo fuente
+Modo vista previa
+Números de línea
+Muestra los números de línea.
+Guías de sangría
+Muestra líneas de relación verticales entre viñetas que sirven como asistencia visual.
+Usar tabulación
+Active esta opción para usar tabulaciones como sangrado al presionar la tecla "Tab" o desactívela para usar espacios.
+Tamaño de la tabulación
+Número de espacios a los que equivale una tabulación.
+Derecha-a-izquierda (Modo RTL)
+Establece la dirección del texto de las notas para que se muestren de derecha a izquierda.
+Conversión automática de HTML
+Permite convertir automáticamente HTML a Markdown al pegar y arrastrar y soltar desde páginas web. Use Ctrl/Cmd+Shift+V para pegar sin convertir.
+Atajos de teclado de Vim
+Permite el uso de los atajos de teclado de Vim en el editor.
+En dispositivos móviles este ajuste se realiza individualmente por dispositivo y no se sincroniza a través del archivo de configuración.
+Reconstruir caché de la bóveda
+Reconstruir el caché podría tomar segundos o minutos dependiendo del tamaño de su bóveda.
+Reconstruir
+Confirme la entrada en modo Vim
+El modo Vim es para una edición de texto eficiente, pero puede ser poco intuitivo. Si no está familiarizadon con Vim, esta opción puede hacer que parezca que Obsidian ha dejado de funcionar.
+Para verificar que conoce Vim, introduzca a continuación el comando para salir de Vim sin guardar:
+Su respuesta
+Introduzca el comando...
+Habilitar modo Vim
+El comando es correcto. El modo Vim está habilitado.
+El comando es incorrecto. El modo Vim permanecerá desactivado por precaución.
+Por favor, introduzca el comando para habilitar el modo Vim
+Archivos y enlaces
+Confirmar antes de eliminar archivos
+Evita eliminar archivos accidentalmente.
+Papelera
+Archivos eliminados
+Qué hacer con los archivos eliminados.
+Mover a la papelera de reciclaje
+Mover a la papelera de Obsidian (carpeta .trash)
+Eliminar permanentemente
+Eliminar adjuntos al eliminar archivos
+Eliminar automáticamente los adjuntos enlazados al archivo eliminado si no se usan en otro lugar.
+Siempre
+Preguntar cada vez
+Nunca
+Archivo predeterminado al abrir
+Elija qué archivo se abrirá cuando la aplicación se inicie.
+Último abierto
+Nueva nota
+Archivo específico
+Nota diaria
+Archivo a abrir
+Seleccione un archivo específico para abrir de forma predeterminada.
+Actualizar los enlaces internos automáticamente
+Desactívelo si desea que se le pregunte si actualizar los enlaces luego de renombrar un archivo.
+Ubicación por defecto para nuevas notas
+Dónde se ubican los archivos nuevos.
+Carpeta de la bóveda
+Misma carpeta donde está el archivo
+En la carpeta especificada abajo
+Carpeta por defecto para las notas nuevas
+Las notas nuevas aparecerán en esta carpeta.
+Usar [[Wikilinks]]
+Active esta opción si desea generar Wikilinks automáticamente para [[enlaces]] e ![[imágenes]]. Desactívela para generar enlaces de Markdown en su lugar.
+Mostrar todos los tipos de archivo
+Muestra archivos con cualquier extensión, incluso si Obsidian no puede abrirlos de forma nativa, para que pueda vincularlos y verlos en el Explorador de Archivos y el Selector Rápido.
+Enlaces
+Nuevo formato de enlace
+Tipo de enlace que se debe insertar cuando se generan los enlaces internos automáticamente.
+Usar la ruta más corta cuando sea posible
+Ruta relativa al archivo
+Ruta absoluta en la bóveda
+Ubicación predeterminada para los archivos adjuntos nuevos
+Dónde se ubican los archivos adjuntos recién agregados.
+Adjuntos
+En la subcarpeta de la carpeta actual
+Ubicación de la carpeta de adjuntos
+Los adjuntos nuevos se agregarán aquí. Incluye imágenes importadas (arrastrar y soltar o pegar) y grabaciones de audio.
+Nombre de la subcarpeta
+Si su archivo está en "bóveda/carpeta", y su nombre de la subcarpeta establecida en "adjuntos", los archivos adjuntos se guardarán en "bóveda/carpeta/adjuntos".
+Archivos excluidos
+Los archivos excluidos se ocultarán o se harán menos visibles en diferentes lugares como el Selector Rápido, la función de Sugerencia de Enlaces y la Vista Gráfica.
+No se está aplicando ningún filtro de exclusión. Añada uno debajo.
+Los archivos que cumplen los siguientes filtros están actualmente excluidos:
+Filtrar
+El filtro no se pudo aplicar
+Ingrese una ruta o un patrón "/regex/"...
+Permitir URI callbacks
+Habilitar el uso de x-callback-url a través de  x-success o x-error al manejar una URI de Obsidian.
+Apariencia
+Tema base
+Esquema de colores por defecto de Obsidian.
+Color acentuado
+Color acentuado en toda la aplicación.
+Oscuro
+Claro
+Adaptar al sistema
+Fuente
+Avanzado
+Interfaz
+Fuente de la interfaz
+Configurar la fuente de la interfaz en todo Obsidian.
+Nivel de zoom
+Controla el nivel de zoom global de la aplicación.
+Fuente del texto
+Configurar la fuente para las vistas de edición y lectura.
+Fuente monoespaciada
+Configurar la fuente para lugares como bloques de código e información preliminar.
+Fuente en uso actualmente: 
+Las siguientes fuentes están siendo usadas actualmente:
+Introducir nombre de la fuente...
+No hay ninguna fuente personalizada en uso ahora mismo. Añada una abajo.
+Se aplicará la primera fuente de la lista que esté disponible en su sistema.
+No se ha detectado esta fuente en su sistema.
+Esta fuente se ha detectada en su sistema.
+Nombre de la fuente
+Explorar temas de la comunidad
+Previsualice y use temas increíbles creados por la comunidad.
+Explorar
+Tamaño de fuente
+Tamaño de fuente en píxeles que afecta al editor y la vista previa.
+Ajuste rápido del tamaño de fuente
+Ajuste el tamaño de la fuente usando Ctrl + Rueda del ratón, o usando el gesto de pellizcar y acercar del trackpad.
+Temas
+Administre los temas instalados y explore los temas de la comunidad.
+Administrar
+Ninguno
+Menús nativos
+Los menús de toda la aplicación coincidirán con el sistema operativo. No se verán afectados por su tema.
+Recargar temas
+Se recargaron los temas CSS personalizados.
+Abrir carpeta de temas
+Fragmentos de CSS
+No se encontraron fragmentos de CSS en la carpeta de fragmentos.
+Los fragmentos de CSS están almacenados en "{{path}}".
+Recargar fragmentos de CSS
+Abrir carpeta de fragmentos de CSS
+Recargar fragmentos de CSS.
+Aplicar fragmentos de CSS en "{{path}}".
+Temas instalados
+Captura de pantalla no disponible
+Por defecto
+Clic para agrandar
+Actualizar
+Activa
+Estilo del marco de la ventana
+Determina el estilo de la barra de título de la ventana de Obsidian. Es necesario reiniciar la app para que surta efecto.
+Oculto (por defecto)
+Marco de Obsidian
+Marco nativo
+Ícono personalizado
+Configure un ícono personalizado para la aplicación.
+Elegir un ícono
+Menú de cinta
+Escoja los comandos que aparecen en el menú de cinta en la barra de navegación.
+Elemento de la cinta de acceso rápido
+Tocar un elemento de la cinta en el menú de navegación activará este elemento. Pulsar y mantener aún mostrará el menú.
+Abrir el menú de cinta
+Configurar
+Mostrar menú de cinta
+Muestra una barra de herramientas vertical en el costado de la ventaja.
+Otros elementos de la cinta
+Ajustes del menú de cinta
+Elegir qué elementos deben mostrarse en el menú de cinta. Arrastre y suelte para cambiar el orden.
+Mostrar la barra de título de pestaña
+Mostrar el encabezado en la parte superior de todas las pestañas.
+Navegación flotante
+Los botones de navegación flotan sobre el contenido en lugar de estar anclados.
+Barras laterales deslizantes
+Las barras laterales se deslizan hacia el lado del contenido en lugar de flotar encima.
+Pantalla completa
+Ocultar automáticamente los elementos de la interfaz mientras lees.
+Se encontró {{count}} tema para actualizar.
+Se encontraron {{count}} temas para actualizar.
+Comprobar actualizaciones
+Ver actualizaciones
+Actualizar todo
+Temas de la comunidad instalados
+Actualmente tiene {{count}} tema instalado.
+Actualmente tiene {{count}} temas instalados.
+Atajos de teclado
+Buscar atajos de teclado
+Mostrando {{count}} atajo. 
+Mostrando {{count}} atajos. 
+Se encontró {{count}} comando en conflicto.
+Se encontraron {{count}} comandos en conflicto.
+Filtrar...
+Eliminar atajo
+Presione las teclas...
+Todos
+No asignados
+Asignados
+Asignados por mí
+Restaurar los valores por defecto
+Modificar este comando
+Este atajo está en conflicto con "{{command}}"
+Este atajo está en conflicto con otros {{count}} comandos
+Vacío
+Llavero
+Secretos
+Añadir secreto
+Editar secreto
+Mostrar secreto
+Ocultar secreto
+
+Secreto
+nombre-del-secreto
+Solo letras minúsculas, números y guiones.
+Introduzca su secreto.
+Nunca accedido
+No se pudo actualizar el secreto.
+No se pudo añadir el secreto.
+Ya existe un secreto con este ID.
+El valor del secreto no puede estar vacío.
+El ID del secreto no es válido. Use solo letras minúsculas, números y guiones. Máximo 64 caracteres.
+No se han añadido secretos. Los secretos se usan para almacenar información como claves API y contraseñas que pueden usar los complementos.
+Seleccionar secreto
+Buscar secreto...
+Añadir secreto...
+Vincular...
+Los secretos se almacenan sin cifrado porque no hay ningún almacén de secretos disponible en este sistema.
+Los secretos no están cifrados
+No mostrar de nuevo
+Cifrado no disponible
+El cifrado lo proporciona el almacén de secretos de tu sistema operativo. Sin un almacén de secretos, tus secretos se almacenarán sin cifrado.
+En Linux, los almacenes de secretos compatibles incluyen:
+Acerca de
+Licencia comercial
+Clave de licencia
+Su clave de licencia...
+Activar licencia
+Activar
+Desconocido
+Versión {{version}}
+Versión del instalador: {{version}}
+Leer el registro de cambios.
+Para apoyar las últimas funcionalidades y recibir los últimos parches de seguridad, Obsidian necesita una actualización importante del instalador. Descargue y reinstale Obsidian manualmente.
+Una nueva versión está lista para instalarse. 
+Las actualizaciones están desactivadas.
+Reiniciar la app
+Buscar actualizaciones
+Actualizaciones automáticas
+Si lo desactiva, evita que la app busque actualizaciones.
+Notificar si la apertura tarda más de lo esperado
+Diagnostique problemas con la aplicación al ver qué causa que cargue lentamente.
+Comprobar ahora
+Interfaz de línea de comandos
+Permite interactuar con Obsidian desde la línea de comandos.
+Configurar la CLI para que funcione en el terminal
+Registra "obsidian" en PATH para permitir el acceso al comando "obsidian" desde cualquier ubicación en tu terminal.
+Registrar
+Obtener ayuda
+Obtenga ayuda para usar Obsidian.
+Abrir
+Idioma
+Cambiar el idioma mostrado.
+Recibir versiones de prueba
+Actualizar automáticamente a versiones de Insider para probar nuevas funciones. Tome en cuenta que estas versiones son la versión más reciente y son inestables.
+Avanzado
+Aceleración de hardware
+Activa la aceleración de hardware, que usa su GPU para hacer que Obsidian sea más suave.
+Si desactiva esta opción, el rendimiento de la aplicación se verá gravemente degradado.
+Anular la carpeta de configuración
+Utilice una carpeta de configuración diferente a la predeterminada. Debe comenzar con un punto.
+La ubicación de la configuración debe ser un nombre de carpeta válido que comience con un punto.
+Licencia
+Su clave de licencia comercial es "{{key}}".
+Registrado a "{{company}}" para {{seats}} usuarios. Válido hasta {{expiry}}.
+Validando...
+Licencia inválida: 
+Eliminar
+Licencia Catalyst
+Actualmente tiene la licencia Catalyst {{tier}}. ¡Gracias por su apoyo!
+En este momento no tiene una licencia Catalyst. La licencia Catalyst se obtiene mediante una donación única que apoya el desarrollo de Obsidian.
+Aplicación
+Vea cómo añadir su idioma a Obsidian.
+Cuenta
+Su cuenta
+Sesión iniciada como {{name}} ({{email}}).
+No está identificado en este momento. Sólo necesita una cuenta para Obsidian Sync, Obsidian Publish y las versiones internas de Catalyst.
+Mejorar licencia
+Licencia comercial
+Ayuda a mantener Obsidian 100% soportado por sus usuarios.
+Comprar
+Salir
+Entrar
+Registrarse
+Correo electrónico
+Su correo electrónico...
+Nombre completo
+Contraseña
+Su contraseña...
+¿Olvidó la contraseña?
+Iniciar sesión
+El correo electrónico no puede estar vacío.
+El correo electrónico no es válido.
+La contraseña no puede estar vacía.
+El inicio de sesión fracasó. Por favor, revise su correo electrónico y contraseña.
+Error al registrarse
+¿Aún no tiene una cuenta? 
+Regístrese ahora
+Código 2FA de 6 dígitos
+El código de autentificación debe ser de 6 dígitos.
+El código de autentificación es incorrecto, por favor revise su aplicación de autentificación.
+Lista de complementos
+Buscar en los complementos principales
+Filtra los complementos por nombre o descripción.
+Buscar complementos...
+Complementos comunitarios
+Modo restringido
+El modo restringido está apagado. Enciéndalo para desactivar los complementos creados por la comunidad.
+Activar
+Comprobar automáticamente actualizaciones de complementos
+Comprobar periódicamente si hay actualizaciones de complementos.
+Complementos creados por la comunidad
+Busque e instala complementos creados por nuestra comunidad
+Buscar
+Salir del modo restringido
+Los complementos creados por la comunidad, tal como cualquier otro software que instale, podría potencialmente causar problemas de integridad y seguridad de datos.
+La seguridad de los complementos es importante para nosotros. Esto es lo que hacemos:
+A pesar de nuestros esfuerzos, existe una pequeña posibilidad de que un complemento de la comunidad pudiera comportarse incorrectamente.
+Revisión inicial de código
+Los complementos pasan una revisión inicial de código por nuestro equipo antes de aparecer en la tienda.
+Código abierto
+La mayoría de los complementos son de código abierto en GitHub, para que usted mismo pueda inspeccionar el código.
+Auditoria de pares
+Tenemos una gran comunidad de desarrolladores que velan por cada otro.
+Mecanismo de reporte
+Seguimos y removemos los complementos defectuosos a partir del reporte de usuarios.
+¿Está seguro de que desea salir del Modo Restringido para activar complementos de la comunidad? Le recomendamos encarecidamente que respalde su información antes de hacerlo.
+Aprenda más acerca de la seguridad de los complementos
+Activar complementos creados por la comunidad
+¿Confía en el autor de esta bóveda?
+Está abriendo esta bóveda por primera vez y trae algunos complementos.
+Si obtuvo esta bóveda de alguien más, tenga en cuenta que los complementos de origen desconocido podrían presentar riesgos de seguridad.
+Si no confía plenamente en el autor de esta bóveda, le recomendamos mantenerse en Modo Restringido, de modo que los complementos de la bóveda no se ejecuten.
+Confiar en el autor y activar complementos
+Explorar bóveda en Modo Restringido
+Buscar complementos de la comunidad...
+Ha ocurrido un error al cargar los complementos.
+Instalado correctamente
+Instalar
+Activar
+Desactivar
+Copiar enlace para compartir
+Donar
+Sin resultados.
+No se han encontrado archivos recientes. Escribe para buscar...
+Error al cargar el manifiesto.
+Versión: {{version}}
+ (Instalada: {{version}})
+Por 
+Repositorio: 
+Última actualización: 
+Ver la última actualización
+Este complemento no es soportado por su dispositivo.
+Actualizar
+Este complemento no tiene un archivo LÉEME
+Instalando "{{name}}"...
+Ha ocurrido un error al instalar "{{name}}".
+"{{name}}" se ha instalado correctamente.
+Error al desinstalar el complemento “{{id}}”.
+Error al desactivar el complemento “{{id}}”.
+Complementos instalados
+Recargar
+Se han recargado los complementos.
+Desinstalar
+Desinstalar complemento
+¿Está seguro de que quiere desinstalar este complemento? Esto borrará la carpeta en la que está descargado.
+Abrir la carpeta de complementos
+Buscar actualizaciones
+Actualizar todo
+Complementos actuales
+Buscando actualizaciones...
+Tiene {{count}} complemento instalado actualmente.
+Tiene {{count}} complementos instalados actualmente.
+No se encontraron actualizaciones de complementos.
+Se encontró actualización para {{count}} plugin.
+Se encontraron actualizaciones para {{count}} complementos.
+Actualizar a la versión {{version}}
+Buscar complementos instalados.
+Filtrar complementos instalados por nombre o descripción.
+Buscar complementos instalados...
+Mostrar solo los instalados
+Donar para apoyar a {{name}}
+Los desarrolladores de complementos son voluntarios de la comunidad que hacen cosas increíbles a partir de su pasión. Si encuentra útil este complemento, por favor considere donar para su desarrollo.
+100% de su contribución irá al desarrollador del complemento. Obsidian no se queda con nada. La plataforma de donación puede hacer un cargo de servicio.
+¡Gracias por su generoso aporte!
+Apoya este complemento:
+Mostrando {{pluginCount}}:
+Más descargado
+Publicado recientemente
+Actualizado recientemente
+Alfabético
+Actualizado {{time}}
+Barra de herramientas móvil
+Configurar acción rápida para el móvil
+Configurar el comando que se ejecutará cuando arrastre desde arriba. El comando actual es "{{command}}".
+Acción no configurada
+Configurar
+Seleccionar Acción Rápida...
+Ninguna
+Administrar las opciones en la barra de herramientas móvil
+Añadir enlace interno
+Añadir adjunto
+Añadir etiqueta
+Alternar cabecera
+Alternar tachado
+Alternar resaltado
+Alternar código
+Alternar bloque de cita
+Alternar bloque de ecuación en párrafo
+Alternar bloque de ecuación
+Agregar enlace Markdown
+Alternar lista
+Alternar lista numerada
+Sangrar elemento de lista
+Desangrar elemento de lista
+Deshacer
+Rehacer
+Mover el cursor arriba
+Mover el cursor abajo
+Mover el cursor a la izquierda
+Mover el cursor a la derecha
+Ir a la primera línea
+Ir a la última línea
+Alternar teclado
+Configurar la barra de herramientas móvil
+Opciones añadidas
+Más opciones de barra de herramientas
+Insertar archivo adjunto
+Buscar
+Reemplazar
+Salir de la búsqueda
+Siguiente
+Anterior
+Buscar todo
+Reemplazar
+Reemplazar todas
+Use #
+para enlazar el encabezado
+Use ^
+para enlazar bloques
+Use |
+para cambiar el texto mostrado
+Texto mostrado
+Encabezado
+No se encontraron resultados
+Tamaño de imagen: {{size}}px de ancho
+para aceptar
+Nueva nota al pie...
+Sin sugerencias...
+Añadir al diccionario
+Editar enlace
+Editar etiqueta
+Editar este bloque
+Borrar nota al pie y su referencia
+Restablecer tamaño
+Eliminar imagen
+Sin encabezado
+Encabezado {{level}}
+Exportar a PDF
+Exportar "{{filename}}" a PDF con la siguiente configuración.
+Tamaño de página
+Incluir el nombre del archivo como título
+Horizontal
+Márgenes
+Predeterminado
+Mínimo
+Ninguno
+Porcentaje de reducción de escala
+Exportar a PDF
+Seguir enlace
+Abrir enlace
+Buscar etiqueta
+No se encontró:
+Imposible encontrar “{{subpath}}” en {{file}}
+Abrir en la app por defecto
+La barra lateral esta vacía, intente arrastrar un panel aquí.
+Expandir
+Colapsar
+Error al guardar el archivo "{{filepath}}". {{message}}.
+No se pudo cargar el complemento “{{plugin}}”
+El complemento “{{plugin}}” encontró un error mientras cargaba
+No se pudo abrir “{{filepath}}”
+No se encontró “{{href}}”
+Sin archivo
+"{{file}}" ha sido modificado externamente, combinando cambios de manera automática.
+Administrar bóvedas...
+Ayuda
+Preferencias
+Arrastre para reordenar
+El modo de visualización por defecto ha sido cambiado a modo lectura.
+Cambió el modo de visualización por defecto a modo editor.
+Para usar esta función, por favor reinstale la app mediante el instalador más reciente disponible en nuestra página web.
+Se detectó un tiempo de apertura muy alto.
+Esta característica solo está disponible en la aplicación de escritorio.
+Restaurar ajustes por defecto
+Copiar al portapapeles
+Copiar
+Copiado a su portapapeles
+{{item}} copiado al portapapeles
+Imposible copiar al portapeles
+Filtrar...
+Hubo un error al renderizar el bloque de código.
+Archivo abierto "{{path}}"
+Archivo "{{name}}" no encontrado.
+Acción URI no reconocida: {{action}}
+Borrar
+Obsidian está indexando la bóveda...\nEsto debería ocurrir sólo una vez.\nAlgunas funcionalidades podrían no estar disponibles hasta que esto finalice.
+Algunas funciones podrían no estar disponibles hasta que esto esté completo.
+Indexado completo.
+Esta es una bóveda de prueba.\nLos cambios que hagas en esta bóveda se perderán.
+Se requiere IndexedDB para esta característica, pero actualmente está desactivado.
+Si está usando iOS en Modo Hermético, por favor excluya Obsidian del ajuste "Configurar Navegación Web" del Modo Hermético.
+Presione Enter para crear
+Actualización disponible
+Información de depuración
+Aprender más
+Ahora no
+Añadir
+Administrar
+Nueva pestaña
+Ocultar menú de cinta
+Esta pestaña está ocupada en este momento, por favor, inténtelo de nuevo más tarde
+Formato
+Párrafo
+Insertar
+Añadir enlace
+Añadir enlace existente
+Destacado
+Regla horizontal
+Bloque de código
+Bloque matemático
+Tabla
+Nota al pie
+Negrita
+Código
+Comentario
+Resaltado
+Cursiva
+Tachado
+Fórmula matemática
+Lista con viñetas
+Lista de tareas
+Lista numerada
+Título {{level}}
+Cuerpo
+Limpiar formato
+Cita
+Vacío
+No hay ningún archivo abierto
+Crear un nuevo archivo
+Ir a archivo
+Ver archivos recientes
+Cerrar
+Cerrar todas las pestañas “{{id}}” ({{count}})
+Complemento no activo
+El complemento que creó este panel ({{type}}) no está disponible
+Registro de cambios {{version}}
+No hay un registro de cambios disponible para {{version}}.
+No se pudo cargar el registro de cambios para {{version}}.
+Publicado el {{date}}
+Novedades de {{version}}
+Editar (Ctrl/Cmd+Clic para editar en nuevo panel)
+Vista actual: lectura
+Menú de cinta
+Barra lateral izquierda
+Barra lateral derecha
+Clic para editar
+Clic para leer
+{{key}}+Clic para abrir en una nueva pestaña
+Pulsa {{key}}+C para copiar el código fuente
+Buscar...
+Reemplazar...
+Editar
+Eliminar
+Quitar de la lista
+Renombrar
+Vista previa
+Más opciones
+Cerrar
+Cerrar todas las pestañas
+Cerrar {{count}} pestaña
+Cerrar {{count}} pestañas
+Cerrar otras pestañas
+Cerrar las pestañas a continuación
+Fijar
+Desfijar
+Desvincular pestaña
+Vincular con pestaña...
+Modo fuente
+Modo lectura
+Añadir propiedad de archivo
+Eliminar archivo
+Crear archivo
+Abrir enlace
+Abrir en pestaña nueva
+Abrir a la derecha
+Copiar dirección URL
+Copiar
+Cortar
+Pegar
+Copiar ruta
+Copiar imagen
+como URL de Obsidian
+desde la raíz del sistema
+desde la carpeta de la bóveda
+Pegar como texto sin formato
+Buscar “{{selection}}”
+Seleccionar todo
+Renombrar este encabezado...
+Renombrar el ID de este bloque...
+Abrir en una nueva ventana
+Mover a una nueva ventana
+Abrir en explorador
+Apilar pestañas
+Desapilar pestañas
+Abrir en vista enlazada
+Clic para expandir
+Clic para colapsar
+
+Aún no creado, seleccione para crear
+Versión
+Crear bóveda local
+Abrir una carpeta como bóveda
+Seleccionar un directorio existente de archivos Markdown.
+Crear una bóveda nueva
+Crear una nueva bóveda de Obsidian en un directorio.
+Conectar con Obsidian Sync
+Sincronice una bóveda local con una bóveda remota existente.
+Nombre de la bóveda
+Elija un nombre para su increíble bóveda.
+Ubicación
+Elija un lugar para ubicar su nueva bóveda.
+Su nueva bóveda será ubicada en: 
+Mostrar la bóveda en el explorador del sistema
+Mostrar la bóveda en el Buscador
+Renombrar la bóveda...
+Copiar el identificador de la bóveda
+Ya existe una bóveda con este nombre.
+No es posible mover la bóveda a uno de sus subdirectorios.
+No se puede renombrar un bóveda abierta actualmente.
+Error al renombrar la bóveda.
+Bóveda renombrada con éxito.
+Mover la bóveda...
+Seleccione la carpeta de destino
+Ya hay una bóveda en la carpeta de destino.
+No se puede mover una bóveda abierta.
+Error al mover la bóveda.
+La bóveda se movió con éxito.
+Eliminar de la lista
+Inicio rápido
+Abrir
+Explorar
+Conectar
+Crear
+Volver
+El nombre de la bóveda no puede estar vacío.
+El nombre de la bóveda no puede terminar con un punto.
+Por favor, seleccione un directorio válido.
+Error al crear la bóveda.
+No se pudo crear la bóveda en la ubicación indicada. Por favor, verifique la ubicación y permisos.
+Error al abrir.
+No se puede eliminar una bóveda abierta actualmente.
+Obtener ayuda
+Correo electrónico
+Su correo electrónico...
+Contraseña
+Su Contraseña...
+Iniciar sesión
+Configurar
+Crear una bóveda sincronizada en este dispositivo.
+Esta es una bóveda remota de su propiedad.
+Esta es una bóveda remota compartida con usted.
+Sus pensamientos son suyos.
+sincronizado
+no sincronizado
+Ninguno
+Recomendado
+Obsidian guarda las notas en su dispositivo, de modo que pueda acceder a ellas rápida y privadamente, incluso desconectado.\n Sus datos son almacenados en una carpeta local llamada **bóveda**.
+Crear una bóveda
+Usar una bóveda existente
+Para acceder a sus notas en otros dispositivos necesita configurar una cuenta de sincronización.
+Dado que Obsidian almacena las notas en tus dipositivos, tendrá que configurar la sincronización si quiere tener acceso a sus notas en otro teléfono o computador.\nPuede configurar Sync ahora o empezar a escribir y hacerlo después.
+Configurar Sync
+Omitir por ahora
+Saltar
+Elija un nombre para su bóveda.
+Crear bóveda
+Configurar Sync
+Crear una bóveda sincronizada en su cuenta de Obsidian de modo que pueda acceder a sus datos desde otros dispositivos.
+Cifrado de sincronización
+Cifrado de extremo a extremo
+Ofrece la seguridad más fuerte pero requiere que almacenes de manera segura su contraseña de cifrado
+Cifrado estándar
+Usa una llave manejada por Obsidian para proteger tus datos en tránsito y en nuestros servidores.
+Ajustes de Sync
+¿Desea excluir alguna carpeta o archivo al sincronizar este dispositivo?
+Iniciar sincronización
+Crear una cuenta de Obsidian o iniciar sesión
+Registrarse
+Iniciar sesión
+Reenviar correo electrónico
+Se encontraron bóvedas existentes
+¿Quiere crear una nueva bóveda o conectarse a una existente?
+Crear una nueva bóveda
+Elegir una bóveda existente
+Cerrar sesión
+Contraseña olvidada
+Nombre de la bóveda
+Ubicación de la bóveda
+Almacenamiento del dispositivo
+Permite que otras aplicaciones accedan a los datos de Obsidian.
+Requiere permisos adicionales.
+Almacenamiento de la aplicación
+Tus datos no serán accesibles para otras aplicaciones.
+Android eliminará tus datos si desinstalas Obsidian.
+Su nueva bóveda estará ubicada en {{vaultLocation}}
+Región
+Elija la región más cercana para que la sincronización sea más rápida.
+Llave de cifrado
+Esta contraseña no se puede cambiar después. Si la olvida, cualquier información remota en los servidores de Sync se volverá inaccesible para siempre.
+Mi bóveda
+Automático
+Elegir una bóveda
+Su cuenta **{{email}}** tiene bóvedas existentes.
+Iniciar sesión en su cuenta de Obsidian
+Contraseña olvidada
+Restablecer contraseña
+Hemos enviado un correo a {{email}} para restablecer su contraseña.
+Elija cómo sincronizar sus notas
+Para usar Obsidian en sus dispositivos necesitará sincronizar sus datos.
+Instantánea entre todos los dispositivos y sistemas operativos.
+Protegido con los estándares de seguridad de cifrado de extremo a extremo más altos.
+Requiere una cuenta de Obsidian Obsidian.
+Solo para iOS y macOS.
+No encriptado por defecto.
+Requiere complementos o herramientas de terceros.
+No puede estar encriptado por defecto.
+Usar Obsidian Sync
+Usar iCloud
+Usar sincronización de terceros
+Otros métodos de sincronización
+Usar métodos de sincronización soportados
+¿Dónde está ubicada su bóveda?
+Otro
+Sincronización de terceros
+En este dispositivo
+Conectar a iCloud
+Conectar a otro servicio de sincronización
+Conectar a Obsidian Sync
+Elegir carpeta
+Otros métodos de sincronización
+Obsidian oficialmente soporta dos métodos de sincronización: **Obsidian Sync** y **iCloud**.\nSin embargo, dado que Obsidian le da control sobre sus datos, hay otras opciones que puedes usar.\nEstas opciones incluyen complementos y otras herramientas de terceros qeu podrían requerir una configuración más avanzada.\nPara usar un método alternativo, **cree una bóveda** y siga las instrucciones proporcionadas por el complemento o proveedor.
+Ingrese su e-mail
+Su e-mail es requerido para crear una cuenta de Obsidian.
+Ingrese su usuario y contraseña
+Conectar a Obsidian Sync
+Debería recibir un mensaje de correo electrónico en **{{email}}** con instrucciones para conectarse a Obsidian Sync.
+Su bóveda de iCloud no se detectó. Esto podría deberse a una de las siguientes razones:
+Su bóveda está en una cuenta diferente de iCloud que la que está usando en este dispositivo.
+Su bóveda no está almacenada en el directorio raíz de la carpeta de Obsidian en iCloud Drive.
+iCloud no soportado
+La sincronización vía iCloud solo está disponible en dispositivos Apple. Si su bóvedda se sincroniza por iCloud, aprenda a migrar su bóveda a un servicio de sincronización distinto.
+Permitir acceso a archivos
+Iniciando sesión...
+Se necesita un nombre de bóveda
+Nuevo mensaje de confirmación enviado.
+Error al reenviar el email.
+La ubicación de la bóveda debe ser una carpeta.
+Bienvenido
+Esta es su nueva *bóveda*.\n\nCree una nota de algo, [[cree un enlace]], o pruebe [el Importador](https://help.obsidian.md/Plugins/Importer)!\n\nCuando esté listo, borre esta nota y aprópiese de la bóveda
+Insertar enlace aquí
+Insertar enlaces aquí
+Mover a "{{folder}}"
+Destacar este archivo
+Destacar estos archivos
+Abrir en esta pestaña
+Abrir en una pestaña nueva
+Maximizar
+Minimizar
+Restaurar
+Cerrar ventana
+Ir atrás
+Ir adelante
+Cargando Obsidian...
+Ha ocurrido un error mientras se cargaba Obsidian.
+Recargar la aplicación
+Recargar la aplicación en modo seguro
+Abrir otra bóveda
+Cargando complementos...
+El complemento “{{plugin}}” está tardando demasiado en cargar. 
+Cargando bóveda...
+Error al cargar la bóveda: 
+Cargando la caché...
+Cargando el espacio de trabajo...
+Importar a la bóveda
+Añadir texto al archivo:
+Seleccionar el archivo a insertar
+Insertar texto en {{filename}}
+Insertar enlace en {{filename}}
+Mostrar vista general de pestañas
+Importando...
+Importación exitosa
+Error al importar el archivo {{filename}}
+Presione atrás otra vez para salir.
+Retroalimentación
+¿Está disfrutando Obsidian? Ayúdenos dando una calificación.
+Evaluar la app
+Omitir
+Archivos de configuración actualizados desde iCloud; es necesario recargar
+Recargar
+Sitio de ayuda oficial
+Lea la documentación oficial de Obsidian, disponible en múltiples idiomas.
+Visitar
+Chat en Discord
+Discord es el mejor lugar para chatear con otros usuarios experimentados de Obsidian de alrededor del mundo.
+Unirse
+Foro oficial
+Ayuda, peticiones de características, reporte de bugs y discusiones en profundidad sobre gestión del conocimiento.
+Bóveda de prueba
+Juegue y experimente con varias características. Por favor, tenga en cuenta que sus cambios no serán guardados.
+Guardar el archivo actual
+Descargar archivos adjuntos
+Seguir el enlace bajo el cursor
+Abrir el enlace bajo el cursor en una nueva pestaña
+Abrir el enlace bajo el cursor a la derecha
+Abrir el enlace bajo el cursor en nueva ventana
+Fijar el foco en el grupo de pestañas de encima
+Fijar el foco en el grupo de pestañas de abajo
+Fijar el foco en el grupo de pestañas de la izquierda
+Fijar el foco en el grupo de pestañas de la derecha
+Anclar/Desanclar nota
+Dividir a la derecha
+Dividir abajo
+Alternar pestañas apiladas
+Alternar longitud de línea legible
+Alternar números de línea
+Navegar atrás
+Navegar adelante
+Alternar modo claro/oscuro
+Cambiar tema...
+Cambiar bóveda...
+Abrir bóveda...
+Gestionar bóvedas
+Buscar en archivo actual
+Buscar y reemplazar en el archivo actual
+Añadir propiedad
+Nombre (A-Z)
+Nombre (Z-A)
+Añadir alias
+Borrar propiedades
+Abrir ajustes
+Abrir ayuda
+Alternar entre vista de lectura y vista de edición
+Alternar entre vista previa y código fuente
+Eliminar archivo actual
+Nueva pestaña
+Nueva ventana
+Mostrar papelera
+Cerrar todas las pestañas
+Cerrar la pestaña actual
+Cerrar las otras pestañas del grupo
+Cerrar todas las otras pestañas
+Cerrar este grupo de pestañas
+Alternar barra lateral izquierda
+Alternar cinta
+Alternar barra lateral derecha
+Alternar modo por defecto para las pestañas nuevas
+Añadir cursor encima
+Añadir cursor debajo
+Fijar el foco en el editor
+Alternar colapso de propiedades en el archivo actual
+Alternar colapso de la línea actual
+Colapsar todos los títulos y listas
+Expandir todos los títulos y listas
+Colapsar más
+Colapsar menos
+Intercambiar línea hacia arriba
+Intercambiar línea hacia abajo
+Quitar encabezado
+Fijar como encabezado {{level}}
+Alternar negrita para la selección
+Alternar cursiva para la selección
+Alternar resaltado para la selección
+Alternar comentarios para la selección
+Limpiar formato
+Insertar enlace
+Alternar corrector ortográfico
+Eliminar párrafo
+Alternar estado de caja de verificación
+Alternar viñeta/caja de verificación
+Insertar destacado
+Insertar bloque de código
+Insertar bloque de ecuación
+Insertar línea horizontal
+Insertar tabla
+Insertar nota al pie
+Editar nombre del archivo
+Copiar ruta del archivo
+Copiar la ruta del archivo actual desde la raíz del sistema
+Copiar URL de Obsidian
+Exportar a PDF
+Recargar la app sin guardar
+Deshacer cerrar pestaña
+Mostrar menú contextual bajo cursor
+Mostrar información de depuración
+Abrir bóveda de prueba
+Alternar ventana siempre encima
+Acercar
+Alejar
+Reiniciar zoom
+Alternar entre modo edición y vista previa
+Mover panel actual a una ventana nueva
+Abrir panel actual en una ventana nueva
+Renombrar el archivo actual
+Ir a la pestaña anterior
+Ir a la siguiente pestaña
+Ir a la última pestaña
+Ir a la pestaña #{{n}}
+Mostrar notas de la versión
+Esto afectará {{links}} en {{files}}.
+Actualizado {{links}} en {{files}}.
+Actualizar enlaces
+¿Quiere actualizar los enlaces internos que enlazan a este archivo?
+Siempre actualizar
+Solo una vez
+No actualizar
+¿Está seguro de que quiere eliminar "{{filename}}"?
+Será movido a la papelera de su sistema.
+Será movido a la papelera de Obsidian, la cual se encuentra en la carpeta ".trash" que está oculta dentro de su bóveda.
+Este archivo será eliminado permanentemente
+Esta carpeta no está vacía.
+Si continúa, todos los archivos en esta carpeta serán eliminados.
+Eliminar carpeta
+Eliminar
+No preguntar de nuevo
+Actualmente hay {{count}} enlace que apunta a este archivo.
+Actualmente hay {{count}} enlaces que apuntan a este archivo.
+Eliminar archivo
+Descargar adjuntos
+No hay adjuntos en esta nota.
+Descargado {{count}} adjunto.
+Descargados {{count}} adjuntos.
+Actualizado {{count}} archivo.
+Actualizados {{count}} archivos.
+Se revirtieron los cambios de {{count}} archivo.
+Se revirtieron los cambios de {{count}} archivos.
+Sin conexión a internet
+Cargando...
+Administrar
+Ver
+Confirmar
+Cancelar
+Omitir
+Descargar
+Listo
+Guardar
+Detener
+Cambiar
+Continuar
+Elegir
+Reintentar
+Actualizar
+deshacer
+Preparando PDF...
+Renombrar archivo
+Nombre de archivo
+Nuevo nombre
+
+Seleccionado
+Archivo renombrado satisfactoriamente.
+Error al combinar las notas
+El archivo o carpeta “{{path}}” no existe.
+El encabezado no puede estar vacío
+El ID de bloque no puede estar vacío
+El ID de bloque solo puede contener caracterres alfanuméricos o guionesh
+Renombrar el encabezado
+Renombrar el ID de bloque
+¿Eliminar adjuntos del archivo?
+Este adjunto ya no se usa en ninguna nota. ¿Quieres eliminarlo?
+Estos {{count}} adjuntos ya no se usan en ninguna nota. ¿Quieres eliminarlos?
+Árbol de archivos
+Galería
+Crear nota
+Nueva nota a la derecha
+Nueva pestaña
+Nueva ventana
+Abrir rápidamente...
+Abrir bóveda...
+Cerrar pestaña
+Cerrar ventana
+Buscar
+Reemplazar
+Insertar destacado
+Enlace Markdown
+Enlace
+Encabezado {{level}}
+Sin encabezado
+Cita
+Exportar PDF
+Insertar adjunto...
+Bloque de código
+Bloque de fórmulas
+Tabla
+Nota al pie
+Título en línea
+Números de línea
+Viñeta
+Lista numerada
+Lista de tareas
+Negrita
+Código
+Comentario
+Cursiva
+Ecuación
+Resaltado
+Tachado
+Comentario
+Colapsar/Expandir
+Colapsar todo
+Expandir todo
+Colapsar Más
+Colapsar Menos
+Modo fuente
+Modo lectura
+Mostrar Información de Depuración
+Abrir Bóveda de Prueba
+Mover a una nueva ventana
+Navegar atrás
+Navegar adelante
+Alternar barra lateral izquierda
+Alternar barra lateral derecha
+Menú de cinta
+Dividir a la derecha
+Dividir abajo
+Notas de la versión
+Complementos
+Explorador de archivos
+Vea todos los archivos en su bóveda.
+Abrir explorador de archivos
+Mostrar el explorador de archivos
+Crear nueva nota
+Crear nueva carpeta
+Crear nueva nota en la pestaña actual
+Crear nota a la derecha
+Mostrar automáticamente el archivo actual
+Colapsar todo
+Expandir todo
+Nueva nota
+Nueva carpeta
+Cambiar el orden
+Mostrar en el explorador de archivos
+Mostrar archivo actual en el explorador de archivos
+Hacer una copia del archivo actual
+Duplicar el archivo actual
+Mover archivo a otra carpeta
+Nueva carpeta con la selección de ({{count}} elemento)
+Nueva carpeta con la selección de ({{count}} elementos)
+Mover archivo a...
+Mover carpeta a...
+Mover {{count}} elementos a...
+Escriba el nombre de una carpeta
+No se encontraron carpetas.
+para navegar
+para mover
+para crear
+para descartar
+Ordenar por nombre de archivo (A-Z)
+Ordenar por nombre de archivo (Z-A)
+Ordenar por fecha de edición (más reciente)
+Ordenar por fecha de edición (más antiguo)
+Creado (antiguo-nuevo)
+Creado (nuevo-antiguo)
+Nueva nota
+Nueva carpeta
+Renombrar
+Borrar
+Hacer una copia
+Duplicar
+El nombre de archivo no puede contener ninguno de los siguientes caracteres: 
+Los enlaces no funcionarán con nombres de archivos que contengan estos caracteres: 
+Ya hay un archivo con ese nombre
+El nombre de archivo no puede estar vacío.
+El nombre de archivo no debe empezar con un punto.
+Última modificación: {{time}}
+Creado: {{time}}
+Sin título
+Sin nombre
+Los adjuntos se guardarán en "{{path}}" de ahora en adelante.
+Buscar
+Buscar palabras clave en todas las notas.
+Buscar en todos los archivos
+Colapsar resultados
+Coincidir mayúsculas y minúsculas
+Explicar término de búsqueda
+Mostrar más contexto
+{{count}} resultado
+{{count}} resultados
+Ajustes de búsqueda
+Escriba para empezar a buscar...
+Coincide con texto: 
+Coincide con la expresión regular: 
+Contiene el texto exacto: 
+Mayor que:
+Menor que: 
+Es verdadero
+Es falso
+Está vacío
+Contiene la propiedad:
+Coincide con todo en: 
+Coincide con cualquiera de: 
+Excluye: 
+Coincide con mayúsculas y minúsculas
+Ignorar mayúsculas y minúsculas
+Coincide con la ruta de archivo: 
+Coincide con el nombre de archivo: 
+Coincide con el contenido del archivo: 
+Coincide con la tarea: 
+Coincide con la tarea (por hacer): 
+Coincide con la tarea (hecha): 
+Coincide con la línea: 
+Coincide con el bloque: 
+Coincide con la sección: 
+Coincide con la etiqueta: 
+No hay coincidencias.
+... y {{count}} coincidencia más.
+... y {{count}} coincidencias más.
+Copiar resultados de búsqueda
+Copiar resultados
+Resultados copiados al portapapeles.
+Mostrar ruta
+Muestra la ruta completa del archivo en lugar de solo el nombre de archivo.
+Estilo de enlace
+Opcionalmente convierte cada archivo en un enlace.
+Ninguno
+Enlace wiki
+Enlace Markdown
+Prefijo de lista
+Opcionalmente añade un prefijo de elemento de lista a cada resultado.
+Ninguno
+Guion (-)
+Asterisco (*)
+Lista numerada
+Limpiar búsqueda
+Opciones de búsqueda
+Propiedades
+Etiquetas
+Leer más
+Historial
+Limpiar el historial de búsqueda
+coincidir la ruta del archivo
+coincidir el nombre de archivo
+buscar por etiquetas
+buscar palabras clave en la misma línea
+buscar palabras clave bajo el mismo encabezado
+coincidir la propiedad
+Buscar por "{{keyword}}"
+Buscar en la carpeta
+Selector rápido
+Abra cualquier archivo sin dejar su teclado. Ctrl/Cmd+O para activar.
+Selector
+Abrir selector rápido
+para navegar
+para abrir
+para abrir en una nueva pestaña
+para abrir a la derecha
+para crear
+para descartar
+para seleccionar
+No se encontraron notas. Presione Enter para crear una nueva.
+Escriba el nombre del archivo para cambiar o crear...
+Presione Enter para crear
+Aún no creada, seleccione para crear
+Mostrar solo archivos existentes
+Decida si mostrar o no los enlaces a archivos que no han sido creados aún.
+Mostrar adjuntos
+Mostrar archivos adjuntos como imágenes, videos y PDFs.
+Mostrar todos los tipos
+Mostrar todos los archivos incluyendo aquellos que Obsidian no puede abrir. Estos serán abiertos con la app por defecto.
+Vista gráfica
+Vea un resumen gráfico de cuales notas están enlazadas con cuales.
+Abrir vista gráfica
+Abrir gráfico local
+Copiar captura de pantalla
+Gráfico de {{displayText}}
+Filtros
+Buscar archivos...
+Profundidad
+Mostrar nodos que se encuentran a este número de enlaces de distancia
+Enlaces adyacentes
+Mostrar enlaces entre notas vecinas.
+Enlaces salientes
+Mostrar enlaces a otras notas
+Enlaces entrantes
+Mostrar enlaces desde otras notas
+Etiquetas
+Las etiquetas están vinculadas a las notas que las contienen
+Adjuntos
+Mostrar archivos incluidos
+Solo archivos existentes
+Cuando está activada, no se muestran los enlaces a archivos no existentes
+Huérfanos
+Muestra los archivos que no están vinculados a ningún otro
+Mostrar
+Flechas
+Mostrar flechas al hacer zoom
+Umbral de desvanecimiento
+Tamaño del nodo
+Grosor de la línea
+Fuerzas
+Fuerza centrípeta
+Fuerza de enlace
+Distancia de enlace
+Fuerza de repelencia
+Abrir ajustes de gráfico
+La captura ha sido copiada al portapapeles.
+Grupos
+Ingresar consulta...
+Eliminar grupo
+Nuevo grupo
+Pinche para cambiar el color\nArrastre para reordenar los grupos
+Muestra una animación histórica del gráfico
+Iniciar animación histórica del gráfico
+Animar
+Enlaces entrantes
+Muestre el número de enlaces entrantes en la barra de estatus.
+Abrir enlaces entrantes
+Mostrar panel de enlaces entrantes
+Abrir enlaces entrantes para el archivo actual
+Alternar enlaces entrantes en el documento
+Enlaces entrantes en el documento
+Menciones con enlaces
+No se encontraron enlaces entrantes.
+Menciones sin enlace
+Mostrar filtro de búsqueda
+Enlace
+Enlaces entrantes de {{displayText}}
+No se encontraron menciones sin enlace.
+
+Enlaces entrantes en el documento
+Mostrar enlaces entrantes en el documento por defecto al abrir nuevos paneles.
+Enlaces salientes
+Mostrar enlaces salientes y detectar menciones no enlazadas de otras notas en la nota actual.
+Abrir enlaces salientes
+Mostrar panel de enlaces salientes
+Abrir enlaces salientes del archivo actual
+Enlaces salientes de {{displayText}}
+Enlaces
+No se encontraron enlaces.
+Menciones no enlazadas
+Enlazar este archivo
+No creado aún
+Panel de Etiquetas
+Etiquetas
+Muestra sus etiquetas junto con el número de ocurrencias.
+Mostrar panel de etiquetas
+Etiquetas no encontradas.
+Nombre de etiqueta (A-Z)
+Nombre de etiqueta (Z-A)
+Frecuencia (alta-baja)
+Frecuencia (baja-alta)
+Mostrar etiquetas anidadas
+Colapsar todo
+Expandir todo
+Vista de notas al pie
+Notas al pie
+Mostrar una lista de notas al pie en la nota actual.
+Mostrar notas al pie
+No se encontraron notas al pie.
+Vista de propiedades
+Muestra los metadatos de tus archivos
+Todas las propiedades
+Propiedades del archivo
+Propiedades de los archivos para {{displayText}}
+Mostrar todas las propiedades
+Mostrar propiedades de archivo
+Eliminar propiedad
+Eliminar propiedades
+Automático
+Automático ({{type}})
+No se han encontrado propiedades.
+Propiedades inválidas.
+Nombre de la propiedad (A-Z)
+Nombre de la propiedad (Z-A)
+Frecuencia (alta a baja)
+Frecuencia (baja a alta)
+Combinar la propiedad “{{oldKey}}” con “{{newKey}}”?
+En caso de conflicto, los valores serán combinados o se usará el valor de “{{oldKey}}”.
+Contraer todo
+Expandir todo
+Abrir las propiedades del archivo
+Abrir la nota diaria
+Vista previa
+Mostrar la vista previa de una nota al colocar el cursor sobre un link interno. Ctrl/Cmd + cursor en modo edición.
+No se encontró “{{linktext}}”.
+"{{linktext}}" no se ha creado todavía. Haga clic para crearla.
+La nota al pie {{id}} no se encontró. Haga clic para crearla.
+Editor
+Vista previa
+Búsqueda, Enlaces Entrantes y Enlaces Salientes
+Encabezado de pestaña
+Requerir {{key}} para desencadenar la vista previa de página al ponerse encima
+Marcadores
+Marcar archivos y búsquedas usadas frecuentemente.
+Mostrar marcadores
+Colapsar todo
+Marcar la etiqueta activa...
+Nuevo grupo de marcadores
+Marcar...
+Añadir marcador
+Editar marcador
+Marcar bloque bajo el cursor...
+Marcar el encabezado bajo el cursor...
+Marcar la búsqueda actual...
+Eliminar el marcador del archivo actual
+Marcar {{count}} pestaña...
+Marcar {{count}} pestañas...
+Marcar todas las pestañas...
+Marcar este gráfico...
+Marcador
+Marcador creado
+{{count}} marcador
+{{count}} marcadores
+No se encontraron marcadores
+Error al cargar los marcadores.
+El archivo de datos está dañado.
+Grupo sin título
+Gráfico sin título
+Editar...
+Eliminar
+Renombrar
+Marcar este bloque...
+Marcar este encabezado...
+No hay una consulta que marcar.
+Ruta
+Consulta
+Título
+Grupo de marcadores
+Marcadores
+CSS personalizado
+Lee y aplica “obsidian.css” en la carpeta de la bóveda.
+Temas de la comunidad
+Obteniendo datos de los temas de la comunidad...
+Filtrar...
+Solo temas oscuros
+Solo temas claros
+Aplicar
+Dejar de usar este tema
+Instalar y usar
+Actualizar
+Este tema no proporciona un archivo LÉEME.
+Quitar tema
+Ver en GitHub
+No se han podido cargar los temas de la comunidad, por favor revise su conexión.
+Ahora está usando {{title}} como el tema CSS.
+Se eliminó el tema {{title}}.
+Se actualizó el tema {{title}}.
+Instalado
+Legado
+Actualizar todo
+Error al cargar los temas de la comunidad.
+No se encontraron actualizaciones de temas.
+Se encontró actualización para {{count}} tema.
+Se encontró actualización para {{count}} temas.
+Error al instalar el tema "{{name}}".
+Se instaló satisfactoriamente el tema "{{name}}".
+Instalando tema "{{name}}"...
+Mostrando {{themeCount}}:
+Actualización disponible
+Paleta de comandos
+Escriba un comando para invocarlo. No es necesario usar la interfaz de usuario para recordar un atajo.
+Abrir paleta de comandos
+para navegar
+para usar
+para descartar
+No se encontraron comandos.
+Escribe un comando...
+Comandos fijados
+Importador de formato Markdown
+Convertir el formato Markdown de otras apps al formato de Obsidian.
+Abrir el importador de Markdown
+Corrector de etiquetas de Roam Research
+Convierte "#etiqueta" y "#[[etiqueta]]" a "[[etiqueta]]".
+Corrector de resaltados de Roam Research
+Convierte "^^highlight^^" a "==highlight==".
+Convertidor de tareas de Roam Research
+Convierte de "{{[[TODO]]}}" a "[ ]".
+Corrector de resaltados de Bear
+Convierte "::highlight::" en "==highlight==".
+Corrector de enlaces de Zettelkasten
+Corrige enlaces de "[[UID]]" a "[[UID Nombre de Archivo]]".
+Embellece los enlaces de Zettelkasten
+Arregla enlaces y cambia el formato de "[[UID]]" a "[[UID Nombre de Archivo|Nombre de Archivo]]".
+Migración de metadatos
+Migrar las etiquetas, aliases y cssclasses al formato estricto requerido por Obsidian v1.9+
+Advertencia: El importador convertirá todos los archivos de la bóveda, no solo el archivo actual.
+Sus archivos serán sobreescritos. Haga un respaldo antes de intentar la conversión.
+Empezar la conversión
+Cancelar
+Regresar
+Listo
+Procesando...
+Cancelando...
+¡Completado!
+Archivos procesados
+Archivos modificados
+Reemplazos totales
+Error
+Notas diarias
+Abrir la nota de hoy o crear una si no hay una presente.
+Hoy
+Abrir la nota de hoy
+Abrir la nota diaria anterior
+Abrir la siguiente nota diaria
+Insertar texto en nota diaria
+Insertar enlace en nota diaria
+Error al crear nota diaria. "{{format}}" no es un formato válido.
+Error al crear nota diaria. La carpeta "{{folderOption}}" no existe.
+Error al crear nota diaria. El archivo de plantilla "{{template}}" no existe.
+No hay nota diaria antes de esta.
+No hay nota diaria después de esta.
+Formato de fecha
+Elige cómo se nombran las notas diarias en tu bóveda.
+Formato personalizado
+Personalizado
+Formato de fecha no válido
+No se encontró la carpeta de notas diarias.
+Para más opciones, vea: 
+referencia de formato
+Así es como se verá: 
+Ubicación del nuevo archivo
+La carpeta para crear una nota diaria nueva.
+Ubicación de la plantilla
+La ruta al archivo para usar como plantilla.
+Creador de notas únicas
+Crea notas con prefijo de marca de tiempo único para flujos de trabajo como Zettelkasten o slip box.
+Único
+Crear nueva nota única
+Nueva nota única
+Añadir enlace interno único
+Ubicación de archivo nuevo
+La ruta de la carpeta para crear la nota única nueva.
+Error al crear nota única. No se encontró la carpeta "{{folderOption}}".
+Ubicación de plantilla
+La ruta al archivo que se usará como plantilla.
+Ejemplo: carpeta1/nota
+Formato de prefijo único
+Error al crear nota única. No se encontró la plantilla "{{template}}".
+Error al generar una nueva única con el formato "{{format}}
+Nota aleatoria
+Abre una nota al azar. Útil para repasar y descubrir.
+Aleatorio
+Abrir nota al azar
+Esquema
+Muestra el esquema del archivo actual o el panel enlazado.
+Abrir el esquema
+Mostrar panel de esquema
+Abrir el esquema del archivo actual
+Esquema de {{displayText}}
+No se encontraron encabezados.
+Autodesplazar a la sección actual
+Conteo de palabras
+Muestra el número de palabras en la barra de estado.
+Diapositivas
+Cree presentaciones usando Markdown. Use "---" para separar diapositivas.
+Empezar presentación
+Grabadora de audio
+Grabe audio y guárdelo como archivo adjunto.
+Empezar grabación
+Detener grabación
+Iniciar/Detener la grabación
+El acceso al micrófono fue denegado, por favor habilítelo desde el panel de preferencias.
+Por favor autorice acceso al micrófono para empezar a grabar.
+No se encontró un micrófono conectado.
+Abrir en la app por defecto
+Añadir botón para abrir el archivo actual en la app por defecto.
+Abrir en la app por defecto
+Compartir
+Mostrar en carpeta
+Mostrar en el Finder
+Plantillas
+Insertar contenido de plantillas desde una carpeta de archivo de plantillas.
+Insertar plantilla
+Insertar fecha actual
+Insertar hora actual
+Ubicación de la carpeta de plantillas
+Los archivos en esta carpeta estarán disponibles como plantillas.
+Formato de fecha
+{{date}} en la plantilla será reemplazado con este valor.
+También puede usar {{date:YYYY-MM-DD}} para sobreescribir el formato una vez.
+Formato de tiempo
+{{time}} en la plantilla será reemplazado con este valor.
+También puede usar {{time:HH:mm}} para sobreescribir el formato una vez.
+para navegar
+para insertar plantilla
+para descartar
+No se encontraron plantillas
+Error al listar las plantillas. La carpeta de plantillas es inválida.
+Error al listar las plantillas. No sé encontró la carpeta "{{folderOption}}".
+No se pudo insertar la plantilla, las propiedades en la plantilla no se pudieron leer
+Error al listar plantillas. No se configuró una carpeta de plantillas.
+Escriba el nombre de una plantilla...
+Ventana translúcida
+Activa un efecto de translucidez que aumenta la sensación de profundidad. Mejor para usar en modo oscuro. No soportado en Linux.
+Comandos de barra diagonal
+Habilita la opción para permitir comandos de barra diagonal en el editor tipeando una barra diagonal hacia adelante.
+Estado del editor
+Mostrar el estado del editor en la barra de estado y un botón para cambiar el modo del editor.
+Leyendo
+Codigo fuente
+Vista previa
+
+Publique sus notas a través de Obsidian Publish.
+Publicar cambios...
+Publicar el archivo actual
+Necesita acceso a internet para publicar los cambios.
+Obsidian Publish es un servicio complementario de pago que le permite publicar sus notas en internet directamente desde Obsidian.
+Para empezar a publicar, por favor inicie sesión o cree una nueva cuenta de Obsidian.
+Todavía no tiene una suscripción a Obsidian Publish.
+Comprar
+Administrar las páginas web
+No tiene ninguna página web.
+Elegir
+Editar ID de página web
+Eliminar página web
+¿Está seguro de que quiere eliminar esta página web?
+Esta acción eliminará inmediata y permanentemente su página web.
+Confirmación de borrado de la página web "{{site}}"
+ID de página web
+Su página web estará en https://publish.obsidian.md/{site id}. Puede cambiar esto después. Solo se permiten letras minúsculas, números y guiones.
+Elegir un ID de página web
+Crear
+El ID de página web solo puede contener letras minúsculas, números y guiones.
+Este ID de página web está en uso, por favor pruebe con otro.
+Hubo un problema al crear su página web.
+Opciones de la página web
+
+Componentes
+Apariencia
+Experiencia de lectura
+Otros ajustes de la página web
+Nombre de la página web
+Nombre de la página web publicada. Se mostrará en el título de página de su página web.
+Nombre de la página web
+Archivo de página de inicio
+La primera página que el usuario ve al ingresar a su página web publicado
+Elija un archivo publicado
+Logotipo
+Elija un archivo de imagen como logo para su página web.
+Cualquier imagen de su bóveda...
+Colaboración de página web
+Administre los colaboradores para esta página web.
+Personalizar navegación
+Anular el orden de los elementos de navegación y ocultar páginas o carpetas.
+Orden de los elementos de navegación
+Ocultar páginas o carpetas de la navegación
+Haga clic derecho y seleccione "Ocultar" para prevenir que ciertas páginas aparezcan en la navegación del sitio. Las páginas aún serán accesibles mediante enlaces o accediendo a la dirección URL.
+Mostrar archivos ocultos
+Administrar
+Navegación
+Arrastrar y soltar para personalizar el orden en que los elementos de navegación aparecen en su sitio publicado.
+Ocultar en navegación
+Administrar
+Tema
+Elegir el esquema de color por defecto para su sitio.
+Adaptar al sistema
+Alternar modo claro/oscuro
+Permite que el visitante elija entre el tema claro y oscuro por su cuenta.
+Mostrar navegación
+Muestra una lista de todas las páginas publicadas en el panel izquierdo de su sitio publicado.
+Mostrar barra de búsqueda
+Mostrar una barra de búsqueda en la parte superior de la navegación que permite al visitante buscar páginas y encabezados en su sitio.
+Mostrar vista gráfica
+Muestra un pequeño gráfico local en cada página.
+Mostrar tabla de contenidos
+Mostrar el esquema de encabezados en cada página.
+Mostrar enlaces entrantes
+Muestra una sección con los enlaces entrantes al final de cada página.
+Usar ventanas deslizantes
+Abre las páginas en nuevos paneles a la deerecha. Permite hacer scroll horizontal a través de ellos.
+Mostrar previsualización al ponerse encima
+Muestra una vista previa de la página al ponerse encima de los enlaces.
+Ocultar título de página
+Oculta el encabezado el título de página. Es útil cuando tienes tus propios encabezados al inicio de cada página.
+Longitud de línea visible
+Establece la longitud máxima de cada línea. Muestra menos contenido en la pantalla, pero hace más legibles los párrafos largos.
+Contraseñas
+Restringir el acceso a su sitio con una contraseña.
+Código de seguimiento de Google Analytics
+Configure Google Analytics para su sitio. Solo los visitantes disponibles de su URL personalizada. Por favor, primero verifique sus leyes y regulaciones locales.
+Administrar
+Guardar ajustes de sitio
+Las opciones de su sitio fueron actualizadas.
+Atrás
+Publicar a
+Cambiar sitio
+Añadir enlace
+Añadir todos los archivos que se encuentran enlazados por los elementos seleccionados
+{{count}} archivo enlazado ha sido añadido.
+{{count}} archivos enlazados han sido añadidos.
+Cambiar ajustes de sitio
+No se detectó ningún cambio.
+Cambios
+Sin cambios (selecciona para eliminar)
+ seleccionado
+Seleccionar todo
+Elementos de navegación
+Deseleccionar todo
+Nuevo
+Publicar
+No tiene permiso para publicar el sitio actual.
+Por favor seleccione al menos un archivo.
+Subir cambios
+Hecho
+Detener
+Subiendo
+Por publicar
+Por eliminar
+Publicado
+Eliminado
+Error
+Cancelado
+Cambio
+Los cambios tardan unos minutos en reflejarse en su sitio. Si no ve sus últimos cambios, pruebe limpiando el caché de su navegador.
+Puede visitar su sitio aquí: 
+Algo no funcionó. Por favor revisa la consola de desarrollador para obtener detalles.
+Ocurrió un error de red. 
+Administrar contraseñas
+Añadir contraseña
+Nueva contraseña
+Actualmente su sitio no tiene ninguna contraseña. Cualquiera puede visitarlo.
+Su sitio está protegido por contraseña. Si tiene múltiples contraseñas, los visitantes pueden acceder su sitio ingresando cualquiera de ellas.
+Contraseña
+Se almacenará un hash de su contraseña de manera segura. Una vez que se fija una contraseña, no puede mostrarse en texto plano.
+Su contraseña
+Apodo (opcional)
+Elija un apodo para recordar para qué o para quién es la contraseña.
+Añadir esta contraseña
+Contraseña sin título
+Creada {{time}}
+Contraseña nueva añadida.
+Dominio personalizado
+Utilice su propio dominio en lugar de la URL https://publish.obsidian.md/{site id}.
+Deshabilitar indexado de motores de búsqueda
+Prevenir que los motores de búsqueda indexen su página web.
+Configurar
+Configurar un dominio personalizado
+URL personalizada
+La URL de su página web estará ubicada en.
+Redirigir a su dominio personalizado
+Redirige a los visitantes de publish.obsidian.md/id a su dominio personalizado.
+Actualizar ajustes de dominio
+Por favor remítase a {{link}} para recibir más información.
+guía de configuración de dominio personalizado
+Está usando {{site}} de {{limit}}.
+Comprar más páginas web
+No ha comprado ninguna página web.
+Obtener una página web
+Administrar compartición de "{{name}}"
+Actualmente esta página web se comparte con las siguientes personas.
+Esta página web no está compartida con nadie actualmente.
+Pendiente
+Eliminar usuario
+Invitar usuario
+Ingrese su correo electrónico...
+Por favor, ingrese una dirección de correo electrónico correcta para invitar a alguien.
+Por favor, habilite el complemento Publish en Ajustes --> Complementos principales para ver sus páginas web.
+Sus páginas web
+Sitios compartidos con usted
+Dejar de colaborar en esta página web
+Dejar de colaborar en la página web
+Esto eliminará la página web de la lista de sitios compartidos con usted. Esta acción es irreversible.
+Por favor comuníquese con el dueño de la página web si quiere volver a colaborar.
+Abandonar
+Comparar con la versión en vivo
+Usar versión en vivo
+Confirmar anular la versión local
+¿Está seguro de que desea anular la versión local?
+Se usará la versión en vivo y la versión local será descartada. Por favor haga los respaldos que estime necesarios.
+Proceder
+Se ha usado la versión en vivo de forma satisfactoria para anular su versión local.
+Abrir en un sitio en vivo
+Abrir archivo
+Administrar los filtros de publicación
+Carpetas incluidas
+Los archivos bajo estas carpetas serán seleccionados automáticamente cuando revise los cambios para publicar.
+Estas carpetas están incluidas actualmente:
+Carpetas excluidas
+Los archivos bajo estas carpetas no se mostrarán cuando revise los cambios a publicar. Este ajuste tiene prioridad sobre las carpetas incluidas abajo.
+Obsidian Publish incluye actualmente {{folders}}.
+Obsidian Publish excluye actualmente {{folders}}.
+Administrar carpetas incluidas
+Administrar carpetas excluidas
+Incluir una carpeta
+Puede incluir tanto carpetas existentes como carpetas que no se han creado aún.
+Contactar a soporte
+Vista previa de navegación
+Espacios de trabajo
+Guardar y cargar una disposición de espacio de trabajo.
+Cargar disposición de espacio de trabajo
+Gestionar disposiciones de espacio de trabajo
+Guardar disposición
+Guardar y cargar otra disposición
+Guardar la disposición de espacio de trabajo actual como...
+Guardar
+Cargar
+Borrar disposición
+Por favor ingrese un nombre para la nueva disposición.
+Disposición guardada satisfactoriamente.
+No se han encontrado disposiciones guardadas.
+Modificada {{time}}
+Escriba el nombre de la disposición...
+
+Sincronice sus archivos mediante Obsidian Sync.
+Ver historial de versiones
+Configurar Sync
+Abrir el historial de versiones
+Mostrar historial de sincronización
+Abrir el registro de actividad
+Cargar más
+Mostrar cambios
+Copiar al portapapeles
+Restaurar esta versión
+Ya tiene la última versión.
+Se ha restaurado exitosamente la versión del {{time}}
+Este archivo fue eliminado
+Eliminado mediante {{ device }}
+Este archivo fue renombrado desde "{{filepath}}"
+Renombrado de “{{from}}” a “{{to}}”
+Movido desde “{{from}}”
+Movido desde “{{from}}” a “{{to}}”
+1 revisión
+{{revisions}} revisiones
+mediante {{device}}
+No hay historial de versiones para este archivo.
+Vacío
+Imposible recuperar el historial de versiones
+Archivos de configuración
+Archivos eliminados
+Historial de versiones
+Haga clic en un archivo eliminado para ver su historial.
+Crear bóveda remota
+Por favor ingrese una contraseña.
+El nombre de la bóveda no puede estar vacío.
+La bóveda remota "{{name}}" se creó exitosamente.
+Las bóvedas remotas se sincronizan de manera segura con su bóveda local entre dispositivos.
+Nombre de la bóveda
+Le ayuda a recordar para qué es esta bóveda.
+Región
+Automático
+Seleccione la región más cercana a usted para almacenar su bóveda remota. Esta opción no se puede cambiar en el futuro.
+Mi increíble bóveda
+Cifrado
+El cifrado de extremo a extremo ofrece mayor seguridad pero requiere que guarde su contraseña de cifrado de manera segura. El cifrado estándar usa una contraseña manejada por Obsidian para proteger su información durante su tránsito y en nuestros servidores.
+Está opción no puede ser cambiada más tarde.
+Cifrado de extremo a extremo
+Cifrado estándar
+Contraseña de cifrado
+Esta contraseña no puede ser cambiada más tarde.
+Si olvida esta contraseña, cualquier información remota quedará inutilizable para siempre.
+Esto no afecta sus datos locales.
+La bóveda remota “{{name}}” está actualmente cifrada. Ingrese su contraseña para desbloquear.
+Su contraseña
+Desbloquee su bóveda remota
+Desbloquear bóveda
+Sus bóvedas remotas
+Creada {{time}}
+Borrar
+Renombrar
+Renombrar bóveda remota "{{name}}"
+Ingrese un nuevo nombre para esta bóveda remota.
+Gestionar compartición
+Confirmar borrar bóveda
+¿Está seguro de que quiere borrar esta bóveda remota?
+Todos los datos en nuestro servidor, incluido el historial de versiones, será eliminado. Sus datos locales se mantendrán intactos.
+Esta acción es permanente e irreversible.
+La bóveda {{name}} ha sido eliminada.
+Obsidian Sync: La bóveda remota conectada ya no existe.
+Conectar
+Desconectar
+
+No tiene bóvedas remotas.
+No tiene una suscripción a Obsidian Sync.
+Por favor visite
+Es imposible previsualizar archivos {{type}}.
+Crear nueva bóveda
+Registro de sincronización
+Todos
+Errores
+Omitido
+Combinar conflictos
+Copiar registro de sincronización
+Registro de sincronización copiado satisfactoriamente.
+Reintentar
+Comprar
+Conflicto con servicio de sincronización de archivos detectado
+Peligro: Su bóveda parece estar usando {{service}} como servicio de sincronización de terceros. Si usa Obsidian Sync con esta bóveda, podría tener conflictos, corrupción de archivos o pérdida de datos.
+Si está usando iCloud Drive, sus carpetas de Documentos y Escritorio podrían ser sincronizadas vía iCloud. Esto podría causar conflictos con Obsidian Sync.
+Bóveda remota
+Elegir
+Administrar
+Actualmente está conectado a la bóveda remota "{{name}}".
+Actualmente no está conectado a ninguna bóveda remota.
+Estado de sincronización
+Obsidian Sync está pausado actualmente.
+Obsidian Sync está ejecutándose actualmente.
+Nombre del dispositivo
+Este nombre aparecerá en el registro de sincronización. Déjelo vacío para usar el nombre por defecto.
+Continuar
+Pausar
+Archivos eliminados
+Ver y restaurar archivos eliminados.
+Actividad de sincronización
+Ver actividad reciente de sincronización para depuración.
+Ver
+Restauración masiva
+Restaurar archivos
+Restaurar {{count}} archivo
+Restaurar {{count}} archivos
+Restaurando…
+`Restauración completa: {{succeeded}} exitosos y {{failed}} fallidos.`
+Tamaño de la bóveda
+Está usando {{size}} de un total de {{limit}}
+Imposible recuperar el tamaño de la bóveda.
+Calculando el tamaño de la bóveda...
+El tamaño de la bóveda supera el límite
+El tamaño de la bóveda se está aproximando al límite
+Ver archivos más grandes
+Estos son los archivos remotos que ocupan más espacio. Después de borrar los adjuntos, use el botón de purgado para liberar el espacio de su bóveda remota.
+Mejorar almacenamiento
+Purgar
+Ocultar mis cambios
+Purgar permanentemente los adjuntos eliminados de la bóveda remota para ahorrar espacio.
+Purgado completo.
+Prevenir que el dispositivo se suspenda
+Prevenir que el dispositivo se suspenda cuando aún haya archivos por sincronizar.
+Sincronización selectiva
+Carpetas excluidas
+Prevenir que ciertas carpetas se sincronicen.
+Estas carpetas están actualmente excluidas:
+Administrar
+Sincronizar imágenes
+Sincronizar archivos de imágenes con las siguientes extensiones: {{extensions}}.
+Sincronizar audio
+Sincronizar archivos de audio con las siguientes extensiones: {{extensions}}.
+Sincronizar videos
+Sincronizar archivos de video con las siguientes extensiones: {{extensions}}.
+Sincronizar PDFs
+Sincronizar archivos PDF.
+Sincronizar todos los otros tipos
+Sincronizar tipos de archivo no soportados.
+Sincronizar ajustes de la bóveda
+Historial de versiones de los ajustes
+Ver y restaurar la historia de versiones de los archivos de configuración.
+Ajustes principales
+Permitir la sincronización de ajustes del editor, archivos y enlaces, atajos de teclado personalizados, etc.
+Ajustes de apariencia
+Sincronizar ajustes de apariencia como modo oscuro, tema activo y fragmentos CSS activados.
+Temas y funcionalidades
+Sincronizar temas y funcionalidades descargadas. Si estos están activados depende del ajuste anterior.
+Atajos de teclado
+Sincronizar atajos de teclado personalizados.
+Lista de complementos principales activos
+Sincronizar los complementos principales que están activados.
+Ajustes de complementos principales
+Sincronizar los ajustes de complementos principales.
+Lista de complementos creados por la comunidad activados
+Sincronizar los complementos creados por la comunidad que están activados.
+Complementos creados por la comunidad instalados
+Sincronizar los complementos creados por la comunidad instalados (archivos .js, .css y manifest.json) y sus ajustes.
+La sincronización aún está cargando, por favor recargue esta página luego.
+Obsidian Sync es el servicio complementario de sincronización con encripción de extremo a extremo e historial de versiones.
+Para comenzar la sincronización, por favor inicie sesión o cree una nueva cuenta de Obsidian.
+Archivo actual
+Sincronizar cambios
+Hoy
+Ayer
+Esta semana
+Más antiguo
+Última sincronización
+{{count}} más
+Registrarse
+Iniciar sesión
+Administrar carpetas excluidas
+{{folders}} están excluidas de la sincronización.
+Excluir una carpeta
+Puede excluir carpetas existentes como carpetas que no se han creado aún.
+Quitar de la lista de exclusión
+Configurar conexión
+Conectando...
+Conexión fallida
+Hubo un error al conectarse a la bóveda remota.
+Está conectado a "{{name}}".
+Iniciar sincronización
+Confirmar la combinación de las bóvedas
+Su bóveda local ya contiene algunas notas.
+Si se conecta a la bóveda remota "{{name}}", las notas en su bóveda local se mezclarán con las de su bóveda remota. En caso de conflictos, se conservará la versión más reciente de la nota.
+Por favor actualice esta opción y reinicie la app en todos los dispositivos donde quiera que surjan efecto.
+Esta bóveda remota se está compartiendo actualmente con las siguientes personas.
+Esta bóveda remota no se está compartiendo actualmente con nadie.
+Bóvedas compartidas con usted
+Dejar de colaborar en esta bóveda
+Dejar de colaborar en esta bóveda
+Esto eliminará la bóveda de la lista de bóvedas compartidas con usted. Esta acción es irreversible.
+Por favor comuníquese con el dueño de esta bóveda si quiere volver a ser un colaborador.
+Abandonar
+Hubo un error al cargar las bóvedas remotas.
+Necesita una suscripción a Obsidian Sync para conectarse a esta bóveda.
+Contactar a soporte
+Si tiene algún problema con Obsidian Sync, por favor comuníquese con nosotros de modo que podamos ayudarle. Puede encontrarnos en support@obsidian.md.
+Copiar información de depuración
+Correo electrónico de soporte
+Sync no está conectado a una bóveda remota.
+Obsidian Sync le permite crear hasta 5 bóvedas remotas. Para poder crear una nueva bóveda remota, por favor elimine una de las existentes.
+Actualizar bóveda
+Actualizar el cifrado de la bóveda
+Hay una nueva versión de cifrado disponible para las bóvedas remotas.
+Migrar bóveda remota
+Configuración de bóveda remota
+Migrar
+Esto borrará su bóveda remota y la recreará con el sistema de cifrado más reciente. Los archivos locales no serán afectados, pero su historial de versiones se perderá.
+Confirmar migración de la bóveda
+Para actualizar su cifrado, todos los datos en la bóveda serán resubidos a los servidores de Obsidian Sync usando el nuevo método de cifrado. Este proceso borrará permanentemente los datos antiguos, incluyendo el historial de versiones de su bóveda.
+Importante: Recomendamos profundamente crear un respaldo de su bóveda para evitar cualquier potencial pérdida de datos.
+Luego de ocompletar la actualización, necesitará reconectar todos sus dispositivos a la bóveda remota actualizada.
+Migrar su bóveda puede tomar algo de tiempo. Necesitará mantener Obsidian activo en este dispositivo para volver a subir todas sus notas y adjuntos. Es mejor hacerlo en el dispositivo primario.
+¿Desea continuar?
+Migración de la bóveda en curso.
+Migración de bóveda completada.
+Resolución de conflictos
+Elige cómo se resuelven los conflictos cuando una nota se modifica de forma independiente en varios dispositivos.
+Fusionar automáticamente
+Crear archivo de conflicto
+Recuperación de archivos
+Le permite recuperar capturas recientes para enmendar pérdidas accidentales de información. Las capturas solo incluyen los archivos Markdown.
+Abrir capturas guardadas
+Intervalo de captura
+Intervalo mínimo en minutos entre dos capturas.
+Longitud del historial
+Cantidad de días durante los que se guardan las capturas.
+Capturas
+Ver y recuperar capturas guardadas.
+Ver
+Limpiar historial
+Limpiar todas las capturas.
+Limpiar
+¿Está seguro de que quiere borrar todas las capturas? Tenga en cuenta que solo se eliminarán las capturas. Los archivos en su bóveda no serán afectados.
+Capturas limpiadas.
+No se encontraron capturas.
+Elegir un archivo...
+Por favor seleccione un archivo a la izquierda para ver sus capturas.
+Compositor de notas
+Combina, dividide y refactoriza notas.
+Confirma la combinación de notas
+Preguntar antes de combinar dos archivos.
+Texto después de la extracción
+Qué mostrar en lugar del texto seleccionado después de extraerlo.
+Enlazar al nuevo archivo
+Incrustar nuevo archivo
+Ninguno
+Ubicación de la plantilla
+La plantilla a usar al mezclar o extraer. Variables disponibles : {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.
+Combinar el archivo actual con otro archivo...
+Combinar el archivo entero con...
+No se encontraron archivos.
+para navegar
+para combinar
+para crear nuevo
+para combinar arriba
+para descartar
+Seleccione el archivo en el que combinar...
+Combinar archivo
+¿Está seguro de que deseas combinar "{{file}}" en "{{destination}}"? "{{file}}" será eliminado.
+Combinar
+Extraer la selección actual...
+Extraer este encabezado...
+mover al final
+mover arriba
+Error al recuperar la plantilla: "{{template}}" no encontrada.
+Error para encontrar el encabezado
+Visor web
+Historial web
+Abrir los enlaces externos a páginas web dentro de Obsidian.
+Abrir visor web
+Mostrar historial
+Alternar modo de lectura
+Copiar URL
+Eliminar del historial
+Limpiar historial
+Abrir enlace
+Abrir enlace en una nueva pestaña
+Abrir enlace a la derecha
+Abrir enlace en una nueva ventana
+Abrir enlace en el navegador por defecto
+Abrir enlace en el visor web
+Copiar dirección
+Enlace del marcador
+Buscar por “{{query}}”
+Extraer la selección a una nota nueva
+Copiar
+Cortar
+Pegar
+Borrar
+Seleccionar todo
+Guardar a su bóveda
+Guardar la imagen en la bóveda
+Copiar el enlace de la imagen
+Atrás
+Adelante
+Recargar
+Página de marcadores
+Abrir en el navegador por defecto
+Foco sobre la barra de dirección
+Buscar en la web
+Borrar datos
+
+Puede cerrar su sesión en algunos sitios web.
+Datos en caché
+Historial
+Todos los datos del visor web
+Elimina todo lo anterior así como el almacenamiento local y las sesiones activas.
+Nuevo visor web
+Imposible cargar ese sitio.
+Asegúrese de que tiene la dirección correcta.
+Buscar en la web
+Datos del visor web
+Limpiar los datos del visor web
+Abrir enlaces externos
+Abrir enlaces externos en Obsidian en lugar de la aplicación por defecto.
+Página de inicio
+Qué página ver cuando se abre el visor web
+Carpeta de páginas guardadas
+Los sitios web guardados como Markdown se ubicarán aquí.
+Motor de búsqueda
+El motor de búsqueda usado al buscar desde la barra de direcciones.
+Motor de búsqueda personalizado
+Use %s en el lugar donde irá la consulta.
+Personalizado
+Activar bloqueo de anuncios
+Cuando se activa, las listas de filtros se aplicará a todas las pestañas del visor web.
+Reglas del bloqueador de anuncios
+Una URL de lista bloqueo de anuncios por línea. Compartido por todas las bóvedas.
+Frecuencia de actualización del bloqueo de anuncios
+Días entre la actualización de las listas de filtros. 0 indica deshabilitado. Compartido por todas las bóvedas.
+Limpiar los datos del visor web
+Error inesperado al extraer el contenido.
+No se encontró contenido que extraer.
+
+Ordena y conecta notas en un lienzo infinito.
+Agregar nota desde la bóveda
+Agregar medio desde la bóveda
+Agregar tarjeta
+Agregar página web
+Crear grupo
+Crear una tarjeta de un tamaño específico
+Convertir a archivo...
+Arrastrar para agregar nota desde la bóveda
+Arrastrar para agregar medios desde la bóveda
+Arrastrar para añadir tarjeta
+Editar etiqueta
+Eliminar etiqueta
+Buscar por archivo
+Definir color
+Alinear
+Alinear a la izquierda
+Alinear al centro
+Alinear a la derecha
+Alinear arriba
+Alinear al medio
+Alinear abajo
+Distribuir horizontalmente
+Distribuir verticalmente
+Justificar horizontalmente
+Justificar verticalmente
+Ordenar en una fila
+Ordenar en una columna
+Ordenar en una grilla
+Exportar como imagen
+Saltar a un grupo
+Definir fondo
+Editar fondo
+Reemplazar fondo
+Eliminar fondo
+No se encontraron imágenes.
+No se encontraron archivos multimedia.
+Exportar "{{title}}" en un archivo PNG con los ajustes de abajo.
+Dimensiones estimadas de la imagen: {{dimensions}}
+Distribuir
+Justificar
+Ordenar
+Siempre
+Al ponerse encima
+Nunca
+No se encontró la sección
+Comportamiento por defecto de la rueda del mouse
+Comportamiento por defecto de la tecla {{key}}
+Mostrar menú
+Ubicación por defecto para nuevos archivos de canvas
+Dónde se ubican los nuevos archivos de canvas.
+Carpeta para crear nuevos archivos de canvas
+Los nuevos archivos de canvas aparecerán dentro de esta carpeta.
+Mostrar etiqueta de tarjeta
+Ajustar a la cuadrícula
+Ajustar tarjetas a la cuadrícula del fondo al mover y redimensionar.
+Ajustar a objetos
+Ajustar tarjetas a los objetos cercanos al mover y redimensionar.
+Umbral de zoom para ocultar el contenido de una tarjeta
+Los valores más bajos incrementarán el rendimiento, pero ocultarán el contenido de una tarjeta al alejarse.
+Mostrar logo
+Esto añadirá un logo de Obsidian abajo a la izquierda.
+Modo de privacidad
+Esto oscurecerá cualquier texto en su lienzo.
+Ampliar
+Un nivel de zoom mayor generará una imagen de mayor resolución.
+Vista
+Elegir renderizar el lienzo entero o solo la vista actual.
+lienzo completo
+Solo la vista
+Portada
+Mantener relación de aspecto
+Repetir
+Nuevo lienzo
+Duplicar
+Eliminar
+Acotar al encabezado...
+Acotar al bloque...
+Fijar vista...
+Intercambiar archivo...
+Cambiar la URL...
+Acercar para ajustar
+Acercar a la selección
+Recargar página
+Seguir conexión
+Crear nuevo lienzo
+Convertir a archivo...
+a encabezado incrustado
+a bloque incrustado
+para navegar al grupo
+Escriba el nombre del encabezado
+Ingrese la URL
+No se encontró "{{linktext}}".
+Añadir texto...
+Tipea para buscar...
+Ayuda de lienzo
+Ajustes de lienzo
+Mostrar el archivo completo
+Mostrar vista predeterminada
+Solo lectura
+Desactivar solo lectura
+Panear
+Panear horizontalmente
+Ampliar
+Seleccionar todo
+Agregar/Eliminar de la selección
+Clonar tarjeta
+Limitar el movimiento de la tarjeta al eje
+Deshabilitar el ajuste al arrastrar
+Eliminar tarjeta
+Arrastrar desde abajo o con doble clic
+Pulsar y mantener para agregar / mover / seleccionar
+Arrastrar para panear
+Pellizcar para hacer zoom
+Espacio + Arrastrar para panear
+Girar la rueda hacer zoom
+Grupo sin título
+Dirección de línea
+No direccional
+Unidireccional
+Bidireccional
+Imagen
+Estilo
+No se encontraron grupos
+No se puede exportar un lienzo vacío
+Canvas detectó cambios de nombre de archivo que afectan a {{count}} archivo de Canvas; actualizando...
+Canvas detectó cambios de nombre de archivo que afectan a {{count}} archivos de Canvas; actualizando...
+Canvas actualizó {{count}} tarjeta incrustada
+Canvas actualizó {{count}} tarjetas incrustadas
+
+Crear bases consultando propiedades de la nota.
+Nueva base
+Agregar propiedad
+Añadir resumen de "{{name}}"
+Agregar fórmula
+Ocultar todo
+Alternar visibilidad
+Eliminar fórmula
+Vista predeterminada
+Duplicar vista
+Borrar vista
+Eliminar resumen
+Exportar CSV...
+Crear nueva base
+Insertar nueva base
+Copiar tabla al portapapeles
+Cambiar vista
+Añadir vista
+Añadir elemento
+Añadir vista
+Añadir filtro
+Añadir grupo de filtros
+Mostrar todo
+Mostrar todo ({{count}})
+Añadir resumen
+Ocultar resumen
+Todas las vistas
+Esta vista
+Buscar o crear...
+Propiedades calculadas
+Tipo de propiedad
+Ocultar propiedad
+Mostrar propiedad
+Editar propiedad
+Editar {{name}}
+Configurar vista
+Disposición
+Filtros globales
+Ver filtros
+Ver nombre
+Vista
+Tabla
+Nombre para mostrar
+Nombre del resumen
+Fórmula
+Vistas
+Ordenar
+Filtrar
+Buscar
+Propiedades
+Nuevo
+Mostrando {{count}}
+Nuevo archivo de plantilla
+Nueva carpeta de elemento
+Cualquiera de los siguientes son verdaderos
+Todos los siguientes son verdaderos
+Ninguno de los siguientes son verdaderos
+donde
+o
+y
+Propiedad
+Sin título
+archivo
+nombre
+nombre de archivo base
+nombre de archivo completo
+ruta
+carpeta
+extensión
+creado
+modificado
+tamaño de archivo
+enlaces de retorno del archivo
+enlaces de archivo
+adjuntos del archivo
+etiquetas del archivo
+Añadir orden
+Agrupar por
+Ordenar por
+Limitar el número de resultados
+
+
+Antiguo a nuevo
+Nuevo a antiguo
+
+
+El nombre de la vista no puede contener: 
+El nombre de la vista ya existe.
+El nombre de la vista no puede estar vacío.
+Este filtro no puede representarse por el constructor básico de filtros.
+El filtro no se pudo cargar. No se puede usar el constructor básico de filtros.
+Configuración de propiedades inválida.
+Configuración de propiedad inválida para "{{ name }}".
+Imposible agregar la nueva vista de Bases "{{ viewID }}". Una vista con este ID ya existe.
+Imposible cargar su archivo base:
+La vista "{{ view }}" no se encontró
+Base configurada con un tipo de vista desconocido: {{ viewtype }}
+Las vistas deben ser un arreglo
+Los valores a mostrar deben ser cadenas. El valor de la propiedad {{ key }} no lo es.
+"{{ key }}" debe ser un {{ type }}
+Los "Filtros" deben ser una cadena o un objeto
+El filtro de "{{ conjunction }}" debe ser un arreglo
+Los "filters" solo pueden tener una llave de "y", "o", o "no".
+Error al evaluar el filtro: {{ message }}
+Los valores de fórmula deben ser cadenas. El valor de {{ key }} no lo es.
+Error al calcular el valor de la propiedad "{{ key }}": {{ message }}
+La consulta tiene un formato inválido. Debería ser un objeto YAML.
+Los elementos de "view" deben ser un objeto YAML, sin embargo, {{ index }} no lo es
+"name" faltante o inválido en la vista {{ index }}
+"{{ key }}" se requiere en la vista "{{ viewName }}"
+"{{ key }}" debe ser un {{ type }} en la vista "{{ viewName }}"
+Los valores de "{{ key }}" deben ser todos del tipo {{ type }} en la vista "{{ viewName }}"
+Imposible cargar los filtros de la vista "{{ viewName }}": {{ message }}
+Bucle infinito detectado en la fórmula
+Propiedad inválida
+Esta nota será filtrada porque no coincide con sus criterios
+Filtro avanzado
+p. ej. 10
+Filtro avanzado
+Filtro simple
+Eliminar filtro
+Ninguno
+Lista
+Marcadores
+Aplicar sangría a las propiedades
+Separador de propiedades
+Viñeta
+Número
+Ninguno
+Tarjetas
+Tamaño de la tarjeta
+Propiedad de la imagen
+Ajustar
+Rellenar
+Contener
+Proporción de aspecto de imagen
+Tabla
+Ocultar columna
+Editar propiedad...
+Editar fórmula...
+Limpiar orden
+Ordenar A → Z
+Ordenar Z → A
+Altura de fila
+Baja
+Media
+Alta
+Extra alta
+Resumir...
+Agrupar por esta propiedad
+Borrar valores
+Resumen
+Imposible mostrar la fórmula "{{ formula }}"
+Imposible encontrar la función  "{{ function }}"
+Imposible encontrar la función "{{ function }}" en el tipo {{ type }}
+Imposible llamar la función "{{ function }}", argumentos insuficientes.
+Imposible llamar la función "{{ function }}", demasiados argumentos.
+Error de tipo en "{{ function }}", parámetro "{{ parameter }}". Se esperaba {{ expected }}, se proporcionó {{ given }}.
+Imposible acceder al índice {{ index }} de un valor que no es un arreglo
+Imposible encontrar {{ index }} en tipo {{ type }}
+Resaltar todo
+Coincidir diacríticos
+Palabras enteras
+Miniaturas
+Tabla de contenidos
+Mostrar página en la tabla de contenidos
+Alternar barra lateral
+Página anterior
+Página siguiente
+Ajustar al ancho
+Ajustar al alto
+Guardar la posición actual en el documento
+Copiar anotación
+Copiar como una cita
+Copiar enlace a esta selección
+Copiar enlace a la anotación
+Copiar enlace a la sección
+Copiar enlace a “{{title}}”
+Copiar enlace a la página {{page}}
+{{current}} de más de {{limit}} coincidencias
+{{current}} de {{total}} coincidencia
+{{current}} de {{total}} coincidencias
+Este archivo PDF está protegido por contraseña
+Contraseña inválida
+Ingrese la contraseña debajo
+de {{count}}
+({{current}} de {{count}})
+Página única
+Dos páginas (impar)
+Dos páginas (par)
+Opciones de barra lateral
+Opciones de pantalla
+Adaptar al tema
+página {{page}}
+Página {{page}}
+Página {{page}}
+Página {{page}}
+[Anotación {{type}}]
+
+Lista
+Desconocido
+Texto
+Alias
+Etiquetas
+Carpeta
+Archivo
+Propiedad
+Fecha
+Fecha y hora
+Número
+Casilla de verificación
+Escriba [[
+para enlazar una nota
+para descartar
+Tipo de propiedad
+Ordenar
+El nombre de una propiedad no puede estar vacío.
+Esa propiedad ya existe
+Nombre de etiqueta inválido
+Número inválido
+Error al leer las propiedades.
+Sin valor
+Propiedades
+Propiedades inválidas
+Mostrar fuente
+Error de sintaxis. El encabezado es inválido.
+Añadir propiedad
+Error de tipeo, se esperaba {{type}}
+Error de tipeo
+¿Mostrar como {{type}}?
+Tus datos de {{oldType}} no son compatibles. Se adaptarán para ajustarse al nuevo formato.
+Columna
+Fila
+Añadir una fila debajo
+Añadir una columna a la derecha
+Añadir una fila encima
+Mover la fila arriba
+Mover la fila abajo
+Añadir una columna a la izquierda
+Mover la columna a la izquierda
+Mover la columna a la derecha
+Duplicar la fila
+Duplicar la columna
+Borrar la fila
+Borrar la columna
+Alinear a la izquierda
+Alinear al centro
+Alinear a la derecha
+Borrar las celdas
+Vaciar las celdas
+Ordenar por columna (A-Z)
+Ordenar por columna (Z-A)
+Tabla: {{command}}
+Tipo de destacado
+Información
+Importante
+Consejo
+Éxito
+Pregunta
+Advertencia
+Cita
+Ejemplo
+Ninguno
+Otro...
+Tipo de llamada de texto...
+
+{{count}} palabra
+{{count}} palabras
+{{count}} resultado
+{{count}} resultados
+{{count}} carácter
+{{count}} caracteres
+{{count}} enlace
+{{count}} enlaces
+{{count}} archivo
+{{count}} archivos
+{{count}} carpeta
+{{count}} carpetas
+{{count}} enlace entrante
+{{count}} entrantes
+{{count}} pestaña
+{{count}} pestañas
+{{count}} propiedad
+{{count}} propiedades
+{{count}} sitio
+{{count}} sitios
+{{count}} complemento
+{{count}} complementos
+{{count}} activo
+{{count}} fragmento
+{{count}} fragmentos
+{{count}} tema
+{{count}} temas

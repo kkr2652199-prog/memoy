@@ -1,0 +1,2517 @@
+Optionen
+Erweiterungen
+Obsidian-Erweiterungen
+Erweiterungs-Einstellungen
+Beispiel: Ordner 1/Ordner 2
+Beispiel: Ordner/Notiz
+Damit diese Änderungen wirksam werden, starte Obsidian bitte neu.
+
+Verhalten
+Anzeige
+Rechtschreibprüfung
+Schaltet die Rechtschreibprüfung ein.
+Rechtschreibprüfung - Sprachen
+Wähle die Sprachen aus, für die die Rechtschreibprüfung aktiv sein soll.
+Die integrierte Rechtschreibprüfung erkennt auf macOS automatisch die Sprache, die du für Obsidian verwendest.
+Wörterbuch für die Rechtschreibprüfung
+Das Wörterbuch für die Rechtschreibprüfung ist leer.
+Titel in Notiz
+Zeigt den Dateinamen als bearbeitbaren Titel zusammen mit den Dateiinhalten in der Notiz an.
+Lesbare Zeilenlänge
+Begrenzt die maximale Zeilenlänge. Es passt weniger Inhalt auf den Bildschirm, dafür sind lange Absätze besser lesbar.
+Strenge Zeilenumbrüche
+Ignoriert einzelne Zeilenumbrüche in der Leseansicht gemäß Markdown-Spezifikation. Schalte dies aus, um einzelne Zeilenumbrüche auch in der Leseansicht anzuzeigen.
+Eigenschaften im Dokument
+Wähle aus, ob die Eigenschaften in der Leseansicht und der Live-Vorschau angezeigt werden sollen. Wähle "Quelle", um die Eigenschaften in der Live-Vorschau als YAML anzuzeigen.
+Nicht sichtbar
+Sichtbar
+Quelle
+Automatische Klammerpaare
+Setzt automatisch Klammer- und Anführungszeichen-Paare.
+Automatische Markdown-Vervollständigung
+Setzt automatisch Symbol-Paare für Fett- und Kursivschrift.
+Intelligenter Zeileneinzug
+Schaltet den automatischen Zeilen- und Listeneinzug ein.
+Überschriften einklappen
+Klappt alles unterhalb einer Überschrift ein.
+Zeileneinzug einklappen
+Klappt einen Teil des gleichen Zeileneinzugs, etwa bei Listen, ein.
+Standard-Ansicht für neue Tabs
+Standard-Ansicht, in der sich neue Markdown-Tabs öffnen.
+Bearbeitungsmodus
+Leseansicht
+Neue Tabs immer fokussieren
+Beim Öffnen eines Links in einem neuen Tab sofort zu diesem wechseln.
+Standardmodus zum Bearbeiten
+Der Standardmodus, in dem ein neuer Tab zum Bearbeiten geöffnet wird.
+Quellcode-Ansicht
+Live-Vorschau
+Zeilennummern
+Zeigt Zeilennummern im Steg an.
+Einrück-Hilfen
+Zeigt vertikale Linien für eine visuelle Hilfe zum Einrücken zwischen Listeneinträgen an.
+Tabs verwenden
+Erzeugt einen Zeileneinzug, wenn die "Tab"-Taste gedrückt wird. Schalte dies aus, um Leerzeichen zu verwenden.
+Länge der Tabs
+Definiert die Anzahl der Leerzeichen, die einem Tab entsprechen.
+Schreib- und Leserichtung (RTL)
+Ändert die Laufrichtung von Text in Notizen nach RTL (von rechts nach links).
+HTML automatisch konvertieren
+Konvertiert HTML automatisch nach Markdown, wenn Inhalte von Webseiten durch Ziehen und Ablegen eingefügt werden. Verwende Strg/Cmd+Umschalt+V, um ohne Konvertierung einzufügen.
+Vim-Tastenbindung
+Erlaubt die Verwendung der VIM-Tastenbelegung im Quellcode Editor.
+Auf mobilen Geräten kann diese Einstellung für jedes Gerät separat gewählt werden und wird nicht über die Konfigurationsdatei synchronisiert.
+Vault-Cache zurücksetzen
+Das erneute Aufbauen des Cache kann je nach Größe des Vaults einige Sekunden bis Minuten beanspruchen.
+Zurücksetzen
+Vim-Modus bestätigen
+Mit dem Vim-Modus können Texte effizient bearbeitet werden, aber dieser Modus ist nicht immer sehr intuitiv. Falls du dich nicht mit Vim auskennst, könnte diese Option es aussehen lassen, als ob Obsidian nicht mehr funktionieren würde.
+Um zu zeigen, dass du dich mit Vim auskennst, gib bitte unten den Befehl ein, der Vim schließt, ohne zu speichern:
+Deine Antwort
+Befehl eingeben...
+Aktiviere Vim
+Der Befehl ist korrekt. Vim-Modus ist jetzt aktiviert.
+Der Befehl ist nicht korrekt. Vim-Modus bleibt zur Sicherheit deiner Dateien deaktiviert.
+Bitte gib den Befehl ein, um den Vim-Modus zu aktivieren
+Dateien & Links
+Vor dem Löschen von Dateien bestätigen
+Verhindert das versehentliche Löschen von Dateien.
+Papierkorb
+Gelöschte Dateien
+Was soll mit gelöschten Dateien geschehen?
+In Papierkorb (System) verschieben
+In Papierkorb (Obsidian, .trash Ordner) verschieben
+Endgültig löschen
+Anhänge beim Löschen von Dateien löschen
+Anhänge, die mit der gelöschten Datei verknüpft sind, automatisch entfernen, wenn sie sonst nirgendwo verwendet werden.
+Immer
+Jedes Mal fragen
+Nie
+Standardmäßig zu öffnende Datei
+Wähle die Datei aus, die beim Start der App geöffnet werden soll.
+Zuletzt geöffnet
+Neue Notiz
+Bestimmte Datei
+Tägliche Notiz
+Zu öffnende Datei
+Wähle eine bestimmte Datei aus, die standardmäßig geöffnet wird.
+Interne Links automatisch aktualisieren
+Aktualisiert Links automatisch, wenn eine Datei umbenannt wird.
+Standardordner für neue Notizen
+Speichert neue Notizen an diesem Ort. Wird ggf. von Erweiterungs-Einstellungen überschrieben.
+Vault-Hauptordner
+Aktueller Ordner (bei geöffneter Notiz)
+Eigenen Ordner unten festlegen
+Ordnerpfad für neue Notizen
+Speichert neue Notizen an diesem Ort.
+[[Wiki-Links]] verwenden
+Erzeugt automatisch Wiki-Links für [[Links]] und ![[Bilder]] anstelle von Markdown-Links. Deaktiviere diese Option, um stattdessen Markdown-Links zu erzeugen.
+Alle Datei-Endungen erkennen
+Zeigt Dateien mit allen Endungen, selbst wenn Obsidian diese Dateien nicht nativ öffnen kann. Damit kannst du sie verlinken und im Dateiexplorer sowie in der Schnellauswahl sehen.
+
+Link-Format
+Standardformat für automatisch erzeugte, interne Links
+Wenn möglich: kürzester Pfad
+Relativer Pfad zur Datei
+Absoluter Pfad im Vault
+Standardordner für neue Anhänge
+Speicherort für neu hinzugefügte Anhänge
+Anhänge
+Unterordner des aktuellen Ordners
+Ordnerpfad für Anhänge
+Speichert neu angehängte Dateien in diesem Ordner, wie z.B. durch Ziehen und Ablegen eingefügte Bilder oder Audioaufzeichnungen.
+Name des Unterordners
+Wenn deine Datei unter "Vault/Ordner" liegt und du den Unterordner "Anhänge" genannt hast, werden Anhänge unter "Vault/Ordner/Anhänge" gespeichert.
+Ignorierte Dateien
+Ignorierte Dateien sind entweder ausgeblendet oder weniger auffällig an verschiedenen Stellen, wie z.B. in der Schnellauswahl, Linkvorschlägen und der Graph-Ansicht.
+Im Moment werden keine Dateien ignoriert. Füge einen Filter hinzu.
+Dateien, die den folgenden Filterkriterien entsprechen, werden momentan ignoriert:
+
+Filter darf nicht leer sein
+Pfad oder "/regex/" eingeben...
+URI-Callbacks erlauben
+Bei der Behandlung von Obsidian-URIs die Verwendung von X-Callback-URLs durch x-success oder x-error aktivieren.
+Darstellung
+Farbschema
+Wähle das Standard-Farbschema für Obsidian.
+Akzentfarbe
+Wähle eine Akzentfarbe, die in der gesamten Anwendung verwendet werden soll.
+Dunkel
+Hell
+Systemeinstellung verwenden
+Schriftart und -größe
+Erweitert
+Bedienung
+Schriftart Oberfläche
+Wähle die Schriftart für die Bedienoberfläche.
+Vergrößerungsstufe
+Wähle eine Vergrößerungsstufe für die gesamte Anwendung.
+Text-Schriftart
+Wähle eine Schriftart für die Bearbeitungs- und Leseansicht.
+Monospace-Schriftart
+Wähle eine Schriftart für Quelltext-Blöcke und Frontmatter.
+Aktuell verwendete Schriftart: 
+Die folgenden Schriftarten werden momentan verwendet:
+Name der Schriftart eingeben...
+Derzeit wird keine eigene Schriftart verwendet. Füge unten eine hinzu.
+Es wird die erste Schriftart aus dieser Liste verwendet, die auf deinem System verfügbar ist.
+Diese Schriftart wurde auf deinem System nicht gefunden.
+Diese Schriftart wurde auf deinem System gefunden.
+Name der Schriftart
+Themen aus der Community
+Vorschau und Verwendung der von unserer Community erstellten Designs.
+Durchsuchen
+Schriftgröße
+Schriftgröße in Pixeln für die Bearbeitungs- und Leseansicht.
+Schnellanpassung der Schriftgröße
+Die Schriftgröße kann durch Strg + Scrollen oder durch eine Zoom-Geste auf dem Trackpad angepasst werden.
+Thema
+Verwalte installierte Themen und durchsuche von der Community erstellte Designs.
+Verwalten
+Keines
+Native Menüs
+Der Menü-Stil wird an die Systemeinstellung angepasst. Das gewählte Farbschema hat darauf keinen Einfluss.
+Themen neu laden
+Themen wurden neu geladen.
+Themen-Ordner öffnen
+CSS-Bausteine
+Keine CSS-Bausteine gefunden.
+CSS-Bausteine sind in "{{path}}" gespeichert.
+CSS-Bausteine neu laden
+CSS-Baustein-Ordner öffnen
+CSS-Bausteine wurden neu geladen.
+CSS-Baustein unter "{{path}}" anwenden.
+Installierte Themen
+Screenshot nicht verfügbar
+Standard
+Klicke zum Vergrößern
+Aktualisieren
+Aktiv
+Stil des Obsidian-Fensters
+Legt den Titelleisten-Stil für alle Obsidian-Fenster fest. Neustart der Anwendung erforderlich.
+Ausgeblendet (Standard)
+Obsidian
+Nativ
+Benutzerdefiniertes App-Symbol
+Weise der Anwendung ein eigenes Symbol zu.
+Benutzerdefiniertes Symbol auswählen
+Werkzeugleiste
+Konfiguriere, welche Befehle in der Werkzeugleiste erscheinen sollen.
+Schnellzugriff auf Werkzeugleisten-Befehl
+Der Befehl wird durch Antippen in der Werkzeugleiste aktiviert. Antippen und Halten zeigt das Menü an.
+Werkzeugleiste öffnen
+Konfigurieren
+Werkzeugleiste anzeigen
+Vertikale Werkzeugleiste neben dem Fenster anzeigen.
+Andere Werkzeugleisten-Befehle
+Werkzeugleisten-Konfiguration
+Wähle aus, welche Befehle in der Werkzeugleiste aktiviert sein sollen. Ändere die Reihenfolge durch Ziehen und Ablegen.
+Zeige Tab-Titelleiste
+Zeigt die Titelleiste am oberen Rand jedes Tabs an.
+Schwebende Navigation
+Navigationsschaltflächen schweben über dem Inhalt, statt verankert zu sein.
+Gleitende Seitenleisten
+Seitenleisten gleiten an die Seite des Inhalts, statt darüber zu schweben.
+Vollbild
+Oberflächenelemente beim Lesen automatisch ausblenden.
+{{count}} Thema kann aktualisiert werden.
+{{count}} Themen können aktualisiert werden.
+Nach Aktualisierungen suchen
+Aktualisierungen anzeigen
+Alle aktualisieren
+Installierte Community-Themen
+Du hast derzeit {{count}} Thema installiert.
+Du hast derzeit {{count}} Themen installiert.
+Tastenkürzel
+Tastenkürzel durchsuchen
+Zeige {{count}} Tastenkürzel. 
+Zeige {{count}} Tastenkürzel. 
+{{count}} Befehl mit Konflikten.
+{{count}} Befehle mit Konflikten.
+Filtern...
+Tastenkürzel löschen
+Tastenkürzel drücken...
+Alle
+Nicht zugewiesen
+Zugewiesen
+Von mir zugewiesen
+Standard wiederherstellen
+Eigenes Tastenkürzel festlegen
+Dieses Tastenkürzel und "{{command}}" überschneiden sich.
+Dieses Tastenkürzel überschneidet sich mit {{count}} anderen.
+Leer
+Schlüsselbund
+Geheimnisse
+Geheimnis hinzufügen
+Geheimnis bearbeiten
+Geheimnis anzeigen
+Geheimnis verbergen
+
+Geheimnis
+geheimnis-name
+Nur Kleinbuchstaben, Zahlen und Bindestriche.
+Gib dein Geheimnis ein.
+Nie aufgerufen
+Geheimnis konnte nicht aktualisiert werden.
+Geheimnis konnte nicht hinzugefügt werden.
+Ein Geheimnis mit dieser ID existiert bereits.
+Der Wert des Geheimnisses darf nicht leer sein.
+Ungültige Geheimnis-ID. Verwende nur Kleinbuchstaben, Zahlen und Bindestriche. Maximal 64 Zeichen.
+Es wurden noch keine Geheimnisse hinzugefügt. Geheimnisse werden verwendet, um Informationen wie API-Schlüssel und Passwörter zu speichern, die von Erweiterungen genutzt werden können.
+Geheimnis auswählen
+Geheimnis suchen...
+Geheimnis hinzufügen...
+Verknüpfen...
+Geheimnisse werden ohne Verschlüsselung gespeichert, da auf diesem System kein Geheimnisspeicher verfügbar ist.
+Geheimnisse sind nicht verschlüsselt
+Nicht erneut anzeigen
+Verschlüsselung nicht verfügbar
+Die Verschlüsselung wird vom Geheimnisspeicher Ihres Betriebssystems bereitgestellt. Ohne Geheimnisspeicher werden Ihre Geheimnisse ohne Verschlüsselung gespeichert.
+Unter Linux gehören zu den unterstützten Geheimnisspeichern:
+Allgemein
+Kommerzielle Lizenz
+Lizenzschlüssel
+Dein Lizenzschlüssel...
+Lizenz aktivieren
+Aktivieren
+Unbekannt
+
+Installer-Version: {{version}}
+Liste der Änderungen lesen.
+Um die neuesten Funktionen zu unterstützen und aktuelle Sicherheitspatches zu erhalten, benötigt Obsidian eine umfangreiche Neuinstallation. Lade dazu Obsidian erneut herunter und führe eine manuelle Installation durch.
+Eine neue Version ist bereit zur Installation.
+Aktualisierungen sind deaktiviert.
+Neu starten
+Nach Aktualisierungen suchen
+Automatische Aktualisierungen
+Ausschalten, um die automatische Suche nach Aktualisierungen zu deaktivieren.
+Benachrichtigen, wenn der Startvorgang ungewöhnlich lange dauert
+Zeige zur Fehlerdiagnose die Ladezeiten einzelner Anwendungskomponenten an.
+Jetzt überprüfen
+Befehlszeilenschnittstelle
+Interaktionen mit Obsidian über die Befehlszeile erlauben.
+CLI für die Verwendung im Terminal einrichten
+"obsidian" in PATH registrieren, um den Befehl "obsidian" überall im Terminal nutzen zu können.
+Registrieren
+Hilfe
+Hilfe zum Umgang mit Obsidian.
+Öffnen
+Sprache
+Wähle die Anzeige-Sprache aus.
+Insider-Builds erhalten
+Lädt automatisch Insider-Builds herunter, um neue Funktionen zu testen. Achtung: Diese Builds sind brandneu und könnten weniger stabil sein.
+Erweitert
+Hardware-Beschleunigung
+Aktiviert die Hardware-Beschleunigung, um Obsidian durch deine GPU flüssiger darzustellen.
+Wenn du diese Option deaktivierst, wird die Leistung der Anwendung stark beeinträchtigt.
+Konfigurationsordner überschreiben
+Verwendet einen anderen als den Standardordner für Konfigurationsdateien. Muss mit einem Punkt beginnen.
+Konfigurationsordner muss ein gültiger Ordnername sein, der mit einem Punkt beginnt.
+Lizenz
+Dein kommerzieller Lizenzschlüssel ist "{{key}}".
+Registriert bei "{{company}}" für {{seats}} Benutzer. Gültig bis {{expiry}}.
+Bestätigen...
+Lizenz ungültig: 
+Entfernen
+Catalyst-Lizenz
+Du verwendest derzeit die {{tier}} Catalyst-Lizenz. Vielen Dank für deine Unterstützung!
+Du verwendest derzeit keine Catalyst-Lizenz. Die Catalyst-Lizenz ist eine einmalige Spende, um die Entwicklung von Obsidian zu unterstützen.
+Anwendung
+Erfahre, wie du deine Sprache zu Obsidian hinzufügen kannst.
+Nutzerkonto
+Dein Nutzerkonto
+Du bist momentan angemeldet als {{name}} ({{email}}).
+Du bist momentan nicht angemeldet. Ein Nutzerkonto ist nur notwendig für Obsidian Sync, Obsidian Publish und Catalyst Insider-Builds.
+Erweitern
+Kommerzielle Lizenz
+Hilf mit, dass Obsidian 100% nutzerfinanziert bleibt.
+Erwerben
+Abmelden
+Anmelden
+Registrieren
+E-Mail
+Deine E-Mail...
+Vollständiger Name
+Passwort
+Dein Passwort...
+Passwort vergessen?
+Anmelden
+E-Mail darf nicht leer sein.
+E-Mail ist ungültig.
+Passwort darf nicht leer sein.
+Anmeldung fehlgeschlagen, bitte überprüfe deine E-Mail und dein Passwort.
+Anmeldung fehlgeschlagen
+Du hast noch kein Nutzerkonto? 
+Jetzt anmelden
+6-stelliger 2FA-Code
+Der 2FA-Authentifizierungscode muss 6-stellig sein.
+Der 2FA-Code ist falsch, bitte überprüfe deine Authentifizierungs-App.
+Liste der Erweiterungen
+Durchsuche Obsidian-Erweiterungen
+Filtere Erweiterungen nach Name oder Beschreibung.
+Durchsuche Erweiterungen...
+Externe Erweiterungen
+Eingeschränkter Modus
+Eingeschränkter Modus ist abgeschaltet. Schalte ihn ein, um Community-Erweiterungen zu deaktivieren.
+Einschalten
+Automatisch nach Plugin-Aktualisierungen suchen
+In regelmäßigen Abständen nach Plugin-Aktualisierungen suchen.
+Community-Erweiterungen
+Durchsuche und installiere von unserer großartigen Community erstellte Erweiterungen.
+Durchsuchen
+Eingeschränkten Modus verlassen
+Community-Erweiterungen, wie auch jede andere Software, die du installierst, können potentiell die Integrität und Sicherheit deiner Daten gefährden.
+Die Sicherheit von Erweiterungen ist uns sehr wichtig. Das tun wir dafür:
+Trotz all unserer Bemühungen besteht dennoch die Möglichkeit, dass eine Community-Erweiterung sich unangemessen verhält.
+Erste Code-Überprüfung
+Erweiterungen werden von unserem Team einer Code-Überprüfung unterzogen, bevor sie in der offiziellen Plugin-Liste erscheinen.
+Open Source
+Die meisten Erweiterungen sind quelloffen und auf Github zu finden, so dass du den Code selbst überprüfen kannst.
+Peer-Audit
+Wir haben eine große Community von Entwicklern, die ein Auge aufeinander haben.
+Meldesystem
+Wir verfolgen und entfernen fehlerhafte Plugins nach Meldung durch unsere Anwender.
+Möchtest du den eingeschränkten Modus verlassen, um Community-Erweiterungen zu verwenden? Wir empfehlen dringend, vorher eine Sicherungskopie deiner Daten zu erstellen.
+Erfahre mehr zur Sicherheit von Erweiterungen
+Community-Erweiterungen aktivieren
+Vertraust du dem Ersteller dieses Vaults?
+Du öffnest diesen Vault zum ersten Mal und er enthält einige Erweiterungen.
+Wenn du diesen Vault nicht selbst erstellt hast, beachte bitte, dass Erweiterungen unbekannter Herkunft ein Sicherheitsrisiko darstellen können.
+Falls du dem Ersteller dieses Vaults nicht komplett vertraust, empfehlen wir, im eingeschränkten Modus zu bleiben, damit Erweiterungen in diesem Vault nicht ausgeführt werden.
+Dem Ersteller vertrauen und Erweiterungen aktivieren
+Vault im eingeschränkten Modus betrachten
+Durchsuche Community-Erweiterungen...
+Laden der Community-Erweiterungen fehlgeschlagen.
+Installiert
+Installieren
+Aktivieren
+Deaktivieren
+Öffentlichen Link kopieren
+Spenden
+Keine Ergebnisse gefunden.
+Keine kürzlich verwendeten Dateien gefunden. Suchen...
+Laden des Erweiterungs-Manifests fehlgeschlagen.
+
+ (aktuell installiert: {{version}})
+Von 
+
+Letzte Aktualisierung: 
+Zeige die letzte Aktualisierung
+Dein Gerät wird von dieser Erweiterung nicht unterstützt.
+Aktualisieren
+Diese Erweiterung enthält keine README Datei.
+Installiere Erweiterung "{{name}}"...
+Installation der Erweiterung "{{name}}" fehlgeschlagen.
+Installation der Erweiterung "{{name}}" erfolgreich.
+Deinstallation der Erweiterung “{{id}}” fehlgeschlagen.
+Deaktivierung der Erweiterung “{{id}}” fehlgeschlagen.
+Installierte Erweiterungen
+Erweiterungen neu laden
+Drittanbieter-Erweiterungen neu geladen.
+Deinstallieren
+Erweiterung deinstallieren
+Bist du sicher, dass du diese Erweiterung deinstallieren möchtest? Dies wird den Ordner der Erweiterung löschen.
+Ordner für Erweiterungen öffnen
+Nach Aktualisierungen suchen
+Alle aktualisieren
+Installierte Erweiterungen
+Suche nach Aktualisierungen...
+Du hast derzeit {{count}} Erweiterung installiert.
+Du hast derzeit {{count}} Erweiterungen installiert.
+Keine Aktualisierung für Erweiterungen gefunden.
+{{count}} Erweiterung kann aktualisiert werden.
+{{count}} Erweiterungen können aktualisiert werden.
+Aktualisiere auf Version {{version}}
+Installierte Erweiterungen durchsuchen
+Installierte Erweiterungen nach Name oder Beschreibung filtern.
+Installierte Erweiterungen durchsuchen...
+Nur installierte anzeigen
+Spenden, um {{name}} zu unterstützen
+Die Entwickler der Erweiterungen sind Mitglieder unserer Community, die großartige Dinge mit Leidenschaft erstellen. Wenn du diese Erweiterung hilfreich findest, ziehe bitte in Betracht, ihre Entwicklung zu unterstützen.
+Dein Beitrag geht zu 100% an die Entwickler; Obsidian bekommt nichts davon. Die Plattform, über die deine Spende verarbeitet wird, berechnet möglicherweise eine Gebühr.
+Vielen Dank für deine großzügige Unterstützung!
+Diese Erweiterung unterstützen:
+Zeige {{pluginCount}}:
+Am häufigsten heruntergeladen
+Kürzlich veröffentlicht
+Kürzlich aktualisiert
+Alphabetisch
+Aktualisiert {{time}}
+Mobile-Werkzeugleiste
+Schnell-Aktion für Mobile konfigurieren
+Konfiguriert, welcher Befehl ausgelöst wird, wenn du von oben nach unten wischst. Derzeit wird "{{command}}" ausgeführt.
+Aktion nicht konfiguriert
+Konfigurieren
+Schnell-Aktion auswählen...
+Keine
+Optionen für die Werkzeugleiste verwalten
+Internen Link hinzufügen
+Einbettung hinzufügen
+Tag hinzufügen
+Überschrift umschalten
+Durchgestrichen umschalten
+Hervorheben umschalten
+Code umschalten
+Blockzitat umschalten
+Formeln (inline) umschalten
+Formeln (Block) umschalten
+Markdown-Link hinzufügen
+Auflistung (nicht nummeriert) umschalten
+Auflistung (nummeriert) umschalten
+Listeneintrag einziehen
+Einzug von Listeneintrag rückgängig machen
+Rückgängig
+Wiederholen
+Cursor nach oben
+Cursor nach unten
+Cursor nach links
+Cursor nach rechts
+Springe zur ersten Zeile
+Springe zur letzten Zeile
+Tastatur umschalten
+Mobile-Werkzeugleiste bearbeiten
+Hinzugefügte Optionen
+Mehr Optionen für die Werkzeugleiste
+Anhang hinzufügen
+Suchen...
+Ersetzen...
+Suche beenden
+Nächste
+Vorherige
+Alle suchen
+Ersetzen
+Alle Ersetzen
+Tippe #
+um Überschrift zu verlinken
+Tippe ^
+um Blöcke zu verlinken
+Tippe |
+um den Anzeigetext zu ändern
+Anzeigetext
+Überschrift
+Keine Übereinstimmung gefunden
+Bildgröße: {{size}}px breit
+akzeptieren
+Neue Fußnote...
+Keine Vorschläge...
+Ins Wörterbuch aufnehmen
+Link bearbeiten
+Tag bearbeiten
+Diesen Block bearbeiten
+Fußnote und Referenz löschen
+Größe zurücksetzen
+Bild löschen
+Keine Überschrift
+Überschrift {{level}}
+Als PDF exportieren
+Exportiert "{{filename}}" als PDF mit den folgenden Einstellungen.
+Seitenformat
+Dateinamen als Titel anhängen
+Querformat
+Rand
+Standard
+
+Ohne
+Verkleinern (Prozent)
+Als PDF exportieren
+Link folgen
+Link öffnen
+Tag suchen
+Nicht gefunden:
+“{{subpath}}” in {{file}} nicht gefunden
+Mit Standard-Anwendung öffnen
+Die Seitenleiste ist leer, ziehe einen Tab hierher.
+Ausklappen
+Einklappen
+Fehler beim Speichern der Datei "{{filepath}}". {{message}}.
+Erweiterung “{{plugin}}” konnte nicht geladen werden
+Beim Laden der Erweiterung “{{plugin}}” ist ein Fehler aufgetreten
+“{{filepath}}” konnte nicht geöffnet werden
+“{{href}}” konnte nicht geöffnet werden
+Keine Datei
+"{{file}}" wurde extern bearbeitet. Änderungen werden automatisch eingefügt.
+Vaults verwalten...
+Hilfe
+Einstellungen
+Zum Umordnen ziehen
+Standard-Ansicht auf Leseansicht umgeschaltet.
+Standard-Ansicht auf Bearbeitungsmodus umgeschaltet.
+Bitte installiere die Anwendung mit dem aktuellsten Installer von unserer Website neu, um diese Funktion verwenden zu können.
+Langsamer Programmstart festgestellt.
+Dieses Feature ist nur in der Desktop-App verfügbar.
+Voreinstellungen wiederherstellen
+In Zwischenablage kopieren
+Kopieren
+In Zwischenablage kopiert
+{{item}} in die Zwischenablage kopiert
+Kopieren in die Zwischenablage nicht möglich
+Filtern...
+Beim Rendern des Quelltext-Blocks ist ein Fehler aufgetreten.
+Datei "{{path}}" geöffnet
+Datei "{{name}}" nicht gefunden.
+Unbekannte URI-Aktion: {{action}}
+Löschen
+Obsidian indiziert deinen Vault...\nDies sollte nur einmal geschehen.\nManche Funktionen könnten erst nach der Indizierung verfügbar sein.
+Einige Funktionen sind möglicherweise erst nach Abschluss dieses Vorgangs verfügbar.
+Indizierung abgeschlossen.
+Dies ist ein Sandbox-Vault. \nJegliche Veränderungen an diesem Vault werden verloren gehen.
+IndexedDB ist für diese Funktion erforderlich, aber derzeit deaktiviert.
+Falls du iOS im Blockierungsmodus verwendest, schließe bitte Obsidian davon aus unter "Surfen konfigurieren" in den Blockierungsmodus-Einstellungen.
+Enter zum Erstellen
+Aktualisierung verfügbar
+Debug-Informationen
+Erfahre mehr
+Nicht jetzt
+Hinzufügen
+Verwalten
+Neuer Tab
+Werkzeugleiste ausblenden
+Dieser Tab lädt noch. Bitte versuche es später noch einmal
+
+Absatz
+Einfügen
+Link hinzufügen
+Externen Link hinzufügen
+Hinweisblock
+Horizontale Linie
+Quelltext-Block
+Mathe-Block
+Tabelle
+Fußnote
+Fett
+Quelltext
+Kommentar
+Hervorheben
+Kursiv
+Durchgestrichen
+Mathe
+Aufzählung
+Aufgabenliste
+Nummerierte Aufzählung
+Überschrift {{level}}
+Keine Überschrift
+Formatierung entfernen
+Zitat
+Leer
+Keine Datei geöffnet
+Neue Datei erzeugen
+Gehe zu Datei
+Zuletzt verwendete Dateien
+Schließen
+Schließe alle “{{id}}” Tabs ({{count}})
+Erweiterung ist nicht mehr aktiv
+Die Erweiterung, die diese Registerkarte ({{type}}) hinzugefügt hat, ist nicht mehr vorhanden
+Versionshinweise {{version}}
+Keine Versionshinweise verfügbar für {{version}}.
+Versionshinweise für {{version}} konnten nicht geladen werden.
+Veröffentlicht am {{date}}
+Neu in {{version}}
+Aktive Ansicht: Bearbeiten
+Aktive Ansicht: Lesen
+Werkzeugleiste
+Linke Seitenleiste
+Rechte Seitenleiste
+Klicken zum Bearbeiten
+Klicken zum Lesen
+{{key}} + Klicken, um in neuem Tab zu öffnen
+Drücke {{key}}+C, um den Quelltext zu kopieren
+Suchen...
+Ersetzen...
+Bearbeiten
+Entfernen
+Aus Liste entfernen
+Umbenennen
+Vorschau
+Weitere Optionen
+Schließen
+Alle schließen
+Schließe {{count}} Tab
+Schließe {{count}} Tabs
+Andere schließen
+Tabs danach schließen
+Anheften
+Anheftung aufheben
+Tab-Verlinkung aufheben
+Mit Tab verlinken...
+Quellcode-Ansicht
+Leseansicht
+Dateieigenschaften hinzufügen
+Datei löschen
+Diese Datei erstellen
+Link öffnen
+In neuem Tab öffnen
+Rechts davon öffnen
+URL kopieren
+Kopieren
+Ausschneiden
+Einfügen
+Pfad kopieren
+Bild kopieren
+als Obsidian-URL
+vom Systemstamm
+aus dem Vault-Ordner
+Als unformatierten Text einfügen
+Suche “{{selection}}”
+Alles auswählen
+Diese Überschrift umbenennen...
+Diese Block-ID umbenennen...
+In neuem Fenster öffnen
+In ein neues Fenster verschieben
+In Browser öffnen
+Tabs stapeln
+Tabs nicht mehr stapeln
+Verlinkte Ansicht öffnen
+Klick zum Ausklappen
+Klick zum Einklappen
+
+Noch nicht erstellt, auswählen zum Erstellen
+
+Lokalen Vault erstellen
+Ordner als Vault öffnen.
+Wähle einen vorhandenen Ordner mit Markdown-Dateien.
+Einen neuen Vault erstellen.
+Erstelle einen neuen Obsidian-Vault innerhalb eines Ordners.
+Mit Obsidian Sync verbinden
+Erstelle einen synchronisierten Vault mit einem bestehenden Remote-Vault.
+Name des Vaults
+Wähle einen Namen für deinen wunderbaren Vault.
+Speicherort
+Wähle einen Speicherort für deinen neuen Vault.
+Dein neuer Vault wird hier gespeichert: 
+Zeige Vault im System Explorer
+Zeige Vault im Finder
+Vault umbenennen...
+Vault-ID kopieren
+Es existiert bereits ein Vault mit diesem Namen.
+Ein Vault kann nicht in seinen eigenen Unterordner verschoben werden.
+Ein gerade geöffneter Vault kann nicht umbenannt werden.
+Umbenennen des Vaults fehlgeschlagen.
+Umbenennen des Vaults erfolgreich.
+Vault verschieben...
+Wähle einen Zielordner
+An diesem Ort existiert bereits ein Vault.
+Ein gerade geöffneter Vault kann nicht verschoben werden.
+Verschieben des Vaults fehlgeschlagen.
+Verschieben des Vaults erfolgreich.
+Von Liste entfernen
+Schnellstart
+Öffnen
+Wählen
+Verbinden
+Erstellen
+Zurück
+Der Vault-Name darf nicht leer sein.
+Der Vault-Name darf nicht mit einem Punkt enden.
+Bitte wähle einen gültigen Ordner.
+Erstellung des Vaults fehlgeschlagen.
+Der Vault konnte unter dem angegebenen Ort nicht erstellt werden. Bitte prüfe den Speicherort und die Berechtigung.
+Öffnen fehlgeschlagen.
+Der Vault ist gerade geöffnet und kann nicht entfernt werden.
+Hilfe
+E-Mail
+Deine E-Mail...
+Passwort
+Dein Passwort...
+Anmelden
+Einrichten
+Erstelle einen synchronisierten Vault auf diesem Gerät.
+Dies ist ein Remote-Vault, der dir gehört.
+Dies ist ein Remote-Vault, der mit dir geteilt wurde.
+Deine Gedanken gehören dir.
+synchronisiert
+nicht synchronisiert
+Keine
+Empfohlen
+Obsidian speichert Notizen auf deinem Gerät, so dass du schnell und privat darauf zugreifen kannst, auch offline.\nDeine Daten werden in einem sicheren lokalen Ordner, dem sogenannten **Vault**, gespeichert.
+Vault erstellen
+Meinen bestehenden Vault verwenden
+Um auf deine Notizen auf anderen Geräten zugreifen zu können, musst du die Synchronisierung einrichten.
+Da Obsidian die Notizen auf deinem Geräten speichert, musst du die Synchronisierung einrichten, wenn du auf deine Notizen auf einem anderen Telefon oder Computer zugreifen möchten.\nDu kannst die Synchronisierung jetzt einrichten oder einfach mit dem Schreiben beginnen und sie später einrichten.
+Sync einrichten
+Vorerst überspringen
+Überspringen
+Wähle einen Namen für deinen Vault.
+Vault erstellen
+Sync einrichten
+Erstelle einen synchronisierten Vault unter deinem Obsidian-Konto, damit du von anderen Geräten aus auf deine Daten zugreifen kannst
+Sync-Verschlüsselung
+Ende-zu-Ende-Verschlüsselung
+Bietet die stärkste Sicherheit, aber erfordert, dass du dein Verschlüsselungspasswort sicher aufbewahrst.
+Standardverschlüsselung
+Verwendet einen von Obsidian verwalteten Schlüssel, um deine Daten bei der Übertragung und auf unseren Servern zu schützen.
+Sync-Einstellungen
+Möchtest du bestimmte Ordner oder Dateien bei der Synchronisierung mit diesem Gerät ausschließen?
+Synchronisierung starten
+Erstelle ein Obsidian-Konto oder melde dich an
+Registrieren
+Anmelden
+Email erneut versenden
+Du hast bestehende Sync-Vaults
+Möchtest du einen neuen Vault erstellen oder eine Verbindung zu einem bestehenden synchronisierten Vault herstellen?
+Neuen Sync-Vault erstellen
+Einen vorhandenen Vault auswählen
+Abmelden
+Passwort vergessen
+Vault-Name
+Standort des Vaults
+Gerätespeicher
+Ermöglicht anderen Apps den Zugriff auf Obsidian-Daten.
+Erfordert zusätzliche Berechtigungen.
+App-Speicher
+Deine Daten sind für andere Apps nicht zugänglich.
+Android löscht deine Daten, wenn du Obsidian deinstallierst.
+Dein neuer Vault wird in {{vaultLocation}} platziert
+
+Wähle eine Serverregion in deiner Nähe, um die Synchronisierung zu beschleunigen.
+Verschlüsselungsschlüssel
+Dieses Passwort kann später nicht mehr geändert werden. Wenn du dein Kennwort vergisst, sind alle Remote-Daten auf den Sync-Servern für immer unzugänglich.
+Mein Vault
+Automatisch
+Vault auswählen
+Dein Konto **{{email}}** verfügt über bestehende Vaults, mit denen du dich verbinden kannst.
+Melden dich bei deinem Obsidian-Konto an
+Passwort vergessen
+Passwort zurücksetzen
+Wir haben eine E-Mail an {{email}} gesendet, um dein Passwort zurückzusetzen.
+Wähle, wie du deine Notizen synchronisieren möchten
+Um Obsidian auf deinen Geräten zu verwenden, musst du deine Daten synchronisieren.
+Nahtlos über alle Geräte und Betriebssysteme hinweg.
+Gesichert mit dem stärksten Ende-zu-Ende-Verschlüsselungsstandard.
+Erfordert ein Obsidian-Konto.
+Nur für iOS und macOS.
+Standardmäßig nicht verschlüsselt.
+Erfordert Drittanbieter-Erweiterungen oder Werkzeuge.
+Möglicherweise nicht standardmäßig verschlüsselt.
+Obsidian Sync verwenden
+iCloud verwenden
+Drittanbieter-Synchronisierung verwenden
+Andere Sync-Methoden
+Unterstützte Sync-Methoden verwenden
+Wo befindet sich dein Vault?
+Andere
+Drittanbieter-Synchronisierung
+Auf diesem Gerät
+Mit iCloud verbinden
+Mit anderem Synchronisierungsdienst verbinden
+Mit Obsidian Sync verbinden
+Ordner auswählen
+Andere Sync-Methoden
+Obsidian unterstützt offiziell zwei Synchronisierungsmethoden: **Obsidian Sync** und **iCloud**.\nDa Obsidian dir jedoch die Kontrolle über deine Daten gibt, kannst du auch andere Synchronisierungsoptionen verwenden.\nZu diesen Optionen gehören Plugins von Drittanbietern und andere Tools, die unter Umständen eine erweiterte Einrichtung erfordern.\nUm eine alternative Synchronisierungsmethode zu verwenden, **erstelle einen Vault** und folge den Anweisungen des Plugins oder des Drittanbieters für die Synchronisierung.
+E-Mail eingeben
+Deine E-Mail ist erforderlich, um ein Obsidian-Konto zu erstellen.
+Gib deinen Namen und dein Passwort ein
+Verbindung mit Obsidian Sync
+Du solltest in Kürze eine E-Mail an **{{email}}** mit Anweisungen zur Verbindung mit Obsidian Sync erhalten.
+Dein iCloud-Datenspeicher wurde nicht erkannt. Dies könnte folgende Ursachen haben:
+Dein Vault befindet sich in einem anderen iCloud-Konto als dem, mit dem du derzeit auf diesem Gerät angemeldet bist.
+Dein Vault ist nicht im Obsidian-Ordner der obersten Ebene deines iCloud-Laufwerks gespeichert.
+iCloud wird nicht unterstützt
+Die iCloud-Synchronisierung ist nur auf Apple-Geräten verfügbar. Wenn dein Vault derzeit über iCloud synchronisiert wird, erfährst du, wie du deinen Vault auf einen anderen Synchronisierungsdienst migrieren kannst.
+Dateizugriff erlauben
+Du wirst angemeldet...
+Vault-Name ist erforderlich
+Neue Bestätigungsmail gesendet.
+E-Mail kann nicht erneut gesendet werden.
+Vault-Speicherort muss ein Ordner sein.
+Willkommen
+Das ist dein neuer *Vault*.\n\nNotiere dir etwas oder, [[Neuer Link|erstelle einen neuen Link]], oder probiere [die Importer-Erweiterung aus](https://help.obsidian.md/Plugins/Importer)!\n\nWenn du soweit bist kannst du diese Seite löschen und den Vault ganz nach deinen Wünschen und Vorstellungen gestalten.
+Link hier einfügen
+Links hier einfügen
+Nach "{{folder}}" verschieben
+Diese Datei mit Stern markieren
+Diese Dateien mit Stern markieren
+In diesem Tab öffnen
+Als neuen Tab öffnen
+Maximieren
+Minimieren
+Kleines Fenster wiederherstellen
+Fenster schließen
+Zurück
+Weiter
+Obsidian wird geladen...
+Beim Laden von Obsidian ist ein Fehler aufgetreten.
+App neu laden
+App im abgesicherten Modus neu laden
+Anderen Vault öffnen
+Erweiterungen laden...
+Plugin “{{plugin}}” benötigt lange zum Laden. 
+Vault wird geladen...
+Laden des Vaults fehlgeschlagen: 
+Cache wird geladen...
+Workspace wird geladen...
+In Vault importieren
+Text zur Datei hinzufügen:
+Wähle eine Datei zum Einfügen
+Füge Text in {{filename}} ein
+Füge Link in {{filename}} ein
+Tab Übersicht anzeigen
+Importiere...
+Import erfolgreich
+Fehler beim Import von {{filename}}
+Zum Verlassen erneut zurück drücken.
+
+Bist du zufrieden mit Obsidian? Unterstütze uns, indem du die Anwendung bewertest.
+Bewerte die Anwendung
+Schließen
+Konfigurationsdateien wurden aus iCloud aktualisiert, Neuladen erforderlich
+Neu laden
+Offizielle Hilfe-Seite
+Lies die offizielle Dokumentation von Obsidian, verfügbar in mehreren Sprachen.
+Besuchen
+Discord Chat
+Discord ist der beste Ort, um mit anderen erfahrenen Obsidian-Anwendern auf der ganzen Welt zu chatten.
+Beitreten
+Offizielles Forum
+Helft Euch gegenseitig, schlagt neue Features vor, meldet Bugs und führt ausführliche Diskussionen über Knowledge-Management.
+Sandbox-Vault
+Spiele und experimentiere mit verschiedenen Features. Bitte beachte, dass deine Veränderungen an diesem Vault nicht gespeichert werden.
+Aktuelle Datei speichern
+Anhänge für die aktuelle Datei herunterladen
+Link unter Cursor folgen
+Link unter Cursor in neuem Tab öffnen
+Link unter Cursor rechts davon öffnen
+Link unter Cursor in neuem Fenster öffnen
+Obere Tabgruppe fokussieren
+Untere Tabgruppe fokussieren
+Linke Tabgruppe fokussieren
+Rechte Tabgruppe fokussieren
+Pin umschalten
+Rechts teilen
+Unten teilen
+Umschalten zwischen Stapel-/Tab-Ansicht
+Lesbare Zeilenlänge umschalten
+Zeilennummern umschalten
+Zurück navigieren
+Vorwärts navigieren
+Hell-/Dunkelmodus umschalten
+Thema wechseln...
+Vault wechseln...
+Vault öffnen...
+Vaults verwalten
+In geöffneter Datei suchen
+In geöffneter Datei suchen & ersetzen
+Dateieigenschaften hinzufügen
+Name (A bis Z)
+Name (Z bis A)
+Alias hinzufügen
+Dateieigenschaften löschen
+Einstellungen öffnen
+Hilfe öffnen
+Umschalten zwischen Editor/Leseansicht
+Umschalten zwischen Live-Vorschau/Quellcode-Ansicht
+Aktuelle Datei löschen
+Neuer Tab
+Neues Fenster
+Papierkorb anzeigen
+Schließe alle Tabs
+Schließe aktiven Tab
+Andere in Tab-Gruppe schließen
+Schließe andere Tabs
+Diese Tab-Gruppe schließen
+Linke Seitenleiste umschalten
+Werkzeugleiste umschalten
+Rechte Seitenleiste umschalten
+Standardmodus für neue Tabs umschalten
+Cursor darüber einfügen
+Cursor darunter einfügen
+Editor fokussieren
+Eigenschaften der aktiven Notiz einklappen
+Aktive Zeile einklappen
+Alle Überschriften und Listen einklappen
+Alle Überschriften und Listen ausklappen
+Noch mehr einklappen
+Weniger einklappen
+Mit Zeile darüber tauschen
+Mit Zeile darunter tauschen
+Überschrift entfernen
+Als Überschrift {{level}} setzen
+Tausche fett für Auswahl
+Tausche kursiv für Auswahl
+Tausche hervorgehoben für Auswahl
+Kommentare für Auswahl umschalten
+Formatierung löschen
+Link einfügen
+Rechtschreibprüfung umschalten
+Absatz löschen
+Status der Checkliste umschalten
+Zwischen Checkbox/Listenpunkt umschalten
+Callout einfügen
+Quelltext-Block einfügen
+Mathe-Block einfügen
+Horizontale Linie einfügen
+Tabelle einfügen
+Fußnote einfügen
+Dateinamen ändern
+Dateipfad kopieren
+Aktuellen Dateipfad vom Systemstamm kopieren
+Obsidian URL kopieren
+Nach PDF exportieren
+Anwendung neu laden ohne zu speichern
+Tab wieder öffnen
+Zeige Kontextmenü unter dem Cursor
+Zeige Debug-Informationen
+Sandbox-Vault öffnen
+Fenster immer im Vordergrund halten
+Vergrößern
+Verkleinern
+Vergrößerung zurücksetzen
+Editor/Vorschau Modus wechseln
+Aktiven Tab in neues Fenster verschieben
+Aktiven Tab in neuem Fenster öffnen
+Aktive Datei umbenennen
+Zum vorherigen Tab gehen
+Zum nächsten Tab gehen
+Zum letzten Tab gehen
+Zum #{{n}} Tab gehen
+Versionshinweise anzeigen
+Das betrifft {{links}} in {{files}}.
+Aktualisiert {{links}} in {{files}}.
+Links aktualisieren
+Möchtest du interne Links aktualisieren, die auf diese Datei verweisen?
+Immer aktualisieren
+Nur dieses eine Mal
+Nicht aktualisieren
+Möchtest du wirklich "{{filename}}" löschen?
+Die Datei wird in den Papierkorb deines Systems verschoben.
+Die Datei wird in deinen Obsidian Papierkorb verschoben, der sich im versteckten Ordner ".trash" in deinem Vault befindet.
+Die Datei wird dauerhaft gelöscht.
+Dieser Ordner ist nicht leer.
+Wenn du fortfährst, werden alle Dateien in diesem Ordner gelöscht.
+Ordner löschen
+Löschen
+Nicht erneut fragen
+Es existiert {{count}} Link, der auf diese Datei verweist.
+Es existieren {{count}} Links, die auf diese Datei verweisen.
+Datei löschen
+Anhänge herunterladen
+Es gibt keine externen Anhänge in dieser Notiz.
+{{count}} Anhang heruntergeladen.
+{{count}} Anhänge heruntergeladen.
+{{count}} Datei aktualisiert.
+{{count}} Dateien aktualisiert.
+Änderungen an {{count}} Datei rückgängig gemacht.
+Änderungen an {{count}} Dateien rückgängig gemacht.
+Keine Internetverbindung
+Wird geladen...
+Verwalten
+Anzeigen
+Bestätigen
+Abbrechen
+Überspringen
+Herunterladen
+Fertig
+Speichern
+Stopp
+Ändern
+Fortsetzen
+Auswählen
+Wiederholen
+Aktualisieren
+Rückgängig
+PDF wird vorbereitet...
+Datei umbenennen
+Dateiname
+Neuer Name
+Fehler
+Ausgewählt
+Datei erfolgreich umbenannt.
+Die Dateien konnten nicht zusammengeführt werden: {{message}}
+Die Datei oder der Pfad “{{path}}” gibt's nicht.
+Überschrift darf nicht leer sein
+Block ID darf nicht leer sein
+Die Block ID darf nur alphanumerische Zeichen oder einen Bindestrich enthalten.
+Überschrift umbenennen
+Block ID umbenennen
+Dateianhänge löschen?
+Dieser Anhang wird in keiner Notiz mehr verwendet. Möchten Sie ihn löschen?
+Diese {{count}} Anhänge werden in keiner Notiz mehr verwendet. Möchten Sie sie löschen?
+Dateibaum
+Galerie
+Notiz erstellen
+Neue Notiz rechts
+Neuer Tab
+Neues Fenster
+Schnell öffnen...
+Vault öffnen...
+Tab schließen
+Fenster schließen
+Suche
+Ersetze
+Hinweisblock
+Markdown-Link
+Verlinken
+Überschrift {{level}}
+Keine Überschrift
+Zitat
+Als PDF Exportieren
+Anhang einfügen...
+Quelltext-Block
+Mathe-Block
+Tabelle
+Fußnote
+Inline-Titel
+Zeilennummern
+Auflistung
+Nummerierte Liste
+Aufgabenliste
+Fett
+Quelltext
+Kommentar
+Kursiv
+Mathe
+Hervorgehoben
+Durchgestrichen
+Kommentar
+Aus-/Einklappen
+Alle einklappen
+Alle ausklappen
+Noch mehr einklappen
+Weniger einklappen
+Quellcode-Ansicht
+Leseansicht
+Debug-Informationen anzeigen
+Sandbox-Vault öffnen
+In neues Fenster verschieben
+Zurück
+Vorwärts
+Linke Seitenleiste umschalten
+Rechte Seitenleiste umschalten
+Werkzeugleiste
+Rechts teilen
+Unten teilen
+Neuigkeiten
+Erweiterungen
+Dateiexplorer
+Zeige alle Dateien in deinem Vault.
+Dateiexplorer öffnen
+Dateiexplorer zeigen
+Neue Notiz erstellen
+Neuen Ordner erstellen
+Neue Notiz im aktiven Tab erstellen
+Notiz rechts erstellen
+Aktive Datei anzeigen
+Alles einklappen
+Alles ausklappen
+Neue Notiz
+Neuer Ordner
+Sortierreihenfolge ändern
+Zeige Datei im Dateiexplorer
+Aktive Datei im Dateiexplorer zeigen
+Kopie der aktiven Datei erstellen
+Aktive Datei duplizieren
+Datei in anderen Ordner verschieben
+Neuer Ordner mit Selektion ({{count}} Eintrag)
+Neuer Ordner mit Selektion ({{count}} Einträge)
+Datei verschieben nach...
+Ordner verschieben nach...
+Verschiebe {{count}} Elemente nach...
+Ordnernamen eingeben
+Keine Ordner gefunden.
+zum Navigieren
+zum Verschieben
+zum Erstellen
+zum Abbrechen
+Dateiname (A - Z)
+Dateiname (Z - A)
+Letzte Bearbeitung (neu - alt)
+Letzte Bearbeitung (alt - neu)
+Erstellungszeitpunkt (alt - neu)
+Erstellungszeitpunkt (neu - alt)
+Neue Notiz
+Neuer Ordner
+Umbenennen
+Löschen
+Kopie erstellen
+Duplizieren
+Dateiname darf keines der folgenden Symbole enthalten: 
+Links werden nicht funktionieren, wenn der Dateiname eines der folgenden Symbole enthält: 
+Es existiert bereits eine Datei mit demselben Namen
+Der Dateiname darf nicht leer sein.
+Der Dateiname darf nicht mit einem Punkt beginnen.
+Zuletzt bearbeitet: {{time}}
+Erstellt: {{time}}
+Unbenannt
+Unbenannt
+Anhänge werden von nun an in diesem Pfad "{{path}}" gespeichert.
+Suchen
+Sucht in allen Notizen nach einem Stichwort.
+In allen Dateien suchen
+Ergebnisse einklappen
+Großschreibung beachten
+Suchbegriff erklären
+Mehr Kontext anzeigen
+{{count}} Ergebnis
+{{count}} Ergebnisse
+Sucheinstellungen
+Suchbegriff eingeben...
+Suchbegriff stimmt überein: 
+RegEx stimmt überein: 
+Enthält exakt: 
+Größer als: 
+Kleiner als: 
+Ist wahr
+Ist falsch
+Ist leer
+Enthält Eigenschaften:
+Enthält alle: 
+Enthält eins von: 
+Ohne: 
+Großschreibung beachten
+Großschreibung ignorieren
+Dateipfad stimmt überein: 
+Dateiname stimmt überein: 
+Dateiinhalt stimmt überein: 
+Aufgabe stimmt überein: 
+Aufgabe (zu erledigen) stimmt überein: 
+Aufgabe (erledigt) stimmt überein: 
+Zeile stimmt überein: 
+Block stimmt überein: 
+Abschnitt stimmt überein: 
+Tag stimmt überein: 
+Keine Übereinstimmungen gefunden.
+... und {{count}} weitere Übereinstimmung.
+... und {{count}} weitere Übereinstimmungen.
+Suchergebnisse kopieren
+Kopieren
+Suchergebnisse in die Zwischenablage kopiert.
+Zeige Pfad
+Zeigt den kompletten Pfad der Datei an, anstelle nur des Dateinamens.
+Art der Links
+Optional: Wandelt jedes Suchergebnis in einen Link um.
+Keine
+Wiki-Link
+Markdown-Link
+Listensymbol
+Optional: Fügt vor jedem Suchergebnis ein Listensymbol ein.
+Keines
+Bindestrich (-)
+Sternchen (*)
+Nummeriert
+Suche leeren
+Suchoptionen
+Eigenschaften
+
+Mehr lesen
+Verlauf
+Suchverlauf löschen
+Pfad stimmt überein
+Dateiname stimmt überein
+Tag stimmt überein
+suche Begriff in der gleichen Zeile
+suche Begriff unter der gleichen Überschrift
+Eigenschaft stimmt überein
+Suche nach "{{keyword}}"
+Im Ordner suchen
+Schnellauswahl
+Ermöglicht das schnelle Wechseln zu einer beliebigen Notiz mittels Tastenkombination. Strg/Cmd+O, um den Dialog anzuzeigen.
+Schnellauswahl
+Schnellauswahl öffnen
+navigieren
+öffnen
+um in neuem Tab zu öffnen
+um rechts davon zu öffnen
+erstellen
+abbrechen
+auswählen
+Keine Notiz gefunden. Eingabetaste, um eine neue Notiz zu erstellen.
+Gib einen Namen ein, um zu einer Notiz zu wechseln oder diese zu erstellen...
+Eingabetaste, um eine neue Notiz mit diesem Namen zu erstellen
+Noch nicht erstellt, auswählen zum Erstellen
+Nur Existierende anzeigen
+Wähle aus, ob Links zu noch nicht erstellten Dateien angezeigt werden.
+Anhänge anzeigen
+Zeigt angehängte Dateien wie Bilder, Videos und PDFs.
+Alle Dateitypen zeigen
+Zeigt alle Dateitypen an, inklusive solcher, die Obsidian nicht öffnen kann. Die Datei wird mit der Standardanwendung geöffnet.
+Graph-Ansicht
+Zeigt Beziehungen zwischen deinen Notizen in einer graphischen Übersicht.
+Graph-Ansicht öffnen
+Lokalen Graphen öffnen
+Kopiere Bildschirminhalt
+Graph von {{displayText}}
+Filter
+Suche Dateien...
+Tiefe
+Zeige Notizen, die diese Anzahl von Links entfernt sind.
+Benachbarte Knoten
+Zeige Links zwischen benachbarten Knoten.
+Ausgehende Links
+Zeige Links zu anderen Dateien
+Eingehende Links
+Zeige Links von anderen Dateien
+
+Tags sind mit den Dateien verknüpft, die sie beinhalten.
+Anhänge
+Zeige Dateien, die keine Notizen sind.
+Nur existierende Dateien zeigen
+Wenn aktiviert, werden Links zu nicht existierenden Dateien ausgeblendet.
+Verwaiste Dateien
+Zeige Dateien, die nicht mit anderen Dateien verlinkt sind.
+Anzeige
+Pfeile
+Zeige Pfeile beim Vergrößern
+Grenze Text-Transparenz
+Knotengröße
+Kantenstärke
+Kräfte
+Zentrierkraft
+Linkkraft
+Linkabstand
+Abstoßungskraft
+Graph-Einstellungen öffnen
+Bildschirminhalt in die Zwischenablage kopiert.
+Gruppen
+Suchbegriff eingeben...
+Gruppe löschen
+Neue Gruppe
+Klicke, um Farbe zu ändern\nZiehe, um Gruppen neu zu sortieren
+Zeitraffer-Animation des Graphen beginnen
+Zeitraffer-Animation starten
+Animieren
+Rückverweise
+Zeigt eine Übersicht der Rückverweise auf die aktive Notiz oder die Anzahl der Rückverweise in der Statusleiste.
+Rückverweise öffnen
+Rückverweise anzeigen
+Rückverweise für die aktive Datei öffnen
+Rückverweise im Dokument ein-/ausblenden
+Rückverweise im Dokument
+Verlinkte Erwähnungen
+Keine Rückverweise gefunden.
+Nicht verlinkte Erwähnungen
+Suchfilter anzeigen
+Verlinken
+Rückverweise auf {{displayText}}
+Keine nicht verlinkten Erwähnungen gefunden.
+
+Rückverweise am Ende einer Notiz anzeigen
+Zeige Rückverweise in Notizen immer an, wenn neue Tabs geöffnet werden.
+Ausgehende Links
+Zeigt ausgehende Links und erkennt nicht verlinkte Erwähnungen anderer Notizen in der aktiven Notiz.
+Ausgehende Links öffnen
+Übersicht der ausgehenden Links anzeigen
+Ausgehende Links für die aktive Datei öffnen
+Ausgehende Links von {{displayText}} öffnen
+
+Keine Links gefunden.
+Nicht verlinkte Erwähnungen
+Diese Datei verlinken
+Noch nicht erstellt
+Tag-Übersicht
+
+Zeigt alle deine Tags und die Anzahl der Vorkommen.
+Tag-Übersicht anzeigen
+Keine Tags gefunden.
+Tag-Name (A - Z)
+Tag-Name (Z - A)
+Häufigkeit (absteigend)
+Häufigkeit (aufsteigend)
+Verschachtelte Tags anzeigen
+Alle einklappen
+Alle ausklappen
+Fußnoten-Ansicht
+Fußnoten
+Liste Fußnoten in der aktiven Notiz auf.
+Zeige Fußnoten
+Keine Fußnoten gefunden.
+Eigenschaften-Ansicht
+Dateieigenschaften anzeigen.
+Alle Eigenschaften
+Dateieigenschaften
+Dateieigenschaften von {{displayText}}
+Alle Eigenschaften anzeigen
+Zeige Dateieigenschaften
+Eigenschaft löschen
+Eigenschaften löschen
+Automatisch
+Automatisch ({{type}})
+Keine Eigenschaften gefunden.
+Ungültige Eigenschaften.
+Eigenschaft (A bis Z)
+Eigenschaft (Z bis A)
+Häufigkeit (absteigend)
+Häufigkeit (aufsteigend)
+Eigenschaft “{{oldKey}}” mit “{{newKey}}” zusammenführen?
+Falls es zu Konflikten beim Zusammenführen kommt, werden die Werte von “{{oldKey}}” übernommen oder zusammengeführt.
+Alle einklappen
+Alle ausklappen
+Dateieigenschaften öffnen
+Tagesnotiz öffnen
+Seitenvorschau
+Vorschau der Notiz während der Mauszeiger über einem internen Link schwebt. Strg/Cmd + Schweben im Bearbeitungsmodus.
+“{{linktext}}” konnte nicht gefunden werden.
+"{{linktext}}" ist noch nicht erstellt. Klicken zum Erstellen.
+Fußnote {{id}} nicht gefunden. Klicken zum Erstellen.
+Editor
+Vorschau
+Suche, Rückverweise und ausgehende Links
+Register
+Einschalten, um Seitenvorschau beim Schweben mit dem Mauszeiger nur bei gedrückter {{key}}-Taste zu aktivieren.
+Lesezeichen
+Lesezeichen für häufig verwendete Dateien und Suchvorgänge.
+Zeige Lesezeichen
+Alle einklappen
+Lesezeichen für aktiven Tab setzen...
+Neue Gruppe von Lesezeichen
+Lesezeichen setzen...
+Lesezeichen hinzufügen
+Lesezeichen bearbeiten
+Lesezeichen für Block unter dem Cursor...
+Lesezeichen für Überschrift unter Cursor...
+Lesezeichen für aktuelle Suche...
+Lesezeichen für aktive Datei entfernen
+Lesezeichen für {{count}} Tab erstellen...
+Lesezeichen für {{count}} Tabs erstellen...
+Lesezeichen für alle Tabs...
+Lesezeichen für diesen Graphen...
+Lesezeichen
+Als Lesezeichen gesetzt
+{{count}} Lesezeichen
+{{count}} Lesezeichen
+Keine Lesezeichen gefunden
+Lesezeichen konnten nicht geladen werden.
+Die Datendatei ist korrupt.
+Unbenannte Gruppe
+Unbenannter Graph
+Bearbeiten...
+Entfernen
+Umbenennen
+Lesezeichen für diesen Block setzen...
+Lesezeichen für diese Überschrift setzen...
+Keine Suchabfrage für ein Lesezeichen gefunden.
+Pfad
+Abfrage
+Titel
+Lesezeichen-Gruppe
+Lesezeichen
+Benutzerdefiniertes CSS
+Liest und wendet „obsidian.css“ im Vault-Ordner an.
+Community-Themen
+Community-Themen werden geladen...
+Filtern...
+Nur dunkle Themen
+Nur helle Themen
+Anwenden
+Nicht mehr anwenden
+Installieren und anwenden
+Aktualisieren
+Dieses Thema hat keine README-Datei.
+Thema entfernen
+Auf GitHub besuchen
+Die Community-Themen konnten nicht geladen werden. Bitte überprüfe deine Netzwerkverbindung.
+Du verwendest jetzt {{title}} als dein Thema.
+Das Thema {{title}} wurde gelöscht.
+Das Thema {{title}} wurde aktualisiert.
+Installiert
+Alte Version
+Alle aktualisieren
+Laden der Community-Themen fehlgeschlagen.
+Keine Themen-Aktualisierungen gefunden.
+{{count}} Thema kann aktualisiert werden.
+{{count}} Themen können aktualisiert werden.
+Installation des Themas "{{name}}" fehlgeschlagen.
+Thema "{{name}}" wurde erfolgreich installiert.
+Thema "{{name}}" wird installiert...
+Zeige {{themeCount}}:
+Aktualisierung verfügbar
+Befehlspalette
+Ermöglicht die schnelle Eingabe eines Befehls. Drücke Strg/Cmd+P und beginne zu tippen, um eine Aktion auszuführen.
+Befehlspalette öffnen
+zum Navigieren
+zum Verwenden
+zum Schließen
+Keine Befehle gefunden.
+Gib einen Befehl ein...
+Angeheftete Befehle
+Importprogramm für Markdown Format
+Konvertiert Markdown aus anderen Anwendungen in das Obsidian Format.
+Markdown Importprogramm öffnen
+Korrekturregel für Roam Research Kategorien
+Konvertiert "#tag" und "#[[tag]]" zu "[[tag]]".
+Korrekturregel für Roam Research Hervorhebung
+Konvertiert "^^highlight^^" zu "==highlight==".
+Konvertierer für Roam Research TODO
+Konvertiert "{{[[TODO]]}}" zu "[ ]".
+Korrekturregel für Bear Hervorhebung
+Konvertiert "::highlight::" zu "==highlight==".
+Korrekturregel für Zettelkasten-Links
+Konvertiert "[[UID]]" Links in vollständige Links: "[[UID Dateiname]]".
+Erweiterte Korrekturregel für Zettelkasten-Links
+Konvertiert "[[UID]]" in erweiterte, vollständige Links: "[[UID Dateiname|Dateiname]]".
+Frontmatter-Migration
+Frontmatter Tags, Aliasse und CSS-Klassen in das für Obsidian v1.9+ zwingend erforderliche Format umwandeln.
+Warnung: Das Importprogramm wird alle Dateien im Vault konvertierten, nicht nur die aktive Datei.
+Deine Dateien werden überschrieben. Erstelle vor der Konvertierung eine Sicherungskopie deines Vaults.
+Konvertierung starten
+Anhalten
+Zurück
+Fertig
+Konvertierung läuft...
+Konvertierung wird abgebrochen...
+Erledigt!
+Verarbeitete Dateien
+Geänderte Dateien
+Summe Ersetzungen
+Fehlgeschlagen
+Tägliche Notizen
+Öffne die heutige Tagesnotiz oder erstelle eine, wenn sie nicht vorhanden ist.
+Heute
+Heutige Notiz öffnen
+Vorherige Tagesnotiz öffnen
+Nächste Tagesnotiz öffnen
+Text in Tagesnotiz einfügen
+Link in Tagesnotiz einfügen
+Tägliche Notiz konnte nicht erstellt werden. "{{format}}" ist kein gültiges Format.
+Tägliche Notiz konnte nicht erstellt werden. Ordner "{{folderOption}}" wurde nicht gefunden.
+Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei "{{template}}" wurde nicht gefunden.
+Es gibt keine vorherige Tagesnotiz.
+Es gibt keine nächste Tagesnotiz.
+Datumsformat
+Wähle aus, wie tägliche Notizen in deinem Vault benannt werden.
+Benutzerdefiniertes Format
+Benutzerdefiniert
+Ungültiges Datumsformat
+Ordner für Tägliche Notiz nicht gefunden.
+Weitere Syntax findest du unter: 
+Format-Referenz
+So wird es aussehen: 
+Speicherort für neue Tagesnotizen
+Neue tägliche Notizen werden hier gespeichert.
+Speicherort der Vorlagendatei
+Wähle eine Datei, die als Vorlage verwendet werden soll.
+Eindeutige Notizen
+Erstelle eindeutige Notizen mit einzigartigen Zeitstempeln im Namen, geeignet für Methoden wie den Zettelkasten.
+Eindeutig
+Neue eindeutige Notiz erstellen
+Neue eindeutige Notiz
+Eindeutigen internen Link hinzufügen“
+Speicherort für neue eindeutige Notizen
+Neue eindeutige Notizen werden hier gespeichert.
+Eindeutige Notiz konnte nicht erstellt werden. Ordner "{{folderOption}}" nicht gefunden.
+Speicherort der Vorlagendatei
+Wähle eine Datei, die als Vorlage verwendet werden soll.
+Beispiel: ordner1/notiz
+Eindeutiges Zeitstempelformat
+Eindeutige Notiz konnte nicht erstellt werden. Vorlagendatei "{{template}}" nicht gefunden.
+Eindeutige Notiz mit dem Format "{{format}}" konnte nicht erstellt werden.
+Zufällige Notiz
+Öffnet eine zufällige Notiz. Nützlich für die Überprüfung und Wiederentdeckung.
+Zufall
+Zufällige Notiz öffnen
+Gliederung
+Zeigt ein Inhaltsverzeichnis der aktiven Notiz.
+Gliederung öffnen
+Gliederung anzeigen
+Gliederung für die aktive Notiz öffnen
+Gliederung von {{displayText}}
+Keine Überschriften gefunden.
+Automatisch zum aktiven Abschnitt scrollen
+Anzahl der Wörter
+Zeigt die Anzahl der Wörter in der Statusleiste an.
+Präsentation
+Ermöglicht die Präsentation mit Markdown. Verwende "---", um Folien zu trennen.
+Präsentation starten
+Audio-Rekorder
+Zeichne Audio-Notizen auf und speichere sie als Anhang.
+Audioaufzeichnung starten
+Audioaufzeichnung stoppen
+Audioaufzeichnung starten/stoppen
+Der Zugriff aufs Mikrofon wurde verweigert. Aktiviere den Zugriff über die Einstellungen.
+Bitte erlaube den Zugriff aufs Mikrofon, um die Aufnahme zu starten.
+Es ist kein Mikrofon angeschlossen.
+Mit Standard-Anwendung öffnen
+Fügt eine Schaltfläche hinzu, um die aktive Datei mit der Standard-Anwendung zu öffnen.
+Mit Standard-Anwendung öffnen
+Teilen
+Im Ordner anzeigen
+Im Finder anzeigen
+Vorlagen
+Ermöglicht das Einfügen von Vorlageinhalten aus Vorlagen in einem Ordner.
+Vorlage einfügen
+Aktuelles Datum einfügen
+Aktuelle Zeit einfügen
+Speicherort für Vorlagen
+Dateien in diesem Ordner werden als Vorlagen verfügbar sein.
+Datumsformat
+{{date}} in der Vorlage wird mit dem aktuellen Wert ersetzt.
+Du kannst auch {{date:YYYY-MM-DD}} verwenden, um das Format einmalig zu überschreiben.
+Zeitformat
+{{time}} in der Vorlage wird mit dem aktuellen Wert ersetzt.
+Du kannst auch {{time:HH:mm}} verwenden, um das Format einmalig zu überschreiben.
+zum Navigieren
+zum Einfügen der Vorlage
+zum Abbrechen
+Keine Vorlagen gefunden
+Es können keine Vorlagen angezeigt werden. Der Vorlagenordner ist ungültig.
+Es können keine Vorlagen angezeigt werden. Ordner "{{folderOption}}" wurde nicht gefunden.
+Vorlage konnte nicht eingefügt werden, da die Eigenschaften in der Vorlagendatei nicht eingelesen werden konnten.
+Es können keine Vorlagen angezeigt werden. Kein Vorlagenordner konfiguriert.
+Namen der Vorlage eingeben...
+Transparenzeffekt
+Aktiviert den Durchschein-Effekt, um ein Gefühl von Tiefe zu erzeugen. Am effektivsten im Dunklen Modus. Wird von Linux nicht unterstützt.
+Slash-Befehle
+Aktiviere Befehle im Bearbeitungsmodus, indem du einen Schrägstrich eingibst.
+Bearbeitungsmodus in Statusleiste anzeigen
+Lässt dich den Modus zum Bearbeiten über eine Schaltfläche in der Statusleiste ändern.
+Lesen
+Quellcode-Ansicht
+Live-Vorschau
+Veröffentlichen
+Ermöglicht das Veröffentlichen deiner Notizen mittels Obsidian Publish.
+Änderungen veröffentlichen
+Aktive Datei veröffentlichen
+Eine Internetverbindung wird benötigt, um Änderungen zu veröffentlichen.
+Obsidian Publish ist ein optionaler, kostenpflichtiger Service, der es dir ermöglicht, deine Notizen direkt aus Obsidian zu veröffentlichen..
+Um Notizen zu veröffentlichen, melde dich bitte an oder erstelle ein neues Obsidian-Konto.
+Du hast den Obsidian Publish Service noch nicht aktiviert.
+Erwerben
+Webseiten verwalten
+Du hast keine Websites.
+Auswählen
+Website-ID bearbeiten
+Website löschen
+Bist du sicher, dass du diese Website löschen möchtest?
+Das wird deine Website sofort und unwiderruflich löschen.
+Bestätige das Löschen der Website "{{site}}"
+Website-ID
+Deine Website wird unter https://publish.obsidian.md/{site id} zu finden sein. Du kannst das später ändern. Nur Kleinbuchstaben, Ziffern und Bindestriche sind erlaubt.
+Wähle eine Website-ID
+Erstellen
+Website-ID darf nur Kleinbuchstaben, Ziffern und Bindestriche enthalten.
+Diese Website-ID wird bereits verwendet, bitte versuche eine andere.
+Es gab ein Problem beim Erstellen deiner Seite.
+Website-Einstellungen
+Allgemein
+Komponenten
+Darstellung
+Lese-Erlebnis
+Sonstige Seiteneinstellungen
+Name der Website
+Der Name deiner veröffentlichten Website. Er wird im Seitentitel der Website zu sehen sein.
+Name deiner Website
+Startseite
+Die erste Seite, die Besucher sehen, wenn sie deine veröffentlichte Website aufrufen
+Wähle eine veröffentlichte Datei
+
+Wähle eine Bilddatei als Logo für deine Website.
+Ein hochgeladenes Bild in deinem Vault...
+Website-Zusammenarbeit
+Verwalte Mitwirkende dieser Website.
+Navigation anpassen
+Überschreibe die Reihenfolge der Navigationselemente und blende Seiten oder Ordner aus.
+Reihenfolge der angezeigten Navigationselemente
+Blende Seiten oder Ordner in der Navigation aus
+Rechtsklick und wähle "Ausblenden", um bestimmte Seiten von der Navigation auszuschließen. Die Seiten werden weiterhin über Links oder die direkte URL erreichbar sein.
+Ausgeblendete anzeigen
+Verwalten
+
+Ziehen und ablegen, um die Reihenfolge der Navigationselemente deiner Website anzupassen.
+In Navigation ausblenden
+Verwalten
+Farbschema
+Wähle das Standard-Farbschema für deine Website.
+Systemeinstellung verwenden
+Hell/Dunkel umschalten
+Lässt den Besucher selbst zwischen hellem und dunklem Modus umschalten.
+Navigation anzeigen
+Zeigt eine Liste aller veröffentlichten Seiten in der linken Seitenleiste deiner Website.
+Suche anzeigen
+Zeigt ein Suchfeld über der Navigation, über welches Besucher deine Website nach Seitennamen und Überschriften durchsuchen können.
+Graph-Ansicht anzeigen
+Zeigt einen kleinen, lokalen Graphen auf jeder Seite an.
+Gliederung anzeigen
+Zeigt eine Liste aller Überschriften auf jeder Seite an.
+Rückverweise anzeigen
+Zeigt am Ende jeder Seite einen Bereich mit Rückverweisen an.
+Seiten stapeln
+Öffnet Links neben der aktuellen Seite im selben Fenster. Scrolle horizontal, um die gestapelten Seiten anzuzeigen.
+Vorschau anzeigen
+Zeigt eine Vorschau der Seite, wenn Mauszeiger über einen Link fährt.
+Seitentitel ausblenden
+Blendet den Seitentitel aus. Das ist nützlich, wenn du deine eigenen Überschriften am Anfang jeder Seite hast.
+Lesbare Zeilenlänge
+Begrenzt die maximale Zeilenlänge. Es passt weniger Inhalt auf den Bildschirm, dafür sind lange Absätze besser lesbar.
+Passwörter
+Beschränke den Zugang zu deiner Website mit Passwörtern.
+Google Analytics Tracking-Code
+Konfiguriere Google Analytics für deine Website. Nur verfügbar für Besucher deiner eigenen Domain-URL. Bitte beachte dabei die gesetzlichen Bestimmungen und Regeln deines Landes.
+Verwalten
+Seiteneinstellungen speichern
+Einstellungen für deine Website wurden aktualisiert.
+Zurück
+Veröffentlichen nach
+Seite wechseln
+Verlinkte hinzufügen
+Fügt alle von der aktiven Auswahl verlinkten Dateien hinzu
+{{count}} verlinkte Datei wurde hinzugefügt.
+{{count}} verlinkte Dateien wurden hinzugefügt.
+Seiteneinstellungen ändern
+Keine Änderungen gefunden.
+Änderungen
+Unverändert (zum Löschen auswählen)
+ ausgewählt
+Alle auswählen
+Navigationselemente
+Auswahl aufheben
+Neu
+Veröffentlichen
+Du hast nicht die erforderlichen Berechtigungen, um etwas auf dieser Website zu veröffentlichen.
+Bitte wähle mindestens eine Datei aus.
+Änderungen hochladen
+Fertig
+Anhalten
+Wird hochgeladen
+Zum Veröffentlichen
+Zum Löschen
+Veröffentlicht
+Gelöscht
+Fehlgeschlagen
+Abgebrochen
+Ändern
+Es kann einige Minuten dauern, bis die Änderungen auf deiner Website sichtbar sind. Wenn du deine letzten Änderungen nicht sehen kannst, versuche den Cache deines Browsers zu löschen.
+Hier findest du deine Website: 
+Etwas ist schiefgelaufen. Überprüfe die Entwickler-Konsole auf Details.
+Ein Netzwerkfehler ist aufgetreten. 
+Passwörter verwalten
+Passwort hinzufügen
+Neues Passwort
+Deine Seite verwendet momentan keine Passwörter. Jeder kann deine Website besuchen.
+Deine Seite ist passwortgeschützt. Verwendest du mehrere Passwörter, können Besucher mit jedem beliebigen dieser Passwörter auf deine Website zugreifen.
+Passwort
+Ein Hash deines Passwortes wird sicher gespeichert. Ist das Passwort einmal gesetzt, kann es nicht mehr als Text angezeigt werden.
+Dein Passwort
+Spitzname (optional)
+Wähle einen Spitznamen, um dich daran zu erinnern, für wen oder wofür das Passwort gedacht ist.
+Dieses Passwort hinzufügen
+Unbenanntes Passwort
+Erstellt: {{time}}
+Neues Passwort hinzugefügt.
+Eigene Domain
+Verwende deine eigene Domain anstelle der https://publish.obsidian.md/{site id} URL.
+Verbiete Indizierung durch Suchmaschinen
+Verhindere das Indizieren deiner Website durch Suchmaschinen.
+Konfigurieren
+Eigene Domain konfigurieren
+Eigene URL
+Die URL, unter der deine Website zu finden sein wird.
+Weiterleitung auf deine eigene Domain
+Leite deine Besucher von publish.obsidian.md/id zu deiner eigenen Domain weiter.
+Domain-Einstellungen aktualisieren
+Bitte besuche {{link}} auf unserer Hilfe-Seite für weitere Informationen.
+Anleitung für Anpassungen der eigenen Domain
+Du nutzt {{site}} von deinen {{limit}} Websites.
+Kaufe mehr Websites
+Du hast noch keine Websites gekauft.
+Website erwerben
+Freigabe verwalten für "{{name}}"
+Diese Website ist aktuell für folgende Personen freigegeben.
+Diese Website ist aktuell für niemanden freigegeben.
+Ausstehend
+Nutzer entfernen
+Nutzer einladen
+Gib die Email-Adresse ein...
+Bitte gib eine gültige Email-Adresse ein, um jemanden einzuladen.
+Bitte aktiviere das Publish-Kernplugin in Einstellungen -> Obsidian-Erweiterungen, um Websites anzuzeigen.
+Deine Websites
+Websites, die für dich freigegeben wurden
+Mitarbeit an dieser Website beenden
+Beendigung der Mitarbeit an dieser Website bestätigen
+Dadurch wird diese Website aus der Liste der für dich freigegebenen Websites entfernt. Diese Aktion kann nicht rückgängig gemacht werden.
+Bitte kontaktiere den Eigentümer der Website, falls du wieder mitarbeiten möchtest.
+Verlassen
+Mit Live-Version vergleichen
+Live-Version verwenden
+Überschreiben der lokalen Version bestätigen
+Bist du sicher, dass du die lokale Version überschreiben möchtest?
+Die Live-Version wird verwendet und deine lokale Version wird verworfen. Bitte erstelle gegebenenfalls vorher ein Backup.
+Fortfahren
+Live-Version wurde erfolgreich verwendet, um deine lokale Version zu überschreiben.
+In Live-Website öffnen
+Datei öffnen
+Publish-Filter verwalten
+Enthaltene Ordner
+Dateien in diesen Ordnern werden automatisch ausgewählt, wenn du Änderungen zum Veröffentlichen überprüfst.
+Diese Ordner sind derzeit enthalten:
+Nicht enthaltene Ordner
+Dateien in diesen Ordnern werden nicht angezeigt, wenn du Änderungen zum Veröffentlichen überprüfst. Diese Einstellung hat höhere Priorität, als die enthaltenen Ordner oben.
+Obsidian Publish schließt aktuell {{folders}} ein.
+Obsidian Publish schließt aktuell {{folders}} aus.
+Enthaltene Ordner verwalten
+Nicht enthaltene Ordner verwalten
+Ordner einbeziehen
+Du kannst sowohl bestehende, als auch zukünftig erstellte Ordner einbeziehen.
+Support kontaktieren
+Navigationsvorschau
+
+Ermöglicht das Speichern und Laden von Workspace-Layouts.
+Workspace-Layout laden
+Workspace-Layouts verwalten
+Layout speichern
+Speichern und ein anderes Layout laden
+Speichere das aktive Workspace-Layout als...
+Speichern
+Laden
+Layout löschen
+Bitte gib einen Namen für das neue Layout ein.
+Layout erfolgreich gespeichert.
+Kein gespeichertes Layout gefunden.
+Geändert {{time}}
+Layout-Namen eingeben...
+
+Synchronisiere deine Dateien mit Obsidian Sync.
+Zeige den Versionsverlauf der aktiven Datei
+Synchronisierung einrichten
+Versionsverlauf öffnen
+Synchronisierungsverlauf anzeigen
+Sync-Log öffnen
+Mehr laden
+Unterschiede anzeigen
+In Zwischenablage kopieren
+Diese Version wiederherstellen
+Diese Version ist bereits die aktuellste Version.
+Version von {{time}} erfolgreich wiederhergestellt.
+Diese Datei wurde gelöscht
+Gelöscht von {{ device }}
+Diese Datei wurde von "{{filepath}}" umbenannt.
+Umbenannt von "{{from}}" nach "{{to}}"
+Verschoben von "{{from}}"
+Verschoben von "{{from}}" nach "{{to}}"
+{{count}} Revision
+{{count}} Revisionen
+über {{device}}
+Kein Synchronisierungsverlauf für diese Datei.
+Leer
+Versionsverlauf kann nicht geladen werden
+Einstellungsdateien
+Gelöschte Dateien
+Versionsverlauf
+Klicke auf eine Datei, um ihren Verlauf zu sehen.
+Remote-Vault erstellen
+Bitte gib ein Passwort ein.
+Vault-Name darf nicht leer sein.
+Erstellung des Remote-Vaults "{{name}}" erfolgreich.
+Remote-Vaults synchronisieren deinen Vault sicher zwischen deinen Geräten.
+Vault-Name
+Erinnert dich an den Inhalt deines Vaults.
+
+Automatisch
+Wähle die Region, welche dir am nächsten ist, um deinen Remote-Vault zu speichern. Diese Option kann später nicht mehr geändert werden.
+Mein fabelhafter Vault
+Verschlüsselung
+Ende-zu-Ende-Verschlüsselung bietet die größte Sicherheit, allerdings können die Daten bei Verlust des Passwortes nicht wiederhergestellt werden. Standard-Verschlüsselung verwendet einen von Obsidian verwalteten Schlüssel, um die Daten während der Übertragung und auf unseren Servern zu schützen.
+Diese Option kann später nicht geändert werden.
+Ende-zu-Ende-Verschlüsselung
+Standard-Verschlüsselung
+Passwort für Verschlüsselung
+Dieses Passwort kann später nicht mehr geändert werden!
+Wenn du dieses Passwort vergisst, werden alle Remote-Daten für immer unbrauchbar sein.
+Dies hat keine Auswirkungen auf deine lokalen Daten.
+Der Remote-Vault "{{name}}" ist aktuell verschlüsselt. Gib dein Passwort ein, um ihn zu entsperren.
+Dein Passwort
+Deinen Remote-Vault entsperren
+Vault entsperren
+Deine Remote-Vaults
+Erstellt {{time}}
+Löschen
+Umbenennen
+Remote-Vault "{{name}}" umbenennen
+Gib einen neuen Namen für diesen Remote-Vault ein.
+Freigabe verwalten
+Löschen des Vaults bestätigen
+Bist du sicher, dass du diesen Remote-Vault löschen möchtest?
+Alle Daten auf unseren Servern, einschließlich Versionsverlauf, werden gelöscht. Deine lokalen Dateien bleiben unberührt.
+Diese Aktion ist permanent und nicht umkehrbar.
+{{name}} wurde gelöscht.
+Obsidian Sync: Der verbundene Remote-Vault existiert nicht mehr.
+Verbinden
+Verbindung trennen
+
+Du hast keine Remote-Vaults.
+Du hast kein aktives Abo für Obsidian Sync.
+Bitte besuche
+Für {{type}} Dateien ist keine Vorschau möglich.
+Neuen Vault erstellen
+Sync-Log
+Alle
+Fehler
+Übersprungen
+Konflikte beim Zusammenführen
+Sync-Log kopieren
+Sync-Log erfolgreich kopiert.
+Wiederholen
+Erwerben
+Konkurrierenden Synchronisierungsdienst erkannt
+Achtung: Dein Vault scheint {{service}} als externen Synchronisierungsdienst zu verwenden. Wenn du Obsidian Sync mit diesem Vault verwendest, riskierst du Konflikte, Datenbeschädigung und Datenverlust.
+Falls du iCloud Drive verwendest, könnten deine Dokumente und Desktop-Ordner von iCloud synchronisiert werden. Das kann Konflikte mit Obsidian Sync verursachen.
+Remote-Vault
+Auswählen
+Verwalten
+Aktuell verbunden mit dem Remote-Vault "{{name}}".
+Aktuell mit keinem Remote-Vault verbunden.
+Sync-Status
+Obsidian Sync ist momentan angehalten.
+Obsidian Sync läuft gerade.
+Name des Gerätes
+Dieser Name wird im Sync-Log angezeigt. Wenn du das Feld leer lässt, wird der Standardname verwendet.
+Fortfahren
+Anhalten
+Gelöschte Dateien
+Zeigt gelöschte Dateien und ermöglicht Wiederherstellung.
+Sync-Log
+Zeigt kürzliche Sync-Aktivitäten zur Fehlerdiagnose.
+Zeigen
+Mehrere wiederherstellen
+Dateien wiederherstellen
+{{count}} Datei wiederherstellen
+{{count}} Dateien wiederherstellen
+Wiederherstellung läuft...
+Wiederherstellung vollständig: {{succeeded}} erfolgreich und {{failed}} fehlgeschlagen.
+Größe des Vaults
+Du nutzt {{size}} von {{limit}}
+Größe des Vaults konnte nicht bestimmt werden.
+Bestimme die Größe deines Vaults...
+Vault-Größe über Limit
+Vault-Größe ist nahe am Limit
+Zeige größte Dateien
+Diese Remote-Dateien beanspruchen den meisten Platz. Nachdem du Anhänge gelöscht hast, betätige den Bereinigen-Knopf, um Speicherplatz für deinen Remote-Vault freizugeben.
+Speicherplatz erweitern
+Bereinigen
+Meine Änderungen ausblenden
+Gelöschte Anhänge werden permanent aus dem Remote-Vault entfernt, um Speicherplatz zu sparen.
+Bereinigung abgeschlossen.
+Gerät aktiv halten
+Verhindert, dass das Gerät in den Ruhemodus geht, während Dateien synchronisiert werden.
+Selektive Synchronisierung
+Ausgeschlossene Ordner
+Schließt bestimmte Ordner von der Synchronisierung aus.
+Diese Ordner sind momentan nicht eingeschlossen:
+Verwalten
+Bilder synchronisieren
+Synchronisiert Bilddateien mit diesen Dateiendungen: {{extensions}}.
+Audiodateien synchronisieren
+Synchronisiert Audiodateien mit diesen Dateiendungen: {{extensions}}.
+Videodateien synchronisieren
+Synchronisiert Videodateien mit diesen Dateiendungen: {{extensions}}.
+PDFs synchronisieren
+Synchronisiert PDF-Dateien.
+Alle anderen Dateien synchronisieren
+Synchronisiert Dateien mit nicht unterstützten Dateiendungen.
+Vault-Konfiguration synchronisieren
+Einstellungsverlauf
+Zeigt den Versionsverlauf der Einstellungsdateien mit Option zum Wiederherstellen.
+Allgemeine Einstellungen
+Aktiviere die Synchronisierung von Editor-, Datei- und Link-Einstellungen, angepassten Tastenkürzeln usw.
+Darstellungseinstellungen
+Synchronisiert Darstellungseinstellungen wie dunklen Modus, aktives Thema und aktivierte CSS-Bausteine.
+Themen und Snippets
+Synchronisiert heruntergeladene Themen und CSS-Bausteine. Ob diese aktiviert sind, entscheidet die vorherige Einstellung.
+Tastenkürzel
+Synchronisiert eigene Tastenkürzel.
+Aktive Obsidian-Erweiterungen
+Synchronisiert, welche integrierten Erweiterungen aktiviert sind.
+Obsidian-Erweiterungseinstellungen
+Synchronisiert Einstellungen der Obsidian-Erweiterungen.
+Aktive externe Erweiterungen
+Synchronisiert, welche Community-Erweiterungen aktiviert sind.
+Installierte externe Erweiterungen
+Synchronisiert installierte Community-Erweiterungen (.js, .css, und manifest.json Dateien) und deren Einstellungen.
+Sync wird noch geladen, bitte aktualisiere diese Seite später.
+Obsidian Sync ist Obsidian's optionaler Synchronisierungsdienst mit Ende-zu-Ende-Verschlüsselung und Versionsverlauf.
+Um die Synchronisierung zu starten, melde dich bitte an oder erstelle ein neues Obsidian-Konto.
+Aktive Datei
+Änderungen synchronisieren
+Heute
+Gestern
+Diese Woche
+Älter
+Letzte Synchronisierung
+{{count}} weitere
+Registrieren
+Anmelden
+Ausgeschlossene Ordner verwalten
+{{folders}} sind momentan von der Synchronisierung ausgeschlossen.
+Ordner ausschließen
+Du kannst bereits existierende und zukünftig erstellte Ordner ausschließen.
+Von Ausschlussliste entfernen
+Verbindung einrichten
+Verbindung wird aufgebaut...
+Verbindung fehlgeschlagen
+Verbindung zum Remote-Vault konnte nicht hergestellt werden.
+Du bist jetzt mit "{{name}}" verbunden.
+Synchronisierung starten
+Vault-Zusammenführung bestätigen
+Dein lokaler Vault enthält bereits einige Notizen.
+Wenn du den Remote-Vault "{{name}}" verbindest, werden Notizen aus deinem lokalen Vault mit Notizen aus deinem Remote-Vault zusammengeführt. In Konfliktsituationen wird die aktuellere Version der Notiz beibehalten.
+Bitte aktualisiere diese Einstellung und starte die Anwendung auf allen deinen Geräten neu, auf denen die Änderungen übernommen werden sollen.
+Dieser Remote-Vault wird aktuell mit den folgenden Personen geteilt:
+Dieser Remote-Vault wird aktuell mit niemandem geteilt.
+Mit dir geteilte Vaults
+Nicht mehr an diesem Vault mitarbeiten
+Bestätige, dass du nicht mehr an diesem Vault mitarbeiten möchtest
+Dies wird den Vault von der Liste der mit dir geteilten Vaults entfernen. Diese Aktion kann nicht rückgängig gemacht werden!
+Bitte kontaktiere den Eigentümer des Vaults, falls du wieder an diesem Vault mitarbeiten möchtest.
+Verlassen
+Laden der Remote-Vaults fehlgeschlagen.
+Du benötigst ein Obsidian Sync-Abo, um diesen Vault zu verbinden.
+Support kontaktieren
+Falls du Schwierigkeiten mit Obsidian Sync hast, kontaktiere uns bitte, damit wir dir helfen können! Du erreichst uns unter support@obsidian.md.
+Debug-Informationen kopieren
+Email an den Support
+Sync ist nicht mit einem Remote-Vault verbunden.
+Du hast die maximale Anzahl an Remote-Vaults erstellt. Um einen neuen Remote-Vault anzulegen, entferne einen bestehenden oder erwirb ein Upgrade.
+Vault aktualisieren
+Vault-Verschlüsselung aktualisieren
+Eine neue Version der Verschlüsselung für Remote-Vaults ist verfügbar.
+Remote-Vault migrieren
+Remote-Vault Konfiguration
+Migrieren
+Dein Remote-Vault wird gelöscht und mit der aktuellsten Verschlüsselung neu erstellt. Lokale Dateien sind nicht betroffen, allerdings wird der Versionsverlauf gelöscht.
+Vault-Migration bestätigen
+Um deine Verschlüsselung zu aktualisieren, werden alle Daten im Vault mit der neuen Verschlüsselungsmethode neu auf die Obsidian Sync-Server hochgeladen. Dieser Prozess löscht dauerhaft alle Daten, die mit der alten Verschlüsselung verschlüsselt wurden, einschließlich des Versionsverlaufs für deinen Vault.
+Wichtig: Wir empfehlen dringend, vor dem Fortfahren eine Sicherungskopie deines Vaults zu erstellen, um einen möglichen Datenverlust zu vermeiden.
+Nach Abschluss der Aktualisierung musst du alle deine Geräte erneut mit dem aktualisierten Remote-Vault verbinden.
+Die Migration deines Vaults kann einige Zeit beanspruchen. Obsidian muss auf diesem Gerät geöffnet und aktiv bleiben, um alle Notizen und Anhänge erneut hochzuladen. Führe diese Aktion am besten auf deinem Hauptgerät aus.
+Möchtest du fortfahren?
+Vault-Migration wird durchgeführt.
+Vault-Migration abgeschlossen.
+Konfliktlösung
+Wähle, wie Konflikte gelöst werden, wenn eine Notiz unabhängig auf mehreren Geräten geändert wird.
+Automatisch mergen
+Konfliktdatei erstellen
+Datenwiederherstellung
+Wiederherstellung älterer Dateiversionen bei versehentlichem Datenverlust. Sicherungskopien werden nur für Markdown-Dateien erstellt.
+Gespeicherte Sicherungskopien öffnen
+Sicherungsintervall
+Mindestintervall zwischen zwei Sicherungskopien (in Minuten).
+Archivierungsdauer
+Zeitraum, für den Sicherungskopien aufbewahrt werden sollen (in Tagen).
+Sicherungskopien
+Gespeicherte Sicherungskopien ansehen und wiederherstellen.
+Anzeigen
+Archiv leeren
+Alle Sicherungskopien löschen.
+Leeren
+Bist du sicher, dass du alle Sicherungskopien löschen möchtest? Es werden nur die Sicherungskopien entfernt. Sämtliche Dateien in deinem Vault bleiben erhalten.
+Sicherungskopien gelöscht.
+Keine Sicherungskopien gefunden.
+Wähle eine Datei aus...
+Bitte wähle eine Datei auf der linken Seite, um gespeicherte ältere Versionen anzusehen.
+Notizen-Werkbank
+Zusammenführen, Aufteilen und Umgestalten von Notizen.
+Verbinden von Notizen bestätigen
+Fragt nach, bevor zwei Notizen zusammengeführt werden.
+Text nach Extrahierung
+Was wird an der Stelle des markierten Textes nach der Extrahierung angezeigt?
+Link zu neuer Notiz
+Einbettung der neuen Notiz
+Nichts
+Speicherort der Vorlagendatei
+Vorlagendatei, die beim Verbinden oder Extrahieren verwendet wird. Verfügbare Variablen: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, z.B. {{date:YYYY-MM-DD}}.
+Verbinde aktive Notiz mit einer anderen Notiz...
+Verbinde gesamte Notiz mit...
+Keine Dateien gefunden.
+zum Navigieren
+zum Verbinden
+zum Erstellen
+zum Verbinden am Anfang
+zum Verwerfen
+Wähle Notiz zum Verbinden...
+Notiz zusammenführen
+Bist du sicher, dass du "{{file}}" mit "{{destination}}" zusammenführen möchtest? "{{file}}" wird dabei gelöscht.
+Verbinden
+Aktive Auswahl extrahieren...
+Diese Überschrift extrahieren...
+zum Verschieben ans Ende
+zum Verschieben an den Anfang
+Vorlagendatei "{{template}}" nicht gefunden.
+Überschrift konnte nicht gefunden werden
+Web-Viewer
+Web-Verlauf
+Links zu externen Webseiten in Obsidian öffnen.
+Web-Viewer öffnen
+Verlauf anzeigen
+Leseansicht an/aus
+URL kopieren
+Aus Verlauf entfernen
+Verlauf leeren
+Link öffnen
+Link in neuem Tab öffnen
+Link rechts öffnen
+Link in neuem Fenster öffnen
+Link im Standard-Browser öffnen
+Link im Web-Viewer öffnen
+Link-Adresse kopieren
+Lesezeichen für Link hinzufügen
+Suche nach “{{query}}”
+Auswahl als neue Notiz speichern
+Kopieren
+Ausschneiden
+Einfügen
+Löschen
+Alles auswählen
+In Vault speichern
+Bild in Vault speichern
+Bild-Link kopieren
+Zurück
+Vorwärts
+Neu laden
+Lesezeichen für Seite hinzufügen
+Im Standard-Browser öffnen
+Adressleiste fokussieren
+Im Internet suchen
+Daten zurücksetzen
+
+Du wirst unter Umständen von Webseiten abgemeldet.
+Zwischengespeicherte Daten
+Verlauf
+Alle Web-Viewer-Daten
+Entfernt alle oben genannten Daten sowie den lokalen Speicher und aktive Sitzungen.
+Neuer Web-Viewer
+Seite konnte nicht geladen werden.
+Stelle sicher, dass die Adresse korrekt geschrieben ist.
+Im Internet suchen
+Web-Viewer-Daten
+Web-Viewer-Daten zurücksetzen
+Externe Links öffnen
+Links in Obsidian öffnen, anstatt im Standard-Browser.
+Startseite
+Welche Seite beim Öffnen des Web-Viewers angezeigt wird
+Speicherort für Webseiten
+Als Markdown gespeicherte Webseiten werden hier abgelegt.
+Suchmaschine
+Bei der Suche aus der Adressleiste verwendete Suchmaschine.
+Benutzerdefinierte Suchmaschine
+Verwende %s anstelle der Suchanfrage.
+Benutzerdefiniert
+Werbeblocker
+Wenn aktiviert, werden alle unten stehenden Filterlisten auf alle Web-Viewer-Tabs angewendet.
+Werbeblocker-Regeln
+Eine Werbeblocker-Regel pro Zeile. Gilt für alle Vaults.
+Werbeblocker-Update-Frequenz
+Tage zwischen den Updates der Filterlisten. Zum Deaktivieren auf 0 setzen. Gilt für alle Vaults.
+Web-Viewer-Daten zurücksetzen
+Unerwarteter Fehler beim Extrahieren der Daten.
+Keine Daten zum Extrahieren gefunden
+
+Verbinde Notizen und ordne sie auf einer unendlichen Leinwand (Canvas) an.
+Notiz aus Vault hinzufügen
+Medien aus Vault hinzufügen
+Karte hinzufügen
+Webseite hinzufügen
+Gruppe erstellen
+Erstelle eine Karte mit einer bestimmten Größe
+In Datei umwandeln...
+Ziehen, um Notiz aus Vault hinzuzufügen
+Ziehen, um Medien aus Vault hinzuzufügen
+Ziehen, um Karte hinzuzufügen
+Beschriftung bearbeiten
+Beschriftung entfernen
+Nach Datei suchen
+Farbe wählen
+Ausrichten
+Links ausrichten
+Mitte horizontal ausrichten
+Rechts ausrichten
+Oben ausrichten
+Mitte vertikal ausrichten
+Unten ausrichten
+Horizontale Abstände aufteilen
+Vertikale Abstände aufteilen
+Horizontal ausrichten
+Vertikal ausrichten
+In einer Zeile anordnen
+In einer Spalte anordnen
+Gitterförmig anordnen
+Als Bild exportieren
+Springe zu Gruppe
+Hintergrund auswählen
+Hintergrund bearbeiten
+Hintergrund ersetzen
+Hintergrund entfernen
+Keine Bilder gefunden.
+Keine Medien gefunden.
+Exportiere "{{title}}" als PNG-Datei mit folgenden Einstellungen.
+Geschätzte Bildgröße: {{dimensions}}
+Verteilen
+Ausrichten
+Anordnen
+Immer
+Unter Mauszeiger
+Nie
+Kein Abschnitt gefunden
+Standardaktion des Mausrads
+Standard {{key}} Verhalten
+Menü anzeigen
+Speicherort für neue Canvas Dateien
+Hier werden neu erstellte Canvas Dateien gespeichert.
+Ordnerpfad für Canvas Dateien
+Neu erstellte Canvas Dateien werden in diesem Ordner gespeichert.
+Kartenbeschriftung anzeigen
+Am Raster ausrichten
+Karten rasten am Hintergrundgitter ein, wenn du sie verschiebst oder ihre Größe änderst.
+An Objekten ausrichten
+Karten rasten an nahen Objekten ein, wenn du sie verschiebst oder ihre Größe änderst.
+Vergrößerungsgrenze zum Ausblenden von Karteninhalten
+Niedrigere Werte erhöhen die Performanz, aber blenden Karteninhalte eher aus, wenn du die Ansicht verkleinerst.
+Logo einblenden
+Ein Obsidian-Logo wird in der unteren linken Ecke hinzugefügt.
+Privater Modus
+Jeglicher Text auf deinem Canvas wird unkenntlich gemacht.
+Vergrößerung
+Eine höhere Vergrößerung erzeugt ein besser aufgelöstes Bild.
+
+Wähle aus, ob der gesamte Canvas oder nur der aktuell sichtbare Ausschnitt (Viewport) exportiert werden soll.
+Kompletter Canvas
+Nur Viewport
+Abdecken
+Seitenverhältnis beibehalten
+Wiederholen
+Neuer Canvas
+Duplizieren
+Entfernen
+Auf Überschrift beschränken...
+Auf Block beschränken...
+Ansicht anheften...
+Datei tauschen...
+URL anpassen...
+Vergrößerung anpassen
+Auf Auswahl zoomen
+Seite neu laden
+Verbindung verfolgen
+Neuen Canvas erstellen
+In Datei umwandeln...
+um Überschrift einzubetten
+um Block einzubetten
+um zu Gruppe zu navigieren
+Dateiname, Überschrift oder Block eingeben zum Suchen
+URL eingeben
+"{{linktext}}" konnte nicht gefunden werden.
+Text hinzufügen...
+Tippen zum Suchen...
+Canvas Hilfe
+Canvas Einstellungen
+Gesamte Datei anzeigen
+Standard-Ansicht anzeigen
+Nur Leseansicht
+Nur Leseansicht deaktivieren
+Verschieben
+Horizontal verschieben
+Vergrößern
+Alles auswählen
+Zur Auswahl hinzufügen / Aus Auswahl entfernen
+Karte duplizieren
+Kartenbewegung auf Achse beschränken
+Einrasten beim Ziehen deaktivieren
+Karte entfernen
+Von unten ziehen oder Doppelklick
+Berühren und halten zum Hinzufügen / Bewegen / Auswählen
+Ziehen zum Verschieben
+Vergrößern durch Aufziehen
+Leertaste + Ziehen zum Verschieben
+Scrollen zum Vergrößern
+Unbenannte Gruppe
+Verbindungsrichtung
+Ohne Richtung
+In eine Richtung
+In beide Richtungen
+Bild
+Stil
+Keine Gruppen gefunden
+Ein leerer Canvas kann nicht exportiert werden
+Canvas hat Änderungen an Dateinamen erkannt, die {{count}} Canvas-Datei betreffen. Aktualisiere...
+Canvas hat Änderungen an Dateinamen erkannt, die {{count}} Canvas-Dateien betreffen. Aktualisiere...
+Canvas hat {{count}} eingebettete Karte aktualisiert
+Canvas hat {{count}} eingebettete Karten aktualisiert
+Basen
+Sortiere, filtere und bearbeite deine Notizen mit Hilfe von datenbankähnlichen Sichten über deren Eigenschaften.
+Neue Base
+Eigenschaft "{{name}}" hinzufügen
+Zusammenfassung „{{name}}“ hinzufügen
+Formel hinzufügen
+Alle ausblenden
+Sichtbarkeit ändern
+Formel löschen
+Standardansicht
+Sicht duplizieren
+Sicht löschen
+Zusammenfassung löschen
+CSV exportieren...
+Neue Base erstellen
+Neue Base einfügen
+Tabelle in Zwischenablage kopieren
+Sicht ändern
+Sicht hinzufügen
+Element hinzufügen
+Sicht hinzufügen
+Filter hinzufügen
+Filtergruppe hinzufügen
+Alle anzeigen
+Alle anzeigen ({{count}})
+Zusammenfassung hinzufügen
+Zusammenfassung ausblenden
+Alle Sichten
+Diese Sicht
+Suchen oder erstellen...
+Berechnete Eigenschaften
+Eigenschaftstyp
+Eigenschaft ausblenden
+Eigenschaft anzeigen
+Eigenschaft bearbeiten
+{{name}} bearbeiten
+Sicht konfigurieren
+
+Globale Filter
+Filter anzeigen
+Name anzeigen
+Sicht
+Tabelle
+Anzeigename
+Name der Zusammenfassung
+Formel
+Ansichten
+Sortieren
+Filtern
+Suche
+Eigenschaften
+Neu
+{{count}} angezeigt
+Vorlagendatei für neues Element
+Ordner für neue Elemente
+Mindestens eine der folgenden Bedingungen trifft zu
+Alle folgenden Bedingungen treffen zu
+Keine der folgenden Bedingungen trifft zu
+ 
+oder
+und
+Eigenschaft
+Unbenannt
+Datei
+Dateiname
+Dateiname ohne Endung
+Vollständiger Dateiname
+Dateipfad
+Ordner
+Dateiendung
+Erstellt
+Geändert
+Dateigröße
+Datei-Rückverweise
+Dateiverknüpfungen
+Dateieinbettungen
+Datei-Tags
+Sortierung hinzufügen
+Gruppieren nach
+Sortieren nach
+Anzahl der Ergebnisse eingrenzen
+
+
+Alter absteigend
+Alter aufsteigend
+
+
+Name einer Sicht darf nicht enthalten: 
+Der Ansichtsname existiert bereits.
+Der Ansichtsname darf nicht leer sein.
+Dieser Filter kann nicht mit dem Editor für einfache Filter dargestellt werden.
+Filter kann nicht aufgelöst werden. Editor für einfache Filter nicht verwendbar.
+Ungültige Eigenschaftskonfiguration.
+Ungültige Konfiguration für Eigenschaft "{{ name }}".
+Neue Bases Sicht "{{ viewID }}" konnte nicht hinzugefügt werden. Eine Sicht mit dieser ID ist bereits vorhanden.
+Deine Base-Datei kann nicht aufgelöst werden:
+Sicht "{{ view }}" nicht gefunden
+Base wurde mit einem unbekannten Layout konfiguriert: {{ viewtype }}
+Sichten müssen eine Liste sein
+Zeichenfolge als Anzeigewert erwartet. Wert für Eigenschaft {{ key }} ist keine Zeichenfolge.
+"{{ key }}" muss vom Typ {{ type }} sein
+"Filter" erwartet Zeichenfolge oder Objekt
+"{{ conjunction }}" Filter muss eine Liste sein
+"Filter" dürfen nur eines der folgenden Schlüsselwörter enthalten: "and", "or", "not".
+Filter konnte nicht evaluiert werden: {{ message }}
+Zeichenfolge als Formelwert erwartet. Wert für Eigenschaft {{ key }} ist keine Zeichenfolge.
+Wert für die Eigenschaft "{{ key }}" konnte nicht berechnet werden: {{ message }}
+Ungültiges Abfrage-Format. YAML-Objekt erwartet.
+Elemente einer "Sicht" müssen YAML-Objekte sein, Element {{ index }} ist keines
+"Name" in Sicht {{ index }} fehlt oder ist ungültig
+"{{ key }}" ist erforderlich in Sicht "{{ viewName }}"
+"{{ key }}" muss vom Typ {{ type }} sein in Sicht "{{ viewName }}"
+"{{ key }}" Werte müssen alle vom Typ {{ type }} sein in Sicht "{{ viewName }}"
+Filter in Sicht "{{ viewName }}" konnten nicht aufgelöst werden: {{ message }}
+Endlosschleife in Formel erkannt
+Ungültige Eigenschaft
+Diese Notiz wird herausgefiltert, da sie nicht deinen Kriterien entspricht
+Komplexe Filter
+z.B. 10
+Komplexe Filter
+Einfache Filter
+Filter entfernen
+Keine
+Liste
+Marker
+Eigenschaften einrücken
+Eigenschaftentrennzeichen
+Aufzählung
+Nummer
+Keine
+Karten
+Kartengröße
+Bild-Eigenschaft
+Bildanpassung
+Ausfüllen
+Einpassen
+Bildformat
+Tabelle
+Spalte ausblenden
+Eigenschaft bearbeiten...
+Formel bearbeiten...
+Sortierung zurücksetzen
+Sortieren A → Z
+Sortieren Z → A
+Zeilenhöhe
+Klein
+Mittel
+Groß
+Extra groß
+Zusammenfassen...
+Nach dieser Eigenschaft gruppieren
+Werte löschen
+Zusammenfassung
+Formel "{{ formula }}" konnte nicht aufgelöst werden
+Funktion "{{ function }}" wurde nicht gefunden
+Funktion "{{ function }}" wurde nicht gefunden für Typ {{ type }}
+Funktion "{{ function }}" konnte aufgrund fehlender Argumente nicht ausgeführt werden.
+Funktion "{{ function }}" konnte nicht ausgeführt werden, zu viele Argumente.
+Typfehler in "{{ function }}", Parameter "{{ parameter }}". Erwartet {{ expected }}, eingegeben {{ given }}.
+Auf Index {{ index }} konnte nicht zugegriffen werden, kein Wert vom Typ Array
+{{ index }} für Typ {{ type }} konnte nicht gefunden werden
+Alles markieren
+Diakritische Zuordnung
+Ganze Wörter
+Vorschauen
+Inhaltsverzeichnis
+Dokument im Inhaltsverzeichnis anzeigen
+Seitenleisten einblenden
+Vorherige Seite
+Nächste Seite
+An Breite anpassen
+An Höhe anpassen
+Speichere den aktuellen Stand im Dokument
+Anmerkung kopieren
+Als Zitat kopieren
+Link zur Auswahl kopieren
+Link zur Anmerkung kopieren
+Link zum Abschnitt kopieren
+Link zu “{{title}}” kopieren
+Link zur Seite {{page}} kopieren
+{{current}} von über {{limit}} Treffern
+{{current}} von {{total}} Treffern
+{{current}} von {{total}} Treffern
+Diese PDF-Datei ist passwortgeschützt
+Passwort ungültig
+Passwort unten eingeben
+von {{count}}
+({{current}} von {{count}})
+Einzelne Seite
+Zwei Seiten (ungerade)
+Zwei Seiten (gerade)
+Seitenleistenoptionen
+Ansichtsoptionen
+An Thema anpassen
+Seite {{page}}
+Seite {{page}}
+Seite {{page}}
+Seite {{page}}
+[{{type}} Anmerkung]
+
+Liste
+Unbekannt
+
+Aliasse
+
+Ordner
+Datei
+Eigenschaft
+Datum
+Datum und Uhrzeit
+Zahl
+Kontrollkästchen
+Tippe [[
+zum Verlinken
+zum Abbrechen
+Eigenschaftentyp
+Sortieren
+Eigenschaft kann nicht leer sein.
+Eigenschaft existiert bereits
+Ungültiger Name für einen Tag
+Ungültige Zahl
+Eigenschaften konnten nicht gelesen werden.
+Kein Wert
+Eigenschaften
+Ungültige Eigenschaften
+Quelle anzeigen
+Syntaxfehler. Dein Frontmatter ist ungültig.
+Eigenschaft hinzufügen
+Typ stimmt nicht überein, erwartet wurde {{type}}
+Typenkonflikt
+Anzeigen als {{type}}?
+Deine {{oldType}}-Daten sind nicht kompatibel. Sie werden an das neue Format angepasst.
+Spalte
+Zeile
+Zeile danach einfügen
+Spalte danach einfügen
+Zeile davor einfügen
+Zeile nach oben verschieben
+Zeile nach unten verschieben
+Spalte davor einfügen
+Spalte nach links verschieben
+Spalte nach rechts verschieben
+Zeile duplizieren
+Spalte duplizieren
+Zeile löschen
+Spalte löschen
+Links ausrichten
+Mittig ausrichten
+Rechts ausrichten
+Zellen löschen
+Zellen leeren
+Nach Spalte sortieren (A bis Z)
+Nach Spalte sortieren (Z bis A)
+Tabelle: {{command}}
+Callout-Typ
+
+Wichtig
+Tipp
+Erfolg
+Frage
+Warnung
+Zitat
+Beispiel
+Ohne
+Andere...
+Callout-Typ...
+
+{{count}} Wort
+{{count}} Wörter
+{{count}} Ergebnis
+{{count}} Ergebnisse
+{{count}} Zeichen
+{{count}} Zeichen
+{{count}} Link
+{{count}} Links
+{{count}} Datei
+{{count}} Dateien
+{{count}} Ordner
+{{count}} Ordner
+{{count}} Rückverweis
+{{count}} Rückverweise
+{{count}} Tab
+{{count}} Tabs
+{{count}} Eigenschaft
+{{count}} Eigenschaften
+{{count}} Seite
+{{count}} Seiten
+{{count}} Erweiterung
+{{count}} Erweiterungen
+{{count}} aktiv
+{{count}} Snippet
+{{count}} Snippets
+{{count}} Thema
+{{count}} Themen

@@ -1,0 +1,2517 @@
+Pengaturan
+
+Plugin inti
+Pengaturan plugin
+Contoh: folder 1/folder 2
+Contoh: folder/catatan
+Mengubah opsi ini memerlukan mulai ulang agar berlaku.
+
+Perilaku
+Tampilan
+Pemeriksa ejaan
+Aktifkan pemeriksa ejaan.
+Bahasa pemeriksa ejaan
+Pilih bahasa yang digunakan oleh pemeriksa ejaan.
+Pemeriksa ejaan bawaan akan otomatis mendeteksi bahasa di macOS.
+Kamus pemeriksa ejaan
+Kamus pemeriksa ejaan kosong.
+Judul sebaris
+Menampilkan nama berkas sebagai judul yang dapat diedit sebaris dengan isi berkas.
+Panjang baris yang mudah dibaca
+Membatasi panjang maksimum baris. Lebih sedikit konten terlihat, tetapi teks panjang lebih mudah dibaca.
+Pemisah baris ketat
+Spesifikasi Markdown mengabaikan pemisah baris tunggal dalam tampilan baca. Nonaktifkan untuk menampilkannya.
+Properti di dokumen
+Pilih cara properti ditampilkan di bagian atas catatan. Pilih “sumber” untuk menampilkan YAML mentah.
+Tersembunyi
+Ditampilkan
+Sumber
+Pasangkan tanda kurung otomatis
+Memasangkan tanda kurung dan tanda kutip secara otomatis.
+Pasangkan sintaks Markdown otomatis
+Memasangkan simbol otomatis untuk tebal, miring, kode, dan lainnya.
+Daftar cerdas
+Secara otomatis mengatur indentasi dan penempatan item daftar.
+Lipat judul
+Memungkinkan melipat semua konten di bawah judul.
+Lipat indentasi
+Memungkinkan melipat sebagian indentasi, seperti daftar.
+Tampilan bawaan untuk tab baru
+Tampilan bawaan saat tab Markdown baru dibuka.
+Tampilan pengeditan
+Tampilan baca
+Selalu fokus ke tab baru
+Saat membuka tautan di tab bar
+Mode ubah bawaan
+Mode bawaan pengubah pada saat panel baru dimulai.
+Mode Sumber
+Pratinjau Nyata
+Nomor baris
+Tampilkan nomor baris di sisi.
+Bantuan indentasi
+Tampilkan garis hubungan vertikal di antara titik poin untuk membantu secara visual.
+Gunakan tab
+Gunakan tab untuk menginden ketika menekan "Tab". Matikan untuk menggunakan spasi.
+Ukuran tab
+Jumlah spasi yang setara dengan tab.
+Kanan-ke-Kiri (RTL)
+Atur arah teks dari catatan untuk ditampilkan secara kanan-ke-kiri.
+Ubah HTML otomatis
+Secara otomatis mengubah HTML ke Markdown saat menempelkan atau seret-dan-jatuhkan dari laman web. Gunakan Ctrl/Cmd+Shift+V untuk menempelkan tanpa pengubahan.
+key binding Vim
+Memungkinkan Anda untuk menggunakan key binding Vim dalam pengubah sumber.
+Pada perangkat seluler, pengaturan ini akan diatur per-perangkat dan tidak disinkronkan melalui berkas konfigurasi.
+Bangun ulang cache brankas
+Membangun ulang cache dapat memakan waktu beberapa detik hingga beberapa menit tergantung pada ukuran brankas Anda.
+Bangun ulang
+Konfirmasi memasuki mode Vim
+Mode Vim untuk mengedit teks secara efisien, tetapi bisa cukup kontra-intuitif. Jika Anda tidak familiar dengan Vim, opsi ini mungkin terlihat seperti Obsidian berhenti bekerja.
+Untuk memverifikasi bahwa Anda mengetahui Vim, masukkan perintah untuk keluar Vim tanpa menyimpan ini:
+Jawaban Anda
+Masukkan perintah...
+Izinkan saya aktifkan Vim
+Perintah benar. Mode Vim sekarang aktif.
+Perintah salah. Mode Vim masih nonaktif untuk melindungi Anda.
+Masukkan perintah untuk aktifkan mode Vim
+Berkas & Tautan
+Konfirmasi sebelum menghapus berkas
+Hindari penghapusan berkas yang tidak disengaja.
+Tempat sampah
+Berkas terhapus
+Apa yang terjadi pada berkas setelah Anda hapus.
+Pindahkan ke tempat sampah sistem
+Pindahkan ke tempat sampah Obsidian (folder .trash)
+Hapus secara permanen
+Hapus lampiran saat menghapus file
+Hapus otomatis lampiran yang tertaut ke file yang dihapus jika tidak digunakan di tempat lain.
+Selalu
+Tanya setiap kali
+Tidak pernah
+File bawaan untuk dibuka
+Pilih file yang akan dibuka saat aplikasi dimulai.
+Terakhir dibuka
+Catatan baru
+File tertentu
+Catatan harian
+File untuk dibuka
+Pilih file tertentu untuk dibuka secara bawaan.
+Secara otomatis perbarui tautan internal
+Matikan untuk diperingatkan memperbarui tautan setelah menamai berkas.
+Lokasi bawaan untuk catatan baru
+Di mana menaruh setiap catatan yang baru dibuat. Pengaturan plugin akan mengesampingkan ini.
+Folder vault
+Satu folder dengan berkas sekarang
+Dalam folder yang dikhususkan ini
+Folder untuk membuat catatan baru
+Catatan yang baru dibuat akan muncul di dalam folder ini. Pengaturan plugin akan mengesampingkan ini.
+Gunakan [[Wikilink]]
+Buat otomatis Wikilink untuk [[tautan]] dan ![[gambar]] sebagai ganti dari tautan dan gambar Markdown. Nonaktifkan opsi ini untuk membuat tautan Markdown.
+Deteksi semua ekstensi berkas
+Tampilkan berkas dengan ekstensi apa pun meski jika Obsidian tidak dapat membuka mereka, jadi Anda dapat menghubungkan ke mereka dan melihat mereka di Penjelajah berkas dan Peralih cepat.
+Tautan
+Format tautan baru
+Tautan apa yang disisipkan saat pembuatan otomatis tautan internal.
+Alur terdekat jika memungkinkan
+Alur relatif terhadap berkas
+Alur absolut dalam vault
+Lokasi bawaan untuk lampiran baru
+Dimana lampiran yang baru ditambahkan akan disimpan.
+Lampiran
+Di subfolder di bawah folder sekarang
+Lokasi folder lampiran
+Menempatkan berkas lampiran yang baru dibuat, seperti gambar yang melalui seret-dan-jatuhkan atau rekaman audio, dalam folder ini.
+Nama subfolder
+Jika berkas Anda di bawah "vault/folder", dan Anda mengatur nama subfolder ke "lampiran", lampiran akan disimpan ke "vault/folder/lampiran".
+Berkas yang dikecualikan
+Berkas yang dikecualikan merupakan antara tersembunyi atau kurang terlihat di beragam tempat, seperti Peralih Cepat, saran tautan, dan Tampilan Grafik.
+Tidak ada berkas yang dikecualikan saat ini. Tambahkan di bawah.
+Berkas yang menyesuaikan saringan berikut saat ini dikecualikan:
+Saring
+Penyaring tidak dapat kosong
+Masukkan alur atau "/regex/"...
+Izinkan callback URI
+Aktifkan penggunaan x-callback-url melalui x-success atau x-error saat menangani URI Obsidian.
+Tampilan
+Tema dasar
+Pilih skema warna bawaan Obsidian.
+Warna aksen
+Pilih warna aksen yang digunakan pada aplikasi.
+Gelap
+Terang
+Beradaptasi dengan sistem
+
+Lanjutan
+Antarmuka
+Font antarmuka
+Atur font dasar untuk semua bagian Obsidian.
+Tingkat pembesaran
+Atur tingkat pembesaran dari keseluruhan aplikasi.
+Font teks
+Atur font untuk tampilan pengubah dan baca.
+Font monospace
+Atur font untuk tempat-tempat seperti blok kode dan frontmatter.
+ Font yang diterapkan saat ini: 
+ Font berikut yang saat ini diterapkan:
+Masukkan nama font...
+Tidak ada font kustom yang diterapkan saat ini. Tambahkan di bawah.
+Font pertama dari daftar ini yang tersedia pada sistem Anda akan diterapkan.
+Font ini tidak terdeteksi pada sistem Anda.
+Font ini terdeteksi pada sistem Anda.
+Nama font
+Buka tema komunitas
+Tampilkan dan gunakan tema-tema luar biasa yang dibuat oleh komunitas.
+Telusuri
+Ukuran font
+Ukuran font dalam piksel yang mempengaruhi editor dan pratinjau.
+Pengaturan cepat ukuran font
+Atur ukuran font menggunakan Ctrl + gulir, atau menggunakan gestur jepit perbesar trackpad.
+Tema
+Kelola tema terpasang dan telusuri tema komunitas.
+Kelola
+Tidak ada
+Menu bawaan
+Menu pada aplikasi akan menyesuaikan sistem operasi. Mereka tidak akan dipengaruhi oleh tema Anda.
+Muat ulang tema
+Tema CSS kustom termuat ulang.
+Buka folder tema
+Cuplikan CSS
+Cuplikan CSS tidak ditemukan di folder cuplikan.
+Cuplikan CSS tersimpan di "{{path}}".
+Muat ulang cuplikan
+Buka folder cuplikan
+Cuplikan CSS termuat ulang.
+Terapkan cuplikan CSS di "{{path}}".
+Tema terpasang
+Tangkapan layar tidak tersedia
+Bawaan
+Klik untuk memperbesar
+Perbarui
+Aktif
+Gaya bingkai jendela
+Tentukan gaya bilah judul dari jendela Obsidian. Memerlukan pemuata ulang secara penuh untuk mendapatkan hasil.
+Tersembunyi (bawaan)
+Bingkai Obsidian
+Bingkai bawaan
+Ikon aplikasi kustom
+Atur ikon kustom untuk aplikasi
+Pilih ikon kustom
+Menu ribbon
+Atur perintah apa yang tampil pada menu ribbon di bilah navigasi.
+Akses cepat item ribbon
+Mengetuk pada item ribbon di menu navigasi akan mengaktifkan item ribbon ini. Ketuk dan tahan akan tetap menampilkan menu.
+Buka menu bilah alat
+Atur
+Tampilkan bilah alat
+Tampilkan toolbar vertikal di sisi jendela.
+Item ribbon lain
+Atur Ribbon
+Pilih item apa saja yang ingin Anda aktifkan pada ribbon. Seret-dan-jatuhkan untuk mengurutkannya.
+Tampilkan tab bilah judul
+Menampilkan judul pada bagian atas setiap tab.
+Navigasi mengambang
+Tombol navigasi mengambang di atas konten alih-alih ditambatkan.
+Bilah samping geser
+Bilah samping bergeser ke sisi konten alih-alih mengambang di atasnya.
+Layar penuh
+Sembunyikan elemen antarmuka secara otomatis saat membaca.
+Ditemukan {{count}} tema untuk pembaruan.
+Ditemukan {{count}} tema untuk pembaruan.
+Periksa pembaruan
+Lihat pembaruan
+Perbarui semua
+Tema komunitas terkini
+Anda saat ini memiliki {{count}} tema terpasang.
+Anda saat ini memiliki {{count}} tema terpasang.
+Pintasan
+Cari pintasan
+Menampilkan {{count}} pintasan. 
+Menampilkan {{count}} pintasan. 
+{{count}} perintah dengan konflik.
+{{count}} perintah dengan konflik.
+Saring...
+Hapus tombol pintasan
+Tekan tombol pintasan...
+Semua
+Belum ditetapkan
+Ditetapkan
+Ditetapkan oleh saya
+Pulihkan bawaan
+Kustomisasi pintasan ini
+Pintasan ini berkonflik dengan "{{command}}"
+Pintasan ini berkonflik dengan {{count}} perintah lain
+Kosong
+
+Rahasia
+Tambahkan rahasia
+Edit rahasia
+Tampilkan rahasia
+Sembunyikan rahasia
+
+Rahasia
+nama-rahasia
+Hanya huruf kecil, angka, dan tanda hubung.
+Masukkan rahasia Anda.
+Tidak pernah diakses
+Gagal memperbarui rahasia.
+Gagal menambahkan rahasia.
+Rahasia dengan ID ini sudah ada.
+Nilai rahasia tidak boleh kosong.
+ID rahasia tidak valid. Gunakan hanya huruf kecil, angka, dan tanda hubung. Maksimal 64 karakter.
+Belum ada rahasia yang ditambahkan. Rahasia digunakan untuk menyimpan informasi seperti kunci API dan kata sandi yang dapat digunakan plugin.
+Pilih rahasia
+Cari rahasia...
+Tambahkan rahasia...
+Tautkan...
+Rahasia disimpan tanpa enkripsi karena tidak ada penyimpanan rahasia yang tersedia di sistem ini.
+Rahasia tidak dienkripsi
+Jangan tampilkan lagi
+Enkripsi tidak tersedia
+Enkripsi disediakan oleh penyimpanan rahasia sistem operasi Anda. Tanpa penyimpanan rahasia, rahasia Anda akan disimpan tanpa enkripsi.
+Di Linux, penyimpanan rahasia yang didukung meliputi:
+Tentang
+Lisensi komersial
+Kunci lisensi
+Kunci lisensi Anda...
+Aktifkan lisensi
+Aktifkan
+Tidak diketahui
+Versi {{version}}
+Versi penginstal: {{version}}
+Baca log perubahan.
+Untuk mendukung fitur terbaru dan untuk menerima pembaruan keamanan, Obsidian memerlukan pembaruan pemasangan besar. Anda perlu mengunduh dan memasang ulang Obsidian secara manual.
+Versi terbaru siap untuk dipasang. 
+Pembaruan dinonaktifkan.
+Mulai ulang
+Periksa pembaruan
+Perbarui otomatis
+Matikan ini untuk mencegah aplikasi dari pemeriksaan pembaruan.
+Beri tahu jika startup lebih lama dari perkiraan
+Diagnosis masalah pada aplikasi Anda dengan melihat apa yang menyebabkan aplikasi dimuat dengan lambat.
+Periksa sekarang
+Antarmuka baris perintah
+Izinkan interaksi dengan Obsidian dari baris perintah.
+Siapkan CLI agar berfungsi di terminal
+Daftarkan "obsidian" di PATH untuk memungkinkan akses ke perintah "obsidian" dari mana saja di terminal Anda.
+Daftarkan
+Dapatkan Bantuan
+Dapatkan bantuan penggunaan Obsidian.
+Buka
+Bahasa
+Ubah tampilan bahasa.
+Dapatkan versi insider
+Perbarui otomatis ke versi insider untuk mencoba fitur baru. Perhatikan bahwa versi ini adalah terdepan dan mungkin kurang stabil.
+Lanjutan
+Akselerasi Perangkat Keras
+Aktifkan Akselerasi Perangkat Keras, menggunakan GPU Anda untuk membuat Obsidian lebih lancar.
+Jika Anda menonaktifkan ini, performa aplikasi akan turun drastis.
+Timpa folder konfigurasi
+Gunakan folder konfigurasi yang berbeda dari bawaan. Harus dimulai dengan titik.
+Lokasi konfigurasi harus bernama folder yang valid yang mana dimulai dengan titik.
+Lisensi
+Kunci lisensi komersial Anda adalah "{{key}}".
+Terdaftar atas "{{company}}" untuk {{seats}} pengguna. Valid hingga {{expiry}}.
+Memvalidasi...
+Lisensi tidak valid: 
+Hapus
+Lisensi Catalyst
+Anda saat ini memiliki lisensi {{tier}} Catalyst. Terima kasih atas dukungan Anda!
+Saat ini Anda tidak memiliki lisensi Catalyst. Lisensi Catalyst merupakan donasi satu kali untuk mendukung pengembangan Obsidian.
+Aplikasi
+Lihat bagaimana menambahkan bahasa anda ke Obsidian.
+Akun
+Akun Anda
+Anda saat ini masuk sebagai {{name}} ({{email}}).
+Saat ini Anda belum masuk. Akun hanya diperlukan untuk Obsidian Sync, Obsidian Publish, dan build Catalyst insider.
+Tingkatkan
+Lisensi Komersial
+Bantu menjaga Obsidian 100% didukung pengguna.
+Bayar
+Keluar
+Masuk
+Daftar
+Surel
+Surel Anda...
+Nama lengkap
+Kata sandi
+Kata sandi Anda...
+Lupa kata sandi?
+Masuk
+Surel tidak boleh kosong.
+Surel tidak valid.
+Kata sandi tidak boleh kosong.
+Gagal masuk, periksa kembali surel dan kata sandi Anda.
+Gagal daftar
+Belum memiliki akun? 
+Daftar sekarang
+kode 6-digit 2FA
+Kode otentikator 2FA haruslah 6 digit.
+Kode 2FA salah, harap periksa kembali aplikasi otentikasi Anda.
+Daftar Plugin
+Cari plugin ini
+Saring plugin berdasarkan nama atau deskripsi.
+Cari plugin...
+Plugin komunitas
+Mode terbatas
+Mode terbatas sedang mati. Nyalakan untuk menonaktifkan plugin komunitas.
+Nyalakan
+Periksa pembaruan plugin secara otomatis
+Periksa pembaruan plugin secara berkala.
+Plugin komunitas
+Telusuri dan pasang plugin yang dibuat oleh komunitas kami yang menakjubkan.
+Telusuri
+Keluar Mode Terbatas
+Plugin komunitas, seperti halnya aplikasi lain yang Anda pasang, berpotensi menyebabkan masalah integritas dan keamanan data.
+Keamanan plugin sangat penting bagi kami. Berikut yang kami lakukan:
+Terlepas dari upaya kami, masih ada kemungkinan kecil bahwa plugin komunitas mungkin berperilaku tidak semestinya.
+Peninjauan awal kode
+Plugin menjalani peninjauan kode awal oleh tim kami sebelum merka tampil pada toko.
+Sumber terbuka
+Kebanyakan plugin merupakan sumber terbuka pada GitHub, sehingga Anda dapat memeriksa kode secara mandiri.
+Audit rekan
+Kami memiliki komunitas pengembang yang besar yang saling mengawasi satu sama lain.
+Mekanisme pelaporan
+Kami menindaklanjuti dan menghapus plugin yang salah setelah laporan pengguna.
+Apakah Anda ingin keluar dari Mode Terbatas untuk mengaktifkan plugin komunitas? Kami sangat merekomendasikan untuk mencadangkan data Anda sebelum melakukannya.
+Pelajari lebih lanjut mengenai keamanan plugin
+Aktifkan plugin komunitas
+Apakah Anda mempercayai pemilik dari vault ini?
+Anda membuka vault ini untuk pertama kalinya, dan terdapat beberapa plugin bersamanya.
+Jika Anda mendapatkan vault ini dari seseorang, harap dicatat bahwa plugin dengan sumber yang tidak diketahui mungkin akan menimbulkan risiko keamanan.
+Jika Anda tidak memepercayai pemilik vault ini secara penuh, kami merekomendasikan untuk tetap pada Mode Terbatas, sehingga plugin pada vault ini tidak akan berjalan.
+Percayai pemilik dan aktifkan plugin
+Jelajahi vault dengan Mode Terbatas
+Cari plugin komunitas...
+Gagal memuat plugin komunitas.
+Terpasang
+Pasang
+Aktifkan
+Matikan
+Salin tautan berbagi
+Donasi
+Tidak ada hasil.
+Tidak ada berkas terkini. Ketik untuk mencari...
+Gagal memuat manifes plugin.
+Versi: {{version}}
+ (saat ini terpasang: {{version}})
+Oleh 
+Repositori: 
+Pembaruan terakhir: 
+Lihat pembaruan terkini
+Plugin ini tidak mendukung perangkat Anda.
+Perbarui
+Plugin ini tidak menyediakan berkas README.
+Memasang plugin "{{name}}"...
+Gagal memasang plugin "{{name}}".
+Berhasil memasang plugin "{{name}}".
+Gagal menghapus instalasi plugin “{{id}}”.
+Gagal menonaktifkan plugin “{{id}}”.
+Plugin terpasang
+Muat ulang plugin
+Plugin komunitas termuat ulang.
+Hapus pemasangan
+Hapus plugin
+Apa Anda yakin Anda ingin menghapus plugin ini? Ini akan menghapus folder dari plugin.
+Buka folder plugin
+Cek pembaruan
+Perbarui semua
+Plugin saat ini
+Memeriksa pembaruan...
+Anda saat ini memiliki {{count}} plugin terpasang.
+Anda saat ini memiliki {{count}} plugin terpasang.
+Pembaruan plugin tidak ditemukan.
+Ditemukan {{count}} plugin untuk pembaruan.
+Ditemukan {{count}} plugin untuk pembaruan.
+Memperbarui ke versi {{version}}
+Cari plugin terpasang
+Saring plugin yang terpasang dengan nama atau deskripsi.
+Cari plugin terpasang...
+Tampilkan hanya yang terpasang
+Donasi untuk mendukung {{name}}
+Pengembang plugin merupakan komunitas yang secara sukarela membuat sesuatu yang luar biasa. Jika Anda merasa plugin ini berguna, harap pertimbangkan untuk mendanai pengembangannya.
+100% dari kontribusi Anda akan diberikan kepada pengembang plugin; Obsidian tidak meminta potongan. Media pendanaan yang mereka pilih mungkin memerlukan biaya.
+Terima kasih banyak atas kedermawanan Anda!
+Dukung plugin ini:
+Menampilkan {{pluginCount}}:
+Paling banyak diunduh
+Baru-baru ini dirilis
+Baru-baru ini diperbarui
+Secara abjad
+Diperbarui {{time}}
+Bilah alat seluler
+Konfigurasikan Aksi Cepat seluler
+Konfigurasikan perintah yang akan aktif saat menarik ke bawah. Perintah terkini diatur ke "{{command}}".
+Tindakan belum dikonfigurasi
+Konfigurasikan
+Pilih Aksi Cepat...
+Tidak ada
+Kelola opsi bilah alat
+Tambahkan tautan internal
+Tambahkan sematan
+Tambahkan tag
+Masukkan judul
+Coret teks
+Sorot teks
+Masukkan kode
+Tambahkan blok kutipan
+Peralih matematis sebaris
+Peralih blok matematis
+Tambahkan tautan Markdown
+Tambahkan daftar poin
+Tambahkan daftar angka
+Indentasikan daftar item
+Balikkan indentasi daftar item
+Batalkan
+Kembalikan
+Pindah caret ke atas
+Pindah caret ke bawah
+Pindah caret ke kiri
+Pindah caret ke kanan
+Pergi ke baris pertama
+Pergi ke baris terakhir
+Peralih keyboard
+Atur bilah alat seluler
+Opsi yang ditambahkan
+Opsi bilah alat lainnya
+Sisipkan lampiran
+Cari
+Ganti
+Keluar penelusuran
+Berikutnya
+Sebelumnya
+Cari semua
+Ganti
+Ganti semua
+Ketik #
+untuk hubungkan ke judul
+Ketik ^
+untuk hubungkan ke blok
+Ketik |
+untuk ganti tampilan teks
+Teks tampilan
+Judul
+Tidak ditemukan kecocokan
+Ukuran gambar: lebar {{size}}px
+untuk menerima
+Catatan kaki baru...
+Tidak ada saran...
+Masukkan ke kamus
+Ubah tautan
+
+Edit blok ini
+Hapus catatan kaki dan referensi
+Atur ulang ukuran
+Hapus gambar
+Tanpa judul
+Judul {{level}}
+Ekspor ke PDF
+Ekspor "{{filename}}" ke PDF dengan dengan pengaturan di bawah.
+Ukuran halaman
+Masukkan nama berkas sebagai judul
+Lanskap
+
+Bawaan
+
+Tidak ada
+Persentase skala
+Ekspor ke PDF
+Ikuti tautan
+Buka tautan
+Cari tag
+Tidak dapat menemukan:
+Tidak dapat menemukan “{{subpath}}” di {{file}}
+Buka di aplikasi bawaan
+Bilah sisi kosong, coba seret panel ke sini.
+Buka
+Tutup
+Gagal menyimpan berkas "{{filepath}}". {{message}}.
+Gagal memuat plugin “{{plugin}}”
+Plugin “{{plugin}}” mengalami kesalahan saat dimuat
+Gagal membuka “{{filepath}}”
+Tidak dapat membuka lokasi “{{href}}”
+Tidak ada berkas
+"{{file}}" telah dimodifikasi secara eksternal, menggabungkan perubahan secara otomatis.
+Kelola brankas...
+Bantuan
+Pengaturan
+Seret untuk menata
+Beralih mode tampilan bawaan ke tampilan baca.
+Mengganti mode tampilan bawaan ke pengubah.
+Untuk menggunakan fitur ini, pasang ulang dengan pemasang terbaru yang tersedia di situs web kami.
+Waktu mulai lambat terdeteksi.
+Fitur ini hanya tersedia di aplikasi desktop.
+Pulihkan pengaturan bawaan
+Salin ke papan klip
+Salin
+Tersalin ke papan klip Anda
+{{item}} tersalin ke papan klip Anda
+Tidak dapat menyalin ke papan klip Anda
+
+Terjadi kesalahan saat merender blok kode.
+Berkas "{{path}}" terbuka
+Berkas "{{name}}" tidak ditemukan.
+Tindakan URI tidak dikenali: {{action}}
+Hapus
+Obsidian sedang mengindeks vault Anda...\nIni hanya dilakukan sekali.\nBeberapa fungsi mungkin tidak tersedia hingga ini selesai.
+Beberapa fungsionalitas mungkin tidak tersedia sampai ini selesai.
+Pengindeksan selesai.
+Ini merupakan vault sandbox.\nPerubahan yang Anda lakukan pada vault ini akan hilang.
+IndexedDB diperlukan untuk fitur ini, tetapi saat ini dinonaktifkan.
+Jika Anda menggunakan iOS dalam Mode Lockdown, harap kecualikan Obsidian dari pengaturan "Configure Web Browsing" pada Mode Lockdown.
+Enter untuk membuat
+Pembaruan Tersedia
+Info Debug
+Pelajari lebih lanjut
+Tidak sekarang
+Tambah
+Kelola
+Tab baru
+Sembunyikan bilah alat
+Tab ini sedang sibuk, harap coba lagi nanti
+
+Paragraf
+Sisipkan
+Tambah tautan
+Tambah tautan eksternal
+
+Garis horizontal
+Blok kode
+Blok matematika
+Tabel
+Catatan kaki
+Tebal
+Kode
+Komentar
+Sorotan
+Miring
+Coret
+Matematika
+Daftar berpoin
+Daftar tugas
+Daftar bernomor
+Judul {{level}}
+Isi
+Hapus pemformatan
+Kutipan
+Kosong
+Tidak ada berkas terbuka
+Buat berkas baru
+Buka berkas
+Lihat berkas terakhir
+Tutup
+Tutup semua tab “{{id}}” ({{count}})
+Plugin tidak lagi aktif
+Plugin yang membuat panel ini ({{type}}) telah hilang
+Catatan Rilis {{version}}
+Tidak ada catatan rilis yang tersedia untuk {{version}}.
+Tidak dapat memuat catatan rilis untuk {{version}}.
+Dirilis pada {{date}}
+Yang baru di {{version}}
+Ubah (Ctrl/Cmd+Klik untuk ubah di panel baru)
+Tampilan terkini: Membaca
+Bilah alat
+Bilah samping kiri
+Bilah samping kanan
+Klik untuk mengubah
+Klik untuk membaca
+{{key}}+Klik untuk membuka di tab baru
+Tekan {{key}}+C untuk menyalin sumber
+Cari...
+Ganti...
+Ubah
+Hapus
+Hapus dari daftar
+Ganti nama
+Pratinjau
+Opsi lain
+Tutup
+Tutup semua
+Tutup {{count}} tab
+Tutup {{count}} tab
+Tutup lainnya
+Tutup tab setelah
+Semat
+Lepas semat
+Batalkan tautan tab
+Tautkan dengan tab...
+Mode Sumber
+Tampilan Baca
+Tambah properti berkas
+Hapus berkas
+Buat berkas ini
+Buka tautan
+Buka di tab baru
+Buka di kanan
+Salin tautan
+Salin
+Potong
+Tempel
+Salin path
+Salin gambar
+sebagai URL Obsidian
+dari root sistem
+dari folder brankas
+Tempel sebagai teks biasa
+Melihat “{{selection}}”
+Pilih semua
+Ubah nama judul ini...
+Ubah nama ID blok ini...
+Buka di jendela baru
+Pindah ke jendela baru
+Buka di browser
+Susun tab
+Batal susun tab
+Buka tampilan tertaut
+Klik untuk luaskan
+Klik untuk ciutkan
+
+Belum dibuat, pilih untuk buat
+Versi
+Buat vault lokal
+Buka folder sebagai vault
+Pilih folder yang berisikan berkas Markdown.
+Buat vault baru
+Buat vault Obsidian baru dalam suatu folder.
+Hubungkan ke Obsidian Sync
+Atur vault yang tersinkronisasi dengan vault remote yang tersedia.
+Nama vault
+Beri nama untuk vault Anda yang mengagumkan.
+Lokasi
+Pilih lokasi untuk menaruh vault baru Anda.
+Vault baru Anda akan ditempatkan di: 
+Ungkap vault di penjelajah sistem
+Ungkap vault di Finder
+Ubah nama vault...
+Salin ID brankas
+Vault dengan nama ini telah tersedia.
+Tidak dapat memindahkan vault ke subfolder dari dirinya sendiri.
+Tidak dapat mengubah nama dari vault yang sedang terbuka.
+Gagal mengubah nama vault.
+Berhasil mengubah nama vault.
+Pindahkan vault...
+Pilih folder tujuan
+Sudah tersedia vault pada tujuan.
+Tidak dapat memindahkan vault yang sedang terbuka.
+Gagal memindahkan vault.
+Berhasil memindahkan vault.
+Hapus dari daftar
+Memulai cepat
+Buka
+Telusuri
+Hubungkan
+Buat
+Kembali
+Nama vault tidak dapat kosong.
+Nama brankas tidak boleh diakhiri dengan titik.
+Pilih folder yang valid.
+Gagal membuat vault.
+Tidak dapat membuat vault di lokasi yang dipilih. Periksa kembali lokasi dan perizinan.
+Gagal membuka.
+Tidak dapat menghapus vault yang sekarang terbuka.
+Dapatkan Bantuan
+Surel
+Surel Anda...
+Kata sandi
+Kata sandi Anda...
+Masuk
+Mengatur
+Buat vault tersinkron pada perangkat ini.
+Vault remote ini dimiliki oleh Anda.
+Vault remote ini dibagikan dengan Anda.
+Pikiran Anda adalah milik Anda.
+disinkronkan
+tidak disinkronkan
+Tidak ada
+Direkomendasikan
+Obsidian menyimpan catatan di perangkat Anda, sehingga Anda dapat mengaksesnya dengan cepat dan privat, bahkan saat offline.\nData Anda disimpan di folder lokal yang aman bernama **brankas**.
+Buat brankas
+Gunakan brankas saya yang sudah ada
+Untuk mengakses catatan Anda di perangkat lain, Anda perlu menyiapkan sinkronisasi.
+Karena Obsidian menyimpan catatan Anda di perangkat Anda, Anda perlu menyiapkan sinkronisasi jika ingin mengakses catatan Anda di ponsel atau komputer lain.\nAnda dapat menyiapkan sinkronisasi sekarang, atau mulai menulis dan menyiapkannya nanti.
+Siapkan sinkronisasi
+Skip for now
+Lewati
+Choose a name for your vault.
+Buat brankas
+Penyiapan sinkronisasi
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Enkripsi Sync
+Enkripsi ujung-ke-ujung
+Menawarkan keamanan terkuat tetapi mengharuskan Anda menyimpan kata sandi enkripsi Anda dengan aman
+Enkripsi standar
+Menggunakan kunci yang dikelola oleh Obsidian untuk melindungi data Anda saat transit dan di server kami.
+Pengaturan Sync
+Apakah Anda ingin mengecualikan folder atau file apa pun saat menyinkronkan ke perangkat ini?
+Mulai menyinkronkan
+Buat akun Obsidian atau masuk
+Daftar
+Masuk
+Kirim ulang email
+Anda memiliki brankas Sync yang sudah ada
+Apakah Anda ingin membuat brankas baru atau menghubungkan ke brankas tersinkron yang sudah ada?
+Buat brankas Sync baru
+Pilih brankas yang sudah ada
+Log Out
+Lupa kata sandi
+Nama brankas
+Lokasi brankas
+Penyimpanan perangkat
+Memungkinkan data Obsidian diakses oleh aplikasi lain.
+Memerlukan izin tambahan.
+Penyimpanan aplikasi
+Data Anda tidak akan dapat diakses oleh aplikasi lain.
+Android akan menghapus data Anda jika Anda menghapus instalasi Obsidian.
+Brankas baru Anda akan ditempatkan di {{vaultLocation}}
+Wilayah
+Pilih wilayah server yang dekat dengan Anda agar sinkronisasi lebih cepat.
+Kunci enkripsi
+Kata sandi ini tidak dapat diubah nanti. Jika Anda lupa kata sandi, data jarak jauh apa pun di server Sync akan tidak dapat diakses selamanya.
+Brankas saya
+Otomatis
+Pilih brankas
+Akun Anda **{{email}}** memiliki brankas yang sudah ada dan dapat Anda hubungkan.
+Masuk ke akun Obsidian Anda
+Lupa kata sandi
+Atur ulang kata sandi
+Kami telah mengirim email ke {{email}} untuk mengatur ulang kata sandi Anda.
+Pilih cara menyinkronkan catatan Anda
+Untuk menggunakan Obsidian di perangkat Anda, Anda perlu menyinkronkan data Anda.
+Mulai tanpa hambatan di setiap perangkat dan OS.
+Diamankan dengan standar enkripsi ujung-ke-ujung terkuat.
+Memerlukan akun Obsidian.
+Hanya untuk iOS dan macOS.
+Tidak dienkripsi secara bawaan.
+Memerlukan plugin atau alat pihak ketiga.
+Mungkin tidak dienkripsi secara bawaan.
+Gunakan Obsidian Sync
+Gunakan iCloud
+Use Third-party sync
+Metode sinkronisasi lainnya
+Gunakan metode sinkronisasi yang didukung
+Di mana lokasi brankas Anda?
+Lainnya
+Sinkronisasi pihak ketiga
+Di perangkat ini
+Hubungkan ke iCloud
+Hubungkan ke layanan sinkronisasi lain
+Hubungkan ke Obsidian Sync
+Pilih folder
+Metode sinkronisasi lainnya
+Obsidian secara resmi mendukung dua metode sinkronisasi: **Obsidian Sync** dan **iCloud**.\nNamun, karena Obsidian memberi Anda kendali atas data Anda, ada opsi sinkronisasi lain yang bisa Anda gunakan.\nOpsi ini mencakup plugin pihak ketiga dan alat lainnya yang mungkin memerlukan penyiapan yang lebih lanjut.\nUntuk menggunakan metode sinkronisasi alternatif, **buat brankas** dan ikuti instruksi yang disediakan oleh plugin atau penyedia sinkronisasi pihak ketiga.
+Masukkan email Anda
+Email Anda diperlukan untuk membuat akun Obsidian.
+Masukkan nama dan kata sandi Anda
+Hubungkan ke Obsidian Sync
+Anda akan menerima email sebentar lagi ke **{{email}}** berisi instruksi untuk terhubung ke Obsidian Sync.
+Brankas iCloud Anda tidak terdeteksi. Ini bisa disebabkan oleh salah satu alasan berikut:
+Brankas Anda berada di akun iCloud yang berbeda dari yang saat ini Anda gunakan untuk masuk di perangkat ini.
+Brankas Anda tidak disimpan di folder Obsidian tingkat teratas pada iCloud Drive Anda.
+iCloud tidak didukung
+Sinkronisasi iCloud hanya tersedia di perangkat Apple. Jika brankas Anda saat ini disinkronkan melalui iCloud, pelajari cara memigrasikan brankas Anda ke layanan sinkronisasi yang berbeda.
+Izinkan akses file
+Sedang memasukkan Anda...
+Nama brankas wajib diisi
+Email konfirmasi baru telah dikirim.
+Gagal mengirim ulang email.
+Lokasi brankas harus berupa folder.
+Selamat datang
+Ini adalah *brankas* baru Anda.\n\nCatat sesuatu, [[buat tautan]], atau coba [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nSaat Anda siap, hapus catatan ini dan jadikan brankas ini milik Anda sendiri.
+Sisipkan tautan di sini
+Sisipkan tautan di sini
+Pindah ke "{{folder}}"
+Beri bintang berkas ini
+Beri bintang berkas ini
+Buka pada tab ini
+Buka sebagai tab baru
+Maksimalkan
+Minimalkan
+Kecilkan
+Tutup jendela
+Sebelumnya
+Sesudahnya
+Memuat Obsidian...
+Terjadi kesalahan ketika memuat Obsidian.
+Muat ulang aplikasi
+Muat ulang aplikasi dalam mode aman
+Buka vault lain
+Memuat plugin...
+Plugin “{{plugin}}” membutuhkan waktu lama untuk dimuat. 
+Memuat vault...
+Gagal memuat vault: 
+Memuat cache...
+Memuat ruang kerja...
+Impor ke vault
+Tambahkan teks ke file:
+Pilih berkas untuk dimasukkan
+Masukkan teks ke {{filename}}
+Masukkan tautan ke {{filename}}
+Tampilkan ikhtisar tab
+Mengimpor...
+Sukses mengimpor
+Gagal mengimpor berkas {{filename}}
+Tekan kembali lagi untuk keluar.
+Masukan
+Apakah Anda menikmati Obsidian? Bantu kami dengan memberikan penilaian.
+Nilai aplikasi
+Tutup
+File konfigurasi diperbarui dari iCloud, perlu muat ulang
+Muat ulang
+Situs bantuan resmi
+Baca dokumentasi bantuan resmi dari Obsidian, tersedia dalam berbagai bahasa.
+Kunjungi
+Obrolan Discord
+Discord merupakan tempat terbaik untuk mengobrol dengan pengguna Obsidian berpengalaman lainnya dari seluruh dunia.
+Gabung
+Forum resmi
+Bantu satu sama lain, posting saran fitur, laporkan masalah, dan dapatkan diskusi mendalam mengenai pengelolaan pengetahuan.
+Vault sandbox
+Bermain dan menguji coba dengan beragam fitur. Harap dicatat bahwa perubahan Anda tidak akan disimpan.
+Simpan berkas
+Unduh lampiran untuk file saat ini
+Buka tautan pada kursor
+Buka tautan pada kursor di tab baru
+Buka tautan pada kursor pada sebelah kanan
+Buka tautan pada kursor di jendela baru
+Fokus pada grup tab di atas
+Fokus pada grup tab di bawah
+Fokus pada grup tab di kiri
+Fokus pada grup tab di kanan
+Aktifkan/Matikan sematan
+Pisah ke kanan
+Pisah ke bawah
+Peralih tab tersusun
+Alihkan panjang baris yang mudah dibaca
+Aktifkan/nonaktifkan nomor baris
+Navigasikan mundur
+Navigasikan maju
+Alihkan mode terang/gelap
+Ubah tema...
+Ganti brankas...
+Buka brankas...
+Kelola brankas
+Cari di dalam berkas
+Cari dan ganti di dalam berkas
+Tambah properti berkas
+Nama (A ke Z)
+Nama (Z ke A)
+Tambahkan alias
+Hapus properti berkas
+Buka pengaturan
+Buka bantuan
+Pengalih tampilan ubah/baca
+Pengalih Pratinjau Nyata/Mode Sumber
+Hapus berkas
+Tab baru
+Jendela baru
+Tampilkan sampah
+Tutup semua tab
+Tutup tab terkini
+Tutup lainnya di tab grup
+Tutup semua tab lain
+Tutup tab grup ini
+Buka/Tutup bilah sisi kiri
+Alihkan bilah alat
+Buka/Tutup bilah sisi kanan
+Peralih mode bawaan untuk tab baru
+Tambahkan kursor di atas
+Tambahkan kursor di bawah
+Fokus ke pengubah
+Lipat properti pada berkas terkini
+Lipat/Bentangkan baris teks
+Lipat semua judul dan daftar
+Bentangkan semua judul dan daftar
+Lipat lebih
+Lipat kurang
+Tukar baris teks ke atas
+Tukar baris teks ke bawah
+Buang judul
+Atur sebagai judul {{level}}
+Tebalkan teks yang dipilih
+Miringkan teks yang dipilih
+Sorot teks yang dipilih
+Beri komentar untuk pilihan
+Hapus pemformatan
+Sisipkan tautan
+Aktifkan/Matikan pemeriksa ejaan
+Hapus paragraf
+Centang daftar periksa
+Titik bulat/centang
+Masukkan callout
+Masukkan blok kode
+Masukkan blok matematis
+Sisipkan garis horizontal
+Sisipkan tabel
+Sisipkan catatan kaki
+Ubah judul berkas
+Salin alur berkas
+Salin jalur file saat ini dari root sistem
+Salin tautan Obsidian
+Ekspor ke PDF
+Muat ulang aplikasi tanpa menyimpan
+Batal tutup tab
+Tampilkan menu konteks di bawah kursor
+Tampilkan informasi debug
+Buka vault sandbox
+Peralih untuk jendela selalu di atas
+Perbesar
+Perkecil
+Atur ulang pembesaran
+Ubah mode pengubah/pratinjau
+Pindah panel terkini ke jendela baru
+Buka panel terkini ke jendela baru
+Ubah nama berkas terkini
+Ke tab sebelumnya
+Ke tab berikutnya
+Ke tab terakhir
+Ke tab #{{n}}
+Tampilkan catatan rilis
+Ini akan mempengaruhi {{links}} di {{files}}.
+{{links}} di {{files}} diperbarui.
+Perbarui tautan
+Apakah Anda ingin memperbarui tautan yang tertaut ke berkas ini?
+Selalu perbarui
+Hanya sekali
+Jangan perbarui
+Apakah Anda yakin ingin menghapus "{{filename}}"?
+Berkas akan dipindahkan ke tempat sampah sistem.
+Berkas akan dipindahkan ke tempat sampah Obsidian, yang terletak di ".trash" yang tersembunyi di vault Anda.
+Berkas akan dihapus permanen.
+Folder ini tidak kosong.
+Jika Anda melanjutkan, semua berkas dalam folder ini akan dihapus.
+Hapus folder
+Hapus
+Jangan tanya lagi
+Saat ini ada {{count}} tautan yang menunjuk ke file ini.
+Saat ini ada {{count}} tautan yang menunjuk ke file ini.
+Hapus berkas
+Unduh lampiran
+Tidak ada lampiran eksternal di catatan ini.
+Mengunduh {{count}} lampiran.
+Mengunduh {{count}} lampiran.
+Memperbarui {{count}} file.
+Memperbarui {{count}} file.
+Mengembalikan perubahan pada {{count}} file.
+Mengembalikan perubahan pada {{count}} file.
+Tidak ada koneksi internet
+Memuat...
+Kelola
+Lihat
+Konfirmasi
+Batal
+Lewati
+Unduh
+Selesai
+Simpan
+Hentikan
+Ubah
+Lanjutkan
+Pilih
+Coba lagi
+Pembaruan
+Urungkan
+Menyiapkan PDF...
+Ubah nama berkas
+Nama berkas
+Nama baru
+Kesalahan
+Dipilih
+Berhasil ubah nama berkas.
+Gagal menggabungkan catatan: {{message}}
+File atau folder “{{path}}” tidak ada.
+Judul tidak boleh kosong
+ID blok tidak boleh kosong
+ID blok hanya boleh berisi karakter alfanumerik atau tanda hubung
+Ubah nama judul
+Ubah nama ID blok
+Hapus lampiran file?
+Lampiran ini tidak lagi digunakan di catatan mana pun. Apakah Anda ingin menghapusnya?
+{{count}} lampiran ini tidak lagi digunakan di catatan mana pun. Apakah Anda ingin menghapusnya?
+Pohon file
+Galeri
+Buat Catatan
+Catatan baru ke Kanan
+Tab Baru
+Jendela Baru
+Buka Secara Cepat...
+Buka Vault...
+Tutup Tab
+Tutup Jendela
+Cari
+Ubah
+
+Tautan Markdown
+Tautan
+Judul {{level}}
+Tanpa Judul
+Kutip
+Ekspor PDF
+Masukkan Lampiran...
+Blok Kode
+Blok Matematis
+Tabel
+Catatan kaki
+Judul sebaris
+Nomor baris
+Daftar Titik
+Daftar Angka
+Daftar Tugas
+Tebal
+Kode
+Komentar
+Miring
+Matematis
+Sorot
+Coret
+Komentar
+Melipat
+Lipat Semua
+Batal Lipat Semua
+Lipat Lebih
+Lipat Kurang
+Mode Sumber
+Mode Baca
+Tampilkan Informasi Debug
+Buka Vault Sandbox
+Pindahkan ke Jendela Baru
+Navigasikan Mundur
+Navigasikan Maju
+Peralih Bilah Sisi Kiri
+Peralih Bilah Sisi Kanan
+Bilah alat
+Pisah ke kanan
+Pisah ke bawah
+Catatan Rilis
+Plugin
+Penjelajah berkas
+Lihat berkas dan folder dalam vault Anda.
+Buka penjelajah berkas
+Tampilkan penjelajah berkas
+Buat catatan
+Buat folder baru
+Buat catatan baru pada tab terkini
+Buat catatan ke sebelah kanan
+Otomatis tampilkan file saat ini
+Ciutkan Semua
+Bentangkan Semua
+Catatan baru
+Folder baru
+Ubah urutan sortir
+Tunjukkan berkas di penjelajah berkas
+Tunjukkan berkas aktif di penjelajah berkas
+Buat salinan dari berkas ini
+Duplikasi file saat ini
+Pindahkan berkas ke folder lain
+Folder baru dengan pilihan ({{count}} item)
+Folder baru dengan pilihan ({{count}} item)
+Pindahkan berkas ke...
+Pindahkan folder ke...
+Pindahkan {{count}} item ke...
+Ketikkan folder
+Folder tidak ditemukan.
+untuk navigasi
+untuk pindah
+untuk membuat
+untuk tutup
+Nama berkas (A ke Z)
+Nama berkas (Z ke A)
+Waktu modifikasi (baru ke lama)
+Waktu modifikasi (lama ke baru)
+Waktu pembuatan (lama ke baru)
+Waktu pembuatan (baru ke lama)
+Catatan baru
+Folder baru
+Ubah nama
+Hapus
+Buat salinan
+Duplikasi
+Nama berkas tidak boleh berisi salah satu diantara karakter berikut: 
+Tautan tidak bekerja dengan nama berkas yang berisi satu di antara karakter ini: 
+Sudah ada berkas dengan nama yang sama
+Nama berkas tidak boleh kosong.
+Nama berkas tidak boleh diawali dengan titik.
+Terakhir diubah pada {{time}}
+Dibuat pada {{time}}
+Tanpa judul
+Tanpa judul
+Mulai sekarang, lampiran akan tersimpan di "{{path}}".
+Penelusuran
+Telusuri kata kunci di semua catatan.
+Telusuri di semua berkas
+Ciutkan hasil
+Sesuaikan huruf
+Jelaskan istilah penelusuran
+Tampilkan lebih banyak konteks
+{{count}} hasil
+{{count}} hasil
+Pengaturan pencarian
+Ketik untuk memulai penelusuran...
+Cocokkan teks: 
+Cocokkan regex: 
+Berisi teks sama persis: 
+Lebih besar dari: 
+Lebih kecil dari: 
+Benar
+Salah
+Kosong
+Memuat properti:
+Cocokkan semua dari: 
+Cocokkan salah satu: 
+Kecualikan: 
+Peka huruf besar/kecil
+Tidak peka huruf besar/kecil
+Cocokkan alur berkas: 
+Cocokkan nama berkas: 
+Cocokkan konten berkas: 
+Cocokkan tugas: 
+Cocokkan tugas (mengerjakan): 
+Cocokkan tugas (selesai): 
+Cocolkan baris: 
+Cocokkan blok: 
+Cocokkan bagian: 
+Cocokkan tag: 
+Tidak ditemukan kecocokan.
+... dan {{count}} kecocokan.
+... dan {{count}} kecocokan.
+Salin hasil penelusuran
+Salin hasil
+Hasil tersalin ke papan klip Anda.
+Tampilkan alur
+Tampilkan alur lengkap dari berkas daripada hanya nama berkas.
+Gaya tautan
+Secara opsional, ubah setiap hasil berkas menjadi tautan.
+Tidak ada
+Tautan wiki
+Tautan Markdown
+Awalan daftar
+Secara opsional, tambahkan item awalan untuk setiap hasil berkas.
+Tidak ada
+Tanda hubung (-)
+Asteriks (*)
+Bernomor
+Hapus penelusuran
+Opsi penelusuran
+Properti
+Tag
+Baca selengkapnya
+Riwayat
+Hapus riwayat penelusuran
+cocokan alur berkas
+cocokkan nama berkas
+telusuri tag
+telusuri kata kunci di baris yang sama
+telusuri kata kunci di bawah judul yang sama
+cocokkan properti
+Menelusuri "{{keyword}}"
+Cari di folder
+Peralih cepat
+Tekan Ctrl/Cmd+O untuk beralih ke berkas lain dengan menggunakan keyboard Anda.
+Peralih
+Buka peralih cepat
+untuk navigasi
+untuk membuka
+untuk membuka di tab baru
+untuk membuka ke kanan
+untuk membuat
+untuk menutup
+untuk memilih
+Catatan tidak ditemukan. Enter untuk buat baru.
+Ketik nama berkas untuk beralih atau membuat...
+Enter untuk buat
+Belum dibuat, pilih untuk buat
+Tampilkan yang ada saja
+Apakah menampilkan tautan ke berkas yang belum dibuat.
+Tampilkan lampiran
+Tampilkan berkas lampiran, seperti gambar, video dan PDF.
+Tampilkan semua jenis berkas
+Tampilkan semua berkas termasuk yang tidak bisa Obsidian buka. Berkas akan dibuka dengan aplikasi bawaan untuk jenis berkas itu.
+Tampilan grafik
+Tampilkan grafik yang menunjukan ketertautan catatan-catatan Anda.
+Buka tampilan grafik
+Buka grafik lokal
+Salin cuplikan layar
+Grafik dari {{displayText}}
+Saring
+Cari berkas...
+Kedalaman
+Tampilkan titik ini sejauh beberapa tautan
+Tautan tetangga
+Tampilkan tautan antar catatan yang bertetangga.
+Tautan keluar
+Tampilkan tautan ke berkas lain
+Tautan masuk
+Tampilkan tautan dari berkas lain
+Tag
+Tag dihubungkan ke berkas yang mengandung tag
+Lampiran
+Tampilkan lampiran yang disertakan oleh berkas
+Hanya berkas yang ada
+Ketika diperiksa, berkas yang tidak ada tidak ditampilkan
+Tanpa induk
+Tampilkan berkas yang tidak tertaut ke berkas mana pun
+Tampilan
+Panah
+Tunjukan panah ketika diperbesar
+Ambang pudar teks
+Ukuran titik
+Ketebalan tautan
+Gaya
+Gaya pusat
+Gaya tautan
+Jarak tautan
+Gaya tolak
+Buka pengaturan grafik
+Cuplikan layar disalin ke papan klip.
+Grup
+Masukkan kueri...
+Hapus grup
+Grup baru
+Klik untuk ubah warna\nSeret untuk tata ulang grup
+Mulai animasi selang waktu grafik
+Mulai animasi selang waktu
+Animasikan
+Backlink
+Tampilkan jumlah backlink di bilah status, dan tunjukan backlink dan sebutan yang tidak tertaut di bilah sisi.
+Buka backlink
+Tampilkan panel backlink
+Buka backlink
+Aktifkan backlink di dokumen
+Tautan balik dalam dokumen
+Sebutan yang tertaut
+Tidak ditemukan backlink.
+Sebutan yang belum tertaut
+Tampilkan saringan penelusuran
+Hubungkan
+Backlink pada {{displayText}}
+Tidak ditemukan sebutan yang belum tertaut.
+
+Backlink di dokumen
+Tampilkan backlink di dokumen secara bawaan saat membuka panel.
+Tautan Keluar
+Tampilkan tautan keluar dan deteksi sebutan yang belum tertaut dari catatan lain di catatan sekarang.
+Buka tautan keluar
+Tampilkan panel tautan keluar
+Buka tautan keluar untuk berkas sekarang
+Tautan keluar dari {{displayText}}
+Tautan
+Tidak ditemukan tautan.
+Sebutan yang belum tertaut
+Hubungkan berkas ini
+Belum dibuat
+Panel tag
+Tag
+Tampilkan tag Anda dan jumlah kemunculannya.
+Tampilkan panel tag
+Tidak ditemukan tag.
+Nama tag (A ke Z)
+Nama tag (Z ke A)
+Frekuensi (tinggi ke rendah)
+Frekuensi (rendah ke tinggi)
+Tampilkan tag bersarang
+Ciutkan Semua
+Bentangkan Semua
+Tampilan catatan kaki
+Catatan kaki
+Tampilkan daftar catatan kaki dari catatan saat ini.
+Tampilkan catatan kaki
+Tidak ada catatan kaki ditemukan.
+Tampilan properti
+Tampilkan metadata untuk berkas Anda.
+Semua properti
+Properti berkas
+Properti berkas untuk {{displayText}}
+Tampilkan semua properti
+Tampilkan properti berkas
+Hapus properti
+Hapus properti
+Otomatis
+Otomatis ({{type}})
+Tidak ada properti ditemukan.
+Properti tidak valid.
+Nama properti (A ke Z)
+Nama properti (Z ke A)
+Frekuensi (tinggi ke rendah)
+Frekuensi (rendah ke tinggi)
+Gabungkan properti “{{oldKey}}” dengan “{{newKey}}”?
+Jika terjadi konflik, nilainya akan digabungkan atau nilai dari “{{oldKey}}” akan digunakan.
+Ciutkan Semua
+Bentangkan Semua
+Buka properti berkas
+Buka catatan harian
+Pratinjau halaman
+Arahkan kursor pada tautan internal untuk mempratinjau kontennya. Pada mode editor, tekan Ctrl/Cmd sambil mengarahkan kursor.
+“{{linktext}}” tidak dapat ditemukan.
+"{{linktext}}" belum dibuat. Klik untuk buat.
+Catatan kaki {{id}} tidak ditemukan. Klik untuk membuat.
+Pengubah
+Pratinjau
+Cari, Backlink, dan Tautan keluar
+Header tab
+Membutuhkan {{key}} untuk memicu pratinjau halaman saat kursor di atasnya
+Penanda
+Tandai berkas dan pencarian yang sering digunakan.
+Tampilkan penanda
+Lipat semua
+Tandai tab aktif...
+Grup penanda baru
+Tandai...
+Tambah pernanda
+Ubah penanda
+Tandai blok di bawah kursor...
+Tandai judul di bawah kursor...
+Tandai pencarian terkini...
+Hapus tanda untuk berkas terkini
+Tandai {{count}} tab...
+Tandai {{count}} tabs...
+Tandai semua tab...
+Tandai grafik ini...
+
+Dibookmark
+{{count}} penanda
+{{count}} penanda
+Tidak ada penanda ditemukan
+Gagasl memuat penanda.
+Data berkas rusak.
+Grup tanpa judul
+Grafik tanpa judul
+Ubah...
+Hapus
+Ubah nama
+Tandai blok ini...
+Tandai judul ini...
+Tidak ada kueri pencarian untuk ditandai.
+Alur
+Kueri
+Judul
+Grup penanda
+Penanda
+CSS Kustom
+Baca dan terapkan “obsidian.css” di folder brankas.
+Tema komunitas
+Mengambil data tema komunitas...
+Saring...
+Tema gelap saja
+Tema terang saja
+Gunakan
+Berhenti menggunakan tema ini
+Pasang dan gunakan
+Perbarui
+Tema ini tidak menyediakan berkas README.
+Hapus tema
+Kunjungi ke GitHub
+Tidak dapat memuat tema komunitas, periksa koneksi internet Anda.
+Anda sekarang menggunakan {{title}} sebagai tema CSS.
+Tema {{title}} telah dihapus.
+Tema {{title}} telah diperbarui.
+Terpasang
+Lawas
+Perbarui semua
+Gagal memuat tema komunitas.
+Pembaruan tema tidak ditemukan.
+Ditemukan {{count}} tema untuk pembaruan.
+Ditemukan {{count}} tema untuk pembaruan.
+Gagal memasang tema "{{name}}".
+Berhasil memasang tema "{{name}}".
+Memasang tema "{{name}}"...
+Menampilkan {{themeCount}}:
+Pembaruan Tersedia
+Palet perintah
+Gunakan Cmd/Ctrl+P dan mulai mengetik untuk menggunakan perintah.
+Buka palet perintah
+untuk navigasi
+untuk gunakan
+untuk tutup
+Perintah tidak ditemukan.
+Ketik perintah...
+Perintah tersemat
+Importir format Markdown
+Konversi format Markdown dari aplikasi lain ke format Obsidian.
+Buka importir Markdown
+Perbaikan tag Roam Research
+Konversi "#tag" dan "#[[tag]]" ke "[[tag]]".
+Perbaikan sorotan Roam Research
+Konversi "^^sorotan^^" ke "==sorotan==".
+Pengkonversian Roam Research TODO
+Konversi "{{[[TODO]]}}" ke "[ ]".
+Perbaikan sorotan Bear
+Konversi "::sorotan::" ke "==sorotan==".
+Perbaikan tautan Zettelkasten
+Memperbaiki tautan "[[UID]]" menjadi "[[UID Nama Berkas]]".
+Perindah tautan Zettelkasten
+Memperbaiki tautan "[[UID]]" dan memperindahnya menjadi "[[UID Nama Berkas|Nama Berkas]]".
+Migrasi metadata awal
+Migrasikan tag, alias, dan cssclasses metadata awal ke format ketat yang diperlukan oleh Obsidian v1.9+
+Peringatan: Importir akan mengkonversi semua berkas dalam vault Anda, tidak hanya berkas yang tampil saja.
+Berkas-berkas Anda akan ditimpa. Cadangkan semua berkas Anda sebelum melanjutkan konversi.
+Mulai konversi
+Hentikan
+Kembali
+Selesai
+Memproses...
+Membatalkan...
+Selesai!
+Berkas yang diproses
+Berkas yang dimodifikasi
+Total pergantian
+Gagal
+Catatan harian
+Buka catatan harian hari ini, atau buat baru jika belum tersedia.
+Hari ini
+Buka catatan hari ini
+Buka catatan harian sebelumnya
+Buka catatan harian selanjutnya
+Masukkan teks ke catatan harian
+Masukkan tautan ke catatan harian
+Gagal membuat catatan harian. "{{format}}" adalah format yang tidak valid.
+Gagal membuat catatan harian. Folder "{{folderOption}}" tidak ditemukan.
+Gagal membuat catatan harian. Berkas template "{{template}}" tidak ditemukan.
+Tidak ada catatan harian sebelum ini.
+Tidak ada catatan harian setelah ini.
+Format tanggal
+Pilih cara penamaan catatan harian di brankas Anda.
+Format kustom
+Kustom
+Format tanggal tidak valid
+Folder catatan harian tidak ditemukan.
+Untuk format tanggal lebih lanjut, lihat: 
+referensi format
+Tampilannya akan seperti ini: 
+Lokasi berkas baru
+Lokasi folder untuk catatan harian yang baru dibuat.
+Lokasi berkas template
+Lokasi berkas yang digunakan sebagai template.
+Pembuat catatan unik
+Buat catatan dengan awalan tanda waktu unik, untuk alur kerja seperti zettelkasten atau slip box.
+Unik
+Buat catatan unik baru
+Catatan unik baru
+Tambahkan tautan internal unik
+Lokasi berkas baru
+Alur folder untuk membuat catatan unik baru.
+Gagal membuat catatan unik. Folder "{{folderOption}}" tidak ditemukan.
+Lokasi berkas template
+Alur berkas yang digunakan sebagai template.
+Misal: folder1/catatan
+Format awalan unik
+Gagal membuat catatan unik. berkas Template "{{template}}" tidak ditemukan.
+Gagal membuat catatan unik dengan format "{{format}}
+Catatan acak
+Buka catatan secara acak untuk menemukan atau mengulas ulang.
+Acak
+Buka catatan secara acak
+Kerangka
+Tampilkan kerangka dari catatan saat ini atau dari panel tertaut.
+Buka kerangka
+Tampilkan panel kerangka
+Buka kerangka dari berkas ini
+Kerangka dari {{displayText}}
+Tidak ditemukan judul.
+Gulir otomatis ke bagian saat ini
+Penghitung kata
+Tampilkan penghitung kata di bilah status.
+Slide
+Presentasi dari Markdown. Gunakan "---" untuk memisahkan slide.
+Mulai presentasi
+Perekam suara
+Merekam suara dan menyimpannya sebagai lampiran.
+Mulai merekam suara
+Hentikan merekam suara
+Mulai/hentikan perekaman
+Akses mikrofon ditolak, aktifkan mikrofon dari panel preferensi.
+Izikan akses mikrofon untuk mulai merekam.
+Tidak ada mikrofon terhubung.
+Buka di aplikasi bawaan
+Menambahkan tombol untuk membuka berkas di aplikasi bawaan.
+Buka di aplikasi bawaan
+Bagikan
+Tampilkan dalam folder
+Tampilkan di Finder
+Template
+Masukkan konten template dari folder berkas template.
+Masukkan template
+Masukkan tanggal sekarang
+Masukkan waktu sekarang
+Lokasi folder template
+Berkas-berkas dalam folder ini akan tersedia sebagai template.
+Format tanggal
+{{date}} di berkas template akan diganti dengan nilai ini.
+Anda juga bisa menggunakan {{date:YYYY-MM-DD}} untuk menimpa format sekali.
+Format waktu
+{{time}} di berkas template akan diganti dengan nilai ini.
+Anda juga bisa menggunakan {{time:HH:mm}} untuk menimpa format sekali.
+untuk navigasi
+untuk masukkan template
+untuk tutup
+Tidak ditemukan template
+Gagal untuk mencantumkan template. Folder template tidak valid.
+Gagal untuk mencantumkan template. Folder "{{folderOption}}" tidak ditemukan.
+Tidak dapat menyisipkan templat, properti dalam file templat tidak dapat dibaca.
+Gagal mendata template. Folder template tidak diatur.
+Ketikkan nama template...
+Jendela transparan
+Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux.
+Perintah garis miring
+Aktifkan kemampuan untuk menampikan perintah garis miring di pengubah dengan mengetikkan garis miring.
+Status Pengubah
+Tambahkan item bilah status untuk menampilkan dan mengganti mode pengubah terkini.
+Baca
+Mode Sumber
+Pratinjau Nyata
+Publikasi
+Publikasikan catatan Anda melalui Obsidian Publish.
+Publikasikan perubahan
+Publikasikan file saat ini
+Anda butuh akses internet untuk mempublikasikan perubahan.
+Obsidian Publish adalah layanan berbayar tambahan yang memungkinkan Anda untuk mempublikasikan catatan Anda online secara langsung dari Obsidian.
+Untuk mulai publikasi, masukkan atau buat akun Obsidian baru.
+Anda belum berlangganan Obsidian Publish.
+Beli
+Kelola situs
+Anda tidak memiliki situs.
+Pilih
+Ubah ID situs
+Hapus situs
+Anda yakin Anda ingin menghapus situs ini?
+Ini akan secara permanen menghapus situs Anda segera.
+Konfirmasi hapus situs "{{site}}"
+ID situs
+Situs Anda akan berada di https://publish.obsidian.md/{site id}. Anda dapat mengubah ini nanti. Hanya huruf kecil, angka, dan tanda hubung yang diperbolehkan.
+Pilih ID situs
+Buat
+ID situs hanya dapat berisi huruf kecil, angka, dan tanda hubung.
+Situs ID ini sedang digunakan, coba yang lain.
+Terdapat masalah ketika membuat situs Anda.
+Opsi situs
+Umum
+Komponen
+Tampilan
+Pengalaman membaca
+Pengaturan lain situs
+Nama situs
+Nama dari situs terpublikasi Anda. Itu akan ditampilkan di judul halaman dari situs Anda.
+Nama dari situs Anda
+Berkas laman
+Halaman pertama yang pengguna lihat ketika mendarat di situs terpublikasi Anda
+Pilih berkas terpublikasi
+
+Ambil berkas gambar sebagai logo situs Anda.
+Semua gambar yang diunggah dalam vault Anda...
+Kolaborasi situs
+Kelola kolaborator untuk situs ini.
+Kustomisasi navigasi
+Timpa urutan dari item navigasi dan sembunyikan laman ataupun folder.
+Urutan tampil item navigasi
+Sembunyikan laman atau folder dari navigasi
+Klik kanan dan pilih "Sembunyikan" untuk mencegah laman tertentu dari ditampilkan pada navigasi situs. Laman akan tetap dapat diakses melalui tautan ataupun mengaksesnya secara langsung.
+Tampilkan yang disembunyikan
+Kelola
+Navigasi
+Seret dan geser untuk mengubah urutan item navigasi yang tampil pada situs Terpublikasi anda.
+Sembunyikan di navigasi
+Kelola
+Tema
+Pilih skema warna bawaan untuk situs Anda.
+Mengikuti sistem
+Peralih terang/gelap
+Biarkan pengunjung beralih antara tema terang dan gelap sesuai keinginan mereka.
+Tampilkan navigasi
+Tampilkan daftar dari semua halaman di sisi kiri dari situs terpublikasi Anda.
+Tampilkan bilah penelusuran
+Tampilkan bilah penelusuran di atas navigasi yang memungkinkan pengunjung mencari halaman dan judul di situs Anda.
+Tampilkan tapilan grafik
+Tampilkan grafik lokal kecil untuk setiap halaman.
+Tampilkan daftar isi
+Tampilkan kerangka dari judul setiap halaman.
+Tampilkan backlink
+Tampilkan bagian backlink di setiap akhir halaman.
+Gunakan jendela geser
+Buka halaman di panel baru sebelah kanan. Memungkinkan menggulir panel secara horizontal.
+Tampilkan pratinjau melayang
+Tampilkan halaman pratinjau ketika melayang pada tautan.
+Sembunyikan judul laman
+Menyembunyikan judul laman. Berguna ketika Anda memiliki judul tersendiri pada awalan setiap laman.
+Panjang baris yang dapat dibaca
+Batasi panjang maksimum baris teks. Memuat lebih sedikit konten pada layar, tetapi membuat paragraf-paragraf yang panjang lebih mudah dibaca.
+Kata sandi
+Batasi akses ke situs Anda menggunakan kata sandi.
+Kode pelacakan Google Analytics
+Atur Google Analytics untuk situs Anda. Hanya tersedia untuk pengunjung dari Tautan domain kustom Anda. Sebelumnya, periksa hukum dan regulasi setempat Anda.
+Atur
+Simpan pengaturan situs
+Pengaturan untuk situs Anda terbarui.
+Kembali
+Publikasikan ke
+Alihkan situs
+Tambahkan yang tertaut
+Tambahkan semua berkas yang tertaut dengan item yang terpilih saat ini
+{{count}} berkas yang tertaut telah ditambahkan.
+{{count}} berkas yang tertaut telah ditambahkan.
+Ubah pengaturan situs
+Perubahan tidak terdeteksi.
+Ubah
+Batal ubah (pilih untuk hapus)
+ Terpilih
+Pilih semua
+Item navigasi
+Batal pilih semua
+Baru
+Publikasikan
+Anda tidak memiliki izin untuk mempublikasikan ke situs.
+Pilih minimal satu berkas.
+Unggah perubahan
+Selesai
+Berhenti
+Mengunggah
+Mempublikasikan
+Menghapus
+Terpublikasikan
+Terhapus
+Gagal
+Terbatalkan
+Ubah
+Ini membutuhkan beberapa menit agar perubahan tampil di situs Anda. Jika Anda tidak melihat perubahan terakhir Anda, coba hapus cache di browser Anda.
+Anda dapat mengunjungi situs Anda di sini: 
+Terjadi kesalahan. Periksa konsol pengembang untuk rincian.
+Terjadi kesalahan jaringan. 
+Kelola kata sandi
+Tambahkan kata sandi
+Kata sandi baru
+Situs Anda sekarang belum memiliki kata sandi. Semua orang dapat mengunjunginya.
+Situs Anda terproteksi kata sandi. Jika Anda punya beberapa kata sandi, pengunjung dapat mengakses situs Anda dengan memasukan salah satunya.
+Kata sandi
+Hash dari kata sandi Anda akan aman tersimpan. Sekali kata sandi ditetapkan, tidak dapat ditampilkan dalam teks biasa.
+Kata sandi Anda
+Nama panggilan (opsional)
+Beri nama panggilan untuk mengingatkan Anda untuk apa atau untuk siapa kata sandi.
+Tambahkan kata sandi ini
+Kata sandi tanpa judul
+Dibuat {{time}}
+Tambahkan kata sandi baru.
+Domain kustom
+Gunakan domain Anda sendiri ganti dari Tautan https://publish.obsidian.md/{id situs}.
+Jangan izinkan mesin cari mengindeks
+Mencegah mesin cari dari mengindeks situs Anda.
+Konfigurasi
+Konfigurasikan domain kustom
+Tautan kustom
+Tautan yang situs Anda akan berada.
+Alihkan ke domain kustom Anda
+Mengalihkan pengunjung ke publish.obsidian.md/id ke kustom domain Anda.
+Perbarui pengaturan domain
+Rujuk ke {{link}} kami pada situs bantuan kami untuk informasi lebih lanjut.
+panduan penyetelan domain kustom
+Anda menggunakan {{site}} melebihi {{limit}} Anda.
+Beli situs lebih
+Anda belum membeli situs apa pun.
+Dapatkan situs
+Kelola berbagi untuk "{{name}}"
+Situs ini sekarang dibagikan dengan orang-orang berikut.
+Situs ini sekarang tidak dibagikan kepada siapa pun.
+Tertunda
+Hapus pengguna
+Undang pengguna
+Masukkan surel mereka..
+Harap masukkan surel yang valid untuk mengundang seseorang.
+Harap aktifkan plugin inti Pubikasi di Pengaturan -> Plugin inti untuk melihat situs.
+Situs Anda
+Situs yang dibagikan dengan Anda
+Berhenti berkolaborasi pada situs ini
+Konfirmasi berhenti berkolaborasi
+Ini akan menghapus situs ini dari daftar situs yang dibagikan dengan Anda. Aksi ini tidak dapat dikembalikan.
+Harap hubungi pemilik situs jika Anda ingin berkolaborasi kembali pada situs ini.
+Keluar
+Bandingkan dengan versi nyata
+Gunakan versi nyata
+Konfirmasi menimpa versi lokal
+Apakah Anda yakin ingin menimpa versi lokal?
+Versi nyata akan digunakan dan versi lokal Anda akan dibatalkan. Harap lakukan pencadangan jika diperlukan.
+Proses
+Berhasil menggunakan versi nyata untuk menimpa versi lokal Anda.
+Buka di situs live
+Buka berkas
+Kelola filter publikasi
+Masukkan folder
+Berkas pada folder ini akan secara otomatis terpilih pada saat Anda meninjau perubahan untuk dipublikasikan.
+ Folder yang saat ini dimasukkan:
+Kecualikan folder
+Berkas pada folder ini tidak akan ditampilkan pada saat Anda meninjau perubahan untuk dipublikasikan. Pengaturan ini akan diprioritaskan atas folder yang dimasukkan di atas.
+Obsidian Publish saat ini memasukkan {{folders}}.
+Obsidian Publish saat ini mengecualikan {{folders}}.
+Kelola folder yang dimasukkan
+Kelola folder yang dikecualikan
+Masukkan folder
+Anda dapat memasukkan folder yang tersedia maupun folder yang belum Anda buat sama sekali.
+Hubungi dukungan
+Pratinjau navigasi
+Ruang kerja
+Simpan dan muat tata letak ruang kerja.
+Muat tata letak ruang kerja
+Kelola tata letak ruang kerja
+Simpan tata letak
+Simpan dan muat tata letak lain
+Simpan tata letak ruang kerja terkini sebagai...
+Simpan
+Muat
+Hapus tata letak
+Harap masukkan nama untuk tata letak baru.
+Berhasil menyimpan tata letak.
+Tidak ada tata letak.
+Diubah {{time}}
+Ketikkan nama tata letak...
+Sinkronisasi
+Sinkronisasi berkas Anda dengan Obsidian Sync.
+Lihat riwayat versi
+Siapkan Sync
+Buka riwayat versi
+Tampilkan riwayat Sync
+Buka log aktivitas
+Muat lebih banyak
+Tampilkan perbedaan
+Salin ke papan klip
+Pulihkan versi ini
+Versi ini sudah versi terbaru.
+Berhasil mengembalikan versi dari {{time}}
+Berkas ini telah dihapus
+Dihapus melalui {{ device }}
+Nama berkas ini diubah dari "{{filepath}}"
+Diganti nama dari “{{from}}” menjadi “{{to}}”
+Dipindahkan dari “{{from}}”
+Dipindahkan dari “{{from}}” ke “{{to}}”
+1 revision
+{{revisions}} revisions
+melalui {{device}}
+Tidak ada riwayat sinkronisasi untuk file ini.
+Kosong
+Tidak dapat mengambil riwayat versi
+Pengaturan berkas
+Berkas yang dihapus
+Riwayat versi
+Klik pada sebuah berkas yang telah terhapus untuk melihat riwayatnya.
+Buat vault remote
+Silakan masukkan kata sandi
+Nama vault tidak boleh kosong.
+Berhasil membuat vault remote "{{name}}".
+Vault remote menyinkronkan vault antar perangkat dengan aman.
+Nama vault
+Membantu Anda mengingat untuk vault ini untuk apa.
+Wilayah
+Otomatis
+Pilih wilayah server terdekat untuk menyimpan brankas jarak jauh. Ini tidak dapat diubah di masa depan.
+Vault keren saya
+Enkripsi
+Enkripsi ujung-ke-ujung menawarkan keamanan terkuat tetapi mengharuskan Anda menyimpan kata sandi enkripsi dengan aman. Enkripsi standar menggunakan kunci yang dikelola oleh Obsidian untuk melindungi data Anda saat transit dan di server kami.
+Opsi ini tidak dapat diubah nanti.
+Enkripsi ujung-ke-ujung
+Enkripsi standar
+Kata sandi enkripsi
+Kata sandi ini tidak dapat diubah nanti.
+Jika Anda lupa kata sandi ini, segala data jauh akan tidak dapat digunakan selamanya.
+Ini tidak mempengaruhi data lokal Anda.
+Brankas jarak jauh “{{name}}” saat ini terenkripsi. Masukkan kata sandi Anda untuk membuka kunci.
+Kata sandi Anda
+Buka kunci brankas jarak jauh Anda
+Buka vault
+Vault remote Anda
+Dibuat {{time}}
+Hapus
+Ubah nama
+Ubah nama vault remote "{{name}}"
+Masukkan nama baru untuk vault remote ini.
+Kelola berbagi
+Konfirmasi hapus vault
+Anda yakin Anda ingin menghapus vault remote ini?
+Semua data pada server kami, termasuk riwayat versi, akan dihapus. Lokal berkas Anda akan tetap utuh.
+Tindakan ini permanen dan tidak dapat diubah.
+{{name}} telah dihapus.
+Obsidian Sync: Brankas jarak jauh yang terhubung sudah tidak ada.
+Hubungkan
+Putuskan
+
+Anda tidak memiliki vault remote.
+Anda tidak memiliki langganan Obsidian Sync yang aktif.
+Silakan kunjungi
+Tidak dapat mempratinjau file {{type}}.
+Buat vault baru
+Log sinkronisasi
+Semua
+Kesalahan
+Dilewati
+Konflik penggabungan
+Salin log sinkronisasi
+Log sinkronisasi berhasil disalin.
+Coba lagi
+Beli
+Layanan sinkronisasi berkas yang bentrok terdeteksi
+Peringatan: Vault Anda tampaknya menggunakan {{service}} sebagai layanan sinkronisasi pihak ketiga. Jika Anda menggunakan Obsidian Sync pada vault ini, Anda mungkin akan mengalami bentrok, kerusakan berkas, atau kehilangan data.
+Jika Anda menggunakan iCloud Drive, folder Dokumen dan Desktop Anda mungkin tersinkron oleh iCloud. Ini akan mengakibatkan berntrokan dengan Obsidian Sync.
+Vault remote
+Pilih
+Kelola
+Saat ini terhubung dengan vault remote "{{name}}".
+Saat ini tidak terhubung dengan vault remote mana pun.
+Status sinkronisasi
+Obsidian Sync sekarang terjeda.
+Obsidian Sync sekarang berjalan.
+Nama perangkat
+Nama ini akan ditampilkan dalam log sinkr. Kosongkan untuk menggunakan nama bawaan.
+Lanjutkan
+Jeda
+Berkas terhapus
+Tampilkan dan kembalikan berkas yang terhapus.
+Aktivitas sinkronisasi
+Tampilkan aktivitas sinkronisasi terakhir untuk penelusuran kesalahan.
+Tampilkan
+Pemulihan banyak
+Pulihkan file
+Pulihkan {{count}} file
+Pulihkan {{count}} file
+Memulihkan...
+`Pemulihan selesai: {{succeeded}} berhasil dan {{failed}} gagal.`
+Vault size
+Anda menggunakan {{size}} dari {{limit}}
+Tidak dapat mengambil ukuran brankas Anda.
+Mengambil ukuran brankas Anda...
+Ukuran vault melebihi batas
+Ukuran brankas mendekati batas
+Tampilkan berkas-berkas terbesar
+Ini adalah berkas jarak jauh yang mengambil banyak ruang. Setelah hapus lampiran, gunakan tombol bersihkan untuk kosongkan ruang vault jarak jauh.
+Tingkatkan penyimpanan
+Bersihkan
+Sembunyikan perubahan saya
+Secara permanen bersihkan lampiran yang dihapus dari vault jarak jauh untuk menghemat ruang.
+Pembersihan selesai.
+Cegah perangkat tertidur
+Mencegah perangkat dari mode tidur ketika masih terdapat berkas yang disinkronkan.
+Sinkronisasi selektif
+Folder yang dikecualikan
+Cegah folder tertentu dari sinkronisasi.
+ Folder ini sekarang dikecualikan:
+Kelola
+Sinkronisasi gambar
+Sinkronkan berkas gambar dengan ekstensi ini: {{extensions}}.
+Sinkronisasi audio
+Sinkronkan berkas audio dengan ekstensi ini: {{extensions}}.
+Sinkronisasi video
+Sinkronkan video berkas video dengan ekstensi ini: {{extensions}}.
+Sinkronisasi PDF
+Sinkronkan berkas PDF.
+Sinkronkan semua jenis lainnya
+Sinkronkan berkas yang tidak didukung.
+Sinkronkan konfigurasi vault
+Pengaturan riwayat versi
+Tampilkan dan pulihkan riwayat versi dari pengaturan berkas.
+Pengaturan utama
+Aktifkan untuk sinkronkan pengaturan editor, pengaturan berkas & tautan, pintasan kustom, dsb.
+Pengaturan tampilan
+Sinkronkan pengaturan tampilan seperti mode gelap, tema digunakan, dan cuplikan yang diaktifkan.
+Tema dan cuplikan
+Sinkronkan tema dan cuplikan yang diunduh. Apakah mereka aktif atau tidak, tergantung pengaturan sebelumnya.
+Pintasan
+Sinkronkan pintasan kustom.
+Daftar plugin inti aktif
+Sinkronkan plugin inti yang diaktifkan.
+Pengaturan plugin inti
+Sinkronkan pengaturan plugin utama.
+Daftar plugin komunitas aktif
+Sinkronkan plugin komunitas yang diaktifkan.
+Plugin komunitas yang terpasang
+Sinkronkan plugin komunitas yang terpasang (berkas .js, .css, dan manifest.json) dan pengaturannya.
+Sync masih dimuat, silakan segarkan halaman ini nanti.
+Obsidian Sync adalah layanan sinkronisasi tambahan Obsidian dengan enkripsi ujung-ke-ujung dan riwayat versi.
+Untuk memulai sinkronisasi, masuk atau buat akun Obsidian.
+File saat ini
+Perubahan Sync
+Hari ini
+Kemarin
+Minggu ini
+Lebih lama
+Sync terakhir
+{{count}} lagi
+Daftar
+Masuk
+Kelola folder yang dikecualikan
+{{folders}} sekarang dikecualikan dari sinkronisasi.
+Kecualikan folder
+Anda dapat mengecualikan folder yang tersedia ataupun folder yang belum dibuat.
+Hapus dari daftar pengecualian
+Setelan koneksi
+Menghubungkan...
+Koneksi gagal
+Gagal terhubung ke brankas jarak jauh.
+Anda sekarang terhubung ke "{{name}}".
+Mulai menyinkronkan
+Konfirmasi penggabungan Vault
+Vault lokal Anda telah berisi beberapa catatan.
+Jika Anda menghubungkan ke vault remote "{{name}}", catatan di vault lokal Anda akan digabungkan dengan catatan dari vault remote Anda. Dalam kasus terjadinya konflik, versi terkini dari catatan akan disimpan.
+Harap perbarui opsi ini dan mulai ulang aplikasi pada semua perangkat yang Anda inginkan untuk mendapatkan perubahan.
+Vault remote ini sekarang dibagikan dengan orang-orang berikut.
+Vault remote ini sekarang tidak dibagikan kepada siapa pun.
+Vault yang dibagikan dengan Anda
+Berhenti berkolaborasi pada vault ini
+Konfirmasi berhenti berkolaborasi
+Ini akan menghapus vault ini dari daftar vault yang dibagikan dengan Anda. Aksi ini tidak dapat dikembalikan.
+Harap hubungi pemilik vault jika Anda ingin berkolaborasi pada vault ini.
+Keluar
+Gagal memuat brankas jarak jauh.
+Anda perlu berlangganan Obsidian Sync untuk terhubung dengan vault ini.
+Hubungi bantuan
+Jika Anda mengalami masalah dengan Obsidian Sync, harap hubungi kami sehingga kami dapat membantu! Anda dapat menggapai kami melalui support@obsidian.md.
+Salin info debug
+Surel bantuan
+Sync tidak terhubung ke brankas jarak jauh.
+Obsidian Sync memungkinkan anda membuat hingga 5 vault remote. Untuk membuat vault remote baru, harap hapus yang tersedia.
+Tingkatkan brankas
+Tingkatkan enkripsi brankas
+Ada versi enkripsi baru yang tersedia untuk brankas jarak jauh.
+Migrasikan brankas jarak jauh
+Konfigurasi brankas jarak jauh
+Migrasikan
+Ini akan menghapus brankas jarak jauh Anda dan membuatnya kembali dengan enkripsi terbaru. File lokal tidak akan terpengaruh, namun riwayat versi Anda akan hilang.
+Konfirmasi migrasi brankas
+Untuk meningkatkan enkripsi Anda, semua data di brankas akan diunggah ulang ke server Obsidian Sync menggunakan metode enkripsi baru. Proses ini akan menghapus secara permanen semua data yang dienkripsi dengan enkripsi lama, termasuk riwayat versi untuk brankas Anda.
+Penting: kami sangat menyarankan membuat cadangan brankas Anda sebelum melanjutkan untuk mencegah potensi kehilangan data.
+Setelah peningkatan selesai, Anda perlu menyambungkan kembali semua perangkat Anda ke brankas jarak jauh yang telah diperbarui.
+Migrasi brankas Anda mungkin memerlukan waktu. Anda perlu menjaga Obsidian tetap aktif di perangkat ini untuk mengunggah ulang semua catatan dan lampiran Anda. Sebaiknya lakukan ini di perangkat utama Anda.
+Apakah Anda ingin melanjutkan?
+Migrasi brankas sedang berlangsung.
+Migrasi brankas selesai.
+Resolusi konflik
+Pilih cara konflik diselesaikan ketika sebuah catatan dimodifikasi secara terpisah di beberapa perangkat.
+Gabungkan secara otomatis
+Buat file konflik
+Pemulih berkas
+Memungkinkan Anda mengembalikan riwayat terakhir untuk memulihkan dari kecelakaan data hilang. Snapshot hanya menyimpan berkas Markdown.
+Buka riwayat tersimpan
+Rentang waktu riwayat
+Rentang waktu minimal menit di antara dua riwayat.
+Panjang riwayat
+Panjang hari riwayat disimpan.
+Snapshot
+Tampilkan dan pulihkan riwayat tersimpan.
+Lihat
+Hapus riwayat
+Hapus semua riwayat.
+Hapus
+Anda yakin Anda ingin hapus semua riwayat? Perlu dicatat bahwa hanya riwayat yang akan dihapus. Semua berkas dalam vault Anda tidak akan terdampak.
+Snapshot terhapus.
+Tidak ditemukan riwayat.
+Pilih berkas...
+Pilih berkas di sebelah kiri untuk melihat riwayat.
+Komposer catatan
+Gabung, pisah, dan perbaiki catatan.
+Konfirmasi penggabungan berkas
+Tanya sebelum menggabungkan dua berkas.
+Teks setelah ekstraksi
+Apa yang ditampilkan di teks yang dipilih setelah mengekstraknya.
+Hubungkan ke berkas baru
+Sematkan berkas baru
+Tidak ada
+Lokasi berkas template
+Berkas template digunakan ketika menggabungkan atau mengekstrak. Variabel tersedia: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, mis. {{date:YYYY-MM-DD}}.
+Gabungkan berkas ini dengan berkas lain...
+Gabungkan kesemua berkas dengan...
+Tidak ditemukan berkas.
+untuk navigasikan
+untuk gabungkan
+untuk buat baru
+untuk gabungkan ke atas
+untuk tutup
+Pilih berkas untuk digabungkan...
+Gabungkan berkas
+Apakah Anda yakin Anda ingin gabungkan "{{file}}" menjadi "{{destination}}"? "{{file}}" akan dihapus.
+Gabungkan
+Ekstrak seleksi ini...
+Ekstrak judul ini...
+pindah ke bawah
+pindah ke atas
+Gagal menerapkan berkas template: "{{template}}" tidak ditemukan.
+Gagal menemukan judul
+Penampil web
+Riwayat web
+Buka tautan eksternal ke halaman web di dalam Obsidian.
+Buka penampil web
+Tampilkan riwayat
+Aktif/nonaktifkan mode pembaca
+Salin URL
+Hapus dari riwayat
+Bersihkan riwayat
+Buka tautan
+Buka tautan di tab baru
+Buka tautan di sebelah kanan
+Buka tautan di jendela baru
+Buka tautan di browser bawaan
+Buka tautan di penampil web
+Salin alamat tautan
+Bookmark tautan
+Cari “{{query}}”
+Ekstrak pilihan ke catatan baru
+Salin
+Potong
+Tempel
+Hapus
+Pilih semua
+Simpan ke brankas
+Simpan gambar ke brankas
+Salin tautan gambar
+Mundur
+Maju
+Muat ulang
+Bookmark halaman
+Buka di browser bawaan
+Fokuskan bilah alamat
+Cari di web
+Bersihkan data
+Cookie
+Mungkin akan mengeluarkan Anda dari situs web.
+Data cache
+Riwayat
+Semua data penampil web
+Menghapus semua yang di atas serta penyimpanan lokal dan sesi aktif.
+Penampil web baru
+Unable to load that site.
+Please make sure you have the correct address.
+Cari di web
+Data penampil web
+Hapus data penampil web
+Buka tautan eksternal
+Buka tautan di Obsidian alih-alih bawaan sistem.
+Beranda
+Halaman yang ditampilkan saat penampil web dibuka
+Folder halaman tersimpan
+Situs web yang disimpan sebagai markdown akan ditempatkan di sini.
+Mesin pencari
+Mesin pencari yang digunakan saat mencari dari bilah alamat.
+Mesin pencari kustom
+Gunakan %s sebagai pengganti kueri.
+Kustom
+Aktifkan pemblokir iklan
+Jika diaktifkan, daftar filter di bawah akan diterapkan ke semua tab penampil web.
+Aturan pemblokiran iklan
+Satu URL daftar pemblokiran iklan per baris. Dibagikan oleh semua brankas.
+Frekuensi pembaruan pemblokiran iklan
+Jumlah hari antara pembaruan daftar filter. 0 berarti dinonaktifkan. Dibagikan oleh semua brankas.
+Hapus data penampil web
+Unexected error extracting content.
+Tidak dapat menemukan konten untuk diekstrak.
+Kanvas
+Atur dan hubungkan catatan dalam kanvas yang tak terhingga.
+Tambah catatan dari vault
+Tambah media dari vault
+Tambah kartu
+Tambah laman web
+Buat grup
+Buat kartu dengan ukuran spesifik
+Ubah ke berkas...
+Seret untuk menambah catatan dari vault
+Seret untuk menambah media dari vault
+Seret untuk menambah kartu
+Ubah label
+Hapus label
+Cari berkas
+Atur warna
+Perata
+Rata kiri
+Rata tengah
+Rata kanan
+Rata atas
+Rata pusat
+Rata bawah
+Sebarkan secara horizontal
+Sebarkan secara vertikal
+Ratakan secara horizontal
+Ratakan secara vertikal
+Atur dalam satu baris
+Atur dalam satu kolom
+Atur dalam satu kisi
+Ekspor sebagai gambar
+Lompat ke grup
+Atur latar
+Ubah latar
+Ganti latar
+Hapus latar
+Gambar tidak ditemukan.
+Tidak ditemukan media.
+Ekspor "{{title}}" sebagai berkas PNG dengan pengaturan di bawah.
+Estimasi dimensi gambar: {{dimensions}}
+Sebarkan
+Ratakan
+Atur
+Selalu
+Saat Disorot
+Tidak Pernah
+Seksi tidak ditemukan
+Perilaku bawaan roda tetikus
+Perilaku bawaan {{key}}
+Tampilkan menu 
+Lokasi bawaan untuk berkas kanvas baru
+Di mana kanvas yang baru dibuat akan diletakkan.
+Folder untuk berkas kanvas yang baru dibuat
+Berkas kanvas yang baru dibuat akan muncul pada folder ini.
+Tampilkan label kartu
+Kaitkan ke kisi
+Kaitkan kartu ke kisi latar pada saat memindah dan mengubah ukuran.
+Kaitkan ke objek
+Kaitkan kartu ke objek terdekat pada saat memindah dan mengubah ukuran.
+Ambang pembesaran untuk menyembunyikan konten kartu
+Nilai lebih rendah akan meningkatkan performa tetapi menyembunyikan konten kartu sebih dini ketika diperkecil.
+Tampilkan logo
+Ini akan menambahkan logo Obsidian pada sisi kiri bawah.
+Mode Privat
+Ini akan menyamarkan teks apa pun dari kanvas Anda.
+Pembesaran
+Pembesaran yang lebih besar akan menghasilkan gambar dengan resolusi lebih tinggi.
+
+Pilih untuk merender seluruh kanvas atau hanya viewport yang tampak saja.
+Kanvas secara penuh
+Viewport saja
+Sampul
+Biarkan aspek rasio
+Ulangi
+Kanvas baru
+Duplikasi
+Hapus
+Sempitkan ke judul...
+Sempitkan ke blok...
+Sematkan tampilan...
+Tukar berkas...
+Ubah URL...
+Perbesar untuk paskan
+Perbesar ke seleksi
+Muat ulang halaman
+Ikuti koneksi
+Buat kanvas baru
+Ubah ke berkas...
+untuk menanamkan judul
+untuk menanamkan blok
+untuk bernavigasi ke grup
+Ketikkan judul
+Ketikkan URL
+"{{linktext}}" tidak ditemukan.
+Tambah teks...
+Ketik untuk mencari...
+Bantuan kanvas
+Pengaturan kanvas
+Tampilkan keseluruhan berkas
+Tampilkan tampilan bawaan
+Hanya-baca
+Matikan hanya-baca
+Geser
+Geser secara horizontal
+Perbesar
+Pilih semua
+Tambahkan ke / hapus dari pilihan
+Gandakan kartu
+Batasi pergerakan kartu ke sumbu
+Matikan pengaitan selama menggeser
+Hapus kartu
+Seret dari bawah atau ketuk ganda
+Sentuh dan tahan untuk menambah / memindah / memilih
+Seret untuk menggeser
+Cubit untuk memperbesar
+Spasi + Geser untuk menggeser
+Gulir untuk memperbesar
+Grup tanpa judul
+Arah garis
+Tidak searah
+Searah
+Dua arah
+Gambar
+Gaya
+Grup tidak ditemukan
+Tidak dapat mengekspor kanvas kosong
+Canvas mendeteksi penggantian nama file yang memengaruhi {{count}} file Canvas, memperbarui...
+Canvas mendeteksi penggantian nama file yang memengaruhi {{count}} file Canvas, memperbarui...
+Canvas memperbarui {{count}} kartu sematan
+Canvas memperbarui {{count}} kartu sematan
+Basis
+Create bases by querying note properties.
+Basis baru
+Add property
+Tambahkan ringkasan "{{name}}"
+Tambahkan rumus
+Sembunyikan semua
+Alihkan visibilitas
+Hapus rumus
+Tampilan bawaan
+Duplikasi tampilan
+Hapus tampilan
+Hapus ringkasan
+Ekspor CSV...
+Buat basis baru
+Sisipkan basis baru
+Salin tabel ke papan klip
+Change view
+Tambahkan tampilan
+Tambahkan item
+Tambahkan tampilan
+Tambahkan filter
+Tambahkan grup filter
+Tampilkan semua
+Tampilkan semua ({{count}})
+Tambahkan ringkasan
+Sembunyikan ringkasan
+Semua tampilan
+Tampilan ini
+Cari atau buat...
+Properti terhitung
+Jenis properti
+Sembunyikan properti
+Tampilkan properti
+Edit properti
+
+Konfigurasikan tampilan
+Tata letak
+Filter global
+Filter tampilan
+Nama tampilan
+Tampilan
+Tabel
+Nama tampilan
+Nama ringkasan
+Rumus
+Tampilan
+Urutkan
+
+Cari
+Properti
+Baru
+Menampilkan {{count}}
+File templat item baru
+Folder item baru
+Salah satu dari berikut ini benar
+Semua dari berikut ini benar
+Tidak ada dari berikut ini yang benar
+di mana
+atau
+dan
+Properti
+Tanpa judul
+
+name
+nama dasar file
+nama lengkap file
+path
+
+extension
+waktu dibuat
+waktu modifikasi
+ukuran file
+tautan balik file
+tautan file
+sematan file
+tag file
+Tambahkan pengurutan
+Kelompokkan berdasarkan
+Urutkan berdasarkan
+Batasi jumlah hasil
+
+
+Lama ke baru
+Baru ke lama
+
+
+Nama tampilan tidak boleh mengandung: 
+Nama tampilan sudah ada.
+Nama tampilan tidak boleh kosong.
+Filter ini tidak dapat direpresentasikan oleh pembuat filter sederhana.
+Filter tidak dapat diurai. Pembuat filter dasar tidak dapat digunakan.
+Konfigurasi properti tidak valid.
+Konfigurasi properti tidak valid untuk "{{ name }}".
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+Tidak dapat mengurai file basis Anda:
+Tampilan "{{ view }}" tidak ditemukan
+Base configured with an unknown view type: {{ viewtype }}
+Tampilan harus berupa array
+Nilai tampilan harus berupa string. Nilai untuk properti {{ key }} bukan string.
+"{{ key }}" harus berupa {{ type }}
+"filters" harus berupa string atau objek
+Filter "{{ conjunction }}" harus berupa array
+"filters" hanya boleh memiliki salah satu kunci "and", "or", atau "not".
+Gagal mengevaluasi filter: {{ message }}
+Nilai rumus harus berupa string. Nilai untuk properti {{ key }} bukan string.
+Gagal menghitung nilai properti "{{ key }}": {{ message }}
+Kueri memiliki format yang tidak valid. Seharusnya berupa objek YAML.
+Item "view" harus berupa objek YAML, tetapi item {{ index }} bukan
+"name" hilang atau tidak valid pada tampilan {{ index }}
+"{{ key }}" diperlukan pada tampilan "{{ viewName }}"
+"{{ key }}" harus berupa {{ type }} pada tampilan "{{ viewName }}"
+Nilai "{{ key }}" semuanya harus bertipe {{ type }} pada tampilan "{{ viewName }}"
+Tidak dapat mengurai filter pada tampilan "{{ viewName }}": {{ message }}
+Loop tak berujung terdeteksi dalam rumus
+Properti tidak valid
+Catatan ini akan difilter karena tidak sesuai dengan kriteria Anda
+Filter lanjutan
+mis. 10
+Filter lanjutan
+Filter sederhana
+Hapus filter
+Tidak ada
+Daftar
+Penanda
+Indentasi properti
+Pemisah properti
+Poin
+Angka
+Tidak ada
+Kartu
+Ukuran kartu
+Properti gambar
+Penyesuaian gambar
+Sampul
+Muat
+Rasio aspek gambar
+Tabel
+Sembunyikan kolom
+Edit properti...
+Edit rumus...
+Hapus pengurutan
+Urutkan A → Z
+Urutkan Z → A
+Tinggi baris
+Pendek
+Sedang
+Tinggi
+Sangat tinggi
+Ringkas...
+Kelompokkan berdasarkan properti ini
+Hapus nilai
+Ringkasan
+Gagal mengurai rumus "{{ formula }}"
+Tidak dapat menemukan fungsi "{{ function }}"
+Tidak dapat menemukan fungsi "{{ function }}" pada tipe {{ type }}
+Tidak dapat memanggil fungsi "{{ function }}", argumen tidak cukup.
+Tidak dapat memanggil fungsi "{{ function }}", terlalu banyak argumen.
+Kesalahan tipe pada "{{ function }}", parameter "{{ parameter }}". Diharapkan {{ expected }}, diberikan {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Sorot semua
+Cocokkan diakritik
+Seluruh kata
+Sampul
+Daftar isi
+Ungkap halaman di daftar isi
+Peralih bilah sisi
+Halaman sebelumnya
+Halaman selanjutnya
+Paskan lebar
+Paskan tinggi
+Simpan posisi terkini di dokumen
+Salin anotasi
+Salin sebagai kutipan
+Salin tautan ke seleksi
+Salin tautan ke anotasi
+Salin tautan ke seksi
+Salin tautan ke “{{title}}”
+Salin tautan ke halaman {{page}}
+{{current}} hingga {{limit}} ditemukan
+{{current}} dari {{total}} ditemukan
+{{current}} dari {{total}} ditemukan
+PDF ini terproteksi sandi
+Kata sandi salah
+Masukkan kata sandi
+dari {{count}}
+({{current}} dari {{count}})
+Halaman tunggal
+Dua halaman (ganjil)
+Dua halaman (genap)
+Opsi bilah sisi
+Opsi tampilan
+Sesuai tema
+halaman {{page}}
+Halaman {{page}}
+Halaman {{page}}
+Halaman {{page}}
+[{{type}} Anotasi]
+
+Daftar
+Tidak diketahui
+Teks
+Alias
+Tag
+
+
+Properti
+Tanggal
+Tanggal & waktu
+Angka
+Centang
+Ketik [[
+untuk menautkan catatan
+untuk melepas
+Tipe properti
+Urutkan
+Nama properti tidak boleh kosong.
+Properti sudah ada
+nama tag tidak valid
+angka tidak valid
+Gagal membaca properti.
+Tidak ada nilai
+Properti
+Properti tidak valid
+Tampilkan sumber
+Kesalahan sintaks. Metadata awal Anda tidak valid.
+Tambah properti
+Tipe tidak sesusai, diharapkan {{type}}
+Tipe tidak cocok
+Tampilkan sebagai {{type}}?
+Data {{oldType}} Anda tidak kompatibel. Data akan disesuaikan agar sesuai dengan format baru.
+Kolom
+Baris
+Add row after
+Add column after
+Add row before
+Pindahkan baris ke atas
+Pindahkan baris ke bawah
+Add column before
+Pindahkan kolom ke kiri
+Pindahkan kolom ke kanan
+Duplikasi baris
+Duplikasi kolom
+Hapus baris
+Hapus kolom
+Rata kiri
+Rata tengah
+Rata kanan
+Hapus sel
+Kosongkan sel
+Urutkan berdasarkan kolom (A ke Z)
+Urutkan berdasarkan kolom (Z ke A)
+Tabel: {{command}}
+Jenis callout
+
+Penting
+
+Berhasil
+Pertanyaan
+Peringatan
+Kutipan
+Contoh
+Tidak ada
+Lainnya...
+Jenis callout...
+
+{{count}} kata
+{{count}} kata
+{{count}} hasil
+{{count}} hasil
+{{count}} karakter
+{{count}} karakter
+{{count}} tautan
+{{count}} tautan
+{{count}} berkas
+{{count}} berkas
+
+{{count}} folder
+{{count}} tautan balik
+{{count}} backlink
+
+{{count}} tab
+{{count}} properti
+{{count}} properti
+{{count}} situs
+{{count}} situs
+
+{{count}} plugin
+{{count}} aktif
+{{count}} cuplikan
+{{count}} cuplikan
+{{count}} tema
+{{count}} tema

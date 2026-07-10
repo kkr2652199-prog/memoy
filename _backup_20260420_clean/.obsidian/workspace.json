@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "e71a4fc8b047d355",
+    "type": "split",
+    "children": [
+      {
+        "id": "bef5eba5543e588e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc72fbab3d75995c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wiki/유튜브/AI 머니/2026년 최고의 AI 영상 툴, 이 영상 하나로 종결합니다 (가장 현실적인 것들 추천)_2026-03.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026년 최고의 AI 영상 툴, 이 영상 하나로 종결합니다 (가장 현실적인 것들 추천)_2026-03"
+            }
+          },
+          {
+            "id": "a1c97545ce8c599b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a4e825358ac6615",
+    "type": "split",
+    "children": [
+      {
+        "id": "afde388c56aa3111",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06b0b08af79438cd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "85afbb3ffe906662",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "9fa4b86c67866249",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "542cec5ad584be40",
+    "type": "split",
+    "children": [
+      {
+        "id": "c63b06f78386b9a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37413a01ba638e7b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Wiki/유튜브/CONNECT AI LAB/[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04 의 백링크"
+            }
+          },
+          {
+            "id": "e729e6585a587e99",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Wiki/유튜브/CONNECT AI LAB/[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04 의 나가는 링크"
+            }
+          },
+          {
+            "id": "17ee9a085252580b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "3c697aab5cbb988d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "c6eae04adc173bd3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Wiki/유튜브/CONNECT AI LAB/[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "[대표 멤버십] 밤샘 개발 2탄🧟‍♂️ 로컬 500 에러 박살 냈습니다! 안티그래비티 ↔ LM스튜디오 직결 연동 툴 💻_2026-04 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "dc72fbab3d75995c",
+  "lastOpenFiles": [
+    "Wiki/개념/사용자 자료.md",
+    "Wiki/엔티티/드랜드.md",
+    "Wiki/내_지식/AI 대화/자료 관리 구조 개선 방안_2026-04.md",
+    "Wiki/내_지식/AI 대화",
+    "Raw_Materials/2026-04-17_자료 관리 구조 개선 방안.md",
+    "Wiki/내_지식/영상 대본 AI 규칙/야담 대본 작성 흐름과 구조_2026-04.md",
+    "Wiki/[가이드]/사용자 관리하는법/curl-verify-temp_2026-04.md",
+    "Wiki/개념/이해의 우위.md",
+    "Wiki/개념/정보의 우위.md",
+    "Wiki/엔티티/동동 형.md",
+    "Wiki/엔티티/동동냥경탐.md",
+    "Wiki/내_지식/영상 대본 AI 규칙/경제 대본 작성 흐름과 구조_2026-04.md",
+    "Raw_Materials/2026-04-17_경제 대본 작성 흐름과 구조.md",
+    "Wiki/개념/장르 선택.md",
+    "Wiki/개념/대본 생성.md",
+    "Wiki/엔티티/정약용.md",
+    "Wiki/엔티티/이순신.md",
+    "Wiki/엔티티/한국 전통 야담.md",
+    "Wiki/내_지식/영상 대본 AI 규칙/야담 대본 생성 흐름과 구조_2026-04.md",
+    "Wiki/내_지식/영상 대본 AI 규칙",
+    "Raw_Materials/2026-04-16_야담 대본 생성 흐름과 구조.md",
+    "Wiki/엔티티/LLM.md",
+    "Wiki/내_지식/워크플로우/LLM 위키로 개인 지식 관리하기_2026-04.md",
+    "Raw_Materials/2026-04-16_LLM 위키로 개인 지식 관리하기.md",
+    "Wiki/내_지식/wiki.claud.md파일/LLM 위키로 개인 지식 관리하기_2026-04.md",
+    "Wiki/내_지식/wiki.claud.md파일",
+    "Wiki/[가이드]/사용자 관리하는법/사용자 자료 입력 가이드_2026-04.md",
+    "Wiki/개념/부드러운 조명.md",
+    "Wiki/개념/자연스러운 비율.md",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_5.jpg",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_8.png",
+    "Raw_Materials/2026-04-16_구찌 빈티지 로고 반팔 티셔츠.txt",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_7.png",
+    "Raw_Materials/2026-04-16_고양이 주인공의 감정 표현 영상.txt",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_4.jpg",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_3.jpg",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_2.jpg",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_6.png",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_5.png",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내_4.png",
+    "Raw_Materials/2026-04-16_Tesseract 설치 필요성 안내.jpg",
+    "Raw_Materials/2026-04-16_스코티시 폴드 고양이 의인화 프롬프트.txt",
+    "Raw_Materials/2026-04-16_스코티시 폴드 고양이 캐릭터 디자인.txt",
+    "Wiki/내_지식/워크플로우",
+    "Wiki/내_지식",
+    "Raw_Materials/2026-04-16_스코티시 폴드 고양이의 인터뷰 장면.txt"
+  ]
+}

@@ -1,0 +1,1767 @@
+2026-04-24 09:54:01,665 INFO batch_regen 위키 백업 시작: D:\MONEY lol\My_Library\Wiki → D:\MONEY lol\My_Library\Wiki_backup_before_regen
+2026-04-24 09:54:02,742 INFO batch_regen 위키 백업 완료: 1183개 파일
+2026-04-24 09:54:02,792 INFO batch_regen 일괄 재생성 시작: 엔티티 355 + 개념 483 = 838건
+2026-04-24 09:54:02,792 INFO batch_regen DRY_RUN=False
+2026-04-24 09:54:02,792 INFO batch_regen 
+==================================================
+2026-04-24 09:54:02,792 INFO batch_regen 엔티티 재생성 시작: 355건
+2026-04-24 09:54:02,793 INFO batch_regen ==================================================
+2026-04-24 09:54:02,793 INFO batch_regen [1/838] 엔티티: 유튜브
+2026-04-24 09:54:09,655 INFO batch_regen   → updated (6.8초)
+2026-04-24 09:54:10,665 INFO batch_regen [2/838] 엔티티: AI 크래프터 스튜디오
+2026-04-24 09:54:15,757 INFO batch_regen   → updated (5.1초)
+2026-04-24 09:54:16,762 INFO batch_regen [3/838] 엔티티: 구글플로우
+2026-04-24 09:54:30,186 INFO batch_regen   → updated (13.4초)
+2026-04-24 09:54:31,188 INFO batch_regen [4/838] 엔티티: 오토플로우
+2026-04-24 09:54:36,580 INFO batch_regen   → updated (5.4초)
+2026-04-24 09:54:37,582 INFO batch_regen [5/838] 엔티티: AI 크래프터
+2026-04-24 09:54:43,686 INFO batch_regen   → updated (6.1초)
+2026-04-24 09:54:44,691 INFO batch_regen [6/838] 엔티티: 재미나이
+2026-04-24 09:54:51,463 INFO batch_regen   → updated (6.8초)
+2026-04-24 09:54:52,468 INFO batch_regen [7/838] 엔티티: 나노바나 2
+2026-04-24 09:54:58,839 INFO batch_regen   → updated (6.4초)
+2026-04-24 09:54:59,841 INFO batch_regen [8/838] 엔티티: 위스크
+2026-04-24 09:55:07,346 INFO batch_regen   → updated (7.5초)
+2026-04-24 09:55:08,357 INFO batch_regen [9/838] 엔티티: 에이스 스텝
+2026-04-24 09:55:13,790 INFO batch_regen   → updated (5.4초)
+2026-04-24 09:55:14,800 INFO batch_regen [10/838] 엔티티: 엔비디아
+2026-04-24 09:55:21,925 INFO batch_regen   → updated (7.1초)
+2026-04-24 09:55:22,934 INFO batch_regen [11/838] 엔티티: AMD
+2026-04-24 09:55:44,692 INFO batch_regen   → updated (21.5초)
+2026-04-24 09:55:45,694 INFO batch_regen [12/838] 엔티티: 그록 AI
+2026-04-24 09:55:53,555 INFO batch_regen   → updated (7.8초)
+2026-04-24 09:55:54,557 INFO batch_regen [13/838] 엔티티: AI 아바타
+2026-04-24 09:56:14,669 INFO batch_regen   → updated (20.1초)
+2026-04-24 09:56:15,683 INFO batch_regen [14/838] 엔티티: 아레나 AI
+2026-04-24 09:56:15,900 INFO batch_regen   → fail (0.2초)
+2026-04-24 09:56:16,906 INFO batch_regen [15/838] 엔티티: 메타 AI
+2026-04-24 09:56:21,801 INFO batch_regen   → updated (4.9초)
+2026-04-24 09:56:22,816 INFO batch_regen [16/838] 엔티티: 클릭 AI 3.0
+2026-04-24 09:56:29,234 INFO batch_regen   → updated (6.4초)
+2026-04-24 09:56:30,244 INFO batch_regen [17/838] 엔티티: 시덴스 1.5%
+2026-04-24 09:56:36,521 INFO batch_regen   → updated (6.3초)
+2026-04-24 09:56:37,534 INFO batch_regen [18/838] 엔티티: Auto Hunyuan
+2026-04-24 09:56:44,934 INFO batch_regen   → updated (7.4초)
+2026-04-24 09:56:45,935 INFO batch_regen [19/838] 엔티티: Microsoft Edge
+2026-04-24 09:56:57,838 INFO batch_regen   → updated (11.9초)
+2026-04-24 09:56:58,852 INFO batch_regen [20/838] 엔티티: 플로바 AI
+2026-04-24 09:57:05,639 WARNING app.core.entity_wiki 위키 품질 검증 실패: 플로바 AI — 금지 문구 '다양한 AI' 포함
+2026-04-24 09:57:05,640 INFO batch_regen   → fail (6.8초)
+2026-04-24 09:57:06,644 INFO batch_regen --- 중간 집계: 20/838 완료, 성공 18, 경과 3.1분 ---
+2026-04-24 09:57:06,644 INFO batch_regen [21/838] 엔티티: 야가미 라이터
+2026-04-24 09:57:17,037 INFO batch_regen   → updated (10.4초)
+2026-04-24 09:57:18,046 INFO batch_regen [22/838] 엔티티: Google
+2026-04-24 09:57:25,102 INFO batch_regen   → updated (7.0초)
+2026-04-24 09:57:26,112 INFO batch_regen [23/838] 엔티티: Gemma 4
+2026-04-24 09:57:31,387 INFO batch_regen   → updated (5.3초)
+2026-04-24 09:57:32,401 INFO batch_regen [24/838] 엔티티: Ollama
+2026-04-24 09:57:38,767 INFO batch_regen   → updated (6.3초)
+2026-04-24 09:57:39,772 INFO batch_regen [25/838] 엔티티: 마이크로소프트 스토어
+2026-04-24 09:57:46,307 INFO batch_regen   → updated (6.5초)
+2026-04-24 09:57:47,316 INFO batch_regen [26/838] 엔티티: 아정당
+2026-04-24 09:57:55,678 INFO batch_regen   → updated (8.4초)
+2026-04-24 09:57:56,685 INFO batch_regen [27/838] 엔티티: 긱 언인스톨러
+2026-04-24 09:58:06,083 INFO batch_regen   → updated (9.4초)
+2026-04-24 09:58:07,090 INFO batch_regen [28/838] 엔티티: 테슬라
+2026-04-24 09:58:13,508 INFO batch_regen   → updated (6.4초)
+2026-04-24 09:58:14,510 INFO batch_regen [29/838] 엔티티: 안드레이 카르파시
+2026-04-24 09:58:22,233 INFO batch_regen   → updated (7.7초)
+2026-04-24 09:58:23,247 INFO batch_regen [30/838] 엔티티: LLM 위키
+2026-04-24 09:58:30,403 INFO batch_regen   → updated (7.2초)
+2026-04-24 09:58:31,415 INFO batch_regen [31/838] 엔티티: AI 콜랩
+2026-04-24 09:58:40,297 INFO batch_regen   → updated (8.9초)
+2026-04-24 09:58:41,312 INFO batch_regen [32/838] 엔티티: 레오나르도 AI
+2026-04-24 09:58:55,758 INFO batch_regen   → updated (14.4초)
+2026-04-24 09:58:56,760 INFO batch_regen [33/838] 엔티티: 스텔라 사가스
+2026-04-24 09:59:02,579 INFO batch_regen   → updated (5.8초)
+2026-04-24 09:59:03,588 INFO batch_regen [34/838] 엔티티: 이강민의 잡지사
+2026-04-24 09:59:10,068 INFO batch_regen   → updated (6.5초)
+2026-04-24 09:59:11,082 INFO batch_regen [35/838] 엔티티: 미드 전이
+2026-04-24 09:59:18,538 INFO batch_regen   → updated (7.3초)
+2026-04-24 09:59:19,552 INFO batch_regen [36/838] 엔티티: 노트북 LM
+2026-04-24 09:59:25,105 INFO batch_regen   → updated (5.5초)
+2026-04-24 09:59:26,113 INFO batch_regen [37/838] 엔티티: 미니맥스 오디오
+2026-04-24 09:59:49,272 INFO batch_regen   → updated (23.2초)
+2026-04-24 09:59:50,275 INFO batch_regen [38/838] 엔티티: 이재명 정부
+2026-04-24 09:59:56,010 INFO batch_regen   → updated (5.7초)
+2026-04-24 09:59:57,013 INFO batch_regen [39/838] 엔티티: KB 금융
+2026-04-24 10:00:03,418 INFO batch_regen   → updated (6.4초)
+2026-04-24 10:00:04,432 INFO batch_regen [40/838] 엔티티: A 회사
+2026-04-24 10:00:19,035 INFO batch_regen   → updated (14.6초)
+2026-04-24 10:00:20,049 INFO batch_regen --- 중간 집계: 40/838 완료, 성공 38, 경과 6.3분 ---
+2026-04-24 10:00:20,049 INFO batch_regen [41/838] 엔티티: 제론 파월
+2026-04-24 10:00:26,240 INFO batch_regen   → updated (6.2초)
+2026-04-24 10:00:27,250 INFO batch_regen [42/838] 엔티티: S&P 500
+2026-04-24 10:00:38,681 INFO batch_regen   → updated (11.4초)
+2026-04-24 10:00:39,686 INFO batch_regen [43/838] 엔티티: 국민연금
+2026-04-24 10:00:47,505 INFO batch_regen   → updated (7.8초)
+2026-04-24 10:00:48,519 INFO batch_regen [44/838] 엔티티: 대한민국
+2026-04-24 10:01:04,441 INFO batch_regen   → updated (15.9초)
+2026-04-24 10:01:05,451 INFO batch_regen [45/838] 엔티티: 일론 머스크
+2026-04-24 10:01:10,673 INFO batch_regen   → updated (5.2초)
+2026-04-24 10:01:11,679 INFO batch_regen [46/838] 엔티티: TPU
+2026-04-24 10:01:18,084 INFO batch_regen   → updated (6.4초)
+2026-04-24 10:01:19,088 INFO batch_regen [47/838] 엔티티: 나스닥
+2026-04-24 10:01:28,597 INFO batch_regen   → updated (9.5초)
+2026-04-24 10:01:29,599 INFO batch_regen [48/838] 엔티티: S&P
+2026-04-24 10:01:48,259 INFO batch_regen   → updated (18.7초)
+2026-04-24 10:01:49,261 INFO batch_regen [49/838] 엔티티: 구독자
+2026-04-24 10:01:56,760 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:01:57,772 INFO batch_regen [50/838] 엔티티: 알고리즘
+2026-04-24 10:02:18,103 INFO batch_regen   → updated (20.3초)
+2026-04-24 10:02:19,110 INFO batch_regen [51/838] 엔티티: 안드레이 카파시
+2026-04-24 10:02:43,627 INFO batch_regen   → updated (24.5초)
+2026-04-24 10:02:44,640 INFO batch_regen [52/838] 엔티티: 클로드 코드
+2026-04-24 10:02:50,202 INFO batch_regen   → updated (5.5초)
+2026-04-24 10:02:51,215 INFO batch_regen [53/838] 엔티티: LM 위키
+2026-04-24 10:02:57,223 INFO batch_regen   → updated (6.0초)
+2026-04-24 10:02:58,235 INFO batch_regen [54/838] 엔티티: 옵시디언
+2026-04-24 10:03:26,337 INFO batch_regen   → updated (28.1초)
+2026-04-24 10:03:27,340 INFO batch_regen [55/838] 엔티티: 안드레 카라파시
+2026-04-24 10:03:49,249 INFO batch_regen   → updated (21.9초)
+2026-04-24 10:03:50,251 INFO batch_regen [56/838] 엔티티: 안드레 카르파시
+2026-04-24 10:03:59,138 INFO batch_regen   → updated (8.9초)
+2026-04-24 10:04:00,151 INFO batch_regen [57/838] 엔티티: LM 미키
+2026-04-24 10:04:06,988 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:04:07,998 INFO batch_regen [58/838] 엔티티: Andrej Karpathy
+2026-04-24 10:04:17,012 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:04:18,018 INFO batch_regen [59/838] 엔티티: LLM Wiki
+2026-04-24 10:04:23,773 INFO batch_regen   → updated (5.7초)
+2026-04-24 10:04:24,778 INFO batch_regen [60/838] 엔티티: InfraNodus
+2026-04-24 10:04:31,170 INFO batch_regen   → updated (6.4초)
+2026-04-24 10:04:32,172 INFO batch_regen --- 중간 집계: 60/838 완료, 성공 58, 경과 10.5분 ---
+2026-04-24 10:04:32,172 INFO batch_regen [61/838] 엔티티: Obsidian
+2026-04-24 10:04:39,691 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:04:40,702 INFO batch_regen [62/838] 엔티티: Claude Code
+2026-04-24 10:04:47,773 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:04:48,779 INFO batch_regen [63/838] 엔티티: 마인드볼트
+2026-04-24 10:04:55,824 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:04:56,835 INFO batch_regen [64/838] 엔티티: 카파시
+2026-04-24 10:05:07,354 INFO batch_regen   → updated (10.5초)
+2026-04-24 10:05:08,363 INFO batch_regen [65/838] 엔티티: VS 코드
+2026-04-24 10:05:14,855 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:05:15,858 INFO batch_regen [66/838] 엔티티: 클로드
+2026-04-24 10:05:22,857 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:05:23,868 INFO batch_regen [67/838] 엔티티: 랜스로픽
+2026-04-24 10:05:30,725 INFO batch_regen   → updated (6.9초)
+2026-04-24 10:05:31,732 INFO batch_regen [68/838] 엔티티: 누스 리서치
+2026-04-24 10:05:39,587 INFO batch_regen   → updated (7.8초)
+2026-04-24 10:05:40,593 INFO batch_regen [69/838] 엔티티: 헤르메스
+2026-04-24 10:05:45,969 INFO batch_regen   → updated (5.4초)
+2026-04-24 10:05:46,979 INFO batch_regen [70/838] 엔티티: 앤스로픽
+2026-04-24 10:05:54,279 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:05:55,294 INFO batch_regen [71/838] 엔티티: 클로드 미소스
+2026-04-24 10:06:02,831 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:06:03,832 INFO batch_regen [72/838] 엔티티: 글래스윙
+2026-04-24 10:06:12,840 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:06:13,843 INFO batch_regen [73/838] 엔티티: KBS 뉴스 채널
+2026-04-24 10:06:32,951 INFO batch_regen   → updated (19.1초)
+2026-04-24 10:06:33,956 INFO batch_regen [74/838] 엔티티: 오마이 클라우드 코드
+2026-04-24 10:06:47,361 INFO batch_regen   → updated (13.4초)
+2026-04-24 10:06:48,371 INFO batch_regen [75/838] 엔티티: Andre Karpathy
+2026-04-24 10:06:53,191 INFO batch_regen   → updated (4.8초)
+2026-04-24 10:06:54,203 INFO batch_regen [76/838] 엔티티: Hunyuan 1.5
+2026-04-24 10:07:01,607 INFO batch_regen   → updated (7.4초)
+2026-04-24 10:07:02,622 INFO batch_regen [77/838] 엔티티: LLM wiki
+2026-04-24 10:07:08,393 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:07:09,402 INFO batch_regen [78/838] 엔티티: 구글 비즈
+2026-04-24 10:07:41,129 INFO batch_regen   → updated (31.7초)
+2026-04-24 10:07:42,135 INFO batch_regen [79/838] 엔티티: 탈레임
+2026-04-24 10:07:50,543 INFO batch_regen   → updated (8.4초)
+2026-04-24 10:07:51,552 INFO batch_regen [80/838] 엔티티: 배우 오토메이션
+2026-04-24 10:07:59,201 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:08:00,210 INFO batch_regen --- 중간 집계: 80/838 완료, 성공 78, 경과 14.0분 ---
+2026-04-24 10:08:00,210 INFO batch_regen [81/838] 엔티티: Hunyuan I2V
+2026-04-24 10:08:05,143 INFO batch_regen   → updated (4.9초)
+2026-04-24 10:08:06,153 INFO batch_regen [82/838] 엔티티: 윈도우 스토 앱
+2026-04-24 10:08:19,249 INFO batch_regen   → updated (13.1초)
+2026-04-24 10:08:20,256 INFO batch_regen [83/838] 엔티티: 유튜브 스타트
+2026-04-24 10:08:28,081 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:08:29,086 INFO batch_regen [84/838] 엔티티: 하일로 AI
+2026-04-24 10:08:36,577 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:08:37,589 INFO batch_regen [85/838] 엔티티: 한국 경제
+2026-04-24 10:08:44,175 INFO batch_regen   → updated (6.6초)
+2026-04-24 10:08:45,180 INFO batch_regen [86/838] 엔티티: 달러 인덱스
+2026-04-24 10:08:54,037 INFO batch_regen   → updated (8.9초)
+2026-04-24 10:08:55,040 INFO batch_regen [87/838] 엔티티: 오바마케어
+2026-04-24 10:09:00,499 INFO batch_regen   → updated (5.5초)
+2026-04-24 10:09:01,501 INFO batch_regen [88/838] 엔티티: 도널드 트럼프
+2026-04-24 10:09:10,823 INFO batch_regen   → updated (9.3초)
+2026-04-24 10:09:11,830 INFO batch_regen [89/838] 엔티티: 그록 자동화
+2026-04-24 10:09:17,657 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:09:18,664 INFO batch_regen [90/838] 엔티티: 미국 금리
+2026-04-24 10:09:27,813 INFO batch_regen   → updated (9.1초)
+2026-04-24 10:09:28,818 INFO batch_regen [91/838] 엔티티: 도요타 자동차
+2026-04-24 10:09:44,487 INFO batch_regen   → updated (15.7초)
+2026-04-24 10:09:45,491 INFO batch_regen [92/838] 엔티티: 지식 그래프
+2026-04-24 10:09:52,487 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:09:53,489 INFO batch_regen [93/838] 엔티티: 안드로이드 네이티브
+2026-04-24 10:10:10,229 INFO batch_regen   → updated (16.7초)
+2026-04-24 10:10:11,242 INFO batch_regen [94/838] 엔티티: 리모트 SSH
+2026-04-24 10:10:16,427 INFO batch_regen   → updated (5.2초)
+2026-04-24 10:10:17,432 INFO batch_regen [95/838] 엔티티: 오픈 클로
+2026-04-24 10:10:28,755 INFO batch_regen   → updated (11.3초)
+2026-04-24 10:10:29,759 INFO batch_regen [96/838] 엔티티: 채지T
+2026-04-24 10:10:37,195 INFO batch_regen   → updated (7.4초)
+2026-04-24 10:10:38,207 INFO batch_regen [97/838] 엔티티: 하네스 엔지니어링
+2026-04-24 10:10:45,582 INFO batch_regen   → updated (7.4초)
+2026-04-24 10:10:46,586 INFO batch_regen [98/838] 엔티티: 유튜브 데이터 API V3
+2026-04-24 10:10:52,227 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:10:53,238 INFO batch_regen [99/838] 엔티티: 구글 계정
+2026-04-24 10:11:18,967 INFO batch_regen   → updated (25.7초)
+2026-04-24 10:11:19,969 INFO batch_regen [100/838] 엔티티: 기터브
+2026-04-24 10:11:47,501 INFO batch_regen   → updated (27.5초)
+2026-04-24 10:11:48,506 INFO batch_regen --- 중간 집계: 100/838 완료, 성공 98, 경과 17.8분 ---
+2026-04-24 10:11:48,506 INFO batch_regen [101/838] 엔티티: 오키프
+2026-04-24 10:11:56,423 INFO batch_regen   → updated (7.9초)
+2026-04-24 10:11:57,425 INFO batch_regen [102/838] 엔티티: 스마트 스토어
+2026-04-24 10:12:05,433 INFO batch_regen   → updated (8.0초)
+2026-04-24 10:12:06,447 INFO batch_regen [103/838] 엔티티: AI 유튜브
+2026-04-24 10:12:15,152 INFO batch_regen   → updated (8.7초)
+2026-04-24 10:12:16,162 INFO batch_regen [104/838] 엔티티: 젠스파크
+2026-04-24 10:12:24,031 INFO batch_regen   → updated (7.9초)
+2026-04-24 10:12:25,047 INFO batch_regen [105/838] 엔티티: Claude
+2026-04-24 10:12:43,569 INFO batch_regen   → updated (18.5초)
+2026-04-24 10:12:44,578 INFO batch_regen [106/838] 엔티티: Brian Kernighan
+2026-04-24 10:13:05,999 INFO batch_regen   → updated (21.4초)
+2026-04-24 10:13:07,004 INFO batch_regen [107/838] 엔티티: Canva
+2026-04-24 10:13:13,498 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:13:14,502 INFO batch_regen [108/838] 엔티티: Matt
+2026-04-24 10:13:20,342 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:13:21,348 INFO batch_regen [109/838] 엔티티: 안드레 카파
+2026-04-24 10:13:27,384 INFO batch_regen   → updated (6.0초)
+2026-04-24 10:13:28,398 INFO batch_regen [110/838] 엔티티: 코넥트 AI랩
+2026-04-24 10:13:34,583 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:13:35,595 INFO batch_regen [111/838] 엔티티: 안티 그래비티
+2026-04-24 10:13:44,532 WARNING app.core.entity_wiki 위키 품질 검증 실패: 안티 그래비티 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:13:44,532 INFO batch_regen   → fail (8.9초)
+2026-04-24 10:13:45,538 INFO batch_regen [112/838] 엔티티: 잼마 4
+2026-04-24 10:13:55,443 INFO batch_regen   → updated (9.9초)
+2026-04-24 10:13:56,444 INFO batch_regen [113/838] 엔티티: 세컨드 브레인
+2026-04-24 10:14:04,329 INFO batch_regen   → updated (7.9초)
+2026-04-24 10:14:05,330 INFO batch_regen [114/838] 엔티티: LM 스튜디오
+2026-04-24 10:14:17,512 INFO batch_regen   → updated (12.2초)
+2026-04-24 10:14:18,515 INFO batch_regen [115/838] 엔티티: SQL라이트
+2026-04-24 10:14:50,596 INFO batch_regen   → updated (32.1초)
+2026-04-24 10:14:51,612 INFO batch_regen [116/838] 엔티티: 엘라마귀반
+2026-04-24 10:14:58,786 INFO batch_regen   → updated (7.2초)
+2026-04-24 10:14:59,789 INFO batch_regen [117/838] 엔티티: vibe coding
+2026-04-24 10:15:07,064 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:15:08,073 INFO batch_regen [118/838] 엔티티: 구글 잼마 4
+2026-04-24 10:15:15,606 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:15:16,613 INFO batch_regen [119/838] 엔티티: 코덱스 은행 ETF
+2026-04-24 10:15:23,813 INFO batch_regen   → updated (7.2초)
+2026-04-24 10:15:24,817 INFO batch_regen [120/838] 엔티티: 구글비즈
+2026-04-24 10:15:32,531 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:15:33,538 INFO batch_regen --- 중간 집계: 120/838 완료, 성공 117, 경과 21.5분 ---
+2026-04-24 10:15:33,538 INFO batch_regen [121/838] 엔티티: AI 멘토 제
+2026-04-24 10:15:39,518 INFO batch_regen   → updated (5.9초)
+2026-04-24 10:15:40,521 INFO batch_regen [122/838] 엔티티: 팀웍스
+2026-04-24 10:15:59,464 INFO batch_regen   → updated (18.9초)
+2026-04-24 10:16:00,474 INFO batch_regen [123/838] 엔티티: 정원사
+2026-04-24 10:16:06,874 INFO batch_regen   → updated (6.4초)
+2026-04-24 10:16:07,888 INFO batch_regen [124/838] 엔티티: GitHub
+2026-04-24 10:16:32,386 INFO batch_regen   → updated (24.4초)
+2026-04-24 10:16:33,390 INFO batch_regen [125/838] 엔티티: 클로드 이그노어
+2026-04-24 10:16:45,094 INFO batch_regen   → updated (11.7초)
+2026-04-24 10:16:46,103 INFO batch_regen [126/838] 엔티티: 배우 3.1
+2026-04-24 10:16:58,343 INFO batch_regen   → updated (12.2초)
+2026-04-24 10:16:59,354 INFO batch_regen [127/838] 엔티티: AI 워크스페이스
+2026-04-24 10:17:11,541 INFO batch_regen   → updated (12.2초)
+2026-04-24 10:17:12,551 INFO batch_regen [128/838] 엔티티: Gmail
+2026-04-24 10:17:31,252 INFO batch_regen   → updated (17.9초)
+2026-04-24 10:17:32,254 INFO batch_regen [129/838] 엔티티: 2.6
+2026-04-24 10:17:43,725 INFO batch_regen   → updated (11.5초)
+2026-04-24 10:17:44,739 INFO batch_regen [130/838] 엔티티: 미국 주식
+2026-04-24 10:17:51,767 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:17:52,768 INFO batch_regen [131/838] 엔티티: 연방 준비 제도
+2026-04-24 10:18:00,376 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:18:01,388 INFO batch_regen [132/838] 엔티티: 최대 절전 모드
+2026-04-24 10:18:07,888 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:18:08,890 INFO batch_regen [133/838] 엔티티: Grok
+2026-04-24 10:18:19,347 INFO batch_regen   → updated (10.4초)
+2026-04-24 10:18:20,352 INFO batch_regen [134/838] 엔티티: Gemma
+2026-04-24 10:18:27,367 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:18:28,379 INFO batch_regen [135/838] 엔티티: LLM
+2026-04-24 10:18:43,051 INFO batch_regen   → updated (14.7초)
+2026-04-24 10:18:44,065 INFO batch_regen [136/838] 엔티티: CLAUDE
+2026-04-24 10:19:11,274 INFO batch_regen   → updated (27.2초)
+2026-04-24 10:19:12,282 INFO batch_regen [137/838] 엔티티: 한국 전통 야담
+2026-04-24 10:19:17,459 INFO batch_regen   → updated (5.2초)
+2026-04-24 10:19:18,460 INFO batch_regen [138/838] 엔티티: 이순신
+2026-04-24 10:19:40,081 INFO batch_regen   → updated (21.6초)
+2026-04-24 10:19:41,096 INFO batch_regen [139/838] 엔티티: 정약용
+2026-04-24 10:19:53,961 INFO batch_regen   → updated (12.9초)
+2026-04-24 10:19:54,968 INFO batch_regen [140/838] 엔티티: 동동냥경탐
+2026-04-24 10:20:01,557 INFO batch_regen   → updated (6.6초)
+2026-04-24 10:20:02,568 INFO batch_regen --- 중간 집계: 140/838 완료, 성공 137, 경과 26.0분 ---
+2026-04-24 10:20:02,568 INFO batch_regen [141/838] 엔티티: 동동 형
+2026-04-24 10:20:09,444 INFO batch_regen   → updated (6.9초)
+2026-04-24 10:20:10,456 INFO batch_regen [142/838] 엔티티: 드랜드
+2026-04-24 10:20:17,204 INFO batch_regen   → updated (6.7초)
+2026-04-24 10:20:18,214 INFO batch_regen [143/838] 엔티티: 라스베이거스
+2026-04-24 10:20:26,307 INFO batch_regen   → updated (8.1초)
+2026-04-24 10:20:27,309 INFO batch_regen [144/838] 엔티티: 백악관
+2026-04-24 10:20:34,373 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:20:35,383 INFO batch_regen [145/838] 엔티티: Cursor
+2026-04-24 10:20:42,875 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:20:43,889 INFO batch_regen [146/838] 엔티티: RohaTax2
+2026-04-24 10:20:49,495 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:20:50,503 INFO batch_regen [147/838] 엔티티: ngrok
+2026-04-24 10:20:59,779 INFO batch_regen   → updated (9.3초)
+2026-04-24 10:21:00,785 INFO batch_regen [148/838] 엔티티: Python
+2026-04-24 10:21:28,727 INFO batch_regen   → updated (27.9초)
+2026-04-24 10:21:29,737 INFO batch_regen [149/838] 엔티티: Ngrok
+2026-04-24 10:21:36,164 INFO batch_regen   → updated (6.4초)
+2026-04-24 10:21:37,169 INFO batch_regen [150/838] 엔티티: Asia Pacific
+2026-04-24 10:21:56,345 INFO batch_regen   → updated (19.2초)
+2026-04-24 10:21:57,360 INFO batch_regen [151/838] 엔티티: KakaoTalk
+2026-04-24 10:22:18,841 INFO batch_regen   → updated (21.5초)
+2026-04-24 10:22:19,852 INFO batch_regen [152/838] 엔티티: 온누리상품권
+2026-04-24 10:22:30,843 INFO batch_regen   → updated (11.0초)
+2026-04-24 10:22:31,857 INFO batch_regen [153/838] 엔티티: Pixar
+2026-04-24 10:22:39,018 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:22:40,021 INFO batch_regen [154/838] 엔티티: GenSpark
+2026-04-24 10:22:51,025 INFO batch_regen   → updated (11.0초)
+2026-04-24 10:22:52,027 INFO batch_regen [155/838] 엔티티: AI 영상 프롬프트 엔지니어
+2026-04-24 10:22:58,376 INFO batch_regen   → updated (6.3초)
+2026-04-24 10:22:59,378 INFO batch_regen [156/838] 엔티티: 네이버
+2026-04-24 10:23:05,037 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:23:06,046 INFO batch_regen [157/838] 엔티티: Playwright
+2026-04-24 10:23:11,650 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:23:12,664 INFO batch_regen [158/838] 엔티티: 침묵과 금기어의 미학
+2026-04-24 10:23:20,407 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:23:21,411 INFO batch_regen [159/838] 엔티티: 나락 보내기 유머
+2026-04-24 10:23:29,538 INFO batch_regen   → updated (8.1초)
+2026-04-24 10:23:30,548 INFO batch_regen [160/838] 엔티티: 선 넘기 프레임워크
+2026-04-24 10:23:35,911 INFO batch_regen   → updated (5.4초)
+2026-04-24 10:23:36,912 INFO batch_regen --- 중간 집계: 160/838 완료, 성공 157, 경과 29.6분 ---
+2026-04-24 10:23:36,912 INFO batch_regen [161/838] 엔티티: 넷플릭스
+2026-04-24 10:23:46,562 INFO batch_regen   → updated (9.6초)
+2026-04-24 10:23:47,578 INFO batch_regen [162/838] 엔티티: 에미상
+2026-04-24 10:24:05,783 INFO batch_regen   → updated (18.2초)
+2026-04-24 10:24:06,797 INFO batch_regen [163/838] 엔티티: BBC
+2026-04-24 10:24:24,323 INFO batch_regen   → updated (17.5초)
+2026-04-24 10:24:25,337 INFO batch_regen [164/838] 엔티티: 어그로 후킹
+2026-04-24 10:24:32,157 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:24:33,159 INFO batch_regen [165/838] 엔티티: 분쟁 유도 화법
+2026-04-24 10:24:40,024 INFO batch_regen   → updated (6.9초)
+2026-04-24 10:24:41,035 INFO batch_regen [166/838] 엔티티: 심리적 트리거
+2026-04-24 10:24:46,993 INFO batch_regen   → updated (6.0초)
+2026-04-24 10:24:47,995 INFO batch_regen [167/838] 엔티티: 언리얼 엔진
+2026-04-24 10:24:55,139 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:24:56,150 INFO batch_regen [168/838] 엔티티: 블렌더
+2026-04-24 10:25:19,011 INFO batch_regen   → updated (22.9초)
+2026-04-24 10:25:20,025 INFO batch_regen [169/838] 엔티티: 마키아벨리
+2026-04-24 10:25:42,223 INFO batch_regen   → updated (22.2초)
+2026-04-24 10:25:43,230 INFO batch_regen [170/838] 엔티티: 뉴럴링크
+2026-04-24 10:25:56,427 INFO batch_regen   → updated (13.2초)
+2026-04-24 10:25:57,437 INFO batch_regen [171/838] 엔티티: 트랜스휴머니즘
+2026-04-24 10:26:21,049 INFO batch_regen   → updated (23.6초)
+2026-04-24 10:26:22,051 INFO batch_regen [172/838] 엔티티: 행동경제학
+2026-04-24 10:26:31,164 INFO batch_regen   → updated (9.1초)
+2026-04-24 10:26:32,172 INFO batch_regen [173/838] 엔티티: 자이가르닉 효과
+2026-04-24 10:26:47,024 INFO batch_regen   → updated (14.8초)
+2026-04-24 10:26:48,026 INFO batch_regen [174/838] 엔티티: 양자역학
+2026-04-24 10:27:01,441 INFO batch_regen   → updated (13.4초)
+2026-04-24 10:27:02,446 INFO batch_regen [175/838] 엔티티: Shorts
+2026-04-24 10:27:12,504 INFO batch_regen   → updated (10.1초)
+2026-04-24 10:27:13,507 INFO batch_regen [176/838] 엔티티: TikTok
+2026-04-24 10:27:19,676 INFO batch_regen   → updated (6.2초)
+2026-04-24 10:27:20,686 INFO batch_regen [177/838] 엔티티: 미장센
+2026-04-24 10:27:31,540 INFO batch_regen   → updated (10.8초)
+2026-04-24 10:27:32,545 INFO batch_regen [178/838] 엔티티: SEO
+2026-04-24 10:27:41,385 INFO batch_regen   → updated (8.8초)
+2026-04-24 10:27:42,387 INFO batch_regen [179/838] 엔티티: 권강록
+2026-04-24 10:27:47,650 INFO batch_regen   → updated (5.3초)
+2026-04-24 10:27:48,665 INFO batch_regen [180/838] 엔티티: 배달의민족
+2026-04-24 10:27:56,921 INFO batch_regen   → updated (8.2초)
+2026-04-24 10:27:57,929 INFO batch_regen --- 중간 집계: 180/838 완료, 성공 177, 경과 33.9분 ---
+2026-04-24 10:27:57,930 INFO batch_regen [181/838] 엔티티: 대구로
+2026-04-24 10:28:03,878 INFO batch_regen   → updated (5.9초)
+2026-04-24 10:28:04,891 INFO batch_regen [182/838] 엔티티: 인천광역시
+2026-04-24 10:28:13,709 INFO batch_regen   → updated (8.8초)
+2026-04-24 10:28:14,715 INFO batch_regen [183/838] 엔티티: 전국배달라이더연합회
+2026-04-24 10:28:20,778 INFO batch_regen   → updated (6.1초)
+2026-04-24 10:28:21,785 INFO batch_regen [184/838] 엔티티: Mobile Safety Guardian
+2026-04-24 10:28:28,578 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:28:29,581 INFO batch_regen [185/838] 엔티티: 전국배달업연합회
+2026-04-24 10:28:35,399 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:28:36,411 INFO batch_regen [186/838] 엔티티: 쿠팡이츠
+2026-04-24 10:28:45,136 INFO batch_regen   → updated (8.7초)
+2026-04-24 10:28:46,147 INFO batch_regen [187/838] 엔티티: 스마트 제로 브이
+2026-04-24 10:28:53,642 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:28:54,652 INFO batch_regen [188/838] 엔티티: 상.젊 플랫폼
+2026-04-24 10:29:02,288 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:29:03,293 INFO batch_regen [189/838] 엔티티: 이석한
+2026-04-24 10:29:24,805 INFO batch_regen   → updated (21.5초)
+2026-04-24 10:29:25,806 INFO batch_regen [190/838] 엔티티: 인천광역시소상공인연합회
+2026-04-24 10:29:32,566 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:29:33,580 INFO batch_regen [191/838] 엔티티: 인천e음카드
+2026-04-24 10:29:47,667 INFO batch_regen   → updated (14.1초)
+2026-04-24 10:29:48,671 INFO batch_regen [192/838] 엔티티: 농림축산식품부
+2026-04-24 10:29:57,922 INFO batch_regen   → updated (9.2초)
+2026-04-24 10:29:58,924 INFO batch_regen [193/838] 엔티티: 스마트 제로 - 브이
+2026-04-24 10:30:04,497 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:30:05,511 INFO batch_regen [194/838] 엔티티: 성실경영평가
+2026-04-24 10:30:10,251 INFO batch_regen   → updated (4.7초)
+2026-04-24 10:30:11,259 INFO batch_regen [195/838] 엔티티: 재도전성공패키지
+2026-04-24 10:30:16,842 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:30:17,844 INFO batch_regen [196/838] 엔티티: Q&A
+2026-04-24 10:30:25,569 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:30:26,578 INFO batch_regen [197/838] 엔티티: Q&A AI
+2026-04-24 10:30:32,056 WARNING app.core.entity_wiki 위키 품질 검증 실패: Q&A AI — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:30:32,056 INFO batch_regen   → fail (5.5초)
+2026-04-24 10:30:33,058 INFO batch_regen [198/838] 엔티티: 구글 플로우
+2026-04-24 10:30:56,812 INFO batch_regen   → updated (23.7초)
+2026-04-24 10:30:57,827 INFO batch_regen [199/838] 엔티티: 피카랩스
+2026-04-24 10:31:10,224 WARNING app.core.entity_wiki 위키 품질 검증 실패: 피카랩스 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:31:10,224 INFO batch_regen   → fail (12.4초)
+2026-04-24 10:31:11,235 INFO batch_regen [200/838] 엔티티: 잼모 AI
+2026-04-24 10:31:22,074 WARNING app.core.entity_wiki 위키 품질 검증 실패: 잼모 AI — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:31:22,074 INFO batch_regen   → fail (10.8초)
+2026-04-24 10:31:23,083 INFO batch_regen --- 중간 집계: 200/838 완료, 성공 194, 경과 37.3분 ---
+2026-04-24 10:31:23,083 INFO batch_regen [201/838] 엔티티: 비두 AI
+2026-04-24 10:31:32,118 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:31:33,121 INFO batch_regen [202/838] 엔티티: 완 AI
+2026-04-24 10:31:52,040 INFO batch_regen   → updated (18.9초)
+2026-04-24 10:31:53,054 INFO batch_regen [203/838] 엔티티: AI 영상 생성 툴
+2026-04-24 10:31:59,022 INFO batch_regen   → updated (5.9초)
+2026-04-24 10:32:00,036 INFO batch_regen [204/838] 엔티티: 안드레아스 카파
+2026-04-24 10:32:07,580 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:32:08,583 INFO batch_regen [205/838] 엔티티: 지식 관리
+2026-04-24 10:32:15,206 INFO batch_regen   → updated (6.6초)
+2026-04-24 10:32:16,217 INFO batch_regen [206/838] 엔티티: 부루 자동 매칭
+2026-04-24 10:32:23,316 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:32:24,322 INFO batch_regen [207/838] 엔티티: GPT
+2026-04-24 10:32:34,792 INFO batch_regen   → updated (10.5초)
+2026-04-24 10:32:35,801 INFO batch_regen [208/838] 엔티티: 프로톤 VPN
+2026-04-24 10:32:42,840 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:32:43,843 INFO batch_regen [209/838] 엔티티: 이지비디오
+2026-04-24 10:32:52,875 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:32:53,886 INFO batch_regen [210/838] 엔티티: 유튜브 경제 채널
+2026-04-24 10:33:09,994 INFO batch_regen   → updated (16.1초)
+2026-04-24 10:33:11,002 INFO batch_regen [211/838] 엔티티: CHARACTER
+2026-04-24 10:33:22,096 INFO batch_regen   → updated (11.1초)
+2026-04-24 10:33:23,105 INFO batch_regen [212/838] 엔티티: TTS
+2026-04-24 10:33:30,981 INFO batch_regen   → updated (7.9초)
+2026-04-24 10:33:31,987 INFO batch_regen [213/838] 엔티티: 워런 버핏
+2026-04-24 10:33:41,631 INFO batch_regen   → updated (9.6초)
+2026-04-24 10:33:42,644 INFO batch_regen [214/838] 엔티티: Google LLC
+2026-04-24 10:33:53,512 INFO batch_regen   → updated (10.9초)
+2026-04-24 10:33:54,525 INFO batch_regen [215/838] 엔티티: Sundar Pichai
+2026-04-24 10:34:04,951 INFO batch_regen   → updated (10.4초)
+2026-04-24 10:34:05,966 INFO batch_regen [216/838] 엔티티: 경제사냥꾼
+2026-04-24 10:34:11,394 INFO batch_regen   → updated (5.4초)
+2026-04-24 10:34:12,404 INFO batch_regen [217/838] 엔티티: TPU 칩
+2026-04-24 10:34:27,002 INFO batch_regen   → updated (14.6초)
+2026-04-24 10:34:28,006 INFO batch_regen [218/838] 엔티티: ChatGPT
+2026-04-24 10:34:36,064 INFO batch_regen   → updated (8.0초)
+2026-04-24 10:34:37,078 INFO batch_regen [219/838] 엔티티: 조선시대
+2026-04-24 10:34:42,015 INFO batch_regen   → updated (4.9초)
+2026-04-24 10:34:43,019 INFO batch_regen [220/838] 엔티티: [[야담 대본 생성 흐름과 구조]]
+2026-04-24 10:34:50,304 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:34:51,312 INFO batch_regen --- 중간 집계: 220/838 완료, 성공 214, 경과 40.8분 ---
+2026-04-24 10:34:51,313 INFO batch_regen [221/838] 엔티티: 로어 시스템
+2026-04-24 10:34:57,861 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:34:58,877 INFO batch_regen [222/838] 엔티티: Gemini
+2026-04-24 10:35:05,991 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:35:07,000 INFO batch_regen [223/838] 엔티티: 안티그래비티
+2026-04-24 10:35:12,799 INFO batch_regen   → updated (5.8초)
+2026-04-24 10:35:13,808 INFO batch_regen [224/838] 엔티티: 플로우
+2026-04-24 10:35:21,399 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:35:22,413 INFO batch_regen [225/838] 엔티티: 나다라 푸숑이
+2026-04-24 10:35:32,032 INFO batch_regen   → updated (9.6초)
+2026-04-24 10:35:33,041 INFO batch_regen [226/838] 엔티티: Gemini 3.5
+2026-04-24 10:35:45,376 WARNING app.core.entity_wiki 위키 품질 검증 실패: Gemini 3.5 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:35:45,376 INFO batch_regen   → fail (12.3초)
+2026-04-24 10:35:46,378 INFO batch_regen [227/838] 엔티티: ElevenLabs
+2026-04-24 10:36:12,083 INFO batch_regen   → updated (25.7초)
+2026-04-24 10:36:13,094 INFO batch_regen [228/838] 엔티티: 경제학 똑똑
+2026-04-24 10:36:20,352 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:36:21,354 INFO batch_regen [229/838] 엔티티: NotebookLM
+2026-04-24 10:36:33,853 INFO batch_regen   → updated (12.5초)
+2026-04-24 10:36:34,856 INFO batch_regen [230/838] 엔티티: Nanobana
+2026-04-24 10:36:40,435 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:36:41,437 INFO batch_regen [231/838] 엔티티: Google Workspace
+2026-04-24 10:36:49,688 INFO batch_regen   → updated (8.2초)
+2026-04-24 10:36:50,698 INFO batch_regen [232/838] 엔티티: Google 캘린더
+2026-04-24 10:36:58,457 INFO batch_regen   → updated (7.8초)
+2026-04-24 10:36:59,468 INFO batch_regen [233/838] 엔티티: Suno AI
+2026-04-24 10:37:04,524 WARNING app.core.entity_wiki 위키 품질 검증 실패: Suno AI — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:37:04,524 INFO batch_regen   → fail (5.1초)
+2026-04-24 10:37:05,531 INFO batch_regen [234/838] 엔티티: Notebook LM
+2026-04-24 10:37:14,281 INFO batch_regen   → updated (8.7초)
+2026-04-24 10:37:15,293 INFO batch_regen [235/838] 엔티티: Wisk
+2026-04-24 10:37:32,089 INFO batch_regen   → updated (16.8초)
+2026-04-24 10:37:33,098 INFO batch_regen [236/838] 엔티티: 고스타그램
+2026-04-24 10:37:40,255 WARNING app.core.entity_wiki 위키 품질 검증 실패: 고스타그램 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:37:40,255 INFO batch_regen   → fail (7.2초)
+2026-04-24 10:37:41,259 INFO batch_regen [237/838] 엔티티: Wikipedia
+2026-04-24 10:38:05,965 INFO batch_regen   → updated (24.7초)
+2026-04-24 10:38:06,969 INFO batch_regen [238/838] 엔티티: Codex
+2026-04-24 10:38:15,017 WARNING app.core.entity_wiki 위키 품질 검증 실패: Codex — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:38:15,017 INFO batch_regen   → fail (8.0초)
+2026-04-24 10:38:16,024 INFO batch_regen [239/838] 엔티티: Google Forms
+2026-04-24 10:38:31,657 INFO batch_regen   → updated (15.6초)
+2026-04-24 10:38:32,665 INFO batch_regen [240/838] 엔티티: XaybtIR
+2026-04-24 10:38:38,771 INFO batch_regen   → updated (6.1초)
+2026-04-24 10:38:39,782 INFO batch_regen --- 중간 집계: 240/838 완료, 성공 230, 경과 44.6분 ---
+2026-04-24 10:38:39,783 INFO batch_regen [241/838] 엔티티: None
+2026-04-24 10:38:47,666 INFO batch_regen   → updated (7.9초)
+2026-04-24 10:38:48,680 INFO batch_regen [242/838] 엔티티: Eisenhower Matrix
+2026-04-24 10:39:03,164 INFO batch_regen   → updated (14.5초)
+2026-04-24 10:39:04,176 INFO batch_regen [243/838] 엔티티: RAG
+2026-04-24 10:39:19,240 INFO batch_regen   → updated (15.1초)
+2026-04-24 10:39:20,242 INFO batch_regen [244/838] 엔티티: Transformer
+2026-04-24 10:39:29,975 INFO batch_regen   → updated (9.7초)
+2026-04-24 10:39:30,980 INFO batch_regen [245/838] 엔티티: Google DeepMind
+2026-04-24 10:39:38,725 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:39:39,728 INFO batch_regen [246/838] 엔티티: Retrieval-Augmented Generation
+2026-04-24 10:39:53,224 INFO batch_regen   → updated (13.5초)
+2026-04-24 10:39:54,239 INFO batch_regen [247/838] 엔티티: LTGtQp
+2026-04-24 10:40:02,351 INFO batch_regen   → updated (8.1초)
+2026-04-24 10:40:03,366 INFO batch_regen [248/838] 엔티티: LG에너지솔루션
+2026-04-24 10:40:10,374 INFO batch_regen   → updated (7.0초)
+2026-04-24 10:40:11,375 INFO batch_regen [249/838] 엔티티: 삼성SDI
+2026-04-24 10:40:16,939 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:40:17,952 INFO batch_regen [250/838] 엔티티: SK온
+2026-04-24 10:40:23,571 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:40:24,580 INFO batch_regen [251/838] 엔티티: SNE리서치
+2026-04-24 10:40:32,879 INFO batch_regen   → updated (8.3초)
+2026-04-24 10:40:33,881 INFO batch_regen [252/838] 엔티티: NGBS 2026
+2026-04-24 10:40:43,223 INFO batch_regen   → updated (9.3초)
+2026-04-24 10:40:44,229 INFO batch_regen [253/838] 엔티티: LG AI연구원
+2026-04-24 10:41:03,626 INFO batch_regen   → updated (19.4초)
+2026-04-24 10:41:04,630 INFO batch_regen [254/838] 엔티티: 인크루트
+2026-04-24 10:41:13,622 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:41:14,625 INFO batch_regen [255/838] 엔티티: 카카오페이
+2026-04-24 10:41:25,361 INFO batch_regen   → updated (10.7초)
+2026-04-24 10:41:26,371 INFO batch_regen [256/838] 엔티티: 2025 머니리포트
+2026-04-24 10:41:35,041 INFO batch_regen   → updated (8.7초)
+2026-04-24 10:41:36,057 INFO batch_regen [257/838] 엔티티: FastAPI
+2026-04-24 10:41:46,483 INFO batch_regen   → updated (10.4초)
+2026-04-24 10:41:47,487 INFO batch_regen [258/838] 엔티티: SQLite
+2026-04-24 10:41:53,215 INFO batch_regen   → updated (5.7초)
+2026-04-24 10:41:54,224 INFO batch_regen [259/838] 엔티티: llama3
+2026-04-24 10:42:04,264 INFO batch_regen   → updated (10.0초)
+2026-04-24 10:42:05,278 INFO batch_regen [260/838] 엔티티: D3.js
+2026-04-24 10:42:15,834 INFO batch_regen   → updated (10.5초)
+2026-04-24 10:42:16,847 INFO batch_regen --- 중간 집계: 260/838 완료, 성공 250, 경과 48.2분 ---
+2026-04-24 10:42:16,847 INFO batch_regen [261/838] 엔티티: nomic-embed-text-v2-moe
+2026-04-24 10:42:25,042 INFO batch_regen   → updated (8.2초)
+2026-04-24 10:42:26,045 INFO batch_regen [262/838] 엔티티: CapCut
+2026-04-24 10:42:33,785 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:42:34,786 INFO batch_regen [263/838] 엔티티: HeyGen
+2026-04-24 10:43:04,737 INFO batch_regen   → updated (29.9초)
+2026-04-24 10:43:05,748 INFO batch_regen [264/838] 엔티티: Gamma
+2026-04-24 10:43:14,622 WARNING app.core.entity_wiki 위키 품질 검증 실패: Gamma — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:43:14,623 INFO batch_regen   → fail (8.9초)
+2026-04-24 10:43:15,627 INFO batch_regen [265/838] 엔티티: InVideo
+2026-04-24 10:43:38,583 INFO batch_regen   → updated (22.9초)
+2026-04-24 10:43:39,585 INFO batch_regen [266/838] 엔티티: Synthesia
+2026-04-24 10:43:48,431 INFO batch_regen   → updated (8.8초)
+2026-04-24 10:43:49,440 INFO batch_regen [267/838] 엔티티: Adobe Premiere Pro
+2026-04-24 10:44:02,790 INFO batch_regen   → updated (13.3초)
+2026-04-24 10:44:03,796 INFO batch_regen [268/838] 엔티티: Google 트렌드
+2026-04-24 10:44:16,179 INFO batch_regen   → updated (12.4초)
+2026-04-24 10:44:17,189 INFO batch_regen [269/838] 엔티티: 애드센스
+2026-04-24 10:44:28,710 INFO batch_regen   → updated (11.5초)
+2026-04-24 10:44:29,711 INFO batch_regen [270/838] 엔티티: BGM President
+2026-04-24 10:44:29,712 INFO batch_regen   → skip (0.0초)
+2026-04-24 10:44:30,724 INFO batch_regen [271/838] 엔티티: 이지우
+2026-04-24 10:44:30,725 INFO batch_regen   → skip (0.0초)
+2026-04-24 10:44:31,736 INFO batch_regen [272/838] 엔티티: Claude Design
+2026-04-24 10:44:39,754 INFO batch_regen   → updated (8.0초)
+2026-04-24 10:44:40,758 INFO batch_regen [273/838] 엔티티: Anthropic
+2026-04-24 10:44:46,491 INFO batch_regen   → updated (5.6초)
+2026-04-24 10:44:47,501 INFO batch_regen [274/838] 엔티티: Opus 4.7
+2026-04-24 10:44:54,987 WARNING app.core.entity_wiki 위키 품질 검증 실패: Opus 4.7 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:44:54,987 INFO batch_regen   → fail (7.5초)
+2026-04-24 10:44:55,996 INFO batch_regen [275/838] 엔티티: Never
+2026-04-24 10:44:55,996 INFO batch_regen   → skip (0.0초)
+2026-04-24 10:44:57,011 INFO batch_regen [276/838] 엔티티: LM Wiki
+2026-04-24 10:45:04,843 INFO batch_regen   → updated (7.8초)
+2026-04-24 10:45:05,844 INFO batch_regen [277/838] 엔티티: curl
+2026-04-24 10:45:42,684 INFO batch_regen   → updated (36.8초)
+2026-04-24 10:45:43,685 INFO batch_regen [278/838] 엔티티: AutoFlow
+2026-04-24 10:45:51,254 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:45:52,261 INFO batch_regen [279/838] 엔티티: Google Flow
+2026-04-24 10:46:08,240 INFO batch_regen   → updated (16.0초)
+2026-04-24 10:46:09,241 INFO batch_regen [280/838] 엔티티: AI Crafter Flow Automation
+2026-04-24 10:46:09,241 INFO batch_regen   → skip (0.0초)
+2026-04-24 10:46:10,254 INFO batch_regen --- 중간 집계: 280/838 완료, 성공 264, 경과 52.1분 ---
+2026-04-24 10:46:10,254 INFO batch_regen [281/838] 엔티티: 더 컨스트럭트
+2026-04-24 10:46:16,321 INFO batch_regen   → updated (6.1초)
+2026-04-24 10:46:17,333 INFO batch_regen [282/838] 엔티티: LM Studio
+2026-04-24 10:46:25,213 INFO batch_regen   → updated (7.8초)
+2026-04-24 10:46:26,224 INFO batch_regen [283/838] 엔티티: Gemma 4 E2B
+2026-04-24 10:46:31,688 INFO batch_regen   → updated (5.5초)
+2026-04-24 10:46:32,696 INFO batch_regen [284/838] 엔티티: Notion
+2026-04-24 10:46:59,781 INFO batch_regen   → updated (27.1초)
+2026-04-24 10:47:00,792 INFO batch_regen [285/838] 엔티티: GitHub Copilot
+2026-04-24 10:47:07,942 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:47:08,949 INFO batch_regen [286/838] 엔티티: Copilot Autofix
+2026-04-24 10:47:16,035 INFO batch_regen   → updated (7.1초)
+2026-04-24 10:47:17,046 INFO batch_regen [287/838] 엔티티: 이스라엘
+2026-04-24 10:47:23,563 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:47:24,567 INFO batch_regen [288/838] 엔티티: 사우디 아람코
+2026-04-24 10:47:31,340 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:47:32,348 INFO batch_regen [289/838] 엔티티: 바브엘만데브 해협
+2026-04-24 10:47:38,510 INFO batch_regen   → updated (6.1초)
+2026-04-24 10:47:39,516 INFO batch_regen [290/838] 엔티티: 호르무즈 해협
+2026-04-24 10:47:45,993 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:47:47,001 INFO batch_regen [291/838] 엔티티: 허깅 페이스
+2026-04-24 10:47:56,018 WARNING app.core.entity_wiki 위키 품질 검증 실패: 허깅 페이스 — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:47:56,019 INFO batch_regen   → fail (9.0초)
+2026-04-24 10:47:57,024 INFO batch_regen [292/838] 엔티티: 구글 콜랩
+2026-04-24 10:48:06,123 INFO batch_regen   → updated (9.1초)
+2026-04-24 10:48:07,137 INFO batch_regen [293/838] 엔티티: T4 GPU
+2026-04-24 10:48:15,763 WARNING app.core.entity_wiki 위키 품질 검증 실패: T4 GPU — 금지 문구 '다양한 AI' 포함
+2026-04-24 10:48:15,763 INFO batch_regen   → fail (8.6초)
+2026-04-24 10:48:16,765 INFO batch_regen [294/838] 엔티티: 언슬로 제마 4 E2B
+2026-04-24 10:48:22,266 INFO batch_regen   → updated (5.5초)
+2026-04-24 10:48:23,277 INFO batch_regen [295/838] 엔티티: Mercedes-Benz
+2026-04-24 10:48:33,966 INFO batch_regen   → updated (10.7초)
+2026-04-24 10:48:34,980 INFO batch_regen [296/838] 엔티티: LG Energy Solution
+2026-04-24 10:48:41,643 INFO batch_regen   → updated (6.7초)
+2026-04-24 10:48:42,656 INFO batch_regen [297/838] 엔티티: Samsung SDI
+2026-04-24 10:48:49,260 INFO batch_regen   → updated (6.6초)
+2026-04-24 10:48:50,269 INFO batch_regen [298/838] 엔티티: ACC
+2026-04-24 10:48:57,957 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:48:58,967 INFO batch_regen [299/838] 엔티티: 46시리즈 원통형 배터리
+2026-04-24 10:49:07,929 INFO batch_regen   → updated (9.0초)
+2026-04-24 10:49:08,944 INFO batch_regen [300/838] 엔티티: 디 올-뉴 일렉트릭 C-클래스
+2026-04-24 10:49:18,076 INFO batch_regen   → updated (9.1초)
+2026-04-24 10:49:19,089 INFO batch_regen --- 중간 집계: 300/838 완료, 성공 282, 경과 55.3분 ---
+2026-04-24 10:49:19,089 INFO batch_regen [301/838] 엔티티: 홈택스
+2026-04-24 10:49:29,013 INFO batch_regen   → updated (9.9초)
+2026-04-24 10:49:30,026 INFO batch_regen [302/838] 엔티티: 카카오톡
+2026-04-24 10:49:51,623 INFO batch_regen   → updated (21.6초)
+2026-04-24 10:49:52,630 INFO batch_regen [303/838] 엔티티: POST /api/chat/send-stream
+2026-04-24 10:49:59,855 INFO batch_regen   → updated (7.2초)
+2026-04-24 10:50:00,862 INFO batch_regen [304/838] 엔티티: POST /api/chat/send
+2026-04-24 10:50:09,346 INFO batch_regen   → updated (8.5초)
+2026-04-24 10:50:10,361 INFO batch_regen [305/838] 엔티티: stream_intelligence
+2026-04-24 10:50:20,367 INFO batch_regen   → updated (10.0초)
+2026-04-24 10:50:21,381 INFO batch_regen [306/838] 엔티티: SSE
+2026-04-24 10:50:31,835 INFO batch_regen   → updated (10.4초)
+2026-04-24 10:50:32,836 INFO batch_regen [307/838] 엔티티: 인천형 공공 슈퍼앱
+2026-04-24 10:50:40,170 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:50:41,183 INFO batch_regen [308/838] 엔티티: GPT 5.4
+2026-04-24 10:51:18,153 INFO batch_regen   → updated (37.0초)
+2026-04-24 10:51:19,163 INFO batch_regen [309/838] 엔티티: iTerm2
+2026-04-24 10:51:30,203 INFO batch_regen   → updated (11.0초)
+2026-04-24 10:51:31,210 INFO batch_regen [310/838] 엔티티: tmux
+2026-04-24 10:51:43,673 INFO batch_regen   → updated (12.5초)
+2026-04-24 10:51:44,673 INFO batch_regen [311/838] 엔티티: macOS
+2026-04-24 10:52:02,269 INFO batch_regen   → updated (17.6초)
+2026-04-24 10:52:03,278 INFO batch_regen [312/838] 엔티티: Homebrew
+2026-04-24 10:52:25,372 INFO batch_regen   → updated (22.1초)
+2026-04-24 10:52:26,382 INFO batch_regen [313/838] 엔티티: Opus
+2026-04-24 10:52:33,723 INFO batch_regen   → updated (7.3초)
+2026-04-24 10:52:34,732 INFO batch_regen [314/838] 엔티티: 내_지식
+2026-04-24 10:52:44,475 INFO batch_regen   → updated (9.7초)
+2026-04-24 10:52:45,486 INFO batch_regen [315/838] 엔티티: 수집_꿀팁
+2026-04-24 10:52:55,159 INFO batch_regen   → updated (9.7초)
+2026-04-24 10:52:56,162 INFO batch_regen [316/838] 엔티티: 정제_노트
+2026-04-24 10:53:03,905 INFO batch_regen   → updated (7.7초)
+2026-04-24 10:53:04,919 INFO batch_regen [317/838] 엔티티: 자료 관리 구조 개선 방안
+2026-04-24 10:53:13,350 INFO batch_regen   → updated (8.4초)
+2026-04-24 10:53:14,358 INFO batch_regen [318/838] 엔티티: 결정화: 지금 넌 사용자 카테고리 정보 카테고리 2곳을 다볼수 있는지...
+2026-04-24 10:53:24,842 INFO batch_regen   → updated (10.5초)
+2026-04-24 10:53:25,854 INFO batch_regen [319/838] 엔티티: 한국은행
+2026-04-24 10:53:35,760 INFO batch_regen   → updated (9.9초)
+2026-04-24 10:53:36,775 INFO batch_regen [320/838] 엔티티: YTN
+2026-04-24 10:53:56,795 INFO batch_regen   → updated (20.0초)
+2026-04-24 10:53:57,810 INFO batch_regen --- 중간 집계: 320/838 완료, 성공 302, 경과 59.9분 ---
+2026-04-24 10:53:57,810 INFO batch_regen [321/838] 엔티티: 트럼프
+2026-04-24 10:54:07,545 INFO batch_regen   → updated (9.7초)
+2026-04-24 10:54:08,553 INFO batch_regen [322/838] 엔티티: 뉴욕포스트
+2026-04-24 10:54:15,070 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:54:16,073 INFO batch_regen [323/838] 엔티티: 캐롤라인 레빗
+2026-04-24 10:54:32,102 INFO batch_regen   → updated (16.0초)
+2026-04-24 10:54:33,113 INFO batch_regen [324/838] 엔티티: 미 국방부
+2026-04-24 10:54:44,520 INFO batch_regen   → updated (11.4초)
+2026-04-24 10:54:45,534 INFO batch_regen [325/838] 엔티티: 워싱턴포스트
+2026-04-24 10:54:53,515 INFO batch_regen   → updated (8.0초)
+2026-04-24 10:54:54,523 INFO batch_regen [326/838] 엔티티: 경제적 분노
+2026-04-24 10:55:01,737 INFO batch_regen   → updated (7.2초)
+2026-04-24 10:55:02,737 INFO batch_regen [327/838] 엔티티: 하르그섬
+2026-04-24 10:55:07,984 INFO batch_regen   → updated (5.2초)
+2026-04-24 10:55:08,990 INFO batch_regen [328/838] 엔티티: 인도양
+2026-04-24 10:55:14,965 INFO batch_regen   → updated (6.0초)
+2026-04-24 10:55:15,976 INFO batch_regen [329/838] 엔티티: 티파니
+2026-04-24 10:55:21,665 INFO batch_regen   → updated (5.7초)
+2026-04-24 10:55:22,667 INFO batch_regen [330/838] 엔티티: 추경호
+2026-04-24 10:55:51,770 INFO batch_regen   → updated (29.1초)
+2026-04-24 10:55:52,780 INFO batch_regen [331/838] 엔티티: 이창용
+2026-04-24 10:55:59,564 INFO batch_regen   → updated (6.8초)
+2026-04-24 10:56:00,571 INFO batch_regen [332/838] 엔티티: 기획재정부
+2026-04-24 10:56:08,830 INFO batch_regen   → updated (8.3초)
+2026-04-24 10:56:09,837 INFO batch_regen [333/838] 엔티티: 게스트 모드
+2026-04-24 10:56:18,516 INFO batch_regen   → updated (8.7초)
+2026-04-24 10:56:19,519 INFO batch_regen [334/838] 엔티티: OpenClaw
+2026-04-24 10:56:24,351 INFO batch_regen   → updated (4.8초)
+2026-04-24 10:56:25,363 INFO batch_regen [335/838] 엔티티: René Descartes
+2026-04-24 10:56:32,858 INFO batch_regen   → updated (7.5초)
+2026-04-24 10:56:33,866 INFO batch_regen [336/838] 엔티티: Meditations on First Philosophy
+2026-04-24 10:56:48,301 INFO batch_regen   → updated (14.4초)
+2026-04-24 10:56:49,302 INFO batch_regen [337/838] 엔티티: iLoveIMG
+2026-04-24 10:56:55,778 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:56:56,790 INFO batch_regen [338/838] 엔티티: Pinterest
+2026-04-24 10:57:04,009 INFO batch_regen   → updated (7.2초)
+2026-04-24 10:57:05,019 INFO batch_regen [339/838] 엔티티: Google Gemini
+2026-04-24 10:57:12,651 INFO batch_regen   → updated (7.6초)
+2026-04-24 10:57:13,657 INFO batch_regen [340/838] 엔티티: Donald Trump
+2026-04-24 10:57:28,212 INFO batch_regen   → updated (14.5초)
+2026-04-24 10:57:29,223 INFO batch_regen --- 중간 집계: 340/838 완료, 성공 322, 경과 63.4분 ---
+2026-04-24 10:57:29,223 INFO batch_regen [341/838] 엔티티: 노동부
+2026-04-24 10:57:47,589 INFO batch_regen   → updated (18.4초)
+2026-04-24 10:57:48,604 INFO batch_regen [342/838] 엔티티: 사회적경제 지역생태계 사업
+2026-04-24 10:58:18,446 INFO batch_regen   → updated (29.8초)
+2026-04-24 10:58:19,460 INFO batch_regen [343/838] 엔티티: 카카오
+2026-04-24 10:58:38,444 INFO batch_regen   → updated (19.0초)
+2026-04-24 10:58:39,453 INFO batch_regen [344/838] 엔티티: 네이버뉴스
+2026-04-24 10:58:46,326 INFO batch_regen   → updated (6.9초)
+2026-04-24 10:58:47,339 INFO batch_regen [345/838] 엔티티: Daum
+2026-04-24 10:59:16,735 INFO batch_regen   → updated (29.4초)
+2026-04-24 10:59:17,739 INFO batch_regen [346/838] 엔티티: News1
+2026-04-24 10:59:24,240 INFO batch_regen   → updated (6.5초)
+2026-04-24 10:59:25,245 INFO batch_regen [347/838] 엔티티: YouTube Data API V3
+2026-04-24 10:59:32,624 INFO batch_regen   → updated (7.4초)
+2026-04-24 10:59:33,638 INFO batch_regen [348/838] 엔티티: Neil Mohan
+2026-04-24 10:59:58,814 INFO batch_regen   → updated (25.2초)
+2026-04-24 10:59:59,818 INFO batch_regen [349/838] 엔티티: 바이브 코딩
+2026-04-24 11:00:06,116 INFO batch_regen   → updated (6.3초)
+2026-04-24 11:00:07,126 INFO batch_regen [350/838] 엔티티: YouTube API Key
+2026-04-24 11:00:16,787 INFO batch_regen   → updated (9.7초)
+2026-04-24 11:00:17,795 INFO batch_regen [351/838] 엔티티: 구글 콘솔
+2026-04-24 11:00:41,389 INFO batch_regen   → updated (23.6초)
+2026-04-24 11:00:42,405 INFO batch_regen [352/838] 엔티티: Grok AI
+2026-04-24 11:00:59,929 INFO batch_regen   → updated (17.5초)
+2026-04-24 11:01:00,933 INFO batch_regen [353/838] 엔티티: Meta AI
+2026-04-24 11:01:07,291 INFO batch_regen   → updated (6.4초)
+2026-04-24 11:01:08,296 INFO batch_regen [354/838] 엔티티: Arena AI
+2026-04-24 11:01:17,508 INFO batch_regen   → updated (9.2초)
+2026-04-24 11:01:18,510 INFO batch_regen [355/838] 엔티티: Proton VPN
+2026-04-24 11:01:31,611 INFO batch_regen   → updated (13.1초)
+2026-04-24 11:01:32,620 INFO batch_regen 
+==================================================
+2026-04-24 11:01:32,621 INFO batch_regen 개념 재생성 시작: 483건
+2026-04-24 11:01:32,621 INFO batch_regen ==================================================
+2026-04-24 11:01:32,621 INFO batch_regen [356/838] 개념: 리서칭
+2026-04-24 11:01:39,350 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:01:40,355 INFO batch_regen [357/838] 개념: 렌더링
+2026-04-24 11:01:57,617 INFO batch_regen   → updated (17.3초)
+2026-04-24 11:01:58,629 INFO batch_regen [358/838] 개념: 자동화 프로그램
+2026-04-24 11:02:08,857 INFO batch_regen   → updated (10.2초)
+2026-04-24 11:02:09,872 INFO batch_regen [359/838] 개념: 오픈 소스
+2026-04-24 11:02:25,426 INFO batch_regen   → updated (15.5초)
+2026-04-24 11:02:26,430 INFO batch_regen [360/838] 개념: 그래픽 카드
+2026-04-24 11:02:37,192 INFO batch_regen   → updated (10.8초)
+2026-04-24 11:02:38,193 INFO batch_regen --- 중간 집계: 360/838 완료, 성공 342, 경과 68.6분 ---
+2026-04-24 11:02:38,193 INFO batch_regen [361/838] 개념: 이미지 프롬프트
+2026-04-24 11:02:45,333 INFO batch_regen   → updated (7.1초)
+2026-04-24 11:02:46,347 INFO batch_regen [362/838] 개념: 전환 효과
+2026-04-24 11:02:58,417 INFO batch_regen   → updated (12.1초)
+2026-04-24 11:02:59,419 INFO batch_regen [363/838] 개념: AI 영상 생성
+2026-04-24 11:03:08,361 INFO batch_regen   → updated (8.9초)
+2026-04-24 11:03:09,375 INFO batch_regen [364/838] 개념: 영상 프롬프트
+2026-04-24 11:03:20,920 INFO batch_regen   → updated (11.5초)
+2026-04-24 11:03:21,924 INFO batch_regen [365/838] 개념: VPN
+2026-04-24 11:03:36,517 INFO batch_regen   → updated (14.6초)
+2026-04-24 11:03:37,529 INFO batch_regen [366/838] 개념: 멀티샷 프롬프팅
+2026-04-24 11:03:48,027 INFO batch_regen   → updated (10.5초)
+2026-04-24 11:03:49,040 INFO batch_regen [367/838] 개념: 스토리보드
+2026-04-24 11:03:59,069 INFO batch_regen   → updated (10.0초)
+2026-04-24 11:04:00,077 INFO batch_regen [368/838] 개념: 디스크 정리
+2026-04-24 11:04:08,512 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:04:09,516 INFO batch_regen [369/838] 개념: 레지스트리
+2026-04-24 11:04:18,564 INFO batch_regen   → updated (9.0초)
+2026-04-24 11:04:19,571 INFO batch_regen [370/838] 개념: 포터블 실행 파일
+2026-04-24 11:04:26,776 INFO batch_regen   → updated (7.2초)
+2026-04-24 11:04:27,785 INFO batch_regen [371/838] 개념: 압축 파일
+2026-04-24 11:04:38,301 INFO batch_regen   → updated (10.5초)
+2026-04-24 11:04:39,302 INFO batch_regen [372/838] 개념: you
+2026-04-24 11:04:52,759 INFO batch_regen   → updated (13.4초)
+2026-04-24 11:04:53,768 INFO batch_regen [373/838] 개념: 지식 정리
+2026-04-24 11:05:01,437 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:05:02,444 INFO batch_regen [374/838] 개념: AI 쇼츠
+2026-04-24 11:05:09,399 INFO batch_regen   → updated (7.0초)
+2026-04-24 11:05:10,412 INFO batch_regen [375/838] 개념: 벤치마킹
+2026-04-24 11:05:27,964 INFO batch_regen   → updated (17.5초)
+2026-04-24 11:05:28,970 INFO batch_regen [376/838] 개념: 코리아 디스카운트
+2026-04-24 11:05:42,170 INFO batch_regen   → updated (13.2초)
+2026-04-24 11:05:43,173 INFO batch_regen [377/838] 개념: 자사주 소각 의무화
+2026-04-24 11:05:49,059 INFO batch_regen   → updated (5.9초)
+2026-04-24 11:05:50,075 INFO batch_regen [378/838] 개념: 상법 개정
+2026-04-24 11:05:57,481 INFO batch_regen   → updated (7.4초)
+2026-04-24 11:05:58,486 INFO batch_regen [379/838] 개념: 금융 시장
+2026-04-24 11:06:08,002 INFO batch_regen   → updated (9.5초)
+2026-04-24 11:06:09,003 INFO batch_regen [380/838] 개념: 금리 인하
+2026-04-24 11:06:16,844 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:06:17,847 INFO batch_regen --- 중간 집계: 380/838 완료, 성공 362, 경과 72.3분 ---
+2026-04-24 11:06:17,847 INFO batch_regen [381/838] 개념: 양적 긴축
+2026-04-24 11:06:33,233 INFO batch_regen   → updated (15.4초)
+2026-04-24 11:06:34,240 INFO batch_regen [382/838] 개념: 유동성
+2026-04-24 11:06:51,103 INFO batch_regen   → updated (16.9초)
+2026-04-24 11:06:52,113 INFO batch_regen [383/838] 개념: 저부담 고급여 구조
+2026-04-24 11:07:00,353 INFO batch_regen   → updated (8.2초)
+2026-04-24 11:07:01,355 INFO batch_regen [384/838] 개념: 미정립 부채
+2026-04-24 11:07:09,051 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:07:10,059 INFO batch_regen [385/838] 개념: 인구 구조
+2026-04-24 11:07:20,493 INFO batch_regen   → updated (10.4초)
+2026-04-24 11:07:21,502 INFO batch_regen [386/838] 개념: 디플레이션
+2026-04-24 11:07:28,825 INFO batch_regen   → updated (7.3초)
+2026-04-24 11:07:29,838 INFO batch_regen [387/838] 개념: 썸네일
+2026-04-24 11:07:40,992 INFO batch_regen   → updated (11.1초)
+2026-04-24 11:07:42,003 INFO batch_regen [388/838] 개념: 시청 지속 시간
+2026-04-24 11:07:57,979 INFO batch_regen   → updated (16.0초)
+2026-04-24 11:07:58,988 INFO batch_regen [389/838] 개념: 오디오 품질
+2026-04-24 11:08:25,261 INFO batch_regen   → updated (26.3초)
+2026-04-24 11:08:26,263 INFO batch_regen [390/838] 개념: N캐리 트레이드
+2026-04-24 11:08:37,618 INFO batch_regen   → updated (11.4초)
+2026-04-24 11:08:38,623 INFO batch_regen [391/838] 개념: 금리 정책
+2026-04-24 11:08:53,321 INFO batch_regen   → updated (14.7초)
+2026-04-24 11:08:54,334 INFO batch_regen [392/838] 개념: LLM
+2026-04-24 11:09:01,044 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:09:02,055 INFO batch_regen [393/838] 개념: 지식 그래프
+2026-04-24 11:09:11,885 INFO batch_regen   → updated (9.8초)
+2026-04-24 11:09:12,892 INFO batch_regen [394/838] 개념: 지식 베이스
+2026-04-24 11:09:21,208 INFO batch_regen   → updated (8.3초)
+2026-04-24 11:09:22,222 INFO batch_regen [395/838] 개념: 파편화된 지식
+2026-04-24 11:09:30,307 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:09:31,317 INFO batch_regen [396/838] 개념: 지식 관리
+2026-04-24 11:09:47,473 INFO batch_regen   → updated (16.2초)
+2026-04-24 11:09:48,485 INFO batch_regen [397/838] 개념: 자동 개발
+2026-04-24 11:09:56,607 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:09:57,618 INFO batch_regen [398/838] 개념: RAG
+2026-04-24 11:10:07,467 INFO batch_regen   → updated (9.8초)
+2026-04-24 11:10:08,469 INFO batch_regen [399/838] 개념: AI 코딩 도구
+2026-04-24 11:10:19,146 INFO batch_regen   → updated (10.7초)
+2026-04-24 11:10:20,152 INFO batch_regen [400/838] 개념: 로어 시스템
+2026-04-24 11:10:30,715 INFO batch_regen   → updated (10.6초)
+2026-04-24 11:10:31,730 INFO batch_regen --- 중간 집계: 400/838 완료, 성공 382, 경과 76.5분 ---
+2026-04-24 11:10:31,730 INFO batch_regen [401/838] 개념: 룰스 엔진
+2026-04-24 11:10:39,576 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:10:40,581 INFO batch_regen [402/838] 개념: AB 테스트
+2026-04-24 11:10:48,563 INFO batch_regen   → updated (8.0초)
+2026-04-24 11:10:49,567 INFO batch_regen [403/838] 개념: 오토 컨텍스트 훅
+2026-04-24 11:10:58,099 INFO batch_regen   → updated (8.5초)
+2026-04-24 11:10:59,106 INFO batch_regen [404/838] 개념: 자기 개선 시스템
+2026-04-24 11:11:07,244 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:11:08,246 INFO batch_regen [405/838] 개념: 사용자 모델링 시스템
+2026-04-24 11:11:14,902 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:11:15,914 INFO batch_regen [406/838] 개념: API 크레딧
+2026-04-24 11:11:23,038 INFO batch_regen   → updated (7.1초)
+2026-04-24 11:11:24,045 INFO batch_regen [407/838] 개념: 정액제
+2026-04-24 11:11:33,346 INFO batch_regen   → updated (9.3초)
+2026-04-24 11:11:34,360 INFO batch_regen [408/838] 개념: 자율적 공격 코드
+2026-04-24 11:11:44,151 INFO batch_regen   → updated (9.8초)
+2026-04-24 11:11:45,159 INFO batch_regen [409/838] 개념: 시니어 콘텐츠
+2026-04-24 11:11:52,748 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:11:53,763 INFO batch_regen [410/838] 개념: 벤치마킹 전략
+2026-04-24 11:12:00,097 INFO batch_regen   → updated (6.3초)
+2026-04-24 11:12:01,103 INFO batch_regen [411/838] 개념: 커스텀 하네스
+2026-04-24 11:12:10,406 INFO batch_regen   → updated (9.3초)
+2026-04-24 11:12:11,416 INFO batch_regen [412/838] 개념: 도메인 스페시픽
+2026-04-24 11:12:27,064 INFO batch_regen   → updated (15.6초)
+2026-04-24 11:12:28,072 INFO batch_regen [413/838] 개념: 데이터 수집
+2026-04-24 11:12:34,632 INFO batch_regen   → updated (6.6초)
+2026-04-24 11:12:35,639 INFO batch_regen [414/838] 개념: 지식 기반
+2026-04-24 11:12:46,456 INFO batch_regen   → updated (10.8초)
+2026-04-24 11:12:47,463 INFO batch_regen [415/838] 개념: LLM 위키
+2026-04-24 11:12:52,750 INFO batch_regen   → updated (5.3초)
+2026-04-24 11:12:53,759 INFO batch_regen [416/838] 개념: 세션 연속성
+2026-04-24 11:13:01,388 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:13:02,395 INFO batch_regen [417/838] 개념: 토큰 절약
+2026-04-24 11:13:12,016 INFO batch_regen   → updated (9.6초)
+2026-04-24 11:13:13,030 INFO batch_regen [418/838] 개념: 자동화 도구
+2026-04-24 11:13:21,115 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:13:22,118 INFO batch_regen [419/838] 개념: 비디오 생성
+2026-04-24 11:13:28,415 INFO batch_regen   → updated (6.3초)
+2026-04-24 11:13:29,424 INFO batch_regen [420/838] 개념: 대량 생성
+2026-04-24 11:13:37,368 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:13:38,374 INFO batch_regen --- 중간 집계: 420/838 완료, 성공 402, 경과 79.6분 ---
+2026-04-24 11:13:38,375 INFO batch_regen [421/838] 개념: AI 연구
+2026-04-24 11:13:44,671 INFO batch_regen   → updated (6.3초)
+2026-04-24 11:13:45,682 INFO batch_regen [422/838] 개념: API 호출
+2026-04-24 11:13:56,342 INFO batch_regen   → updated (10.7초)
+2026-04-24 11:13:57,343 INFO batch_regen [423/838] 개념: 영상 제작
+2026-04-24 11:14:05,718 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:14:06,728 INFO batch_regen [424/838] 개념: TTS
+2026-04-24 11:14:19,248 INFO batch_regen   → updated (12.5초)
+2026-04-24 11:14:20,261 INFO batch_regen [425/838] 개념: 모델 다운로드
+2026-04-24 11:14:25,661 INFO batch_regen   → updated (5.4초)
+2026-04-24 11:14:26,668 INFO batch_regen [426/838] 개념: 원구 작성
+2026-04-24 11:14:37,054 INFO batch_regen   → updated (10.4초)
+2026-04-24 11:14:38,067 INFO batch_regen [427/838] 개념: AI 음악
+2026-04-24 11:14:54,978 INFO batch_regen   → updated (16.9초)
+2026-04-24 11:14:55,990 INFO batch_regen [428/838] 개념: 비디오 자동화
+2026-04-24 11:15:02,045 INFO batch_regen   → updated (6.0초)
+2026-04-24 11:15:03,050 INFO batch_regen [429/838] 개념: 크로미움 엔진
+2026-04-24 11:15:28,844 INFO batch_regen   → updated (25.8초)
+2026-04-24 11:15:29,854 INFO batch_regen [430/838] 개념: 대본 작성
+2026-04-24 11:15:38,332 INFO batch_regen   → updated (8.5초)
+2026-04-24 11:15:39,339 INFO batch_regen [431/838] 개념: 유튜브 조회수
+2026-04-24 11:15:45,015 INFO batch_regen   → updated (5.7초)
+2026-04-24 11:15:46,022 INFO batch_regen [432/838] 개념: AI 더빙
+2026-04-24 11:15:53,078 INFO batch_regen   → updated (7.1초)
+2026-04-24 11:15:54,090 INFO batch_regen [433/838] 개념: 정치 경제학
+2026-04-24 11:16:05,151 INFO batch_regen   → updated (11.1초)
+2026-04-24 11:16:06,155 INFO batch_regen [434/838] 개념: AI 시장
+2026-04-24 11:16:14,186 INFO batch_regen   → updated (8.0초)
+2026-04-24 11:16:15,196 INFO batch_regen [435/838] 개념: 반도체
+2026-04-24 11:16:23,847 INFO batch_regen   → updated (8.6초)
+2026-04-24 11:16:24,851 INFO batch_regen [436/838] 개념: 자급자족 구조
+2026-04-24 11:16:35,343 INFO batch_regen   → updated (10.5초)
+2026-04-24 11:16:36,353 INFO batch_regen [437/838] 개념: 경제 사이클
+2026-04-24 11:16:44,224 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:16:45,228 INFO batch_regen [438/838] 개념: AI 정원사
+2026-04-24 11:16:51,034 INFO batch_regen   → updated (5.8초)
+2026-04-24 11:16:52,041 INFO batch_regen [439/838] 개념: 역공학
+2026-04-24 11:17:04,568 INFO batch_regen   → updated (12.5초)
+2026-04-24 11:17:05,573 INFO batch_regen [440/838] 개념: 증강 생성
+2026-04-24 11:17:14,457 INFO batch_regen   → updated (8.9초)
+2026-04-24 11:17:15,465 INFO batch_regen --- 중간 집계: 440/838 완료, 성공 422, 경과 83.2분 ---
+2026-04-24 11:17:15,465 INFO batch_regen [441/838] 개념: 구조화된 표현
+2026-04-24 11:17:24,825 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:17:25,828 INFO batch_regen [442/838] 개념: wiki 페이지
+2026-04-24 11:17:33,886 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:17:34,898 INFO batch_regen [443/838] 개념: 원격 개발
+2026-04-24 11:17:42,129 INFO batch_regen   → updated (7.2초)
+2026-04-24 11:17:43,136 INFO batch_regen [444/838] 개념: 터미널 세션
+2026-04-24 11:17:50,682 INFO batch_regen   → updated (7.5초)
+2026-04-24 11:17:51,687 INFO batch_regen [445/838] 개념: 파일 시스템
+2026-04-24 11:18:10,269 INFO batch_regen   → updated (18.6초)
+2026-04-24 11:18:11,283 INFO batch_regen [446/838] 개념: 오픈 표준
+2026-04-24 11:18:33,362 INFO batch_regen   → updated (22.1초)
+2026-04-24 11:18:34,375 INFO batch_regen [447/838] 개념: 구독 서비스
+2026-04-24 11:18:40,791 INFO batch_regen   → updated (6.4초)
+2026-04-24 11:18:41,805 INFO batch_regen [448/838] 개념: 제로데이 취약점
+2026-04-24 11:18:56,110 INFO batch_regen   → updated (14.3초)
+2026-04-24 11:18:57,114 INFO batch_regen [449/838] 개념: 사이버 보안
+2026-04-24 11:19:07,136 INFO batch_regen   → updated (10.0초)
+2026-04-24 11:19:08,147 INFO batch_regen [450/838] 개념: AI 영상 제작
+2026-04-24 11:19:16,105 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:19:17,108 INFO batch_regen [451/838] 개념: BM25 알고리즘
+2026-04-24 11:19:39,833 INFO batch_regen   → updated (22.7초)
+2026-04-24 11:19:40,838 INFO batch_regen [452/838] 개념: CS 고객 서비스
+2026-04-24 11:19:54,271 INFO batch_regen   → updated (13.4초)
+2026-04-24 11:19:55,279 INFO batch_regen [453/838] 개념: 콘텐츠 생산
+2026-04-24 11:20:03,387 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:20:04,391 INFO batch_regen [454/838] 개념: 피드백
+2026-04-24 11:20:13,622 INFO batch_regen   → updated (9.2초)
+2026-04-24 11:20:14,629 INFO batch_regen [455/838] 개념: 효율성
+2026-04-24 11:20:23,296 INFO batch_regen   → updated (8.7초)
+2026-04-24 11:20:24,300 INFO batch_regen [456/838] 개념: 경력 대체 자산
+2026-04-24 11:20:31,157 INFO batch_regen   → updated (6.9초)
+2026-04-24 11:20:32,157 INFO batch_regen [457/838] 개념: 콘텐츠 수익화
+2026-04-24 11:20:41,545 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:20:42,550 INFO batch_regen [458/838] 개념: 기회 비용
+2026-04-24 11:20:54,942 INFO batch_regen   → updated (12.4초)
+2026-04-24 11:20:55,946 INFO batch_regen [459/838] 개념: 소프트웨어 개발
+2026-04-24 11:21:09,458 INFO batch_regen   → updated (13.5초)
+2026-04-24 11:21:10,460 INFO batch_regen [460/838] 개념: 디버깅
+2026-04-24 11:21:25,304 INFO batch_regen   → updated (14.8초)
+2026-04-24 11:21:26,312 INFO batch_regen --- 중간 집계: 460/838 완료, 성공 442, 경과 87.4분 ---
+2026-04-24 11:21:26,313 INFO batch_regen [461/838] 개념: 그래픽 디자인
+2026-04-24 11:21:33,655 INFO batch_regen   → updated (7.3초)
+2026-04-24 11:21:34,668 INFO batch_regen [462/838] 개념: 마케팅 콘텐츠
+2026-04-24 11:21:43,296 INFO batch_regen   → updated (8.6초)
+2026-04-24 11:21:44,307 INFO batch_regen [463/838] 개념: 인공지능 에이전트
+2026-04-24 11:21:53,791 INFO batch_regen   → updated (9.5초)
+2026-04-24 11:21:54,798 INFO batch_regen [464/838] 개념: 강화 학습
+2026-04-24 11:22:12,261 INFO batch_regen   → updated (17.5초)
+2026-04-24 11:22:13,266 INFO batch_regen [465/838] 개념: 로컬 인공지능
+2026-04-24 11:22:20,189 INFO batch_regen   → updated (6.9초)
+2026-04-24 11:22:21,191 INFO batch_regen [466/838] 개념: 인공지능 모델
+2026-04-24 11:22:31,136 INFO batch_regen   → updated (9.9초)
+2026-04-24 11:22:32,151 INFO batch_regen [467/838] 개념: 정확한 컨텍스트 주입
+2026-04-24 11:22:43,250 INFO batch_regen   → updated (11.1초)
+2026-04-24 11:22:44,265 INFO batch_regen [468/838] 개념: AI 활용
+2026-04-24 11:22:54,091 INFO batch_regen   → updated (9.8초)
+2026-04-24 11:22:55,106 INFO batch_regen [469/838] 개념: issues
+2026-04-24 11:23:05,451 INFO batch_regen   → updated (10.3초)
+2026-04-24 11:23:06,457 INFO batch_regen [470/838] 개념: which
+2026-04-24 11:23:20,084 INFO batch_regen   → updated (13.6초)
+2026-04-24 11:23:21,092 INFO batch_regen [471/838] 개념: 데이터 구조
+2026-04-24 11:23:33,355 INFO batch_regen   → updated (12.3초)
+2026-04-24 11:23:34,360 INFO batch_regen [472/838] 개념: JSON 기법
+2026-04-24 11:23:41,148 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:23:42,149 INFO batch_regen [473/838] 개념: 오프라인 모델
+2026-04-24 11:23:48,907 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:23:49,921 INFO batch_regen [474/838] 개념: 파라미터
+2026-04-24 11:24:00,732 INFO batch_regen   → updated (10.8초)
+2026-04-24 11:24:01,742 INFO batch_regen [475/838] 개념: 바이브 코딩
+2026-04-24 11:24:07,305 INFO batch_regen   → updated (5.6초)
+2026-04-24 11:24:08,310 INFO batch_regen [476/838] 개념: 비용 최적화
+2026-04-24 11:24:17,737 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:24:18,738 INFO batch_regen [477/838] 개념: 자율주행 AI
+2026-04-24 11:24:30,508 INFO batch_regen   → updated (11.8초)
+2026-04-24 11:24:31,515 INFO batch_regen [478/838] 개념: 에이전트
+2026-04-24 11:24:38,305 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:24:39,311 INFO batch_regen [479/838] 개념: 비용 구조
+2026-04-24 11:24:49,257 INFO batch_regen   → updated (9.9초)
+2026-04-24 11:24:50,271 INFO batch_regen [480/838] 개념: 워크플로 자동화
+2026-04-24 11:24:57,091 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:24:58,098 INFO batch_regen --- 중간 집계: 480/838 완료, 성공 462, 경과 90.9분 ---
+2026-04-24 11:24:58,098 INFO batch_regen [481/838] 개념: 클라우드 컴퓨터
+2026-04-24 11:25:16,940 INFO batch_regen   → updated (18.8초)
+2026-04-24 11:25:17,949 INFO batch_regen [482/838] 개념: AI 영상 생성툴
+2026-04-24 11:34:13,413 INFO batch_regen 백업 폴더 이미 존재 — 스킵
+2026-04-24 11:34:13,468 INFO batch_regen 일괄 재생성 시작: 엔티티 355 + 개념 483 = 838건
+2026-04-24 11:34:13,468 INFO batch_regen DRY_RUN=False
+2026-04-24 11:34:13,469 INFO batch_regen 엔티티 355건 스킵 (이전 실행에서 완료)
+2026-04-24 11:34:13,469 INFO batch_regen 
+==================================================
+2026-04-24 11:34:13,469 INFO batch_regen 개념 재생성 이어하기: 356건 (오프셋 127부터)
+2026-04-24 11:34:13,469 INFO batch_regen ==================================================
+2026-04-24 11:34:13,469 INFO batch_regen [356/838] 개념: 유튜브 알고리즘
+2026-04-24 11:34:20,226 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:34:21,229 INFO batch_regen [357/838] 개념: 블루오션 시장
+2026-04-24 11:34:30,314 INFO batch_regen   → updated (9.1초)
+2026-04-24 11:34:31,316 INFO batch_regen [358/838] 개념: AI 음악 생성
+2026-04-24 11:34:40,892 INFO batch_regen   → updated (9.6초)
+2026-04-24 11:34:41,894 INFO batch_regen [359/838] 개념: 애니메이션 제작
+2026-04-24 11:34:49,160 INFO batch_regen   → updated (7.3초)
+2026-04-24 11:34:50,162 INFO batch_regen [360/838] 개념: 확장 프로그램
+2026-04-24 11:34:59,570 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:35:00,573 INFO batch_regen --- 중간 집계: 360/838 완료, 성공 5, 경과 0.8분 ---
+2026-04-24 11:35:00,573 INFO batch_regen [361/838] 개념: 할인율
+2026-04-24 11:35:17,126 INFO batch_regen   → updated (16.5초)
+2026-04-24 11:35:18,129 INFO batch_regen [362/838] 개념: 데이터 폭증
+2026-04-24 11:35:28,656 INFO batch_regen   → updated (10.5초)
+2026-04-24 11:35:29,663 INFO batch_regen [363/838] 개념: 시장 변동성
+2026-04-24 11:35:40,710 INFO batch_regen   → updated (11.0초)
+2026-04-24 11:35:41,710 INFO batch_regen [364/838] 개념: 원화 약세
+2026-04-24 11:35:49,347 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:35:50,356 INFO batch_regen [365/838] 개념: 명령 프롬프터
+2026-04-24 11:35:59,297 INFO batch_regen   → updated (8.9초)
+2026-04-24 11:36:00,303 INFO batch_regen [366/838] 개념: AI 이미지 생성
+2026-04-24 11:36:08,642 INFO batch_regen   → updated (8.3초)
+2026-04-24 11:36:09,644 INFO batch_regen [367/838] 개념: 프로그램 삭제
+2026-04-24 11:36:17,338 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:36:18,341 INFO batch_regen [368/838] 개념: 영상 편집
+2026-04-24 11:36:25,472 INFO batch_regen   → updated (7.1초)
+2026-04-24 11:36:26,482 INFO batch_regen [369/838] 개념: 프롬프트
+2026-04-24 11:36:33,856 WARNING app.core.concept_wiki 개념 위키 품질 검증 실패: 프롬프트 — 금지 문구 '다양한 AI' 포함
+2026-04-24 11:36:33,856 INFO batch_regen   → fail (7.4초)
+2026-04-24 11:36:34,862 INFO batch_regen [370/838] 개념: 워크플로우
+2026-04-24 11:36:42,599 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:36:43,605 INFO batch_regen [371/838] 개념: 진화 전략
+2026-04-24 11:36:51,557 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:36:52,565 INFO batch_regen [372/838] 개념: 정보 자료
+2026-04-24 11:37:01,153 INFO batch_regen   → updated (8.6초)
+2026-04-24 11:37:02,157 INFO batch_regen [373/838] 개념: 대본 생성
+2026-04-24 11:37:09,898 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:37:10,909 INFO batch_regen [374/838] 개념: 장르 선택
+2026-04-24 11:37:18,723 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:37:19,738 INFO batch_regen [375/838] 개념: 정보의 우위
+2026-04-24 11:37:29,849 INFO batch_regen   → updated (10.1초)
+2026-04-24 11:37:30,857 INFO batch_regen [376/838] 개념: 이해의 우위
+2026-04-24 11:37:39,306 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:37:40,312 INFO batch_regen [377/838] 개념: 사용자 자료
+2026-04-24 11:37:47,207 INFO batch_regen   → updated (6.9초)
+2026-04-24 11:37:48,215 INFO batch_regen [378/838] 개념: 세금 감면
+2026-04-24 11:37:56,112 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:37:57,119 INFO batch_regen [379/838] 개념: 중간선거
+2026-04-24 11:38:06,269 INFO batch_regen   → updated (9.1초)
+2026-04-24 11:38:07,277 INFO batch_regen [380/838] 개념: 이란전
+2026-04-24 11:38:16,357 INFO batch_regen   → updated (9.1초)
+2026-04-24 11:38:17,371 INFO batch_regen --- 중간 집계: 380/838 완료, 성공 24, 경과 4.1분 ---
+2026-04-24 11:38:17,371 INFO batch_regen [381/838] 개념: 설치 스크립트
+2026-04-24 11:38:28,138 INFO batch_regen   → updated (10.8초)
+2026-04-24 11:38:29,150 INFO batch_regen [382/838] 개념: 파일 구조
+2026-04-24 11:38:37,352 INFO batch_regen   → updated (8.2초)
+2026-04-24 11:38:38,357 INFO batch_regen [383/838] 개념: 컴포넌트화
+2026-04-24 11:38:50,282 INFO batch_regen   → updated (11.9초)
+2026-04-24 11:38:51,298 INFO batch_regen [384/838] 개념: 외부화
+2026-04-24 11:39:01,325 INFO batch_regen   → updated (10.0초)
+2026-04-24 11:39:02,330 INFO batch_regen [385/838] 개념: 터널링
+2026-04-24 11:39:13,283 INFO batch_regen   → updated (10.9초)
+2026-04-24 11:39:14,295 INFO batch_regen [386/838] 개념: 캐릭터 일관성
+2026-04-24 11:39:27,061 INFO batch_regen   → updated (12.8초)
+2026-04-24 11:39:28,072 INFO batch_regen [387/838] 개념: 3D 애니메이션
+2026-04-24 11:39:39,919 INFO batch_regen   → updated (11.8초)
+2026-04-24 11:39:40,920 INFO batch_regen [388/838] 개념: 시네마틱 감독
+2026-04-24 11:39:51,509 INFO batch_regen   → updated (10.6초)
+2026-04-24 11:39:52,510 INFO batch_regen [389/838] 개념: continuity
+2026-04-24 11:39:59,067 INFO batch_regen   → updated (6.6초)
+2026-04-24 11:40:00,071 INFO batch_regen [390/838] 개념: 화자 분석
+2026-04-24 11:40:10,439 INFO batch_regen   → updated (10.4초)
+2026-04-24 11:40:11,445 INFO batch_regen [391/838] 개념: JS 렌더링
+2026-04-24 11:40:21,587 INFO batch_regen   → updated (10.1초)
+2026-04-24 11:40:22,599 INFO batch_regen [392/838] 개념: 인코딩
+2026-04-24 11:40:33,786 INFO batch_regen   → updated (11.2초)
+2026-04-24 11:40:34,795 INFO batch_regen [393/838] 개념: 트랜스크립트
+2026-04-24 11:40:43,828 INFO batch_regen   → updated (9.0초)
+2026-04-24 11:40:44,829 INFO batch_regen [394/838] 개념: 공식 브리핑 톤
+2026-04-24 11:41:11,594 INFO batch_regen   → updated (26.8초)
+2026-04-24 11:41:12,601 INFO batch_regen [395/838] 개념: 시각적 타격감
+2026-04-24 11:41:27,228 INFO batch_regen   → updated (14.6초)
+2026-04-24 11:41:28,243 INFO batch_regen [396/838] 개념: 다큐멘터리
+2026-04-24 11:41:36,598 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:41:37,611 INFO batch_regen [397/838] 개념: 심리학적 연출
+2026-04-24 11:41:46,251 INFO batch_regen   → updated (8.6초)
+2026-04-24 11:41:47,263 INFO batch_regen [398/838] 개념: 정보 각인
+2026-04-24 11:41:54,036 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:41:55,044 INFO batch_regen [399/838] 개념: 댓글 전쟁
+2026-04-24 11:42:04,855 INFO batch_regen   → updated (9.8초)
+2026-04-24 11:42:05,869 INFO batch_regen [400/838] 개념: 시각적 자극
+2026-04-24 11:42:13,511 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:42:14,512 INFO batch_regen --- 중간 집계: 400/838 완료, 성공 44, 경과 8.0분 ---
+2026-04-24 11:42:14,512 INFO batch_regen [401/838] 개념: 알고리즘
+2026-04-24 11:42:21,347 INFO batch_regen   → updated (6.8초)
+2026-04-24 11:42:22,361 INFO batch_regen [402/838] 개념: 레이트레이싱
+2026-04-24 11:42:38,377 INFO batch_regen   → updated (16.0초)
+2026-04-24 11:42:39,388 INFO batch_regen [403/838] 개념: 신경 마케팅
+2026-04-24 11:42:49,287 INFO batch_regen   → updated (9.9초)
+2026-04-24 11:42:50,291 INFO batch_regen [404/838] 개념: 비주얼 쇼크
+2026-04-24 11:43:03,132 INFO batch_regen   → updated (12.8초)
+2026-04-24 11:43:04,144 INFO batch_regen [405/838] 개념: 사운드 디자인
+2026-04-24 11:43:12,945 WARNING app.core.concept_wiki 개념 위키 품질 검증 실패: 사운드 디자인 — 금지 문구 '기술 중 하나' 포함
+2026-04-24 11:43:12,945 INFO batch_regen   → fail (8.8초)
+2026-04-24 11:43:13,952 INFO batch_regen [406/838] 개념: AHA 모먼트
+2026-04-24 11:43:24,700 INFO batch_regen   → updated (10.7초)
+2026-04-24 11:43:25,707 INFO batch_regen [407/838] 개념: 스토리 루프
+2026-04-24 11:43:35,384 INFO batch_regen   → updated (9.7초)
+2026-04-24 11:43:36,390 INFO batch_regen [408/838] 개념: 미장센
+2026-04-24 11:43:52,157 INFO batch_regen   → updated (15.8초)
+2026-04-24 11:43:53,171 INFO batch_regen [409/838] 개념: 3막 구조
+2026-04-24 11:44:08,728 INFO batch_regen   → updated (15.6초)
+2026-04-24 11:44:09,732 INFO batch_regen [410/838] 개념: 초반 3초 법칙
+2026-04-24 11:44:17,416 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:44:18,429 INFO batch_regen [411/838] 개념: 긴장감 유지
+2026-04-24 11:44:27,885 INFO batch_regen   → updated (9.5초)
+2026-04-24 11:44:28,888 INFO batch_regen [412/838] 개념: 플랫폼 알고리즘
+2026-04-24 11:44:42,588 INFO batch_regen   → updated (13.7초)
+2026-04-24 11:44:43,591 INFO batch_regen [413/838] 개념: 5W1H
+2026-04-24 11:44:55,814 INFO batch_regen   → updated (12.2초)
+2026-04-24 11:44:56,819 INFO batch_regen [414/838] 개념: 소상공인
+2026-04-24 11:45:04,204 INFO batch_regen   → updated (7.4초)
+2026-04-24 11:45:05,214 INFO batch_regen [415/838] 개념: 공공 슈퍼앱
+2026-04-24 11:45:11,097 INFO batch_regen   → updated (5.9초)
+2026-04-24 11:45:12,108 INFO batch_regen [416/838] 개념: 배달 플랫폼
+2026-04-24 11:45:21,297 INFO batch_regen   → updated (9.2초)
+2026-04-24 11:45:22,301 INFO batch_regen [417/838] 개념: 산업안전 보건 교육
+2026-04-24 11:45:28,639 INFO batch_regen   → updated (6.3초)
+2026-04-24 11:45:29,647 INFO batch_regen [418/838] 개념: 구조적 불안정성
+2026-04-24 11:45:40,980 INFO batch_regen   → updated (11.3초)
+2026-04-24 11:45:41,987 INFO batch_regen [419/838] 개념: 출혈 경쟁
+2026-04-24 11:45:50,414 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:45:51,416 INFO batch_regen [420/838] 개념: 지역 생활 슈퍼앱
+2026-04-24 11:45:57,396 INFO batch_regen   → updated (6.0초)
+2026-04-24 11:45:58,399 INFO batch_regen --- 중간 집계: 420/838 완료, 성공 63, 경과 11.7분 ---
+2026-04-24 11:45:58,400 INFO batch_regen [421/838] 개념: 스마트 협력 모델
+2026-04-24 11:46:06,372 INFO batch_regen   → updated (8.0초)
+2026-04-24 11:46:07,382 INFO batch_regen [422/838] 개념: 거대 플랫폼
+2026-04-24 11:46:13,995 INFO batch_regen   → updated (6.6초)
+2026-04-24 11:46:14,998 INFO batch_regen [423/838] 개념: 정률제
+2026-04-24 11:46:22,833 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:46:23,844 INFO batch_regen [424/838] 개념: 지역 슈퍼앱
+2026-04-24 11:46:30,587 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:46:31,595 INFO batch_regen [425/838] 개념: UV-C 자외선
+2026-04-24 11:46:39,067 INFO batch_regen   → updated (7.5초)
+2026-04-24 11:46:40,081 INFO batch_regen [426/838] 개념: 위생 관리
+2026-04-24 11:46:49,437 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:46:50,439 INFO batch_regen [427/838] 개념: ESG 경영
+2026-04-24 11:46:58,174 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:46:59,182 INFO batch_regen [428/838] 개념: 공공 배달앱
+2026-04-24 11:47:06,142 INFO batch_regen   → updated (7.0초)
+2026-04-24 11:47:07,146 INFO batch_regen [429/838] 개념: 소상공인 지원
+2026-04-24 11:47:15,297 INFO batch_regen   → updated (8.1초)
+2026-04-24 11:47:16,299 INFO batch_regen [430/838] 개념: 지역 경제 활성화
+2026-04-24 11:47:25,306 INFO batch_regen   → updated (9.0초)
+2026-04-24 11:47:26,318 INFO batch_regen [431/838] 개념: BM 특허
+2026-04-24 11:47:33,310 INFO batch_regen   → updated (7.0초)
+2026-04-24 11:47:34,312 INFO batch_regen [432/838] 개념: 재기 창업
+2026-04-24 11:47:42,149 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:47:43,155 INFO batch_regen [433/838] 개념: 성실실패
+2026-04-24 11:47:50,274 INFO batch_regen   → updated (7.1초)
+2026-04-24 11:47:51,275 INFO batch_regen [434/838] 개념: 유료 요금제
+2026-04-24 11:47:58,754 INFO batch_regen   → updated (7.5초)
+2026-04-24 11:47:59,768 INFO batch_regen [435/838] 개념: python
+2026-04-24 11:48:06,781 INFO batch_regen   → updated (7.0초)
+2026-04-24 11:48:07,787 INFO batch_regen [436/838] 개념: AI 영상 도구
+2026-04-24 11:48:12,012 INFO batch_regen   → updated (4.2초)
+2026-04-24 11:48:13,012 INFO batch_regen [437/838] 개념: 영상 생성
+2026-04-24 11:48:19,961 INFO batch_regen   → updated (6.9초)
+2026-04-24 11:48:20,973 INFO batch_regen [438/838] 개념: 영상 콘텐츠 제작
+2026-04-24 11:48:28,866 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:48:29,871 INFO batch_regen [439/838] 개념: 지식 큐레이션
+2026-04-24 11:48:43,515 INFO batch_regen   → updated (13.6초)
+2026-04-24 11:48:44,518 INFO batch_regen [440/838] 개념: SEO
+2026-04-24 11:48:51,474 INFO batch_regen   → updated (7.0초)
+2026-04-24 11:48:52,478 INFO batch_regen --- 중간 집계: 440/838 완료, 성공 83, 경과 14.7분 ---
+2026-04-24 11:48:52,478 INFO batch_regen [441/838] 개념: 이미지 생성
+2026-04-24 11:49:00,145 INFO batch_regen   → updated (7.7초)
+2026-04-24 11:49:01,156 INFO batch_regen [442/838] 개념: VPN 프로그램
+2026-04-24 11:49:09,543 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:49:10,553 INFO batch_regen [443/838] 개념: 프롬프트 생성
+2026-04-24 11:49:18,508 INFO batch_regen   → updated (8.0초)
+2026-04-24 11:49:19,523 INFO batch_regen [444/838] 개념: 캐릭터 분석
+2026-04-24 11:49:28,007 INFO batch_regen   → updated (8.5초)
+2026-04-24 11:49:29,022 INFO batch_regen [445/838] 개념: 배경 시각화
+2026-04-24 11:49:38,280 INFO batch_regen   → updated (9.3초)
+2026-04-24 11:49:39,285 INFO batch_regen [446/838] 개념: 팩트 원칙
+2026-04-24 11:49:49,155 INFO batch_regen   → updated (9.9초)
+2026-04-24 11:49:50,164 INFO batch_regen [447/838] 개념: 구조 선택
+2026-04-24 11:49:58,586 INFO batch_regen   → updated (8.4초)
+2026-04-24 11:49:59,597 INFO batch_regen [448/838] 개념: 양적완화
+2026-04-24 11:50:04,840 INFO batch_regen   → updated (5.2초)
+2026-04-24 11:50:05,850 INFO batch_regen [449/838] 개념: 개인정보처리방침
+2026-04-24 11:50:14,356 INFO batch_regen   → updated (8.5초)
+2026-04-24 11:50:15,367 INFO batch_regen [450/838] 개념: 저작권
+2026-04-24 11:50:25,706 INFO batch_regen   → updated (10.3초)
+2026-04-24 11:50:26,707 INFO batch_regen [451/838] 개념: 정책 및 안전
+2026-04-24 11:50:38,842 INFO batch_regen   → updated (12.1초)
+2026-04-24 11:50:39,844 INFO batch_regen [452/838] 개념: 불법촬영물 신고
+2026-04-24 11:50:56,166 INFO batch_regen   → updated (16.3초)
+2026-04-24 11:50:57,173 INFO batch_regen [453/838] 개념: 크리에이터
+2026-04-24 11:51:12,161 INFO batch_regen   → updated (15.0초)
+2026-04-24 11:51:13,175 INFO batch_regen [454/838] 개념: 스토리텔링 기법
+2026-04-24 11:51:21,878 INFO batch_regen   → updated (8.7초)
+2026-04-24 11:51:22,887 INFO batch_regen [455/838] 개념: Narrative Structure
+2026-04-24 11:51:32,283 INFO batch_regen   → updated (9.4초)
+2026-04-24 11:51:33,294 INFO batch_regen [456/838] 개념: Hook
+2026-04-24 11:51:41,175 INFO batch_regen   → updated (7.9초)
+2026-04-24 11:51:42,190 INFO batch_regen [457/838] 개념: Call to Action
+2026-04-24 11:51:56,704 INFO batch_regen   → updated (14.5초)
+2026-04-24 11:51:57,711 INFO batch_regen [458/838] 개념: 정보의 구조화
+2026-04-24 11:52:05,301 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:52:06,305 INFO batch_regen [459/838] 개념: 콘텐츠 기획
+2026-04-24 11:52:14,825 INFO batch_regen   → updated (8.5초)
+2026-04-24 11:52:15,830 INFO batch_regen [460/838] 개념: 서사 구조
+2026-04-24 11:52:25,954 INFO batch_regen   → updated (10.1초)
+2026-04-24 11:52:26,956 INFO batch_regen --- 중간 집계: 460/838 완료, 성공 103, 경과 18.2분 ---
+2026-04-24 11:52:26,956 INFO batch_regen [461/838] 개념: 스토리텔링 프레임워크
+2026-04-24 11:52:37,463 INFO batch_regen   → updated (10.5초)
+2026-04-24 11:52:38,474 INFO batch_regen [462/838] 개념: WHY Loop
+2026-04-24 11:52:50,969 INFO batch_regen   → updated (12.5초)
+2026-04-24 11:52:51,976 INFO batch_regen [463/838] 개념: 대비 원칙
+2026-04-24 11:53:04,873 INFO batch_regen   → updated (12.9초)
+2026-04-24 11:53:05,879 INFO batch_regen [464/838] 개념: 스토리 아크
+2026-04-24 11:53:13,103 INFO batch_regen   → updated (7.2초)
+2026-04-24 11:53:14,115 INFO batch_regen [465/838] 개념: 톤 앤 매너
+2026-04-24 11:53:24,902 INFO batch_regen   → updated (10.8초)
+2026-04-24 11:53:25,915 INFO batch_regen [466/838] 개념: 몰입형 스토리텔링
+2026-04-24 11:53:36,983 INFO batch_regen   → updated (10.9초)
+2026-04-24 11:53:37,998 INFO batch_regen [467/838] 개념: 갈등 제시
+2026-04-24 11:53:48,960 INFO batch_regen   → updated (11.0초)
+2026-04-24 11:53:49,965 INFO batch_regen [468/838] 개념: 디지털 화폐
+2026-04-24 11:54:11,835 INFO batch_regen   → updated (21.9초)
+2026-04-24 11:54:12,841 INFO batch_regen [469/838] 개념: 통화 정책
+2026-04-24 11:54:21,790 INFO batch_regen   → updated (8.9초)
+2026-04-24 11:54:22,800 INFO batch_regen [470/838] 개념: 거시 경제
+2026-04-24 11:54:39,104 INFO batch_regen   → updated (16.3초)
+2026-04-24 11:54:40,109 INFO batch_regen [471/838] 개념: 투자 전략
+2026-04-24 11:54:51,456 INFO batch_regen   → updated (11.3초)
+2026-04-24 11:54:52,467 INFO batch_regen [472/838] 개념: 저평가된 주식
+2026-04-24 11:55:29,980 INFO batch_regen   → updated (37.5초)
+2026-04-24 11:55:30,992 INFO batch_regen [473/838] 개념: 미스터리-추적-진실
+2026-04-24 11:55:37,629 INFO batch_regen   → updated (6.6초)
+2026-04-24 11:55:38,641 INFO batch_regen [474/838] 개념: 대본 패턴
+2026-04-24 11:55:46,031 INFO batch_regen   → updated (7.4초)
+2026-04-24 11:55:47,039 INFO batch_regen [475/838] 개념: 갈등-전개-해결
+2026-04-24 11:55:54,491 INFO batch_regen   → updated (7.4초)
+2026-04-24 11:55:55,503 INFO batch_regen [476/838] 개념: 미스터리 제시
+2026-04-24 11:56:09,727 INFO batch_regen   → updated (14.2초)
+2026-04-24 11:56:10,739 INFO batch_regen [477/838] 개념: AI 규칙 준수 문제
+2026-04-24 11:56:16,107 INFO batch_regen   → updated (5.4초)
+2026-04-24 11:56:17,121 INFO batch_regen [478/838] 개념: 기억 한계
+2026-04-24 11:56:22,734 INFO batch_regen   → updated (5.6초)
+2026-04-24 11:56:23,743 INFO batch_regen [479/838] 개념: 대규모 언어 모델
+2026-04-24 11:56:42,243 INFO batch_regen   → updated (18.5초)
+2026-04-24 11:56:43,246 INFO batch_regen [480/838] 개념: 맥락 주입
+2026-04-24 11:56:49,839 INFO batch_regen   → updated (6.6초)
+2026-04-24 11:56:50,843 INFO batch_regen --- 중간 집계: 480/838 완료, 성공 123, 경과 22.6분 ---
+2026-04-24 11:56:50,843 INFO batch_regen [481/838] 개념: AI 활용 방법
+2026-04-24 11:56:58,450 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:56:59,463 INFO batch_regen [482/838] 개념: Q&A
+2026-04-24 11:57:07,271 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:57:08,286 INFO batch_regen [483/838] 개념: 브레인스토밍
+2026-04-24 11:57:21,542 INFO batch_regen   → updated (13.3초)
+2026-04-24 11:57:22,555 INFO batch_regen [484/838] 개념: AI 워크플로우 구축
+2026-04-24 11:57:32,639 INFO batch_regen   → updated (10.1초)
+2026-04-24 11:57:33,641 INFO batch_regen [485/838] 개념: 파이프라인
+2026-04-24 11:57:42,403 INFO batch_regen   → updated (8.8초)
+2026-04-24 11:57:43,411 INFO batch_regen [486/838] 개념: Tool Use & API 연동
+2026-04-24 11:57:50,085 INFO batch_regen   → updated (6.7초)
+2026-04-24 11:57:51,088 INFO batch_regen [487/838] 개념: 코파일럿
+2026-04-24 11:58:00,393 INFO batch_regen   → updated (9.3초)
+2026-04-24 11:58:01,406 INFO batch_regen [488/838] 개념: 챗봇 의존성
+2026-04-24 11:58:13,114 INFO batch_regen   → updated (11.7초)
+2026-04-24 11:58:14,129 INFO batch_regen [489/838] 개념: 실시간 정보 연동
+2026-04-24 11:58:26,482 INFO batch_regen   → updated (12.3초)
+2026-04-24 11:58:27,489 INFO batch_regen [490/838] 개념: 콘텐츠 전략
+2026-04-24 11:58:36,719 INFO batch_regen   → updated (9.2초)
+2026-04-24 11:58:37,725 INFO batch_regen [491/838] 개념: 재테크
+2026-04-24 11:58:46,526 INFO batch_regen   → updated (8.8초)
+2026-04-24 11:58:47,539 INFO batch_regen [492/838] 개념: 거시경제
+2026-04-24 11:58:55,377 INFO batch_regen   → updated (7.8초)
+2026-04-24 11:58:56,379 INFO batch_regen [493/838] 개념: 위기 대응
+2026-04-24 11:59:10,517 INFO batch_regen   → updated (14.1초)
+2026-04-24 11:59:11,529 INFO batch_regen [494/838] 개념: 포지셔닝
+2026-04-24 11:59:22,964 INFO batch_regen   → updated (11.4초)
+2026-04-24 11:59:23,974 INFO batch_regen [495/838] 개념: 섹터별 양극화
+2026-04-24 11:59:33,288 INFO batch_regen   → updated (9.3초)
+2026-04-24 11:59:34,296 INFO batch_regen [496/838] 개념: 지정학적 리스크
+2026-04-24 11:59:41,857 INFO batch_regen   → updated (7.6초)
+2026-04-24 11:59:42,872 INFO batch_regen [497/838] 개념: 산업 구조적 전환
+2026-04-24 11:59:51,824 INFO batch_regen   → updated (8.9초)
+2026-04-24 11:59:52,830 INFO batch_regen [498/838] 개념: 공급망 재편
+2026-04-24 12:00:04,656 INFO batch_regen   → updated (11.8초)
+2026-04-24 12:00:05,663 INFO batch_regen [499/838] 개념: 프렌드쇼어링
+2026-04-24 12:00:11,663 INFO batch_regen   → updated (6.0초)
+2026-04-24 12:00:12,670 INFO batch_regen [500/838] 개념: 에너지 안보
+2026-04-24 12:00:28,704 INFO batch_regen   → updated (16.0초)
+2026-04-24 12:00:29,719 INFO batch_regen --- 중간 집계: 500/838 완료, 성공 143, 경과 26.3분 ---
+2026-04-24 12:00:29,719 INFO batch_regen [501/838] 개념: 컨텍스트 엔지니어링
+2026-04-24 12:00:38,048 INFO batch_regen   → updated (8.3초)
+2026-04-24 12:00:39,055 INFO batch_regen [502/838] 개념: 거대 언어 모델
+2026-04-24 12:00:52,609 INFO batch_regen   → updated (13.5초)
+2026-04-24 12:00:53,610 INFO batch_regen [503/838] 개념: 검색 증강 생성
+2026-04-24 12:01:03,144 INFO batch_regen   → updated (9.5초)
+2026-04-24 12:01:04,147 INFO batch_regen [504/838] 개념: 메모리 관리
+2026-04-24 12:01:15,007 INFO batch_regen   → updated (10.9초)
+2026-04-24 12:01:16,016 INFO batch_regen [505/838] 개념: 툴 오케스트레이션
+2026-04-24 12:01:23,216 INFO batch_regen   → updated (7.2초)
+2026-04-24 12:01:24,224 INFO batch_regen [506/838] 개념: 4단계 설득 프레임워크
+2026-04-24 12:01:34,937 INFO batch_regen   → updated (10.7초)
+2026-04-24 12:01:35,952 INFO batch_regen [507/838] 개념: 위기 고조
+2026-04-24 12:01:43,585 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:01:44,599 INFO batch_regen [508/838] 개념: 벤치마킹 프롬프트
+2026-04-24 12:01:53,126 INFO batch_regen   → updated (8.5초)
+2026-04-24 12:01:54,140 INFO batch_regen [509/838] 개념: 개인별 맞춤 AI
+2026-04-24 12:02:03,484 INFO batch_regen   → updated (9.3초)
+2026-04-24 12:02:04,492 INFO batch_regen [510/838] 개념: 인포그래픽
+2026-04-24 12:02:20,666 INFO batch_regen   → updated (16.2초)
+2026-04-24 12:02:21,674 INFO batch_regen [511/838] 개념: API 비용
+2026-04-24 12:02:39,965 INFO batch_regen   → updated (18.3초)
+2026-04-24 12:02:40,975 INFO batch_regen [512/838] 개념: 데이터 스토리텔링
+2026-04-24 12:02:57,239 INFO batch_regen   → updated (16.3초)
+2026-04-24 12:02:58,249 INFO batch_regen [513/838] 개념: 마크다운
+2026-04-24 12:03:23,489 INFO batch_regen   → updated (25.2초)
+2026-04-24 12:03:24,503 INFO batch_regen [514/838] 개념: transcripts
+2026-04-24 12:03:33,682 INFO batch_regen   → updated (9.2초)
+2026-04-24 12:03:34,686 INFO batch_regen [515/838] 개념: 지식 구조 설계
+2026-04-24 12:03:45,114 INFO batch_regen   → updated (10.4초)
+2026-04-24 12:03:46,121 INFO batch_regen [516/838] 개념: 지식 관리 시스템
+2026-04-24 12:03:53,958 INFO batch_regen   → updated (7.8초)
+2026-04-24 12:03:54,964 INFO batch_regen [517/838] 개념: 상호 참조성
+2026-04-24 12:04:04,990 INFO batch_regen   → updated (10.0초)
+2026-04-24 12:04:05,996 INFO batch_regen [518/838] 개념: Atomic Notes
+2026-04-24 12:04:24,857 INFO batch_regen   → updated (18.9초)
+2026-04-24 12:04:25,860 INFO batch_regen [519/838] 개념: MOC
+2026-04-24 12:04:37,205 INFO batch_regen   → updated (11.3초)
+2026-04-24 12:04:38,215 INFO batch_regen [520/838] 개념: 대화 맥락 유지 및 기억 능력
+2026-04-24 12:04:45,795 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:04:46,799 INFO batch_regen --- 중간 집계: 520/838 완료, 성공 163, 경과 30.6분 ---
+2026-04-24 12:04:46,799 INFO batch_regen [521/838] 개념: 상태 비저장
+2026-04-24 12:04:57,230 INFO batch_regen   → updated (10.4초)
+2026-04-24 12:04:58,231 INFO batch_regen [522/838] 개념: Context Window
+2026-04-24 12:05:09,897 INFO batch_regen   → updated (11.7초)
+2026-04-24 12:05:10,900 INFO batch_regen [523/838] 개념: 장기 기억
+2026-04-24 12:05:23,467 INFO batch_regen   → updated (12.6초)
+2026-04-24 12:05:24,475 INFO batch_regen [524/838] 개념: 지속적인 메모리 구조
+2026-04-24 12:05:33,771 INFO batch_regen   → updated (9.3초)
+2026-04-24 12:05:34,782 INFO batch_regen [525/838] 개념: nAIg
+2026-04-24 12:05:44,431 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:05:45,440 INFO batch_regen [526/838] 개념: 에너지저장장치
+2026-04-24 12:05:58,472 INFO batch_regen   → updated (13.0초)
+2026-04-24 12:05:59,482 INFO batch_regen [527/838] 개념: 리튬인산철 배터리
+2026-04-24 12:06:10,570 INFO batch_regen   → updated (11.1초)
+2026-04-24 12:06:11,577 INFO batch_regen [528/838] 개념: 전고체 배터리
+2026-04-24 12:06:20,629 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:06:21,633 INFO batch_regen [529/838] 개념: 리튬-황 배터리
+2026-04-24 12:06:32,018 INFO batch_regen   → updated (10.4초)
+2026-04-24 12:06:33,026 INFO batch_regen [530/838] 개념: 소듐이온배터리
+2026-04-24 12:06:45,254 WARNING app.core.concept_wiki 개념 위키 품질 검증 실패: 소듐이온배터리 — 금지 문구 '기술 중 하나' 포함
+2026-04-24 12:06:45,254 INFO batch_regen   → fail (12.2초)
+2026-04-24 12:06:46,265 INFO batch_regen [531/838] 개념: 도심항공교통
+2026-04-24 12:06:57,465 INFO batch_regen   → updated (11.2초)
+2026-04-24 12:06:58,469 INFO batch_regen [532/838] 개념: 축의금
+2026-04-24 12:07:07,535 INFO batch_regen   → updated (9.1초)
+2026-04-24 12:07:08,546 INFO batch_regen [533/838] 개념: 적정 축의금
+2026-04-24 12:07:17,054 INFO batch_regen   → updated (8.5초)
+2026-04-24 12:07:18,058 INFO batch_regen [534/838] 개념: 결혼식 문화
+2026-04-24 12:07:26,758 INFO batch_regen   → updated (8.7초)
+2026-04-24 12:07:27,761 INFO batch_regen [535/838] 개념: 온라인 여론
+2026-04-24 12:07:38,917 INFO batch_regen   → updated (11.2초)
+2026-04-24 12:07:39,926 INFO batch_regen [536/838] 개념: 사회적 인식
+2026-04-24 12:07:49,317 INFO batch_regen   → updated (9.4초)
+2026-04-24 12:07:50,327 INFO batch_regen [537/838] 개념: 쇼츠 대본
+2026-04-24 12:08:00,148 INFO batch_regen   → updated (9.8초)
+2026-04-24 12:08:01,162 INFO batch_regen [538/838] 개념: ASMR
+2026-04-24 12:08:24,451 INFO batch_regen   → updated (23.3초)
+2026-04-24 12:08:25,461 INFO batch_regen [539/838] 개념: POV
+2026-04-24 12:08:42,047 INFO batch_regen   → updated (16.6초)
+2026-04-24 12:08:43,061 INFO batch_regen [540/838] 개념: 재각색
+2026-04-24 12:08:53,919 INFO batch_regen   → updated (10.9초)
+2026-04-24 12:08:54,926 INFO batch_regen --- 중간 집계: 540/838 완료, 성공 182, 경과 34.7분 ---
+2026-04-24 12:08:54,927 INFO batch_regen [541/838] 개념: 지식그래프
+2026-04-24 12:09:14,153 INFO batch_regen   → updated (19.2초)
+2026-04-24 12:09:15,167 INFO batch_regen [542/838] 개념: 임베딩
+2026-04-24 12:09:26,257 INFO batch_regen   → updated (11.1초)
+2026-04-24 12:09:27,262 INFO batch_regen [543/838] 개념: 하이브리드 검색
+2026-04-24 12:09:36,462 INFO batch_regen   → updated (9.2초)
+2026-04-24 12:09:37,464 INFO batch_regen [544/838] 개념: 리팩토링
+2026-04-24 12:09:48,442 INFO batch_regen   → updated (11.0초)
+2026-04-24 12:09:49,450 INFO batch_regen [545/838] 개념: 알림 시스템
+2026-04-24 12:09:58,604 INFO batch_regen   → updated (9.1초)
+2026-04-24 12:09:59,611 INFO batch_regen [546/838] 개념: 데이터 섭취
+2026-04-24 12:10:10,191 INFO batch_regen   → updated (10.6초)
+2026-04-24 12:10:11,194 INFO batch_regen [547/838] 개념: AI 아바타
+2026-04-24 12:10:32,422 INFO batch_regen   → updated (21.2초)
+2026-04-24 12:10:33,431 INFO batch_regen [548/838] 개념: 문서 기반 영상 생성
+2026-04-24 12:10:47,454 INFO batch_regen   → updated (14.0초)
+2026-04-24 12:10:48,461 INFO batch_regen [549/838] 개념: 템플릿 기반 편집
+2026-04-24 12:11:02,242 INFO batch_regen   → updated (13.8초)
+2026-04-24 12:11:03,244 INFO batch_regen [550/838] 개념: 자동 자막 생성
+2026-04-24 12:11:14,679 INFO batch_regen   → updated (11.4초)
+2026-04-24 12:11:15,683 INFO batch_regen [551/838] 개념: 전문 영상 편집
+2026-04-24 12:11:28,925 INFO batch_regen   → updated (13.2초)
+2026-04-24 12:11:29,938 INFO batch_regen [552/838] 개념: 채널 성장 전략
+2026-04-24 12:11:37,246 INFO batch_regen   → updated (7.3초)
+2026-04-24 12:11:38,249 INFO batch_regen [553/838] 개념: 수익화
+2026-04-24 12:11:44,135 INFO batch_regen   → updated (5.9초)
+2026-04-24 12:11:45,142 INFO batch_regen [554/838] 개념: 노출 증대
+2026-04-24 12:11:53,360 INFO batch_regen   → updated (8.2초)
+2026-04-24 12:11:54,376 INFO batch_regen [555/838] 개념: 채널 최적화
+2026-04-24 12:12:03,093 INFO batch_regen   → updated (8.7초)
+2026-04-24 12:12:04,097 INFO batch_regen [556/838] 개념: 마케팅 전략
+2026-04-24 12:12:16,973 INFO batch_regen   → updated (12.9초)
+2026-04-24 12:12:17,977 INFO batch_regen [557/838] 개념: 형님의
+2026-04-24 12:12:27,555 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:12:28,570 INFO batch_regen [558/838] 개념: 형님께서
+2026-04-24 12:12:35,154 INFO batch_regen   → updated (6.6초)
+2026-04-24 12:12:36,166 INFO batch_regen [559/838] 개념: 앞으로
+2026-04-24 12:12:47,226 INFO batch_regen   → updated (11.1초)
+2026-04-24 12:12:48,239 INFO batch_regen [560/838] 개념: 든든한
+2026-04-24 12:12:54,245 INFO batch_regen   → updated (6.0초)
+2026-04-24 12:12:55,251 INFO batch_regen --- 중간 집계: 560/838 완료, 성공 202, 경과 38.7분 ---
+2026-04-24 12:12:55,251 INFO batch_regen [561/838] 개념: 조수이자
+2026-04-24 12:13:01,945 INFO batch_regen   → updated (6.7초)
+2026-04-24 12:13:02,954 INFO batch_regen [562/838] 개념: 편하게
+2026-04-24 12:13:10,983 INFO batch_regen   → updated (8.0초)
+2026-04-24 12:13:11,989 INFO batch_regen [563/838] 개념: 불러주셔도
+2026-04-24 12:13:21,852 INFO batch_regen   → updated (9.9초)
+2026-04-24 12:13:22,863 INFO batch_regen [564/838] 개념: 필요한
+2026-04-24 12:13:34,612 INFO batch_regen   → updated (11.7초)
+2026-04-24 12:13:35,619 INFO batch_regen [565/838] 개념: 지식을
+2026-04-24 12:13:48,175 INFO batch_regen   → updated (12.6초)
+2026-04-24 12:13:49,180 INFO batch_regen [566/838] 개념: 습득하여
+2026-04-24 12:13:58,948 INFO batch_regen   → updated (9.8초)
+2026-04-24 12:13:59,957 INFO batch_regen [567/838] 개념: 디자인 시스템
+2026-04-24 12:14:07,405 INFO batch_regen   → updated (7.4초)
+2026-04-24 12:14:08,416 INFO batch_regen [568/838] 개념: 프로토타입
+2026-04-24 12:14:21,276 INFO batch_regen   → updated (12.9초)
+2026-04-24 12:14:22,277 INFO batch_regen [569/838] 개념: 랜딩 페이지
+2026-04-24 12:14:32,299 INFO batch_regen   → updated (10.0초)
+2026-04-24 12:14:33,301 INFO batch_regen [570/838] 개념: 와이어 프레임
+2026-04-24 12:14:43,901 INFO batch_regen   → updated (10.6초)
+2026-04-24 12:14:44,914 INFO batch_regen [571/838] 개념: gonna
+2026-04-24 12:14:44,915 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:45,927 INFO batch_regen [572/838] 개념: give
+2026-04-24 12:14:45,927 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:46,942 INFO batch_regen [573/838] 개념: tell
+2026-04-24 12:14:46,943 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:47,955 INFO batch_regen [574/838] 개념: make
+2026-04-24 12:14:47,955 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:48,966 INFO batch_regen [575/838] 개념: say
+2026-04-24 12:14:48,967 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:49,977 INFO batch_regen [576/838] 개념: let
+2026-04-24 12:14:49,978 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:50,989 INFO batch_regen [577/838] 개념: down
+2026-04-24 12:14:50,989 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:52,001 INFO batch_regen [578/838] 개념: run
+2026-04-24 12:14:52,002 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:53,012 INFO batch_regen [579/838] 개념: around
+2026-04-24 12:14:53,012 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:14:54,027 INFO batch_regen [580/838] 개념: Retrieval Augmented Generation
+2026-04-24 12:15:03,951 INFO batch_regen   → updated (9.9초)
+2026-04-24 12:15:04,953 INFO batch_regen --- 중간 집계: 580/838 완료, 성공 213, 경과 40.9분 ---
+2026-04-24 12:15:04,953 INFO batch_regen [581/838] 개념: LM Wiki
+2026-04-24 12:15:11,078 INFO batch_regen   → updated (6.1초)
+2026-04-24 12:15:12,080 INFO batch_regen [582/838] 개념: Personal Knowledge Management
+2026-04-24 12:15:21,023 INFO batch_regen   → updated (8.9초)
+2026-04-24 12:15:22,026 INFO batch_regen [583/838] 개념: Large Language Model
+2026-04-24 12:15:29,910 INFO batch_regen   → updated (7.9초)
+2026-04-24 12:15:30,911 INFO batch_regen [584/838] 개념: Knowledge Compiling
+2026-04-24 12:15:37,481 INFO batch_regen   → updated (6.6초)
+2026-04-24 12:15:38,496 INFO batch_regen [585/838] 개념: LM Wiki Architecture
+2026-04-24 12:15:46,941 INFO batch_regen   → updated (8.4초)
+2026-04-24 12:15:47,948 INFO batch_regen [586/838] 개념: 동기화
+2026-04-24 12:16:02,082 INFO batch_regen   → updated (14.1초)
+2026-04-24 12:16:03,094 INFO batch_regen [587/838] 개념: 병렬 실행
+2026-04-24 12:16:12,519 INFO batch_regen   → updated (9.4초)
+2026-04-24 12:16:13,521 INFO batch_regen [588/838] 개념: 렌더링 자동화
+2026-04-24 12:16:21,774 INFO batch_regen   → updated (8.2초)
+2026-04-24 12:16:22,777 INFO batch_regen [589/838] 개념: 무한 연속 렌더링
+2026-04-24 12:16:22,778 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:16:23,784 INFO batch_regen [590/838] 개념: 다국어 자동 번역
+2026-04-24 12:16:23,785 INFO batch_regen   → skip (0.0초)
+2026-04-24 12:16:24,795 INFO batch_regen [591/838] 개념: 얼굴 일관성
+2026-04-24 12:16:30,459 INFO batch_regen   → updated (5.7초)
+2026-04-24 12:16:31,460 INFO batch_regen [592/838] 개념: AI 에이전트
+2026-04-24 12:16:39,681 INFO batch_regen   → updated (8.2초)
+2026-04-24 12:16:40,685 INFO batch_regen [593/838] 개념: 학교 플랫폼
+2026-04-24 12:16:51,769 INFO batch_regen   → updated (11.1초)
+2026-04-24 12:16:52,773 INFO batch_regen [594/838] 개념: 지식 네트워크
+2026-04-24 12:17:02,977 INFO batch_regen   → updated (10.2초)
+2026-04-24 12:17:03,985 INFO batch_regen [595/838] 개념: 로컬 LLM
+2026-04-24 12:17:10,882 INFO batch_regen   → updated (6.9초)
+2026-04-24 12:17:11,887 INFO batch_regen [596/838] 개념: 자동 수익화
+2026-04-24 12:17:20,940 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:17:21,956 INFO batch_regen [597/838] 개념: 프리트레인된 인공지능 에이전트
+2026-04-24 12:17:34,899 INFO batch_regen   → updated (12.9초)
+2026-04-24 12:17:35,913 INFO batch_regen [598/838] 개념: 개발자 플랫폼
+2026-04-24 12:17:44,217 INFO batch_regen   → updated (8.3초)
+2026-04-24 12:17:45,224 INFO batch_regen [599/838] 개념: 개발 프로세스
+2026-04-24 12:17:55,241 INFO batch_regen   → updated (10.0초)
+2026-04-24 12:17:56,249 INFO batch_regen [600/838] 개념: 코드 보안
+2026-04-24 12:18:06,558 INFO batch_regen   → updated (10.3초)
+2026-04-24 12:18:07,559 INFO batch_regen --- 중간 집계: 600/838 완료, 성공 231, 경과 43.9분 ---
+2026-04-24 12:18:07,560 INFO batch_regen [601/838] 개념: 군사적 긴장
+2026-04-24 12:18:14,692 INFO batch_regen   → updated (7.1초)
+2026-04-24 12:18:15,692 INFO batch_regen [602/838] 개념: 핵심 인프라
+2026-04-24 12:18:23,226 INFO batch_regen   → updated (7.5초)
+2026-04-24 12:18:24,232 INFO batch_regen [603/838] 개념: 전쟁 시나리오
+2026-04-24 12:18:31,272 INFO batch_regen   → updated (7.0초)
+2026-04-24 12:18:32,286 INFO batch_regen [604/838] 개념: 국제 경제 충격
+2026-04-24 12:18:42,449 INFO batch_regen   → updated (10.2초)
+2026-04-24 12:18:43,463 INFO batch_regen [605/838] 개념: 전투태세 전환
+2026-04-24 12:18:51,910 INFO batch_regen   → updated (8.4초)
+2026-04-24 12:18:52,924 INFO batch_regen [606/838] 개념: 에너지 거점
+2026-04-24 12:19:01,481 INFO batch_regen   → updated (8.6초)
+2026-04-24 12:19:02,489 INFO batch_regen [607/838] 개념: 파인 튜닝
+2026-04-24 12:19:11,697 INFO batch_regen   → updated (9.2초)
+2026-04-24 12:19:12,707 INFO batch_regen [608/838] 개념: LoRA
+2026-04-24 12:19:20,117 INFO batch_regen   → updated (7.4초)
+2026-04-24 12:19:21,128 INFO batch_regen [609/838] 개념: 멀티모델 능력
+2026-04-24 12:19:28,585 INFO batch_regen   → updated (7.4초)
+2026-04-24 12:19:29,594 INFO batch_regen [610/838] 개념: ShareGPT 스타일
+2026-04-24 12:19:37,677 INFO batch_regen   → updated (8.1초)
+2026-04-24 12:19:38,692 INFO batch_regen [611/838] 개념: 전기차 배터리
+2026-04-24 12:19:47,729 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:19:48,737 INFO batch_regen [612/838] 개념: 전동화
+2026-04-24 12:19:57,738 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:19:58,744 INFO batch_regen [613/838] 개념: 전략적 파트너십
+2026-04-24 12:20:05,145 INFO batch_regen   → updated (6.4초)
+2026-04-24 12:20:06,154 INFO batch_regen [614/838] 개념: 공급망
+2026-04-24 12:20:15,233 INFO batch_regen   → updated (9.1초)
+2026-04-24 12:20:16,235 INFO batch_regen [615/838] 개념: 각형 배터리
+2026-04-24 12:20:25,031 INFO batch_regen   → updated (8.8초)
+2026-04-24 12:20:26,044 INFO batch_regen [616/838] 개념: 부가세 신고
+2026-04-24 12:20:35,533 INFO batch_regen   → updated (9.5초)
+2026-04-24 12:20:36,541 INFO batch_regen [617/838] 개념: 전자세금계산서
+2026-04-24 12:20:49,571 INFO batch_regen   → updated (13.0초)
+2026-04-24 12:20:50,581 INFO batch_regen [618/838] 개념: 정산서
+2026-04-24 12:20:59,615 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:21:00,622 INFO batch_regen [619/838] 개념: 일괄발급
+2026-04-24 12:21:09,073 INFO batch_regen   → updated (8.4초)
+2026-04-24 12:21:10,086 INFO batch_regen [620/838] 개념: 배달대행사
+2026-04-24 12:21:23,146 INFO batch_regen   → updated (13.1초)
+2026-04-24 12:21:24,156 INFO batch_regen --- 중간 집계: 620/838 완료, 성공 251, 경과 47.2분 ---
+2026-04-24 12:21:24,156 INFO batch_regen [621/838] 개념: 일괄 등록
+2026-04-24 12:21:32,904 INFO batch_regen   → updated (8.7초)
+2026-04-24 12:21:33,909 INFO batch_regen [622/838] 개념: 파일 변환
+2026-04-24 12:21:41,008 INFO batch_regen   → updated (7.1초)
+2026-04-24 12:21:42,010 INFO batch_regen [623/838] 개념: 로컬 AI
+2026-04-24 12:21:51,803 INFO batch_regen   → updated (9.8초)
+2026-04-24 12:21:52,816 INFO batch_regen [624/838] 개념: 스트리밍 UX
+2026-04-24 12:22:01,049 INFO batch_regen   → updated (8.2초)
+2026-04-24 12:22:02,061 INFO batch_regen [625/838] 개념: 지능 3단계
+2026-04-24 12:22:10,112 INFO batch_regen   → updated (8.0초)
+2026-04-24 12:22:11,126 INFO batch_regen [626/838] 개념: 프롬프트·컨텍스트 조합
+2026-04-24 12:22:21,472 INFO batch_regen   → updated (10.3초)
+2026-04-24 12:22:22,475 INFO batch_regen [627/838] 개념: 사서 답변 파이프라인
+2026-04-24 12:22:33,929 INFO batch_regen   → updated (11.4초)
+2026-04-24 12:22:34,934 INFO batch_regen [628/838] 개념: 독과점 구조
+2026-04-24 12:22:41,746 INFO batch_regen   → updated (6.8초)
+2026-04-24 12:22:42,747 INFO batch_regen [629/838] 개념: 공정한 디지털 경제 모델
+2026-04-24 12:22:49,092 INFO batch_regen   → updated (6.3초)
+2026-04-24 12:22:50,100 INFO batch_regen [630/838] 개념: 수수료 체계
+2026-04-24 12:23:03,287 INFO batch_regen   → updated (13.2초)
+2026-04-24 12:23:04,289 INFO batch_regen [631/838] 개념: 불공정 경쟁
+2026-04-24 12:23:14,817 INFO batch_regen   → updated (10.5초)
+2026-04-24 12:23:15,831 INFO batch_regen [632/838] 개념: 민관 협력
+2026-04-24 12:23:24,269 INFO batch_regen   → updated (8.4초)
+2026-04-24 12:23:25,277 INFO batch_regen [633/838] 개념: 결제 금액 투명성
+2026-04-24 12:23:32,465 INFO batch_regen   → updated (7.2초)
+2026-04-24 12:23:33,472 INFO batch_regen [634/838] 개념: Agentic Coding
+2026-04-24 12:23:40,377 INFO batch_regen   → updated (6.9초)
+2026-04-24 12:23:41,379 INFO batch_regen [635/838] 개념: Open Source
+2026-04-24 12:23:51,265 INFO batch_regen   → updated (9.9초)
+2026-04-24 12:23:52,269 INFO batch_regen [636/838] 개념: 병렬 작업
+2026-04-24 12:23:59,374 INFO batch_regen   → updated (7.1초)
+2026-04-24 12:24:00,389 INFO batch_regen [637/838] 개념: Agentic Loop
+2026-04-24 12:24:15,749 INFO batch_regen   → updated (15.4초)
+2026-04-24 12:24:16,754 INFO batch_regen [638/838] 개념: CLI
+2026-04-24 12:24:29,201 INFO batch_regen   → updated (12.4초)
+2026-04-24 12:24:30,206 INFO batch_regen [639/838] 개념: Workspace Agent
+2026-04-24 12:24:36,586 INFO batch_regen   → updated (6.4초)
+2026-04-24 12:24:37,589 INFO batch_regen [640/838] 개념: 터미널 환경
+2026-04-24 12:24:49,232 INFO batch_regen   → updated (11.6초)
+2026-04-24 12:24:50,243 INFO batch_regen --- 중간 집계: 640/838 완료, 성공 271, 경과 50.6분 ---
+2026-04-24 12:24:50,243 INFO batch_regen [641/838] 개념: 자동화 에이전트
+2026-04-24 12:25:02,852 INFO batch_regen   → updated (12.6초)
+2026-04-24 12:25:03,858 INFO batch_regen [642/838] 개념: 셀 통합
+2026-04-24 12:25:22,850 INFO batch_regen   → updated (19.0초)
+2026-04-24 12:25:23,851 INFO batch_regen [643/838] 개념: 정규식
+2026-04-24 12:25:38,593 INFO batch_regen   → updated (14.7초)
+2026-04-24 12:25:39,599 INFO batch_regen [644/838] 개념: 창분할
+2026-04-24 12:25:50,935 INFO batch_regen   → updated (11.3초)
+2026-04-24 12:25:51,938 INFO batch_regen [645/838] 개념: 원격 서버
+2026-04-24 12:26:05,209 INFO batch_regen   → updated (13.3초)
+2026-04-24 12:26:06,214 INFO batch_regen [646/838] 개념: 구조화
+2026-04-24 12:26:14,647 INFO batch_regen   → updated (8.4초)
+2026-04-24 12:26:15,660 INFO batch_regen [647/838] 개념: 지식 진화
+2026-04-24 12:26:23,865 INFO batch_regen   → updated (8.2초)
+2026-04-24 12:26:24,880 INFO batch_regen [648/838] 개념: 패턴 학습
+2026-04-24 12:26:36,742 INFO batch_regen   → updated (11.9초)
+2026-04-24 12:26:37,745 INFO batch_regen [649/838] 개념: 콘텐츠 기획 방식
+2026-04-24 12:26:47,326 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:26:48,330 INFO batch_regen [650/838] 개념: 스토리텔링 패턴
+2026-04-24 12:26:57,965 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:26:58,977 INFO batch_regen [651/838] 개념: 엔티티 추출
+2026-04-24 12:27:16,675 INFO batch_regen   → updated (17.7초)
+2026-04-24 12:27:17,681 INFO batch_regen [652/838] 개념: 자료 관리 구조
+2026-04-24 12:27:24,435 INFO batch_regen   → updated (6.7초)
+2026-04-24 12:27:25,446 INFO batch_regen [653/838] 개념: 외부 지식
+2026-04-24 12:27:34,008 INFO batch_regen   → updated (8.6초)
+2026-04-24 12:27:35,023 INFO batch_regen [654/838] 개념: 개인 스타일
+2026-04-24 12:27:44,598 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:27:45,606 INFO batch_regen [655/838] 개념: 시너지 효과
+2026-04-24 12:27:52,093 INFO batch_regen   → updated (6.5초)
+2026-04-24 12:27:53,104 INFO batch_regen [656/838] 개념: DB 임베딩 검색
+2026-04-24 12:28:04,312 INFO batch_regen   → updated (11.2초)
+2026-04-24 12:28:05,324 INFO batch_regen [657/838] 개념: AI 사서
+2026-04-24 12:28:12,911 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:28:13,923 INFO batch_regen [658/838] 개념: 개인 지식 도서관 시스템
+2026-04-24 12:28:25,582 INFO batch_regen   → updated (11.7초)
+2026-04-24 12:28:26,594 INFO batch_regen [659/838] 개념: BM25+벡터 하이브리드 검색
+2026-04-24 12:28:42,093 INFO batch_regen   → updated (15.5초)
+2026-04-24 12:28:43,106 INFO batch_regen [660/838] 개념: 경제 성장
+2026-04-24 12:28:52,642 INFO batch_regen   → updated (9.5초)
+2026-04-24 12:28:53,647 INFO batch_regen --- 중간 집계: 660/838 완료, 성공 291, 경과 54.7분 ---
+2026-04-24 12:28:53,647 INFO batch_regen [661/838] 개념: 실질 국내총생산
+2026-04-24 12:29:02,642 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:29:03,650 INFO batch_regen [662/838] 개념: 실질 국내총소득
+2026-04-24 12:29:14,520 INFO batch_regen   → updated (10.9초)
+2026-04-24 12:29:15,531 INFO batch_regen [663/838] 개념: GDP 성장률
+2026-04-24 12:29:29,237 INFO batch_regen   → updated (13.7초)
+2026-04-24 12:29:30,249 INFO batch_regen [664/838] 개념: 종전 협상
+2026-04-24 12:29:46,301 INFO batch_regen   → updated (16.0초)
+2026-04-24 12:29:47,303 INFO batch_regen [665/838] 개념: 경제적 압박
+2026-04-24 12:29:55,867 INFO batch_regen   → updated (8.6초)
+2026-04-24 12:29:56,869 INFO batch_regen [666/838] 개념: 해상 봉쇄
+2026-04-24 12:30:06,242 INFO batch_regen   → updated (9.4초)
+2026-04-24 12:30:07,253 INFO batch_regen [667/838] 개념: 경제적 분노 작전
+2026-04-24 12:30:12,603 INFO batch_regen   → updated (5.3초)
+2026-04-24 12:30:13,617 INFO batch_regen [668/838] 개념: 기뢰 제거
+2026-04-24 12:30:24,846 INFO batch_regen   → updated (11.2초)
+2026-04-24 12:30:25,852 INFO batch_regen [669/838] 개념: 원유 가격
+2026-04-24 12:30:34,786 INFO batch_regen   → updated (8.9초)
+2026-04-24 12:30:35,791 INFO batch_regen [670/838] 개념: 경제적 영향
+2026-04-24 12:30:43,053 INFO batch_regen   → updated (7.3초)
+2026-04-24 12:30:44,068 INFO batch_regen [671/838] 개념: GPS 기술
+2026-04-24 12:30:52,044 INFO batch_regen   → updated (8.0초)
+2026-04-24 12:30:53,056 INFO batch_regen [672/838] 개념: 원유 수출
+2026-04-24 12:31:02,681 INFO batch_regen   → updated (9.6초)
+2026-04-24 12:31:03,689 INFO batch_regen [673/838] 개념: 선박 나포
+2026-04-24 12:31:11,616 INFO batch_regen   → updated (7.9초)
+2026-04-24 12:31:12,622 INFO batch_regen [674/838] 개념: 불법 환적
+2026-04-24 12:31:25,022 INFO batch_regen   → updated (12.4초)
+2026-04-24 12:31:26,033 INFO batch_regen [675/838] 개념: 재정 정책
+2026-04-24 12:31:36,606 INFO batch_regen   → updated (10.6초)
+2026-04-24 12:31:37,612 INFO batch_regen [676/838] 개념: 정책 공조
+2026-04-24 12:31:44,534 INFO batch_regen   → updated (6.4초)
+2026-04-24 12:31:45,542 INFO batch_regen [677/838] 개념: 금융·외환시장
+2026-04-24 12:31:53,109 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:31:54,119 INFO batch_regen [678/838] 개념: 구조개혁
+2026-04-24 12:32:00,060 INFO batch_regen   → updated (5.9초)
+2026-04-24 12:32:01,074 INFO batch_regen [679/838] 개념: 원화 국제화
+2026-04-24 12:32:08,596 INFO batch_regen   → updated (7.5초)
+2026-04-24 12:32:09,602 INFO batch_regen [680/838] 개념: 로그인
+2026-04-24 12:32:21,691 INFO batch_regen   → updated (12.1초)
+2026-04-24 12:32:22,704 INFO batch_regen --- 중간 집계: 680/838 완료, 성공 311, 경과 58.2분 ---
+2026-04-24 12:32:22,704 INFO batch_regen [681/838] 개념: open models
+2026-04-24 12:32:27,706 INFO batch_regen   → updated (5.0초)
+2026-04-24 12:32:28,717 INFO batch_regen [682/838] 개념: cloud
+2026-04-24 12:32:35,511 WARNING app.core.concept_wiki 개념 위키 품질 검증 실패: cloud — 금지 문구 '다양한 AI' 포함
+2026-04-24 12:32:35,511 INFO batch_regen   → fail (6.8초)
+2026-04-24 12:32:36,525 INFO batch_regen [683/838] 개념: Cogito, ergo sum
+2026-04-24 12:32:48,420 INFO batch_regen   → updated (11.9초)
+2026-04-24 12:32:49,428 INFO batch_regen [684/838] 개념: A priori reasoning
+2026-04-24 12:32:56,479 INFO batch_regen   → updated (7.0초)
+2026-04-24 12:32:57,482 INFO batch_regen [685/838] 개념: Knowledge Graph
+2026-04-24 12:33:09,065 INFO batch_regen   → updated (11.6초)
+2026-04-24 12:33:10,065 INFO batch_regen [686/838] 개념: A posteriori reasoning
+2026-04-24 12:33:19,296 INFO batch_regen   → updated (9.2초)
+2026-04-24 12:33:20,311 INFO batch_regen [687/838] 개념: Empiricism
+2026-04-24 12:33:34,625 INFO batch_regen   → updated (14.3초)
+2026-04-24 12:33:35,630 INFO batch_regen [688/838] 개념: Note Linking
+2026-04-24 12:33:43,888 INFO batch_regen   → updated (8.3초)
+2026-04-24 12:33:44,896 INFO batch_regen [689/838] 개념: 이미지 편집
+2026-04-24 12:33:53,657 INFO batch_regen   → updated (8.8초)
+2026-04-24 12:33:54,673 INFO batch_regen [690/838] 개념: 온라인 이미지 편집
+2026-04-24 12:34:02,277 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:34:03,294 INFO batch_regen [691/838] 개념: 일괄 편집
+2026-04-24 12:34:12,323 INFO batch_regen   → updated (9.0초)
+2026-04-24 12:34:13,326 INFO batch_regen [692/838] 개념: 이미지 최적화
+2026-04-24 12:34:23,122 INFO batch_regen   → updated (9.8초)
+2026-04-24 12:34:24,137 INFO batch_regen [693/838] 개념: 이미지 변환
+2026-04-24 12:34:29,661 INFO batch_regen   → updated (5.5초)
+2026-04-24 12:34:30,671 INFO batch_regen [694/838] 개념: 이미지 압축
+2026-04-24 12:34:39,371 INFO batch_regen   → updated (8.7초)
+2026-04-24 12:34:40,373 INFO batch_regen [695/838] 개념: 이미지 처리
+2026-04-24 12:34:47,266 INFO batch_regen   → updated (6.9초)
+2026-04-24 12:34:48,276 INFO batch_regen [696/838] 개념: 키프레임
+2026-04-24 12:35:01,030 INFO batch_regen   → updated (12.7초)
+2026-04-24 12:35:02,038 INFO batch_regen [697/838] 개념: 웹 스크래핑
+2026-04-24 12:35:15,353 INFO batch_regen   → updated (13.3초)
+2026-04-24 12:35:16,359 INFO batch_regen [698/838] 개념: 세금 감면 정책
+2026-04-24 12:35:26,327 INFO batch_regen   → updated (10.0초)
+2026-04-24 12:35:27,327 INFO batch_regen [699/838] 개념: JavaScript 렌더링
+2026-04-24 12:35:37,849 INFO batch_regen   → updated (10.5초)
+2026-04-24 12:35:38,851 INFO batch_regen [700/838] 개념: 인터넷 포털 사이트
+2026-04-24 12:35:48,874 INFO batch_regen   → updated (10.0초)
+2026-04-24 12:35:49,884 INFO batch_regen --- 중간 집계: 700/838 완료, 성공 330, 경과 61.6분 ---
+2026-04-24 12:35:49,884 INFO batch_regen [701/838] 개념: 정보 요약
+2026-04-24 12:35:56,138 INFO batch_regen   → updated (6.2초)
+2026-04-24 12:35:57,140 INFO batch_regen [702/838] 개념: 자료 분석
+2026-04-24 12:36:08,858 INFO batch_regen   → updated (11.7초)
+2026-04-24 12:36:09,869 INFO batch_regen [703/838] 개념: 핵심 내용 추출
+2026-04-24 12:36:18,350 INFO batch_regen   → updated (8.5초)
+2026-04-24 12:36:19,360 INFO batch_regen [704/838] 개념: 분야별 분류
+2026-04-24 12:36:31,882 INFO batch_regen   → updated (12.5초)
+2026-04-24 12:36:32,897 INFO batch_regen [705/838] 개념: 정보 탐색
+2026-04-24 12:36:44,676 INFO batch_regen   → updated (11.8초)
+2026-04-24 12:36:45,687 INFO batch_regen [706/838] 개념: 시청자 패턴
+2026-04-24 12:36:53,318 INFO batch_regen   → updated (7.6초)
+2026-04-24 12:36:54,320 INFO batch_regen [707/838] 개념: 블루오션
+2026-04-24 12:37:03,204 INFO batch_regen   → updated (8.9초)
+2026-04-24 12:37:04,207 INFO batch_regen [708/838] 개념: 떡상 패턴
+2026-04-24 12:37:11,266 INFO batch_regen   → updated (7.1초)
+2026-04-24 12:37:12,270 INFO batch_regen [709/838] 개념: AI 영상 툴
+2026-04-24 12:37:20,857 INFO batch_regen   → updated (8.6초)
+2026-04-24 12:37:21,867 INFO batch_regen [710/838] 개념: 워터마크
+2026-04-24 12:37:44,674 INFO batch_regen   → updated (22.8초)
+2026-04-24 12:37:45,688 INFO batch_regen [711/838] 개념: 지역 제한
+2026-04-24 12:37:52,398 INFO batch_regen   → updated (6.7초)
+2026-04-24 12:37:53,409 INFO batch_regen 
+==================================================
+2026-04-24 12:37:53,409 INFO batch_regen 일괄 재생성 완료
+2026-04-24 12:37:53,409 INFO batch_regen ==================================================
+2026-04-24 12:37:53,409 INFO batch_regen 총 소요: 63.7분
+2026-04-24 12:37:53,409 INFO batch_regen 저장됨: 341, DRY_OK: 0, 실패: 4, 스킵: 11, 에러: 0
+2026-04-24 12:37:53,410 INFO batch_regen 
+실패 목록 (4건):
+2026-04-24 12:37:53,410 WARNING batch_regen   [concept] 프롬프트 — 검증 실패
+2026-04-24 12:37:53,410 WARNING batch_regen   [concept] 사운드 디자인 — 검증 실패
+2026-04-24 12:37:53,410 WARNING batch_regen   [concept] 소듐이온배터리 — 검증 실패
+2026-04-24 12:37:53,410 WARNING batch_regen   [concept] cloud — 검증 실패
+2026-04-24 12:37:53,421 INFO batch_regen DB 커밋 완료

@@ -1,0 +1,2517 @@
+Seçenekler
+Eklenti
+Yerleşik Eklentiler
+Eklenti seçenekleri
+Örnek: klasör 1/klasör 2
+Örnek: klasör/not
+Bu seçeneği değiştirdiğinizde etkisini görmek için yeniden başlatmanız gerekir.
+Editör
+Davranış
+Görünüm
+İmla denetimi
+İmla denetimini açar. Şimdilik yalnızca İngilizce (ABD) için çalışıyor.
+İmla denetimi yapılan diller
+İmla denetimi için kullanılmasını istediğiniz dilleri seçin.
+Yerleşik imla denetimi otomatik olarak macOS'ta kullandığınız dili tespit edecek.
+İmla denetimi sözlüğü
+İmla denetimi sözlüğü boş.
+Satır içi başlık
+Dosya adını, dosya içeriğiyle satır içi düzenlenebilir bir başlık olarak görüntüler.
+Okunabilir satır uzunluğu
+Satır uzunluğunu kısıtla. Ekrana daha az yazı sığar ama uzun paragraflar daha okunabilir olur.
+Katı kurallı yeni satırlar
+Önizleme modunda tekil yeni satırları Markdown tanımlarına göre gözardı et. Önizlemede tekil yeni satırları görmek istiyorsanız bunu kapatın.
+Dosyadaki özellikler
+Özelliklerin editörde nasıl görüntüleneceğini seçin. Özelliklerin YAML olarak görüntülenmesi için "source" seçeneğini belirleyin.
+Gizli
+Görünür
+Kaynak
+Parantezleri otomatik eşle
+Parantez ve tırnak işaretlerini otomatik eşle.
+Markdown işaretlerini otomatik eşle.
+Kalın ve italik sembollerini otomatik eşle.
+Listeleri akıllıca içerle
+İçerleme ve liste işaretçilerini senin için halleder.
+Başlıkları katla
+Başlıklar altındaki herşeyi katlayabilmeni sağlar.
+İçerlemeleri katla
+Liste vb. çoklu içerliklerin yalnızca bir kısmını katlayabilmeni sağlar.
+Yeni sekmeler için varsayılan görünüm
+Yeni bir Markdown sekmesinin açıldığı varsayılan görünüm.
+Düzenleme görünümü
+Okuma görünümü
+Her zaman yeni sekmelere odaklanın
+Yeni bir sekmede bir bağlantı açtığınızda, hemen ona geçin.
+Varsayılan düzenleme modu
+Yeni pencerenin varsayılan olarak başlayacağı düzenleme modu.
+Kaynak modu
+Canlı Önizleme
+Satır numaraları
+Satır numaralarını en altta göster.
+Girinti kılavuzları
+Görsel rehberlik için madde işaretleri arasındaki dikey ilişki çizgilerini gösterin.
+Boşluklar için tab kullan
+"Tab" tuşuyla içerleme yaparken tab karakterleri kullan. Boşluk karakterleri kullanmak için bunu kapat.
+Tab boyutu
+Bir Tab tuşunun kaç boşluğa eşit olacağını belirler.
+Sağdan sola (RTL)
+Notlarda metin yönünü sağdan sola şeklinde ayarlar.
+HTML'e otomatik olarak çevir
+İnternet sitelerinden yapıştırırken ya da sürekle bırak yapılırken otomatik olarak HTML'den Markdown'a dönüştür. Dönüştürmeden kullanmak için Ctrl/Cmd+Shift+V'ı kullan.
+Vim tuş ayarları
+Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar.
+Mobil cihazlarda bu ayar cihaz başına yapılır ve yapılandırma dosyası aracılığıyla senkronize edilmez.
+Kasa önbelleğini yeniden oluştur
+Önbelleği yeniden oluşturma, kasanızın boyutuna bağlı olarak birkaç saniyeden birkaç dakikaya kadar sürebilir.
+Yeniden oluştur
+Vim moduna girişi onayla
+Vim modu yazı düzenleme için efektif olsa da sezgisel olmayabilir. Vim'e alışkın değilseniz bu özellik Obsidian'ı bozulmuş gibi gösterebilir.
+Vim kullanmayı bildiğinizi onaylamak için, lüffen Vim'den kayıt etmeden çıkış komutunu giriniz:
+Cevabınız
+Komutu gir...
+Vim'i açmama izin ver
+Komut doğru. Vim modu açıldı.
+Komut yanlış. Sizi korumak için Vim modu kapatıldı.
+Lütfen Vim modunu açmak için komutu giriniz.
+Dosyalar & Linkler
+Dosyaları silmeden önce onayla
+Dosyaların yanlışlıkla silinmesini önleyin.
+Çöp Kutusu
+Silinmiş dosyalar
+Sildikten sonra silinmiş dosyalar ile ne yapılacağı
+Sistem çöp kutusuna taşı
+Obsidian çöp kutusuna taşı (.trash klasörü)
+Kalıcı olarak sil
+Dosyaları silerken ekleri sil
+Başka yerde kullanılmıyorsa, silinen dosyaya bağlı ekleri otomatik olarak kaldır.
+Her zaman
+Her seferinde sor
+Asla
+Açılacak varsayılan dosya
+Uygulama başladığında hangi dosyanın açılacağını seçin.
+Son açılan
+Yeni not
+Belirli bir dosya
+Günlük not
+Açılacak dosya
+Varsayılan olarak açılacak belirli bir dosya seçin.
+Bağlantıları hep güncelle
+Bir dosyanın adını değiştirdiğinzde gelen bağlantıları otomatik olarak güncelle.
+Yeni notlar için varsayılan yer
+Yeni yaratılan notların kaydedileceği yer. Eklenti ayarları bu ayarı değiştirebilir.
+Kasa temeli
+Dosyayla aynı klasör
+Aşağıda belirtilen klasöre
+Yeni notların kaydedileceği klasör
+Yeni notlar bu klasörde yaratılır. Eklenti ayarları bu ayarı değiştirebilir.
+[[Wikilinks]]'i kullan
+[[bağlantılar]] ve ![[görseller]] için Markdown bağlantıları ve görselleri yerine otomatik olarak Wikilink'ler oluştur. Markdown bağlantıları oluşturmak için bu ayarı kapat.
+Tüm dosya uzantılarını bul.
+Obsidian'nın normalde açamadığı dosya türlerini de göster.Bu sayede onlara bağlantı verebilir, Dosyalarda ve Hızlı Geçişte görebilirsiniz.
+Bağlantılar
+Yeni bağlantı formatı
+Otomatik bağlantı yaratırken hangi bağlantıların ekleneceği.
+Mümkünse en kısa yol
+Dosyaya göre belirli yol
+Kasa içinde belirli yol
+Yeni eklentiler için varsayılan klasör
+Yeni eklenen eklentilerinin hangi klasöre kaydedileceği.
+Ekler
+Aynı klasörün içinde bir alt klasörde
+Eklenti klasörü yolu
+Yeni yaratılan eklenti dosyaları bu klasörde yaratılır. Sürükle bırak, kopyala yapıştır ve ses kayıtları gibi dosyaları içerir.
+Altklasör adı
+Eğer dosyalarınız "kasa/klasör" klasöründeyse ve altklasör adını "eklentiler" seçerseniz, eklentileriniz "kasa/klasör/eklentiler" klasörüne kaydedilecek.
+Hariç tutulan dosyalar
+Hariç tutulan dosyalar Hızlı Değiştirici, bağlantı önerisi ve Grafik Görünümü gibi çeşitli yerlerde ya gizlenecek ya da daha az fark edilecektir.
+Şu anda hariç tutulan filtre uygulanmıyor. Aşağıya bir tane ekleyin.
+Aşağıdaki filtrelerle eşleşen dosyalar şu anda hariç tutulmaktadır:
+Filtre
+Filtre boş olamaz
+Yolu girin veya "/regex/"...
+URI geri çağrılarına izin ver
+Obsidian URI'larını işlerken x-success veya x-error üzerinden x-callback-url kullanımını etkinleştir.
+Görünüm
+Temel tema
+Obsidian'ın varsayılan renk modunu seçin.
+Vurgu rengi
+Uygulama boyunca kullanılan vurgu rengini seçin.
+Koyu
+Açık
+Sistem ayarını kullan
+Yazı Tipi
+Gelişmiş
+Arayüz
+Arayüz yazı tipi
+Tüm Obsidian için temel yazı tipini ayarlayın.
+Yakınlaştırma seviyesi
+Uygulamanın genel yakınlaştırma seviyesini kontrol eder.
+Metin yazı tipi
+Görünümleri düzenlemek ve okumak için yazı tipini ayarlayın.
+Tek aralıklı yazı tipi
+Kod blokları ve ön madde gibi yerler için yazı tipini ayarlayın.
+Şu anda uygulanan yazı tipi: 
+Şu anda aşağıdaki yazı tipleri uygulanmaktadır:
+Yazı tipi adını girin...
+Şu anda özel bir yazı tipi uygulanmıyor. Aşağıya bir tane ekleyin.
+Sisteminizde bulunan bu listeden ilk yazı tipi uygulanacaktır.
+Bu yazı tipi sisteminizde algılanmadı.
+Bu yazı tipi sisteminizde algılandı.
+Yazı tipi adı
+Topluluk temalarını aç
+Topluluk tarafından yaratılmış harika temaları incele veya kullan.
+Tara
+Yazı tipi boyutu
+Editör ve önizleme modundaki fontların piksel olarak boyutunu belirler.
+Hızlı font boyutu ayarlama
+Yazı tipi boyutunu Ctrl + Kaydırma ile ya da trackpadin yaklaştırma hareketi ile ayarlayın.
+Temalar
+Kurulu temaları yönetin ve topluluk temalarını inceleyin.
+Yönet
+Hiçbiri
+Yerel menüler
+Uygulamadaki menüler işletim sistemiyle eşleşecektir. Temanızdan etkilenmeyeceklerdir.
+Temaları yeniden yükle
+Özel CSS temaları tekrar yüklendi.
+Tema klasörünü aç
+CSS kod parçaları
+Kod parçaları klasöründe hiç CSS kod parçası bulunamadı.
+CSS Kod parçaları "{{path}}" klasöründe saklanmaktadır.
+Kod parçalarını tekrar yükle
+Kod parçaları klasörünü aç
+CSS kod parçaları tekrar yüklendi.
+"{{path}}" konumundaki CSS kod parçalarını uygula.
+Kurulu temalar
+Ekran görüntüsü mevcut değil.
+Varsayılan
+Büyütmek için tıklayın
+Güncelle
+Etkin
+Pencere çerçeve stili
+Obsidian pencerelerinin başlık çubuğunun stilini belirler. Etkili olması için yeniden başlatma gerektirir.
+Gizli (varsayılan)
+Obsidyen çerçeve
+Yerel çerçeve
+Özel uygulama simgesi
+Uygulama için özel bir simge ayarla
+Özel simgeyi seç
+Şerit menüsü
+Bu gezinti çubuğundaki şerit menüsünde hangi komutların görüneceğini yapılandırın.
+Hızlı erişim şeridi öğesi
+Navigasyon menüsündeki şerit öğesine dokunulduğunda bu şerit öğesi etkinleşir. Dokunup basılı tutmak menüyü göstermeye devam edecektir.
+Şerit menüsünü aç
+Yapılandırma
+Şeridi göster
+Dikey araç çubuğunu pencerenin yan tarafında göster.
+Diğer şeritler
+Şerit Yapılandırması
+Şeritte hangi öğelerin etkin olmasını istediğinizi seçin. Sırayı değiştirmek için sürükleyip bırakın.
+Sekme başlık çubuğunu göster
+Başlığı her sekmenin en üstünde görüntüleyin.
+Yüzen gezinme
+Gezinme düğmeleri sabitlenmek yerine içeriğin üzerinde yüzer.
+Kayan kenar çubukları
+Kenar çubukları üstte yüzmek yerine içeriğin yanına kayar.
+Tam ekran
+Okurken arayüz öğelerini otomatik olarak gizle.
+{{count}} tema için güncelleme bulundu.
+{{count}} tema için güncelleme bulundu.
+Güncellemeleri kontrol edin
+Güncellemeleri görüntüle
+Tümünü güncelle
+Güncel topluluk temaları
+Şu anda yüklü {{count}} temanız var.
+Şu anda yüklü {{count}} temanız var.
+Kısayollar
+Arama kısayol tuşları
+{{count}} kısayol tuşu gösteriliyor.
+{{count}} kısayol tuşları gösteriliyor. 
+Çakışma içeren {{count}} komut.
+Çakışma içeren {{count}} komut.
+Filtrele...
+Silme kısayolu
+Kısayol tuşu bekleniyor...
+Tümü
+Atanmamış
+Atanmış
+Benim tarafımdan atandı
+Varsayılana geri dön
+Komutu kişiselleştir
+Bu komut "{{command}}" ile çakışıyor
+Bu komut diğer {{count}} komut ile çakışıyor
+Boş
+Anahtarlık
+Gizli bilgiler
+Gizli bilgi ekle
+Gizli bilgiyi düzenle
+Gizli bilgiyi göster
+Gizli bilgiyi gizle
+Kimlik
+Gizli bilgi
+gizli-bilgi-adi
+Yalnızca küçük harfler, sayılar ve tireler.
+Gizli bilginizi girin.
+Hiç erişilmedi
+Gizli bilgi güncellenemedi.
+Gizli bilgi eklenemedi.
+Bu kimliğe sahip bir gizli bilgi zaten var.
+Gizli bilgi değeri boş olamaz.
+Gizli bilgi kimliği geçersiz. Yalnızca küçük harfler, sayılar ve tireler kullanın. En fazla 64 karakter.
+Henüz gizli bilgi eklenmedi. Gizli bilgiler, eklentilerin kullanabileceği API anahtarları ve parolalar gibi bilgileri saklamak için kullanılır.
+Gizli bilgi seç
+Gizli bilgi bul...
+Gizli bilgi ekle...
+Bağla...
+Bu sistemde bir gizli depo mevcut olmadığından sırlar şifreleme olmadan saklanır.
+Sırlar şifrelenmiyor
+Bir daha gösterme
+Şifreleme kullanılamıyor
+Şifreleme, işletim sisteminizin gizli deposu tarafından sağlanır. Gizli depo olmadan sırlarınız şifreleme olmadan saklanır.
+Linux'ta desteklenen gizli depolar şunları içerir:
+Hakkında
+Ticari lisans
+Lisans anahtarı
+Lisans anahtarın...
+Lisansı aktive et
+Aktive et
+Bilinmeyen
+Sürüm {{version}}
+Yükleyici sürümü: {{version}}
+Değişiklikler raporunu oku.
+En son özellikleri desteklemek ve en son güvenlik yamalarını almak için Obsidian'ın büyük bir yükleyici güncellemesine ihtiyacı vardır. Obsidian'ı manuel olarak indirmeniz ve yeniden yüklemeniz gerekir.
+Yeni versiyon yüklemeye hazır.
+Güncellemeler kapalı.
+Yeniden başlat
+Güncellemeleri kontrol et
+Otomatik güncelle
+Programın otomatik güncellemeler yapmasını iptal etmek için bunu kapat.
+Başlangıç beklenenden uzun sürerse bildir
+Uygulamanın neden yavaş yüklendiğini görerek uygulamanızdaki sorunları teşhis edin.
+Şimdi kontrol et
+Komut satırı arayüzü
+Komut satırından Obsidian ile etkileşime izin ver.
+CLI'yi terminalde çalışacak şekilde ayarla
+Terminalinizden her yerden "obsidian" komutuna erişebilmek için PATH içine "obsidian" kaydedin.
+Kaydet
+Yardım alın
+Obsidian kullanımı hakkında yardım alın.
+Aç
+Dil
+Programın dilini değiştirir.
+Üye versiyonlarını kabul et.
+Üyelere özel versiyonları otomatik olarak kullan. Bu versiyonlar yeni özellikler ve güncellemeler içerir ancak normal versiyonlara göre daha fazla hata da içerir.
+Gelişmiş
+Donanım İvmelendirici
+Donanım İvmelendiriciyi aktifleştirir, bu sayede Obsidian GPU'yu kullanarak daha akıcı bir şekilde çalışır.
+Eğer bu özelliği kapatırsanız uygulamanın performansı ciddi bir şekilde etkilenecektir.
+Konfigürasyon dosyasını değiştir
+Varsayılan dışında bir konfigürasyon klasörü kullanın. Klasör ismi nokta ile başlamalıdır.
+Konfigürasyon konumu ismi nokta ile başlayan geçerli bir klasör olmalıdır.
+Lisans
+Ticari lisans anahtarınız: "{{key}}".
+{{seats}} kullanıcı için "{{company}}"'e kayıtlı.{{expiry}}'e kadar geçerli.
+Doğrulanıyor...
+Lisans hatalı: 
+Kaldır
+Katalizör lisansı
+Şu anda {{tier}} Catalyst lisansına sahipsiniz. Desteğiniz için teşekkürler!
+Şu anda bir Catalyst lisansınız yok. Catalyst lisansı, Obsidian gelişimini desteklemek için tek seferlik bir bağış.
+Uygulama
+Obsidian'a dilinizi nasıl ekleyeceğinizi görün.
+Hesap
+Hesabınız
+Şu anda {{isim}} ile giriş yaptınız ({{email}}).
+Şu anda giriş yapmadınız. Bir hesap yalnızca Obsidian Sync, Obsidian Publish ve Catalyst insider derlemeleri için gereklidir.
+Yükselt
+Ticari lisans
+Obsidian'ın %100 kullanıcı destekli kalmasına yardımcı olun.
+Satın al
+Çıkış Yap
+Giriş Yap
+Kaydolun
+E-posta
+Emailiniz...
+Ad soyad
+Şifre
+Şifreniz...
+Şifrenizi mi unuttunuz?
+Giriş
+E-posta boş olamaz.
+E-posta geçersiz
+Şifre boş bırakalımaz.
+Giriş başarısız, lütfen e-posta ve şifrenizi kontrol edin.
+Kaydolma başarısız oldu
+Hesabınız yok mu? 
+Hemen kaydolun
+6 haneli 2FA kodu
+2FA doğrulama kodu 6 haneli olmalıdır.
+2FA kodu yanlış, lütfen doğrulama uygulamanızı tekrar kontrol edin.
+Eklenti listesi
+Temel eklentiler içinde ara
+Eklentileri isim veya açıklamaya göre filtrele.
+Eklenti ara...
+Topluluk Eklentisi
+Kısıtlı mod
+Kısıtlı Mod kapalı. Topluluk eklentilerini devre dışı bırakmak için açın.
+Açın
+Eklenti güncellemelerini otomatik olarak denetle
+Eklenti güncellemelerini düzenli aralıklarla denetle.
+Topluluk Eklentileri
+Topluluğumuzun yaptığı eklentilere göz at ve Yükle.
+Ara
+Kısıtlı Moddan Çık
+Topluluk eklentileri, yüklediğiniz diğer tüm yazılımlar gibi, potansiyel olarak veri bütünlüğü ve güvenlik sorunlarına neden olabilir.
+Eklenti güvenliği bizim için önemlidir. Yaptığımız şey şu:
+Çabalarımıza rağmen, bir topluluk eklentisinin hatalı davranma ihtimali hala küçük de olsa vardır.
+İlk kod incelemesi
+Eklentiler, mağazada görünmeden önce ekibimiz tarafından ilk kod incelemesinden geçirilir.
+Açık kaynak
+Çoğu eklenti GitHub'da açık kaynak kodludur, böylece kodu kendiniz inceleyebilirsiniz.
+Eş denetim
+Birbirini kollayan geniş bir geliştirici topluluğumuz var.
+Rapor mekanizması
+Kullanıcı raporu üzerine hatalı eklentileri takip ediyor ve kaldırıyoruz.
+Topluluk eklentilerini etkinleştirmek için Kısıtlı Moddan çıkmak ister misiniz? Bunu yapmadan önce verilerinizi yedeklemenizi şiddetle tavsiye ederiz.
+Eklenti güvenliği hakkında daha fazla bilgi edinin
+Topluluk eklentilerini açın
+Bu kasanın sahibine güveniyor musunuz?
+Bu kasayı ilk kez açıyorsunuz ve bazı eklentiler içeriyor.
+Bu kasayı başka bir kullanıcıdan aldıysanız, bilinmeyen kökenli eklentiler güvenlik riski oluşturabilir.
+Bu kasanın sahibine tam olarak güvenmiyorsanız, Kısıtlı Mod'da kalmanızı öneririz, böylece bu kasadaki eklentiler çalışmaz.
+Kasa sahibine güven ve eklentileri etkinleştir
+Kasayı Kısıtlı Mod'da gezin
+Eklenti Ara...
+Topluluk eklentileri yüklenemedi.
+İndirildi
+İndir
+Etkinleştir
+Devre dışı bırak
+Paylaşma linkini kopyala
+Bağış Yapın
+Sonuç Bulunamadı.
+Son dosyalar bulunamadı. Aramak için yazın...
+Eklenti manifest dosyası yüklenemedi.
+Versiyon: {{version}}
+ (mevcut sürüm: {{version}})
+Sahibi 
+Depo: 
+Son güncelleme: 
+En son yapılan güncellemeyi görüntüleyin
+Bu eklenti cihazınızı desteklemiyor.
+Güncelle
+Bu eklenti bir beni oku dosyası sağlamadı.
+"{{name}}" eklentisi indiriliyor...
+Yüklenemedi "{{name}}".
+Başarıyla yüklendi "{{name}}".
+“{{id}}” eklentisi kaldırılamadı.
+“{{id}}” eklentisi devre dışı bırakılamadı.
+Yüklü Eklentiler
+Eklentileri tekrardan yükle
+Eklentiler tekrardan yüklendi
+Kaldır
+Eklentiyi kaldır
+Bu eklentiyi silmek istediğine emin misin? Bu işlem eklenti klasörünü de siler.
+Eklentiler Klasörünü aç Aç
+Güncellemeleri Denetle
+Hepsini Güncelle
+Yüklü Eklentiler
+Güncellemeler denetleniyor...
+Yüklenmiş {{count}} eklentiniz var.
+Yüklenmiş {{count}} eklentiniz var.
+Eklenti Güncellemesi Bulunamadı.
+Güncellenecek {{count}} eklenti bulundu.
+Güncellenecek {{count}} eklenti bulundu.
+Güncelle {{version}}
+Kurulu eklentiler içinde ara
+Kurulu eklentileri isim veya açıklamaya göre filtrele.
+Kurulu eklentiler içinde ara...
+Yalnızca kurulu olanları göster
+{{name}} desteklemek için bağış yapın
+Eklenti geliştiricileri, tutkularıyla harika şeyler yapan topluluk gönüllüleridir. Bu eklentiyi faydalı buluyorsanız, lütfen geliştirilmesine fon sağlamayı düşünün.
+Katkınızın %100'ü eklenti geliştiricisine gidecektir; Obsidian herhangi bir kesinti yapmayacaktır. Seçtikleri fonlama platformu bir ücret talep edebilir.
+Cömert desteğiniz için teşekkürler!
+Bu eklentiyi destekleyin:
+{{pluginCount}} eklenti gösteriliyor:
+En çok indirilenler
+Yakın zamanda yayınlandı
+Yakın zamanda güncellendi
+Alfabetik
+{{time}} Güncellendi
+Mobil araç çubuğu
+Mobil Hızlı Eylemleri ayarla
+Yukarıdan aşağı çektiğinizde hangi eylemin gerçekleşeceğini belirleyin. Şu anda seçili olan eylem "{{command}}".
+Eylem yapılandırılmadı
+Ayarla
+Hızlı Eylem seç...
+Hiçbiri
+Araç çubuğu seçeneklerini yönet
+Dahili link ekle
+Gömülü içerik ekle
+Etiket ekle
+Başlık durumunu değiştir
+Üstünü çiz
+Altını çiz
+Kod formatına dönüştür
+Alıntıya dönüştür
+Satır içi matematiği aç/kapat
+Matematik bloğunu aç/kapat
+Markdown link ekle
+Noktalı listeye dönüştür
+Sayılı listeye dönüştür
+Liste maddesini içe al
+Liste maddesini dışa al
+Geri Al
+İleri Al
+İmleci yukarı kaydır
+İmleci aşağı kaydır
+İmleci sola kaydır
+İmleci sağa kaydır
+İlk satıra git
+Son satıra git
+Klavyeyi kapat
+Mobil araç çubuğunu ayarla
+Ekli seçenekler
+Daha fazla araç çubuğu seçeneği
+Eklenti yükle
+Bul
+Değiştir
+Aramadan çık
+Sonraki
+Önceki
+Hepsini bul
+Değiştir
+Hepsini değiştir
+Başlığa bağlantı kurmak için
+# yazın
+^ karakteri
+blokları birbirine bağlamak için
+| karakteri
+Metin görüntüsünü değiştirmek için
+Metni görüntüle
+Başlık
+Eşleşme bulunamadı
+Resim boyutu: {{size}} piksel genişliğinde
+kabul etmek
+Yeni dipnot...
+Öneri bulunamadı...
+Sözlüğe ekle
+Bağlantıyı düzenle
+Etiketi düzenle
+Bu bloğu düzenle
+Dipnotu ve başvuruyu sil
+Boyutu sıfırla
+Görseli sil
+Başlık yok
+Başlık {{level}}
+PDF Olarak Dışa Aktar
+"{{filename}}" dosyasını aşağıdaki ayarlarla PDF olarak dışa aktar.
+Sayfa boyutu
+Dosya adını başlık olarak ekleyin
+Yatay görünüm
+Sayfa Sınırı
+Varsayılan
+Minimum
+Hiçbiri
+Küçültme oranı
+PDF Olarak Dışa Aktar
+Linki takip et
+Linki aç
+Etiket arama
+Bulunamıyor:
+{{file}} içinde “{{subpath}}” bulunamadı
+Varsayılan programda aç
+Yan pencere boş, buraya bir pencere sürüklemeyi deneyin.
+Göster
+Sakla
+"{{filepath}}" dosyası kaydedilemedi. {{message}}.
+“{{plugin}}” eklentisi yüklenemedi
+“{{plugin}}” eklentisi yüklenirken bir hatayla karşılaştı
+“{{filepath}}” açılamadı
+“{{href}} konumu açılamıyor
+Dosya yok
+"{{file}}" başka bir yerde değiştirildi, değişiklikler otomatik olarak birleştiriliyor.
+Tresorları yönet...
+Yardım
+Ayarlar
+Düzenlemek için sürükle
+Varsayılan görünüm modu okuma moduna çevrildi.
+Varsayılan gösterim şekli editör yapıldı.
+Bu özelliği kullanabilmek için lütfen web sitemizden yeni yükleyiciyi indirin.
+Yavaş başlatma süresi algılandı.
+Bu özellik yalnızca masaüstü uygulamasında kullanılabilir.
+Varsayılan ayarları geri yükle
+Kopyala
+Kopyala
+Panonuza kopyalandı
+{{item}} kopyalandı
+Panonuza kopyalanamıyor
+Filtre...
+Kod bloğu işlenirken bir hatayla karşılaşıldı.
+"{{path}}" dosyası açıldı
+"{{name}}" dosyası bulunamadı.
+Tanınmayan URI eylemi: {{action}}
+Sil
+Obsidian kasanızı dizinliyor...\nBu sadece bir kez gerçekleşir.\nBu eylem tamamlanana kadar bazı özellikleri kullanamayabilirsiniz.
+Bu işlem tamamlanana kadar bazı işlevler kullanılamayabilir.
+İndeksleme işlemi tamamlandı.
+Bu bir sandbox kasasıdır.\nBu kasada yaptığınız değişiklikler kaybolacaktır.
+Bu özellik için IndexedDB gerekir, ancak şu anda devre dışı.
+iOS'ta Lockdown Mode kullanıyorsanız lütfen Obsidian'ı Lockdown Mode'daki "Web Tarama Yapılandır" ayarından hariç tutun.
+Yaratmak için giriş yap
+Güncellemeler mevcut
+Ayıklama bilgileri
+Daha fazlasını öğrenin
+Daha sonra
+Ekle
+Yönet
+Yeni sekme
+Araç çubuğunu gizle
+Bu sekme şu anda meşgul, lütfen daha sonra tekrar deneyin
+Biçimlendirme
+Paragraf
+Ekle
+Bağlantı ekle
+Dış bağlantı ekle
+Çağrı
+Yatay çizgi ekle
+Kod bloğu ekle
+Matematik bloğu ekle
+Tablo ekle
+Dipnot
+Kalın
+Kod
+Yorum
+Vurgula
+İtalik
+Üstü çizili
+Matematik
+Madde işaretli liste
+İşaretli liste
+Numaralı liste
+{{level}} Başlık
+Başlıksız
+Biçimlendirmeyi temizle
+Alıntı
+Boş
+Açık dosya yok
+Yeni dosya oluştur
+Dosyaya git
+Son görüntülenen dosyalara git
+Kapat
+Tüm “{{id}}” sekmelerini kapat ({{count}})
+Eklenti artık aktif değil
+Bu pencereyi açan eklenti ({{type}}) mevcut değil
+Sürüm Notları {{version}}
+{{version}} için sürüm notu yok.
+{{version}} için sürüm notları yüklenemedi.
+{{date}} tarihinde yayınlandı
+{{version}} sürümündeki yenilikler
+Değiştir (Yeni pencerede değiştirmek için Ctrl/Cmd+Tık)
+Mevcut görünüm: okuma
+Araç çubuğu
+Sol kenar çubuğu
+Sağ kenar çubuğu
+Düzenlemek için tıklayın
+Okumak için tıklayın
+{{key}}+Yeni sekmede açmak için tıklayın
+Kaynağı kopyalamak için {{key}}+C tuşlarına basın
+Bul...
+Değiştir...
+Düzenle
+Kaldır
+Listeden kaldır
+Yeniden adlandır
+Önizle
+Daha fazla seçenek
+Kapat
+Tümünü kapat
+{{count}} sekmeyi kapat
+{{count}} sekmeyi kapat
+Diğerlerini kapatın
+Şundan sonrakileri kapat
+İğnele
+İğneyi kaldır
+Sekmenin bağlantısını kaldır
+Sekme ile bağlantı...
+Kaynak modu
+Okuma görünümü
+Dosya özelliği ekle
+Dosyayı sil
+Bu dosyayı oluştur
+Linki aç
+Yeni sekmede aç
+Sağa doğru açın
+Linki kopyala
+Kopyala
+Kes
+Yapıştır
+Yolu kopyala
+Görseli kopyala
+Obsidian URL'si olarak
+sistem kökünden
+kasa klasöründen
+Düz metin olarak yapıştır
+“{{selection}}” arayın
+Tümünü seç
+Başlığı yeniden adlandır...
+Bu blok kimliğini yeniden adlandırın...
+Yeni pencerede aç
+Yeni pencereye taşı
+Tarayıcıda aç
+Yığın sekmeleri
+Sekmeleri çözün
+Bağlantılı görünümü aç
+Genişlet
+Daralt
+Rumuz
+Henüz oluşturulmadı, oluşturmak için seçiniz
+Versiyon
+Yerel kasa oluştur
+Bir klasörü kasa olarak belirle
+Markdown dosyalarının olduğu bir klasörü seç.
+Yeni kasa oluştur
+Bir klasörün altında yeni bir kasa oluştur.
+Obsidian Sync'e bağlanın
+Mevcut uzak kasa ile senkronize edilmiş bir kasa kurun.
+Kasa Adı
+Yeni kasanız için bir isim seçin.
+Gözat
+Yeni kasa için bir klasör seçin
+Yeni kasanız içine yerleştirilecektir: 
+Sistem gezgininde kasayı göster
+Finder'da kasayı göster
+Kasayı yeniden adlandır...
+Kasa kimliğini kopyala
+Bu isimde bir kasa zaten var.
+Kasa kendi alt klasörüne taşınamıyor.
+Şu anda açık olan bir kasa yeniden adlandırılamıyor.
+Kasa yeniden adlandırılamadı.
+Kasa başarıyla yeniden adlandırıldı.
+Kasayı taşı...
+Hedef klasörü seçin
+Hedefte zaten bir kasa var.
+Şu anda açık olan bir kasa taşınamıyor.
+Kasa taşınamadı.
+Kasa başarıyla taşındı.
+Listeden kaldır
+Hızlı başlangıç
+Aç
+Tara
+Bağlan
+Oluştur
+Geri
+Kasa adı boş olamaz
+Kasa adı nokta ile bitmemeli.
+Geçerli bir klasör seç.
+Yeni kasa oluşturulamadı
+Burada yeni bir kasa oluşturamazsın. İzinleri kontrol et.
+Kasa açılırken bir hata meydana geldi.
+Açık bir Kasa'yı kaldıramazsın.
+Yardım Alın
+E-posta
+E-posta adresiniz...
+Şifre
+Şifreniz...
+Oturum aç
+Kurulum
+Bu cihazda senkronize edilmiş bir kasa oluşturun.
+Bu, size ait uzak bir kasadır.
+Bu, sizinle paylaşılan uzak bir kasa.
+Düşünceleriniz sizin.
+senkronize
+senkronize değil
+Yok
+Önerilen
+Obsidian notları cihazınızda depolar; böylece çevrimdışıyken bile onlara hızlı ve gizli şekilde erişebilirsiniz.\nVerileriniz **kasa** adı verilen güvenli bir yerel klasörde saklanır.
+Bir kasa oluştur
+Mevcut kasamı kullan
+Notlarınıza diğer cihazlardan erişmek için senkronizasyon kurmanız gerekir.
+Obsidian notlarınızı cihazlarınızda depoladığı için, notlarınıza başka bir telefondan veya bilgisayardan erişmek istiyorsanız senkronizasyon kurmanız gerekir.\nSenkronizasyonu şimdi kurabilir veya yazmaya başlayıp daha sonra kurabilirsiniz.
+Senkronizasyonu ayarla
+Skip for now
+Atla
+Choose a name for your vault.
+Kasa oluştur
+Sync kurulumu
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Sync şifreleme
+Uçtan uca şifreleme
+En güçlü güvenliği sunar ancak şifreleme parolanızı güvenle saklamanızı gerektirir
+Standart şifreleme
+Verilerinizi aktarım sırasında ve sunucularımızda korumak için Obsidian tarafından yönetilen bir anahtar kullanır.
+Sync Ayarları
+Bu cihaza senkronize ederken herhangi bir klasör veya dosyayı hariç tutmak ister misiniz?
+Senkronizasyona başla
+Bir Obsidian hesabı oluşturun veya giriş yapın
+Kaydol
+Giriş yap
+E-postayı yeniden gönder
+Mevcut Sync kasalarınız var
+Yeni bir kasa oluşturmak mı yoksa mevcut senkronize bir kasaya bağlanmak mı istiyorsunuz?
+Yeni Sync kasası oluştur
+Mevcut bir kasa seç
+Log Out
+Parolamı unuttum
+Kasa adı
+Kasa konumu
+Cihaz depolaması
+Obsidian verilerine diğer uygulamaların erişmesine izin verir.
+Ek izinler gerektirir.
+Uygulama depolaması
+Verilerinize diğer uygulamalar erişemeyecek.
+Obsidian'ı kaldırırsanız Android verilerinizi silecektir.
+Yeni kasanız {{vaultLocation}} konumuna yerleştirilecek
+Bölge
+Senkronizasyonun daha hızlı olması için size yakın bir sunucu bölgesi seçin.
+Şifreleme anahtarı
+Bu parola daha sonra değiştirilemez. Parolanızı unutursanız Sync sunucularındaki tüm uzak verilere sonsuza dek erişilemez.
+Kasam
+Otomatik
+Bir kasa seçin
+**{{email}}** hesabınızda bağlanabileceğiniz mevcut kasalar var.
+Obsidian hesabınıza giriş yapın
+Parolamı unuttum
+Parolayı sıfırla
+Parolanızı sıfırlamak için {{email}} adresine bir e-posta gönderdik.
+Notlarınızı nasıl senkronize edeceğinizi seçin
+Obsidian'ı cihazlarınızda kullanmak için verilerinizi senkronize etmeniz gerekir.
+Her cihaz ve işletim sistemi arasında sorunsuz.
+En güçlü uçtan uca şifreleme standardıyla güvence altına alınır.
+Bir Obsidian hesabı gerektirir.
+Yalnızca iOS ve macOS için.
+Varsayılan olarak şifrelenmez.
+Üçüncü taraf eklentiler veya araçlar gerektirir.
+Varsayılan olarak şifrelenmemiş olabilir.
+Obsidian Sync kullan
+iCloud kullan
+Use Third-party sync
+Diğer eşitleme yöntemleri
+Desteklenen eşitleme yöntemlerini kullan
+Kasanız nerede bulunuyor?
+Diğer
+Üçüncü taraf eşitleme
+Bu cihazda
+iCloud'a bağlan
+Diğer eşitleme hizmetine bağlan
+Obsidian Sync'e bağlan
+Klasör seç
+Diğer eşitleme yöntemleri
+Obsidian resmi olarak iki eşitleme yöntemini destekler: **Obsidian Sync** ve **iCloud**.\nAncak Obsidian verileriniz üzerinde size kontrol sağladığı için kullanabileceğiniz başka eşitleme seçenekleri de vardır.\nBu seçeneklere, daha gelişmiş kurulum gerektirebilecek üçüncü taraf eklentiler ve diğer araçlar dahildir.\nAlternatif bir eşitleme yöntemi kullanmak için **bir kasa oluşturun** ve eklenti veya üçüncü taraf eşitleme sağlayıcısının sunduğu talimatları izleyin.
+E-postanızı girin
+Bir Obsidian hesabı oluşturmak için e-postanız gereklidir.
+Adınızı ve parolanızı girin
+Obsidian Sync'e bağlan
+Kısa süre içinde **{{email}}** adresine Obsidian Sync'e bağlanma talimatlarını içeren bir e-posta alacaksınız.
+iCloud kasanız algılanmadı. Bunun nedeni aşağıdakilerden herhangi biri olabilir:
+Kasanız, şu anda bu cihazda oturum açtığınız iCloud hesabından farklı bir iCloud hesabında bulunuyor.
+Kasanız iCloud Drive'ınızdaki en üst düzey Obsidian klasöründe depolanmıyor.
+iCloud desteklenmiyor
+iCloud eşitleme yalnızca Apple cihazlarında kullanılabilir. Kasanız şu anda iCloud üzerinden eşitleniyorsa, kasanızı farklı bir eşitleme hizmetine taşımayı öğrenin.
+Dosya erişimine izin ver
+Giriş yapılıyor...
+Kasa adı gereklidir
+Yeni onay e-postası gönderildi.
+E-posta yeniden gönderilemedi.
+Kasa konumu bir klasör olmalıdır.
+Hoş geldiniz
+İşte yeni *tresör*ünüz.\n\nBir not alın, [[bağlantı oluştur]], veya [İçe Aktarıcı'yı](https://help.obsidian.md/Plugins/Importer) deneyin!\n\nHazır olduğunuzda, bu notu silin ve tresörü kendinize göre düzenleyin.
+Linki buraya ekle
+Linkleri buraya ekle
+"{{folder}}" klasörüne taşı
+Bu dosyayı yıldızla
+Bu dosyaları yıldızla
+Bu sekmede aç
+Yeni sekme olarak aç
+Genişlet
+Küçült
+Eski hâline küçült
+Pencereyi kapa
+Geri git
+İleri git
+Obsidian yükleniyor...
+Yüklenirken bir hata meydana geldi.
+Uygulamayı yeniden başlat
+Uygulamayı güvenli modda yeniden yükleyin
+Başka bir kasa aç
+Eklentiler yükleniyor...
+“{{plugin}}” eklentisinin yüklenmesi uzun sürüyor. 
+Kasa yükleniyor...
+Kasa yükleme başarısız oldu: 
+Önbellek yükleniyor...
+Çalışma alanı yükleniyor...
+Kasanın içine aktar
+Dosyaya metin ekle:
+Eklemek için bir dosya seçin
+Metni {{filename}} dosyasına ekle
+Linki {{filename}} dosyasına ekle
+Sekme genel görünümünü göster
+İçe aktarıyor...
+İçe aktarma başarılı
+{{filename}} dosyasını içe aktarma başarısız oldu
+Çıkmak için tekrar geri tuşuna basın.
+Geri bildirim
+Obsidian'dan memnun musunuz? Bir değerlendirme yaparak bize yardımcı olun.
+Uygulamayı değerlendir
+Kapat
+Yapılandırma dosyaları iCloud'dan güncellendi, yeniden yükleme gerekiyor
+Yeniden yükle
+Resmi yardım sitesi
+Birden çok dilde bulunan Obsidian'ın resmi yardım belgelerini okuyun.
+Ziyaret et
+Discord sohbet
+Discord, dünyanın dört bir yanından diğer deneyimli Obsidian kullanıcılarıyla sohbet etmek için en iyi yerdir.
+Katıl
+Resmi forum
+Birbirinize yardım edin, özellik istekleri gönderin, hataları bildirin ve bilgi yönetimi hakkında derinlemesine tartışmalar yapın.
+Sandbox kasası
+Oynayın ve çeşitli özelliklerle denemeler yapın. Lütfen değişikliklerinizin kaydedilmeyeceğini unutmayın.
+Dosyayı kaydet
+Geçerli dosya için ekleri indir
+İmlecin altındaki bağlantıyı takip et
+Yeni sekmede imlecin altındaki bağlantıyı aç
+Sağdaki imlecin altındaki bağlantıyı aç
+Yeni pencerede imlecin altındaki bağlantıyı aç
+Yukarıdaki sekme grubuna odaklan
+Aşağıdaki sekme grubuna odaklan
+Soldaki sekme grubuna odaklan
+Sağdaki sekme grubuna odaklan
+İğnele/İğneyi kaldır
+Sağa Böl
+Aşağı Böl
+Yığılmış sekmeleri değiştir
+Okunabilir satır uzunluğunu aç/kapat
+Satır numaralarını aç/kapat
+Geri git
+İleri git
+Açık/koyu modu aç/kapat
+Temayı değiştir...
+Kasayı değiştir...
+Kasayı aç...
+Kasaları yönet
+Geçerli dosyada ara
+Geçerli dosyada ara ve değiştir
+Dosya özellikleri ekle
+Ad (A'dan Z'ye)
+Ad (Z'den A'ya)
+Takma ad ekle
+Dosya özelliklerini temizle
+Ayarları aç
+Yardımı aç
+Düzenleme/okuma modunu değiştir
+Canlı Önizleme/Kaynak modunu değiştir
+Dosyayı sil
+Yeni sekme
+Yeni pencere
+Çöp kutusunu göster
+Tüm sekmeleri kapat
+Geçerli sekmeyi kapat
+Sekme grubundaki diğerlerini kapatın
+Diğer tüm sekmeleri kapat
+Bu sekme grubunu kapatın
+Sol yan pencereyi aç/kapat
+Şeridi aç/kapat
+Sağ yan pencereyi aç/kapat
+Yeni sekmeler için varsayılan modu değiştir
+Üstüne imleç ekle
+Altına imleç ekle
+Editöre odaklan
+Mevcut dosyadaki katlama özelliklerini aç/kapat
+Satırı katla/göster
+Bütün başlıkları ve listeleri katla
+Bütün başlıkları ve listeleri göster
+Daha fazla katla
+Daha az katlayın
+Üstteki satırla değiştir
+Alttaki satırla değiştir
+Başlığı kaldır
+Başlık olarak ayarla {{level}}
+Seçileni koyu/normal yap
+Seçileni italik/normal yap
+Seçilenin üstünü çiz/çizme
+Yorumları seç/seçme
+Biçimlendirmeyi temizle
+Linki ekle
+İmlâ denetimini aç/kapat
+Paragrafı sil
+Yapılacaklar listesine dönüştür
+Döngü maddesi/onay kutusu
+Belirtme çizgisi ekle
+Kod bloğu ekle
+Matematik bloğu ekle
+Yatay çizgi ekle
+Tablo ekle
+Dipnot ekle
+Dosya başlığını düzenle
+Dosya yolunu kopyala
+Geçerli dosya yolunu sistem kökünden kopyala
+Obsidian URL'sini kopyala
+PDF olarak dışa aktar
+Uygulamayı kaydetmeden yeniden yükle
+Sekmeyi kapat'ı geri al
+Bağlam menüsünü işaretçinin altında göster
+Ayıklama bilgilerini göster
+Sandbox kasasını açın
+Pencereyi her zaman üstte aç/kapat
+Yakınlaştır
+Uzaklaştır
+Yakınlaştırmayı sıfırla
+Düzenleme/Önizleme moduna geç
+Geçerli bölmeyi yeni pencereye taşı
+Geçerli bölmeyi yeni pencerede aç
+Geçerli dosyayı yeniden adlandır
+Önceki sekmeye git
+Sonraki sekmeye git
+Son sekmeye git
+#{{n}}. sekmeye git
+Sürüm notlarını görüntüle
+Bu eylem {{files}} dosyada {{links}} bağlantısını etkileyecek.
+{{files}} dosyada {{links}} bağlantısı güncellendi.
+Bağlantıları güncelle
+Bu dosyayı gösteren dahili bağlantılar güncellensin mi?
+Her zaman güncelle
+Sadece bu sefer güncelle
+Güncelleme yapma
+"{{filename}}"'i silmek istediğinize emin misiniz?
+Sistem çöpüne taşınacak.
+Obsidian çöpüne taşınacak. Kasanın içindeki ".trash" gizli klasöründe.
+Dosya kalıcı olarak silinecek.
+Bu klasör boş değil.
+Devam ederseniz, bu klasör içindeki bütün dosyalar silinecek.
+Klasörü sil
+Sil
+Bir daha sorma
+Şu anda bu dosyaya işaret eden {{count}} bağlantı var.
+Şu anda bu dosyaya işaret eden {{count}} bağlantı var.
+Dosyayı sil
+Ekleri indir
+Bu notta harici ek yok.
+{{count}} ek indirildi.
+{{count}} ek indirildi.
+{{count}} dosya güncellendi.
+{{count}} dosya güncellendi.
+{{count}} dosyada yapılan değişiklikler geri alındı.
+{{count}} dosyada yapılan değişiklikler geri alındı.
+İnternet bağlantısı yok
+Yükleniyor...
+Yönet
+Görüntüle
+Onayla
+İptal
+Atla
+İndir
+Tamam
+Kaydet
+Durdur
+Değiştir
+Devam et
+Seç
+Yeniden dene
+Güncelle
+Geri al
+PDF hazırlanıyor...
+Yeniden adlandır
+Dosya adı
+Yeni Ad
+Hata
+Seçildi
+Yeniden adlandırıldı.
+Notları birleştirmede başarısız oldu: {{message}}
+“{{path}}” dosya veya klasörü mevcut değil.
+Başlık boş olamaz
+Blok kimliği boş olamaz
+Blok kimliği yalnızca alfanümerik karakterler veya tire içerebilir
+Başlığı yeniden adlandır
+Blok kimliğini yeniden adlandır
+Dosya ekleri silinsin mi?
+Bu ek artık hiçbir notta kullanılmıyor. Silmek ister misiniz?
+Bu {{count}} ek artık hiçbir notta kullanılmıyor. Silmek ister misiniz?
+Dosya ağacı
+Galeri
+Yeni Not Oluştur
+Sağa Yeni Not
+Yeni sekme
+Yeni Pencere
+Hızlı Aç...
+Kasa Aç...
+Sekmeyi Kapat
+Pencereyi Kapat
+Ara
+Yer değiştir
+Belirtme çizgisi ekle
+Markdown Bağlantı
+Bağlantı
+Başlık {{level}}
+Başlık Yok
+Alıntı
+PDF'yi dışa Aktar
+Ek Dosya Ekle...
+Kod Bloğu
+Matematik Bloğu
+Tablo
+Dipnot
+Satır içi başlık
+Satır numaraları
+Madde İşaretli Liste
+Numaralı Liste
+Görev Listesi
+Kalın
+Kod
+Yorum
+İtalik
+Matematik
+Vurgula
+Üstü Çizili
+Yorum
+Katlama
+Tümünü Katla
+Tümünü Aç
+Daha Fazla Katla
+Daha Az Katlayın
+Kaynak Modu
+Okuma Görünümü
+Hata Ayıklama Bilgilerini Göster
+Sandbox Kasasını Açın
+Yeni pencereye taşı
+Geri Git
+İleri git
+Sol Kenar Çubuğunu Değiştir
+Sağ Kenar Çubuğunu Değiştir
+Araç çubuğu
+Sağa Böl
+Aşağı Böl
+Sürüm Notları
+Eklentiler
+Dosya Gezgini
+Kasanızdaki tüm dosyaları gösterir.
+Dosya gezginini aç
+Dosya gezgininde göster
+Yeni not oluştur
+Yeni klasör oluştur
+Geçerli sekmede yeni not oluşturma
+Sağ tarafa not oluşturun
+Geçerli dosyayı otomatik göster
+Tümünü daralt
+Tümünü genişlet
+Yeni not
+Yeni klasör
+Sıralamayı değiştir
+Dosya gezgininde dosyayı göster
+Dosya gezgininde aktif dosyayı göster 
+Geçerli dosyanın bir kopyasını oluşturuns
+Geçerli dosyayı çoğalt
+Dosyayı başka bir klasöre taşı
+Seçimle yeni klasör ({{count}} öğe)
+Seçimle yeni klasör ({{count}} öğe)
+Dosyayı şuraya taşı...
+Klasörü şuraya taşı...
+{{count}} öğeyi şuraya taşı...
+Bir klasör yazın
+Klasörler bulunamadı
+Yönlendirme
+Taşıma
+oluşturmak için
+Reddet
+İsme göre sırala (A'dan Z'ye)
+İsme göre sırala (Z'den A'ya)
+Değiştirilme zamanına göre sırala (yeniden eskiye)
+Değiştirilme zamanına göre sırala (eskiden yeniye)
+Oluşturma tarihi (eskiden yeniye)
+Oluşturma tarihi(yeniden eskiye)
+Yeni not
+Yeni klasör
+Yeniden adlandır
+Sil
+Kopyasını oluştur
+Çoğalt
+Dosya adı bu karakterleri içeremez: 
+Bağlantılar, şu karakterlerden herhangi birini içeren dosya adlarıyla çalışmaz: 
+Aynı isimde bir dosya zaten var
+Dosya adı boş olamaz.
+Dosya adı bir nokta ile başlamamalıdır.
+Son Düzenleme {{time}}
+Oluşturuldu {{time}}
+Başlıksız
+Başlıksız
+Ekler bundan sonra "{{path}}" klasörüne kaydedilecek.
+Ara
+Bütün notlar içinde ara.
+Tüm notları ara
+Sonuçları gizle
+Harf boyutunu kullan
+Aramayı anlat
+Daha fazla içerik göster
+{{count}} sonuç
+{{count}} sonuç
+Arama ayarları
+Aramak için yazın...
+Uyan yazı: 
+Uygunluk Regex'i: 
+Tam Uyan Metin: 
+Büyükse: 
+Küçükse: 
+Doğru ise
+Yanlış ise
+Boş ise
+Özellik içeriyor:
+Tamamına uydur: 
+Birine uydur: 
+Hariç: 
+Büyük-küçük harfe duyarlı
+Büyük-küçük harfe duyarsız
+Dosya yolunu eşleştir: 
+Dosya adını eşleştir: 
+Dosya içeriğini eşleştir: 
+Görevi eşleştir: 
+Görevi eşleştir (yapılacak): 
+Görevi eşleştir (tamamlandı): 
+Satırı eşleştir: 
+Bloğu eşleştir: 
+Bölümü eşleştir: 
+Etiketi eşleştir: 
+Eşleşme bulunamadı
+... ve {{count}} tane daha sonuç.
+... ve {{count}} tane daha sonuç
+Arama sonuçlarını kopyala
+Sonuçları Kopyala
+Sonuçlar Kopyalandı.
+Dosya yolunu göster
+Yalnızca dosya adı yerine dosyanın tam yolunu görüntüleyin.
+Bağlantı sitili
+İsteğe bağlı olarak her dosya sonucunu bir bağlantıya çevirin.
+Hiç biri
+Wiki bağlantısı
+Markdown Bağlantısı
+Liste öneki
+İsteğe bağlı olarak her dosya sonucuna bir liste öğesi öneki ekleyin.
+Hiç biri
+Çizgi (-)
+Yıldız (*)
+Numaralandırılmış
+Aramayı Temizle
+Arama Seçenekleri
+Özellikler
+Etiketler
+Daha fazlasını oku
+Geçmiş
+Arama Geçmişini Temizle
+dosya yolunu eşleştir
+dosya adını eşleştir
+Etiketleri Ara
+Aynı satırdaki kelimelerde ara
+Aynı başlık altındaki kelimelerde ara
+özellik eşleştir
+Ara "{{keyword}}"
+Klasörde ara
+Hızlı Geçiş
+Klavyenizi bırakmadan hızlıca başka bir dosyaya geçin. Ctrl/Cmd+O ile kullanın.
+Geçici
+Hızlı geçişi aç
+geçmek için
+açmak için
+yeni sekmede açmak için
+sağa doğru açmak için
+oluşturmak için
+vazgeçmek için
+seçmek için
+Not bulunamadı. Yeni bir tane oluşturmak için Enter.
+Geçmek ya da oluşturmak için dosya adını yazın...
+Oluşturmak için Enter
+Henüz oluşturulmadı, oluşturmak için seçin
+Sadece varolanları göster
+Henüz oluşturulmamış dosyalara bağlantıların gösterilip gösterilmeyeceği.
+Ekleri göster
+Resimler, videolar ve PDF'ler gibi ek dosyalarını gösterin.
+Tüm dosya tiplerini göster
+Obsidian'ın açamadığı dosyalar dahil tüm dosyaları göster. Dosya, o dosya türü için varsayılan uygulama ile açılacaktır.
+Grafik Görünümü
+Hangi notların hangi notlar ile bağlantılı olduğunu bir grafik üzerinden görüntüleyin.
+Grafik görünümünü aç
+Yerel grafiği aç
+Ekran görüntüsünü kopyala
+{{displayText}}'in grafiği
+Filtreler
+Klasörlerde ara...
+Derinlik
+ Düğümlere bu sayıda bağlantıyı göster
+Komşu bağlantılar
+Aralarında bağlantı olan tüm bağlantıları göster
+Giden Bağlantılar
+Diğer dosyalara olan bağlantıları göster
+Gelen Bağlantılar
+Diğer dosyalardan bağlantıları göster
+Etiketler
+Etiketler, onları içeren dosyalara bağlanır
+Ekler
+Dosyaların içerdiği ekleri göster
+Yalnızca mevcut dosyalar
+İşaretlendiğinde, var olmayan dosyalara bağlantılar gösterilmez
+Bağlantısızlar
+Başka bir dosyaya bağlı olmayan dosyaları göster
+Göster
+Oklar
+Yakınlaştırıldığında okları göster
+Metin solma eşiği
+Düğüm Boyutu
+Bağlantı kalınlığı
+Güçler
+Merkez gücü
+Bağlantı gücü
+Bağlantı mesafesi
+itme kuvveti
+Grafik ayarlarını aç
+Ekran görüntüsü kopyalandı.
+Gruplar
+Sorgu girin...
+Grubu sil
+Yeni grup
+Rengi değiştirmek için tıkla\nGrubu yeniden düzenlemek için sürükle
+Hızlandırılmış animasyonunu başlat
+Hızlandırma nimasyonunu başlat
+Hareketlendirmek
+Geri Bağlantılar
+Durum çubuğunda geri bağlantı sayısını göster.
+Arka bağlantıları aç
+Arka bağlantılar penceresini aç
+Mevcut dosyanın geri bağlantılarını aç
+Belgedeki geri bağlantıları aç/kapat
+Belgedeki geri bağlantılar
+Bağlantılı bahsetmeler
+Geri bağlantı bulunamadı.
+Bağlantılı olmayan bahsetmeler
+Arama filtrelerini göster
+Bağlantı
+{{displayText}} için geri bağlantılar
+Bağlantısız bahsetme bulunamadı
+
+Dökümandaki geri bağlantılar
+Yeni bölmeler açarken varsayılan olarak belgede geri bağlantıları göster.
+Giden bağlantılar
+Giden bağlantıları gösterin ve mevcut nottaki diğer notların bağlantısız bahsetmelerini tespit edin.
+Giden bağlantıları aç
+Giden bağlantılar penceresini göster
+Mevcut dosya için giden bağlantıları aç
+{{displayText}}'dan giden bağlantılar
+Bağlantılar
+Bağlantı bulunamadı.
+Bağlantısız bahsetmeler
+Bu dosyayı bağla
+Henüz oluşturulmadı
+Etiket paneli
+Etiketler
+Tüm etiketlerinizi ve oluşum sayılarıyla birlikte görüntüler.
+Etiket panelini göster
+Etiket bulunamadı.
+Etiketler (A'dan Z'ye)
+Etiketler  (Z'den to A'ya)
+Sıklık (yüksekten düşüğe)
+Sıklık (düşükten yükseğe)
+Alt etiketleri göster
+Tümünü daralt
+Tümünü genişlet
+Dipnot görünümü
+Dipnotlar
+Geçerli nottaki dipnotların listesini göster.
+Dipnotları göster
+Dipnot bulunamadı.
+Özellikler görünümü
+Dosyalarınızın meta verilerini gösterin.
+Tüm özellikler
+Dosya özellikleri
+{{displayText}} için dosya özellikleri
+Tüm özellikleri göster
+Tüm dosya özelliklerini göster
+Özelliği sil
+Özellikleri sil
+Otomatik
+Otomatik ({{type}})
+Özellik bulunamadı.
+Geçersiz özellikler.
+Özellik adı (A'dan Z'ye)
+Özellik adı (Z'den A'ya)
+Sıklık (yüksekten düşüğe)
+Sıklık (düşükten yükseğe)
+“{{oldKey}}” özelliğini “{{newKey}}” ile birleştirmek istiyor musunuz?
+Çakışma durumunda değerler birleştirilecek veya “{{oldKey}}” değeri kullanılacak.
+Tümünü daralt
+Tümünü genişlet
+Dosya özelliklerini aç
+Günlük notunu aç
+Sayfa Önizlemesi
+Dahili bir bağlantı üzerinde gezinirken bir notu önizleyin. Editör modunda Ctrl/Cmd + fareyle üzerine gelin.
+“{{linktext}}” bulunamadı.
+"{{linktext}}" henüz oluşturulmadı. Oluşturmak için tıklayın.
+Dipnot {{id}} bulunamadı. Oluşturmak için tıklayın.
+Düzenleyici
+Ön İzleme
+Arama, Arka bağlantılar, Ve giden bağlantılar
+Sekme başlığı
+Fareyle üzerine gelindiğinde sayfa önizlemesini tetiklemek için {{key}} gerektir
+Yer İmleri
+Sık kullanılan dosyaları ve aramaları yer imlerine ekleyin.
+Yer işaretlerini göster
+Tümünü daralt
+Etkin sekmeye yer işareti koyun...
+Yeni yer imi grubu
+Yer işaretleri...
+Yer işareti ekle
+Yer işaretlerini düzenle
+İmleç altındaki yer imi bloğu...
+İmleç altındaki başlığı yer imlerine ekle...
+Geçerli aramaya yer işareti koy...
+Geçerli dosya için yer imini kaldır
+Yer işareti {{count}} sekme...
+Yer işareti {{count}} sekme...
+Tüm sekmeleri yer imlerine ekle...
+Bu grafiği yer imlerine ekle...
+Yer işareti
+Yer işareti eklenmiş
+{{count}} yer işareti
+{{count}} yer işareti
+Yer işareti bulunamadı
+Yer işaretleri yüklenemedi.
+Dosya bozulmuş.
+İsimsiz grup
+İsimsiz Grafik
+Düzenle...
+Kaldırmak
+Yeniden Adlandır
+Bu bloğu yer imi olarak işaretle
+Bu başlığı yer imlerine ekleyin...
+Yer işareti koymak için arama sorgusu yok.
+Yol
+Sorgu
+Başlık
+Yer işaretleri grubu
+Yer işaretleri
+Özel CSS
+Kasa klasöründeki “obsidian.css” dosyasını oku ve uygula.
+Topluluk temaları
+Topluluk tema verileri getiriliyor...
+Filtrele...
+Sadece karanlık temalar
+Sadece aydınlık temalar
+Kullan
+Bu temayı kullanmayı bırakın
+Kurun ve kullanın
+Güncelle
+Bu tema bir BENİOKU dosyası sağlamadı.
+Temayı sil
+GitHub'ı ziyaret et
+Topluluk temaları yüklenemedi, lütfen ağınızı kontrol edin.
+Artık CSS temanızı {{title}} olarak kullanıyorsunuz.
+{{title}} teması silindi.
+{{title}} teması güncellendi.
+Kurulmuş
+Miras
+Tümünü güncelle
+Topluluk temaları yüklenemedi.
+Tema güncellemesi bulunamadı.
+Güncellenecek {{count}} tema bulundu.
+Güncellenecek {{count}} tema bulundu.
+"{{name}}" teması yüklenemedi.
+"{{name}}" teması başarıyla yüklendi.
+"{{name}}" temasını yükle...
+{{themeCount}} gösteriliyor:
+Güncelleme mevcut
+Komut Paleti
+Çağırmak için bir komut yazın. Kullanıcı arayüzünü kullanmanıza veya kısayolu hatırlamanıza gerek yok.
+Komut paletini aç
+Yönlendirmek
+Kullanmak
+Vazgeçmek
+Komut bulunamadı.
+Bir komut yazın...
+Sabitlenmiş komutlar
+Markdown formatı içe aktarıcı
+Markdown'ı diğer uygulamalardan Obsidian formatına dönüştürün.
+Markdown yükleyicisini aç
+Roam Research etiket düzelticisi
+"#tag" ve "#[[tag]]" öğelerini "[[tag]]" biçimine dönüştürür.
+Roam Research vurgulayıcı düzeltici
+"^^highlight^^" ifadesini "==highlight==" dönüştürür.
+Roam Research TODO dönüştürücüsü
+"{{[[TODO]]}}" öğesini "[ ]" biçimine dönüştürür.
+Bear vurgu düzeltici
+ "::highlight::" ifadesini "==highlight==" dönüştürür.
+Zettelkasten bağlantı düzeltici
+"[[UID]]" bağlantılarını tamamen "[[UID Dosya Adı]]" biçimine dönüştürür.
+Zettelkasten bağlantı güzelleştirici
+"[[UID]]" bağlantılarını düzeltir ve ayrıca onları "[[UID Dosya Adı|Dosya Adı]]" biçiminde güzelleştirir.
+Başlangıç meta verileri geçişi
+Obsidian v1.9+ tarafından gereken sıkı formata, başlangıç meta verilerindeki etiketleri, takma adları ve cssclasses değerlerini taşı
+Uyarı: İçe aktarıcı, yalnızca geçerli dosyayı değil, kasanızdaki tüm dosyaları dönüştürür.
+Dosyalarınızın üzerine yazılacak. Dönüştürmeyi başlatmadan önce tüm dosyalarınızı yedekleyin.
+Dönüştürmeyi Başlat
+Dur
+Geri git
+Tamamlandı
+İşleniyor...
+İptal ediliyor...
+Bitti!
+İşlenmiş Dosyalar
+Değiştirilmiş dosyalar
+Toplam değiştirme
+Başarısız
+Günlük Notlar
+Günün notunu aç, yoksa yenisini oluştur.
+Bugün
+Bugünün Notunu Aç
+Önceki Günün Notu
+Sonraki Günün Notu
+Günün notu için metin girin
+Günün notu için bağlantı girin
+Günlük not oluşturulamadı. "{{format}}" geçerli bir biçim değil.
+Günlük not oluşturulamadı. "{{folderOption}}" klasörü bulunamadı.
+Günlük not oluşturulamadı. Şablon dosyası "{{template}}" bulunamadı.
+Bundan öncesinde günlük not yok
+Bundan sonrasında günlük not yok.
+Tarih biçimi
+Günlük notların kasanızda nasıl adlandırılacağını seçin.
+Özel biçim
+Özel
+Geçersiz tarih biçimi
+Günlük not klasörü bulunamadı.
+Daha fazla sözdizimi için bkz. 
+biçim referansı
+İşte nasıl görüneceği: 
+Yeni dosya konumu
+Yeni günlük notu oluşturmak için klasör yolu.
+Şablon dosya konumu
+Şablon olarak kullanılacak dosya yolu.
+Benzersiz not oluşturucu
+Zettelkasten veya slip box gibi iş akışları için benzersiz zaman damgası önekleriyle notlar oluşturun.
+Benzersiz
+Yeni benzersiz not oluştur
+Yeni benzersiz not
+Benzersiz dahili bağlantı ekle
+Yeni dosya konumu
+Yeni benzersiz notu oluşturmak için klasör yolu.
+Benzersiz not oluşturulamadı. "{{folderOption}}" klasörü bulunamadı.
+Şablon dosyası konumu
+Şablon olarak kullanılacak dosya yolu.
+Örnek: klasör1/not
+Benzersiz önek biçimi
+Benzersiz not oluşturulamadı. Şablon dosyası "{{template}}" bulunamadı.
+"{{format}}" biçiminde benzersiz bir not oluşturulamadı.
+Rastgele Not
+Rastgele bir not aç. Keşfetmek ve Gözden geçirmek için faydalı.
+Rastgele
+Rastgele not oluştur
+Anahat
+Geçerli dosyanın veya bağlantılı pencerenin ana hatlarını görüntüler.
+Anahattı aç
+Anahat bölmesini göster
+Geçerli dosyanın ana hatlarını aç
+{{displayText}} ana hatları
+Başlık bulunamadı.
+Geçerli bölüme otomatik kaydır
+Kelime sayısı
+Durum barında kelime sayısını göster.
+Slaytlar
+Markdown aracılığı ile sunum. Slaytları ayırmak için "---" kullanın.
+Sunuma başla
+Ses kaydedicisi
+Sesi kaydet ve dosyayı ek olarak kaydedin.
+Ses kaydetmeye başla
+Ses kaydını durdur
+Kaydı başlat/durdur
+Mikrofon erişimi reddedildi, lütfen tercih bölmesinden etkinleştirin.
+Lütfen kaydı başlatmak için mikrofona izin verin.
+Mikrofon bağlı değil.
+Varsayılan uygulamada aç
+Geçerli dosya için varsayılan uygulama seçme butonu
+Varsayılan uygulamada aç
+Paylaş
+Klasörde göster
+Finder'da Göster
+Şablonlar
+Şablon dosyalarının bulunduğu bir klasörden şablon içeriği ekleyin.
+Şablon ekle
+Geçerli tarihi ekle
+Geçerli saati ekle
+Şablon klasör konumu
+Bu klasördeki dosyalar şablon olarak mevcut olacak.
+Tarih biçimi
+Şablon dosyasındaki {{date}} değeri bu değerle değiştirilecektir.
+Biçimi bir kez geçersiz kılmak için {{tarih:YYYY-MM-DD}} öğesini de kullanabilirsiniz.
+Zaman formatı
+Şablon dosyasındaki {{time}} bu değerle değiştirilecektir.
+Biçimi bir kez geçersiz kılmak için {{time:HH:mm}} öğesini de kullanabilirsiniz.
+Yönlendir
+Şablon ekle
+Vazgeç
+Şablon bulunamadı
+Şablonlar listelenemedi. Şablon klasörü geçersiz.
+Şablonlar listelenemedi. "{{folderOption}}" klasörü bulunamadı.
+Şablon eklenemiyor, şablon dosyasındaki özellikler okunamadı.
+Şablonlar listelenemedi. Yapılandırılmış şablon klasörü yok.
+Bir şablonun adını yazın...
+yarı saydam pencere
+Derinlik hissini geliştirmek için yarı saydamlık efektini açın. En iyi karanlık modda kullanılır. Linux'ta desteklenmez.
+Eğik çizgi komutları
+Eğik çizgi yazarak düzenleyicide eğik çizgi komutlarını tetikleme özelliğini etkinleştirin.
+Düzenleyici durumu
+Ageçerli düzenleyici modunu göstermek ve değiştirmek için bir durum çubuğu öğesi ekler.
+Okuma
+Kaynak modu
+Canlı önizleme
+Yayınla
+Notlarınızı Obsidian Publish aracılığıyla yayınlayın.
+Değişiklikleri yayınla
+Mevcut dosyayı yayımla
+Değişiklikleri yayınlamak için internete erişmeniz gerekir.
+Obsidian Publish, notlarınızı doğrudan Obsidian'dan çevrimiçi olarak yayınlamanıza izin veren ek ücretli bir hizmettir.
+Yayınlamaya başlamak için lütfen giriş yapın veya yeni bir Obsidian hesabı oluşturun.
+Henüz bir Obsidian Publish aboneliğiniz yok.
+Satın al
+Siteleri yönet
+Hiç siteniz yok.
+Seç
+Site ID'sini düzenle
+Siteyi sil
+Bu siteyi silmek istediğinizden emin misiniz?
+Bu, sitenizi hemen ve kalıcı olarak siler.
+"{{site}}" sitesini silmeyi onaylayın
+Site kimliği
+Siteniz https://publish.obsidian.md/{site id} adresinde olacaktır. Bunu daha sonra değiştirebilirsiniz. Yalnızca küçük harflere, sayılara ve tirelere izin verilir.
+Site ID'si seçin
+Oluştur
+Site kimliği yalnızca küçük harfler, sayılar ve kısa çizgiler içerebilir.
+Bu site kimliği kullanımda, lütfen başka bir tane deneyin.
+Sitenizi oluştururken bu bir sorun oluştu.
+Site seçenekleri
+Genel
+Bileşenler
+Görünüm
+Okuma deneyimi
+Diğer site ayarları
+Site adı
+Yayınlanan sitenizin adı. Sitenizin sayfa başlığında görünecektir.
+Sitenizin adı
+Ana sayfa dosyası
+Kullanıcının yayınladığınız siteye geldiğinde gördüğü ilk sayfa
+Yayınlanmış bir dosya seçin
+
+Site logonuz olarak bir resim dosyası seçin.
+Kasanıza yüklenen herhangi bir resim...
+Site işbirliği
+Bu site için ortak çalışanları yönetin.
+Navigasyonu özelleştirme
+Gezinme öğelerinin sırasını geçersiz kılın ve sayfaların veya klasörlerin gösterilmesini engelleyin.
+Gezinti öğesi görüntüleme sırası
+Sayfaları veya klasörleri gezintiden gizleme
+Belirli sayfaların site navigasyonunda görünmesini engellemek için sağ tıklayın ve "Gizle" seçeneğini seçin. Sayfalara bağlantılar aracılığıyla veya doğrudan URL'ye erişerek erişilebilir olmaya devam edecektir.
+Gizli göster
+Yönet
+Navigasyon
+Gezinti öğelerinin Publish sitenizde görünme sırasını özelleştirmek için sürükleyip bırakın.
+Navigasyonda gizle
+Yönet
+Tema
+Siteniz için varsayılan renk düzenini seçin.
+Sisteme uyum sağlayın
+Açık / Koyu geçiş
+Ziyaretçinin Açık ve Koyu tema arasında kendi başına geçiş yapmasına izin verin.
+Navigasyonu göster
+Yayınlanan sitenizin sol tarafında yayınlanan tüm sayfaların bir listesini görüntüleyin.
+Arama çubuğunu göster
+Ziyaretçilerin sitenizdeki sayfaları ve başlıkları aramasını sağlayan gezinmenin üst kısmında bir arama çubuğu görüntüleyin.
+Grafik görünümünü göster
+Her sayfada küçük bir yerel grafik görüntüleyin.
+İçindekileri göster
+Her sayfada başlıkların ana hatlarını görüntüleyin.
+Geri bağlantıları göster
+Her sayfanın sonunda geri bağlantı bölümünü gösterin.
+Sürgülü pencereleri kullanın
+Sayfaları sağdaki yeni bölmelerde açın. Bölmeler arasında yatay olarak kaydırmaya izin verir.
+Fareyle üzerine gelindiğinde önizlemesini göster
+Bağlantılar üzerinde gezinirken sayfa önizlemesini görüntüle.
+Sayfa başlığını gizle
+Sayfa başlığı başlığını gizleyin. Her sayfanın başında kendi başlıklarınız olduğunda kullanışlıdır.
+Okunabilir satır uzunluğu
+Maksimum satır uzunluğunu sınırlayın. Ekrana daha az içerik sığdırır, ancak uzun paragrafları daha okunaklı hale getirir.
+Şifreler
+Şifrelerle sitenize erişimi kısıtlayın.
+Google Analytics takip kodu
+Siteniz için Google Analytics'i yapılandırın. Yalnızca özel alan URL'nizden gelen ziyaretçiler için kullanılabilir. Lütfen önce yerel yasalarınızı ve düzenlemelerinizi kontrol edin.
+Yönet
+Site ayarlarını kaydet
+Siteniz için güncellenmiş seçenekler.
+Geri
+Şuraya yayınlanıyor:
+Siteyi değiştir
+Bağlantılı ekle
+Şu anda seçili öğelerle bağlantılı tüm dosyaları ekle
+{{count}} bağlantılı dosya eklendi.
+{{count}} bağlantılı dosya eklendi.
+Site seçeneklerini değiştir
+Herhangi bir değişiklik tespit edilmedi.
+Değişiklikler
+Değiştirilmedi (silmek için seçin)
+seçilmiş
+Hepsini seç
+Navigasyon öğeleri
+Hepsini kaldır
+Yeni
+Yayınla
+Geçerli sitede yayınlama izniniz yok.
+Lütfen en az bir dosya seçin.
+Değişiklikleri yükle
+Tamamlandı
+Dur
+Yükleniyor
+Yayımla
+Sil
+Yayınlandı
+Silindi
+Başarısız oldu
+İptal edildi
+Değiştir
+Değişikliklerin sitenizde görünmesi birkaç dakika kadar sürer. En son değişikliklerinizi görmüyorsanız, tarayıcınızın önbelleğini temizlemeyi deneyin.
+Sitenizi buradan ziyaret edebilirsiniz: 
+Bir şeyler yanlış gitti. Ayrıntılar için lütfen geliştirici konsolunu kontrol edin.
+Bir ağ hatası oluştu. 
+Şifreleri yönet
+Şifre Ekle
+Yeni şifre
+Sitenizin şu anda herhangi bir şifresi yok. Herkes ziyaret edebilir.
+Siteniz şifre korumalıdır. Birden fazla parolanız varsa, ziyaretçiler bunlardan herhangi birini girerek sitenize erişebilir.
+Şifre
+Parolanızın karma güvenlik protokollü hali güvenli bir şekilde saklanacaktır. Parola ayarlandıktan sonra düz metin olarak gösterilemez.
+Sizin şifreniz
+takma ad (isteğe bağlı)
+Kendinize parolanın ne veya kime ait olduğunu hatırlatmak için bir takma ad belirleyin.
+Bu şifreyi ekle
+Adsız şifre
+Oluşturuldu {{time}}
+Yeni şifre eklendi.
+Özel alan adı
+https://publish.obsidian.md/{site id} URL'si yerine kendi alan adınızı kullanın.
+Arama motoru indekslemeye izin verme
+Arama motorlarının sitenizi dizine eklemesini önleyin.
+Yapılandırma
+Özel alan adını yapılandırın
+Özel URL
+Sitenizin bulunacağı URL.
+Özel alan adınıza yönlendirin
+Publish.obsidian.md/id adresindeki ziyaretçileri özel alan adınıza yönlendirin.
+Alan ayarını güncelle
+Daha fazla bilgi için lütfen yardım sitemizdeki {{link}} sayfamıza bakın.
+özel alan adı kurulum kılavuzu
+{{site}} limitinizin {{limit}} kadar alanını kullanıyorsunuz.
+Daha fazla site satın alın
+Herhangi bir site satın almadınız.
+Bir site alın
+"{{name}}" için paylaşımı yönetin
+Bu site şu anda aşağıdaki kişilerle paylaşılmaktadır.
+Bu site şu anda kimseyle paylaşılmamaktadır.
+Beklemede
+Kullanıcıyı kaldır
+Kullanıcı davet et
+E-postalarını girin...
+Birini davet etmek için lütfen geçerli bir e-posta girin.
+Siteleri görüntülemek için lütfen Ayarlar -> Çekirdek eklentiler bölümünden Yayınla çekirdek eklentisini etkinleştirin.
+Siteleriniz
+Sizinle paylaşılan siteler
+Bu sitede işbirliği yapmayı bırakın
+Durdurma sahası işbirliğini onaylayın
+Bu işlem, bu siteyi sizinle paylaşılan siteler listesinden kaldıracaktır. Bu işlem geri alınamaz.
+Bu sitede tekrar işbirliği yapmak istiyorsanız lütfen sitenin sahibiyle iletişime geçin.
+Ayrılmak
+Canlı versiyon ile karşılaştırın
+Canlı sürümü kullan
+Geçersiz kılınan yerel sürümü onayla
+Yerel sürümü geçersiz kılmak istediğinizden emin misiniz?
+Canlı sürüm kullanılacak ve yerel sürümünüz atılacaktır. Gerekirse lütfen yedekleme yapın.
+İlerlemek
+Yerel sürümünüzü geçersiz kılmak için canlı sürüm başarıyla kullandı.
+Canlı sitede aç
+Dosyayı aç
+Yayınlama filtrelerini yönetme
+Dahil edilen klasörler
+Yayımlanacak değişiklikleri gözden geçirdiğinizde bu klasörlerin altındaki dosyalar otomatik olarak seçilir.
+ Bu klasörler şu anda dahil edilmiştir:
+Hariç tutulan klasörler
+Yayımlanacak değişiklikleri gözden geçirdiğinizde bu klasörlerin altındaki dosyalar görünmez. Bu ayar, yukarıdaki klasörlere göre önceliklidir.
+Obsidian Publish şu anda {{folders}} içeriyor.
+Obsidian Publish şu anda {{folders}} hariç tutuluyor.
+Dahil edilen klasörleri yönetme
+Hariç tutulan klasörleri yönetme
+Bir klasör ekle
+Hem mevcut klasörleri hem de henüz oluşturulmamış klasörleri ekleyebilirsiniz.
+Destek ekibiyle iletişime geçin
+Gezinme önizlemesi
+Çalışma Alanları
+Çalışma alanı düzenini kaydedin ve yükleyin.
+Çalışma alanı düzenini yükle
+Çalışma alanı düzenlerini yönetme
+Düzeni kaydet
+Başka bir düzeni kaydedin ve yükleyin
+Geçerli çalışma alanı düzenini farklı kaydet...
+Kaydet
+Yükle
+Düzeni sil
+Lütfen yeni düzen için bir ad girin.
+Düzen başarıyla kaydedildi.
+Kaydedilmiş düzen bulunamadı.
+Değiştirilme zamanı{{time}}
+Düzen adını yazın...
+Senkronizasyon
+Dosyalarınızı Obsidian Sync ile senkronize edin.
+Sürüm geçmişini görüntüle
+Sync'i ayarla
+Sürüm geçmişini aç
+Senkronizasyon geçmişini göster
+Etkinlik günlüğünü aç
+Daha fazla göster
+Farkı göster
+Panoya kopyala
+Bu sürümü onar
+Bu sürüm zaten en son sürümdür.
+{{time}} tarihli sürüm başarıyla geri yüklendi
+Bu dosya silindi
+{{ device }} üzerinden silindi
+Bu dosya "{{filepath}}" adından yeniden adlandırıldı
+“{{from}}” öğesinden “{{to}}” olarak yeniden adlandırıldı
+“{{from}}” konumundan taşındı
+“{{from}}” konumundan “{{to}}” konumuna taşındı
+1 revizyon
+{{revisions}} revizyon
+{{device}} üzerinden
+Bu dosya için senkronizasyon geçmişi bulunmuyor.
+Boş
+Sürüm geçmişi alınamadı
+Ayarlar klasörü
+Silinenler Klasörü
+Sürüm geçmişi
+Geçmişini görmek için silinen bir dosyaya tıklayın.
+Uzak erişim kasası oluştur
+Lütfen bir şifre girin.
+Kasa adı boş olamaz.
+Uzak erişim kasası "{{name}}" başarıyla oluşturuldu.
+Uzak kasalar, kasanızı cihazlar arasında güvenli bir şekilde senkronize eder.
+Kasa adı
+Bu kasanın ne için olduğunu hatırlamanıza yardımcı olur.
+Bölge
+Otomatik
+Size en yakın sunucu bölgesini seçerek uzak depoyu saklayın. Bu seçim ileride değiştirilemez.
+benim harika kasam
+Şifreleme
+Uçtan uca şifreleme en güçlü güvenliği sunar ancak şifreleme parolanızı güvenli bir şekilde saklamanızı gerektirir. Standart şifreleme, verilerinizi aktarım sırasında ve sunucularımızda korumak için Obsidian tarafından yönetilen bir anahtar kullanır.
+Bu seçenek daha sonra değiştirilemez.
+Uçtan uca şifreleme
+Standart şifreleme
+Şifreleme şifresi
+Bu şifre daha sonra değiştirilemez.
+Bu parolayı unutursanız, herhangi bir uzak veri sonsuza kadar kullanılamaz kalacaktır.
+Bu, yerel verilerinizi etkilemez.
+ Uzak depo “{{name}}” şu anda şifreli. Kilidini açmak için şifrenizi girin.
+Şifreniz
+Uzak depoyu kilitle
+Kasanın kilidini aç
+Uzak kasalarınız
+{{time}} tarihinde oluşturuldu.
+Sil
+Yeniden Adlandır
+Uzak depoyu "{{name}}" olarak yeniden adlandır
+Bu uzak depo için yeni bir isim girin.
+Paylaşımı yönet
+Kasayı silme işlemini onayla
+Bu uzaktan erişim kasasını silmek istediğinizden emin misiniz?
+Sürüm Geçmişi dahil olmak üzere sunucumuzdaki tüm veriler silinir. Yerel dosyalarınız bozulmadan kalacaktır.
+Bu işlem kalıcıdır ve geri alınamaz
+{{name}} silindi.
+Obsidian Sync: Bağlı uzak depo artık mevcut değil.
+Bağlan
+Bağlantıyı kes
+
+Uzaktan bağlantılı kasanız yok.
+Aktif bir Obsidian Sync aboneliğiniz bulunmuyor.
+Lütfen ziyaret edin
+{{type}} dosyalarını önizleyemiyor.
+Yeni kasa oluştur.
+Senkronizasyon günlüğü
+Tümü
+Hatalar
+Atlandı
+Çakışmaları birleştir
+Senkronizasyon günlüğünü kopyala
+Senkronizasyon günlüğü başarıyla kopyalandı.
+Yeniden dene
+Satın Al
+Çakışan dosya eşitleme servisi algılandı
+Uyarı: Kasanız, üçüncü taraf senkronizasyon hizmeti olarak {{service}} kullanıyor gibi görünüyor. Bu kasa ile Obsidian Sync kullanırsanız, çakışma, dosya bozulması veya veri kaybı yaşayabilirsiniz.
+iCloud Drive kullanıyorsanız Belgeler ve Masaüstü klasörleriniz iCloud tarafından eşzamanlanabilir. Bu, Obsidian Sync ile çakışmalara neden olabilir.
+Uzak kasa
+Seç
+Yönetmek
+Şu anda "{{name}}" uzak kasasına bağlı.
+Şu anda herhangi bir uzak kasaya bağlı değil.
+Senkronizasyon durumu
+Obsidian Sync şu anda duraklatıldı.
+Obsidian Sync şu anda çalışıyor.
+Cihaz Adı
+Bu ad, eşitleme günlüğünde görüntülenecektir. Varsayılan adı kullanmak için boş bırakın.
+Devam et
+Dur
+Silinen dosyalar
+Silinen dosyaları görüntüleyin ve geri yükleyin.
+Senkronizasyon etkinliği
+Hata ayıklama için son senkronizasyon etkinliklerini görüntüleyin.
+Görüntüleme
+Toplu geri yükleme
+Dosyaları geri yükle
+{{count}} dosyayı geri yükle
+{{count}} dosyayı geri yükle
+Geri yükleniyor...
+Geri yükleme tamamlandı: {{succeeded}} başarılı ve {{failed}} başarısız oldu.`
+Kasa boyutu
+Kullanılan alan: {{size}} / {{limit}}
+Kasa boyutunuz alınamıyor.
+Kasa boyutunuz alınıyor...
+Kasa boyutu limiti aşıyor
+Kasa boyutu limite yaklaşıyor
+En büyük dosyaları görüntüle
+Bunlar en fazla yer kaplayan uzak dosyalardır. Ekleri sildikten sonra, uzak kasa alanını boşaltmak için temizleme düğmesini kullanın.
+Depolamayı yükselt
+Temizle
+Değiikliklerimi gizle
+Yer kazanmak için silinen ekleri uzak kasadan kalıcı olarak temizleyin.
+Temizleme tamamlandı.
+Cihaz uykusunu önleyin
+Henüz senkronize edilecek dosyalar bulunurken cihazın uyku moduna geçmesini engeller.
+Seçici senkronizasyon
+Hariç tutulan klasörler
+Belirli klasörlerin senkronize edilmesini önleyin.
+ Şu anda hariç tutulan klasörler:
+Yönet
+Resimleri senkronize et
+Resim dosyalarını şu uzantılarla senkronize edin: {{extensions}}.
+Sesi senkronize et
+Ses dosyalarını şu uzantılarla senkronize edin: {{extensions}}.
+Videoları senkronize et
+Video dosyalarını şu uzantılarla senkronize edin: {{extensions}}.
+PDF dosyalarını senkronize et
+PDF dosyalarını senkronize edin.
+Diğer tüm türleri senkronize et
+Desteklenmeyen dosya türlerini senkronize edin.
+Kasa ayarları senkronizasyonu
+Ayarlar sürüm geçmişi
+Ayar dosyalarının sürüm geçmişini görüntüleyin ve geri yükleyin.
+Ana ayarlar
+Düzenleyici ayarlarını, dosyaları & bağlantı ayarlarını, özel kısayol tuşlarını vb. senkronize etmeyi etkinleştirin.
+Görünüm ayarları
+Karanlık mod, etkin tema ve etkinleştirilmiş snippet'ler gibi görünüm ayarlarını senkronize edin.
+Temalar ve snippet'ler
+İndirilen temaları ve snippet'leri senkronize edin. Etkin olup olmadıkları önceki ayara bağlıdır.
+Kısayol tuşları
+Özel kısayol tuşlarını senkronize edin.
+Aktif çekirdek eklenti listesi
+Hangi çekirdek eklentilerin etkinleştirildiğini senkronize edin.
+Çekirdek eklenti ayarları
+Çekirdek eklenti ayarlarını senkronize edin.
+Aktif topluluk eklenti listesi
+Hangi topluluk eklentilerinin etkinleştirildiğini senkronize edin.
+Yüklü topluluk eklentileri
+Yüklü topluluk eklentilerini (.js, .css ve manifest.json dosyaları) ve ayarlarını senkronize edin.
+Sync hâlâ yükleniyor, lütfen bu sayfayı daha sonra yenileyin.
+Obsidian Sync, Obsidian'ın uçtan uca şifreleme ve sürüm geçmişine sahip eklenti senkronizasyon hizmetidir.
+Senkronizasyonu başlatmak için lütfen giriş yapın veya yeni bir Obsidian hesabı oluşturun.
+Mevcut dosya
+Değişiklikleri senkronize et
+Bugün
+Dün
+Bu hafta
+Daha eski
+Son senkronizasyon
+{{count}} daha fazla
+Üye ol
+Giriş yap
+Hariç tutulan klasörleri yönet
+{{folders}} şu anda senkronize edilmenin dışında tutuluyor.
+Bir klasörü hariç tut
+Hem mevcut klasörleri hem de henüz oluşturulmamış klasörleri hariç tutabilirsiniz.
+Hariç tutulanlar listesinden kaldır
+Bağlantı kurulumu
+Bağlanıyor...
+Bağlantı başarısız oldu
+Uzak kasaya bağlanılamadı.
+Artık "{{name}}" adresine bağlısınız.
+Senkronizasyonu başlat
+Kasayı Birleştirmeyi Onaylayın
+Yerel kasanız zaten bazı notlar içeriyor.
+Uzak kasaya "{{name}}" bağlanırsanız, yerel kasanızdaki notlar uzak kasanızdaki notlarla birleştirilir. Çakışma durumunda, notun en son sürümü korunacaktır.
+Lütfen bu seçeneği güncelleyin ve etkili olmasını istediğiniz tüm cihazlarda uygulamayı yeniden başlatın.
+Bu uzak kasa şu anda aşağıdaki kişilerle paylaşılmaktadır.
+Bu uzak kasa şu anda kimseyle paylaşılmıyor.
+Sizinle paylaşılan kasalar
+Bu kasada işbirliği yapmayı bırak
+Kasa işbirliğini durdurmayı onayla
+Bu, bu kasa sizinle paylaşılan kasalar listesinden kaldıracaktır. Bu eylem geri alınamaz.
+Bu kasada tekrar işbirliği yapmak isterseniz lütfen kasanın sahibiyle iletişime geçin.
+Ayrıl
+Uzak depolar yüklenemedi.
+Bu kasaya bağlanmak için Obsidian Sync aboneliğine ihtiyacınız var.
+Destek ekibiyle iletişime geçin
+Obsidian Sync ile ilgili herhangi bir sorunla karşılaşırsanız, size yardımcı olabilmemiz için lütfen bizimle iletişime geçin! Bize şu adresten ulaşabilirsiniz support@obsidian.md.
+Hata ayıklama bilgisini kopyala
+E-posta desteği
+Sync uzak bir depoya bağlı değil.
+Obsidian Sync 5 adede kadar uzak kasa oluşturmanıza izin verir. Yeni bir uzak kasa oluşturmak için lütfen mevcut bir kasayı kaldırın.
+Kasayı yükselt
+Kasa şifrelemesini yükselt
+Uzak kasalar için yeni bir şifreleme sürümü mevcut.
+Uzak kasayı taşı
+Uzak kasa yapılandırması
+Taşı
+Bu işlem uzak kasanızı siler ve en son şifreleme ile yeniden oluşturur. Yerel dosyalar etkilenmez, ancak sürüm geçmişiniz kaybolur.
+Kasa taşımasını onayla
+Şifrelemenizi yükseltmek için kasadaki tüm veriler yeni şifreleme yöntemi kullanılarak Obsidian Sync sunucularına yeniden yüklenecek. Bu işlem, kasanızın sürüm geçmişi dahil olmak üzere eski şifreleme ile şifrelenmiş tüm verileri kalıcı olarak silecektir.
+Önemli: Olası veri kaybını önlemek için devam etmeden önce kasanızın bir yedeğini oluşturmanızı önemle öneririz.
+Yükseltmeyi tamamladıktan sonra tüm cihazlarınızı güncellenmiş uzak kasaya yeniden bağlamanız gerekecek.
+Kasanızı taşımak biraz zaman alabilir. Tüm notlarınızı ve eklerinizi yeniden yüklemek için bu cihazda Obsidian'ı etkin tutmanız gerekecek. Bunu birincil cihazınızda yapmak en iyisidir.
+Devam etmek istiyor musunuz?
+Kasa taşıma işlemi devam ediyor.
+Kasa taşıma işlemi tamamlandı.
+Çakışma çözümleme
+Bir not birden fazla cihazda bağımsız olarak değiştirildiğinde çakışmaların nasıl çözüleceğini seçin.
+Otomatik olarak birleştir
+Çakışma dosyası oluştur
+Dosya Kurtarma
+Yanlışlıkla veri kaybından kurtulmak için en son anlık görüntüleri geri yüklemenize izin verin. Anlık görüntüler yalnızca Markdown dosyaları için kaydedilir.
+Kaydedilmiş anlık görüntüleri aç
+Anlık görüntü aralığı
+İki anlık görüntü arasında dakika cinsinden minimum aralık.
+Geçmiş uzunluğu
+Anlık görüntülerin gün cinsinden depolanma uzunluğu.
+Anlık görüntüler
+Kaydedilen anlık görüntüleri görüntüleyin ve geri yükleyin.
+Görüntüle
+Geçmişi temizle
+Tüm anlık görüntüleri silin.
+Temizle
+Tüm anlık görüntüleri silmek istediğinizden emin misiniz? Yalnızca anlık görüntülerin kaldırılacağını unutmayın. Kasanızdaki tüm dosyalar etkilenmeyecektir.
+Anlık görüntüler temizlendi.
+Anlık görüntü bulunamadı.
+Bir dosya seçin...
+Anlık görüntüleri görüntülemek için lütfen soldan bir dosya seçin.
+Not Oluşturucu
+Notları birleştir, böl ve yeniden düzenle
+Dosya birleştirmeyi onaylayın
+İki dosyayı birleştirmeden önce sor.
+Çıkardıktan sonra metin
+Seçili metin ayıklandıktan sonra yerine ne gösterilecek.
+Yeni dosyaya bağlantı
+Yeni dosya göm
+Hiçbir şey
+Şablon dosya konumu
+Birleştirirken veya ayıklarken kullanılacak şablon dosyası. Kullanılabilir değişkenler: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.
+Geçerli dosyayı başka bir dosyayla birleştir...
+Dosyanın tamamını şununla birleştir...
+Dosya bulunamadı.
+Yönlendirme
+Birleştirme
+Yeni bir tane oluştur
+Üstte birleştir
+Vazgeç
+Birleştirilecek dosyayı seçin...
+Dosyayı birleştir
+"{{file}}" öğesini "{{destination}}" ile birleştirmek istediğinizden emin misiniz? "{{file}}" silinecek.
+Birleştir
+Geçerli seçimi çıkar...
+Bu başlığı çıkartın...
+aşağıya doğru hareket ettir
+yukarıya doğru hareket ettir
+Şablon dosyası getirilemedi: "{{template}}" bulunamadı.
+Başlık bulunamadı
+Web görüntüleyici
+Web geçmişi
+Harici bağlantıları Obsidian içinde web sayfaları olarak açın.
+Web görüntüleyiciyi aç
+Geçmişi göster
+Okuyucu modunu aç/kapat
+URL'yi kopyala
+Geçmişten kaldır
+Geçmişi temizle
+Bağlantıyı aç
+Bağlantıyı yeni sekmede aç
+Bağlantıyı sağda aç
+Bağlantıyı yeni pencerede aç
+Bağlantıyı varsayılan tarayıcıda aç
+Bağlantıyı web görüntüleyicide aç
+Bağlantı adresini kopyala
+Bağlantıyı yer imlerine ekle
+“{{query}}” ara
+Seçimi yeni nota çıkar
+Kopyala
+Kes
+Yapıştır
+Sil
+Tümünü seç
+Kasaya kaydet
+Görseli kasaya kaydet
+Görsel bağlantısını kopyala
+Geri
+İleri
+Yenile
+Sayfayı yer imlerine ekle
+Varsayılan tarayıcıda aç
+Adres çubuğuna odaklan
+Web'de ara
+Verileri temizle
+Çerezler
+Web sitelerinden çıkış yapmanıza neden olabilir.
+Önbelleğe alınmış veriler
+Geçmiş
+Tüm web görüntüleyici verileri
+Yukarıdakilerin tümünü; ayrıca yerel depolamayı ve etkin oturumları kaldırır.
+Yeni web görüntüleyici
+Unable to load that site.
+Please make sure you have the correct address.
+Web'de ara
+Web görüntüleyici verileri
+Web görüntüleyici verilerini temizle
+Harici bağlantıları aç
+Bağlantıları sistem varsayılanı yerine Obsidian içinde aç.
+Ana sayfa
+Bir web görüntüleyici açıldığında görüntülenecek sayfa
+Kaydedilen sayfa klasörü
+Markdown olarak kaydedilen web siteleri buraya yerleştirilecek.
+Arama motoru
+Adres çubuğundan arama yaparken kullanılan arama motoru.
+Özel arama motoru
+Sorgu yerine %s kullanın.
+Özel
+Reklam engelleyiciyi etkinleştir
+Etkinleştirilirse, aşağıdaki filtre listeleri tüm web görüntüleyici sekmelerine uygulanır.
+Reklam engelleme kuralları
+Her satıra bir reklam engelleme listesi URL'si. Tüm kasalar arasında paylaşılır.
+Reklam engelleme güncelleme sıklığı
+Filtre listelerinin güncellenmesi arasındaki gün sayısı. 0 devre dışı olduğunu belirtir. Tüm kasalar arasında paylaşılır.
+Web görüntüleyici verilerini temizle
+Unexected error extracting content.
+Çıkarılacak içerik bulunamadı.
+Tuval
+Sonsuz bir tuval üzerinde notları düzenleyin ve bağlayın.
+Kasadan not ekleyin
+Kasadan medya ekleme
+Kart ekle
+Web sayfası ekle
+Grup oluştur
+Belirli boyutta bir kart oluşturun
+Dosyaya dönüştür...
+Kasadan not eklemek için sürükleyin
+Kasadan medya eklemek için sürükleyin
+Kart eklemek için sürükleyin
+Etiketi düzenle
+Etiketi çıkarın
+Dosya arama
+Renk ayarla
+Hizala
+Sola hizala
+Merkezi hizala
+Sağa hizala
+Üst kısmı hizala
+Ortayı hizala
+Alt kısmı hizala
+Yatayda boşlukları dağıtın
+Dikeyde aralıkları dağıtın
+Yatayda eşit yasla
+Dikeyde eşit yasla
+Bir satır halinde düzenle
+Bir sütun halinde düzenle
+Bir ızgara şeklinde düzenle
+Görüntü olarak dışa aktar
+Gruba git
+Arka planı ayarla
+Arka planı düzenle
+Arka planı değiştir
+Arka planı kaldır
+Resim bulunamadı.
+Medya bulunamadı.
+"{{title}}" aşağıdaki ayarlarla bir PNG dosyası ile dışa aktarın.
+Tahmini görüntü boyutları: {{dimensions}}
+Dağıt
+Yasla
+Sırala
+Daima
+Üzerine gelindiğinde
+Asla
+Bölüm bulunamadı
+Varsayılan fare tekerleği davranışı
+Varsayılan {{key}} davranışı
+Menüyü göster
+Yeni tuval dosyaları için varsayılan konum
+Yeni tuval dosyalarının yerleştirileceği konum.
+Yeni tuval dosyalarının oluşturulacağı klasör
+Yeni oluşturulan tuval dosyaları bu klasörün altında görünecektir.
+Kart etiketini görüntüle
+Izgaraya tuttur
+Kartları taşırken veya yeniden boyutlandırırken arka plan ızgarasına tutturun.
+Nesnelere tuttur
+Kartları Taşırken ve yeniden boyutlandırırken yakındaki nesnelere tutturun.
+Kart içeriğini gizlemek için yakınlaştırma eşiği
+Daha düşük değerler performansı artırır ancak uzaklaştırma sırasında kart içeriğini daha erken gizler.
+Logoyu göster
+Bu, sol alt kısma bir Obsidian logosu ekleyecektir.
+Gizlilik modu
+Bu, tuvalinizdeki herhangi bir metni gizleyecektir.
+Yakınlaştır
+Daha yüksek bir yakınlaştırma daha yüksek çözünürlüklü bir görüntü oluşturacaktır.
+Görünüm alanı
+Tüm tuvali veya yalnızca geçerli görünür görünüm alanını oluşturmayı seçin.
+Tam tuval
+Yalnızca görüntü alanı
+Kapak
+En-boy oranını koru
+Tekrar
+Yeni tuval
+Çoğalt
+Kaldır
+Başlığa daralt...
+Bloğa daralt...
+Görünümü sabitle...
+Dosya değiştir...
+URL'yi değiştir...
+Sığdırmak için yakınlaştır
+Seçime yakınlaştır
+Sayfayı yeniden yükle
+Bağlantıyı takip et
+Yeni tuval oluşturun
+Dosyaya dönüştür...
+başlığı gömmek için
+bloğu gömmek için
+gruba gitmek için
+Başlığın adını yazın
+URL Girin
+"{{linktext}}" bulunamadı.
+Metin ekleyin...
+Aramak için yazın...
+Tuval yardım
+Tuval ayarları
+Tüm dosyayı göster
+Varsayılan görünümü göster
+Salt okunur
+Salt okunur olmayı devre dışı bırak
+Kaydırma
+Yatay kaydırma
+Yakınlaştır
+Tümünü seçin
+Seçime ekleme / seçimden çıkarma
+Klon kartı
+Kart hareketini eksene kısıtlama
+Sürükleme sırasında yapışmayı devre dışı bırakma
+Kartı çıkarın
+Aşağıdan sürükleyin veya çift tıklayın
+Eklemek / taşımak / seçmek için dokunun ve tutun
+Kaydırmak için sürükleyin
+Yakınlaştırmak için sıkıştırın
+Kaydırmak için Boşluk + Sürükleme
+Yakınlaştırmak için kaydırın
+İsimsiz grup
+Satır yönü
+Yönsüz
+Tek yönlü
+Çift yönlü
+Resim
+Stil
+Grup bulunamadı
+Boş bir tuval dışa aktarılamaz
+Canvas, {{count}} tuval dosyasını etkileyen dosya yeniden adlandırmalarını algıladı, güncelleniyor...
+Canvas, {{count}} tuval dosyasını etkileyen dosya yeniden adlandırmalarını algıladı, güncelleniyor...
+Canvas, {{count}} gömülü kartı güncelledi
+Canvas, {{count}} gömülü kartı güncelledi
+Tabanlar
+Create bases by querying note properties.
+Yeni taban
+Add property
+"{{name}}" özetini ekle
+Formül ekle
+Tümünü gizle
+Görünürlüğü değiştir
+Formülü sil
+Varsayılan görünüm
+Görünümü çoğalt
+Görünümü sil
+Özeti sil
+CSV dışa aktar...
+Yeni taban oluştur
+Yeni taban ekle
+Tabloyu panoya kopyala
+Change view
+Görünüm ekle
+Öğe ekle
+Görünüm ekle
+Filtre ekle
+Filtre grubu ekle
+Tümünü göster
+Tümünü göster ({{count}})
+Özet ekle
+Özeti gizle
+Tüm görünümler
+Bu görünüm
+Bul veya oluştur...
+Hesaplanan özellikler
+Özellik türü
+Özelliği gizle
+Özelliği göster
+Özelliği düzenle
+{{name}} düzenle
+Görünümü yapılandır
+Düzen
+Genel filtreler
+Görünüm filtreleri
+Görünüm adı
+Görünüm
+Tablo
+Görünen ad
+Özet adı
+Formül
+Görünümler
+Sırala
+Filtre
+Ara
+Özellikler
+Yeni
+{{count}} gösteriliyor
+Yeni öğe şablon dosyası
+Yeni öğe klasörü
+Aşağıdakilerden herhangi biri doğru
+Aşağıdakilerin tümü doğru
+Aşağıdakilerin hiçbiri doğru değil
+koşul
+veya
+ve
+Özellik
+Başlıksız
+dosya
+name
+dosya temel adı
+dosya tam adı
+path
+klasör
+extension
+oluşturulma zamanı
+değiştirilme zamanı
+dosya boyutu
+dosya geri bağlantıları
+dosya bağlantıları
+dosya gömmeleri
+dosya etiketleri
+Sıralama ekle
+Grupla
+Şuna göre sırala
+Sonuç sayısını sınırla
+
+
+Eskiden yeniye
+Yeniden eskiye
+
+
+Görünüm adı şunları içeremez: 
+Görünüm adı zaten var.
+Görünüm adı boş olamaz.
+Bu filtre basit filtre oluşturucu tarafından temsil edilemez.
+Filtre ayrıştırılamıyor. Temel filtre oluşturucu kullanılamaz.
+Geçersiz özellik yapılandırması.
+"{{ name }}" için geçersiz özellik yapılandırması.
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+Taban dosyanız ayrıştırılamıyor:
+"{{ view }}" görünümü bulunamadı
+Base configured with an unknown view type: {{ viewtype }}
+Görünümler bir dizi olmalıdır
+Görüntüleme değerleri string olmalıdır. Özellik {{ key }} için değer string değil.
+"{{ key }}" bir {{ type }} olmalıdır
+"filters" bir string veya bir nesne olmalıdır
+"{{ conjunction }}" filtresi bir dizi olmalıdır
+"filters" yalnızca "and", "or" veya "not" anahtarlarından birine sahip olabilir.
+Bir filtre değerlendirilemedi: {{ message }}
+Formül değerleri string olmalıdır. Özellik {{ key }} için değer string değil.
+"{{ key }}" özelliğinin değeri hesaplanamadı: {{ message }}
+Sorgu geçersiz bir biçimde. Bir YAML nesnesi olmalıdır.
+"view" öğeleri bir YAML nesnesi olmalıdır; ancak {{ index }} öğesi değil
+{{ index }} görünümünde "name" eksik veya geçersiz
+"{{ viewName }}" görünümünde "{{ key }}" zorunludur
+"{{ viewName }}" görünümünde "{{ key }}" bir {{ type }} olmalıdır
+"{{ viewName }}" görünümünde "{{ key }}" değerlerinin tümü {{ type }} türünde olmalıdır
+"{{ viewName }}" görünümündeki filtreler ayrıştırılamıyor: {{ message }}
+Formülde sonsuz döngü algılandı
+Geçersiz özellik
+Bu not, ölçütlerinize uymadığı için filtrelenecek
+Gelişmiş filtre
+örn. 10
+Gelişmiş filtre
+Basit filtre
+Filtreyi kaldır
+Yok
+Liste
+İşaretçiler
+Özellikleri girintile
+Özellik ayırıcı
+Madde işareti
+Numara
+Yok
+Kartlar
+Kart boyutu
+Görsel özelliği
+Görseli sığdırma
+Kapla
+İçer
+Görsel en-boy oranı
+Tablo
+Sütunu gizle
+Özelliği düzenle...
+Formülü düzenle...
+Sıralamayı temizle
+A → Z sırala
+Z → A sırala
+Satır yüksekliği
+Kısa
+Orta
+Uzun
+Ekstra uzun
+Özetle...
+Bu özelliğe göre grupla
+Değerleri temizle
+Özet
+"{{ formula }}" formülü ayrıştırılamadı
+"{{ function }}" işlevi bulunamıyor
+{{ type }} türünde "{{ function }}" işlevi bulunamıyor
+"{{ function }}" işlevi çağrılamıyor, yeterli bağımsız değişken yok.
+"{{ function }}" işlevi çağrılamıyor, çok fazla bağımsız değişken var.
+"{{ function }}" içinde tür hatası, "{{ parameter }}" parametresi. Beklenen {{ expected }}, verilen {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Hepsini vurgula
+Diyakritik işaretleri eşleştir
+Kelimenin tamamı
+Küçük resimler
+İçerik tablosu
+Sayfayı içerik tablosunda göster
+Kenar çubuğunu aç/kapat
+Önceki sayfa
+Sonraki sayfa
+Genişiği sığdır
+Yüksekliği sığdır
+Mevcut konumu belgede kaydet
+Notu kopyala
+Alıntı olarak kopyala
+Seçimin linkini kopyala
+Etiketin linkini koptala
+Bölüme bağlantıyı kopyala
+“{{title}}” başlığına bağlantıyı kopyala
+{{page}} numaralı sayfaya bağlantıyı kopyala
+{{current}} / {{limit}} eşleşme
+{{current}} / {{total}} eşleşme
+{{current}} / {{total}} eşleşme
+Bu PDF, şifre korumalı
+Geçersiz şifre
+Şifreyi aşağı girin
+/ {{count}}
+({{current}} / {{count}})
+Tek sayfa
+İki sayfa (tek sayıda)
+İki sayfa (çift sayıda)
+Kenar çubuğu seçenekleri
+Görüntü seçenekleri
+Tema uyumlu hale getir
+sayfa {{page}}
+Sayfa {{page}}
+Sayfa {{page}}
+Sayfa {{page}}
+[{{type}} Etiketleme]
+
+Liste
+Bilinmiyor
+Metin
+Takma adlar
+Etiketler
+Klasör
+Dosya
+Özellik
+Tarih
+Tarih ve zaman
+Sayı
+Onay kutusu
+Yazın [[
+notaya bağlantı oluşturmak için
+kapatmak için
+Özellik tipi
+Sırala
+Özellik adı boş olamaz.
+Özellik zaten mevcut.
+Geçersiz etiket adı
+Geçersiz numara
+Özellikler okunamadı.
+Değer yok
+Özellikler
+Geçersiz özellikler
+Kaynağı göster
+Sözdizimi hatası. Frontmatter geçersiz.
+Özellik ekle
+Uyumsuz tip, beklenen tip: {{type}}
+Tür uyumsuzluğu
+{{type}} olarak gösterilsin mi?
+{{oldType}} verileriniz uyumlu değil. Yeni formata uyacak şekilde uyarlanacak.
+Sütun
+Satır
+Sonrasına satır ekle
+Sonrasına sütun ekle
+Öncesine satır ekle
+Satırı yukarı taşı
+Satırı aşağı taşı
+Öncesine sütun ekle
+Sütunun soluna taşı
+Sütunun sağına taşı
+Satırı kopyala
+Sütunu kopyala
+Satırı sil
+Sütunu sil
+Sola hizala
+Ortala
+Sağa hizala
+Hücreleri sil
+Hücreleri temizle
+Sütunu sırala (A'dan Z'ye)
+Sütunu sırala (Z'den to A'ya)
+Tablo: {{command}}
+Callout türü
+Bilgi
+Önemli
+İpucu
+Başarı
+Soru
+Uyarı
+Alıntı
+Örnek
+Yok
+Diğer...
+Callout türü...
+
+{{count}} kelime
+{{count}} kelime
+{{count}} sonuç
+{{count}} sonuç
+{{count}} karakter
+{{count}} karakter
+{{count}} bağlantı
+{{count}} bağlantı
+{{count}} dosya
+{{count}} dosya
+{{count}} klasör
+{{count}} klasör
+{{count}} geri bağlantı
+{{count}} geri bağlantı
+{{count}} sekme
+{{count}} sekme
+{{count}} özellik
+{{count}} özellik
+
+{{count}} site
+{{count}} eklenti
+{{count}} eklenti
+{{count}} etkin
+{{count}} parçacık
+{{count}} parçacık
+{{count}} tema
+{{count}} tema

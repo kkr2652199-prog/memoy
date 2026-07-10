@@ -1,0 +1,781 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<html lang="ko">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120909951-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120909951-1');
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>웨더아이 - 날씨로부터의 자유, 날씨와 함께하는 행복</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="/images/style_13.css">
+<link rel="shortcut icon" TYPE="image/x-icon" href="https://api3.weatheri.co.kr/web/images/sicon.png" />
+<link rel="icon"  TYPE="image/x-icon" href="https://api3.weatheri.co.kr/web/images/sicon.png" />
+<script src="/images/AC_RunActiveContent.js" language="javascript"></script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFFFF;
+}
+-->
+</style>
+<script language='javascript'>
+     var cnt = new Array();
+     
+     cnt[0] = new Array("" , "선택","11A00101" , "백령도","11A00102" , "연평도","11A00103" , "소청도","11B10101" , "서울",	"11B20101" , "강화",	"11B20102" , "김포","11B20201" , "인천","11B20202" , "시흥","11B20301" , "의정부","11B20302" , "고양","11B20303" , "파주","11B20304" , "양주","11B20305" , "문산",	"11B20401" , "동두천",	"11B20402" , "연천",	"11B20403" , "포천",	"11B20404" , "가평",	"11B20501" , "구리",	"11B20502" , "남양주",	"11B20503" , "양평",	"11B20601" , "수원",	"11B20602" , "안양",  	"11B20603" , "오산",  	"11B20604" , "화성",	"11B20605" , "성남",	"11B20606" , "평택",	"11B20701" , "이천",  "11B20702" , "광주" );
+     cnt[1] = new Array("" , "선택",	"11D10101" , "철원","11D10102" , "화천","11D10201" , "인제","11D10202" , "양구","11D10301" , "춘천","11D10302" , "홍천","11D10401" , "원주","11D10402" , "횡성","11D10403" , "치악","11D10501" , "영월","11D10502" , "정선","11D10503" , "평창");
+	 cnt[2] = new Array("" , "선택","11D20101" , "설악","11D20201" , "대관령",	"11D20202" , "진부","11D20301" , "태백","11D20401" , "속초","11D20402" , "고성",	"11D20403" , "양양","11D20501" , "강릉","11D20601" , "동해","11D20602" , "삼척");
+     cnt[3] = new Array("" , "선택",	"11C10101" , "충주","11C10102" , "진천","11C10103" , "음성","11C10201" , "제천","11C10202" , "단양","11C10301" , "청주","11C10302" , "보은","11C10303" , "괴산","11C10401" , "추풍령","11C10402" , "영동","11C10403" , "옥천");
+	 cnt[4] = new Array("" , "선택","11C20101" , "서산",	"11C20102" , "태안",	"11C20103" , "당진",	"11C20104" , "홍성","11C20201" , "보령","11C20202" , "서천","11C20301" , "천안","11C20302" , "아산","11C20401" , "대전","11C20402" , "공주","11C20501" , "부여","11C20502" , "청양","11C20601" , "금산",	"11C20602" , "논산");
+     cnt[5] = new Array("" , "선택",	"11F10101" , "군산","11F10102" , "김제","11F10103" , "고창",	"11F10104" , "부안","11F10201" , "전주","11F10202" , "익산",			"11F10203" , "정읍",	"11F10301" , "장수",	"11F10302" , "무주",	"11F10303" , "진안",	"11F10401" , "남원",	"11F10402" , "임실","11F10403" , "순창");
+     cnt[6] = new Array("" , "선택",	"11F20101" , "무안","11F20102" , "함평","11F20103" , "영광","11F20201" , "목포","11F20202" , "신안",	"11F20203" , "영암",	"11F20204" , "진도",  	"11F20301" , "완도",  "11F20302" , "해남",  "11F20303" , "강진",  "11F20304" , "장흥",  "11F20305" , "완도항",  "11F20401" , "여수",  "11F20402" , "광양",  "11F20403" , "고흥",  "11F20404" , "보성",  	"11F20405" , "순천",  	"11F20406" , "여수항",  "11F20407" , "녹동항",  "11F20501" , "광주",  "11F20502" , "장성",  "11F20503" , "나주",  "11F20504" , "담양",  "11F20601" , "구례",  "11F20602" , "곡성",  	"11F20603" , "순천(주암)",  "11F20701" , "흑산도");
+     cnt[7] = new Array("" , "선택",	"11H10101" , "울진",  "11H10102" , "영덕",	"11H10201" , "포항","11H10202" , "경주",	"11H10301" , "문경","11H10302" , "상주","11H10303" , "예천","11H10401" , "영주","11H10402" , "춘양","11H10403" , "영양","11H10501" , "안동","11H10502" , "의성","11H10503" , "청송",		"11H10601" , "김천",	"11H10602" , "구미",	"11H10603" , "군위","11H10604" , "고령","11H10605" , "성주","11H10701" , "대구",	"11H10702" , "영천",	"11H10703" , "경산","11H10704" , "청도","11H10705" , "칠곡");
+     cnt[8] = new Array("" , "선택",	"11H20101" , "울산","11H20102" , "양산","11H20201" , "부산","11H20301" , "창원","11H20302" , "마산","11H20303" , "진해","11H20304" , "김해","11H20401" , "통영","11H20402" , "사천","11H20403" , "거제","11H20404" , "고성","11H20405" , "남해","11H20406" , "하동(해안)",	"11H20501" , "함양","11H20502" , "거창","11H20503" , "합천","11H20601" , "밀양","11H20602" , "의령","11H20603" , "함안",	"11H20604" , "창녕",	"11H20701" , "진주",	"11H20702" , "하동(내륙)",	"11H20703" , "산청");
+     cnt[9] = new Array("" , "선택",	"11G00101" , "성산포",  "11G00201" , "제주",  "11G00202" , "제주항",  "11G00301" , "윗세오름",  "11G00401" , "서귀포",  	"11G00501" , "고산");
+     cnt[10] = new Array("" , "선택","11E00101" , "울릉도",	"11E00102" , "독도");
+   
+     function change(add) {
+     sel=document.formregion.select2
+       for (i=sel.length-1; i>=0; i--){
+         sel.options[i] = null
+         }
+		 var c=0;
+       for (i=0; i < cnt[add].length;i=i+2){
+		   
+                         sel.options[c] = new Option(cnt[add][i+1], cnt[add][i]);
+         c=c+1;
+		 }         
+     }
+</script>
+<script type="text/javascript">
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+
+  window.open(theURL,winName,features);
+
+}
+
+</script>
+<script language="javascript">
+function menu_view(a){
+
+	for (i=1;i<9;i++ )
+	{
+
+		if(a==i){
+		document.getElementById("bottom"+i).style.display = "block";
+		}else{
+		document.getElementById("bottom"+i).style.display = "none"; 
+		}
+	}	
+
+}
+</script>
+
+
+</head>
+<!--body onLoad="MM_openBrWindow('weatheri_news.html','golf','width=1034px,height=510px')" -->
+<!--body onLoad="MM_openBrWindow('pop_flower.html','golf','width=616px,height=920px')" -->
+<body>
+<div style="visibility:hidden;position:absolute;" height="0">
+	<ul>
+		<li><a href="#menu">메뉴 바로가기</a></li>
+		<li><a href="#contents">내용 바로가기</a></li>
+	</ul>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" background="https://api3.weatheri.co.kr/web/images/main_back01.gif">
+	<tr>
+		<td width="385" rowspan="2" valign="top"><img src="https://api3.weatheri.co.kr/web/images/main_top01.gif" alt="웨더아이 로고"/></td>
+		<td height="28" align="center" valign="top" background="https://api3.weatheri.co.kr/web/images/main_10.gif">
+			<table width="323" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><a href="/member/member_login.php"><img src="/common/images/global_01.gif" border="0" alt="로그인"/></a><a href="/member/member_join01.php"><img src="/common/images/global_02.gif" border="0" alt="회원가입"
+		/></a><a href="/board/board01.php"><img src="/common/images/global_03.gif" border="0" alt="FAQ"/></a><a href="/board/board02_list.php"><img src="/common/images/global_04.gif" border="0" alt="Q&A"/></a><a href="/board/board03_list.php"><img src="/common/images/global_05.gif" border="0"  alt="공지사항"/></a><img src="/common/images/global_07.gif" alt=""/></td><td valign="bottom">
+			<a href="http://e.weatheri.co.kr/"><img src="/images/e.gif" width="24"></a>
+		<a href="http://j.weatheri.co.kr/"><img src="/images/j.gif" width="24"></a>
+		<a href="http://c.weatheri.co.kr/"><img src="/images/c.gif" width="24"></a></td>
+	</tr>
+</table>
+		</td>
+		
+	</tr>
+	<tr>
+		<td height="90" valign="top" colspan="2">
+			<div id="header">
+<div class="mainmenu">
+    <div class="left" style="z-index:1;">
+        <ul id="menu">
+            <li><a href="/forecast/forecast01.php?mNum=1&sNum=1" title="예보정보" onmouseover="javascript:menu_view(1);">예보정보</a></li>
+            <!--li><a href="/special/special01.php" title="특보정보" onmouseover="javascript:menu_view(2);">특보정보</a></li-->
+			<li><a href="/special/special01.php" title="특보정보" onmouseover="javascript:menu_view(2);">특보정보</a></li>
+            <li><a href="/leisure/leisure01.php?mNum=1&sNum=1&n=n1"  title="레저스포츠" onmouseover="javascript:menu_view(3);">레저스포츠</a></li>
+            <li><a href="/satellite/satellite01.php" title="영상자료" onmouseover="javascript:menu_view(4);">영상자료</a></li>
+            <li><a href="/bygone/bygone01.php"  title="과거기상" class="" onmouseover="javascript:menu_view(5);">과거기상</a></li>
+            <li><a href="/detail/detail.php"  title="상세예보" class="" onmouseover="javascript:menu_view(6);">상세예보</a></li>
+			<li><a href="/longterm/longterm.php"  title="장기예보" class="" onmouseover="javascript:menu_view(7);">장기예보</a></li>
+			<li><a href="/sms/sms_info.php"  title="SMS서비스" class="" onmouseover="javascript:menu_view(8);">SMS서비스</a></li>
+		</ul>
+						      
+		
+	</div>
+	<div class="bottom" id="bottom1" name="bottom1" style="display:block;z-index:1;">
+        <ul>
+            <li><a href="/forecast/forecast01.php?mNum=1&sNum=1" title="지역별날씨">지역별날씨</a></li>
+            <li><a href="/forecast/forecast02.php?mNum=1&sNum=1"  title="해상예보">해상예보</a></li>
+            <li><a href="/forecast/forecast03.php?mNum=1&aircode=RKSI"  title="공항예보">공항예보</a></li>
+            <li><a href="/forecast/forecast04.php" title="주간예보">주간예보</a></li>
+            <li><a href="/forecast/forecast05.php"  title="월간예보" class="">월간예보</a></li>
+            <li><a href="/forecast/forecast06.php"  title="계절예보" class="">계절예보</a></li>
+			<li><a href="/forecast/forecast07.php"  title="세계예보" class="">세계예보</a></li>
+			<li><a href="/forecast/forecast08.php?mNum=1&ridcode=1"  title="생활지수" class="">생활지수</a></li>
+			<li><a href="/forecast/forecast09.php"  title="자외선지수" class="">자외선</a></li>
+			<li><a href="/forecast/forecast10.php"  title="현재날씨" class="">현재날씨</a></li>
+			<li><a href="/forecast/forecast11.php"  title="슈퍼컴예보" class="">슈퍼컴</a></li>
+			<li><a href="/forecast/forecast12.php"  title="부유먼지예보" class="">부유먼지</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom2" name="bottom2" style="display:none;z-index:1;">
+        <ul>
+            <li><a href="/special/special01.php" title="기상특보">기상특보</a></li>
+            <li><a href="/special/special02.html"  title="태풍정보">태풍정보</a></li>
+            <li><a href="/special/special03.php"  title="지진정보">지진정보</a></li>
+            <li><a href="/special/special04.php" title="황사정보">황사정보</a></li>
+			<li><a href="/special/special05_1.php" title="미세먼지">미세먼지</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom3"  name="bottom3" style="display:none;z-index:1;">
+        <ul>
+            <li><a href="/leisure/leisure01.php" title="고속도로">고속도로</a></li>
+			<li><a href="/leisure/leisure02.php" title="축구">축구</a></li>
+			<li><a href="/leisure/leisure03.php" title="야구">야구</a></li>
+			<li><a href="/leisure/leisure04.php" title="골프">골프</a></li>
+			<li><a href="/leisure/leisure05.php" title="스키">스키</a></li>
+			<li><a href="/leisure/leisure06.php" title="등산">등산</a></li>
+			<li><a href="/leisure/leisure07.php" title="바다낚시">바다낚시</a></li>
+			<li><a href="/leisure/leisure08.php" title="민물낚시">민물낚시</a></li>
+			<li><a href="/leisure/leisure09.php" title="콘도">콘도</a></li>
+			<li><a href="/leisure/leisure10.php" title="휴양림">휴양림</a></li>
+			<li><a href="/leisure/leisure11.php" title="테마파크">테마파크</a></li>
+			<li><a href="/leisure/leisure12.php" title="해수욕장">해수욕장</a></li>
+			<li><a href="/leisure/leisure13.php" title="드라이브">드라이브</a></li>
+			<li><a href="/leisure/leisure14.php" title="래프팅">래프팅</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom4"  name="bottom4" style="display:none;padding:0 0 0 170px" >
+        <ul>
+			<li><a href="/satellite/satellite01.php" title="레이더영상">레이더영상</a></li>
+			<li><a href="/satellite/satellite02.php" title="위성영상">위성영상</a></li>
+			<li><a href="/satellite/satellite03.php" title="황사분석">황사분석</a></li>
+			<li><a href="/satellite/satellite04.php" title="일기도">일기도</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom5" name="bottom5" style="display:none;z-index:1;">
+        <ul>
+			<li><a href="/bygone/bygone01.php" title="일별검색">일별검색</a></li>
+			<li><a href="/bygone/bygone02.php" title="일별통계">일별통계</a></li>
+			<li><a href="/bygone/bygone03.php" title="기상월표">기상월표</a></li>
+			<li><a href="/bygone/bygone04.php" title="월별검색">월별검색</a></li>
+			<li><a href="/bygone/bygone05.php" title="극값검색">극값검색</a></li>
+			<li><a href="#" 
+ onkeypress="window.open('/bygone/bygone06.php','small','width=850, height=1000, scrollbars=yes, menubar=yes'); return false"
+ onclick="window.open('/bygone/bygone06.php','small','width=850, height=1000, scrollbars=yes, menubar=yes'); return false">어제날씨</a></li>
+			<li><a href="/bygone/bygone07.php" title="강우집계">강우집계</a></li>
+			<li><a href="/bygone/bygone08.php" title="적설집계">적설집계</a></li>
+			<li><a href="/bygone/bygone09.php" title="한국기후">한국기후</a></li>
+			<li><a href="/bygone/bygone10.php" title="일평년값">일평년값</a></li>
+			<li><a href="/bygone/bygone11.php" title="월평년값">월평년값</a></li>
+			<li><a href="/bygone/bygone12.php" title="세계기후">세계기후</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom6" name="bottom6"  style="display:none;padding:0 0 0 384px">
+        <ul>
+			<li><a href="/detail/detail.php" title="상세예보">상세예보</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom7" name="bottom7" style="display:none;padding:0 0 0 460px">
+        <ul>
+			<li><a href="/longterm/longterm.php" title="장기예보">장기예보</a></li>
+		</ul>
+	</div>
+	<div class="bottom" id="bottom8" name="bottom8" style="display:none;padding:0 0 0 330px">
+        <ul>
+			<li><a href="/sms/sms_info.php" title="서비스안내">서비스안내</a></li>
+			<li><a href="/sms/sms_type.php" title="서비스종류와 요금">서비스종류와 요금</a></li>
+			<li><a href="/sms/sms_join01.php" title="서비스신청">서비스신청</a></li>
+			<li><a href="/member/member_edit.php" title="서비스정보">서비스정보</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+		</td>
+		
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" background="https://api3.weatheri.co.kr/web/images/main_back02.gif">
+	<tr>
+			<td width="390" width ="537" valign="top" style="padding-bottom:33px;">
+		<img src="https://api3.weatheri.co.kr/web/images/main_map.jpg">
+						<div style="position:absolute; width:48px; height:30px; left:216px; top:149px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+			
+						<div style="position:absolute; width:48px; height:30px; left:123px; top:161px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:183px; top:244px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:98px; top:276px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:135px; top:329px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:200px; top:303px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:80px; top:361px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:218px; top:358px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:163px; top:385px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:321px; top:386px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:270px; top:386px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:203px; top:440px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:151px; top:452px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:263px; top:468px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:179px; top:520px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:129px; top:569px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/01.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:264px; top:539px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/21.png" width="30"></div>
+						<div style="position:absolute; width:48px; height:30px; left:178px; top:610px; z-index:1;"><img src="https://api3.weatheri.co.kr/web/images/icon_2013_01/21.png" width="30"></div>
+
+			
+			
+
+			
+		</td>
+		<td width="598" valign="top" >
+			<table width="598" border="0" cellspacing="0" cellpadding="0" >
+				<tr>
+					<td width="296" valign="top" background="https://api3.weatheri.co.kr/web/images/main_02_2.gif">
+						<iframe name="main01_2" src = "main01_2.php" width = "296" height = "265" frameborder = "0" scrolling = "no" marginwidth = "0" marginheight = "0" ></iframe>
+
+					</td>
+					<td width="302" valign="top" background="https://api3.weatheri.co.kr/web/images/main_02_2.gif">
+						
+
+
+
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFFFF;
+
+}
+.t {
+    border-collapse: collapse;  /* 셀과 셀이 맞붙은 부분의 테두리를 하나로 만듭니다. */
+}
+.t td {
+    border: 1px solid #acccd6;
+}
+
+a:link { text-decoration:none; color:black;}
+a:visited {text-decoration:none; color:black;}
+a:hover {text-decoration:none; color:black;}
+a:active {text-decoration:none; color:black;}
+
+-->
+</style>
+<script type="text/javascript">
+
+function go() { //v2.0
+
+  location.href("http://www.weatheri.co.kr/special/special05_1.php"); 
+
+}
+
+</script>
+<table width="304" border="0" cellspacing="0" cellpadding="0" align="left">
+	<tr>
+		<td height="31" width="304" colspan="2" background="/images/main_03.gif" style="padding-left:80px; padding-right:30px; font-size:11px;background-repeat:no-repeat;"><font color="#ffffff"><marquee direction="left" scrolldelay="80" scrollamount="3" width="194">
+- 2026-04-20 21:00:00 o 강풍주의보 : 강원도(속초평지, 고성평지, 양양평지, 강원북부산지, 강원중부산지, 강원남부산지)
+o 풍랑주의보 : 서해중부바깥먼바다
+o 한파주의보 : 강원도(강원남부산지), 충청남도(공주, 금산), 전북자치도(무주)
+o 건조주의보 : 경기도(광명, 과천, 부천, 동두천, 의정부, 성남, 구리, 남양주, 군포, 하남, 용인, 이천, 여주, 광주, 양평), 강원도(태백, 원주, 홍천평지, 강원남부산지), 서울		</marquee></font></td>
+	</tr>
+	<tr>
+		<td height="8" colspan="2"></td>
+	</tr>
+	<tr>
+		<td width="304" height="184" align="center" valign="top" background="/images/main_04_3.gif" style="background-repeat:no-repeat;">
+			<table width="304" border="0" cellspacing="0" cellpadding="0" onclick="javascript:go();" style="cursor:pointer">
+				<tr>
+					<td height="30"><a href="http://www.weatheri.co.kr/special/special05_1.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td align="center">
+                <table width="280" border="1" cellspacing="0" cellpadding="0" class="t">
+	<tr align="center">
+		<td width="31%"></td>
+		<td width="23%" colspan="2" style="color:#ffffff;font-size:11px;">PM10</td>
+		<td width="23%" colspan="2" style="color:#ffffff;font-size:11px;">PM2.5</td>
+		<td width="23%" colspan="2" style="color:#ffffff;font-size:11px;">대기지수</td>
+	</tr>
+
+        										<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">서울 중구</td>
+											<td width="8%" style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww3.gif" align="absmiddle"> </td>
+											<td width="15%" align="center" style="color:#ffffff;font-size:11px;">81&nbsp;</td>
+											<td width="8%" style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww1.gif" align="absmiddle"> </td>
+											<td width="15%" align="center" style="color:#ffffff;font-size:11px;">14&nbsp;</td>
+											<td width="8%" style="color:#ffffff;font-size:11px;"><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td width="15%" align="center" style="color:#ffffff;font-size:11px;">77&nbsp;</td>	
+										</tr>
+	      											<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">서울 강동구</td>
+											<td> <img src="./special/images/ww3.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">96&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">21&nbsp;</td>
+											<td><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">76&nbsp;</td>	
+										</tr>
+	      											<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">김포 사우동</td>
+											<td> <img src="./special/images/ww3.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">81&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">21&nbsp;</td>
+											<td><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">78&nbsp;</td>	
+										</tr>
+	      					
+
+ 										<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">인천 송도</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww3.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">82&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww1.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">13&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">83&nbsp;</td>	
+										</tr>
+	      											<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">파주 운정</td>
+											<td> <img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">72&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww1.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">4&nbsp;</td>
+											<td><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">70&nbsp;</td>	
+										</tr>
+	      											<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">광명 철산동</td>
+											<td> <img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">69&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww1.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">9&nbsp;</td>
+											<td><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">77&nbsp;</td>	
+										</tr>
+	      			
+														<tr>
+											<td align="center" style="color:#ffffff;font-size:11px;">부산 부산항</td>
+											<td> <img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">47&nbsp;</td>
+											<td  style="color:#ffffff;font-size:11px;"> <img src="./special/images/ww1.gif" align="absmiddle"> </td>
+											<td  align="center" style="color:#ffffff;font-size:11px;">-&nbsp;</td>
+											<td><img src="./special/images/ww2.gif" align="absmiddle"> </td>
+											<td align="center" style="color:#ffffff;font-size:11px;">69&nbsp;</td>	
+										</tr>
+	      	</table>
+
+
+						
+				
+					
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+					</td>
+				</tr>
+			</table>
+			<table width="598" border="0" cellspacing="0" cellpadding="0">
+				<!--tr>
+					<td height="20" colspan="2"></td>
+					<td width="100" rowspan="2" valign="top">
+						
+					</td>
+				</tr-->
+				<tr>
+					<td width="296" valign="top" background="https://api3.weatheri.co.kr/web/images/bg3.png">
+							    
+
+		     
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFFFF;
+}
+-->
+</style>
+
+<table width="288" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="/images/main_05new.gif" alt="공지사항"/><a href="/board/board03_list.php"><img src="/images/main_05new1.gif" border="0" alt="공지사항 더보기"/></a></td>
+	</tr>
+       
+	<tr>
+		<td height="29">
+			<table width="288" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="220" style="padding-left:7px;"><font color=#6666FF size=1></font>&nbsp;<a href=/board/board03_read.php?id=316&offset=1&level=a9999637 class='b'>2026년 벚꽃 개화예상시기</a> <img src='/customer/images/customer_new.gif' width='23' height='9'> </td>
+					<td width="68" style="font-size:11px; color:#ffffff">2026-02-26</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+		<td height="1" background="/images/main_06.gif"></td>
+	</tr>
+     
+	<tr>
+		<td height="29">
+			<table width="288" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="220" style="padding-left:7px;"><font color=#6666FF size=1></font>&nbsp;<a href=/board/board03_read.php?id=315&offset=1&level=a9999638 class='b'>2026년 봄꽃 개화예상시기</a> <img src='/customer/images/customer_new.gif' width='23' height='9'> </td>
+					<td width="68" style="font-size:11px; color:#ffffff">2026-02-19</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+		<td height="1" background="/images/main_06.gif"></td>
+	</tr>
+     
+	<tr>
+		<td height="29">
+			<table width="288" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="220" style="padding-left:7px;">&nbsp;<a href=/board/board03_read.php?id=314&offset=1&level=a9999639 class='b'>2025년 단풍 예상시기</a> </td>
+					<td width="68" style="font-size:11px; color:#ffffff">2025-09-05</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+		<td height="1" background="/images/main_06.gif"></td>
+	</tr>
+     
+	<tr>
+		<td height="29">
+			<table width="288" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="220" style="padding-left:7px;">&nbsp;<a href=/board/board03_read.php?id=313&offset=1&level=a9999640 class='b'>2025년 벚꽃 개화예상시기</a> </td>
+					<td width="68" style="font-size:11px; color:#ffffff">2025-02-21</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+		<td height="1" background="/images/main_06.gif"></td>
+	</tr>
+     
+	<tr>
+		<td height="29">
+			<table width="288" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="220" style="padding-left:7px;">&nbsp;<a href=/board/board03_read.php?id=312&offset=1&level=a9999641 class='b'>2025년 봄꽃 개화예상시기</a> </td>
+					<td width="68" style="font-size:11px; color:#ffffff">2025-02-20</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+		<td height="1" background="/images/main_06.gif"></td>
+	</tr>
+    	
+</table>
+</body>
+</html>					</td>
+					<td valign="top" style="padding-left:5px;" background="https://api3.weatheri.co.kr/web/images/bg3.png">
+						<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFFFF;
+}
+-->
+</style>
+
+<table width="285" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="3"><img src="images/main_07.gif" alt="슈퍼컴예보" width="252" /><a href="/forecast/forecast11.php"><img src="images/main_0701.gif" alt="슈퍼컴예보 더보기"/></a></td>
+	</tr>
+	<tr>
+		<td width="95" align="center" height="24" valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">[강수량]</td>
+		<td width="95" align="center"valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">[기온]</td>
+		<td width="95" align="center" valign="top" style="font-size:11px; color:#ffffff">[바람]</td>
+	</tr>
+		<tr>
+		<td valign="top" align="center">
+			<table width="90" border="0" cellspacing="1" cellpadding="1" bgcolor="#ddebfa">
+				<tr>
+					<td><a href="/forecast/precip.php"><img src="images/super/m_precip202604201800.jpg" width="90" height="120" border="0" alt="강수량"/></a></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="top" align="center">
+			<table width="90" border="0" cellspacing="1" cellpadding="1" bgcolor="#ddebfa">
+				<tr>
+					<td><a href="/forecast/forecast11.php"><img src="images/super/m_temp202604201800.jpg" width="90" height="120" border="0" alt="기온"/></a></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="top" align="center">
+			<table width="90" border="0" cellspacing="1" cellpadding="1" bgcolor="#ddebfa">
+				<tr>
+					<td><a href="/forecast/wind.php"><img src="images/super/m_wind202604201800.jpg" width="90" height="120" border="0" alt="바람"/></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+					</td>
+				</tr>
+				<tr>
+				<td colspan="2" background="https://api3.weatheri.co.kr/web/images/bg5.png"><br>
+				
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFFFF;
+}
+-->
+</style>
+
+<table width="590" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="9"><img src="images/main_06_new.gif"usemap="#main_06_new.gif" style="border: 0;" />
+<map name="main_06_new.gif">
+    <area shape="rect" coords="248,0,289,21" href="http://www.weatheri.co.kr/forecast/forecast07.php" target="_top" alt="세계날씨" />
+
+</map>
+	</td>
+	</tr>
+	<tr>
+			<td width="75" align="center" height="70" valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">
+
+	
+                                        
+											<table width="75" border="0" cellpadding="1" cellspacing="0">
+											<tr align="center">
+											<td width="75" valign="bottom"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=48647&selO=Asia&selN=MS"?><font color="#FFFFFF">쿠알라룸푸르</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=48647&selO=Asia&selN=MS"?><img src="../../images/icon_2013_01/10.png" border="0" alt="" width="45"></a></td>
+											</tr>
+											<tr align="center">
+											<td class="f11"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=48647&selO=Asia&selN=MS"?><font color="#00adcd">24˚C</font><font color="#ffffff">/</font><b><font color="#ff6600">34˚C</font><b></a></td>
+											</tr>
+											</table>
+										
+                
+		
+		</td>
+		<td width="75" align="center" height="70" valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">
+
+	
+                                        
+											<table width="75" border="0" cellpadding="1" cellspacing="0">
+											<tr align="center">
+											<td width="75" valign="bottom"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=76680&selO=AMERICA&selN=MX"?><font color="#FFFFFF">멕시코시티</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=76680&selO=AMERICA&selN=MX"?><img src="../../images/icon_2013_01/04.png" border="0" alt="" width="45"></a></td>
+											</tr>
+											<tr align="center">
+											<td class="f11"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=76680&selO=AMERICA&selN=MX"?><font color="#00adcd">8˚C</font><font color="#ffffff">/</font><b><font color="#ff6600">17˚C</font><b></a></td>
+											</tr>
+											</table>
+										
+                
+		
+		</td>
+		<td width="75" align="center" height="70" valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">
+
+	
+                                        
+											<table width="75" border="0" cellpadding="1" cellspacing="0">
+											<tr align="center">
+											<td width="75" valign="bottom"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=47827&selO=Asia&selN=JP"?><font color="#FFFFFF">가고시마</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=47827&selO=Asia&selN=JP"?><img src="../../images/icon_2013_01/04.png" border="0" alt="" width="45"></a></td>
+											</tr>
+											<tr align="center">
+											<td class="f11"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=47827&selO=Asia&selN=JP"?><font color="#00adcd">17˚C</font><font color="#ffffff">/</font><b><font color="#ff6600">23˚C</font><b></a></td>
+											</tr>
+											</table>
+										
+                
+		
+		</td>
+		<td width="75" align="center" height="70" valign="top" style="padding-left:0px; font-size:11px; color:#ffffff">
+
+	
+                                        
+											<table width="75" border="0" cellpadding="1" cellspacing="0">
+											<tr align="center">
+											<td width="75" valign="bottom"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=6240&selO=Europe&selN=NL"?><font color="#FFFFFF">암스테르담</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=6240&selO=Europe&selN=NL"?><img src="../../images/icon_2013_01/13.png" border="0" alt="" width="45"></a></td>
+											</tr>
+											<tr align="center">
+											<td class="f11"><a href="http://www.weatheri.co.kr/forecast/forecast07.php?selC=6240&selO=Europe&selN=NL"?><font color="#00adcd">4˚C</font><font color="#ffffff">/</font><b><font color="#ff6600">12˚C</font><b></a></td>
+											</tr>
+											</table>
+										
+                
+		
+		</td>
+
+<td>
+
+
+											<table width="65" border="0" cellpadding="2" cellspacing="0" style="padding-left:0px; font-size:11px; color:#ffffff">
+											<tr align="center">
+											<td width="65"><a href="http://warn.weatheri.co.kr/index.html"><font color="white">낙뢰정보</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://warn.weatheri.co.kr/index.html" target="_blank"><img src="images/title_light.png" border="0" alt="" width="50" height="50"></a></td>
+											</tr>
+											</table>
+							</td>
+						<td>
+
+
+											<table width="65" border="0" cellpadding="2" cellspacing="0" style="padding-left:0px; font-size:11px; color:#ffffff">
+											<tr align="center">
+											<td width="65"><a href="http://warn.weatheri.co.kr/index_fog.php"><font color="white">안개정보</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://warn.weatheri.co.kr/index_fog.php" target="_blank"><img src="images/title_fog.png" border="0" alt="" width="50" height="50"></a></td>
+											</tr>
+											</table>
+							</td>
+						<td>
+
+
+											<table width="65" border="0" cellpadding="2" cellspacing="0" style="padding-left:0px; font-size:11px; color:#ffffff">
+											<tr align="center">
+											<td width="65"><a href="http://www.weatheri.co.kr/special/special01.php"><font color="white">기상특보</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/special/special01.php"><img src="../admin/data/warning10_50.png" border="0" alt="" width="50" height="50"></a></td>
+											</tr>
+											</table>
+							</td>
+						<td>
+
+
+											<table width="65" border="0" cellpadding="2" cellspacing="0" style="padding-left:0px; font-size:11px; color:#ffffff">
+											<tr align="center">
+											<td width="65"><a href="http://www.weatheri.co.kr/longterm/longterm.php"><font color="white">장기예보</font></a></td>
+											</tr>
+											<tr align="center">
+											<td><a href="http://www.weatheri.co.kr/longterm/longterm.php"><img src="../admin/data/infinite9_50_1.png" border="0" alt="" width="50" height="50"></a></td>
+											</tr>
+											</table>
+							</td>
+
+
+	</tr>
+
+</table>
+</body>
+</html>
+
+<br>
+	
+
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" background="https://api3.weatheri.co.kr/web/images/main_back03.gif">
+	<tr>
+		<td height="170" valign="top">
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>웨더아이 - 날씨로부터의 자유, 날씨와 함께하는 행복</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+<body>
+<table width="987" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="582" height="32" style="padding-left:50px;"><img src="/common/images/footer_01.gif" alt="회사로고"/><a href="/company/company_01.php"><img src="/common/images/footer_02.gif" border="0" alt="회사소개"/></a><a href="/site_map.php"><img src="/common/images/footer_03.gif" border="0" alt="사이트맵"/></a><a href="javascript:;" onClick="MM_openBrWindow('/company/company_pop.php','01','scrollbars=yes,width=650,height=600')"><img src="/common/images/footer_04.gif" border="0" alt="이용약관"/></a></td>
+		<td width="405"><img src="/common/images/footer_05.gif" alt="서울특별시 중구 중림동 브라운스톤서울 101동 2204호 tel:02-704-0030"/></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td style="padding-top:18px;">
+			<table width="547" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><img src="/images/footer_06_2.gif" alt="주)웨더아이"/><img src="/common/images/footer_06.gif" alt="사업자등록번호:106-86-31498"/><a href="javascript:;" onClick="MM_openBrWindow('/company/company_pop01.php','02','scrollbars=yes,width=650,height=600')"><img src="/common/images/footer_07.gif" border="0" alt="개인정보취급방침"/></a><img src="/common/images/footer_08.gif" alt="이메일주소 무단 수집거부"/></td>
+				</tr>
+				<tr>
+					<td align="right"><img src="/common/images/footer_09.gif" alt="copyright 주)웨더아이"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>		</td>
+	</tr>
+</table>
+</body>
+</html>

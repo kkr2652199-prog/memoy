@@ -1,0 +1,2517 @@
+Inställningar
+Tillägg
+Kärntillägg
+Tilläggsinställningar
+Exempel: mapp 1/mapp 2
+Exempel: mapp/anteckning
+Ändring av denna inställning kräver omstart för verkan
+Redigerare
+Beteende
+Skärm
+Stavningskontroll
+Sätter på stavningskontrollen. Fungerar för tillfället bara med amerikansk engelska.
+Stavningskontrollsspråk
+Välj språk för att använda med stavningskontroll.
+Stavningskontrollen som redan finns kommer automatiskt märka vilket språk som används av macOS.
+Stavningskontrollsordbok
+Stavningskontrollsordboken är tom.
+Inbäddad titel
+Visa filnamnet som en redigerbar inbäddad titel med filinnehållen.
+Läsbar radlängd
+Begränsa radlängd. Mindre får plats på skärmen, men långa stycken blir mer läsbara.
+Stränga radbyten
+Ignorerar enstaka radbyten som i Markdown specifikationerna. Stäng av för att visa enstaka radbyten i läsläget.
+Egenskaper i dokument
+Välj hur egenskaper visas i redigeraren. Välj "källa" för att få egenskaperna visade som YAML.
+Dold
+Synlig
+Källkod
+Para ihop paranteser automatiskt
+Para ihop paranteser och citattecken automatiskt.
+Para ihop Markdown syntax
+Para ihop Markdownsyboler (t.ex. fet stil, kursiv stil och sånt)
+Flytta fram listpunkter på ett smart sätt
+Ta hand om förskjutningar och listmarkörer åt dig.
+Vik in rubrik
+Låter dig vika in allting under en rubrik.
+Vik in förskjuningar
+Låter dig vika in en del av samma förflyttning (t.ex en lista).
+Standardvy för nya tabbar
+Standardvyn som en ny markdown-tabb öppnas i.
+Redigeringsvy
+Läsvy
+Fokusera alltid nya tabbar
+När en länk öppnas i en ny tabb, byt till den automatiskt
+Normala skrivläget
+Normala läget som en ny panel börjar med.
+Källkodsläge
+Förhandsvy
+Radnummer
+Visa radnummer i marginalen.
+Förskjutningsmarkörer
+Visa vertikala linjer mellan punkter som markörer 
+Använd tabbar
+Använd tabbar för att förskjuta text när man trycker på "Tab"-tangenten. Stäng av för att använda mellanslag.
+Tabbstorlek
+Antal mellanslag som en tabb motsvarar.
+Skriv högerifrån (RTL)
+Gör så att texten går från höger till vänster.
+Konvertera HTML automatiskt
+Konverterar HTML till Markdown när man kopierar in från hemsidor. Använd Ctrl/Cmd+Shift+V för att klista in utan någon konvertering.
+Vim tangentbindningar
+Gör så att du använder vim tangentbindningar i källskrivläget.
+På mobila enheter synkroniseras denna inställningen inte genom konfigurationsfilen utan sparas bara lokalt på enheten.
+Bygg om valvets cache
+Att bygga om cachen kan ta några sekunder till några minuter beroende på storleken på ditt valv.
+Bygg om
+Bekräfta att du går in i Vim läget
+Vim-läget är för snabbare textskrivning, men om du inte känner till Vim så bra kan denna inställningen göra så att det verkar som att Obsidian har slutat fungera.
+För att bevisa att du känner till Vim, skriv in Vim kommandot för att avsluta utan att spara:
+Ditt svar
+Skriv in kommandot...
+Låt mig sätta på Vim
+Rätt komando. Du är nu i Vim-läget.
+Fel kommando. Vim-läget har inte aktiverats.
+Skriv in kommandot för att aktivera Vim-läget
+Filer och länkar
+Bekräfta innan filer raderas
+Undvik att oavsiktligt radera filer.
+Papperskorg
+Borttagna filer
+Vad händer med filer efter att de tas bort.
+Flytta till operativsystemets papperskorg
+Flytta till Obsidian-papperskorgen (.trash-mappen)
+Ta bort permanent
+Radera bilagor när filer raderas
+Ta automatiskt bort bilagor som är länkade till den raderade filen om de inte används någon annanstans.
+Alltid
+Fråga varje gång
+Aldrig
+Standardfil att öppna
+Välj vilken fil som ska öppnas när appen startar.
+Senast öppnade
+Ny anteckning
+Specifik fil
+Daglig anteckning
+Fil att öppna
+Välj en specifik fil som ska öppnas som standard.
+Upppdatera interna länkar
+Om länkar ska uppdateras efter att man byter namn på en fil.
+Stället där nya anteckningar hamnar
+Var nya anteckningar hamnar. Tillägg kan sätta sig över det här.
+Valvbas
+Samma mapp som filen ligger i
+I mappen som visas nedan
+Mapp för att skapa nya anteckningar inuti
+Nya filer kommer hamna under den här mappen. Tillägg kan sätta sig över det här.
+Använd [[Wikilänkar]]
+Autogenerera Wikilänkar för [[länkar]] och ![[bilder]] istället för Markdown länkar och bilder. Stäng av inställningen för att generera Markdown länkar istället.
+Titta på alla filändelser
+Visa filer med alla filändelser även om Obsidian inte kan öppna dem. Detta gör så att du kan länka till dem i anteckningar.
+Länkar
+Nytt länkformat
+Vilka länkar ska sättas in när man automatiskt genererar interna länkar.
+Kortaste vägen när det går
+Relativa filvägar
+Absoluta filvägar
+Stället där nya bilagor hamnar.
+Där nya bilagor hamnar.
+Bilagor
+I undermappen under nuvarande mappen
+Mappsökväg till bilagan
+Nya bilagor kommer hamna här. Med detta inkluderas bilder som man har dragit in och ljudinspelningar.
+Undermappens namn
+Om en fil är under /valv/mapp", och du lägger in bilagor kommer bilagorna saparas i "valv/mapp/bilagor".
+Exkluderade filer
+Exkluderade filer kommer att gömmas eller vara mindre synliga, t.ex. snabbnavigatorn och länkförslag.
+Inga exkluderade fileter används just nu. Lägg till ett nedan.
+Filter som matchar följande filter är exkluderade:
+
+Filter kan ej vara tomma
+Mata in sökväg eller "/regex/"...
+Tillåt URI-callbacks
+Aktivera användningen av x-callback-url genom x-success eller x-error när du hanterar Obsidian URIs.
+Utseende
+Bastema
+Använd Obsidians normala färger
+Accentfärg
+Välj den i appen tillämpade accentfärgen.
+Mörk
+Ljus
+Anpassa efter operativsystem
+Typsnitt
+Avancerat
+Gränssnitt
+Gränssnittstypsnitt
+Använd samma bastypsnitt för hela Obsidian.
+Inzoomningsnivå
+Styr inzoomningsnivån i appen.
+Texttypsnitt
+Välj typsnitt för skrivläget och läsläget.
+Typsnitt där alla bokstäver är lika breda
+Välj typsnitt för kodblock och inledning.
+ Nuvarande typsnitt:
+ Följande typsnitt används nu:
+Skriv in namnet av ett typsnitt...
+Inget speciellt typsnitt används. Lägg till ett nedan.
+Första typsnittet som finns på listan och är installerat kommer att användas.
+Typsnittet är inte installerat eller hittas inte på ditt operativsystem.
+Typsnittet hittades.
+Namnet av typsnittet
+Fria teman av andra personer
+Prova fantastiska teman av andra personer.
+Bläddra
+Typsnittsstorlek
+Typsnittsstorlek i pixlar som påverkar skrivläget och läsläget.
+Snabb typsnittsstorleksändring
+Ändra typsnittsstorleken med Ctrl + Scroll eller nypgesten på pekplattan.
+Teman
+Hantera installerade teman samt bläddra bland community-teman.
+Hantera
+Inga
+Native-menyer
+Menyer i appen kommer matcha operativsystemet. De kommer inte påverkas av det valda temat.
+Ladda om teman
+Laddade om anpassade CSS-teman.
+Öppna temamappen
+CSS-instick
+Inga CSS-instick kunde hittas i insticksmappen.
+CSS-instick lagras i "{{path}}".
+Ladda om instick
+Öppna insticksmappen
+Laddade om CSS-instick
+Tillämpa CSS-instick i "{{path}}".
+Installerade teman
+Skärmbild otillgänglig
+Standard
+Klicka för att förstora
+Uppdatera
+Aktiv
+Fönsterramens stil
+Bestämmer stilen av titel-baren för Obsidian-fönstrer. Kräver omstart för att tillämpas.
+Dold (standard)
+Obsidian-ram
+Native-ram
+Anpassad appikon
+Sätt en anpassad ikon för appen
+Välj en anpassad ikon
+Ribbon-meny
+Ändra vilka ikoner som dyker upp i Ribbon-menyn i navigations-baren.
+Snabbtillgänligt ribbon-element
+Genom att klicka på ribbon-elementet i navigationsmenyn kommer det aktiveras. Klicka och håll in kommer fortfarande visa menyn.
+Öppna ribbon-menyn
+Konfigurera
+Visa ribbon
+Visa vertikal verktygsfält på sidan av fönstret.
+Övriga ribbon-element
+Ribbon-konfiguration
+Välj vilka element du vill ska vara aktiva i ribbon-menyn. Klicka och dra för att ändra ordningen.
+Visa tabbars titel-bar
+Visa rubriken i toppen av varje tabb.
+Flytande navigering
+Navigeringsknapparna flyter ovanpå innehållet i stället för att vara förankrade.
+Skjutbara sidofält
+Sidofält skjuts till sidan av innehållet i stället för att flyta ovanpå.
+Fullskärm
+Dölj automatiskt gränssnittselement vid läsning.
+Hittade {{count}} tema att uppdatera.
+Hittade {{count}} teman att uppdatera.
+Kolla efter uppdateringar
+Visa uppdateringar
+Uppdatera alla
+Nuvarande community-teman
+För närvarande är {{count}} tema installerade.
+För närvarande är {{count}} teman installerade.
+Tangentbordsgenvägar
+Sök tangentbordsgenvägar
+Visar {{count}} tangentbordsgenväg. 
+Visar {{count}} tangentbordsgenvägar. 
+{{count}} kommando med konflikter.
+{{count}} kommandon med konflikter.
+Filtrera...
+Radera tangentbordskenväg
+Tryck tangentbordsgenvägen...
+Alla
+Otilldelade
+Tilldelade
+Tilldelade av mig
+Återställ standard
+Anpassa detta kommando
+Denna genväg konflikterar med "{{command}}"
+Denna genväg konflikterar {{count}} andra kommandon
+Tom
+Nyckelring
+Hemligheter
+Lägg till hemlighet
+Redigera hemlighet
+Visa hemlighet
+Dölj hemlighet
+
+Hemlighet
+hemlighetsnamn
+Endast gemener, siffror och bindestreck.
+Ange din hemlighet.
+Aldrig öppnad
+Det gick inte att uppdatera hemligheten.
+Det gick inte att lägga till hemligheten.
+En hemlighet med detta ID finns redan.
+Hemlighetsvärdet får inte vara tomt.
+Hemlighetens ID är ogiltigt. Använd endast gemener, siffror och bindestreck. Max 64 tecken.
+Inga hemligheter har lagts till. Hemligheter används för att lagra information som API-nycklar och lösenord som tillägg kan använda.
+Välj hemlighet
+Hitta hemlighet...
+Lägg till hemlighet...
+Länka...
+Hemligheter lagras utan kryptering eftersom inget hemlighetslager är tillgängligt på det här systemet.
+Hemligheter är inte krypterade
+Visa inte igen
+Kryptering är inte tillgänglig
+Kryptering tillhandahålls av operativsystemets hemlighetslager. Utan ett hemlighetslager kommer dina hemligheter att lagras utan kryptering.
+På Linux inkluderar hemlighetslager som stöds:
+Om oss
+Kommersiell licens
+Licensnyckel
+Din licensnyckel...
+Aktivera licens
+Aktivera
+Okänd
+
+Installationsprogramversion: {{version}}
+Läs ändringsloggen.
+För att stödja de senaste funktionerna och få de senaste uppdateringarna måste Obsidian ha en större installerar-uppdatering. Du måste manuellt ladda ner och ominstallera Obsidian.
+En ny version är redo att installeras.
+Uppdateringar är avstängda.
+Starta om
+Sök efter uppdateringar
+Automatiska uppdateringar
+Stäng av detta för att förhindra appen från att söka efter uppdateringar.
+Meddela om uppstarten tar längre tid än väntat
+Diagnostisera problem med din app genom att se vad som gör att appen laddas långsamt.
+Kontrollera nu
+Kommandoradsgränssnitt
+Tillåt interaktioner med Obsidian från kommandoraden.
+Ställ in CLI för att fungera i terminalen
+Registrera "obsidian" i PATH för att möjliggöra åtkomst till kommandot "obsidian" var som helst från din terminal.
+Registrera
+Få hjälp
+Få hjälp med att använda Obsidian
+Öppna
+Språk
+Ändra visningsspråket.
+Få insider-byggen
+Automatiska uppdateringar till insider-byggen för att pröva nya funktioner. Observera att dessa funktioner är nya och kan vara ostabila.
+Avancerat
+Hårdvaruacceleration
+Sätter på hårdvaruacceleration, vilket använder grafikkortet för att göra Obsidian snabbare.
+Om detta stängs av kommer appens prestanda att försämras avsevärt.
+Överstyr konfiguratinosmappen
+Använd en annan konfigurationsmapp än standardmappen. Måste börja med en punkt.
+Konfigurationssökvägen måste vara ett giltigt mappnamn som börjar med en punkt.
+Licens
+Din kommersiella licensnyckel är "{{key}}".
+Registrerad till "{{company}}" för {{seats}} användare. Giltig till {{expiry}}.
+Validerar ...
+Licens ogiltig: 
+Ta bort
+Catalyst-licens
+Du har för närvarande Catalys-licensnivån {{tier}}. Tack för ditt stöd!
+Du har för närvarande inte en Catalyst-licens. Catalyst-licensen är en engångsdonation för att stödja Obsidians utveckling.
+
+Se hur du kan lägga till ditt språk till Obsidian.
+Konto
+Ditt konto
+Du är inloggad som {{name}} ({{email}}).
+Du är inte inloggad just nu. Ett konto behövs endast för Obsidian Sync, Obsidian Publish och Catalyst insider builds.
+Uppgradering
+Kommersiell licens
+Om du använder Obsidian för kommersiella ändamål, kan du behöva en kommersiell licens.
+Köp
+Logga ut
+Logga in
+Registrera dig
+E-post
+Ditt email...
+Fullständigt namn
+Lösenord
+Ditt lösenord...
+Glömt lösenord?
+Logga in
+Email kan inte vara tomt.
+Email är ogiltigt.
+Lösenord kan inte vara tomt.
+Inloggning misslyckades. Vänligen kontrollera ditt email och lösenord.
+Misslyckades med att registrera
+Har du inget konto? 
+Registrera dig nu
+6-siffrig 2FA kod
+2FA-autentiseringskoden måste vara 6-siffrig.
+2FA-koden är felaktig. Vänligen kontrollera din autentiseringsapplikation.
+Tilläggslista
+Sök efter kärntillägg
+Filtrera tillägg efter namn eller beskrivning.
+Sök efter tillägg...
+Gemenskapstillägg
+Begränsat Tillstånd
+Begränsat Tillstånd är av. Slå på för att inaktivera gemenskapstillägg.
+Slå på
+Sök automatiskt efter tilläggsuppdateringar
+Sök regelbundet efter tilläggsuppdateringar.
+Gemenskapstillägg
+Bläddra och installera gemenskapstillägg skapats av vår fantastiska gemenskap.
+Bläddra
+Avsluta Begränsat Tillstånd
+Gemenskapstillägg, liksom all annan programvara som du installerar, kan potentiellt orsaka dataintegritet- och säkerhetsproblem.
+Tilläggssäkerhet är viktig för oss. Här är vad vi gör:
+Trots våra insatser, finns det fortfarande en liten risk att en gemenskapstillägg kan orsaka problem.
+Inledande kodgranskning
+Tillägg genomgår en inledande kodgranskning av vårt team innan de visas i butiken.
+Öppen källkod
+De flesta tillägg är open source på GitHub, så du själv kan inspektera koden.
+Granskning av andra
+Vi har en stor utvecklargemenskap som tar hand om varandra.
+Rapportera mekanism
+Vi följer upp och tar bort felaktiga tillägg när de rapporteras till oss.
+Vill du avsluta Begränsat Tillstånd för att aktivera gemenskapstillägg? Vi rekommenderar att du skapa säkerhetskopior av dina data innan du gör det.
+Lär mer om tilläggssäkerhet
+Slå på gemenskapstillägg
+Litar du på skaparen av detta valv?
+Du öppnar detta valv för första gången, och det använder några tillägg.
+Om du fick detta valv från någon annan, observera att okända tillägg kan utgöra säkerhetsrisker.
+Om du inte litar helt på skaparen av detta valv, rekommenderar vi att du stannar i Begränsat Tillstånd, så att tillägg i detta valv inte körs.
+Lita på skaparen och aktivera tillägg
+Bläddra valv i Begränsat Tillstånd
+Sök efter gemenskapstillägg...
+Misslyckades med att ladda ner gemenskapstillägg.
+Installerad
+Installera
+Aktivera
+Inaktivera
+Kopiera delningslänk
+Donera
+Inga resultat hittades.
+Inga nya filer hittades. Skriv för att söka...
+Misslyckades att ladda ner tilläggsmanifest.
+
+ (för närvarande installerad: {{version}})
+Av 
+
+Senaste uppdatering: 
+Se den senaste uppdateringen
+Detta tillägg stöder inte din enhet.
+Uppdatera
+Detta tillägg har inte en README-fil.
+Installerar tillägg "{{name}}" ...
+Misslyckades med att installera tillägg "{{name}}".
+Installationen av tillägg "{{name}}" slutfördes.
+Det gick inte att avinstallera tillägget ”{{id}}”.
+Det gick inte att inaktivera tillägget ”{{id}}”.
+Installerade tillägg
+Ladda om tillägg
+Återladdade gemenskapstillägg.
+Avinstallera
+Avinstallera tillägg
+Är du säker på att du vill avinstallera detta tillägg? Detta ska radera mappen för tillägg.
+Öppna tilläggsmapp
+Sök efter uppdateringar
+Uppdatera alla
+Nuvarande tillägg
+Söker efter uppdateringar...
+Du har för närvarande {{count}} tillägg installerat.
+Du har för närvarande {{count}} tillägg installerade.
+Inga tilläggsuppdateringar har hittats.
+Hittade {{count}} tillägg som kan uppdateras.
+Hittade {{count}} tillägg som kan uppdateras.
+Uppdatera till version {{version}}
+Sök efter installerade tillägg
+Filtrera installerade tillägg efter namn eller beskrivning.
+Sök efter installerade tillägg...
+Visa endast installerade
+Donera för att stödja {{name}}
+Tilläggsutvecklare är gemenskapsvolontärer som utvecklar fantastiska saker av passion. Om du tycker att detta tillägg är användbar, kan du överväga att stödja dess utveckling.
+100% av ditt bidrag ska gå till tilläggsutvecklaren; Obsidian tar inte en del av bidraget. Den finansieringsplattform som utvecklaren väljer kan ta betalt för det.
+Tack för ditt generösa stöd!
+Stöd detta tillägg:
+Visar {{pluginCount}}:
+Mest nedladdade
+Nyligen utgiven
+Nyligen uppdaterad
+Alfabetisk
+Uppdaterad {{time}}
+Mobil verktygsfält
+Konfigurera mobil Snabbåtgärd
+Konfigurera vilket kommando som ska utlösas när du drar ner från toppen. Det aktuella kommandot är inställt på "{{command}}".
+Åtgärd inte konfigurerad
+Konfigurera
+Välj Snabbåtgärd...
+Ingen
+Hantera verktygsfältsalternativ
+Lägg till intern länk
+Lägg till inbäddning
+Lägg till tagg
+Växla rubrik
+Växla genomstrykning
+Växla markering
+Växla kod
+Växla blockcitat
+Växla inline-matematik
+Växla matematikblock
+Lägg till Markdown-länk
+Växla punktlista
+Växla numrerad lista
+Indrag lista objekt
+Ta bort indrag lista objekt
+Ångra
+Gör om
+Flytta markören upp
+Flytta markören ner
+Flytta markören vänster
+Flytta markören höger
+Gå till första raden
+Gå till sista raden
+Växla tangentbord
+Konfigurera mobil verktygsfält
+Tillagda alternativ
+Fler verktygsfältsalternativ
+Infoga bilaga
+Sök
+Ersätt
+Avsluta sökning
+Nästa
+Föregående
+Hitta alla
+Ersätt
+Ersätt alla
+Skriv #
+för att länka rubrik
+Skriv ^
+för att länka block
+Skriv |
+för att ändra visningstext
+Visningstext
+Rubrik
+Inga träffar
+Bildstorlek: {{size}}px bred
+för att acceptera
+Ny fotnot...
+Inga förslag...
+Lägg till i ordlistan
+Redigera länk
+Redigera tagg
+Redigera detta block
+Radera fotnot och referens
+Återställ storlek
+Radera bild
+Ingen rubrik
+Rubrik {{level}}
+Exportera till PDF
+Exportera "{{filename}}" till PDF med inställningarna nedan.
+Sidstorlek
+Inkludera filnamn som titel
+Liggande
+Marginal
+Standard
+
+Ingen
+Nedskalningsprocent
+Exportera till PDF
+Följ länk
+Öppna länk
+Sök tagg
+Kan inte hitta:
+Kan inte hitta “{{subpath}}” i {{file}}
+Öppna i standardapp
+Sidofältet är tomt, försök dra en panel hit.
+Expandera
+Kollapsa
+Misslyckades med att spara filen "{{filepath}}". {{message}}.
+Misslyckades med att ladda tillägg "{{plugin}}"
+Tillägg “{{plugin}}” stötte på ett fel vid laddning
+Misslyckades med att öppna “{{filepath}}”
+Kan inte öppna plats “{{href}}”
+Ingen fil
+"{{file}}" har ändrats externt, sammanfogar ändringar automatiskt.
+Hantera valv...
+Hjälp
+Inställningar
+Dra för att ordna om
+Bytte standardvy till läsvy.
+Bytte standardvy till redigeringsvy.
+För att använda denna funktion, vänligen installera om med den senaste installatören från vår webbplats.
+Långsam starttid upptäckt.
+Denna funktion är endast tillgänglig i skrivbordsappen.
+Återställ standardinställningar
+Kopiera till urklipp
+Kopiera
+Kopierat till ditt urklipp
+{{item}} kopierat till ditt urklipp
+Det gick inte att kopiera till ditt urklipp
+Filtrera...
+Ett fel uppstod vid rendering av kodblock.
+Öppnade filen "{{path}}"
+Filen "{{name}}" hittades inte.
+Okänd URI-åtgärd: {{action}}
+Radera
+Obsidian indexerar ditt valv ...\nDetta bör bara hända en gång.\nVissa funktioner kanske inte är tillgängliga förrän detta är klart.
+Viss funktionalitet kanske inte är tillgänglig förrän detta är klart.
+Indexering klar.
+Detta är ett sandlådevvalv.\nÄndringar du gör i detta valv kommer att gå förlorade.
+IndexedDB krävs för denna funktion, men det är för närvarande inaktiverat.
+Om du använder iOS i Lockdown Mode, vänligen exkludera Obsidian från inställningen "Configure Web Browsing" i Lockdown Mode.
+Tryck Enter för att skapa
+Uppdatering tillgänglig
+Felsökningsinformation
+Läs mer
+Inte nu
+Lägg till
+Hantera
+Ny flik
+Dölj ribbon
+Denna flik är för närvarande upptagen, försök igen senare
+Formatering
+Stycke
+Infoga
+Lägg till länk
+Lägg till extern länk
+Notis
+Horisontell linje
+Kodblock
+Matematikblock
+Tabell
+Fotnot
+Fetstil
+Kod
+Kommentar
+Markera
+Kursiv
+Genomstruken
+Matematik
+Punktlista
+Att göra-lista
+Numrerad lista
+Rubrik {{level}}
+Brödtext
+Rensa formatering
+Citat
+Tomt
+Ingen fil är öppen
+Skapa ny fil
+Gå till fil
+Se senaste filer
+Stäng
+Stäng alla “{{id}}”-flikar ({{count}})
+Tillägget är inte längre aktivt
+Tillägg som skapade denna panel ({{type}}) är inte längre aktivt
+Versionsnyheter {{version}}
+Inga versionsnyheter tillgängliga för {{version}}.
+Kunde inte läsa in versionsnyheter för {{version}}.
+Släppt {{date}}
+Nyheter i {{version}}
+Redigera (Ctrl/Cmd+Klick för att redigera i ny panel)
+Nuvarande vy: läsning
+
+Vänster sidofält
+Höger sidofält
+Klicka för att redigera
+Klicka för att läsa
+{{key}}+Klick för att öppna i ny flik
+Tryck {{key}}+C för att kopiera källkod
+Sök...
+Ersätt...
+Redigera
+Ta bort
+Ta bort från listan
+Byt namn
+Förhandsgranska
+Fler alternativ
+Stäng
+Stäng alla
+Stäng {{count}} flik
+Stäng {{count}} flikar
+Stäng andra
+Stäng flikar efter
+Fäst
+Lossa
+Lossa flik
+Länka med flik...
+Källkodsläge
+Läsvy
+Lägg till fil-egenskap
+Radera fil
+Skapa denna fil
+Öppna länk
+Öppna i ny flik
+Öppna till höger
+Kopiera url
+Kopiera
+Klipp ut
+Klistra in
+Kopiera sökväg
+Kopiera bild
+som Obsidian-URL
+från systemroten
+från valvmappen
+Klistra in som oformaterad text
+Slå upp “{{selection}}”
+Markera allt
+Byt namn på denna rubrik...
+Byt namn på detta block-ID...
+Öppna i nytt fönster
+Flytta till nytt fönster
+Öppna i webbläsare
+Stapla flikar
+Avstapla flikar
+Öppna länkad vy
+Klicka för att expandera
+Klicka för att kollapsa
+
+Inte skapad än, välj för att skapa
+
+Skapa lokalt valv
+Öppna mapp som valv
+Välj en befintlig mapp med Markdown-filer.
+Skapa nytt valv
+Skapa ett nytt Obsidian-valv under en mapp.
+Anslut till Obsidian Sync
+Ställ in ett synkroniserat valv med befintligt fjärrvalv.
+Valvnamn
+Välj ett namn för ditt fantastiska valv.
+Plats
+Välj en plats för att placera ditt nya valv.
+Ditt nya valv kommer att placeras i: 
+Visa valv i systemutforskaren
+Visa valv i Finder
+Byt namn på valv...
+Kopiera valv-ID
+Det finns redan ett valv med detta namn.
+Kan inte flytta valv till en undermapp av sig själv.
+Kan inte byta namn på ett för närvarande öppet valv.
+Misslyckades med att byta namn på valv.
+Lyckades byta namn på valv.
+Flytta valv...
+Välj destinationsmapp
+Det finns redan ett valv på destinationen.
+Kan inte flytta ett för närvarande öppet valv.
+Misslyckades med att flytta valv.
+Lyckades flytta valv.
+Ta bort från listan
+Snabbstart
+Öppna
+Bläddra
+Anslut
+Skapa
+Tillbaka
+Valvnamn kan inte vara tomt.
+Valvnamn kan inte sluta med en punkt.
+Vänligen välj en giltig mapp.
+Misslyckades med att skapa valv.
+Kunde inte skapa valv på den angivna platsen. Vänligen dubbelkolla platsen och behörigheten.
+Misslyckades med att öppna.
+Kan inte ta bort ett för närvarande öppet valv.
+Få hjälp
+E-post
+Din email...
+Lösenord
+Ditt lösenord...
+Logga in
+Ställ in
+Skapa ett synkroniserat valv på denna enhet.
+Detta är ett fjärrvalv som ägs av dig.
+Detta är ett fjärrvalv som delas med dig.
+Dina tankar är dina.
+synkroniserad
+inte synkroniserad
+Ingen
+Rekommenderad
+Obsidian lagrar anteckningar på din enhet, så att du kan komma åt dem snabbt och privat, även offline.\nDina data lagras i en säker lokal mapp som kallas ett **valv**.
+Skapa ett valv
+Använd mitt befintliga valv
+För att komma åt dina anteckningar på andra enheter måste du ställa in synkronisering.
+Eftersom Obsidian lagrar dina anteckningar på dina enheter måste du ställa in synkronisering om du vill komma åt dina anteckningar på en annan telefon eller dator.\nDu kan ställa in synkronisering nu, eller bara börja skriva och ställa in det senare.
+Ställ in synkronisering
+Hoppa över för nu
+Hoppa över
+Välj ett namn för ditt valv.
+Skapa valv
+Synkroniseringsinställning
+Skapa ett synkroniserat valv på ditt Obsidian-konto så att du kan komma åt dina data från andra enheter.
+Synkroniseringskryptering
+Slutpunkt-till-slutpunkt-kryptering
+Erbjuder den starkaste säkerheten men kräver att du förvarar ditt krypteringslösenord på ett säkert sätt
+Standardkryptering
+Använder en nyckel som hanteras av Obsidian för att skydda dina data under överföring och på våra servrar.
+Synkroniseringsinställningar
+Vill du exkludera några mappar eller filer när du synkroniserar till denna enhet?
+Börja synkronisera
+Skapa ett Obsidian-konto eller logga in
+Registrera dig
+Logga in
+Skicka om e-post
+Du har befintliga synkroniseringsvalv
+Vill du skapa ett nytt valv eller ansluta till ett befintligt synkroniserat valv?
+Skapa nytt synkroniseringsvalv
+Välj ett befintligt valv
+Logga ut
+Glömt lösenord
+Valvnamn
+Valvplats
+Enhetslagring
+Tillåter att Obsidian-data kan nås av andra appar.
+Kräver ytterligare behörigheter.
+Applagring
+Dina data kommer inte att vara åtkomliga för andra appar.
+Android kommer att radera dina data om du avinstallerar Obsidian.
+Ditt nya valv kommer att placeras i {{vaultLocation}}
+
+Välj en serverregion nära dig för att göra synkroniseringen snabbare.
+Krypteringsnyckel
+Detta lösenord kan inte ändras senare. Om du glömmer ditt lösenord kommer alla fjärrdata på synkroniseringsservrarna att vara oåtkomliga för alltid.
+Mitt valv
+Automatisk
+Välj ett valv
+Ditt konto **{{email}}** har befintliga valv som du kan ansluta till.
+Logga in på ditt Obsidian-konto
+Glömt lösenord
+Återställ lösenord
+Vi har skickat ett e-postmeddelande till {{email}} för att återställa ditt lösenord.
+Välj hur du vill synkronisera dina anteckningar
+För att använda Obsidian på dina enheter måste du synkronisera dina data.
+Sömlöst över varje enhet och operativsystem.
+Säkrad med den starkaste end-to-end-krypteringsstandarden.
+Kräver ett Obsidian-konto.
+Endast för iOS och macOS.
+Inte krypterad som standard.
+Kräver tillägg eller verktyg från tredje part.
+Kanske inte är krypterad som standard.
+Använd Obsidian Sync
+Använd iCloud
+Använd tredje parts-synkronisering
+Andra synkroniseringsmetoder
+Använd stödda synkroniseringsmetoder
+Var är ditt valv placerat?
+Annat
+Synk från tredje part
+På denna enhet
+Anslut till iCloud
+Anslut till annan synkroniseringstjänst
+Anslut till Obsidian Sync
+Välj mapp
+Andra synkroniseringsmetoder
+Obsidian stöder officiellt två synkroniseringsmetoder: **Obsidian Sync** och **iCloud**.\nMen eftersom Obsidian ger dig kontroll över dina data finns det andra synkroniseringsalternativ du kan använda.\nDessa alternativ inkluderar tredjepartstillägg och andra verktyg som kan kräva mer avancerad inställning.\nFör att använda en alternativ synkroniseringsmetod, **skapa ett valv** och följ instruktionerna som tillhandahålls av tillägget eller tredjepartssynkroniseringsleverantören.
+Ange din e-post
+Din e-post krävs för att skapa ett Obsidian-konto.
+Ange ditt namn och lösenord
+Anslut till Obsidian Sync
+Du bör snart få ett e-postmeddelande till **{{email}}** med instruktioner för att ansluta till Obsidian Sync.
+Ditt iCloud-valv upptäcktes inte. Detta kan bero på någon av följande orsaker:
+Ditt valv är på ett annat iCloud-konto än det du för närvarande är inloggad på på denna enhet.
+Ditt valv är inte lagrat i den översta nivån av Obsidian-mappen på din iCloud Drive.
+iCloud stöds inte
+iCloud-synkronisering är endast tillgänglig på Apple-enheter. Om ditt valv för närvarande synkroniseras via iCloud, lär dig hur du migrerar ditt valv till en annan synkroniseringstjänst.
+Tillåt filåtkomst
+Loggar in dig ...
+Valvnamn krävs
+Nytt bekräftelsemail skickat.
+Misslyckades med att skicka om e-post.
+Valvplats måste vara en mapp.
+Välkommen
+Detta är ditt nya *valv*.\n\nGör en anteckning, [[skapa en länk]], eller prova [Importören](https://help.obsidian.md/Plugins/Importer)!\n\nNär du är redo, radera denna anteckning och gör valvet till ditt eget.
+Infoga länk här
+Infoga länkar här
+Flytta till "{{folder}}"
+Stjärnmärk denna fil
+Stjärnmärk dessa filer
+Öppna i denna flik
+Öppna som ny flik
+Maximera
+Minimera
+Återställ ner
+Stäng fönster
+Gå tillbaka
+Gå framåt
+Laddar Obsidian ...
+Ett fel uppstod vid laddning av Obsidian.
+Ladda om app
+Ladda om app i säkert läge
+Öppna ett annat valv
+Laddar tillägg ...
+Tillägg "{{plugin}}" tar lång tid att ladda.
+Laddar valv ...
+Misslyckades med att ladda valv: 
+Laddar cache ...
+Laddar arbetsyta ...
+Importera till valv
+Lägg till text i filen:
+Välj en fil att infoga
+Infoga text i {{filename}}
+Infoga länk i {{filename}}
+Visa fliköversikt
+Importerar ...
+Import lyckades
+Misslyckades med att importera fil {{filename}}
+Tryck tillbaka igen för att avsluta.
+
+Gillar du Obsidian? Hjälp oss genom att ge den ett betyg.
+Betygsätt appen
+Avfärda
+Konfigurationsfiler uppdaterades från iCloud, omladdning krävs
+Ladda om
+Officiell hjälpsida
+Läs den officiella hjälpdokumentationen för Obsidian, tillgänglig på flera språk.
+Besök
+Discord-chatt
+Discord är den bästa platsen att chatta med andra erfarna Obsidian-användare från hela världen.
+Gå med
+Officiellt forum
+Hjälp varandra, posta funktionsförfrågningar, rapportera buggar och ha djupgående diskussioner om kunskapshantering.
+Sandlådevvalv
+Lek runt och experimentera med olika funktioner. Observera att dina ändringar inte kommer att sparas.
+Spara aktuell fil
+Ladda ner bilagor för aktuell fil
+Följ länk under markören
+Öppna länk under markören i ny flik
+Öppna länk under markören till höger
+Öppna länk under markören i nytt fönster
+Fokusera på flikgruppen ovan
+Fokusera på flikgruppen nedan
+Fokusera på flikgruppen till vänster
+Fokusera på flikgruppen till höger
+Växla fästning
+Dela till höger
+Dela nedåt
+Växla staplade flikar
+Växla läsbar radlängd
+Växla radnummer
+Navigera bakåt
+Navigera framåt
+Växla ljust/mörkt läge
+Byt tema...
+Byt valv...
+Öppna valv...
+Hantera valv
+Sök i aktuell fil
+Sök och ersätt i aktuell fil
+Lägg till filegenskap
+Namn (A till Ö)
+Namn (Ö till A)
+Lägg till alias
+Rensa filegenskaper
+Öppna inställningar
+Öppna hjälp
+Växla redigerings-/läsningsvy
+Växla förhandsvy/källkodsläge
+Radera aktuell fil
+Ny flik
+Nytt fönster
+Visa papperskorgen
+Stäng alla flikar
+Stäng aktuell flik
+Stäng andra i flikgruppen
+Stäng alla andra flikar
+Stäng denna flikgrupp
+Växla vänster sidofält
+Växla ribbon
+Växla höger sidofält
+Växla standardläge för nya flikar
+Lägg till markör ovan
+Lägg till markör nedan
+Fokusera på redigeraren
+Växla vikning av egenskaper i aktuell fil
+Växla vikning på aktuell rad
+Vik in alla rubriker och listor
+Vik ut alla rubriker och listor
+Vik in mer
+Vik ut mindre
+Byt rad uppåt
+Byt rad nedåt
+Ta bort rubrik
+Sätt som rubrik {{level}}
+Växla fetstil för markering
+Växla kursiv stil för markering
+Växla markering för markering
+Växla kommentarer för markering
+Rensa formatering
+Infoga länk
+Växla stavningskontroll
+Radera stycke
+Växla att göra-lista status
+Växla punkt/checkbox
+Infoga callout
+Infoga kodblock
+Infoga matematikblock
+Infoga horisontell linje
+Infoga tabell
+Infoga fotnot
+Redigera filtitel
+Kopiera filväg
+Kopiera aktuell filsökväg från systemroten
+Kopiera Obsidian URL
+Exportera till PDF
+Ladda om appen utan att spara
+Ångra stäng flik
+Visa kontextmeny under markören
+Visa felsökningsinformation
+Öppna sandlådevvalv
+Växla fönster alltid överst
+Zooma in
+Zooma ut
+Återställ zoom
+Växla redigerings-/förhandsvy
+Flytta aktuell panel till nytt fönster
+Öppna aktuell panel i nytt fönster
+Byt namn på aktuell fil
+Gå till föregående flik
+Gå till nästa flik
+Gå till sista flik
+Gå till flik #{{n}}
+Visa versionsanteckningar
+Detta kommer att påverka {{links}} i {{files}}.
+Uppdaterade {{links}} i {{files}}.
+Uppdatera länkar
+Vill du uppdatera interna länkar som länkar till denna fil?
+Uppdatera alltid
+Bara en gång
+Uppdatera inte
+Är du säker på att du vill radera "{{filename}}"?
+Den kommer att flyttas till din systempapperskorg.
+Den kommer att flyttas till Obsidians papperskorg, som finns i den dolda mappen ".trash" i ditt valv.
+Filen kommer att raderas permanent.
+Denna mapp är inte tom.
+Om du fortsätter kommer alla filer i denna mapp att raderas.
+Radera mapp
+Radera
+Fråga inte igen
+Det finns för närvarande {{count}} länk som pekar på denna fil.
+Det finns för närvarande {{count}} länkar som pekar på denna fil.
+Radera fil
+Ladda ner bilagor
+Det finns inga externa bilagor i denna anteckning.
+Laddade ner {{count}} bilaga.
+Laddade ner {{count}} bilagor.
+Uppdaterade {{count}} fil.
+Uppdaterade {{count}} filer.
+Återställde ändringar i {{count}} fil.
+Återställde ändringar i {{count}} filer.
+Ingen internetanslutning
+Läser in...
+Hantera
+Visa
+Bekräfta
+Avbryt
+Hoppa över
+Ladda ner
+Klar
+Spara
+Stoppa
+Ändra
+Fortsätt
+Välj
+Försök igen
+Uppdatera
+Ångra
+Förbereder PDF ...
+Byt namn på fil
+Filnamn
+Nytt namn
+Fel
+Vald
+Lyckades byta namn på fil.
+Misslyckades med att slå samman anteckningar: {{message}}
+Filen eller mappen “{{path}}” finns inte.
+Rubrik kan inte vara tom
+Block-ID kan inte vara tomt
+Block-ID kan bara innehålla alfanumeriska tecken eller bindestreck
+Byt namn på rubrik
+Byt namn på block-ID
+Radera filbilagor?
+Den här bilagan används inte längre i några anteckningar. Vill du radera den?
+Dessa {{count}} bilagor används inte längre i några anteckningar. Vill du radera dem?
+Filträd
+Galleri
+Skapa anteckning
+Ny anteckning till höger
+Ny flik
+Nytt fönster
+Öppna snabbt...
+Öppna valv...
+Stäng flik
+Stäng fönster
+Sök
+Ersätt
+Notis
+Markdown-länk
+Länk
+Rubrik {{level}}
+Ingen rubrik
+Citat
+Exportera PDF
+Infoga bilaga...
+Kodblock
+Matematikblock
+Tabell
+Fotnot
+Inbäddad rubrik
+Radnummer
+Punktlista
+Numrerad lista
+Att göra-lista
+Fetstil
+Kod
+Kommentar
+Kursiv
+Matematik
+Markera
+Genomstruken
+Kommentar
+Vikning
+Vik in alla
+Vik ut alla
+Vik in mer
+Vik ut mindre
+Källkodsläge
+Läsvy
+Visa felsökningsinformation
+Öppna sandlådevvalv
+Flytta till nytt fönster
+Navigera bakåt
+Navigera framåt
+Växla vänster sidofält
+Växla höger sidofält
+
+Dela till höger
+Dela nedåt
+Versionsanteckningar
+Tillägg
+Filutforskare
+Se alla filer i ditt valv.
+Öppna filutforskare
+Visa filutforskare
+Skapa ny anteckning
+Skapa ny mapp
+Skapa ny anteckning i aktuell flik
+Skapa anteckning till höger
+Avslöja aktuell fil automatiskt
+Kollapsa alla
+Expandera alla
+Ny anteckning
+Ny mapp
+Ändra sorteringsordning
+Avslöja fil i filutforskaren
+Avslöja aktiv fil i filutforskaren
+Gör en kopia av aktuell fil
+Duplicera aktuell fil
+Flytta fil till annan mapp
+Ny mapp med val ({{count}} objekt)
+Ny mapp med val ({{count}} objekt)
+Flytta fil till...
+Flytta mapp till...
+Flytta {{count}} objekt till...
+Skriv en mapp
+Inga mappar hittades.
+för att navigera
+för att flytta
+för att skapa
+för att avfärda
+Sortera efter filnamn (A till Ö)
+Sortera efter filnamn (Ö till A)
+Sortera efter redigeringstid (ny till gammal)
+Sortera efter redigeringstid (gammal till ny)
+Skapad tid (gammal till ny)
+Skapad tid (ny till gammal)
+Ny anteckning
+Ny mapp
+Byt namn
+Radera
+Gör en kopia
+Duplicera
+Filnamn får inte innehålla något av följande tecken: 
+Länkar fungerar inte med filnamn som innehåller något av dessa tecken: 
+Det finns redan en fil med samma namn
+Filnamn kan inte vara tomt.
+Filnamn får inte börja med en punkt.
+Senast ändrad {{time}}
+Skapad {{time}}
+Namnlös
+Namnlös
+Bilagor kommer att sparas i "{{path}}" från och med nu.
+Sök
+Sök efter nyckelord i alla anteckningar.
+Sök i alla filer
+Kollapsa resultat
+Matcha skiftläge
+Förklara sökterm
+Visa mer sammanhang
+{{count}} resultat
+{{count}} resultat
+Sökinställningar
+Skriv för att börja söka...
+Matchar text: 
+Matchar regex: 
+Innehåller exakt text: 
+Större än: 
+Mindre än: 
+Är sant
+Är falskt
+Är tom
+Innehåller egenskap:
+Matcha alla av: 
+Matcha någon av: 
+Exkluderar: 
+Skiftlägeskänslig
+Inte skiftlägeskänslig
+Matcha filväg: 
+Matcha filnamn: 
+Matcha filinnehåll: 
+Matcha uppgift: 
+Matcha uppgift (att göra): 
+Matcha uppgift (klar): 
+Matcha rad: 
+Matcha block: 
+Matcha avsnitt: 
+Matcha tagg: 
+Inga träffar hittades.
+... och {{count}} till träff.
+... och {{count}} fler träffar.
+Kopiera sökresultat
+Kopiera resultat
+Resultat kopierade till ditt urklipp.
+Visa sökväg
+Visa hela sökvägen till filen istället för bara filnamnet.
+Länkstil
+Valfritt gör varje filresultat till en länk.
+Ingen
+Wikilänk
+Markdown-länk
+Listprefix
+Valfritt lägg till ett listprefix till varje filresultat.
+Ingen
+Bindestreck (-)
+
+Numrerad
+Rensa sökning
+Sökalternativ
+Egenskaper
+Taggar
+Läs mer
+Historik
+Rensa sökhistorik
+matcha filens sökväg
+matcha filnamn
+sök efter taggar
+sök nyckelord på samma rad
+sök nyckelord under samma rubrik
+matcha egenskap
+Sök efter "{{keyword}}"
+Sök i mapp
+Snabbväxlare
+Hoppa till vilken fil som helst utan att lämna ditt tangentbord. Ctrl/Cmd+O för att aktivera.
+Växlare
+Öppna snabbväxlare
+för att navigera
+för att öppna
+för att öppna i ny flik
+för att öppna till höger
+för att skapa
+för att avfärda
+för att välja
+Inga anteckningar hittades. Tryck Enter för att skapa en ny.
+Skriv fil för att växla till eller skapa...
+Tryck Enter för att skapa
+Inte skapad än, välj för att skapa
+Visa endast befintliga
+Om länkar till filer som ännu inte är skapade ska visas.
+Visa bilagor
+Visa bilagor som bilder, videor och PDF-filer.
+Visa alla filtyper
+Visa alla filer inklusive de som Obsidian inte kan öppna. Filerna öppnas med standardappen för den filtypen.
+Grafvy
+Se en graföversikt över vilka anteckningar som länkar till vilka.
+Öppna grafvy
+Öppna lokal graf
+Kopiera skärmbild
+Graf av {{displayText}}
+Filter
+Sök filer...
+Djup
+Visa noder detta antal länkar bort
+Grannlänkar
+Visa länkar mellan grannar.
+Utgående länkar
+Visa länkar till andra filer
+Inkommande länkar
+Visa länkar från andra filer
+Taggar
+Taggar är länkade till filerna som innehåller dem
+Bilagor
+Visa bilagor inkluderade av filer
+Endast befintliga filer
+När markerad, visas inte länkar till icke-existerande filer
+Föräldralösa
+Visa filer som inte är länkade till någon annan fil
+Visa
+Pilar
+Visa pilar när inzoomad
+Textblekningströskel
+Nodstorlek
+Länkens tjocklek
+Krafter
+Centralkraft
+Länkens kraft
+Länkens avstånd
+Repulsionskraft
+Öppna grafinställningar
+Skärmbild kopierad till urklipp.
+Grupper
+Skriv in fråga...
+Radera grupp
+Ny grupp
+Klicka för att ändra färg\nDra för att ändra ordning på grupper
+Starta grafens tidsförlopp animation
+Starta tidsförlopp animation
+Animera
+Bakåtlänkar
+Visa antal bakåtlänkar i statusfältet.
+Öppna bakåtlänkar
+Visa bakåtlänkar panel
+Öppna bakåtlänkar för aktuell fil
+Växla bakåtlänkar i dokument
+Bakåtlänkar i dokument
+Länkade omnämnanden
+Inga bakåtlänkar hittades.
+Olinkade omnämnanden
+Visa sökfilter
+Länk
+Bakåtlänkar för {{displayText}}
+Inga olinkade omnämnanden hittades.
+
+Bakåtlänk i dokument
+Visa bakåtlänkar i dokument som standard när du öppnar nya paneler.
+Utgående länkar
+Visa utgående länkar och upptäck olinkade omnämnanden av andra anteckningar i den aktuella anteckningen.
+Öppna utgående länkar
+Visa utgående länkar panel
+Öppna utgående länkar för aktuell fil
+Utgående länkar från {{displayText}}
+Länkar
+Inga länkar hittades.
+Olinkade omnämnanden
+Länka denna fil
+Inte skapad än
+Taggpanel
+Taggar
+Visar alla dina taggar och deras antal förekomster.
+Visa taggpanel
+Inga taggar hittades.
+Taggnamn (A till Ö)
+Taggnamn (Ö till A)
+Frekvens (hög till låg)
+Frekvens (låg till hög)
+Visa inbäddade taggar
+Kollapsa alla
+Expandera alla
+Fotnotsvy
+Fotnoter
+Visa en lista över fotnoter från den aktuella anteckningen.
+Visa fotnoter
+Inga fotnoter hittades.
+Egenskapsvy
+Visa metadata för dina filer.
+Alla egenskaper
+Filegenskaper
+Filegenskaper för {{displayText}}
+Visa alla egenskaper
+Visa filegenskaper
+Radera egenskap
+Radera egenskaper
+Automatisk
+Automatisk ({{type}})
+Inga egenskaper hittades.
+Ogiltiga egenskaper.
+Egenskapsnamn (A till Ö)
+Egenskapsnamn (Ö till A)
+Frekvens (hög till låg)
+Frekvens (låg till hög)
+Slå samman egenskap “{{oldKey}}” med “{{newKey}}”?
+Vid konflikter kommer värdena att slås samman eller värdet från “{{oldKey}}” kommer att användas.
+Kollapsa alla
+Expandera alla
+Öppna filegenskaper
+Öppna daglig anteckning
+Sidförhandsvisning
+Förhandsgranska en anteckning när du hovrar över en intern länk. Ctrl/Cmd + hovra i redigeringsläge.
+“{{linktext}}” kunde inte hittas.
+"{{linktext}}" är inte skapad än. Klicka för att skapa.
+Fotnot {{id}} hittades inte. Klicka för att skapa.
+Redigerare
+Förhandsvisning
+Sök, Bakåtlänkar och Utgående länkar
+Flikhuvud
+Kräv {{key}} för att utlösa sidförhandsvisning vid hovring
+Bokmärken
+Bokmärk ofta använda filer och sökningar.
+Visa bokmärken
+Kollapsa alla
+Bokmärk den aktiva fliken...
+Ny bokmärkesgrupp
+Bokmärk...
+Lägg till bokmärke
+Redigera bokmärke
+Bokmärk block under markören...
+Bokmärk rubrik under markören...
+Bokmärk aktuell sökning...
+Ta bort bokmärke för aktuell fil
+Bokmärk {{count}} flik...
+Bokmärk {{count}} flikar...
+Bokmärk alla flikar...
+Bokmärk denna graf...
+Bokmärke
+Bokmärkt
+{{count}} bokmärke
+{{count}} bokmärken
+Inga bokmärken hittades
+Misslyckades med att ladda bokmärken.
+Datafilen är korrupt.
+Namnlös grupp
+Namnlös graf
+Redigera...
+Ta bort
+Byt namn
+Bokmärk detta block...
+Bokmärk denna rubrik...
+Ingen sökfråga att bokmärka.
+Sökväg
+Fråga
+Titel
+Bokmärkesgrupp
+Bokmärken
+Anpassad CSS
+Läs in och tillämpa “obsidian.css” i valvmappen.
+Community-teman
+Hämtar community-temadata ...
+Filtrera...
+Endast mörka teman
+Endast ljusa teman
+Använd
+Sluta använda detta tema
+Installera och använd
+Uppdatera
+Detta tema tillhandahöll inte en README-fil.
+Ta bort tema
+Besök på GitHub
+Kunde inte ladda community-teman, vänligen kontrollera ditt nätverk.
+Du använder nu {{title}} som ditt CSS-tema.
+Temat {{title}} har raderats.
+Temat {{title}} har uppdaterats.
+Installerad
+Äldre
+Uppdatera alla
+Misslyckades med att ladda community-teman.
+Inga temauppdateringar hittades.
+Hittade {{count}} tema att uppdatera.
+Hittade {{count}} teman att uppdatera.
+Misslyckades med att installera tema "{{name}}".
+Lyckades installera tema "{{name}}".
+Installerar tema "{{name}}" ...
+Visar {{themeCount}}:
+Uppdatering tillgänglig
+Kommandopalett
+Skriv ett kommando för att köra det. Inget behov av att använda gränssnittet eller komma ihåg genvägen.
+Öppna kommandopalett
+för att navigera
+för att använda
+för att avfärda
+Inga kommandon hittades.
+Skriv ett kommando...
+Fästa kommandon
+Markdown-formatimportör
+Konvertera Markdown från andra appar till Obsidian-format.
+Öppna Markdown-importör
+Roam Research taggfixare
+Konverterar "#tag" och "#[[tag]]" till "[[tag]]".
+Roam Research markeringsfixare
+Konverterar "^^highlight^^" till "==highlight==".
+Roam Research TODO-konverterare
+Konverterar "{{[[TODO]]}}" till "[ ]".
+Bear markeringsfixare
+Konverterar "::highlight::" till "==highlight==".
+Zettelkasten länkfixare
+Fixar "[[UID]]" länkar till full "[[UID Filnamn]]".
+Zettelkasten länkförskönare
+Fixar "[[UID]]" länkar och förskönar dem "[[UID Filnamn|Filnamn]]".
+Frontmatter-migrering
+Migrera frontmatter-taggar, alias och cssclasses till det strikta format som krävs av Obsidian v1.9+
+Varning: importören kommer att konvertera alla filer i ditt valv, inte bara den aktuella filen.
+Dina filer kommer att skrivas över. Säkerhetskopiera alla dina filer innan du försöker konvertera.
+Starta konvertering
+Stoppa
+Gå tillbaka
+Klar
+Bearbetar ...
+Avbryter ...
+Färdig!
+Bearbetade filer
+Modifierade filer
+Totala ersättningar
+Misslyckades
+Dagliga anteckningar
+Öppna dagens dagliga anteckning, eller skapa en om den inte finns.
+Idag
+Öppna dagens anteckning
+Öppna föregående dagliga anteckning
+Öppna nästa dagliga anteckning
+Infoga text i daglig anteckning
+Infoga länk i daglig anteckning
+Misslyckades med att skapa daglig anteckning. "{{format}}" är inte ett giltigt format.
+Misslyckades med att skapa daglig anteckning. Mappen "{{folderOption}}" hittades inte.
+Misslyckades med att skapa daglig anteckning. Mallfilen "{{template}}" hittades inte.
+Det finns ingen daglig anteckning före denna.
+Det finns ingen daglig anteckning efter denna.
+Datumformat
+Välj hur dagliga anteckningar namnges i ditt valv.
+Anpassat format
+Anpassad
+Ogiltigt datumformat
+Mappen för dagliga anteckningar hittades inte.
+För mer syntax, se: 
+formatreferens
+Så här kommer det att se ut: 
+Ny filplats
+Mappsökvägen för att skapa den nya dagliga anteckningen.
+Mallfilplats
+Filsökvägen att använda som mall.
+Unik anteckningsskapare
+Skapa anteckningar med unika tidsstämpelprefix, för arbetsflöden som zettelkasten eller slipbox.
+Unik
+Skapa ny unik anteckning
+Ny unik anteckning
+Lägg till unik intern länk
+Ny filplats
+Mappsökvägen för att skapa den nya unika anteckningen.
+Misslyckades med att skapa unik anteckning. Mappen "{{folderOption}}" hittades inte.
+Mallfilplats
+Filsökvägen att använda som mall.
+Exempel: mapp1/anteckning
+Unikt prefixformat
+Misslyckades med att skapa unik anteckning. Mallfilen "{{template}}" hittades inte.
+Misslyckades med att generera en unik anteckning med formatet "{{format}}
+Slumpmässig anteckning
+Öppnar en slumpmässig anteckning. Användbart för att granska och upptäcka.
+Slumpmässig
+Öppna slumpmässig anteckning
+Disposition
+Visar dispositionen av den aktuella filen eller länkad panel.
+Öppna disposition
+Visa dispositionspanel
+Öppna disposition av den aktuella filen
+Disposition av {{displayText}}
+Inga rubriker hittades.
+Auto-scrolla till aktuell sektion
+Ordräkning
+Visa ordräkning i statusfältet.
+Bildspel
+Presentera från Markdown. Använd "---" för att separera bilder.
+Starta presentation
+Ljudinspelare
+Spela in ljud och spara som bilaga.
+Starta ljudinspelning
+Stoppa ljudinspelning
+Starta/stoppa inspelning
+Mikrofonåtkomst nekades, vänligen aktivera den från inställningspanelen.
+Vänligen ge mikrofontillstånd för att starta inspelning.
+Ingen mikrofon är ansluten.
+Öppna i standardapp
+Lägg till knapp för att öppna aktuell fil i standardappen.
+Öppna i standardapp
+Dela
+Visa i mapp
+Visa i Finder
+Mallar
+Infoga mallinnehåll från en mapp med mallfiler.
+Infoga mall
+Infoga aktuellt datum
+Infoga aktuell tid
+Mallmappens plats
+Filer i denna mapp kommer att vara tillgängliga som mallar.
+Datumformat
+{{date}} i mallfilen kommer att ersättas med detta värde.
+Du kan också använda {{date:YYYY-MM-DD}} för att åsidosätta formatet en gång.
+Tidsformat
+{{time}} i mallfilen kommer att ersättas med detta värde.
+Du kan också använda {{time:HH:mm}} för att åsidosätta formatet en gång.
+för att navigera
+för att infoga mall
+för att avfärda
+Inga mallar hittades
+Misslyckades med att lista mallar. Mallmappen är ogiltig.
+Misslyckades med att lista mallar. Mappen "{{folderOption}}" hittades inte.
+Kunde inte infoga mall, egenskaperna i mallfilen kunde inte läsas.
+Misslyckades med att lista mallar. Ingen mallmapp konfigurerad.
+Skriv namnet på en mall...
+Genomskinligt fönster
+Slå på genomskinlighetseffekt för att förbättra en känsla av djup. Bäst använd med mörkt läge. Inte stöds på Linux.
+Snedstreckskommandon
+Aktivera möjligheten att utlösa snedstreckskommandon i redigeraren genom att skriva snedstreck.
+Redigerarstatus
+Lägger till ett statusfältselement för att visa och ändra det aktuella redigeringsläget.
+Läsning
+Källkodsläge
+Förhandsvisning
+Publicera
+Publicera dina anteckningar genom Obsidian Publish.
+Publicera ändringar ...
+Publicera aktuell fil
+Du behöver tillgång till internet för att publicera ändringar.
+Obsidian Publish är en tilläggsbetald tjänst som låter dig publicera dina anteckningar online direkt från Obsidian.
+För att börja publicera, vänligen logga in eller skapa ett nytt Obsidian-konto.
+Du har ännu inte en Obsidian Publish-prenumeration.
+Köp
+Hantera webbplatser
+Du har inga webbplatser.
+Välj
+Redigera webbplats-ID
+Radera webbplats
+Är du säker på att du vill radera denna webbplats?
+Detta kommer omedelbart och permanent att radera din webbplats.
+Bekräfta radering av webbplats "{{site}}"
+Webbplats-ID
+Din webbplats kommer att vara på https://publish.obsidian.md/{site id}. Du kan ändra detta senare. Endast små bokstäver, siffror och bindestreck är tillåtna.
+Välj ett webbplats-ID
+Skapa
+Webbplats-ID kan endast innehålla små bokstäver, siffror och bindestreck.
+Detta webbplats-ID används redan, vänligen försök med ett annat.
+Det uppstod ett problem när du skapade din webbplats.
+Webbplatsalternativ
+Allmänt
+Komponenter
+Utseende
+Läsupplevelse
+Andra webbplatsinställningar
+Webbplatsnamn
+Namnet på din publicerade webbplats. Det kommer att visas i sidans titel på din webbplats.
+Namnet på din webbplats
+Startsida fil
+Den första sidan användaren ser när de landar på din publicerade webbplats
+Välj en publicerad fil
+Logotyp
+Välj en bildfil som din webbplats logotyp.
+Alla uppladdade bilder i ditt valv ...
+Webbplats samarbete
+Hantera medarbetare för denna webbplats.
+Anpassa navigering
+Åsidosätt ordningen på navigeringsobjekt och dölj sidor eller mappar från att visas.
+Navigeringsobjektens visningsordning
+Dölj sidor eller mappar från navigering
+Högerklicka och välj "Dölj" för att förhindra att specifika sidor visas i webbplatsens navigering. Sidorna kommer fortfarande att vara tillgängliga via länkar eller genom att komma åt URL:en direkt.
+Visa dolda
+Hantera
+Navigering
+Dra och släpp för att anpassa ordningen i vilken navigeringsobjekt visas på din Publish-webbplats.
+Dölj i navigering
+Hantera
+Tema
+Välj standardfärgschema för din webbplats.
+Anpassa till system
+Ljus/mörk växling
+Låt besökaren växla mellan ljust och mörkt tema på egen hand.
+Visa navigering
+Visa en lista över alla publicerade sidor på vänster sida av din publicerade webbplats.
+Visa sökfält
+Visa ett sökfält högst upp i navigeringen som låter besökarna söka sidor och rubriker på din webbplats.
+Visa grafvy
+Visa en liten lokal graf på varje sida.
+Visa innehållsförteckning
+Visa dispositionen av rubriker på varje sida.
+Visa bakåtlänkar
+Visa bakåtlänkssektion i slutet av varje sida.
+Använd glidande fönster
+Öppna sidor i nya paneler till höger. Tillåter att rulla genom paneler horisontellt.
+Visa förhandsvisning vid hovring
+Visa sidförhandsvisning när du hovrar över länkar.
+Dölj sidtitel
+Dölj sidtitelrubriken. Användbart när du har egna rubriker i början av varje sida.
+Läsbar radlängd
+Begränsa maximal radlängd. Passar mindre innehåll på skärmen, men gör långa stycken mer läsbara.
+Lösenord
+Begränsa åtkomst till din webbplats med lösenord.
+Google Analytics spårningskod
+Konfigurera Google Analytics för din webbplats. Endast tillgängligt för besökare från din anpassade domän-URL. Vänligen kontrollera med dina lokala lagar och förordningar först.
+Hantera
+Spara webbplatsinställningar
+Uppdaterade alternativ för din webbplats.
+Tillbaka
+Publicerar till
+Byt webbplats
+Lägg till länkade
+Lägg till alla filer som är länkade av för närvarande valda objekt
+{{count}} länkad fil har lagts till.
+{{count}} länkade filer har lagts till.
+Ändra webbplatsalternativ
+Inga ändringar upptäcktes.
+Ändringar
+Oförändrade (välj för att radera)
+ vald
+Välj alla
+Navigeringsobjekt
+Avmarkera alla
+Nya
+Publicera
+Du har inte behörighet att publicera till den aktuella webbplatsen.
+Vänligen välj minst en fil.
+Ladda upp ändringar
+Klar
+Stoppa
+Laddar upp
+Att publicera
+Att radera
+Publicerad
+Raderad
+Misslyckades
+Avbruten
+Ändra
+Det tar upp till några minuter för ändringarna att visas på din webbplats. Om du inte ser dina senaste ändringar, försök att rensa cacheminnet i din webbläsare.
+Du kan besöka din webbplats här: 
+Något gick fel. Vänligen kontrollera utvecklarkonsolen för detaljer.
+Ett nätverksfel inträffade. 
+Hantera lösenord
+Lägg till lösenord
+Nytt lösenord
+Din webbplats har för närvarande inga lösenord. Vem som helst kan besöka den.
+Din webbplats är lösenordsskyddad. Om du har flera lösenord kan besökare komma åt din webbplats genom att ange något av dem.
+Lösenord
+En hash av ditt lösenord kommer att lagras säkert. När lösenordet är inställt kan det inte visas i klartext.
+Ditt lösenord
+Smeknamn (valfritt)
+Ange ett smeknamn för att påminna dig själv om vad eller vem lösenordet är för.
+Lägg till detta lösenord
+Namnlöst lösenord
+Skapad {{time}}
+Lade till nytt lösenord.
+Anpassad domän
+Använd din egen domän istället för https://publish.obsidian.md/{site id} URL.
+Tillåt inte sökmotorindexering
+Förhindra sökmotorer från att indexera din webbplats.
+Konfigurera
+Konfigurera anpassad domän
+Anpassad URL
+URL:en där din webbplats kommer att finnas.
+Omdirigera till din anpassade domän
+Omdirigera besökare på publish.obsidian.md/id till din anpassade domän.
+Uppdatera domäninställning
+Vänligen se vår {{link}} på vår hjälpsida för mer information.
+guide för att ställa in anpassad domän
+Du använder {{site}} av din {{limit}}.
+Köp fler webbplatser
+Du har inte köpt några webbplatser.
+Skaffa en webbplats
+Hantera delning för "{{name}}"
+Denna webbplats delas för närvarande med följande personer.
+Denna webbplats delas för närvarande inte med någon.
+Väntar
+Ta bort användare
+Bjud in användare
+Ange deras e-post...
+Vänligen ange en giltig e-postadress för att bjuda in någon.
+Vänligen aktivera kärntillägget Publicera i Inställningar -> Kärntillägg för att visa webbplatser.
+Dina webbplatser
+Webbplatser delade med dig
+Sluta samarbeta på denna webbplats
+Bekräfta att sluta samarbeta på webbplatsen
+Detta kommer att ta bort denna webbplats från listan över webbplatser som delas med dig. Denna åtgärd kan inte ångras.
+Vänligen kontakta ägaren av webbplatsen om du vill samarbeta på denna webbplats igen.
+Lämna
+Jämför med liveversionen
+Använd liveversionen
+Bekräfta åsidosättning av lokal version
+Är du säker på att du vill åsidosätta den lokala versionen?
+Liveversionen kommer att användas och din lokala version kommer att kasseras. Vänligen gör säkerhetskopior om det behövs.
+Fortsätt
+Lyckades använda liveversionen för att åsidosätta din lokala version.
+Öppna i livewebbplats
+Öppna fil
+Hantera publiceringsfilter
+Inkluderade mappar
+Filer under dessa mappar kommer automatiskt att väljas när du granskar ändringar för att publicera.
+ Dessa mappar är för närvarande inkluderade:
+Exkluderade mappar
+Filer under dessa mappar kommer inte att visas när du granskar ändringar för att publicera. Denna inställning har prioritet över inkluderade mappar ovan.
+Obsidian Publish inkluderar för närvarande {{folders}}.
+Obsidian Publish exkluderar för närvarande {{folders}}.
+Hantera inkluderade mappar
+Hantera exkluderade mappar
+Inkludera en mapp
+Du kan inkludera både befintliga mappar och mappar som ännu inte har skapats.
+Kontakta support
+Navigeringsförhandsvisning
+Arbetsytor
+Spara och ladda arbetsytans layout.
+Ladda arbetsytans layout
+Hantera arbetsytans layouter
+Spara layout
+Spara och ladda en annan layout
+Spara aktuell arbetsytans layout som...
+Spara
+Ladda
+Radera layout
+Vänligen ange ett namn för den nya layouten.
+Lyckades spara layout.
+Ingen sparad layout hittades.
+Modifierad {{time}}
+Skriv layoutnamn...
+Synkronisera
+Synkronisera dina filer genom Obsidian Sync.
+Visa versionshistorik
+Ställ in Sync
+Öppna versionshistorik
+Visa Sync-historik
+Öppna aktivitetslogg
+Ladda mer
+Visa skillnad
+Kopiera till urklipp
+Återställ denna version
+Denna version är redan den senaste versionen.
+Lyckades återställa version från {{time}}
+Denna fil raderades
+Raderad via {{ device }}
+Denna fil döptes om från "{{filepath}}"
+Bytte namn från “{{from}}” till “{{to}}”
+Flyttade från “{{from}}”
+Flyttade från “{{from}}” till “{{to}}”
+1 revision
+{{revisions}} revisioner
+
+Ingen synkroniseringshistorik för denna fil.
+Tom
+Kunde inte hämta versionshistorik
+Inställningsfiler
+Raderade filer
+Versionshistorik
+Klicka på en raderad fil för att se dess historik.
+Skapa fjärrvalv
+Vänligen ange ett lösenord.
+Valvnamn kan inte vara tomt.
+Lyckades skapa fjärrvalv "{{name}}".
+Fjärrvalv synkroniserar säkert ditt valv mellan enheter.
+Valvnamn
+Hjälper dig att komma ihåg vad detta valv är till för.
+
+Automatisk
+Välj den serverregion som är närmast dig för att lagra fjärrvalvet. Detta kan inte ändras i framtiden.
+Mitt fantastiska valv
+Kryptering
+End-to-end-kryptering erbjuder den starkaste säkerheten men kräver att du säkert lagrar ditt krypteringslösenord. Standardkryptering använder en nyckel som hanteras av Obsidian för att skydda dina data under överföring och på våra servrar.
+Detta alternativ kan inte ändras senare.
+End-to-end-kryptering
+Standardkryptering
+Krypteringslösenord
+Detta lösenord kan inte ändras senare.
+Om du glömmer detta lösenord kommer all fjärrdata att förbli oanvändbar för alltid.
+Detta påverkar inte dina lokala data.
+Fjärrvalvet “{{name}}” är för närvarande krypterat. Ange ditt lösenord för att låsa upp.
+Ditt lösenord
+Lås upp ditt fjärrvalv
+Lås upp valv
+Dina fjärrvalv
+Skapad {{time}}
+Radera
+Byt namn
+Byt namn på fjärrvalv "{{name}}"
+Ange ett nytt namn för detta fjärrvalv.
+Hantera delning
+Bekräfta radering av valv
+Är du säker på att du vill radera detta fjärrvalv?
+All data på vår server, inklusive versionshistorik, kommer att raderas. Dina lokala filer kommer att förbli intakta.
+Denna åtgärd är permanent och oåterkallelig.
+{{name}} har raderats.
+Obsidian Sync: Det anslutna fjärrvalvet finns inte längre.
+Anslut
+Koppla från
+
+Du har inga fjärrvalv.
+Du har ingen aktiv Obsidian Sync-prenumeration.
+Vänligen besök
+Kan inte förhandsgranska {{type}} filer.
+Skapa nytt valv
+Sync-logg
+Alla
+Fel
+Hoppade över
+Sammanfogningskonflikter
+Kopiera sync-logg
+Lyckades kopiera sync-logg.
+Försök igen
+Köp
+Konflikterande filsynkroniseringstjänst upptäckt
+Varning: Ditt valv verkar använda {{service}} som en tredje parts synkroniseringstjänst. Om du använder Obsidian Sync med detta valv kan du stöta på konflikter, filkorruption eller dataförlust.
+Om du använder iCloud Drive kan dina Dokument- och Skrivbordsmappar synkroniseras av iCloud. Detta kan orsaka konflikter med Obsidian Sync.
+Fjärrvalv
+Välj
+Hantera
+För närvarande ansluten till fjärrvalvet "{{name}}".
+För närvarande inte ansluten till något fjärrvalv.
+Sync-status
+Obsidian Sync är för närvarande pausad.
+Obsidian Sync är för närvarande igång.
+Enhetsnamn
+Detta namn kommer att visas i sync-loggen. Lämna tomt för att använda standardnamnet.
+Återuppta
+Pausa
+Raderade filer
+Visa och återställ raderade filer.
+Sync-aktivitet
+Visa senaste sync-aktiviteter för felsökning.
+Visa
+Massåterställning
+Återställ filer
+Återställ {{count}} fil
+Återställ {{count}} filer
+Återställer ...
+`Återställning klar: {{succeeded}} lyckades och {{failed}} misslyckades.`
+Valvstorlek
+Du använder {{size}} av {{limit}}
+Kan inte hämta din valvstorlek.
+Hämtar din valvstorlek ...
+Valvstorlek över gränsen
+Valvstorlek närmar sig gränsen
+Visa största filer
+Dessa är de fjärrfiler som tar mest plats. Efter att ha raderat bilagor, använd rensningsknappen för att frigöra fjärrvalvsutrymme.
+Uppgradera lagring
+Rensa
+Dölj mina ändringar
+Rensa permanent raderade bilagor från fjärrvalvet för att spara utrymme.
+Rensning klar.
+Förhindra enhetens viloläge
+Förhindrar enheten från att gå i viloläge när det fortfarande finns filer att synkronisera.
+Selektiv synkronisering
+Exkluderade mappar
+Förhindra att vissa mappar synkroniseras.
+ Dessa mappar är för närvarande exkluderade:
+Hantera
+Synkronisera bilder
+Synkronisera bildfiler med dessa tillägg: {{extensions}}.
+Synkronisera ljud
+Synkronisera ljudfiler med dessa tillägg: {{extensions}}.
+Synkronisera videor
+Synkronisera videofiler med dessa tillägg: {{extensions}}.
+Synkronisera PDF-filer
+Synkronisera PDF-filer.
+Synkronisera alla andra typer
+Synkronisera icke-stödda filtyper.
+Valvkonfigurationssynkronisering
+Inställningsversionshistorik
+Visa och återställ versionshistorik för inställningsfiler.
+Huvudinställningar
+Aktivera för att synkronisera redigeringsinställningar, fil- och länkinställningar, anpassade snabbkommandon, etc.
+Utseendeinställningar
+Synkronisera utseendeinställningar som mörkt läge, aktivt tema och aktiverade snippets.
+Teman och snippets
+Synkronisera nedladdade teman och snippets. Om de är aktiverade beror på den tidigare inställningen.
+Snabbkommandon
+Synkronisera anpassade snabbkommandon.
+Aktiv kärntilläggslista
+Synkronisera vilka kärntillägg som är aktiverade.
+Kärntilläggsinställningar
+Synkronisera kärntilläggsinställningar.
+Aktiv gemenskapstilläggslista
+Synkronisera vilka gemenskapstillägg som är aktiverade.
+Installerade gemenskapstillägg
+Synkronisera installerade gemenskapstillägg (.js, .css och manifest.json-filer) och deras inställningar.
+Sync läses fortfarande in, uppdatera den här sidan senare.
+Obsidian Sync är Obsidians tilläggssynkroniseringstjänst med end-to-end-kryptering och versionshistorik.
+För att börja synkronisera, vänligen logga in eller skapa ett nytt Obsidian-konto.
+Aktuell fil
+Synkronisera ändringar
+Idag
+Igår
+Denna vecka
+Äldre
+Senaste synkronisering
+{{count}} mer
+Registrera dig
+Logga in
+Hantera exkluderade mappar
+{{folders}} är för närvarande exkluderade från att synkroniseras.
+Exkludera en mapp
+Du kan exkludera både befintliga mappar och mappar som ännu inte har skapats.
+Ta bort från exkluderingslistan
+Ställ in anslutning
+Ansluter ...
+Anslutning misslyckades
+Misslyckades med att ansluta till fjärrvalvet.
+Du är nu ansluten till "{{name}}".
+Börja synkronisera
+Bekräfta sammanslagning av valv
+Ditt lokala valv innehåller redan några anteckningar.
+Om du ansluter till fjärrvalvet "{{name}}" kommer anteckningar i ditt lokala valv att slås samman med anteckningar från ditt fjärrvalv. Vid konflikter kommer den senaste versionen av anteckningen att bevaras.
+Vänligen uppdatera detta alternativ och starta om appen på alla enheter där du vill att det ska gälla.
+Detta fjärrvalv delas för närvarande med följande personer.
+Detta fjärrvalv delas för närvarande inte med någon.
+Valv delade med dig
+Sluta samarbeta på detta valv
+Bekräfta att sluta samarbeta på valvet
+Detta kommer att ta bort detta valv från listan över valv som delas med dig. Denna åtgärd kan inte ångras.
+Vänligen kontakta ägaren av valvet om du vill samarbeta på detta valv igen.
+Lämna
+Misslyckades med att ladda fjärrvalv.
+Du behöver en Obsidian Sync-prenumeration för att ansluta till detta valv.
+Kontakta support
+Om du stöter på några problem med Obsidian Sync, vänligen kontakta oss så att vi kan hjälpa dig! Du kan nå oss på support@obsidian.md.
+Kopiera felsökningsinformation
+E-posta support
+Sync är inte ansluten till ett fjärrvalv.
+Obsidian Sync låter dig skapa upp till 5 fjärrvalv. För att skapa ett nytt fjärrvalv, vänligen ta bort ett befintligt.
+Uppgradera valv
+Uppgradera valvkryptering
+Det finns en ny krypteringsversion tillgänglig för fjärrvalv.
+Migrera fjärrvalv
+Fjärrvalvskonfiguration
+Migrera
+Detta kommer att radera ditt fjärrvalv och återskapa det med den senaste krypteringen. Lokala filer kommer inte att påverkas, men din versionshistorik kommer att gå förlorad.
+Bekräfta valvmigrering
+För att uppgradera din kryptering kommer all data i valvet att laddas upp igen till Obsidian Sync-servrarna med den nya krypteringsmetoden. Denna process kommer permanent att radera all data krypterad med den gamla krypteringen, inklusive versionshistoriken för ditt valv.
+Viktigt: vi rekommenderar starkt att du skapar en säkerhetskopia av ditt valv innan du fortsätter för att förhindra eventuell dataförlust.
+Efter att ha slutfört uppgraderingen måste du återansluta alla dina enheter till det uppdaterade fjärrvalvet.
+Migrering av ditt valv kan ta lite tid. Du måste hålla Obsidian aktiv på denna enhet för att ladda upp alla dina anteckningar och bilagor igen. Det är bäst att göra detta på din primära enhet.
+Vill du fortsätta?
+Valvmigrering pågår.
+Valvmigreringen är klar.
+Konfliktlösning
+Välj hur konflikter ska lösas när en anteckning ändras oberoende på flera enheter.
+Sammanfoga automatiskt
+Skapa konfliktfil
+Filåterställning
+Låt dig återställa senaste ögonblicksbilder för att återhämta dig från oavsiktlig dataförlust. Ögonblicksbilder sparas endast för Markdown-filer.
+Öppna sparade ögonblicksbilder
+Ögonblicksintervall
+Minsta intervall i minuter mellan två ögonblicksbilder.
+Historiklängd
+Längd i dagar som ögonblicksbilder sparas.
+Ögonblicksbilder
+Visa och återställ sparade ögonblicksbilder.
+Visa
+Rensa historik
+Radera alla ögonblicksbilder.
+Rensa
+Är du säker på att du vill radera alla ögonblicksbilder? Observera att endast ögonblicksbilder kommer att tas bort. Alla filer i ditt valv kommer inte att påverkas.
+Ögonblicksbilder rensade.
+Inga ögonblicksbilder hittades.
+Välj en fil...
+Vänligen välj en fil till vänster för att visa ögonblicksbilder.
+Anteckningskompositör
+Slå samman, dela och omstrukturera anteckningar.
+Bekräfta filsammanfogning
+Fråga innan du slår samman två filer.
+Text efter extraktion
+Vad som ska visas istället för den valda texten efter att den har extraherats.
+Länk till ny fil
+Bädda in ny fil
+Ingen
+Mallfilplats
+Mallfil att använda vid sammanfogning eller extraktion. Tillgängliga variabler: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, t.ex. {{date:YYYY-MM-DD}}.
+Slå samman aktuell fil med en annan fil...
+Slå samman hela filen med...
+Inga filer hittades.
+för att navigera
+för att slå samman
+för att skapa ny
+för att slå samman överst
+för att avfärda
+Välj fil att slå samman till...
+Slå samman fil
+Är du säker på att du vill slå samman "{{file}}" till "{{destination}}"? "{{file}}" kommer att raderas.
+Slå samman
+Extrahera aktuell markering...
+Extrahera denna rubrik...
+för att flytta till botten
+för att flytta till toppen
+Misslyckades med att hämta mallfil: "{{template}}" hittades inte.
+Misslyckades med att hitta rubrik
+Webbvisare
+Webbhistorik
+Öppna externa länkar till webbsidor inuti Obsidian.
+Öppna webbvisare
+Visa historik
+Växla läsläge
+Kopiera URL
+Ta bort från historik
+Rensa historik
+Öppna länk
+Öppna länk i ny flik
+Öppna länk till höger
+Öppna länk i nytt fönster
+Öppna länk i standardwebbläsare
+Öppna länk i webbvisare
+Kopiera länkadress
+Bokmärk länk
+Sök efter “{{query}}”
+Extrahera markering till ny anteckning
+Kopiera
+Klipp ut
+Klistra in
+Radera
+Markera allt
+Spara till valv
+Spara bild till valv
+Kopiera bildlänk
+Bakåt
+Framåt
+Ladda om
+Bokmärk sida
+Öppna i standardwebbläsare
+Fokusera adressfältet
+Sök på webben
+Rensa data
+
+Kan logga ut dig från webbplatser.
+Cachelagrade data
+Historik
+All webbvisardata
+Tar bort allt ovanstående samt lokal lagring och aktiva sessioner.
+Ny webbvisare
+Kan inte ladda den webbplatsen.
+Vänligen se till att du har rätt adress.
+Sök på webben
+Webbvisardata
+Rensa webbvisardata
+Öppna externa länkar
+Öppna länkar i Obsidian istället för systemets standard.
+Startsida
+Vilken sida som ska visas när en webbvisare öppnas
+Sparad sidmapp
+Webbplatser sparade som markdown kommer att placeras här.
+Sökmotor
+Sökmotor som används när du söker från adressfältet.
+Anpassad sökmotor
+Använd %s istället för frågan.
+Anpassad
+Aktivera annonsblockerare
+Om aktiverad kommer filterlistorna nedan att tillämpas på alla webbvisarflikar.
+Annonsblockeringsregler
+En annonsblockeringslista URL per rad. Delas av alla valv.
+Annonsblockeringsuppdateringsfrekvens
+Dagar mellan uppdatering av filterlistor. 0 indikerar inaktiverad. Delas av alla valv.
+Rensa webbvisardata
+Oväntat fel vid extrahering av innehåll.
+Kan inte hitta innehåll att extrahera.
+canvas
+Ordna och anslut anteckningar på en oändlig canvas.
+Lägg till anteckning från valv
+Lägg till media från valv
+Lägg till kort
+Lägg till webbsida
+Skapa grupp
+Skapa ett kort med specifik storlek
+Konvertera till fil...
+Dra för att lägga till anteckning från valv
+Dra för att lägga till media från valv
+Dra för att lägga till kort
+Redigera etikett
+Ta bort etikett
+Sök efter fil
+Ställ in färg
+Justera
+Justera vänster
+Justera mitten
+Justera höger
+Justera topp
+Justera mitten
+Justera botten
+Fördela horisontellt avstånd
+Fördela vertikalt avstånd
+Justera horisontellt
+Justera vertikalt
+Ordna i en rad
+Ordna i en kolumn
+Ordna i ett rutnät
+Exportera som bild
+Hoppa till grupp
+Ställ in bakgrund
+Redigera bakgrund
+Ersätt bakgrund
+Ta bort bakgrund
+Inga bilder hittades.
+Inga media hittades.
+Exportera "{{title}}" med en PNG-fil med inställningarna nedan.
+Uppskattade bilddimensioner: {{dimensions}}
+Fördela
+Justera
+Ordna
+Alltid
+Vid hovring
+Aldrig
+Ingen sektion hittades
+Standard musrullbeteende
+Standard {{key}} beteende
+Visa meny
+Standardplats för nya canvasfiler
+Var nyss skapade canvasfiler placeras.
+Mapp för att skapa nya canvasfiler i
+Nyss skapade canvasfiler kommer att visas under denna mapp.
+Visa kortetikett
+Snäpp till rutnät
+Snäpp kort till bakgrundsrutnätet när du flyttar och ändrar storlek.
+Snäpp till objekt
+Snäpp kort till närliggande objekt när du flyttar och ändrar storlek.
+Zoomtröskel för att dölja kortinnehåll
+Lägre värden ökar prestandan men döljer kortinnehåll tidigare när du zoomar ut.
+Visa logotyp
+Detta kommer att lägga till en Obsidian-logotyp längst ner till vänster.
+Sekretessläge
+Detta kommer att dölja all text på din canvas.
+zoom
+En högre zoom genererar en högre upplösningsbild.
+Visningsport
+Välj att rendera hela canvasen eller bara den aktuella synliga visningsporten.
+Hela canvasen
+Endast visningsport
+Täck
+Behåll bildförhållande
+Upprepa
+Ny canvas
+duplicera
+Ta bort
+Begränsa till rubrik...
+Begränsa till block...
+fäst vy...
+Byt fil...
+Ändra URL...
+Zooma för att passa
+Zooma till markering
+Ladda om sida
+Följ anslutning
+Skapa ny canvas
+Konvertera till fil...
+för att bädda in rubrik
+för att bädda in block
+för att navigera till grupp
+Skriv namn på rubrik
+Ange URL
+"{{linktext}}" kunde inte hittas.
+Lägg till text...
+Skriv för att söka...
+Canvas-hjälp
+Canvas-inställningar
+Visa hela filen
+Visa standardvy
+Skrivskyddad
+Inaktivera skrivskydd
+Panorera
+Panorera horisontellt
+Zooma
+Markera allt
+Lägg till / ta bort från markering
+Klona kort
+Begränsa kortets rörelse till axel
+Inaktivera snäppning vid dragning
+Ta bort kort
+Dra från nedan eller dubbelklicka
+Tryck och håll för att lägga till / flytta / markera
+Dra för att panorera
+Nyp för att zooma
+Mellanslag + Dra för att panorera
+Rulla för att zooma
+Namnlös grupp
+Linjens riktning
+Icke-riktad
+Enriktad
+Tvåriktad
+Bild
+Stil
+Inga grupper hittades
+Kan inte exportera en tom canvas
+Canvas upptäckte filnamnsbyten som påverkar {{count}} canvas-fil, uppdaterar...
+Canvas upptäckte filnamnsbyten som påverkar {{count}} canvas-filer, uppdaterar...
+Canvas uppdaterade {{count}} inbäddningskort
+Canvas uppdaterade {{count}} inbäddningskort
+baser
+Create bases by querying note properties.
+Ny bas
+Lägg till egenskapen "{{name}}"
+Lägg till sammanfattningen "{{name}}"
+Lägg till formel
+Dölj alla
+Växla synlighet
+Radera formel
+Standardvy
+Duplicera vy
+Radera vy
+Radera sammanfattning
+Exportera CSV...
+Skapa ny bas
+Infoga ny bas
+Kopiera tabell till urklipp
+Change view
+Lägg till vy
+Lägg till objekt
+Lägg till vy
+Lägg till filter
+Lägg till filtergrupp
+Visa alla
+Visa alla ({{count}})
+Lägg till sammanfattning
+Dölj sammanfattning
+Alla vyer
+Denna vy
+Hitta eller skapa...
+Beräknade egenskaper
+Egenskapstyp
+Dölj egenskap
+Visa egenskap
+Redigera egenskap
+Redigera {{name}}
+Konfigurera vy
+
+Globala filter
+Vyfilter
+Vynamn
+Vy
+Tabell
+Visningsnamn
+Sammanfattningsnamn
+Formel
+Vyer
+Sortera
+
+Sök
+Egenskaper
+Ny
+Visar {{count}}
+Mallfil för nytt objekt
+Mapp för nytt objekt
+Något av följande är sant
+Alla följande är sanna
+Inget av följande är sant
+där
+eller
+och
+Egenskap
+Namnlös
+fil
+filnamn
+filens basnamn
+filens fullständiga namn
+filsökväg
+mapp
+filändelse
+skapad tid
+ändrad tid
+filstorlek
+filens bakåtlänkar
+filens länkar
+filens inbäddningar
+filens taggar
+Lägg till sortering
+Gruppera efter
+Sortera efter
+Begränsa antal resultat
+
+
+Gammalt till nytt
+Nytt till gammalt
+
+
+Vynamnet får inte innehålla: 
+Vynamnet finns redan.
+Vynamnet får inte vara tomt.
+Det här filtret kan inte representeras av den enkla filterbyggaren.
+Filtret kan inte tolkas. Den grundläggande filterbyggaren kan inte användas.
+Ogiltig konfiguration av egenskaper.
+Ogiltig egenskapskonfiguration för "{{ name }}".
+Det går inte att lägga till den nya Bas-vyn "{{ viewId }}". En vy med detta ID finns redan.
+Det går inte att tolka din basfil:
+Vyn "{{ view }}" hittades inte
+Base configured with an unknown view type: {{ viewtype }}
+Vyer måste vara en array
+Visningsvärden måste vara strängar. Värdet för egenskapen {{ key }} är inte det.
+"{{ key }}" måste vara en {{ type }}
+"filters" måste vara en sträng eller ett objekt
+Filtret "{{ conjunction }}" måste vara en array
+"filters" får endast ha en av nycklarna "and", "or" eller "not".
+Det gick inte att utvärdera ett filter: {{ message }}
+Formelvärden måste vara strängar. Värdet för egenskapen {{ key }} är inte det.
+Det gick inte att beräkna värdet för egenskapen "{{ key }}": {{ message }}
+Frågan har ett ogiltigt format. Den ska vara ett YAML-objekt.
+"view"-objekt måste vara ett YAML-objekt, men objektet {{ index }} är inte det
+Saknar eller ogiltigt "name" i vy {{ index }}
+"{{ key }}" krävs i vyn "{{ viewName }}"
+"{{ key }}" måste vara en {{ type }} i vyn "{{ viewName }}"
+"{{ key }}"-värden måste alla vara av typen {{ type }} i vyn "{{ viewName }}"
+Det går inte att tolka filter i vyn "{{ viewName }}": {{ message }}
+Oändlig loop upptäcktes i formeln
+Ogiltig egenskap
+Den här anteckningen kommer att filtreras bort eftersom den inte matchar dina kriterier
+Avancerat filter
+t.ex. 10
+Avancerat filter
+Enkelt filter
+Ta bort filter
+Ingen
+Lista
+Markörer
+Gör indrag för egenskaper
+Egenskapsavgränsare
+Punkt
+Nummer
+Ingen
+Kort
+Kortstorlek
+Bildegenskap
+Bildanpassning
+Fyll
+Inpassa
+Bildförhållande
+Tabell
+Dölj kolumn
+Redigera egenskap...
+Redigera formel...
+Rensa sortering
+Sortera A → Z
+Sortera Z → A
+Radhöjd
+Kort
+Mellan
+Hög
+Extra hög
+Sammanfatta...
+Gruppera efter den här egenskapen
+Rensa värden
+Sammanfattning
+Det gick inte att tolka formeln "{{ formula }}"
+Kan inte hitta funktionen "{{ function }}"
+Kan inte hitta funktionen "{{ function }}" på typen {{ type }}
+Kan inte anropa funktionen "{{ function }}", för få argument.
+Kan inte anropa funktionen "{{ function }}", för många argument.
+Typfel i "{{ function }}", parameter "{{ parameter }}". Förväntade {{ expected }}, fick {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Markera allt
+Matcha diakritiska tecken
+Hela ord
+Miniatyrbilder
+Innehållsförteckning
+Visa sidan i innehållsförteckningen
+Växla sidofält
+Föregående sida
+Nästa sida
+Anpassa till bredd
+Anpassa till höjd
+Spara nuvarande position i dokument
+Kopiera annotering
+Kopiera som citat
+Kopiera länk till markering
+Kopiera länk till annotering
+Kopiera länk till stycke
+Kopiera länk till “{{title}}”
+Kopiera länk till sida {{page}}
+{{current}} av över {{limit}} träffar
+{{current}} av {{total}} träff
+{{current}} av {{total}} träffar
+Denna PDF är lösenordsskyddad
+Felaktigt lösenor
+Ange lösenordet nedan
+av {{count}}
+({{current}} av {{count}})
+Ensidigt
+Tvåsidigt (odd)
+Tvåsidigt (even)
+Alternativ för sidofält
+Visningsalternativ
+Anpassa till tema
+sida {{page}}
+Sida {{page}}
+Sida {{page}}
+Sida {{page}}
+[{{type}} Annotering]
+
+Lista
+Okänt
+
+Aliaser
+Taggar
+Mapp
+Fil
+Egenskap
+Datum
+Datum & tid
+Nummer
+Kryssruta
+Typ [[
+för att länka anteckning
+för att avfärda
+Egenskapstyp
+Sortera
+Egenskapsnamn kan inte vara tomt.
+Egenskapen finns redan
+Ogiltigt taggnamn
+Ogiltigt nummer
+Misslyckades med att läsa egenskaper.
+Inget värde
+Egenskaper
+Ogiltiga egenskaper
+Visa källa
+Syntaxfel. Din frontmatter är ogiltig.
+Lägg till egenskap
+Fel matchning av typ, förväntade {{typ}}
+Typ stämmer inte överens
+Visa som {{type}}?
+Dina data för {{oldType}} är inte kompatibla. De kommer att anpassas för att passa det nya formatet.
+Kolumn
+Rad
+Lägg till rad efter
+Lägg till kolumn efter
+Lägg till rad före
+Flytta rad upp
+Flytta rad ner
+Lägg till kolumn före
+Flytta kolumn vänster
+Flytta kolumn höger
+Duplicera rad
+Duplicera kolumn
+Radera rad
+Radera kolumn
+Justera vänster
+Justera mitten
+Justera höger
+Radera celler
+Rensa celler
+Sortera efter kolumn (A till Ö)
+Sortera efter kolumn (Ö till A)
+Tabell: {{command}}
+Callout-typ
+
+Viktigt
+Tips
+Framgång
+Fråga
+Varning
+Citat
+Exempel
+Ingen
+Annat...
+Callout-typ...
+
+{{count}} ord
+{{count}} ord
+{{count}} resultat
+{{count}} resultat
+{{count}} tecken
+{{count}} tecken
+{{count}} länk
+{{count}} länkar
+{{count}} fil
+{{count}} filer
+{{count}} mapp
+{{count}} mappar
+{{count}} bakåtlänk
+{{count}} bakåtlänkar
+{{count}} flik
+{{count}} flikar
+{{count}} egenskap
+{{count}} egenskaper
+{{count}} sida
+{{count}} sidor
+{{count}} tillägg
+{{count}} tillägg
+{{count}} aktiv
+{{count}} css-instick
+{{count}} css-instick
+{{count}} tema
+{{count}} teman

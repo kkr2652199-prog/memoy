@@ -1,0 +1,182 @@
+"""뱀 AI — 2군 25세트를 hyena식 합의로 메타 최적화 (engine 시그니처 유지).
+
+snake_predict_sets(miss_predictions, miss_pmf, n_sets)만 노출.
+컷오프: miss_predictions[0]['_miss_cutoff_target_draw_no']로 DB 재로드 시
+draw_no < target 과 engine의 _get_draws_before와 동일 시계열 유지.
+"""
+from __future__ import annotations
+
+import logging
+import random
+from itertools import combinations
+
+from app.lotto.filters import tier1_filter
+
+logger = logging.getLogger(__name__)
+
+# 2군 서브뇌별 합의 가중치 (1군 hyena DB 가중치와 동일 비율 느낌: fusion·lstm 우선)
+_SNAKE_BRAIN_WEIGHTS: dict[str, float] = {
+    "miss_stat": 5.0,
+    "miss_markov": 3.0,
+    "miss_lstm": 40.0,
+    "miss_stat2": 10.0,
+    "miss_fusion": 42.0,
+}
+
+
+def _load_draws_before_cutoff(cutoff_target_draw_no: int) -> list[dict]:
+    """engine._get_draws_before(target)와 동일: draw_no < cutoff."""
+    if cutoff_target_draw_no <= 0:
+        return []
+    from app.lotto.models import get_lotto_db
+
+    conn = get_lotto_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM lotto_draws WHERE draw_no < ? ORDER BY draw_no",
+            (cutoff_target_draw_no,),
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def _get_all_sub_brain_sets_for_cutoff(cutoff_target_draw_no: int) -> list[dict]:
+    """DB에서 컷오프 이전 draws만 로드한 뒤 2군 5서브뇌 25세트 생성."""
+    from app.lotto.predict_missanalysis import (
+        _get_miss_draws,
+        _run_sub_fusion,
+        _run_sub_lstm,
+        _run_sub_markov,
+        _run_sub_stat,
+        _run_sub_stat2_inverse,
+    )
+
+    all_draws = _load_draws_before_cutoff(cutoff_target_draw_no)
+    if len(all_draws) < 3:
+        return []
+    miss_draws = _get_miss_draws(all_draws)
+    if len(miss_draws) < 3:
+        return []
+    all_sets: list[dict] = []
+    all_sets.extend(_run_sub_stat(miss_draws, 5))
+    all_sets.extend(_run_sub_markov(miss_draws, 5))
+    all_sets.extend(_run_sub_lstm(miss_draws, 5))
+    all_sets.extend(_run_sub_stat2_inverse(miss_draws, all_draws, 5))
+    all_sets.extend(_run_sub_fusion(miss_draws, 5))
+    return all_sets
+
+
+def snake_predict_sets(
+    miss_predictions: list[dict],
+    miss_pmf: dict[int, float] | None = None,
+    n_sets: int = 5,
+) -> list[dict]:
+    """2군 25세트 hyena식 메타 최적화. engine은 (miss_preds, pmf, n_sets)만 전달.
+
+    번호 합의는 1군 hyena와 같이 뇌(서브 source)별 고정 가중치 합산.
+    miss_pmf는 시그니처 호환만 유지하며 합의 점수에는 반영하지 않음.
+    """
+    try:
+        sub_sets: list[dict] = []
+        cutoff: int | None = None
+        if miss_predictions:
+            raw = miss_predictions[0].get("_miss_cutoff_target_draw_no")
+            if isinstance(raw, int) and raw > 0:
+                cutoff = raw
+
+        if cutoff is not None:
+            sub_sets = _get_all_sub_brain_sets_for_cutoff(cutoff)
+
+        if len(sub_sets) < 10:
+            sub_sets = list(miss_predictions)
+
+        if len(sub_sets) < 3:
+            logger.warning("뱀: 입력 부족 (%d)", len(sub_sets))
+            return []
+
+        _ = miss_pmf  # engine 호환 인자; hyena와 같이 PMF는 합의에 미사용
+
+        num_count: dict[int, float] = {}
+        for pred in sub_sets:
+            source = str(pred.get("source", ""))
+            w = float(_SNAKE_BRAIN_WEIGHTS.get(source, 1.0))
+            nums = pred.get("nums", [])
+            for n in nums:
+                if isinstance(n, int) and 1 <= n <= 45:
+                    num_count[n] = num_count.get(n, 0.0) + w
+
+        ranked = sorted(num_count.items(), key=lambda x: -x[1])
+        pool = [n for n, _ in ranked[:15]]
+
+        if len(pool) < 6:
+            pool = list(range(1, 16))
+
+        scored_combos: list[tuple[list[int], float]] = []
+        for combo in combinations(pool, 6):
+            score = float(sum(num_count.get(n, 0.0) for n in combo))
+            scored_combos.append((list(combo), score))
+        scored_combos.sort(key=lambda x: -x[1])
+
+        if not scored_combos:
+            return []
+
+        results: list[dict] = []
+        used: set[tuple[int, ...]] = set()
+        for combo, score in scored_combos:
+            if len(results) >= n_sets:
+                break
+            nums_sorted = sorted(combo)
+            combo_key = tuple(nums_sorted)
+            if combo_key in used:
+                continue
+            if not tier1_filter(nums_sorted):
+                continue
+            used.add(combo_key)
+            base_conf = 95.0 - len(results) * 3.0
+            conf = round(max(min(base_conf, 95.0), 60.0), 1)
+            results.append(
+                {
+                    "nums": nums_sorted,
+                    "brain_tag": "snake",
+                    "method": "뱀두뇌",
+                    "confidence": conf,
+                    "reasoning": (
+                        f"뱀 메타최적화 (2군{len(sub_sets)}세트 합의, 점수{score:.1f})"
+                    ),
+                }
+            )
+
+        if len(results) < n_sets:
+            weights = [max(num_count.get(n, 0.1), 0.01) for n in pool]
+            for _ in range(len(results), n_sets):
+                for _ in range(100):
+                    p = list(pool)
+                    w = list(weights)
+                    nums: list[int] = []
+                    for __ in range(6):
+                        chosen = random.choices(p, weights=w, k=1)[0]
+                        nums.append(chosen)
+                        idx = p.index(chosen)
+                        p.pop(idx)
+                        w.pop(idx)
+                    nums.sort()
+                    if tier1_filter(nums) and tuple(nums) not in used:
+                        used.add(tuple(nums))
+                        base_c = 95.0 - len(results) * 3.0
+                        conf_fill = round(max(min(base_c, 95.0), 60.0), 1)
+                        results.append(
+                            {
+                                "nums": nums,
+                                "brain_tag": "snake",
+                                "method": "뱀두뇌",
+                                "confidence": conf_fill,
+                                "reasoning": f"뱀 보충 (세트{len(results) + 1})",
+                            }
+                        )
+                        break
+
+        return results
+    except Exception as e:  # noqa: BLE001
+        logger.warning("뱀 예측 실패: %s", e)
+        return []

@@ -1,0 +1,439 @@
+"""V11 라우터: /api/lotto2/v11/*"""
+
+from __future__ import annotations
+
+from fastapi import APIRouter
+
+router = APIRouter(prefix="/api/lotto2/v11", tags=["lotto2_v11"])
+
+
+@router.post("/predict/{target_draw_no}")
+async def api_predict_v11(target_draw_no: int):
+    from app.lotto2.v11_engine import run_prediction_v11
+
+    return run_prediction_v11(target_draw_no)
+
+
+@router.post("/backtest_chunk")
+async def api_backtest_v11(start_draw: int, end_draw: int, checkpoint_every: int = 25):
+    from app.lotto2.v11_engine import run_v11_chunk_backtest
+
+    return run_v11_chunk_backtest(start_draw, end_draw, checkpoint_every)
+
+
+@router.get("/stats")
+async def api_stats_v11(start_draw: int = 50, end_draw: int = 1221):
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute(
+            """
+            SELECT brain_tag, COUNT(1) AS n, ROUND(AVG(matched_count), 3) AS avg_m,
+                   MAX(matched_count) AS best,
+                   SUM(CASE WHEN matched_count=6 THEN 1 ELSE 0 END) AS r1,
+                   SUM(CASE WHEN matched_count=5 AND bonus_matched=1 THEN 1 ELSE 0 END) AS r2,
+                   SUM(CASE WHEN matched_count=5 AND bonus_matched=0 THEN 1 ELSE 0 END) AS r3,
+                   SUM(CASE WHEN matched_count=4 THEN 1 ELSE 0 END) AS r4,
+                   SUM(CASE WHEN matched_count=3 THEN 1 ELSE 0 END) AS r5
+            FROM lotto_predictions_army2
+            WHERE matched_count >= 0 AND brain_tag LIKE 'v11_%'
+              AND target_draw_no BETWEEN ? AND ?
+            GROUP BY brain_tag
+            ORDER BY avg_m DESC
+            """,
+            (start_draw, end_draw),
+        ).fetchall()
+        return {"range": f"{start_draw}~{end_draw}", "v11_brains": [dict(r) for r in rows]}
+    finally:
+        conn.close()
+
+
+@router.get("/weights")
+async def api_weights_v11():
+    from app.lotto2.v11_models import get_v11_brain_weights
+
+    return {"v11_weights": get_v11_brain_weights()}
+
+
+# ============= UI 호환 라우트 (STEP C-1) =============
+
+@router.get("/predictions")
+async def api_v11_predictions(limit: int = 100):
+    """V11 예측 목록 (1군 /api/lotto/predictions 형식 호환)."""
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute(
+            """
+            SELECT p.*, d.num1 AS actual_1, d.num2 AS actual_2, d.num3 AS actual_3,
+                   d.num4 AS actual_4, d.num5 AS actual_5, d.num6 AS actual_6,
+                   d.bonus AS actual_bonus
+            FROM lotto_predictions_army2 p
+            LEFT JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+            WHERE p.brain_tag LIKE 'v11_%'
+            ORDER BY p.target_draw_no DESC, p.confidence DESC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+        return {"predictions": [dict(r) for r in rows]}
+    finally:
+        conn.close()
+
+
+@router.get("/draws")
+async def api_v11_draws(limit: int = 50):
+    """V11 회차 데이터 (1군과 동일 lotto_draws 공유)."""
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute(
+            "SELECT * FROM lotto_draws ORDER BY draw_no DESC LIMIT ?", (limit,)
+        ).fetchall()
+        return {"draws": [dict(r) for r in rows], "total": len(rows)}
+    finally:
+        conn.close()
+
+
+@router.get("/brain/status")
+async def api_v11_brain_status():
+    """V11 6뇌 등수별 통계 (1군 brain/status 형식 100% 호환)."""
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute(
+            """
+            SELECT brain_tag,
+                   COUNT(1) AS total_predictions,
+                   ROUND(AVG(matched_count), 3) AS avg_match,
+                   MAX(matched_count) AS best_match,
+                   SUM(CASE WHEN matched_count = 6 THEN 1 ELSE 0 END) AS rank1,
+                   SUM(CASE WHEN matched_count = 5 AND bonus_matched = 1 THEN 1 ELSE 0 END) AS rank2,
+                   SUM(CASE WHEN matched_count = 5 AND bonus_matched = 0 THEN 1 ELSE 0 END) AS rank3,
+                   SUM(CASE WHEN matched_count = 4 THEN 1 ELSE 0 END) AS rank4,
+                   SUM(CASE WHEN matched_count = 3 THEN 1 ELSE 0 END) AS rank5
+            FROM lotto_predictions_army2
+            WHERE matched_count >= 0 AND brain_tag LIKE 'v11_%'
+            GROUP BY brain_tag
+            ORDER BY avg_match DESC
+            """
+        ).fetchall()
+
+        total_pred = conn.execute(
+            """
+            SELECT COUNT(1)
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%' AND matched_count >= 0
+            """
+        ).fetchone()[0]
+
+        best_row = conn.execute(
+            """
+            SELECT brain_tag, target_draw_no, matched_count, bonus_matched
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%' AND matched_count >= 0
+            ORDER BY matched_count DESC, bonus_matched DESC
+            LIMIT 1
+            """
+        ).fetchone()
+        best_record = dict(best_row) if best_row else None
+
+        # 등급 결정 (best_match 기준)
+        best_match = best_record["matched_count"] if best_record else 0
+        if best_match >= 6:
+            grade, grade_emoji = "역전 신", "👑"
+        elif best_match >= 5:
+            grade, grade_emoji = "역전 마스터", "🏆"
+        elif best_match >= 4:
+            grade, grade_emoji = "역전 엘리트", "⭐"
+        else:
+            grade, grade_emoji = "역전 수련생", "🎯"
+
+        elite_thresholds = {
+            "rank1": 6,
+            "rank2": 5,  # + bonus
+            "rank3": 5,
+            "rank4": 4,
+            "rank5": 3,
+        }
+
+        return {
+            "grade": grade,
+            "grade_emoji": grade_emoji,
+            "total_predictions": total_pred,
+            "best_record": best_record,
+            "brain_profiles": [dict(r) for r in rows],
+            "elite_thresholds": elite_thresholds,
+        }
+    finally:
+        conn.close()
+
+
+@router.get("/brain/hall-of-fame")
+async def api_v11_hall_of_fame(limit: int = 20):
+    """V11 명예의 전당 (matched_count 상위 N건)."""
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute(
+            """
+            SELECT p.*, d.num1 AS actual_1, d.num2 AS actual_2, d.num3 AS actual_3,
+                   d.num4 AS actual_4, d.num5 AS actual_5, d.num6 AS actual_6,
+                   d.bonus AS actual_bonus
+            FROM lotto_predictions_army2 p
+            LEFT JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+            WHERE p.brain_tag LIKE 'v11_%' AND p.matched_count >= 4
+            ORDER BY p.matched_count DESC, p.bonus_matched DESC, p.target_draw_no DESC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+        return {"hall_of_fame": [dict(r) for r in rows]}
+    finally:
+        conn.close()
+
+
+@router.get("/dashboard-summary")
+async def api_v11_dashboard_summary():
+    """V11 대시보드 요약 (1군 응답 형식 100% 호환).
+
+    1군 키: next_draw_no, next_draw_date, next_draw_weekday, total_predictions,
+            learning_range, rankings, brain_power, scores
+    """
+    from app.lotto2.models import get_lotto2_db
+    from app.lotto2.v11_models import V11_SEED_WEIGHTS, get_v11_brain_weights
+    from datetime import datetime, timedelta
+
+    conn = get_lotto2_db()
+    try:
+        # 1) 다음 회차
+        max_draw = conn.execute("SELECT MAX(draw_no) FROM lotto_draws").fetchone()[0] or 0
+        next_draw = max_draw + 1
+
+        # 2) 다음 추첨일 (토요일 기준 추정)
+        latest = conn.execute(
+            "SELECT draw_no, draw_date FROM lotto_draws ORDER BY draw_no DESC LIMIT 1"
+        ).fetchone()
+        next_date_str = ""
+        next_weekday = "토"
+        if latest and latest["draw_date"]:
+            try:
+                last_dt = datetime.strptime(latest["draw_date"], "%Y-%m-%d")
+                next_dt = last_dt + timedelta(days=7)
+                next_date_str = next_dt.strftime("%Y-%m-%d")
+                weekdays = ["월", "화", "수", "목", "금", "토", "일"]
+                next_weekday = weekdays[next_dt.weekday()]
+            except Exception:
+                pass
+
+        # 3) total_predictions
+        total_pred = conn.execute(
+            """
+            SELECT COUNT(*)
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%' AND matched_count >= 0
+            """
+        ).fetchone()[0]
+
+        # 4) 학습 범위
+        learn_range = conn.execute(
+            """
+            SELECT MIN(target_draw_no), MAX(target_draw_no)
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%'
+            """
+        ).fetchone()
+        learning_range = {
+            "from": learn_range[0] or 0,
+            "to": learn_range[1] or 0,
+        }
+
+        # 5) rankings (1등/2등/3등 회차 + 적중 두뇌)
+        rankings = {"rank1": [], "rank2": [], "rank3": []}
+        for rank_key, where_clause in [
+            ("rank1", "matched_count = 6"),
+            ("rank2", "matched_count = 5 AND bonus_matched = 1"),
+            ("rank3", "matched_count = 5 AND bonus_matched = 0"),
+        ]:
+            rows = conn.execute(
+                f"""
+                SELECT brain_tag, target_draw_no, num1, num2, num3, num4, num5, num6, bonus_matched
+                FROM lotto_predictions_army2
+                WHERE brain_tag LIKE 'v11_%' AND {where_clause}
+                ORDER BY target_draw_no DESC
+                LIMIT 50
+                """
+            ).fetchall()
+            rankings[rank_key] = [dict(r) for r in rows]
+
+        # 6) brain_power (가중치 + 평균 적중)
+        weights = get_v11_brain_weights()
+        brain_stats = conn.execute(
+            """
+            SELECT brain_tag,
+                   COUNT(*) AS n,
+                   ROUND(AVG(matched_count), 3) AS avg_m,
+                   MAX(matched_count) AS best
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%' AND matched_count >= 0
+            GROUP BY brain_tag
+            """
+        ).fetchall()
+        stats_map = {r["brain_tag"]: dict(r) for r in brain_stats}
+        brain_power = []
+        for tag in ("v11_stat", "v11_markov", "v11_combo", "v11_lstm", "v11_fusion", "v11_hyena"):
+            s = stats_map.get(tag, {})
+            brain_power.append(
+                {
+                    "brain_tag": tag,
+                    "weight": round(weights.get(tag, V11_SEED_WEIGHTS.get(tag, 1.0)), 4),
+                    "avg_match": s.get("avg_m", 0),
+                    "best": s.get("best", 0),
+                    "n": s.get("n", 0),
+                }
+            )
+
+        # 7) scores (등수별 점수: 1등=100, 2등=50, 3등=30, 4등=10, 5등=3)
+        rank_row = conn.execute(
+            """
+            SELECT
+                SUM(CASE WHEN matched_count = 6 THEN 1 ELSE 0 END) AS r1,
+                SUM(CASE WHEN matched_count = 5 AND bonus_matched = 1 THEN 1 ELSE 0 END) AS r2,
+                SUM(CASE WHEN matched_count = 5 AND bonus_matched = 0 THEN 1 ELSE 0 END) AS r3,
+                SUM(CASE WHEN matched_count = 4 THEN 1 ELSE 0 END) AS r4,
+                SUM(CASE WHEN matched_count = 3 THEN 1 ELSE 0 END) AS r5
+            FROM lotto_predictions_army2
+            WHERE brain_tag LIKE 'v11_%' AND matched_count >= 0
+            """
+        ).fetchone()
+        r1, r2, r3, r4, r5 = (
+            rank_row[0] or 0,
+            rank_row[1] or 0,
+            rank_row[2] or 0,
+            rank_row[3] or 0,
+            rank_row[4] or 0,
+        )
+        total_score = r1 * 100 + r2 * 50 + r3 * 30 + r4 * 10 + r5 * 3
+        scores = {
+            "rank1": r1,
+            "rank2": r2,
+            "rank3": r3,
+            "rank4": r4,
+            "rank5": r5,
+            "total_score": total_score,
+        }
+
+        return {
+            "next_draw_no": next_draw,
+            "next_draw_date": next_date_str,
+            "next_draw_weekday": next_weekday,
+            "total_predictions": total_pred,
+            "learning_range": learning_range,
+            "rankings": rankings,
+            "brain_power": brain_power,
+            "scores": scores,
+        }
+    finally:
+        conn.close()
+
+
+@router.get("/draws/{draw_no}")
+async def api_v11_draw_one(draw_no: int):
+    """V11 단일 회차 조회 (1군 형식 호환). lotto_draws 공유 사용."""
+    from app.lotto2.models import get_lotto2_db
+
+    conn = get_lotto2_db()
+    try:
+        row = conn.execute("SELECT * FROM lotto_draws WHERE draw_no = ?", (draw_no,)).fetchone()
+        if not row:
+            return {"error": "not_found", "draw_no": draw_no}
+        return {"draw": dict(row)}
+    finally:
+        conn.close()
+
+
+@router.get("/stats/comprehensive")
+async def api_v11_stats_comprehensive():
+    """V11 종합 통계 (1군 stats/comprehensive 형식 호환).
+
+    lotto_draws는 공유이므로 1군과 동일한 응답 가능.
+    """
+    from app.lotto2.models import get_lotto2_db
+    from collections import Counter
+    from itertools import combinations
+
+    conn = get_lotto2_db()
+    try:
+        rows = conn.execute("SELECT * FROM lotto_draws ORDER BY draw_no").fetchall()
+        if not rows:
+            return {
+                "total_draws": 0,
+                "latest_draw": 0,
+                "latest_date": "",
+                "frequency": {},
+                "pair_frequency": [],
+                "range_distribution": {},
+                "odd_even": {},
+                "sum_range": {},
+                "consecutive": {},
+            }
+
+        freq = Counter()
+        pair_freq = Counter()
+        range_dist = Counter()
+        odd_even = Counter()
+        sum_list = []
+        consec_list = []
+
+        for r in rows:
+            nums = sorted([r["num1"], r["num2"], r["num3"], r["num4"], r["num5"], r["num6"]])
+            for x in nums:
+                freq[x] += 1
+                if x <= 10:
+                    range_dist["1-10"] += 1
+                elif x <= 20:
+                    range_dist["11-20"] += 1
+                elif x <= 30:
+                    range_dist["21-30"] += 1
+                elif x <= 40:
+                    range_dist["31-40"] += 1
+                else:
+                    range_dist["41-45"] += 1
+
+            odds = sum(1 for x in nums if x % 2 == 1)
+            odd_even[f"{odds}홀{6-odds}짝"] += 1
+
+            sum_list.append(sum(nums))
+
+            consec = sum(1 for i in range(5) if nums[i + 1] - nums[i] == 1)
+            consec_list.append(consec)
+
+            for p in combinations(nums, 2):
+                pair_freq[p] += 1
+
+        latest = rows[-1]
+        sum_avg = sum(sum_list) / len(sum_list)
+        return {
+            "total_draws": len(rows),
+            "latest_draw": latest["draw_no"],
+            "latest_date": latest["draw_date"] or "",
+            "frequency": {str(k): v for k, v in freq.most_common()},
+            "pair_frequency": [
+                {"pair": f"{a},{b}", "count": v} for (a, b), v in pair_freq.most_common(30)
+            ],
+            "range_distribution": dict(range_dist),
+            "odd_even": dict(odd_even),
+            "sum_range": {"min": min(sum_list), "max": max(sum_list), "avg": round(sum_avg, 2)},
+            "consecutive": {
+                "avg": round(sum(consec_list) / len(consec_list), 3),
+                "distribution": dict(Counter(consec_list)),
+            },
+        }
+    finally:
+        conn.close()
+

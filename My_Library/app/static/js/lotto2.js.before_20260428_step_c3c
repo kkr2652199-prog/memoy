@@ -1,0 +1,276 @@
+/**
+ * 역전 로또 (V11) 프론트엔드
+ *
+ * 원칙:
+ * - 1군 lotto.js 0줄 수정
+ * - 모든 API: /api/lotto2/v11/*
+ * - DOM 식별자: lotto2- / #tab-lotto-reverse / #lotto2-page-*
+ * - V11 백엔드 형식 그대로 표시
+ */
+
+(function () {
+  'use strict';
+
+  const _lotto2ResolveApiUrl = (typeof resolveApiUrl === 'function')
+    ? resolveApiUrl
+    : function (p) { return p; };
+
+  const V11_BRAIN_DISPLAY = {
+    'v11_stat': '통계두뇌',
+    'v11_markov': '마르코프두뇌',
+    'v11_combo': '조합두뇌',
+    'v11_lstm': '시계열두뇌',
+    'v11_fusion': '퓨전두뇌',
+    'v11_hyena': '하이에나두뇌',
+  };
+
+  function getBrain2DisplayName(tag) {
+    return V11_BRAIN_DISPLAY[tag] || tag;
+  }
+
+  function _qsAll(sel) {
+    return Array.from(document.querySelectorAll(sel));
+  }
+
+  function _setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  }
+
+  function _safeJsonKeys(obj) {
+    if (!obj || typeof obj !== 'object') return [];
+    return Object.keys(obj);
+  }
+
+  // ============= 페이지 전환 =============
+  window.switchLotto2Page = function (pageName) {
+    _qsAll('#tab-lotto-reverse .lotto-sidebar-item').forEach(el => el.classList.remove('active'));
+    _qsAll('#tab-lotto-reverse .lotto-page').forEach(el => el.classList.remove('active'));
+
+    const btnList = _qsAll('#tab-lotto-reverse .lotto-sidebar-item');
+    btnList.forEach(btn => {
+      const onclick = btn.getAttribute('onclick') || '';
+      if (onclick.includes(`'${pageName}'`)) btn.classList.add('active');
+    });
+
+    const pageEl = document.getElementById(`lotto2-page-${pageName}`);
+    if (pageEl) pageEl.classList.add('active');
+
+    if (pageName === 'dashboard') loadLotto2Dashboard();
+    else if (pageName === 'stats') loadLotto2BrainStatus();
+    else if (pageName === 'draws') loadLotto2Draws();
+    else if (pageName === 'hof') loadLotto2HallOfFame();
+  };
+
+  // ============= Dashboard =============
+  async function loadLotto2Dashboard() {
+    try {
+      const r = await fetch(_lotto2ResolveApiUrl('/api/lotto2/v11/dashboard-summary'));
+      if (!r.ok) throw new Error(`dashboard fetch failed: ${r.status}`);
+      const data = await r.json();
+
+      _setText('lotto2NextDraw', `다음 회차: ${data.next_draw_no || '-'}`);
+
+      const ranks = data.ranks || {};
+      _setText('lotto2Rank1Count', ranks.rank1 || 0);
+      _setText('lotto2Rank2Count', ranks.rank2 || 0);
+      _setText('lotto2Rank3Count', ranks.rank3 || 0);
+      _setText('lotto2Rank4Count', ranks.rank4 || 0);
+      _setText('lotto2Rank5Count', ranks.rank5 || 0);
+
+      const wContent = document.getElementById('lotto2WeightsContent');
+      if (wContent) {
+        const weights = data.weights || {};
+        const sorted = Object.entries(weights).sort((a, b) => (b[1] || 0) - (a[1] || 0));
+        wContent.innerHTML = sorted.map(([tag, w]) => `
+          <div class="lotto2-weight-card">
+            <div class="brain-name">${getBrain2DisplayName(tag)}</div>
+            <div class="brain-value">${Number(w || 0).toFixed(3)}</div>
+          </div>
+        `).join('');
+      }
+    } catch (e) {
+      console.error('lotto2 dashboard error:', e);
+      _setText('lotto2NextDraw', '대시보드 로드 실패');
+    }
+  }
+
+  // ============= 예측 실행 =============
+  window.lotto2Predict = async function () {
+    const input = document.getElementById('lotto2PredictDrawNo');
+    const status = document.getElementById('lotto2ActionStatus');
+
+    const drawNo = parseInt(input ? input.value : '', 10);
+    if (!drawNo || drawNo < 1) {
+      if (status) status.textContent = '회차 번호를 입력하세요.';
+      return;
+    }
+
+    if (status) status.textContent = `역전 예측 실행 중... (회차 ${drawNo})`;
+
+    try {
+      const r = await fetch(_lotto2ResolveApiUrl(`/api/lotto2/v11/predict/${drawNo}`), { method: 'POST' });
+      const data = await r.json();
+      if (!r.ok) throw new Error(`predict failed: ${r.status} keys=${_safeJsonKeys(data).join(',')}`);
+
+      if (status) status.textContent = `예측 완료: ${data.status || 'OK'} (세트 ${data.v11_sets || 0})`;
+
+      const lr = await fetch(_lotto2ResolveApiUrl('/api/lotto2/v11/predictions?limit=30'));
+      if (lr.ok) {
+        const ld = await lr.json();
+        renderLotto2Predictions(ld.predictions || []);
+      }
+    } catch (e) {
+      console.error('lotto2 predict error:', e);
+      if (status) status.textContent = '예측 실패';
+    }
+  };
+
+  function renderLotto2Predictions(items) {
+    const result = document.getElementById('lotto2PredictionResults');
+    if (!result) return;
+
+    if (!items || items.length === 0) {
+      result.innerHTML = '<p>예측 결과가 없습니다.</p>';
+      return;
+    }
+
+    result.innerHTML = items.map(p => {
+      const nums = [p.num1, p.num2, p.num3, p.num4, p.num5, p.num6].filter(Boolean).join(', ');
+      const matched = (typeof p.matched_count === 'number' && p.matched_count >= 0) ? p.matched_count : '-';
+      const conf = Number(p.confidence || 0).toFixed(2);
+      return `
+        <div class="lotto-set-card">
+          <div><strong>${getBrain2DisplayName(p.brain_tag)}</strong> | 회차 ${p.target_draw_no}</div>
+          <div>번호: ${nums}</div>
+          <div>적중: ${matched} | 신뢰도: ${conf}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // ============= 6뇌 통계 =============
+  async function loadLotto2BrainStatus() {
+    const target = document.getElementById('lotto2BrainStatusContent');
+    if (!target) return;
+    try {
+      const r = await fetch(_lotto2ResolveApiUrl('/api/lotto2/v11/brain/status'));
+      const data = await r.json();
+      if (!r.ok) throw new Error(`brain status failed: ${r.status}`);
+
+      const profiles = data.brain_profiles || [];
+      target.innerHTML = `
+        <p>등급: <strong>${data.grade || '-'}</strong> | 총 예측: ${data.total_predictions || 0}</p>
+        <table>
+          <thead>
+            <tr>
+              <th>두뇌</th><th>예측 수</th><th>평균 적중</th><th>최고</th>
+              <th>1등</th><th>2등</th><th>3등</th><th>4등</th><th>5등</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${profiles.map(p => `
+              <tr>
+                <td>${getBrain2DisplayName(p.brain_tag)}</td>
+                <td>${p.total_predictions || 0}</td>
+                <td>${Number(p.avg_match || 0).toFixed(3)}</td>
+                <td>${p.best_match || 0}</td>
+                <td>${p.rank1 || 0}</td>
+                <td>${p.rank2 || 0}</td>
+                <td>${p.rank3 || 0}</td>
+                <td>${p.rank4 || 0}</td>
+                <td>${p.rank5 || 0}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    } catch (e) {
+      console.error('lotto2 brain status error:', e);
+      target.innerHTML = '<p>통계 로드 실패</p>';
+    }
+  }
+
+  // ============= 회차 목록 =============
+  async function loadLotto2Draws() {
+    const target = document.getElementById('lotto2DrawsList');
+    if (!target) return;
+    try {
+      const r = await fetch(_lotto2ResolveApiUrl('/api/lotto2/v11/draws?limit=50'));
+      const data = await r.json();
+      if (!r.ok) throw new Error(`draws failed: ${r.status}`);
+
+      const draws = data.draws || [];
+      target.innerHTML = `
+        <p>최근 ${draws.length}회차 (1군과 lotto_draws 공유)</p>
+        <table>
+          <thead><tr><th>회차</th><th>번호</th><th>보너스</th></tr></thead>
+          <tbody>
+            ${draws.map(d => `
+              <tr>
+                <td>${d.draw_no}</td>
+                <td>${[d.num1, d.num2, d.num3, d.num4, d.num5, d.num6].join(', ')}</td>
+                <td>${d.bonus}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    } catch (e) {
+      console.error('lotto2 draws error:', e);
+      target.innerHTML = '<p>회차 로드 실패</p>';
+    }
+  }
+
+  // ============= 명예의 전당 =============
+  async function loadLotto2HallOfFame() {
+    const target = document.getElementById('lotto2HofContent');
+    if (!target) return;
+    try {
+      const r = await fetch(_lotto2ResolveApiUrl('/api/lotto2/v11/brain/hall-of-fame?limit=30'));
+      const data = await r.json();
+      if (!r.ok) throw new Error(`hof failed: ${r.status}`);
+
+      const hof = data.hall_of_fame || [];
+      if (hof.length === 0) {
+        target.innerHTML = '<p>명예의 전당이 비어있습니다.</p>';
+        return;
+      }
+
+      target.innerHTML = hof.map(p => {
+        const nums = [p.num1, p.num2, p.num3, p.num4, p.num5, p.num6].join(', ');
+        const rankLabel = (p.matched_count === 6) ? '1등'
+          : ((p.matched_count === 5 && p.bonus_matched) ? '2등'
+          : (p.matched_count === 5 ? '3등'
+          : (p.matched_count === 4 ? '4등' : '5등')));
+        return `
+          <div class="hof-row">
+            <span class="hof-rank">${rankLabel}</span>
+            <span>${getBrain2DisplayName(p.brain_tag)} | 회차 ${p.target_draw_no} | ${nums} | 적중 ${p.matched_count}</span>
+          </div>
+        `;
+      }).join('');
+    } catch (e) {
+      console.error('lotto2 hof error:', e);
+      target.innerHTML = '<p>명예의 전당 로드 실패</p>';
+    }
+  }
+
+  // ============= 탭 활성화 감지 =============
+  document.addEventListener('DOMContentLoaded', () => {
+    const tab = document.getElementById('tab-lotto-reverse');
+    if (!tab) return;
+
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === 'attributes' && m.attributeName === 'class') {
+          if (tab.classList.contains('active')) loadLotto2Dashboard();
+        }
+      }
+    });
+    observer.observe(tab, { attributes: true, attributeFilter: ['class'] });
+
+    if (tab.classList.contains('active')) loadLotto2Dashboard();
+  });
+})();
+

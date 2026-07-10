@@ -1,0 +1,2517 @@
+Opções
+
+Plugins Base
+Opções de Plugin
+Exemplos: pasta 1/pasta 2
+Exemplos: pasta/nota
+Modificar esta opção requer reiniciar a aplicação para ter efeito.
+
+Comportamento
+Gráficos
+Verificação ortográfica
+Ativa a verificação ortográfica. Atualmente só funciona para o Inglês (US).
+Linguagens para a verificação ortográfica
+Escolhe as linguagens que a verificação ortográfica irá usar.
+O corretor ortográfico nativo deteta automaticamente o idioma utilizado no macOS.
+Dicionário de verificação ortográfica
+O dicionário de verificação ortográfica está vazio.
+Título em linha
+Mostrar o nome do ficheiro como um título editável na mesma linha do conteúdo dos ficheiros.
+Linhas de tamanho legível
+Limitar o tamanho máximo da linha. Cabe menos conteúdo no ecrã, mas faz os parágrafos mais fáceis de ler.
+Quebra de linha estrita
+No modo de visualização, ignore quebras de linha simples de acordo com as especificações Markdown. Desative para mostrar quebras de linha simples na visualização.
+Propriedades no documento
+Choose how properties are displayed within the editor. Select "source" to have the properties displayed as YAML.
+Ocultas
+Visíveis
+Origem
+Fecha parênteses automaticamente
+Fecha parênteses e aspas automaticamente.
+Combinar símbolos Markdown automaticamente
+Fecha símbolos para negrito, itálico, destaque, texto rasurado e código automaticamente.
+Listas com indentação inteligente
+Trata da indentação e marcadores de lista por si.
+Fechar títulos
+Permite esconder tudo sob um título.
+Fechar indentação
+Permite esconder uma parte da mesma indentação, como listas.
+Vista predefinida para novas tabulações
+A vista predefinida em que um novo separador Markdown é aberto.
+Vista de edição
+Vista de leitura
+Focar sempre novos separadores
+Ao abrir uma ligação num novo separador, mudar imediatamente para ele.
+Vista de edição predefinida
+A vista de edição predefinida que um painel novo irá usar.
+Modo de origem
+Visualização ao vivo
+Números de linha
+Mostra os números das linhas na goteira.
+Guias de identação
+Mostrar linhas de relacionamento verticais entre marcadores para orientação visual.
+Usar tabulações
+Usar tabulações para indentar quando a tecla "Tab" é pressionada. Desative para usar espaços.
+Tamanho da tabulação
+Número de espaços equivalentes a uma tabulação.
+Direita para a esquerda (RTL)
+Define a exibição do texto da notas para ser da direita para a esquerda.
+Converter HTML automaticamente
+Converter automaticamente HTML para Markdown quando se cola ou arrasta de páginas da web. Usar Crtl/Cmd+Shift+V para colar sem conversão.
+Atalhos do Vim
+Utilize atalhos do Vim no editor.
+Em dispositivos móveis, esta opção é por dispositivo e não é sincronizada através do ficheiro de configuração.
+Reconstruir cache do cofre
+A reconstrução da cache pode demorar de alguns segundos a alguns minutos, dependendo do tamanho do cofre.
+Reconstruir
+Confirme a ativação do movo Vim
+O modo Vim é para edição eficiente de texto mas pode ser bastante contra-intuitivo. Caso não conheça Vim e escolha esta opção, vai parecer que o Obsidian tenha deixado de funcionar.
+Para verificar que sabe usar Vim, por favor digite o comando para sair do Vim sem guardar:
+A sua resposta
+Digite um comando...
+Ativar modo Vim
+Comando correcto. Modo Vim ativado.
+Comando incorreto. Modo Vim permanece desativado para sua proteção.
+Por favor insira o comando para ativar o Modo Vim
+Ficheiros & Links
+Confirmar antes de eliminar ficheiros
+Evite eliminar ficheiros acidentalmente.
+Lixo
+Ficheiros apagados
+O que fazer com os ficheiros depois de os eliminar.
+Mover para a reciclagem do sistema
+Mover para a reciclagem do Obsidian (pasta .trash)
+Eliminar permanentemente
+Eliminar anexos ao eliminar ficheiros
+Remover automaticamente os anexos ligados ao ficheiro eliminado, caso não sejam usados noutro lugar.
+Sempre
+Perguntar sempre
+Nunca
+Ficheiro predefinido a abrir
+Escolha qual o ficheiro a abrir quando a aplicação inicia.
+Último aberto
+Nova nota
+Ficheiro específico
+Nota diária
+Ficheiro a abrir
+Selecione um ficheiro específico para abrir por predefinição.
+Atualizar sempre os links internos
+Atualizar os links automaticamente depois de renomear um ficheiro ou prompt.
+Local padrão para novas notas
+Onde colocar notas recém-criadas. As configurações de Plugin sobrepõem-se a esta opção.
+Raíz do vault
+Na mesma pasta do ficheiro atual
+Na pasta especificada abaixo
+Pasta em que novas notas serão criadas
+Notas recém-criadas irão aparecer nesta pasta. As configurações de Plugin sobrepõem-se a esta opção.
+Usar [[Wikilinks]]
+Autogerar Wikilinks para [[links]] e ![[imagens]] em vez de links e imagens de Markdown. Desativar esta opção para gerar links de Markdown.
+Detetar todas as extensões de ficheiros
+Mostrar ficheiros com qualquer extensão mesmo que o Obsidian não os consiga abrir nativamente, para que possam ser vinculados e visualizados no Explorador de Ficheiros e Quick Switcher.
+Ligações
+Novo formato do link
+Quais links inserir, ao gerar links internos.
+Menor caminho, quando possível
+Caminho relativo para o ficheiro
+Caminho absoluto para o ficheiro
+Localização padrão para novos anexos
+Onde anexos recém-criados são colocados.
+Anexos
+Numa subpasta na pasta atual
+Local da pasta de anexos
+Arquivos de anexo recém-criados aparecerão aqui. Isso inclui imagens criadas por meio de arrastar e soltar ou colar e gravações de áudio.
+Nome da subpasta
+Se o seu ficheiro está sob "vault/pasta", e o seu nome de subpasta definido em "anexos", os anexos serão guardados em "vault/pasta/anexos".
+Ficheiros excluídos
+Ficheiros excluídos serão ocultos ou menos perceptíveis em vários lugares, como na Navegação Rápida, sugestões de links e Visualização em Gráfico.
+Nenhum filtro de exclusão aplicado. Adicione um abaixo.
+Ficheiros que correspondam aos seguintes filtros estão atualmente excluídos:
+Filtrar
+O filtro não pode estar vazio
+Introduza um caminho ou "/regex/"...
+Permitir callbacks URI
+Ativar o uso de x-callback-url através de x-success ou x-error ao lidar com URIs do Obsidian.
+Aparência
+Tema base
+Escolher o esquema de cores padrão do Obsidian.
+Cor de destaque
+Escolha uma cor de destaque para ser usada na aplicação.
+Escuro
+Claro
+Adaptar ao sistema
+Fonte
+Avançado
+
+Fonte da interface
+Definir fonte base para todo o Obsidian.
+Nível de zoom
+Controla o nível geral de zoom da aplicação.
+Fonte do texto
+Definir fonte para as vistas de edição e leitura.
+Fonte  monoespaçada
+Definir fonte para lugares como blocos de código e pré-texto.
+ Fonte atualmente aplicada: 
+ As fontes seguintes estão atualmente aplicadas:
+Introduza o nome da fonte...
+Nenhuma fonte personalizada está aplicada. Adicione uma abaixo.
+A primeira fonte na lista que esteja disponível no seu sistema será aplicada.
+Esta fonte não foi detectada no seu sistema.
+Esta fonte foi detectada no seu sistema.
+Nome da fonte
+Abra os temas da comunidade
+Visualize e use temas incríveis criados pela comunidade.
+Procurar
+Tamanho da fonte
+Tamanho da fonte em pixels que afeta o editor e a visualização.
+Ajuste rápido do tamanho da fonte
+Ajuste o tamanho da fonte usando Ctrl + Scroll, ou usando o gesto 'apertar e fazer zoom' do touchpad.
+Temas
+Gerencia os temas instalados e navegue por temas de comunidade.
+Gerir
+Nenhum
+Menus nativos
+Os menus da aplicação corresponderão aos do sistema operativo. Não serão afetados pelo seu tema.
+Recarregar temas
+Recarregar temas com CSS customizado.
+Abrir pasta de temas
+Fragmentos CSS
+Nenhum fragmento CSS encontrado na pasta de fragmentos.
+Fragmentos CSS são guardados em "{{path}}".
+Recarregar fragmentos
+Abrir pasta de fragmentos
+Fragmentos CSS recarregados.
+Aplicar fragmento CSS em "{{path}}".
+Temas instalados
+Captura de ecrã indisponível
+Predefinido
+Carregue para ampliar
+Atualizar
+Ativo
+Estilo da moldura da janela
+Determina o estilo da barra de título das janelas do Obsidian. Requer uma reinicialização completa para as alterações entrarem em vigor.
+Escondido (Predefinido)
+Moldura do Obsidian
+Moldura nativa
+Ícone personalizado da aplicação
+Definir um ícone personalizado para a aplicação
+Escolher ícone personalizado
+Ribbon menu
+Configure what commands appear in the ribbon menu in the navigation bar.
+Item de acesso rápido do ribbon
+Tapping on the ribbon item in the navigation menu will active this ribbon item. Tap and hold will still show the menu.
+Abrir menu do ribbon
+Configurar
+Mostrar ribbon
+Mostrar a barra de ferramentas vertical na lateral da janela.
+Outros itens do ribbon
+Ribbon Configuration
+Escolha quais itens pretende manter ativos no ribbon. Arraste para alterar a ordem.
+Mostrar barra de título da tabulação
+Mostrar o cabeçalho na parte superior de cada tabulação.
+Navegação flutuante
+Os botões de navegação flutuam sobre o conteúdo, em vez de ficarem ancorados.
+Barras laterais deslizantes
+As barras laterais deslizam para o lado do conteúdo, em vez de flutuarem por cima.
+Ecrã inteiro
+Ocultar automaticamente elementos da interface durante a leitura.
+Encontrado {{count}} tema para atualizar.
+Encontrados {{count}} temas para atualizar.
+Procurar atualizações
+Visualizar atualizações
+Atualizar todos
+Temas da comunidade atuais
+Atualmente tem {{count}} tema instalado.
+Atualmente tem {{count}} temas instalados.
+Atalhos
+Pesquisar atalhos
+A mostrar {{count}} atalho.
+A mostrar {{count}} atalhos.
+{{count}} comando com conflitos.
+{{count}} comandos com conflitos.
+Filtrar...
+Eliminar atalho
+Pressione atalho...
+Todos
+Não atribuídos
+Atribuídos
+Atribuídos por mim
+Restaurar ao padrão
+Customize este comando
+Este atalho está em conflito com "{{command}}"
+Este atalho está em conflito com {{count}} outros comandos
+Em branco
+Porta-chaves
+Segredos
+Adicionar segredo
+Editar segredo
+Mostrar segredo
+Ocultar segredo
+
+Segredo
+nome-do-segredo
+Apenas letras minúsculas, números e hífenes.
+Introduza o seu segredo.
+Nunca acedido
+Falha ao atualizar o segredo.
+Falha ao adicionar o segredo.
+Já existe um segredo com este ID.
+O valor do segredo não pode estar vazio.
+O ID do segredo é inválido. Use apenas letras minúsculas, números e hífenes. Máximo de 64 caracteres.
+Não foram adicionados segredos. Os segredos armazenam informações como chaves de API e palavras-passe usadas por plugins.
+Selecionar segredo
+Procurar segredo...
+Adicionar segredo...
+Ligar...
+Os segredos são armazenados sem encriptação porque não existe um armazenamento de segredos disponível neste sistema.
+Os segredos não estão encriptados
+Não mostrar novamente
+Encriptação não disponível
+A encriptação é fornecida pelo armazenamento de segredos do seu sistema operativo. Sem um armazenamento de segredos, os seus segredos serão armazenados sem encriptação.
+No Linux, os armazenamentos de segredos suportados incluem:
+Sobre
+Licença comercial
+Chave de licença
+A sua chave de licença...
+Ativar licença
+Ativar
+Desconhecida
+Versão {{version}}
+Versão do instalador: {{version}}
+Leia o registro de mudanças.
+Para suportar as funcionalidades mais recentes e receber correções de segurança, é necessária uma atualização principal do instalador. Tem de descarregar e reinstalar o Obsidian manualmente.
+Uma nova versão está pronta para ser instalada. 
+Atualizações estão desativadas.
+Reiniciar
+Procurar atualizações
+Atualizações automáticas
+Desative esta opção para evitar que o aplicativo verifique se há atualizações.
+Notificar se o arranque for mais lento do que o esperado
+Diagnosticar problemas analisando o que causa o carregamento lento da aplicação.
+Verificar agora
+Interface de linha de comandos
+Permitir interações com o Obsidian a partir da linha de comandos.
+Configurar o CLI para funcionar no terminal
+Registar "obsidian" no PATH para permitir o acesso ao comando "obsidian" em qualquer lugar no seu terminal.
+Registar
+Obter ajuda
+Obter ajuda sobre usar Obsidian.
+Abrir
+Idioma
+Alterar o idioma de exibição.
+Receber compilações internas
+Atualização automática para compilações internas para experimentar novas funcionalidades. Observe que estas compilações podem ser menos estáveis.
+Avançadas
+Aceleração de Hardware
+Ativa a Aceleração de Hardware, que usa o GPU para fazer o Obsidian mais estável.
+Se desativar esta opção, o desempenho do aplicativo será severamente degradado.
+Substituir a pasta de configuração
+Usa uma pasta de configuração diferente da padrão.Tem que começar com um ponto final.
+A localização de configuração tem de ter um nome de pasta válido que comece com um ponto final.
+Licença
+A sua chave de licença comercial é "{{key}}".
+Registado para "{{company}}" para {{seats}} utilizadores. Válido até {{expiry}}.
+A validar...
+Licença inválida: 
+Remover
+Licença Catalyst
+Atualmente tem a licença Catalyst {{tier}}. Obrigado pelo seu apoio!
+Não tem uma licença Catalyst de momento. A licença Catalyst é uma doação feita apenas uma vez para apoio o desenvolvimento do Obsidian.
+Aplicação
+See how to add your language to Obsidian.
+Conta
+A sua conta
+Está atualmente conectado com {{name}} ({{email}}).
+Não está conectado de momento. Uma conta é somente necessário para o Obsidian Sync, Obsidian Publish, e o Catalyst insider builds.
+Atualizar licença
+Licença comercial
+Ajude a manter o Obsidian 100% suportado pelos utilizadores.
+Comprar
+Sair
+Conecte-se
+Inscrever-se
+E-mail
+O seu e-mail...
+Nome completo
+Senha
+A sua senha...
+Esqueceu-se da palavra-passe?
+Entrar
+E-mail não pode estar vazio.
+E-mail não é valido.
+Senha não pode estar vazia.
+Login falhou. Verifique se o seu e-mail e senha estão corretos.
+Falha ao registar
+Não tem uma conta? 
+Crie uma conta agora
+Código 2FA de 6 dígitos
+O código do autenticador 2FA deve ter 6 dígitos.
+O código 2FA está incorreto. Verifique a aplicação autenticadora.
+Lista de plugins
+Procure plugins base
+Filtre plugins por nome ou descrição.
+Procurar plugins...
+Plugins não oficiais
+Modo restrito
+Modo restrito desligado. Ligue para desativar plugins da comunidade..
+Ligar
+Verificar automaticamente atualizações de plugins
+Verificar periodicamente atualizações de plugins.
+Plugins da comunidade
+Procure e instale plugins não oficiais criados pela nossa incrível comunidade.
+Procurar
+Sair do Modo Restrito
+Plugins da comunidade, como qualquer outro software que instale, pode potencialmente causar problemas de integridade de dados e segurança.
+A segurança do plugin é importante para nós. Eis o que fazemos:
+Apesar dos nossos esforços, existe uma pequena chance de um plugin da comunidade causar problemas.
+Revisão de código inicial
+Os plugins passam por uma revisão de código inicial feita pela nossa equipa antes destes aparecerem na loja.
+Código aberto
+A maioria dos plugins têm o código aberto no GitHub, podendo ser possível inspecionar o código.
+Auditoria por colegas
+Temos uma grande comunidade de desenvolvedores que cuidam uns dos outros.
+Mecanismo de denúncia
+Acompanhamos e removemos plugins defeituosos mediante denúncia do utilizador.
+Gostaria de sair do Modo Restrito para habilitar plugins da comunidade? Recomendamos fortemente fazer uma cópia de segurança dos seus dados antes de o fazer.
+Aprenda mais sobre a segurança de plugins
+Ligar os plugins da comunidade
+Confia no autor deste vault?
+Está a abrir este vault pela primeira vez, e traz alguns plugins.
+Se obteve este vault de outra pessoa, por favor tenha atenção que plugins de origens desconhecidas podem causar riscos de segurança.
+Se não confia no autor deste vault, recomendamos permanecer no Modo Restrito, para que os plugins no vault não sejam executados.
+Confiar no autor e ativar plugins
+Navegar no vault em Modo Restrito
+Procurar plugins da comunidade...
+Falha ao carregar o plugin da comunidade.
+Instalado
+Instalar
+Ativar
+Desativar
+Copiar ligação de partilha
+Doar
+Nenhum resultado encontrado.
+Não foram encontrados ficheiros recentes. Escreva para pesquisar...
+Falha ao carregar a descrição do plugin.
+Versão: {{version}}
+ (Instalado atualmente: {{version}})
+Por 
+Repositório: 
+Última atualização:
+Ver a atualização mais recente
+Este plugin não é compatível com o seu dispositivo.
+Atualizar
+Este plugin não disponibilizou um ficheiro README.
+A instalar o plugin "{{name}}"...
+Falha ao instalar o plugin "{{name}}".
+O plugin "{{name}}" foi instalado com sucesso.
+Falha ao desinstalar o plugin “{{id}}”.
+Falha ao desativar o plugin “{{id}}”.
+Plugins instalados
+Recarregar plugins
+Recarregar plugins não oficiais.
+Desinstalar
+Desinstalar o plugin
+Tem a certeza que quer desinstalar este plugin? Isto eliminará a pasta do plugin.
+Abrir pasta de plugins
+Procurar por atualizações
+Atualizar todos
+Plugins atuais
+A verificar atualizações...
+Atualmente tem {{count}} plugin instalado.
+Atualmente tem {{count}} plugins instalados.
+Não foi encontrada nenhuma atualização de plugin.
+Encontrada atualização para {{count}} plugin.
+Encontradas atualizações para {{count}} plugins.
+Atualizar para a versão {{version}}
+Procurar plugins instalados
+Filtrar plugins instalados por nome ou descrição.
+Procurar plugins instalados...
+Mostrar só instalados
+Doar para apoiar {{name}}
+Os programadores de plugins são voluntários da comunidade. Se este plugin lhe for útil, considere apoiar o seu desenvolvimento.
+100% da contribuição vai para o programador do plugin; o Obsidian não retém qualquer parte.
+Obrigado pelo seu generoso apoio!
+Apoiar este plugin:
+A mostrar {{pluginCount}}:
+Mais transferidos
+Lançados recentemente
+Atualizados recentemente
+Alfabética
+Atualizado {{time}}
+Barra de ferramentas móvel
+Configurar Ações Rápidas
+Configurar qual o comando a acionar ao deslizar para baixo. O comando atual está definido para "{{command}}".
+Ação não configurada
+Configurar
+Selecione Ação Rápida...
+Nenhum
+Gerir opções da barra de ferramentas
+Adicionar link interno
+Embutir
+Adicionar tag
+Ativar título
+Ativar texto rasurado
+Ativar destaque
+Ativar código
+Ativar bloco de citação
+Alternar matemática em linha
+Alternar bloco matemático
+Adicionar link Markdown
+Ativar lista de marcadores
+Ativar lista numerada
+Indentar lista de items
+Reverter indentação do item da lista
+Desfazer
+Refazer
+Subir acento circunflexo
+Descer acento circunflexo
+Mover o acento circunflexo para a esquerda
+Mover o acento circunflexo para a direita
+Ir par a primeira linha
+Ir para a última linha
+Ativar teclado
+Configurar barra de ferramentas móvel
+Opções adicionais
+Mais opções da barra de ferramentas
+Inserir anexo
+Pesquisar
+Substituir
+Sair da pesquisa
+Próximo
+Anterior
+Localizar tudo
+Substituir
+Substituir tudo
+Digite #
+para linkar o título
+Digite ^
+para linkar blocos
+Digite |
+para alterar o texto de exibição
+Texto de apresentação
+Cabeçalho
+Nenhuma correspondência encontrada
+Tamanho da imagem: {{size}}px de largura
+para aceitar
+Nova nota de rodapé...
+Sem sugestões...
+Adicionar ao dicionário
+Editar link
+Editar etiqueta
+Editar este bloco
+Eliminar nota de rodapé e referência
+Repor tamanho
+Eliminar imagem
+Sem cabeçalho
+Cabeçalho {{level}}
+Exportar para PDF
+Exportar "{{filename}}" para PDF com a definição abaixo.
+Tamanho de página
+Incluir nome do ficheiro como título
+Paisagem
+Margem
+Padrão
+Mínima
+Nenhuma
+Percentagem de redução
+Exportar para PDF
+Seguir link
+Abrir link
+Procurar etiqueta
+Não foi possível encontrar:
+Não foi possível encontrar “{{subpath}}” em {{file}}
+Abrir no aplicativo padrão
+A barra lateral está vazia, tente arrastar um painel aqui.
+Expandir
+Recolher
+Falha ao guardar o ficheiro "{{filepath}}". {{message}}.
+Falha ao carregar o plugin “{{plugin}}”
+O plugin “{{plugin}}” encontrou um erro ao carregar
+Falha ao abrir “{{filepath}}”
+Não foi possível abrir a localização “{{href}}”
+Nenhum ficheiro
+"{{file}}" foi externamente modificado, ao mergir automaticamente as alterações.
+Gerir cofres...
+Ajuda
+Definições
+Arraste para reorganizar
+Modo de visualização padrão mudado para leitura.
+Modo de visualização padrão mudado para normal.
+Para usar esta funcionalidade, reinstale com o instalador mais recente, disponível no nosso website.
+Detetado arranque lento.
+Esta funcionalidade está disponível apenas na aplicação de desktop.
+Restaurar definições padrão
+Copiar para a área de transferência
+Copiar
+Copiado para a área de transferência
+{{item}} copiado para a área de transferência
+Não foi possível copiar para a área de transferência
+Filtrar...
+Ocorreu um erro ao renderizar o bloco de código.
+Ficheiro aberto "{{path}}"
+Ficheiro "{{name}}" não encontrado.
+Ação URI não reconhecida: {{action}}
+Eliminar
+O Obsidian está a indexar o seu vault...\nIsto só acontecerá uma vez.\nAlgumas funcionalidades poderão não estar disponíveis até estar completo.
+Algumas funcionalidades podem não estar disponíveis até a indexação terminar.
+Indexação completada.
+Isto é um vault para testes.\nModificações feitas neste vault serão perdidas.
+O IndexedDB é necessário para esta funcionalidade, mas está atualmente desativado.
+Se estiver a usar iOS em Modo de Bloqueio, exclua o Obsidian da definição “Configurar Navegação Web”.
+Carregue para criar
+Atualização Disponível
+Informação de debug
+Saber mais
+Agora não
+Adicionar
+Gerir
+Nova aba
+Ocultar ribbon
+Esta aba está atualmente ocupada, por favor tente novamente mais tarde
+Formatação
+Parágrafo
+Inserir
+Adicionar ligação
+Adicionar ligação externa
+Bloco de destaque
+Regra horizontal
+Bloco de código
+Bloco matemático
+Tabela
+Nota de rodapé
+Negrito
+Código
+Comentário
+Realce
+Itálico
+Rasurado
+Matemática
+Lista com marcadores
+Lista de tarefas
+Lista numerada
+Cabeçalho {{level}}
+Corpo
+Limpar formatação
+Citação
+Vazio
+Nenhum ficheiro está aberto
+Criar novo ficheiro
+Ir para o ficheiro
+Ver ficheiros recentes
+Fechar
+Fechar todos os separadores “{{id}}” ({{count}})
+O plugin não está mais ativo
+O plugin criado para este painel ({{type}}) foi-se embora
+Notas da versão {{version}}
+Não existem notas da versão disponíveis para {{version}}.
+Não foi possível carregar as notas da versão para {{version}}.
+Lançado a {{date}}
+O que há de novo na {{version}}
+Editar (Ctrl/Cmd+Click para editar num novo painel)
+Vista atual: leitura
+Barra de ferramentas
+Barra lateral esquerda
+Barra lateral direita
+Clique para editar
+Clique para visualizar
+{{key}}+Clique para abrir numa nova aba
+Prima {{key}}+C para copiar a origem
+Encontrar...
+Substituir...
+Edição
+Remover
+Remover da lista
+Renomear
+Visualização
+Mais opções
+Fechar
+Fechar tudo
+Fechar {{count}} separador
+Fechar {{count}} separadores
+Fechar outros
+Fechar separadores após
+Fixar
+Desafixar
+Desafixar aba
+Ligar à aba...
+Modo de origem
+Modo de leitura
+Adicionar propriedade do ficheiro
+Eliminar ficheiro
+Criar este ficheiro
+Abrir link
+Abrir numa nova aba
+Abrir à direita
+Copiar endereço
+Copiar
+Cortar
+Colar
+Copiar caminho
+Copiar imagem
+como URL do Obsidian
+a partir da raiz do sistema
+a partir da pasta do cofre
+Colar como texto simples
+Pesquisar “{{selection}}”
+Selecionar tudo
+Renomear este cabeçalho...
+Renomear o ID deste bloco...
+Abrir numa nova janela
+Mover para uma nova janela
+Open in browser
+Empilhar abas
+Desempilhar abas
+Abrir vista ligada
+Clique para expandir
+Clique para recolher
+Pseudónimo
+Ainda não foi criado, selecione para criar
+Versão
+Criar cofre local
+Abrir pasta como vault
+Selecione uma pasta existente de ficheiros Markdown.
+Criar um novo vault
+Criar um novo vault do Obsidian sob uma pasta.
+Conectar ao Obsidian Sync
+Configurar um vault sincronizado com um vault remoto existente.
+Nome do vault
+Selecione um nome para o seu vault incrível.
+Localização
+Selecione um lugar para o seu novo vault.
+O seu novo vault será colocado em: 
+Revelar vault no explorador de ficheiros
+Revelar vault no Finder
+Renomear vault...
+Copiar ID do cofre
+Já existe um vault com este nome.
+Não é possível mover o vault para uma pasta dele próprio.
+Não é possível renomear um vault atualmente aberto.
+Falha em renomear o vault.
+Sucesso em renomear o vault.
+Mover vault...
+Selecionar pasta de destino
+Já existe um vault no destino escolhido.
+Não é possível mover um vault atualmente aberto.
+Falha ao mover o vault.
+Sucesso ao mover o vault.
+Remover da lista
+Começo rápido
+Abrir
+Selecionar
+Conectar
+Criar
+Voltar
+O vault precisa de um nome.
+O nome do cofre não pode terminar com um ponto.
+Selecione uma pasta válida.
+Falha ao criar vault.
+Não foi possível criar um vault no local selecionado. Confira o local e permissões.
+Falha ao abrir.
+Não é possível eliminar um vault aberto.
+Obter Ajuda
+e-mail
+O seu email...
+palavra-passe
+A sua password...
+Entrar
+Configurar
+Criar um vault sincronizado neste dispositivo.
+Este é um vault remoto criado por si.
+Este é um vault remoto partilhado consigo.
+Os seus pensamentos são seus.
+sincronizado
+não sincronizado
+Nenhum
+Recomendado
+O Obsidian armazena as notas no seu dispositivo, para que possa aceder-lhes de forma rápida e privada, mesmo offline.\nOs seus dados são guardados numa pasta local segura chamada **cofre**.
+Criar um cofre
+Usar o meu cofre existente
+Para aceder às suas notas noutros dispositivos, precisa de configurar a sincronização.
+Uma vez que o Obsidian armazena as suas notas nos seus dispositivos, terá de configurar a sincronização se quiser aceder às suas notas noutro telemóvel ou computador.\nPode configurar a sincronização agora ou simplesmente começar a escrever e configurá-la mais tarde.
+Configurar sincronização
+Skip for now
+Ignorar
+Choose a name for your vault.
+Criar cofre
+Configuração da sincronização
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Encriptação da sincronização
+Encriptação ponto a ponto
+Oferece a segurança mais forte, mas requer que armazene em segurança a sua palavra-passe de encriptação
+Encriptação padrão
+Usa uma chave gerida pelo Obsidian para proteger os seus dados em trânsito e nos nossos servidores.
+Definições do Sync
+Quer excluir alguma pasta ou ficheiro ao sincronizar para este dispositivo?
+Iniciar sincronização
+Criar uma conta Obsidian ou iniciar sessão
+Registar
+Iniciar sessão
+Reenviar e-mail
+Tem cofres do Sync existentes
+Quer criar um novo cofre ou ligar-se a um cofre sincronizado existente?
+Criar novo cofre do Sync
+Escolher um cofre existente
+Log Out
+Esqueci-me da palavra-passe
+Nome do cofre
+Localização do cofre
+Armazenamento do dispositivo
+Permite que os dados do Obsidian sejam acedidos por outras aplicações.
+Requer permissões adicionais.
+Armazenamento da aplicação
+Os seus dados não ficarão acessíveis a outras aplicações.
+O Android irá eliminar os seus dados se desinstalar o Obsidian.
+O seu novo cofre será colocado em {{vaultLocation}}
+Região
+Escolha uma região de servidor perto de si para tornar a sincronização mais rápida.
+Chave de encriptação
+Esta palavra-passe não pode ser alterada mais tarde. Se se esquecer da palavra-passe, quaisquer dados remotos nos servidores do Sync ficarão inacessíveis para sempre.
+O meu cofre
+Automático
+Escolher um cofre
+A sua conta **{{email}}** tem cofres existentes aos quais se pode ligar.
+Iniciar sessão na sua conta Obsidian
+Esqueci-me da palavra-passe
+Redefinir palavra-passe
+Enviámos um e-mail para {{email}} para redefinir a sua palavra-passe.
+Escolha como sincronizar as suas notas
+Para usar o Obsidian nos seus dispositivos, terá de sincronizar os seus dados.
+Sem interrupções em todos os dispositivos e sistemas operativos.
+Protegido com o padrão mais forte de encriptação ponto a ponto.
+Requer uma conta Obsidian.
+Apenas para iOS e macOS.
+Não encriptado por predefinição.
+Requer plugins ou ferramentas de terceiros.
+Pode não estar encriptado por predefinição.
+Usar o Obsidian Sync
+Usar iCloud
+Use Third-party sync
+Outros métodos de sincronização
+Usar métodos de sincronização suportados
+Onde está localizado o seu cofre?
+Outro
+Sincronização de terceiros
+Neste dispositivo
+Ligar ao iCloud
+Ligar a outro serviço de sincronização
+Ligar ao Obsidian Sync
+Escolher pasta
+Outros métodos de sincronização
+O Obsidian suporta oficialmente dois métodos de sincronização: **Obsidian Sync** e **iCloud**.\nNo entanto, como o Obsidian lhe dá controlo sobre os seus dados, existem outras opções de sincronização que pode usar.\nEstas opções incluem plugins de terceiros e outras ferramentas que podem exigir uma configuração mais avançada.\nPara usar um método de sincronização alternativo, **crie um cofre** e siga as instruções fornecidas pelo plugin ou pelo fornecedor de sincronização de terceiros.
+Introduza o seu e-mail
+O seu e-mail é necessário para criar uma Conta Obsidian.
+Introduza o seu nome e palavra-passe
+Ligar ao Obsidian Sync
+Deverá receber em breve um e-mail para **{{email}}** com instruções para ligar ao Obsidian Sync.
+O seu cofre iCloud não foi detetado. Isto pode dever-se a qualquer um dos seguintes motivos:
+O seu cofre está numa Conta iCloud diferente daquela em que tem sessão iniciada atualmente neste dispositivo.
+O seu cofre não está armazenado na pasta Obsidian de nível superior do seu iCloud Drive.
+iCloud não suportado
+A sincronização iCloud só está disponível em dispositivos Apple. Se o seu cofre estiver atualmente a sincronizar via iCloud, saiba como migrar o seu cofre para um serviço de sincronização diferente.
+Permitir acesso a ficheiros
+A iniciar sessão...
+O nome do cofre é obrigatório
+Novo e-mail de confirmação enviado.
+Não foi possível reenviar o e-mail.
+A localização do cofre tem de ser uma pasta.
+Bem-vindo
+Este é o seu novo *cofre*.\n\nTome nota de algo, [[crie uma ligação]] ou experimente [o Importer](https://help.obsidian.md/Plugins/Importer)!\n\nQuando estiver pronto, elimine esta nota e personalize o cofre à sua maneira.
+Inserir link aqui
+Inserir links aqui
+Mover para "{{folder}}"
+Adicionar aos favoritos
+Adicionar aos favoritos
+Abrir nesta aba
+Abrir numa nova aba
+Maximizar
+Minimizar
+Diminuir
+Fechar
+Voltar
+Avançar
+A carregar o Obsidian...
+Ocorreu um erro a carrevar o Obsidian.
+Recarregar app
+Reload app in safe mode
+Abrir outro vault
+A carregar plugins...
+O plugin “{{plugin}}” está a demorar a carregar. 
+A carregar o vault...
+Falha ao carregar o vault: 
+A carregar a cache...
+A carregar a área de trabalho...
+Importar para o vault
+Adicionar texto ao ficheiro:
+Escolha um ficheiro para inserir
+Inserir texto no {{filename}}
+Inserir link no {{filename}}
+Mostrar vista geral de separadores
+A importar...
+Importado com sucesso
+Falha ao importar ficheiro {{filename}}
+Pressione novamente para sair.
+
+Está a gostar do Obsidian? Ajude-nos, atribuindo uma classificação.
+Classificar a aplicação
+Ignorar
+Ficheiros de configuração atualizados a partir do iCloud, é necessário recarregar
+Recarregar
+Site oficial de ajuda
+Leia a documentação oficial de ajuda do Obsidian, disponível em várias linguagens.
+Visite
+Conversação do Discord
+Discord é o melhor sítio para conversar com outros utilizadores experiênciados do Obsedian espalhados pelo mundo.
+Junte-se
+Fórum oficial
+Ajudem-se uns aos outros, publiquem pedidos de funcionalidades, reportem bugs, e tenham discussões aprofundadas sobre gestão de conhecimento.
+Vault de tests
+Brinque e experimente várias funcionalidades. Por favor note que as mudanças feitas não serão guardadas.
+Guardar ficheiro atual
+Transferir anexos para o ficheiro atual
+Seguir o link
+Abrir o link debaixo do cursor numa nova aba
+Abrir o link debaixo do cursor à direita
+Abrir o link debaixo do cursor numa nova janela
+Focar no grupo de abas em cima
+Focar no grupo de abas em baixo
+Focar no grupo de abas à esquerda
+Focar no grupo de abas à direta
+Ativar o pino
+Dividir à direita
+Dividir para baixo
+Alternar abas empilhadas
+Alternar comprimento de linha legível
+Ativar/desativar números de linha
+Voltar
+Avançar
+Alternar modo claro/escuro
+Mudar o tema...
+Alterar cofre...
+Abrir cofre...
+Gerir cofres
+Localizar no ficheiro atual
+Localizar e substituir no ficheiro atual
+Adicionar propriedade ao ficheiro
+Nome (A a Z)
+Nome (Z a A)
+Adicionar alcunha
+Limpar propriedades do ficheiro
+Abrir definições
+Abrir ajuda
+Alternar entre visualização de edição/leitura
+Alterar entre modo de Visualização ao vivo/Origem
+Eliminar ficheiro atual
+Nova aba
+Nova janela
+Mostrar lixo
+Fechar todos os separadores
+Fechar aba atual
+Fechar outros no grupo de separadores
+Fechar todas as outras abas
+Fechar este grupo de separadores
+Ativar barra lateral esquerda
+Alternar barra de ferramentas
+Ativar barra lateral direita
+Alternar modo padrão para novas abas
+Adicionar cursor acima
+Adicionar cursor abaixo
+Focar no editor
+Alternar recolher propriedades no ficheiro atual
+Ativar recolher na linha atual
+Recolher todos os títulos e listas
+Expandir todos os títulos e listas
+Colapsar mais
+Colapsar menos
+Mova a linha para cima
+Mova a linha para baixo
+Remover cabeçalho
+Definir como cabeçalho {{level}}
+Ativar o negrito para seleção
+Ativar o itálico para seleção
+Ativar o destaque para seleção
+Ativar comentários para seleção
+Limpar formatação
+Inserir link
+Ativar verificação ortográfica
+Remover parágrafo
+Ativar status da lista de controlo
+Alternar marcadores/caixas de seleção
+Inserir chamamento
+Inserir bloco de código
+Inserir bloco matemático
+Inserir linha horizontal
+Inserir tabela
+Inserir nota de rodapé
+Editar título do ficheiro
+Copiar caminho do ficheiro
+Copiar caminho do ficheiro atual a partir da raiz do sistema
+Copiar endereço do Obsidian
+Exportar para PDF
+Recarregar app sem guardar
+Anular fechar separador
+Mostrar menú de context embaixo do cursor
+Mostrar informação de debug
+Abrir cofre sandbox
+Alternar a janela estar sempre em cima
+Ampliar
+Reduzir
+Restaurar ampliação
+Ativar modo de edição/visualização
+Mover painel atual para uma nova janela
+Abrir painel atual numa nova janela
+Renomear ficheiro atual
+Ir para o separador anterior
+Ir para o separador seguinte
+Ir para o último separador
+Ir para o separador #{{n}}
+Mostrar notas da versão
+Irá afetar os links {{links}} nos {{files}}.
+{{links}} atualizados em {{files}}.
+Atualizar links
+Quer atualizar links internos que linkam a este ficheiro?
+Sempre atualizar
+Apenas uma vez
+Não atualizar
+Tem a certeza que quer eliminar "{{filename}}"?
+Será movido para a reciclagem de seu sistema.
+Será movido para a reciclagem do Obsidian, que está localizada na pasta escondida ".trash" em seu vault.
+O ficheiro será permanentemente apagado.
+Esta pasta não está vazia.
+Se continuar, todos os ficheiros desta pasta serão apagados.
+Eliminar pasta
+Eliminar
+Não perguntar novamente
+Atualmente existe {{count}} link apontando para este ficheiro.
+Atualmente existem {{count}} links apontando para este ficheiro.
+Eliminar ficheiro
+Transferir anexos
+Não há anexos externos nesta nota.
+Transferido {{count}} anexo.
+Transferidos {{count}} anexos.
+Atualizado {{count}} ficheiro.
+Atualizados {{count}} ficheiros.
+Alterações revertidas em {{count}} ficheiro.
+Alterações revertidas em {{count}} ficheiros.
+Sem ligação à internet
+A carregar...
+Gerir
+Ver
+Confirmar
+Cancelar
+Ignorar
+Transferir
+Feito
+Guardar
+Parar
+Alterar
+Continuar
+Escolher
+Tentar novamente
+Atualizar
+Anular
+A preparar PDF...
+Renomear ficheiro
+Nome do ficheiro
+Novo nome
+Erro
+Selecionado
+Ficheiro renomeado com sucesso.
+Falha ao mesclar notas: {{message}}
+O ficheiro ou pasta “{{path}}” não existe.
+O cabeçalho não pode estar vazio
+O ID do bloco não pode estar vazio
+O ID do bloco só pode conter caracteres alfanuméricos ou hífen
+Renomear cabeçalho
+Renomear ID do bloco
+Eliminar anexos do ficheiro?
+Este anexo já não é usado em nenhuma nota. Gostaria de o eliminar?
+Estes {{count}} anexos já não são usados em nenhuma nota. Gostaria de os eliminar?
+Árvore de ficheiros
+Galeria
+Criar Nota
+Nova nota à direita
+Novo separador
+Nova janela
+Abrir Rapidamente...
+Abrir Vault...
+Fechar separador
+Fechar janela
+Encontrar
+Substituir
+Chamamento
+Link de Markdown
+Ligação
+Cabeçalho {{level}}
+Sem Cabeçalho
+Citação
+Exportar PDF
+Inserir anexo...
+Bloco de código
+Bloco matemático
+Tabela
+Nota de rodapé
+Título em linha
+Números de linha
+Lista de Marcadores
+Lista Numerada
+Lista de Tarefas
+Negrito
+Código
+Comentário
+Itálico
+Matemática
+Destacar
+Tachado
+Comentários
+Recolher/Expandir
+Colapsar Todos
+Mostrar Todos
+Colapsar Mais
+Colapsar Menos
+Modo Origem
+Vista de Leitura
+Mostrar Informação de Debug
+Abrir cofre sandbox
+Mover para nova janela
+Navegar para Trás
+Navegar para a Frente
+Alternar Barra Lateral da Esquerda
+Alternar Barra Lateral da Direita
+Barra de ferramentas
+Dividir à direita
+Dividir para baixo
+Notas de lançamento
+
+Explorador de ficheiros
+Ver todos os ficheiros do seu vault.
+Abrir explorador de ficheiros
+Mostrar explorador de ficheiros
+Criar nova nota
+Criar nova pasta
+Criar nova nota no separador atual
+Criar nota à direita
+Revelar automaticamente o ficheiro atual
+Colapsar todos
+Expandir todos
+Nova nota
+Nova pasta
+Mudar ordem
+Revelar ficheiro no explorador de ficheiros
+Revelar ficheiro ativo no explorador de ficheiros
+Fazer uma cópia do ficheiro atual
+Duplicar ficheiro atual
+Mover ficheiro para outra pasta
+Nova pasta com seleção ({{count}} item)
+Nova pasta com seleção ({{count}} itens)
+Mover ficheiro para...
+Mover pasta para...
+Mover {{count}} itens para...
+Digite o nome de uma pasta
+Nenhuma pasta encontrada.
+Navegar
+Mover
+para criar
+Dispensar
+Ordenar por nome (A-Z)
+Ordenar por nome (Z-A)
+Ordenar por última edição (recentes-antigos)
+Ordenar por última edição (antigos-recentes)
+Data de criação (antigos-recentes)
+Data de criação (recentes-antigos)
+Nova nota
+Nova pasta
+Renomear
+Eliminar
+Fazer uma cópia
+Duplicar
+O nome do ficheiro não pode ter nenhum destes caracteres: 
+Os links não funcionam com nomes de ficheiro que contenham algum destes caracteres: 
+Já existe um ficheiro com esse nome
+O nome do ficheiro não pode ficar vazio.
+O nome do ficheiro não pode começar com um ponto final.
+Modificado pela última vez a {{time}}
+Criado a {{time}}
+Sem título
+Sem título
+Daqui em diante, os anexos serão guardados em "{{path}}".
+Procurar
+Procurar por palavra-chave em todas as notas.
+Pesquisar em todos os ficheiros
+Recolher resultados
+Correspondência
+Explicar termos de pesquisa
+Mostrar o contexto
+{{count}} resultado
+{{count}} resultados
+Definições de pesquisa
+Digite para pesquisar...
+Resultados encontrados: 
+Regex encontrado: 
+Contém texto exato: 
+Maior do que: 
+Menor do que: 
+É verdadeiro
+É falso
+Está vazio
+Contém propriedade:
+Todos os resultados de: 
+Qualquer resultado de: 
+Excluindo: 
+Diferencia maiúsculas de minúsculas
+Não diferencia maiúsculas de minúsculas
+Caminho do ficheiro correspondente: 
+Nome do ficheiro correspondente: 
+Pesquisar pelo conteúdo do ficheiro: 
+Pesquisar por tarefa: 
+Pesquisar tarefa (por fazer): 
+Pesquisar tarefa (concluída): 
+Pesquisar por linha: 
+Pesquisar port bloco: 
+Pesquisar por secção: 
+Pesquisar por tag: 
+Nenhuma correspondência encontrada.
+... e mais {{count}} correspondência.
+... e mais {{count}} correspondências.
+Copiar resultados de pesquisa
+Copiar resultados
+Resultados copiados para a área de transferência.
+Mostrar caminho
+Mostrar caminho completo do ficheiro e não apenas o nome.
+Estilo de link
+Transformar opcionalmente cada resultado de pesquisa num link.
+Nenhum
+Link wiki
+Link Markdown
+Prefixo de lista
+Adicionar opcionalmente um prefixo de lista de items a cada resultado de pesquisa.
+Nenhum
+Hífen (-)
+Asterisco (*)
+Numerada
+Limpar pesquisa
+Opções de pesquisa
+Propriedades
+Etiquetas
+Ler mais
+Histórico
+Apagar histórico de pesquisa
+Pesquisar caminho do ficheiro
+Pesquisar nome do ficheiro
+Pesquisar por tags
+Pesquisar palavras-chave na mesma linha
+Pesquisar palavras-chave sob o mesmo título
+corresponder à propriedade
+Pesquisar por "{{keyword}}"
+Pesquisar na pasta
+Navegação rápida
+Saltar para qualquer arquivo sem sair do teclado. Ctrl/Cmd+O para ativar.
+Alternador
+Abrir Quick Switcher
+Navegar
+Abrir
+para uma nova aba
+para abrir à direita
+Criar
+Dispensar
+para selecionar
+Nenhuma nota encontrada. Entre para criar uma nova.
+Digite nome de um arquivo para alternar ou criar...
+Enter para criar
+Ainda não foi criado, selecione para criar
+Mostrar só existentes
+Se mostrar links para ficheiros que ainda não foram criados.
+Mostrar anexos
+Mostrar anexos como imagens, vídeos e PDFs.
+Mostrar todo o tipo de ficheiros
+Mostrar todos os ficheiros, mesmo os que o Obsidian não consegue abrir. O ficheiro será aberto com a aplicação padrão para o tipo de ficheiro.
+Visualização de diagrama de grafo
+Tenha um visão diagramática dos links entre as notas.
+Abrir Visualização de diagrama de grafo
+Abrir diagrama de grafo local
+Copiar captura de tela
+Diagrama de grafo de {{displayText}}
+Filtros
+Procurar ficheiros...
+Profundidade
+Mostrar nódulos a esta distância de links
+Links vizinhos
+Mostrar links entre vizinhos.
+Links de saída
+Mostrar links para outros ficheiros
+Links de entrada
+Mostrar links para outros ficheiros
+Etiquetas
+Tags estão linkados aos ficheiros que os contêm
+Anexos
+Mostrar anexos incluídos nos ficheiros
+Apenas ficheiros existentes
+Quando selecionado, links para ficheiros não existentes não serão mostrados
+Órfãos
+Mostrar ficheiros que não estão linkados a nenhum outro ficheiro
+Tela
+Setas
+Mostrar setas quando a tela for ampliada
+Limite para a visibilidade do texto
+Tamanho dos nódulos
+Grossura dos links
+Forças
+Centro de força
+Força dos links
+Distância entre links
+Força de repulsão
+Abrir definições do diagrama de grafo
+Captura de tela copiada para a área de transferência.
+Grupos
+Inserir query...
+Eliminar grupo
+Novo grupo
+Clique para mudar a cor\nArraste para reordenar grupos
+Começar animação timelapse do diagrama de grafo
+Começar animação timelapse
+Animar
+Links inversos
+Mostrar o número de backlinks na barra de status.
+Abrir backlinks
+Mostrar painel de backlinks
+Abrir backlinks para o ficheiro atual
+Ativar backlinks no document
+Links inversos no documento
+Menções vinculadas
+Nenhum backlink encontrado.
+Menções desvinculadas
+Mostrar filtro de pesquisa
+Ligação
+Backlinks para {{displayText}}
+Nenhuma menção desvinculada encontrada.
+
+Backlink no documento
+Mostrar backlinks no document por predefinição quando se abre novos painéis.
+Links Externos
+Mostrar links externos e detectar menções de outras notas sem link na nota atual.
+Mostrar links externos
+Mostrar painel de links externos
+Abrir links externos no ficheiro atual
+Links externos de {{displayText}}
+Ligações
+ Nenhum link encontrado.
+Menções sem link
+Link este ficheiro
+Ainda não criado
+Painel de tags
+Etiquetas
+Mostra todas as suas tags com o respetivo número de ocorrências.
+Mostrar painel de tags
+Nenhuma tag encontrada.
+Nome de tag (A-Z)
+Nome de tag (Z-A)
+Frequência (decrescente)
+Frequência (crescente)
+Mostrar nested tags
+Colapsar todos
+Expandir todos
+Vista de notas de rodapé
+Notas de rodapé
+Mostrar uma lista de notas de rodapé da nota atual.
+Mostrar notas de rodapé
+Não foram encontradas notas de rodapé.
+Vista de propriedades
+Show the metadata for your files.
+Todas as propriedades
+Propriedades do ficheiro
+Propriedades do ficheiro para {{displayText}}
+Mostrar todas as propriedades
+Mostrar propriedades do ficheiro
+Eliminar propriedade
+Eliminar propriedades
+Automático
+Automático ({{type}})
+Não foram encontradas propriedades.
+Propriedades inválidas.
+Nome da propriedade (A a Z)
+Nome da propriedade (Z a A)
+Frequência (alta para baixa)
+Frequência (baixa para alta)
+Mesclar a propriedade “{{oldKey}}” com “{{newKey}}”?
+Em caso de conflitos, os valores serão mesclados ou será usado o valor de “{{oldKey}}”.
+Recolher tudo
+Expandir tudo
+Abrir propriedades do ficheiro
+Abrir nota diária
+Pré-visualização de página
+Pré-visualize uma nota quando passar com o cursor sobre um link interno. Ctrl/Cmd + passar com o curso no modo de editor.
+Não foi possível encontrar “{{linktext}}”.
+"{{linktext}}" ainda não foi criado. Clique para criar.
+Nota de rodapé {{id}} não encontrada. Clique para criar.
+Editor
+Pré-visualização
+Pesquisar, Backlinks, e Links externos
+Cabeçalho do separador
+É necessário {{key}} para ativar a pré-visualização de página ao passar com o cursor
+Marcadores
+Bookmark frequently used files and searches.
+Mostrar marcadores
+Recolher tudo
+Marcar o separador ativo...
+New bookmark group
+Marcar...
+Adicionar marcador
+Editar marcador
+Marcar bloco sob o cursor...
+Marcar cabeçalho sob o cursor...
+Marcar pesquisa atual...
+Remove bookmark for current file
+Marcar {{count}} separador...
+Marcar {{count}} separadores...
+Marcar todos os separadores...
+Marcar este grafo...
+Marcador
+Marcado
+{{count}} marcador
+{{count}} marcadores
+Não foram encontrados marcadores
+Falha ao carregar os marcadores.
+O ficheiro de dados está corrompido.
+Grupo sem título
+Grafo sem título
+Editar...
+Remover
+Renomear
+Adicionar este bloco aos marcadores...
+Adicionar este cabeçalho aos marcadores...
+Nenhuma pesquisa para adicionar aos marcadores.
+Caminho
+Pesquisa
+Título
+Grupo de marcadores
+Marcadores
+CSS personalizado
+Ler e aplicar “obsidian.css” na pasta do cofre.
+Temas da comunidade
+A obter informações dos temas da comunidade
+Filtrar...
+Apenas temas escuros
+Apenas temas claros
+Usar
+Pare de usar este tema
+Instalar e usar
+Atualizar
+Este tema não providenciou um ficheiro README.
+Remover tema
+Visitar no GitHub
+Não foi possível abrir os temas da comunidade, verifique a sua conexão por favor.
+Está agora a usar {{title}} como o seu tema de CSS.
+O tema {{title}} foi apagado.
+O tema {{title}} foi atualizado.
+Instalado
+Legado
+Atualizar todos
+Falha no carregamento dos temas da comunidade.
+Nenhuma atualização de tema encontrada.
+Encontrado {{count}} tema para atualizar.
+Encontrado {{count}} temas para atualizar.
+Falha na instalação do tema "{{name}}".
+Sucesso na instalação do tema "{{name}}".
+A instalar tema "{{name}}"...
+A mostrar {{themeCount}}:
+Atualização disponível
+Paleta de comando
+Digite um comando para executá-lo. Não precisa usar a interface de utilizador ou lembrar o atalho.
+Abrir paleta de comando
+Navegar
+Usar
+Ignorar
+Nenhum comando encontrado.
+Digite um comando...
+Comandos fixados
+Importador de formato Markdown
+Converter Markdown de outros aplicativos para o formato do Obsidian.
+Importador de Open Markdown
+Conversor de tags do Roam Research
+Converte "#tag" e "#[[tag]]" para "[[tag]]".
+Conversor de destaques do Roam Research
+Converte "^^highlight^^" para "==highlight==".
+Conversor de TODO do Roam Research
+Converte "{{[[TODO]]}}" para "[ ]".
+Conversor de destaques do Bear
+Converte "::highlight::" para "==highlight==".
+Conversor de links de Zettelkasten
+Converte links "[[UID]]" para "[[UID File Name]]" completo.
+Embelezador de link de Zettelkasten
+Converte links "[[UID]]" e também os embeleza "[[UID File Name|File Name]]".
+Migração de metadados iniciais
+Migrar etiquetas, alcunhas e cssclasses dos metadados iniciais para o formato rigoroso exigido pelo Obsidian v1.9+
+Aviso: o importador converterá todos os ficheiros do seu vault, não apenas o ficheiro atual.
+Os seus ficheiros serão substituídos. Faça backup de todos os seus ficheiros antes de tentar a conversão.
+Começar a conversão
+Parar
+Voltar
+Feito
+Processando...
+Cancelando...
+Terminado!
+Ficheiros processados
+Ficheiros modificados
+Substituição total
+Falhou
+Notas diárias
+Abrir a nota diária de hoje, ou criar uma se não houver.
+Hoje
+Abrir nota de hoje
+Abrir a nota diária anterior
+Abrir a próxima nota diária
+Insert text into daily note
+Inserir ligação na nota diária
+Falha ao criar a nota diária. "{{format}}" não é um formato válido.
+Falha ao criar nota diária. Pasta "{{folderOption}}" não encontrada.
+Falha ao criar nota diária. Ficheiro modelo "{{template}}" não encontrado.
+Não há nota diária anterior a esta.
+Nao há nota diária posterior a esta.
+Formato de data
+Escolha como as notas diárias são nomeadas no seu cofre.
+Formato personalizado
+Personalizado
+Formato de data inválido
+Pasta de notas diárias não encontrada.
+Para mais sintaxe, consulte: 
+formato de referência
+Aqui está como vai aparecer: 
+Nova localização do ficheiro
+O caminho da pasta para criar a nova nota diária.
+Localização do ficheiro modelo
+O caminho do ficheiro utilizado como modelo.
+Criador de notas únicas
+Crie notas com prefixos da data únicos, para workflows como zettelkasten ou slip box.
+Único
+Crie uma nova nota única
+Nova nota única
+Adicionar ligação interna única
+Noca localização do ficheiro
+O caminho do ficheiro para criar uma nova nota única.
+Falhar na criação de uma nota única. A pasta "{{folderOption}}" não foi encontrada.
+Localização do ficheiro modelo
+O caminho do ficheiro a usar como modelo.
+Exemplo: pasta1/nota
+Formato do prefixo único
+Falha na criação da nota única. O ficheiro modelo "{{template}}" não foi encontrado.
+Failed to generate a unique note with the format "{{format}}
+Nota aleatória
+Abre uma nota aleatória. Útil para revisão e descobrir ideias.
+Aleatória
+Abrir nota aleatória
+Índice
+Mostra o índice do ficheiro atual ou do painel vinculado.
+Abrir índice
+Mostrar painel do índice
+Abrir índice do ficheiro atual
+Índice de {{displayText}}
+Título não encontrado.
+Deslocar automaticamente para a secção atual
+Contagem de palavras
+Mostrar o número de palavras na barra de status.
+Diapositivos
+Apresente a partir de Markdown. Use "---" para separar os seus slides.
+Começar a apresentação
+Gravador de áudio
+Grava áudio e guarda como anexo.
+Começar a gravar áudio
+Parar de gravar áudio
+Começar/parar gravação
+Acesso ao microfone foi negado. Ative-o no painel de preferências.
+Por favor conceda permissão para começar a.
+Nenhum microfone está conectado.
+Abrir com aplicativo padrão
+Adiciona um botão para abrir o ficheiro atual com o aplicativo padrão.
+Abrir com aplicativo padrão
+Partilhar
+Mostrar na pasta
+Revelar no Finder
+Modelos
+Insira conteúdo padronizado a partir de uma pasta de ficheiros modelo.
+Inserir templates
+Inserir data atual
+Inserir hora atual
+Localização da pasta de templates
+Ficheiros nesta pasta serão templates.
+Formato da data
+{{date}} no ficheiro de template será substituído por este valor.
+Também pode usar {{date:YYYY-MM-DD}} para substituir o formato.
+Formato do horário
+{{time}} no template será substituído por este valor.
+Também pode usar {{time:HH:mm}} para substituir o formato.
+Navegar
+Inserir um template
+Dispensar
+Nenhum template foi encontrado
+Erro ao listar os templates. A sua pasta é inválida.
+Erro ao listar os templates. A pasta "{{folderOption}}" não foi encontrada.
+Não foi possível inserir o modelo; não foi possível ler as propriedades no ficheiro do modelo.
+Falha ao listar modelos. Nenhuma pasta de modelos configurada.
+Digite o nome do template...
+Janela translúcida
+Ativa o efeito de transparência para realçar a perceção de profundidade. Otimizado para modo escuro. Não é suportado no Linux.
+Comandos Slash
+Ativar a possibilidade de executar comandos slash no editor ao escrever '/'.
+Estado do edtior
+Adiciona um item à status bar para mostrar e permitir mudar o estado atual do editor.
+Leitura
+Modo origem
+Visualização ao vivo
+Publicar
+Publica as suas notas através do Obsidian Publish.
+Publicar alterações
+Publicar ficheiro atual
+Precisa de acesso à internet para publicar alterações.
+O Obsidian Publish é um serviço de add-on pago que permite publicar as suas notas online diretamente do Obsidian.
+Para começar a publicar, conecte-se ou crie uma conta Obsidian.
+Ainda não é assinante do Obsidian Publish.
+Comprar
+Gerir sites
+Não tem nenhum site.
+Escolher
+Editar ID do site
+Eliminar site
+Tem a certeza que pretende eliminar este site?
+Isto irá eliminar o seu site de forma imediata e permanente.
+Confirmar eliminação do site "{{site}}"
+ID do site
+O seu site estará disponível em https://publish.obsidian.md/{site id}. Poderá alterar isto mais tarde. Apenas são permitidas letras minúsculas, números e hífens.
+Escolha um ID para o site
+Criar
+O ID do site só poderá conter letras minúsculas, números e hífens.
+O ID deste site já se encontra em uso, tente um diferente.
+Ocorreu um erro ao criar o seu site.
+Opções do site
+Geral
+Componentes
+Aparência
+Experiência de leitura
+Outras definições do site
+Nome do site
+Nome do seu site publicado. Aparecerá no título da página do seu site.
+Nome do seu site
+Ficheiro da página inicial
+A primeira página que o utilizador vê quando entra no seu site publicado
+Escolher um ficheiro publicado
+Logótipo
+Escolher um ficheiro de imagem para o logo do seu site.
+Qualquer imagem carregada no seu vault...
+Colaboradores do site
+Gerir colaboradores para este site.
+Personalizar navegação
+Substitua a ordem dos itens de navegação e oculte páginas ou pastas para que não sejam apresentadas.
+Ordem de apresentação dos itens de navegação
+Ocultar páginas ou pastas da navegação
+Right click and select "Hide" to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
+Mostrar ocultos
+Gerir
+Navegação
+Arraste e largue para personalizar a ordem em que os itens de navegação aparecem no seu site Publish.
+Ocultar na navegação
+Gerir
+Tema
+Escolher o esquema de cores padrão para o seu site.
+Adaptar ao sistema
+Alternar entre Claro/Escuro
+Deixar o visitante alternar entre tema escuro e claro por sua conta.
+Mostrar navegação
+Exibir uma lista de todas as páginas publicadas no lado esquerdo do seu site.
+Mostrar barra de pesquisa
+Exibir a barra de pesquisa no topo da navegação, que permite ao visitante procurar páginas e títulos no seu site.
+Mostrar Visualização de diagrama de grafo
+Exibir um pequeno diagrama de grafo local em cada página.
+Mostrar índice
+Exibir um índice dos títulos em cada página.
+Mostrar backlinks
+Mostrar a secção de backlinks no fim de cada página.
+Usar rotação de painéis
+Abrir páginas em novos painéis à direita. Permite navegar horizontalmente pelos painéis.
+Mostrar pré-visualização
+Exibir uma pré-visualização de página ao passar com o cursor sobre links.
+Esconde título da página
+Esconder o cabeçalho do título da página. É útil quando tem os seus próprios cabeçalhos no ínicio de cada página.
+Linhas de tamanho legível
+Limitar o tamanho máximo da linha. Cabe menos conteúdo no ecrã, mas faz os parágrafos mais fáceis de ler.
+Palavras-passe
+Limitar o acesso ao seu site com palavras-passe.
+Código de recolha de dados do Google Analytics
+Configurar o Google Analytics para o seu site. Apenas disponível a visitantes a partir do seu domínio personalizado. Verificar a compatibilidade com a lei e regulamentos locais.
+Gerir
+Guardar definições do site
+Configurações atualizadas para o seu site.
+Voltar
+Publicando em
+Trocar de site
+Adicionar linkado
+Adicionar todos os ficheiros linkados pelos items selecionados
+Adicionado {{count}} ficheiro linkado.
+Adicionados {{count}} ficheiros linkados.
+Mudar configurações do site
+Nenhuma alteração detectada.
+Alterações
+Inalterado (selecione para eliminar)
+ selecionado
+Selecionar tudo
+Itens de navegação
+Desselecionar tudo
+Novo
+Publicar
+Não tem permissão para publicar no site atual.
+Por favor selecione pelo menos um ficheiro.
+Enviar alterações
+Feito
+Parar
+A enviar
+Publicar
+Eliminar
+Publicar
+Apagado
+Falhou
+Cancelado
+Mudar
+As alterações vão demorar alguns minutos a aparecer no seu site. Caso não consiga ver as alterações, tente limpar a cache do seu navegador.
+Pode visitar o seu site em: 
+Ocorreu um erro. Por favor consulte o painel de controlo para mais detalhes.
+Ocorreu um erro de ligação. 
+Gerir palavras-passe
+Adicioanr palavra-passe
+Nova palavra-passe
+Não existem palavras-passe para este site. Qualque um o pode visitar.
+O site é protegido por palavra-passe. Se tiver várias palavras-passe, os visitantes podem aceder ao seu site digitando qualquer uma delas.
+Palavra-passe
+Um algoritmo da sua palavra-passe será guardado em modo seguro. Uma vez definida, a palavra-passe não poderá ser revelada em texto simples.
+A sua palavra-passe
+Alcunha (opcional)
+Definir uma alcunha para lembrar do que ou para quem é a palavra-passe.
+Adicionar esta palavra-passe
+Palavra-passe sem título
+Criada a {{time}}
+Nova palavra-passe adicionada.
+Domínio personalizado
+Usar o seu próprio domínio em vez do endereço https://publish.obsidian.md/{site id}.
+Não permitir indexação do motor de pesquisa
+Não permitir que motores de pesquisa indexem o seu site.
+Configurar
+Configurar domínio personalizado
+Endereço personalizado
+Endereço onde se localiza o seu site.
+Redirecionar para o seu endereço personalizado
+Redirecionar visitantes de publish.obsidian.md/id para o seu endereço personalizado.
+Atualizar definição de domínio
+Para mais informação ir a {{link}} no nosso site de ajuda.
+Guia de configuração de domínio personalizado
+Está a usar {{site}} do seu limite {{limit}}.
+Comprar mais sites
+Não comprou nenhum site.
+Obter um site
+Gerir partilhas para "{{name}}"
+Este site está a ser partilhada com os seguintes utilizadores.
+Este site não está a ser partilhado com ninguém.
+Pendente
+Remover utilizador
+Convidar utilizador
+Introduza o seu email...
+Por favor introduza um email válido para convidar alguém.
+Por favor ative o plugin principal Publicar nas Configurações -> Plugins Base para ver sites.
+Os seus sites
+Sites partilhados consigo
+Parar de colaborar neste site
+Confirmar a cessação da colaboração neste site
+Este site será removido da lista de sites partilhados consigo. Esta ação não é reversível.
+Por favor contacte o dono do site se deseja colaborar novamente neste site.
+Sair
+Comparar com a versão ao vivo
+Usar versão ao vivo
+Confirmar a escrita por cima sobre a versão local
+Tem a certeza que quer escrever por cima da versão local?
+A versão ao vivo irá ser usada e a sua versão local será descartada. Por favor faça um cópia de segurança, se necessário.
+Continuar
+Sucesso em usar a versão ao vivo para escrever por cima da sua versão local.
+Abrir no site em direto
+Abrir ficheiro
+Gerir filtros de publicação
+Pastas incluídas
+Ficheiros nestas pastas serão automaticamente selecionados nas revisões feitas antes da publicação.
+ Estas pastas estão atualmente incluídas:
+Pastas excluídas
+Ficheiros nestas pastas não apareceram nas revisões feitas antes da publicação. Esta configuração tem prioridade sobre as pastas incluídas acima.
+Obsidian Publicar está a incluir {{folders}}.
+Obsidian Publicar está a excluir {{folders}}.
+Gerir pastas incluídas 
+Gerir pastas excluídas
+Incluir uma pasta
+Pode incluir pastas existentes ou pastas que ainda não foram criadas.
+Contactar suporte
+Pré-visualização de navegação
+Áreas de trabalho
+Guardar e carregar layout da área de trabalho.
+Carregar esquema da área de trabalho
+Gerir esquema da área de trabalho
+Guardar disposição
+Guardar e carregar outro esquema
+Guardar esquema da área de trabalho atual como...
+Guardar
+Carregar
+Apagar esquema
+Por favor introduza um nome para o novo esquema.
+Sucesso em gravar o esquema.
+Nenhum esquema encontrado.
+Modificado {{time}}
+Introduza o nome do esquema...
+Sincronizar
+Sincronizar os seus ficheiros através do Obsidian Sync.
+Ver histórico de versões
+Configurar Sync
+Abrir histórico de versões
+Mostrar histórico do Sync
+Abrir registo de atividade
+Carregar mais
+Mostrar diferenças
+Copiar para a área de transferência
+Restaurar esta versão
+Esta versão é a mais recente.
+Versão {{time}} restaurada com sucesso
+Este ficheiro foi apagado
+Eliminado via {{ device }}
+This file was renamed from "{{filepath}}"
+Renomeado de “{{from}}” para “{{to}}”
+Movido de “{{from}}”
+Movido de “{{from}}” para “{{to}}”
+1 revision
+{{revisions}} revisions
+
+Sem histórico de sincronização para este ficheiro.
+Vazio
+Não foi possível obter o histórico de versões
+Ficheiros de configuração
+Ficheiros apagados
+História de versionamento
+Clique num ficheiro apagado para ver o seu histórico.
+Criar vault remoto
+Insira uma palavra-passe.
+O nome do vault não pode estar vazio.
+Vault remoto "{{name}}" criado com sucesso.
+O vault remoto permite sincronizar de forma segura o seu vault entre dispositivos.
+Nome do vault
+Ajuda a lembrar a função do vault.
+Região
+Automático
+Selecione a região do servidor mais próxima de si para armazenar o cofre remoto. Isto não pode ser alterado no futuro.
+O meu incrível vault
+Encriptação
+A encriptação ponto a ponto oferece a segurança mais forte, mas requer que armazene em segurança a sua palavra-passe de encriptação. A encriptação padrão usa uma chave gerida pelo Obsidian para proteger os seus dados em trânsito e nos nossos servidores.
+Esta opção não pode ser alterada mais tarde.
+Encriptação ponto a ponto
+Encriptação padrão
+Chave de encriptação
+Esta chave não poderá ser alterada mais tarde.
+Caso se esqueça desta chave, todos os seus dados remotos ficarão inutilizáveis.
+Isto não afeta os seus dados locais.
+O cofre remoto “{{name}}” está atualmente encriptado. Introduza a sua palavra-passe para desbloquear.
+A sua chave
+Desbloquear o seu cofre remoto
+Desbloquear vault
+Os seus vaults remotos
+Criado em {{time}}
+Eliminar
+Renomear
+Rename remote vault "{{name}}"
+Introduza um novo nome para este cofre remoto.
+Gerir partilha
+Confirmar eliminação do vault
+Tem a certeza que deseja eliminar este vault remoto?
+Todos os dados no nosso servidor, incluindo o histórico de versões, serão eliminados. Os seus ficheiros locais permanecerão intactos.
+Esta ação é permanente e irreversível.
+{{name}} foi eliminado.
+Obsidian Sync: O cofre remoto ligado já não existe.
+Conectar
+Desconectar
+
+Não existe nenhum vault remoto.
+Não tem uma subscrição ativa do Obsidian Sync.
+Por favor, visite
+Não foi possível pré-visualizar ficheiros {{type}}.
+Criar novo vault
+Registo de sincronização
+Tudo
+Erros
+Ignorados
+Conflitos de mesclagem
+Copiar registo de sincronização
+Registo de sincronização copiado com sucesso.
+Tentar novamente
+Comprar
+Detetado serviço de sincronização de ficheiros em conflito
+Aviso: O seu cofre parece estar a usar {{service}} como um serviço de sincronização de terceiros. Se usar o Obsidian Sync com este cofre, poderá ocorrer conflitos, corrupção de ficheiros ou perda de dados.
+Se estiver a usar o iCloud Drive, as pastas Documentos e Ambiente de trabalho podem estar a ser sincronizadas pelo iCloud. Isto pode causar conflitos com o Obsidian Sync.
+Cofre remoto
+Escolher
+Gerir
+Atualmente conectado ao vault remoto "{{name}}".
+Não está conectado a nenhum vault remoto.
+Status da sincronização
+O Obsidian Sync está pausado.
+O Obsidian Sync está em execução.
+Nome do dispositivo
+Este nome será exibido no registo de sincronização. Deixe em branco para usar o nome padrão.
+Retomar
+Pausar
+Ficheiros eliminados
+Ver e restaurar ficheiros eliminados.
+Atividade do Sync
+Ver atividades recentes de sincronização para resolução de problemas.
+Ver
+Restauração em massa
+Restaurar ficheiros
+Restaurar {{count}} ficheiro
+Restaurar {{count}} ficheiros
+A restaurar...
+`Restauração completa: {{succeeded}} sucedidos e {{failed}} falhados.`
+Vault size
+Está a usar {{size}} de {{limit}}
+Não foi possível obter o tamanho do seu cofre.
+A obter o tamanho do seu cofre...
+Tamanho do vault acima do limite
+Tamanho do cofre a aproximar-se do limite
+Ver ficheiros maiores
+Estes são so ficheiros remotos que ocupam mais espaço. Após eliminar os anexos, utilize o botão Limpar para libertar espaço do vault remoto.
+Atualizar armazenamento
+Limpar
+Ocultar as minhas alterações
+Limpa permanentemente os anexos eliminados do vault remoto para libertar espaço.
+Limpeza completada.
+Impedir suspensão do dispositivo
+Impede o dispostivo de entrar em suspensão quando ainda existem ficheiros que ainda não foram sincronizados.
+Sincronização seletiva
+Pastas excluídas
+Impede que certas pastas sejam sincronizadas.
+ Pastas atualmente excluídas:
+Gerir
+Sincronizar imagens
+Sincrozinar ficheiros de imagens com as seguintes extensões: {{extensions}}.
+Sincronizar áudio
+Sincronizar ficheiros de áudio com as seguintes extensões: {{extensions}}.
+Sincronizar vídeos
+Sincronizar ficheiros de vídeo com as seguintes extensões: {{extensions}}.
+Sincronizar PDFs
+Sincronizar ficheiros PDF.
+Sincronizar todos os outros tipos
+Sincronizar tipos de ficheiros não suportados.
+Sincronizar configurações do vault
+História do versionamento das configurações
+Ver e restaurar a história do versionamento dos ficheiros de configuração.
+Configurações principais
+Ativar a sincronização das configurações do editor, ficheiros & configurações de links, hotkeys personalizadas, etc.
+Configurações de aparência
+Sincronizar configurações de aparência como modo escuro, tema ativo, e snippets ativos.
+Temas e snippets
+Sincronizar temas e snippets transferidos. A configuração anterior guarda a informação se estão ativos ou não.
+Atalhos de teclado
+Sincronizar hotkeys personalizadas.
+Lista de plugins base ativos
+Sincronizar que plugins base estão ativos.
+Configurações de plugins base
+Sincronizar as configurações de plugins base.
+Lista de plugins da comunidade ativos
+Sincronizar que plugins da comunidade estão ativos.
+Plugins da comunidade instalados
+Sincronizar plugins da comunidade instalados (.js, .css, e ficheiros manifest.json) e as suas configurações.
+O Sync ainda está a carregar, atualize esta página mais tarde.
+Obsidian Sync é um serviço add-on do Obsidian com encriptação end-to-end e histórico de versões.
+Para iniciar a sincronização, efetue o login ou crie uma nova conta Obsidian.
+Ficheiro atual
+Alterações do Sync
+Hoje
+Ontem
+Esta semana
+Mais antigo
+Último Sync
+Mais {{count}}
+Registar
+Entrar
+Gerir pastas excluídas
+{{folders}} estão excluídas da sincronização.
+Excluir uma pasta
+Pode excluir pastas existentes ou pastas que ainda não foram criadas.
+Remover da lista de exclusão
+Configurar conexão
+A ligar...
+Falha na ligação
+Falha ao ligar ao cofre remoto.
+Conexão estabelecida para "{{name}}".
+Começar sincronização
+Confirmar Merge Vault
+O seu vault local já contém algumas notas.
+Se conectar com o vault remoto "{{name}}", as notas no seu vault local serão misturadas com as notas no seu vault remoto. No caso de conflitos, a versão mais recente da nota será preservada.
+Por favor atualize esta opção e reinicie a aplicação em todos os dispositivos onde quer que tenha efeito.
+Este vault remoto está a ser partilhado com os seguintes utilizadores.
+Este vault remoto não está a ser partilhado com ninguém.
+Vaults partilhados consigo
+Parar de colaborar neste vault
+Confirmar a paragem da colaboração neste vault
+Isto erá remover este vault da lista de vaults partilhados consigo. Esta açõa não é reversível.
+Por favor contacte o dono do vault se deseja colaborar novamente neste vault.
+Sair
+Falha ao carregar cofres remotos.
+Precisa de uma subscrição Obsidian Sync para se conectar a este vault.
+Contactar suporte
+Se encontrar algum problema com Obsidian Sync, por favor contacte-nos para lhe podermos ajudar! Pode contactar-nos em support@obsidian.md.
+Copiar informações de depuração
+Suporte de email
+O Sync não está ligado a um cofre remoto.
+Obsidian Sync lets you create up to 5 remote vaults. In order to create a new remote vault, please remove an existing one.
+Atualizar cofre
+Atualizar encriptação do cofre
+Existe uma nova versão de encriptação disponível para cofres remotos.
+Migrar cofre remoto
+Configuração do cofre remoto
+Migrar
+Isto irá eliminar o seu cofre remoto e recriá-lo com a encriptação mais recente. Os ficheiros locais não serão afetados; no entanto, o seu histórico de versões será perdido.
+Confirmar migração do cofre
+Para atualizar a sua encriptação, todos os dados no cofre serão enviados novamente para os servidores do Obsidian Sync usando o novo método de encriptação. Este processo irá eliminar permanentemente todos os dados encriptados com a encriptação antiga, incluindo o histórico de versões do seu cofre.
+Importante: recomendamos vivamente a criação de uma cópia de segurança do seu cofre antes de prosseguir, para evitar qualquer potencial perda de dados.
+Depois de concluir a atualização, terá de voltar a ligar todos os seus dispositivos ao cofre remoto atualizado.
+A migração do seu cofre pode demorar algum tempo. Terá de manter o Obsidian ativo neste dispositivo para reenviar todas as suas notas e anexos. É preferível fazer isto no seu dispositivo principal.
+Quer prosseguir?
+Migração do cofre em curso.
+Migração do cofre concluída.
+Resolução de conflitos
+Escolha como os conflitos são resolvidos quando uma nota é modificada de forma independente em vários dispositivos.
+Mesclar automaticamente
+Criar ficheiro de conflito
+Recuperação de ficheiros
+Permite restaurar cópias instantâneas recentes para recuperar de uma perda acidental de dados. As cópias instantâneas são guardadas apenas para ficheiros Markdown.
+Abrir cópias instantâneas guardadas
+Intervalo da cópia instantânea
+Intervalo mínimo em minutos entre duas cópias instantâneas.
+Duração do histórico
+Duração em dias pelos quais as cópias instantâneas são mantidas.
+Cópias instantâneas
+Ver e restaurar cópias instantâneas guardadas.
+Ver
+Apagar histórico
+Eliminar todas as cópias instantâneas.
+Apagar
+Tem a certeza que deseja eliminar todas as cópias instantâneas? Apenas cópias instantâneas serão eliminadas. Os seus ficheiros não serão afetados.
+Cópias instantâneas eliminadas.
+Não foi encontrada nenhuma cópia instantânea.
+Escolher um ficheiro...
+Escolher um ficheiro à esquerda para visualizar as cópias instantâneas.
+Compositor de notas
+Fundir, separar, e refatorar notas.
+Confirmar fusão do ficheiro
+Avisar antes da fusão de dois ficheiros.
+Texto depois da extração
+O que mostrar no lugar do texto depois da sua extração.
+Link para um novo ficheiro
+Embutir um novo ficheiro
+Nada
+Localização do ficheiro modelo
+Ficheiro modelo a ser usado na fusão ou extração. Variáveis disponíveis: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.
+Fundir ficheiro atual com outro ficheiro...
+Fundir o ficheiro inteiro com...
+Nenhum ficheiro encontrado.
+para navegar
+para fundir
+para criar novo
+para fundir no início
+para dispensar
+Selecionar ficheiro para fundir em...
+Fundir ficheiro
+Tem a certeza que quer fundir o ficheiro "{{file}}" em "{{destination}}"? "{{file}}" será apagado.
+Fundir
+Extrair seleção atual...
+Extrair este cabeçalho...
+para mover para o fim
+para mover para o início
+Falha na busca do ficheiro modelo : "{{template}}" não encontrado.
+Falha na procura do cabeçalho
+Visualizador web
+Histórico web
+Abrir ligações externas para páginas web dentro do Obsidian.
+Abrir visualizador web
+Mostrar histórico
+Alternar modo de leitura
+Copiar URL
+Remover do histórico
+Limpar histórico
+Abrir ligação
+Abrir ligação num novo separador
+Abrir ligação à direita
+Abrir ligação numa nova janela
+Abrir ligação no navegador predefinido
+Abrir ligação no visualizador web
+Copiar endereço da ligação
+Adicionar ligação aos marcadores
+Pesquisar por “{{query}}”
+Extrair seleção para nova nota
+Copiar
+Cortar
+Colar
+Eliminar
+Selecionar tudo
+Guardar no cofre
+Guardar imagem no cofre
+Copiar ligação da imagem
+Anterior
+Seguinte
+Recarregar
+Adicionar página aos marcadores
+Abrir no navegador predefinido
+Focar barra de endereços
+Pesquisar na web
+Limpar dados
+
+Pode terminar a sua sessão em sites.
+Dados em cache
+Histórico
+Todos os dados do visualizador web
+Remove tudo o que está acima, bem como o armazenamento local e as sessões ativas.
+Novo visualizador web
+Unable to load that site.
+Please make sure you have the correct address.
+Pesquisar na web
+Dados do visualizador web
+Limpar dados do visualizador web
+Abrir ligações externas
+Abrir ligações no Obsidian em vez do predefinido do sistema.
+Página inicial
+Que página ver quando um visualizador web é aberto
+Pasta de páginas guardadas
+Os sites guardados como markdown serão colocados aqui.
+Motor de pesquisa
+Motor de pesquisa usado ao pesquisar a partir da barra de endereços.
+Motor de pesquisa personalizado
+Use %s no lugar da consulta.
+Personalizado
+Ativar bloqueador de anúncios
+Se ativado, as listas de filtros abaixo serão aplicadas a todos os separadores do visualizador web.
+Regras de bloqueio de anúncios
+Um URL de lista de bloqueio de anúncios por linha. Partilhado por todos os cofres.
+Frequência de atualização do bloqueio de anúncios
+Dias entre atualizações das listas de filtros. 0 indica desativado. Partilhado por todos os cofres.
+Limpar dados do visualizador web
+Unexected error extracting content.
+Não foi possível encontrar conteúdo para extrair.
+
+Organize e ligue notas num Canvas infinito.
+Adicionar nota do cofre
+Adicionar multimédia do cofre
+Adicionar cartão
+Adicionar página web
+Criar grupo
+Criar um cartão com um tamanho específico
+Converter em ficheiro...
+Arrastar para adicionar nota do cofre
+Arrastar para adicionar multimédia do cofre
+Arrastar para adicionar cartão
+Editar etiqueta
+Remover etiqueta
+Pesquisar ficheiro
+Definir cor
+Alinhar
+Alinhar à esquerda
+Alinhar ao centro
+Alinhar à direita
+Alinhar ao topo
+Alinhar ao meio
+Alinhar ao fundo
+Distribuir espaçamento horizontal
+Distribuir espaçamento vertical
+Justificar horizontalmente
+Justificar verticalmente
+Dispor numa linha
+Dispor numa coluna
+Dispor numa grelha
+Exportar como imagem
+Ir para grupo
+Definir fundo
+Editar fundo
+Substituir fundo
+Remover fundo
+Nenhuma imagem encontrada.
+Nenhum conteúdo multimédia encontrado.
+Export "{{title}}" with a PNG file with the settings below.
+Dimensões estimadas da imagem: {{dimensions}}
+Distribuir
+Justificar
+Dispor
+Sempre
+Ao passar o cursor
+Nunca
+Nenhuma secção encontrada
+Comportamento predefinido da roda do rato
+Comportamento predefinido de {{key}}
+Mostrar menu
+Localização predefinida para novos ficheiros Canvas
+Onde são colocados os ficheiros Canvas recém-criados.
+Pasta para criar novos ficheiros Canvas
+Os ficheiros Canvas recém-criados aparecerão nesta pasta.
+Display card label
+Encaixar na grelha
+Encaixa os cartões na grelha de fundo ao mover e redimensionar.
+Encaixar em objetos
+Encaixa os cartões em objetos próximos ao mover e redimensionar.
+Limite de zoom para ocultar o conteúdo do cartão
+Valores mais baixos aumentam o desempenho, mas ocultam mais cedo o conteúdo do cartão ao reduzir o zoom.
+Mostrar logótipo
+Isto adicionará um logótipo do Obsidian no canto inferior esquerdo.
+Modo de privacidade
+Isto irá ocultar qualquer texto no seu Canvas.
+
+Um zoom mais alto irá gerar uma imagem com maior resolução.
+
+Escolha entre renderizar o Canvas inteiro ou apenas o viewport visível atual.
+Canvas completo
+Apenas viewport
+Cobrir
+Manter proporção
+Repetir
+Novo Canvas
+Duplicar
+Remover
+Restringir ao cabeçalho...
+Restringir ao bloco...
+Fixar vista...
+Trocar ficheiro...
+Alterar URL...
+Zoom para ajustar
+Zoom para a seleção
+Recarregar página
+Seguir ligação
+Criar novo Canvas
+Converter em ficheiro...
+para incorporar o cabeçalho
+para incorporar o bloco
+para navegar para o grupo
+Type name of heading
+Introduza o URL
+"{{linktext}}" could not be found.
+Adicionar texto...
+Escreva para pesquisar...
+Ajuda do Canvas
+Definições do Canvas
+Mostrar ficheiro completo
+Mostrar vista predefinida
+Só de leitura
+Desativar só de leitura
+Deslocar
+Deslocar horizontalmente
+
+Selecionar tudo
+Adicionar a / remover da seleção
+Clonar cartão
+Restringir movimento do cartão ao eixo
+Desativar ajuste ao arrastar
+Remover cartão
+Arrastar a partir de baixo ou fazer duplo clique
+Toque e mantenha premido para adicionar / mover / selecionar
+Arrastar para deslocar
+Beliscar para ampliar
+Espaço + Arrastar para deslocar
+Deslocar para ampliar
+Grupo sem título
+Direção da linha
+Sem direção
+Unidirecional
+Bidirecional
+Imagem
+Estilo
+Não foram encontrados grupos
+Não é possível exportar um Canvas vazio
+O Canvas detetou renomeações de ficheiros que afetam {{count}} ficheiro Canvas, a atualizar...
+O Canvas detetou renomeações de ficheiros que afetam {{count}} ficheiros Canvas, a atualizar...
+O Canvas atualizou {{count}} cartão incorporado
+O Canvas atualizou {{count}} cartões incorporados
+
+Create bases by querying note properties.
+Nova base
+Add property
+Adicionar resumo de "{{name}}"
+Adicionar fórmula
+Ocultar tudo
+Alternar visibilidade
+Eliminar fórmula
+Vista predefinida
+Duplicar vista
+Eliminar vista
+Eliminar resumo
+Exportar CSV...
+Criar nova base
+Inserir nova base
+Copiar tabela para a área de transferência
+Change view
+Adicionar vista
+Adicionar item
+Adicionar vista
+Adicionar filtro
+Adicionar grupo de filtros
+Mostrar tudo
+Mostrar tudo ({{count}})
+Adicionar resumo
+Ocultar resumo
+Todas as vistas
+Esta vista
+Localizar ou criar...
+Propriedades calculadas
+Tipo de propriedade
+Ocultar propriedade
+Mostrar propriedade
+Editar propriedade
+Editar {{name}}
+Configurar vista
+Esquema
+Filtros globais
+Filtros da vista
+Nome da vista
+Vista
+Tabela
+Nome a apresentar
+Nome do resumo
+Fórmula
+Vistas
+Ordenar
+Filtro
+Pesquisar
+Propriedades
+Novo
+A mostrar {{count}}
+Ficheiro de modelo do novo item
+Pasta do novo item
+Qualquer uma das seguintes é verdadeira
+Todas as seguintes são verdadeiras
+Nenhuma das seguintes é verdadeira
+onde
+ou
+e
+Propriedade
+Sem título
+ficheiro
+name
+nome base do ficheiro
+nome completo do ficheiro
+path
+pasta
+extension
+hora de criação
+hora de modificação
+tamanho do ficheiro
+links inversos do ficheiro
+ligações do ficheiro
+incorporações do ficheiro
+etiquetas do ficheiro
+Adicionar ordenação
+Agrupar por
+Ordenar por
+Limitar número de resultados
+
+
+Antigo para novo
+Novo para antigo
+
+
+O nome da vista não pode conter: 
+O nome da vista já existe.
+O nome da vista não pode estar vazio.
+Este filtro não pode ser representado pelo construtor de filtros simples.
+Não foi possível analisar o filtro. O construtor de filtros básicos não pode ser utilizado.
+Configuração de propriedades inválida.
+Configuração de propriedade inválida para "{{ name }}".
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+Não foi possível analisar o seu ficheiro de base:
+Vista "{{ view }}" não encontrada
+Base configured with an unknown view type: {{ viewtype }}
+As vistas têm de ser uma matriz
+Os valores de apresentação têm de ser cadeias de texto. O valor da propriedade {{ key }} não é.
+"{{ key }}" tem de ser um(a) {{ type }}
+"filters" tem de ser uma cadeia de texto ou um objeto
+O filtro "{{ conjunction }}" tem de ser uma matriz
+"filters" só pode ter uma das chaves "and", "or" ou "not".
+Falha ao avaliar um filtro: {{ message }}
+Os valores da fórmula têm de ser cadeias de texto. O valor da propriedade {{ key }} não é.
+Falha ao calcular o valor da propriedade "{{ key }}": {{ message }}
+A consulta está num formato inválido. Deve ser um objeto YAML.
+Os itens de "view" têm de ser um objeto YAML, no entanto o item {{ index }} não é
+Falta ou é inválido "name" na vista {{ index }}
+"{{ key }}" é obrigatório na vista "{{ viewName }}"
+"{{ key }}" tem de ser um(a) {{ type }} na vista "{{ viewName }}"
+Os valores de "{{ key }}" têm de ser todos do tipo {{ type }} na vista "{{ viewName }}"
+Não foi possível analisar os filtros na vista "{{ viewName }}": {{ message }}
+Ciclo infinito detetado na fórmula
+Propriedade inválida
+Esta nota será filtrada porque não corresponde aos seus critérios
+Filtro avançado
+p. ex. 10
+Filtro avançado
+Filtro simples
+Remover filtro
+Nenhum
+Lista
+Marcadores
+Avançar propriedades
+Separador de propriedades
+Marcador
+Número
+Nenhum
+Cartões
+Tamanho do cartão
+Propriedade da imagem
+Ajuste da imagem
+Capa
+Conter
+Proporção da imagem
+Tabela
+Ocultar coluna
+Editar propriedade...
+Editar fórmula...
+Limpar ordenação
+Ordenar A → Z
+Ordenar Z → A
+Altura da linha
+Baixa
+Média
+Alta
+Muito alta
+Resumir...
+Agrupar por esta propriedade
+Limpar valores
+Resumo
+Falha ao analisar a fórmula "{{ formula }}"
+Não foi possível encontrar a função "{{ function }}"
+Não foi possível encontrar a função "{{ function }}" no tipo {{ type }}
+Não é possível chamar a função "{{ function }}": não há argumentos suficientes.
+Não é possível chamar a função "{{ function }}": demasiados argumentos.
+Erro de tipo em "{{ function }}", parâmetro "{{ parameter }}". Esperado: {{ expected }}; fornecido: {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Realçar tudo
+Corresponder diacríticos
+Palavras inteiras
+Miniaturas
+Índice
+Revelar página no índice
+Alternar barra lateral
+Página anterior
+Página seguinte
+Ajustar à largura
+Ajustar à altura
+Guardar a posição atual no documento
+Copiar anotação
+Copiar como citação
+Copiar ligação para a seleção
+Copiar ligação para a anotação
+Copiar ligação para a secção
+Copiar ligação para “{{title}}”
+Copiar ligação para a página {{page}}
+{{current}} de mais de {{limit}} correspondências
+{{current}} de {{total}} correspondência
+{{current}} de {{total}} correspondências
+Este PDF está protegido por palavra-passe
+Palavra-passe inválida
+Introduza a palavra-passe abaixo
+de {{count}}
+({{current}} de {{count}})
+Página única
+Two page (odd)
+Two page (even)
+Opções da barra lateral
+Opções de apresentação
+Adaptar ao tema
+página {{page}}
+Página {{page}}
+Página {{page}}
+Página {{page}}
+[Anotação {{type}}]
+
+Lista
+Desconhecido
+Texto
+Alcunhas
+Etiquetas
+Pasta
+Ficheiro
+Propriedade
+Data
+Data e hora
+Número
+Caixa de seleção
+Escreva [[
+para ligar a nota
+para dispensar
+Tipo de propriedade
+Ordenar
+O nome da propriedade não pode estar vazio.
+A propriedade já existe
+Nome de etiqueta inválido
+Número inválido
+Falha ao ler as propriedades.
+No value
+Propriedades
+Propriedades inválidas
+Mostrar origem
+Erro de sintaxe. Os seus metadados iniciais são inválidos.
+Adicionar propriedade
+Incompatibilidade de tipo, esperado {{type}}
+Incompatibilidade de tipo
+Mostrar como {{type}}?
+Os seus dados de {{oldType}} não são compatíveis. Serão adaptados para corresponder ao novo formato.
+Coluna
+Linha
+Add row after
+Add column after
+Add row before
+Mover linha para cima
+Mover linha para baixo
+Add column before
+Mover coluna para a esquerda
+Mover coluna para a direita
+Duplicar linha
+Duplicar coluna
+Eliminar linha
+Eliminar coluna
+Alinhar à esquerda
+Alinhar ao centro
+Alinhar à direita
+Eliminar células
+Limpar células
+Ordenar por coluna (A a Z)
+Ordenar por coluna (Z a A)
+Tabela: {{command}}
+Tipo de bloco de destaque
+
+Importante
+Dica
+Sucesso
+Pergunta
+Aviso
+Citação
+Exemplo
+Nenhum
+Outro...
+Tipo de bloco de destaque...
+
+{{count}} palavra
+{{count}} palavras
+{{count}} resultado
+{{count}} resultados
+{{count}} carácter
+{{count}} caracteres
+{{count}} ligação
+{{count}} ligações
+{{count}} ficheiro
+{{count}} ficheiros
+{{count}} pasta
+{{count}} pastas
+{{count}} link inverso
+{{count}} links inversos
+{{count}} separador
+{{count}} separadores
+{{count}} propriedade
+{{count}} propriedades
+
+
+
+
+{{count}} ativo
+{{count}} excerto
+{{count}} excertos
+{{count}} tema
+{{count}} temas

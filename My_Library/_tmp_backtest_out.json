@@ -1,0 +1,29 @@
+{
+  "range": "1210~1220",
+  "total_tested": 11,
+  "match_distribution": {
+    "4": 2,
+    "3": 2,
+    "2": 6,
+    "1": 1
+  },
+  "elite_draws": [
+    {
+      "draw_no": 1210,
+      "best_match": 4
+    },
+    {
+      "draw_no": 1211,
+      "best_match": 4
+    },
+    {
+      "draw_no": 1212,
+      "best_match": 3
+    },
+    {
+      "draw_no": 1213,
+      "best_match": 3
+    }
+  ],
+  "elite_count": 4
+}

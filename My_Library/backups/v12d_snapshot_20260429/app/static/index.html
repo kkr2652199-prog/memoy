@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 지식 도서관</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css?v=20260420lottoStatus">
+  <link rel="stylesheet" href="/static/css/library-graph.css?v=20260423phase2d">
+  <link rel="stylesheet" href="/static/css/graph_premium.css?v=20260415toggle">
+  <link rel="stylesheet" href="/static/css/lotto.css?v=20260425lottoSplit">
+  <link rel="stylesheet" href="/static/css/lotto2.css?v=20260428stepC2">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <h1 class="logo">📚 나의 지식 도서관</h1>
+    </div>
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="ingest">📥 섭취</button>
+      <button class="tab-btn" data-tab="library">🏛️ 도서관</button>
+      <button class="tab-btn" data-tab="project">🔬 작업실</button>
+      <button class="tab-btn" data-tab="chat">💬 챗봇</button>
+      <button class="tab-btn" data-tab="settings">⚙️ 설정</button>
+      <button class="tab-btn" data-tab="lotto">🎱 로또</button>
+      <button class="tab-btn" data-tab="lotto-reverse">역전 로또</button>
+    </nav>
+    <div class="header-right">
+      <button class="notification-btn" id="notificationBtn" title="알림">
+        🔔
+        <span class="notification-badge" id="notificationBadge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <!-- 섭취 탭 -->
+    <section class="tab-content active" id="tab-ingest">
+      <div class="tab-header">
+        <h2>자료 섭취</h2>
+        <p class="tab-desc">텍스트 붙여넣기, 파일 첨부, URL (웹페이지·유튜브·구글 문서) 모두 지원합니다.</p>
+      </div>
+      <div class="ingest-container">
+        <div class="ingest-input-area">
+          <div class="textarea-wrap">
+            <textarea id="ingestContent" class="ingest-textarea" placeholder="여기에 자료를 붙여넣으세요...&#10;&#10;[제목], [출처], [날짜] 태그가 있으면 자동 추출됩니다.&#10;구글 문서·유튜브·웹 URL은 한 줄로 붙여넣으면 가져옵니다.&#10;미리보기/섭취는 위 텍스트 또는 아래 파일 중 하나 이상 필요합니다."></textarea>
+            <div class="url-badge" id="urlBadge" style="display:none;">
+              <span class="url-badge-icon" id="urlBadgeIcon">📄</span>
+              <span class="url-badge-text" id="urlBadgeText">URL이 감지되었습니다</span>
+              <span class="url-badge-type" id="urlBadgeType"></span>
+            </div>
+          </div>
+
+          <!-- 자료 종류 선택 -->
+          <div class="material-type-selector" id="materialTypeSelector">
+            <div class="mt-btn mt-btn-info active" id="mtBtnInfo" onclick="selectMaterialType('information')">
+              <span class="mt-icon">📰</span>
+              <span class="mt-label">정보 자료</span>
+              <span class="mt-desc">AI가 분석하고 분류하고 연결합니다</span>
+            </div>
+            <div class="mt-btn mt-btn-user" id="mtBtnUser" onclick="selectMaterialType('user')">
+              <span class="mt-icon">👤</span>
+              <span class="mt-label">사용자 자료</span>
+              <span class="mt-desc">분류만 하고 보관합니다</span>
+            </div>
+          </div>
+          <div class="user-category-input" id="userCategoryInput" style="display:none;">
+            <label>사용자 분류 지정</label>
+            <p class="user-cat-hint">한 번이라도 저장한 폴더(대·중분류)는 아래에서 고르거나, 입력란에 직접 적을 수 있습니다.</p>
+            <div class="user-cat-row">
+              <div class="user-cat-col">
+                <span class="user-cat-field-label">대분류</span>
+                <select id="userCatLargeSelect" class="user-cat-select" aria-label="저장된 대분류 선택">
+                  <option value="">저장된 대분류 선택…</option>
+                </select>
+                <input type="text" id="userCatLarge" class="user-cat-field" placeholder="대분류 (예: 가이드)" list="userCatLargeList" autocomplete="off">
+                <datalist id="userCatLargeList"></datalist>
+              </div>
+              <span class="user-cat-sep">&gt;</span>
+              <div class="user-cat-col">
+                <span class="user-cat-field-label">중분류</span>
+                <select id="userCatMediumSelect" class="user-cat-select" aria-label="저장된 중분류 선택">
+                  <option value="">저장된 중분류 선택…</option>
+                </select>
+                <input type="text" id="userCatMedium" class="user-cat-field" placeholder="중분류 (예: 1번 가이드)" list="userCatMediumList" autocomplete="off">
+                <datalist id="userCatMediumList"></datalist>
+              </div>
+              <span class="user-cat-sep">&gt;</span>
+              <div class="user-cat-col">
+                <span class="user-cat-field-label">소분류</span>
+                <input type="text" id="userCatSmall" class="user-cat-field"
+                       placeholder="소분류 (미입력 시 자동생성)" autocomplete="off">
+              </div>
+            </div>
+          </div>
+
+          <!-- 파일 첨부 영역 -->
+          <div class="file-drop-zone" id="fileDropZone">
+            <div class="drop-icon">📎</div>
+            <p class="drop-text">파일을 여기에 끌어다 놓으세요</p>
+            <p class="drop-sub">또는</p>
+            <label class="btn btn-secondary file-select-btn">
+              파일 선택
+              <input type="file" id="fileInput" multiple accept=".txt,.md,.pdf,.xlsx,.xls,.csv,.docx,.jpg,.jpeg,.png,.html,.htm" hidden>
+            </label>
+            <p class="drop-formats">지원: TXT, MD, PDF, XLSX, CSV, DOCX, JPG, PNG, HTML</p>
+          </div>
+
+          <!-- 선택된 파일 목록 -->
+          <div class="file-list" id="fileList" style="display:none;">
+            <h4>첨부 파일 <span class="file-count" id="fileCount">0</span>개</h4>
+            <div class="file-items" id="fileItems"></div>
+          </div>
+
+          <!-- 진행률 표시 -->
+          <div class="ingest-progress" id="ingestProgress" style="display:none;">
+            <div class="progress-header">
+              <span class="progress-label" id="progressLabel">처리 중...</span>
+              <span class="progress-pct" id="progressPct">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-detail" id="progressDetail"></div>
+          </div>
+
+          <div class="ingest-actions">
+            <button type="button" class="btn btn-secondary" id="btnAnalyze">🔍 미리보기</button>
+            <button type="button" class="btn btn-primary" id="btnIngest">📥 전체 섭취하기</button>
+          </div>
+        </div>
+        <div class="ingest-preview" id="ingestPreview">
+          <h3>분석 미리보기</h3>
+          <div class="preview-content" id="previewContent">
+            <p class="placeholder-text">자료를 입력하고 '미리보기'를 클릭하면 분석 결과가 여기에 표시됩니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="recent-ingested" id="recentIngested">
+        <h3>최근 섭취 자료</h3>
+        <div class="card-list" id="recentList"></div>
+      </div>
+    </section>
+
+    <!-- 유사 자료 모달 -->
+    <div class="similar-modal" id="similarModal" style="display:none;">
+      <div class="modal-overlay" onclick="closeSimilarModal()"></div>
+      <div class="modal-content similar-modal-content">
+        <button class="modal-close" onclick="closeSimilarModal()">&times;</button>
+        <h2>비슷한 자료가 이미 있습니다</h2>
+        <div class="similar-list" id="similarList"></div>
+        <div class="similar-actions">
+          <button class="btn btn-primary" id="btnAddNew" onclick="handleSimilarChoice('new')">🆕 새 자료로 추가</button>
+          <button class="btn btn-secondary" id="btnUpdateExisting" onclick="handleSimilarChoice('update')" style="display:none;">🔄 기존 자료 업데이트</button>
+          <button class="btn" onclick="closeSimilarModal()">취소</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 도서관 탭 -->
+    <section class="tab-content" id="tab-library">
+      <div class="tab-header library-tab-header">
+        <h2>도서관</h2>
+        <div class="library-header-actions">
+          <button type="button" class="btn btn-secondary btn-wiki-open" id="btnOpenWikiViewer" title="핵심 태그·주제·종합 위키">📖 지식 위키 보기</button>
+          <div class="view-toggle">
+            <button class="toggle-btn active" id="btnListView" onclick="switchLibraryView('list')">📋 목록 보기</button>
+            <button class="toggle-btn" id="btnGraphView" onclick="switchLibraryView('graph')">🕸️ 그래프 보기</button>
+          </div>
+        </div>
+      </div>
+      <div class="library-filters-wrap" id="libraryListViewFilters">
+        <div class="library-filters">
+          <div class="search-bar library-search-row">
+            <input type="text" id="librarySearch" class="search-input" placeholder="제목·요약·본문 검색...">
+            <button class="btn btn-primary" id="btnSearch" type="button">🔍 검색</button>
+          </div>
+          <select id="filterCategoryLarge" class="filter-select" title="대분류">
+            <option value="">대분류 전체</option>
+          </select>
+          <select id="filterCategoryMedium" class="filter-select" title="중분류" disabled>
+            <option value="">중분류 전체</option>
+          </select>
+          <select id="filterSort" class="filter-select" title="정렬">
+            <option value="newest">최신순</option>
+            <option value="relevance" id="optSortRelevance" class="sort-relevance-option" disabled>관련도순</option>
+            <option value="oldest">오래된순</option>
+            <option value="importance">중요도순</option>
+            <option value="title">이름순</option>
+          </select>
+          <div class="importance-filter" id="importanceFilter" title="중요도 필터">
+            <span class="imp-label">중요도</span>
+            <button type="button" class="imp-btn active" data-imp="0">전체</button>
+            <button type="button" class="imp-star-btn" data-imp="1" title="1">★</button>
+            <button type="button" class="imp-star-btn" data-imp="2" title="2">★★</button>
+            <button type="button" class="imp-star-btn" data-imp="3" title="3">★★★</button>
+            <button type="button" class="imp-star-btn" data-imp="4" title="4">★★★★</button>
+            <button type="button" class="imp-star-btn" data-imp="5" title="5">★★★★★</button>
+          </div>
+          <select id="filterStatus" class="filter-select" title="상태">
+            <option value="active">활성</option>
+            <option value="all">전체</option>
+            <option value="archive">보관</option>
+            <option value="delete_candidate">삭제 후보</option>
+            <option value="deleted">삭제됨</option>
+          </select>
+          <select id="filterDateRange" class="filter-select" title="기간">
+            <option value="">전체 기간</option>
+            <option value="today">오늘</option>
+            <option value="week">이번 주</option>
+            <option value="month">이번 달</option>
+            <option value="custom">직접 입력</option>
+          </select>
+          <div id="customDateRange" style="display:none;gap:4px;align-items:center;">
+            <input type="date" id="filterDateFrom" class="filter-select" style="width:130px" title="시작일">
+            <span>~</span>
+            <input type="date" id="filterDateTo" class="filter-select" style="width:130px" title="종료일">
+          </div>
+        </div>
+      </div>
+      <div class="library-container" id="libraryListView">
+        <aside class="category-tree" id="categoryTree">
+          <div class="tree-header-row">
+            <h3>분류 체계</h3>
+            <button type="button" class="btn btn-small btn-tree-all" id="btnTreeViewAll">전체 보기</button>
+          </div>
+          <div class="tree-content" id="treeContent"></div>
+        </aside>
+        <div class="library-main">
+          <div class="stats-bar stats-bar-extended" id="statsBar"></div>
+          <div class="library-range" id="libraryRange"></div>
+          <div class="card-list lib-card-list" id="libraryList"></div>
+          <div class="library-pagination" id="libraryPagination"></div>
+        </div>
+      </div>
+      <div class="graph-container" id="libraryGraphView" style="display:none;">
+        <button type="button" class="graph-fullscreen-back" id="btnGraphFullscreenBack" title="목록 보기로 돌아가기">← 돌아가기</button>
+        <div class="graph-stats-bar" id="graphStatsBar" aria-live="polite"></div>
+        <div class="graph-toolbar" id="graphToolbar">
+          <button type="button" class="btn-graph-sidebar-toggle" id="btnGraphSidebarToggle" title="통계 패널 접기/펼치기">◀ 패널</button>
+          <div class="gt-search-wrap">
+            <input type="text" id="graphSearchInput" class="gt-search" placeholder="노드 검색...">
+          </div>
+          <div class="gt-node-type-filters" id="graphNodeTypeFilters">
+            <span class="gt-nt-label">노드</span>
+            <label class="gt-nt-label"><input type="checkbox" checked data-ntype="material"><span class="gt-nt-dot gt-nt-material"></span>자료</label>
+            <label class="gt-nt-label"><input type="checkbox" checked data-ntype="brand"><span class="gt-nt-dot gt-nt-brand"></span>출처</label>
+            <label class="gt-nt-label"><input type="checkbox" checked data-ntype="entity"><span class="gt-nt-dot gt-nt-entity"></span>핵심 태그</label>
+            <label class="gt-nt-label"><input type="checkbox" checked data-ntype="concept"><span class="gt-nt-dot gt-nt-concept"></span>주제</label>
+          </div>
+          <div class="gt-cat-filters" id="graphCatFilters"></div>
+          <div class="gt-edge-filters">
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="관련"><span class="le-line le-dashed"></span>관련</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="인과관계"><span class="le-line le-causal"></span>인과</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="모순"><span class="le-line le-conflict"></span>모순</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="언급"><span class="le-line le-mention"></span>언급</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="관련주제"><span class="le-line le-concept-edge"></span>관련주제</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="소속"><span class="le-line le-belongs"></span>소속</label>
+            <label class="gt-edge-label"><input type="checkbox" checked data-etype="shared_topic"><span class="le-line le-shared-topic"></span>같은 주제</label>
+          </div>
+          <div class="gt-imp-filter">
+            <span class="gt-imp-label">중요도</span>
+            <input type="range" id="graphImpRange" min="1" max="5" value="1" title="최소 중요도">
+            <span id="graphImpValue" class="gt-imp-val">1+</span>
+          </div>
+        </div>
+        <div class="graph-body">
+          <aside class="graph-sidebar graph-stats-panel" id="graphSidebar">
+            <div class="gs-stat-grid">
+              <div class="gs-card"><div class="gs-value" id="gsNodes">0</div><div class="gs-label">전체 노드</div></div>
+              <div class="gs-card"><div class="gs-value" id="gsEdges">0</div><div class="gs-label">연결</div></div>
+              <div class="gs-card"><div class="gs-value" id="gsOrphans">0</div><div class="gs-label">고립</div></div>
+              <div class="gs-card"><div class="gs-value" id="gsCats">0</div><div class="gs-label">분류</div></div>
+            </div>
+            <div class="gs-section">
+              <h4 class="gs-title">허브 자료 Top 5</h4>
+              <div class="gs-hub-list" id="gsHubList"><p class="gs-empty">연결된 자료가 없습니다</p></div>
+            </div>
+            <div class="gs-section">
+              <h4 class="gs-title">카테고리 분포</h4>
+              <div class="gs-cat-chart" id="gsCatChart"></div>
+            </div>
+            <div class="gs-section">
+              <h4 class="gs-title">최근 추가</h4>
+              <div class="gs-recent-list" id="gsRecentList"><p class="gs-empty">최근 자료 없음</p></div>
+            </div>
+            <div class="graph-legend-wrap graph-legend-bar" id="graphLegendWrap">
+              <button type="button" class="graph-legend-toggle" id="btnGraphLegendToggle" aria-expanded="false" aria-controls="graphLegendPanel">범례 ▼</button>
+              <div class="graph-legend-panel" id="graphLegendPanel" role="region" aria-label="그래프 범례" aria-hidden="true">
+                <div class="graph-legend-inner">
+                  <div class="gl-nodes" id="graphLegendNodes"></div>
+                  <div class="gl-edges">
+                    <span class="gl-edge-item"><span class="le-line le-dashed"></span>관련</span>
+                    <span class="gl-edge-item"><span class="le-line le-causal"></span>인과관계</span>
+                    <span class="gl-edge-item"><span class="le-line le-conflict"></span>모순</span>
+                    <span class="gl-edge-item"><span class="le-line le-mention"></span>언급</span>
+                    <span class="gl-edge-item"><span class="le-line le-concept-edge"></span>관련주제</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="graph-main-stage" id="graphMainStage">
+          <div class="graph-canvas-wrap" id="graphCanvasWrap">
+            <svg id="graphSvg"></svg>
+            <div class="graph-orphan-panel" id="graphOrphanPanel">
+              <div class="graph-orphan-head">
+                <span class="graph-orphan-title" id="graphOrphanTitle">🔗 연결 대기 중 (0개)</span>
+                <button type="button" class="btn-orphan-toggle" id="btnOrphanToggle">고립 노드 숨기기</button>
+              </div>
+              <svg id="graphOrphanSvg" class="graph-orphan-svg"></svg>
+            </div>
+            <div class="graph-mini-legend" id="graphMiniLegend" aria-hidden="true">
+              <div class="gml-row gml-head">영역 = 출처(채널/브랜드)</div>
+              <div class="gml-row"><span class="gml-dot"></span> 원 = 자료</div>
+              <div class="gml-row"><span class="gml-line gml-dotted"></span> 점선 = 같은 주제 연결</div>
+              <div class="gml-row gml-colors">🔴 유튜브 · 🔵 뉴스 · 🟢 블로그 · ⚪ 기타</div>
+            </div>
+            <div class="graph-zoom-controls">
+              <button type="button" class="gz-btn" id="gzIn" title="확대">+</button>
+              <button type="button" class="gz-btn" id="gzOut" title="축소">−</button>
+              <button type="button" class="gz-btn" id="gzFit" title="전체 보기">⊞</button>
+            </div>
+            <div class="graph-tooltip" id="graphTooltip"></div>
+            <div class="graph-shared-topic-tooltip" id="graphSharedTopicTooltip" role="tooltip"></div>
+          </div>
+          <aside id="graphDetailPanel" class="graph-detail-panel" aria-hidden="true">
+            <button type="button" class="gdp-close" id="graphDetailPanelClose" aria-label="닫기">&times;</button>
+            <div class="graph-detail-panel-inner">
+              <div class="gdp-body" id="graphDetailBody"></div>
+            </div>
+          </aside>
+          </div>
+        </div>
+      </div>
+      <div class="material-detail-modal" id="materialModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+
+      <div class="wiki-viewer-modal" id="wikiViewerModal">
+        <div class="modal-overlay wiki-viewer-overlay"></div>
+        <div class="wiki-viewer-dialog">
+          <button type="button" class="modal-close" id="wikiViewerModalClose" aria-label="닫기">&times;</button>
+          <div class="wiki-viewer-layout">
+            <div class="wiki-viewer-sidebar">
+              <div class="wiki-v-tabs">
+                <button type="button" class="wiki-v-tab active" data-wiki-tab="entities">👤 핵심 태그</button>
+                <button type="button" class="wiki-v-tab" data-wiki-tab="concepts">💡 주제</button>
+                <button type="button" class="wiki-v-tab" data-wiki-tab="synthesis">📊 종합</button>
+              </div>
+              <div class="wiki-v-list" id="wikiViewerList"></div>
+            </div>
+            <div class="wiki-v-main" id="wikiViewerMain">
+              <p class="placeholder-text wiki-v-placeholder">왼쪽에서 항목을 선택하세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자료 삭제/보관 확인 -->
+    <div class="confirm-modal" id="materialActionModal" style="display:none;">
+      <div class="modal-overlay" onclick="closeMaterialActionModal()"></div>
+      <div class="modal-content confirm-modal-content confirm-danger">
+        <h3 id="materialActionTitle">자료 처리</h3>
+        <p class="confirm-text" id="materialActionText"></p>
+        <div class="confirm-actions">
+          <button type="button" class="btn btn-danger" id="btnConfirmSoftDelete">삭제</button>
+          <button type="button" class="btn btn-secondary" id="btnConfirmArchive">보관으로 이동</button>
+          <button type="button" class="btn" onclick="closeMaterialActionModal()">취소</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 프로젝트에 추가 -->
+    <div class="confirm-modal" id="projectPickModal" style="display:none;">
+      <div class="modal-overlay" onclick="closeProjectPickModal()"></div>
+      <div class="modal-content confirm-modal-content">
+        <h3>프로젝트에 추가</h3>
+        <p class="confirm-text">자료를 추가할 프로젝트를 선택하세요.</p>
+        <select id="projectPickSelect" class="filter-select project-pick-select"></select>
+        <div class="confirm-actions">
+          <button type="button" class="btn btn-primary" id="btnProjectPickConfirm">추가</button>
+          <button type="button" class="btn" onclick="closeProjectPickModal()">취소</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 버전 이력 모달 -->
+    <div class="version-modal" id="versionModal" style="display:none;">
+      <div class="modal-overlay" onclick="closeVersionModal()"></div>
+      <div class="modal-content version-modal-content">
+        <button class="modal-close" onclick="closeVersionModal()">&times;</button>
+        <h2>📜 버전 이력</h2>
+        <div class="version-timeline" id="versionTimeline"></div>
+      </div>
+    </div>
+
+    <!-- 프로젝트 자료 추가 모달 -->
+    <div class="confirm-modal" id="addMaterialModal" style="display:none;">
+      <div class="modal-overlay" onclick="closeAddMaterialModal()"></div>
+      <div class="modal-content confirm-modal-content" style="max-width:560px;">
+        <button class="modal-close" onclick="closeAddMaterialModal()">&times;</button>
+        <h3>프로젝트에 자료 추가</h3>
+        <div class="search-bar" style="margin-bottom:12px;">
+          <input type="text" id="addMatSearchInput" class="search-input" placeholder="자료 검색..." style="flex:1;">
+          <button class="btn btn-primary" id="btnAddMatSearch" type="button">🔍</button>
+        </div>
+        <div class="add-mat-list" id="addMatList" style="max-height:320px;overflow-y:auto;margin-bottom:12px;"></div>
+        <div class="confirm-actions">
+          <button type="button" class="btn btn-primary" id="btnAddMatConfirm">선택 완료</button>
+          <button type="button" class="btn" onclick="closeAddMaterialModal()">취소</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 작업실 탭 -->
+    <section class="tab-content" id="tab-project">
+      <div class="tab-header">
+        <h2>작업실</h2>
+        <button class="btn btn-primary" id="btnNewProject">+ 새 프로젝트</button>
+      </div>
+      <div class="project-list" id="projectList"></div>
+      <div class="project-detail" id="projectDetail" style="display:none;"></div>
+    </section>
+
+    <!-- 챗봇 탭 -->
+    <section class="tab-content" id="tab-chat">
+      <div class="tab-header">
+        <h2>AI 사서와 대화</h2>
+        <button type="button" class="btn btn-secondary" id="btnClearChat" title="채팅창에 보이는 말풍선만 지웁니다. 서버의 대화 기록은 삭제하지 않습니다.">🗑️ 대화 초기화</button>
+        <button type="button" id="btnCrystallize" onclick="crystallizeChat()" style="padding:6px 12px; background:#7c3aed; color:white; border:none; border-radius:4px; cursor:pointer; font-size:12px; margin-left:8px;" title="이 대화의 핵심을 위키에 저장합니다">💎 결정화</button>
+      </div>
+      <div class="chat-container">
+        <details class="chat-scope-panel">
+          <summary>자료 범위 · 분류 <span class="chat-scope-hint">(선택 — 「기본」은 AI 추론, 「둘 다」는 정보·사용자 자료 모두 검색)</span></summary>
+          <div class="chat-scope-grid">
+            <label class="chat-scope-label" for="chatMaterialScope">자료 범위</label>
+            <select id="chatMaterialScope" class="filter-select chat-scope-select" title="「기본」은 질문에 맞춰 AI가 범위를 추론합니다. 「둘 다」는 정보·사용자 자료를 함께 검색합니다.">
+              <option value="" title="질문과 맥락을 보고 AI가 자료 범위·작업 유형을 추론합니다.">기본 (AI가 범위·작업 유형 추론)</option>
+              <option value="both" title="정보 자료와 사용자 자료를 함께 검색 범위에 넣습니다.">둘 다 (정보+사용자 자료 검색)</option>
+              <option value="information" title="information 유형 자료만 검색합니다.">정보만</option>
+              <option value="user" title="user 유형 자료만 검색합니다.">사용자만</option>
+            </select>
+            <label class="chat-scope-label" for="chatCategoryLarge">대분류</label>
+            <select id="chatCategoryLarge" class="filter-select chat-scope-select" title="우선할 대분류">
+              <option value="">전체 / 미지정</option>
+            </select>
+            <label class="chat-scope-label" for="chatCategoryMedium">중분류</label>
+            <select id="chatCategoryMedium" class="filter-select chat-scope-select" title="우선할 중분류">
+              <option value="">전체 / 미지정</option>
+            </select>
+            <label class="chat-scope-label" for="chatTaskTypeOverride">작업 형식</label>
+            <select id="chatTaskTypeOverride" class="filter-select chat-scope-select" title="기본은 질문만 보고 AI가 유형을 추론합니다. 고르면 그 형식이 우선합니다.">
+              <option value="" title="질문만 보고 AI가 작업 유형을 추론합니다.">기본 (AI 추론)</option>
+              <option value="답변" title="질문에 맞게 서술형으로 답합니다.">답변</option>
+              <option value="요약" title="핵심만 짧게 요약합니다.">요약</option>
+              <option value="대본작성" title="도입·본론·결론 구획을 갖춘 대본 형식입니다.">대본</option>
+              <option value="비교분석" title="대상을 비교·분석합니다.">비교</option>
+              <option value="목록" title="항목을 나열합니다.">목록</option>
+            </select>
+          </div>
+        </details>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-bubble assistant">
+            <p>안녕하세요! 저는 AI 사서입니다. 도서관에 있는 자료에 대해 무엇이든 물어보세요.</p>
+          </div>
+        </div>
+        <div class="chat-llm-row">
+          <label class="chat-llm-label" for="chatProviderSelect">LLM</label>
+          <select id="chatProviderSelect" class="filter-select chat-provider-select" title="채팅에 사용할 제공자">
+            <option value="">기본 설정 사용</option>
+            <option value="openai">OpenAI (GPT)</option>
+            <option value="claude">Claude</option>
+            <option value="gemini">Gemini</option>
+            <option value="local">로컬 (Ollama)</option>
+            <option value="lmstudio">LM Studio (로컬)</option>
+          </select>
+          <span id="chatProviderStatusDot" class="chat-provider-dot" title="선택한 제공자 연결">●</span>
+          <label class="chat-llm-label" for="chatModelSelect">모델</label>
+          <select id="chatModelSelect" class="filter-select chat-provider-select" title="사용할 모델">
+            <option value="">기본 설정 모델</option>
+          </select>
+        </div>
+        <div class="chat-llm-row" id="chatStreamIntelligenceRow" hidden>
+          <label class="chat-llm-label" for="chatStreamIntelligence">지능</label>
+          <select id="chatStreamIntelligence" class="filter-select chat-provider-select" title="로컬 스트리밍 시 자료·의도 분석 깊이. 보통·느림은 응답이 지연될 수 있습니다.">
+            <option value="fast">빠름</option>
+            <option value="medium">보통</option>
+            <option value="deep">느림</option>
+          </select>
+        </div>
+        <div class="chat-input-area">
+          <textarea id="chatInput" class="chat-input chat-textarea" rows="1" placeholder="질문을 입력하세요... (Shift+Enter: 줄바꿈, Enter: 전송)"></textarea>
+          <button class="btn btn-primary" id="btnSendChat">전송</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 설정 탭 -->
+    <section class="tab-content" id="tab-settings">
+      <div class="tab-header">
+        <h2>설정</h2>
+      </div>
+      <div class="settings-container">
+        <div class="settings-section">
+          <h3>🤖 LLM 설정</h3>
+          <div class="setting-group">
+            <label>기본 AI 제공자</label>
+            <select id="settingProvider" class="setting-select" title="기본 AI 제공자">
+              <option value="openai">OpenAI (GPT)</option>
+              <option value="claude">Anthropic (Claude)</option>
+              <option value="gemini">Google (Gemini)</option>
+              <option value="local">로컬 LLM (Ollama)</option>
+              <option value="lmstudio">LM Studio (로컬)</option>
+            </select>
+          </div>
+          <div class="setting-group">
+            <label>OpenAI API 키</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="password" id="settingOpenaiKey" class="setting-input" placeholder="sk-..." style="flex:1;">
+              <button type="button" class="btn btn-secondary btn-test-llm" data-provider="openai">연결 테스트</button>
+            </div>
+          </div>
+          <div class="setting-group">
+            <label>Claude API 키</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="password" id="settingClaudeKey" class="setting-input" placeholder="sk-ant-..." style="flex:1;">
+              <button type="button" class="btn btn-secondary btn-test-llm" data-provider="claude">연결 테스트</button>
+            </div>
+          </div>
+          <div class="setting-group">
+            <label>Gemini API 키</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="password" id="settingGeminiKey" class="setting-input" placeholder="AI..." style="flex:1;">
+              <button type="button" class="btn btn-secondary btn-test-llm" data-provider="gemini">연결 테스트</button>
+            </div>
+          </div>
+          <div class="setting-group">
+            <label>로컬 LLM 주소</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="text" id="settingLocalEndpoint" class="setting-input" placeholder="http://localhost:11434" style="flex:1;">
+              <button type="button" class="btn btn-secondary btn-test-llm" data-provider="local">연결 테스트</button>
+            </div>
+          </div>
+          <div class="setting-group">
+            <label>LM Studio 주소</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="text" id="settingLmstudioEndpoint" class="setting-input" placeholder="http://localhost:1234" style="flex:1;">
+              <button type="button" class="btn btn-secondary btn-test-llm" data-provider="lmstudio">연결 테스트</button>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="btnSaveSettings">💾 설정 저장</button>
+        </div>
+        <div class="settings-section">
+          <h3>🩺 도서관 건강 상태</h3>
+          <p class="setting-desc">고아 페이지, 미사용 자료 등을 점검합니다.</p>
+          <div class="setting-group" style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+              <input type="checkbox" id="schedulerToggle" class="toggle-checkbox">
+              <span>자동 건강 점검</span>
+            </label>
+            <select id="schedulerInterval" class="filter-select" style="width:auto;" title="점검 주기">
+              <option value="24">매일 (24시간)</option>
+              <option value="168">매주 (168시간)</option>
+              <option value="12">12시간마다</option>
+            </select>
+          </div>
+          <button class="btn btn-secondary" id="btnHealthCheck">건강 상태 확인</button>
+          <div class="health-result" id="healthResult"></div>
+        </div>
+        <div class="settings-section">
+          <h3>🔔 알림 목록</h3>
+          <div class="notification-list" id="notificationList"></div>
+        </div>
+        <div class="settings-section">
+          <h3>💾 백업 관리</h3>
+          <p class="setting-desc">DB와 Wiki 파일을 자동/수동으로 백업합니다. 원본 데이터는 절대 삭제되지 않습니다.</p>
+          <button class="btn btn-secondary" id="btnRunBackup" onclick="runManualBackup()">
+            지금 백업 실행
+          </button>
+          <span id="backupRunStatus" style="margin-left: 10px; font-size: 13px;"></span>
+          <div id="backupStatusPanel" style="margin-top: 15px; padding: 12px; background: #1a1a2e; border-radius: 8px; font-size: 13px;">
+            <p style="color: #888;">백업 현황을 불러오는 중...</p>
+          </div>
+        </div>
+        <div class="setting-group" style="margin-top: 20px; padding: 15px; border: 1px solid #444; border-radius: 8px;">
+          <h4>🧠 지식 동기화 (Connect AI Brain)</h4>
+          <p style="color: #aaa; font-size: 13px;">My_Library 위키를 Connect AI Brain에 동기화하고 GitHub에 업로드합니다.</p>
+          <button id="btnSyncWikiToBrain" onclick="syncWikiToBrain()" style="padding: 10px 20px; background: #7c3aed; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">
+            🔄 위키 동기화
+          </button>
+          <span id="syncWikiStatus" style="margin-left: 10px; font-size: 13px;"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content" id="tab-lotto">
+      <div class="lotto-layout">
+
+        <!-- 사이드바 -->
+        <nav class="lotto-sidebar">
+          <div class="lotto-sidebar-header">🎱 로또분석기</div>
+          <button class="lotto-sidebar-item active" onclick="switchLottoPage('dashboard')">📊 대시보드</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('predict')">🧠 두뇌예측</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('fame')">🏆 명예의전당</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('stats')">📈 통계분석</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('draws')">📋 당첨이력</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('collect')">📥 데이터수집</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('special')">🐍 특수부대</button>
+          <button class="lotto-sidebar-item" onclick="switchLottoPage('brains')">⚙️ 두뇌상태</button>
+          <div class="lotto-sidebar-footer">
+            <button class="lotto-sidebar-item" onclick="switchTab('library')">← 도서관으로</button>
+          </div>
+        </nav>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="lotto-main">
+
+          <!-- 대시보드 페이지 -->
+          <div class="lotto-page active" id="lotto-page-dashboard">
+
+            <!-- 카운트다운 -->
+            <div class="lotto-dashboard-countdown">
+              <div class="lotto-countdown-draw" id="lottoNextDraw">🔔 다음 추첨: --회 (----.--.--)</div>
+              <div class="lotto-countdown-timer" id="lottoCountdownTimer">⏰ 추첨까지 D-- --:--:--</div>
+            </div>
+
+            <!-- 등수별 명예 드롭다운 -->
+            <div class="lotto-dashboard-rankings">
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleRankDropdown('rank1')">🏆 1등 적중 (<span id="rank1Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="rank1List" style="display:none"></div>
+              </div>
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleRankDropdown('rank2')">🏆 2등 적중 (<span id="rank2Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="rank2List" style="display:none"></div>
+              </div>
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleRankDropdown('rank3')">🏆 3등 적중 (<span id="rank3Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="rank3List" style="display:none"></div>
+              </div>
+            </div>
+
+            <!-- 두뇌 파워 미터 -->
+            <div class="lotto-dashboard-power" id="lottoPowerMeter">
+              <h3>🧠 두뇌 파워 미터</h3>
+              <div id="powerMeterContent">로딩 중...</div>
+            </div>
+
+            <!-- AI 학습 현황 + 적중 점수 -->
+            <div class="lotto-dashboard-progress" id="lottoProgress">
+              <h3>📚 AI 학습 현황</h3>
+              <div id="progressContent">로딩 중...</div>
+            </div>
+
+            <div class="lotto-dashboard-scores" id="lottoScores">
+              <h3>🎯 등수별 적중 점수</h3>
+              <div id="scoresContent">로딩 중...</div>
+            </div>
+
+          </div>
+
+          <!-- 두뇌예측 페이지: 2단계에서 기존 요소 이관 예정 -->
+          <div class="lotto-page" id="lotto-page-predict">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+              <div class="lotto-draw-search">
+                <button class="btn btn-secondary lotto-nav-btn" onclick="lottoNavDraw(-1)">◀</button>
+                <select id="lottoDrawSelect" class="lotto-draw-select" onchange="lottoSelectDraw(this.value)" title="회차 선택"></select>
+                <button class="btn btn-secondary lotto-nav-btn" onclick="lottoNavDraw(+1)">▶</button>
+                <input type="number" id="predictDrawNo" placeholder="회차 직접 입력" min="1" max="1220"
+                       style="width: 120px; padding: 8px; background: #2a2a3e; color: #fff; border: 1px solid #444; border-radius: 6px;">
+                <button class="btn btn-primary" onclick="lottoPredict()">
+                  🧠 두뇌 예측
+                </button>
+              </div>
+              <div id="lottoActionStatus" class="lotto-action-status" role="status" aria-live="polite"></div>
+            </div>
+
+            <div style="display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+              <button class="lotto-sub-tab active" data-lotto-tab="predictions" onclick="switchLottoTab('predictions')">🎯 예측 결과</button>
+            </div>
+
+            <div class="lotto-tab-content" id="lotto-tab-predictions">
+              <div id="predictionResults" style="color: #ccc;">
+                <p>회차 번호를 입력하고 "두뇌 예측"을 클릭하세요.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 명예의전당 (3단계) -->
+          <div class="lotto-page" id="lotto-page-fame">
+            <div style="background: #1a1a2e; border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+              <h3 style="color: #ffd700; margin: 0 0 16px 0;">🏆 적중 명예의 전당</h3>
+              <div id="hallOfFame" style="color: #ccc;">로딩중...</div>
+            </div>
+          </div>
+
+          <!-- 통계분석 (4단계) -->
+          <div class="lotto-page" id="lotto-page-stats">
+            <div class="lotto-tab-content" id="lotto-tab-stats">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">🔢 번호별 출현 빈도</h4>
+                  <div id="freqChart" style="min-height: 200px;"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">⚖️ 홀짝 비율</h4>
+                  <div id="oddEvenChart"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">📐 구간별 분포</h4>
+                  <div id="rangeChart"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">➕ 합계 분석</h4>
+                  <div id="sumChart"></div>
+                </div>
+              </div>
+              <div style="background: #1a1a2e; border-radius: 12px; padding: 16px; margin-top: 16px;">
+                <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">👯 동반출현 번호 TOP 30</h4>
+                <div id="pairChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 당첨이력 (5단계) -->
+          <div class="lotto-page" id="lotto-page-draws">
+            <div class="lotto-tab-content" id="lotto-tab-draws">
+              <div id="drawsList" style="color: #ccc;">데이터를 수집하면 여기에 표시됩니다.</div>
+            </div>
+          </div>
+
+          <!-- 데이터수집 (6단계) -->
+          <div class="lotto-page" id="lotto-page-collect">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+              <button class="btn btn-primary" id="btnFetchAll" onclick="lottoFetchAll()">
+                📥 전체 데이터 수집 (최초 1회)
+              </button>
+              <button class="btn btn-secondary" id="btnFetchLatest" onclick="lottoFetchLatest()">
+                🔄 최신 회차 수집
+              </button>
+            </div>
+            <div id="lottoCollectStatus" class="lotto-action-status" style="margin-top:12px"></div>
+          </div>
+
+          <!-- 특수부대 -->
+          <div class="lotto-page" id="lotto-page-special">
+            <div class="special-page-container">
+              <h3 class="special-title">🐍 특수부대 — 사각지대 분석단</h3>
+
+              <div id="specialSummary" class="special-summary">
+                <span>로딩중...</span>
+              </div>
+
+              <div class="special-brain-grid">
+                <div class="special-brain-card" id="specialMissCard">
+                  <div class="special-brain-header">
+                    <span class="special-brain-icon">🔬</span>
+                    <span class="special-brain-name">미당첨분석 AI</span>
+                    <span class="special-brain-desc">사각지대 학습 AI</span>
+                  </div>
+                  <div id="specialMissStats" class="special-brain-stats">로딩중...</div>
+                  <div id="specialMissPreds" class="special-brain-preds"></div>
+                </div>
+
+                <div class="special-brain-card" id="specialSnakeCard">
+                  <div class="special-brain-header">
+                    <span class="special-brain-icon">🐍</span>
+                    <span class="special-brain-name">뱀 AI</span>
+                    <span class="special-brain-desc">잔여 조합 AI</span>
+                  </div>
+                  <div id="specialSnakeStats" class="special-brain-stats">로딩중...</div>
+                  <div id="specialSnakePreds" class="special-brain-preds"></div>
+                </div>
+              </div>
+
+              <div class="special-miss-list">
+                <h4>📋 미당첨 회차 목록 (기존 6두뇌 전부 2개 이하 적중)</h4>
+                <div id="specialMissList">로딩중...</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두뇌상태 (7단계) -->
+          <div class="lotto-page" id="lotto-page-brains">
+            <div id="brainStatusCard" style="background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 100%);
+                 border-radius: 16px; padding: 24px; margin-bottom: 24px; text-align: center;">
+              <div id="brainGrade" style="font-size: 48px;">🧠</div>
+              <div id="brainGradeText" style="font-size: 24px; font-weight: bold; color: #e0e0ff; margin-top: 8px;">두뇌 등급 로딩중...</div>
+              <div id="brainStats" style="color: #aaa; margin-top: 8px; font-size: 14px;"></div>
+              <div id="brainProfiles" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; text-align: left;"></div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+
+    </section>
+
+    <!-- ★ 역전 로또 탭 (V11 백엔드, UI/UX 1군 100% 복제, 데이터 100% 독립) ★ -->
+    <section class="tab-content" id="tab-lotto-reverse">
+      <div class="lotto-layout">
+
+        <!-- 사이드바 (1군 8개 → 역전 7개, 특수부대 제거) -->
+        <nav class="lotto-sidebar">
+          <div class="lotto-sidebar-header">🎯 역전 로또분석기</div>
+          <button class="lotto-sidebar-item active" onclick="switchLotto2Page('dashboard')">📊 대시보드</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('predict')">🧠 두뇌예측</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('fame')">🏆 명예의전당</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('stats')">📈 통계분석</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('draws')">📋 당첨이력</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('collect')">📥 데이터수집</button>
+          <button class="lotto-sidebar-item" onclick="switchLotto2Page('brains')">⚙️ 두뇌상태</button>
+          <div class="lotto-sidebar-footer">
+            <button class="lotto-sidebar-item" onclick="switchTab('library')">← 도서관으로</button>
+          </div>
+        </nav>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="lotto-main">
+
+          <!-- 대시보드 페이지 -->
+          <div class="lotto-page active" id="lotto2-page-dashboard">
+
+            <!-- 카운트다운 -->
+            <div class="lotto-dashboard-countdown">
+              <div class="lotto-countdown-draw" id="lotto2NextDraw">🔔 다음 추첨: --회 (----.--.--)</div>
+              <div class="lotto-countdown-timer" id="lotto2CountdownTimer">⏰ 추첨까지 D-- --:--:--</div>
+            </div>
+
+            <!-- 등수별 명예 드롭다운 -->
+            <div class="lotto-dashboard-rankings">
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleLotto2RankDropdown('rank1')">🏆 1등 적중 (<span id="lotto2Rank1Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="lotto2Rank1List" style="display:none"></div>
+              </div>
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleLotto2RankDropdown('rank2')">🏆 2등 적중 (<span id="lotto2Rank2Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="lotto2Rank2List" style="display:none"></div>
+              </div>
+              <div class="lotto-rank-dropdown">
+                <button class="lotto-rank-toggle" onclick="toggleLotto2RankDropdown('rank3')">🏆 3등 적중 (<span id="lotto2Rank3Count">0</span>회) ▼ <span style="color:#a0a0b0;font-size:12px">전체보기</span></button>
+                <div class="lotto-rank-list" id="lotto2Rank3List" style="display:none"></div>
+              </div>
+            </div>
+
+            <!-- 두뇌 파워 미터 -->
+            <div class="lotto-dashboard-power" id="lotto2PowerMeter">
+              <h3>🧠 두뇌 파워 미터</h3>
+              <div id="lotto2PowerMeterContent">로딩 중...</div>
+            </div>
+
+            <!-- AI 학습 현황 + 적중 점수 -->
+            <div class="lotto-dashboard-progress" id="lotto2Progress">
+              <h3>📚 AI 학습 현황</h3>
+              <div id="lotto2ProgressContent">로딩 중...</div>
+            </div>
+
+            <div class="lotto-dashboard-scores" id="lotto2Scores">
+              <h3>🎯 등수별 적중 점수</h3>
+              <div id="lotto2ScoresContent">로딩 중...</div>
+            </div>
+
+          </div>
+
+          <!-- 두뇌예측 페이지 -->
+          <div class="lotto-page" id="lotto2-page-predict">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+              <div class="lotto-draw-search">
+                <button class="btn btn-secondary lotto-nav-btn" onclick="lotto2NavDraw(-1)">◀</button>
+                <select id="lotto2DrawSelect" class="lotto-draw-select" onchange="lotto2SelectDraw(this.value)" title="회차 선택"></select>
+                <button class="btn btn-secondary lotto-nav-btn" onclick="lotto2NavDraw(+1)">▶</button>
+                <input type="number" id="lotto2PredictDrawNo" placeholder="회차 직접 입력" min="1" max="1220"
+                       style="width: 120px; padding: 8px; background: #2a2a3e; color: #fff; border: 1px solid #444; border-radius: 6px;">
+                <button class="btn btn-primary" onclick="lotto2Predict()">
+                  🧠 역전 두뇌 예측
+                </button>
+              </div>
+              <div id="lotto2ActionStatus" class="lotto-action-status" role="status" aria-live="polite"></div>
+            </div>
+
+            <div style="display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+              <button class="lotto-sub-tab active" data-lotto2-tab="predictions" onclick="switchLotto2Tab('predictions')">🎯 예측 결과</button>
+            </div>
+
+            <div class="lotto-tab-content" id="lotto2-tab-predictions">
+              <div id="lotto2PredictionResults" style="color: #ccc;">
+                <p>회차 번호를 입력하고 "역전 두뇌 예측"을 클릭하세요.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 명예의전당 -->
+          <div class="lotto-page" id="lotto2-page-fame">
+            <div style="background: #1a1a2e; border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+              <h3 style="color: #ffd700; margin: 0 0 16px 0;">🏆 역전 적중 명예의 전당</h3>
+              <div id="lotto2HallOfFame" style="color: #ccc;">로딩중...</div>
+            </div>
+          </div>
+
+          <!-- 통계분석 -->
+          <div class="lotto-page" id="lotto2-page-stats">
+            <div class="lotto-tab-content" id="lotto2-tab-stats">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">🔢 번호별 출현 빈도</h4>
+                  <div id="lotto2FreqChart" style="min-height: 200px;"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">⚖️ 홀짝 비율</h4>
+                  <div id="lotto2OddEvenChart"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">📐 구간별 분포</h4>
+                  <div id="lotto2RangeChart"></div>
+                </div>
+                <div style="background: #1a1a2e; border-radius: 12px; padding: 16px;">
+                  <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">➕ 합계 분석</h4>
+                  <div id="lotto2SumChart"></div>
+                </div>
+              </div>
+              <div style="background: #1a1a2e; border-radius: 12px; padding: 16px; margin-top: 16px;">
+                <h4 style="color: #8b9cf7; margin: 0 0 12px 0;">👯 동반출현 번호 TOP 30</h4>
+                <div id="lotto2PairChart"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 당첨이력 -->
+          <div class="lotto-page" id="lotto2-page-draws">
+            <div class="lotto-tab-content" id="lotto2-tab-draws">
+              <div id="lotto2DrawsList" style="color: #ccc;">데이터를 수집하면 여기에 표시됩니다.</div>
+            </div>
+          </div>
+
+          <!-- 데이터수집: UI·상태는 lotto2 전용, DB lotto_draws는 1군과 공유(동일 API) -->
+          <div class="lotto-page" id="lotto2-page-collect">
+            <div style="background: #1a1a2e; border-radius: 12px; padding: 16px; margin-bottom: 20px; color: #aaa; font-size: 14px;">
+              <strong style="color: #ffd700;">공유 DB</strong> — 회차 테이블 <code style="color:#ccc;">lotto_draws</code>는 1군과 동일합니다.
+              아래 버튼은 <strong style="color:#e0e0ff;">역전 탭 전용</strong>이며 1군 탭 DOM/버튼과 무관하게 동작합니다.
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+              <button class="btn btn-primary" id="btnLotto2FetchAll" type="button" onclick="lotto2FetchAll()">
+                📥 전체 데이터 수집 (최초 1회)
+              </button>
+              <button class="btn btn-secondary" id="btnLotto2FetchLatest" type="button" onclick="lotto2FetchLatest()">
+                🔄 최신 회차 수집
+              </button>
+            </div>
+            <div id="lotto2CollectStatus" class="lotto-action-status" style="margin-top:12px"></div>
+          </div>
+
+          <!-- 두뇌상태 -->
+          <div class="lotto-page" id="lotto2-page-brains">
+            <div id="lotto2BrainStatusCard" style="background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 100%);
+                 border-radius: 16px; padding: 24px; margin-bottom: 24px; text-align: center;">
+              <div id="lotto2BrainGrade" style="font-size: 48px;">🎯</div>
+              <div id="lotto2BrainGradeText" style="font-size: 24px; font-weight: bold; color: #e0e0ff; margin-top: 8px;">역전 두뇌 등급 로딩중...</div>
+              <div id="lotto2BrainStats" style="color: #aaa; margin-top: 8px; font-size: 14px;"></div>
+              <div id="lotto2BrainProfiles" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; text-align: left;"></div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </section>
+  </main>
+
+  <script>
+async function syncWikiToBrain() {
+    const btn = document.getElementById('btnSyncWikiToBrain');
+    const status = document.getElementById('syncWikiStatus');
+    btn.disabled = true;
+    btn.textContent = '⏳ 동기화 중...';
+    status.textContent = '';
+    try {
+        const res = await fetch('/api/settings/sync-wiki-to-brain', { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+            status.textContent = '✅ ' + data.message;
+            status.style.color = '#4ade80';
+        } else {
+            status.textContent = '❌ ' + data.error;
+            status.style.color = '#f87171';
+        }
+    } catch (e) {
+        status.textContent = '❌ 오류: ' + e.message;
+        status.style.color = '#f87171';
+    }
+    btn.disabled = false;
+    btn.textContent = '🔄 위키 동기화';
+}
+
+async function crystallizeChat() {
+    const btn = document.getElementById('btnCrystallize');
+    const sessionId = sessionStorage.getItem('myLibraryChatSessionId');
+    if (!sessionId) { alert('세션이 없습니다.'); return; }
+    btn.disabled = true;
+    btn.textContent = '⏳ 요약 중...';
+    try {
+        const res = await fetch('/api/chat/crystallize', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({session_id: sessionId})
+        });
+        const data = await res.json();
+        if (data.success) {
+            btn.textContent = '✅ 저장됨';
+            alert('대화가 위키에 저장되었습니다!');
+        } else {
+            btn.textContent = '💎 결정화';
+            alert((data.data && data.data.reason) ? data.data.reason : '결정화 실패');
+        }
+    } catch(e) {
+        btn.textContent = '💎 결정화';
+        alert('오류: ' + e.message);
+    }
+    setTimeout(() => { btn.disabled = false; btn.textContent = '💎 결정화'; }, 3000);
+}
+
+    async function runManualBackup() {
+      const btn = document.getElementById('btnRunBackup');
+      const status = document.getElementById('backupRunStatus');
+      btn.disabled = true;
+      status.textContent = '백업 중...';
+      status.style.color = '#f0c040';
+      try {
+        const res = await fetch('/api/settings/backup/run', { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          status.textContent = `백업 완료! DB: ${data.db_size_mb}MB, Wiki: ${data.wiki_size_mb}MB`;
+          status.style.color = '#4ade80';
+          loadBackupStatus();
+        } else {
+          status.textContent = `실패: ${data.error}`;
+          status.style.color = '#f87171';
+        }
+      } catch (e) {
+        status.textContent = `오류: ${e.message}`;
+        status.style.color = '#f87171';
+      }
+      btn.disabled = false;
+    }
+
+    async function loadBackupStatus() {
+      const panel = document.getElementById('backupStatusPanel');
+      if (!panel) return;
+      try {
+        const res = await fetch('/api/settings/backup/status');
+        const data = await res.json();
+        let html = `<p style="color:#aaa;">📁 백업 위치: <code>${data.backup_dir}</code></p>`;
+        html += `<p style="color:#aaa;">보관 정책: 최근 ${data.max_backups}개 유지 | 총 용량: ${data.total_backup_size_mb}MB</p>`;
+
+        if (data.db_backups.length > 0) {
+          html += '<p style="color:#8b9cf7; margin-top:10px;">📦 DB 백업:</p><ul style="color:#ccc; margin:4px 0 0 16px;">';
+          for (const b of data.db_backups) {
+            html += `<li>${b.filename} — ${b.size_mb}MB (${new Date(b.created).toLocaleString('ko-KR')})</li>`;
+          }
+          html += '</ul>';
+        } else {
+          html += '<p style="color:#888;">DB 백업 없음</p>';
+        }
+
+        if (data.wiki_backups.length > 0) {
+          html += '<p style="color:#8b9cf7; margin-top:10px;">📚 Wiki 백업:</p><ul style="color:#ccc; margin:4px 0 0 16px;">';
+          for (const b of data.wiki_backups) {
+            html += `<li>${b.filename} — ${b.size_mb}MB (${new Date(b.created).toLocaleString('ko-KR')})</li>`;
+          }
+          html += '</ul>';
+        } else {
+          html += '<p style="color:#888;">Wiki 백업 없음</p>';
+        }
+
+        panel.innerHTML = html;
+      } catch (e) {
+        panel.innerHTML = `<p style="color:#f87171;">백업 현황 로드 실패: ${e.message}</p>`;
+      }
+    }
+
+    // 설정 탭 열릴 때 백업 현황 자동 로드
+    document.addEventListener('DOMContentLoaded', () => {
+      const settingsTab = document.querySelector('[data-tab="settings"]');
+      if (settingsTab) {
+        settingsTab.addEventListener('click', () => setTimeout(loadBackupStatus, 300));
+      }
+    });
+  </script>
+  <script src="/static/js/app.js?v=20260415toggle"></script>
+  <script src="/static/js/ingest.js?v=20260420youtubemetavideourl"></script>
+  <script src="/static/js/youtube-brand.js?v=20260422ytred"></script>
+  <script src="/static/js/library.js?v=20260422ytred"></script>
+  <script src="/static/js/category-tree-icons.js?v=20260422ytred"></script>
+  <script src="/static/js/library-graph.js?v=20260420connSource2line"></script>
+  <script src="/static/js/project.js?v=20260415toggle"></script>
+  <script src="/static/js/chat.js?v=20260422crystallize"></script>
+  <script src="/static/js/settings.js?v=20260420autobackupui"></script>
+  <script src="/static/js/lotto.js?v=20260427lottoSpecial"></script>
+  <script src="/static/js/lotto2.js?v=20260429lotto2RankTotal"></script>
+  <script src="/static/js/ux-inspector.js?v=20260417uxinspectpos"></script>
+</body>
+</html>
