@@ -157,7 +157,7 @@ R21 (NEW 제안): 확인 질문 자동 삭제
 
 R22 (NEW 제안): 커서 보고서는 파트당 최대 8000토큰. 초과 시 파트1/파트2로 분리 저장. 파일명 끝에 _파트1, _파트2 표기.
 
-R23: [폐기됨 — R33으로 대체] (구) 구글 스프레드시트 CSV export / preview 복원 절차.
+R23: [폐기됨 — R33으로 대체] (구) 구글 스프레드시트 CSV/preview 복원 절차.
 
 R24 (NEW): 모든 출력은 마크다운 형식으로 진행
 - 동생의 모든 채팅 출력(브리핑·분석·세이브 지시·지시서 등)은 마크다운 형식(표·헤더·코드블록 등)으로 작성한다.
@@ -252,16 +252,15 @@ R30 (NEW 동생 규칙):
 - STATUS_LATEST 갱신 항목을 커서 지시서에 반드시 포함.
 - 기억 번호는 STATUS_LATEST 기준으로 통일.
 
-R31: [폐기됨 — R33으로 대체] (구) GitHub SSOT 하 .txt 병행 저장 절차 — 불필요.
+R31: [폐기됨 — R33으로 대체] (구) .txt 병행 저장 — 불필요.
 
-R32: [폐기됨 — R33으로 대체] (구) 구글 스프레드시트/.txt 복원 절차.
+R32: [폐기됨 — R33으로 대체] (구) 스프레드시트/.txt 복원 절차.
 
 R33 (복원 SSOT 확정, 2026-07-10):
-- 압축/새 동생/새 파트너 복원 1순위 = GitHub kkr2652199-prog/memoy · main
-  → /My_Drive_Sync/SUMMARY/README_START.md 를 먼저 읽는다.
-- README_START 지시대로 4개 파일 순서:
-  ① STATUS_LATEST.md ② NEXT_ACTIONS.md ③ DECISION_LOG.md ④ RULES_FIXED.md
+- 압축/새 동생 복원 1순위 = GitHub kkr2652199-prog/memoy · main
+  → /My_Drive_Sync/SUMMARY/README_START.md 먼저 읽는다.
+- README_START 지시 4파일 순서: ①STATUS_LATEST ②NEXT_ACTIONS ③DECISION_LOG ④RULES_FIXED
 - 2순위 = 형 채팅 직접 붙여넣기.
-- 구글드라이브/스프레드시트/.txt/preview 경로(구 R23·R31·R32)는 전면 폐기.
-- 복원 첫 보고 = 4줄: draw_no / lead1 공식 / LM홀딩·유령2뇌 상태 / 다음 STEP.
+- 구글드라이브/스프레드시트/.txt/preview(구 R23·R31·R32)는 전면 폐기.
+- 복원 첫 보고 4줄: draw_no / lead1 공식 / LM홀딩·유령2뇌 상태 / 다음 STEP.
 
