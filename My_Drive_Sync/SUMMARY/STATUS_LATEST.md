@@ -19,6 +19,7 @@
 | STEP1 정직성적 **확정** (20260711) | 1131~1231 DB채점 · stat=0.83 markov=0.82 llm=0.78 · lstm=**1.92** hyena=2.24 lead1=1.16 · **진짜 실력 축=stat/markov** |
 | STEP2 eta 시뮬 (20260710) | READ-ONLY · eta 1.5→0.1: lstm **44.6%→26.7%**, stat **6.3%→17.9%**, markov **4.3%→12.0%** · clean lstm@0.3: lstm **23.5%** |
 | 복원단일화 (20260710) | **`README_START.md` 신설** · gdoc/중복txt 삭제 · RULES R23/R31/R32 폐기 **제안**(형 승인 대기) |
+| 복원 R33 확정 (20260710) | **100%** — R23/R31/R32 폐기 · R33 GitHub SSOT 확정 · 백업 `_backup_RULES_FIXED_20260710.md` |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 

@@ -254,8 +254,6 @@ R30 (NEW 동생 규칙):
 
 R31: [폐기됨 — R33으로 대체] (구) GitHub SSOT 하 .txt 병행 저장 절차 — 불필요.
 
-R32: [폐기됨 — R33으로 대체] (구) 구글 스프레드시트/.txt 복원 절차.
-
 R33 (복원 SSOT 확정, 2026-07-10):
 - 압축/새 동생/새 파트너 복원 1순위 = GitHub kkr2652199-prog/memoy · main
   → /My_Drive_Sync/SUMMARY/README_START.md 를 먼저 읽는다.

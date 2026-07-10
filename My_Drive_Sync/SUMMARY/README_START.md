@@ -15,7 +15,7 @@ GitHub raw 링크만 있으면 5분 내 현재 작업을 이해하고 이어갈 
 
 ## 현재 작업 (이 줄만 매턴 갱신)
 - draw_no: 1231 / lead1 공식: F1_V2_STRICT / LM홀딩: ON / miss·snake: OFF
-- 지금 STEP: STEP2 eta 시뮬 완료 + 복원단일화 README_START 신설
+- 지금 STEP: RULES R33 복원SSOT 확정 (R23/R31/R32 폐기)
 - 다음 STEP: STEP3 lstm 비중/eta 실제 조정 (형 결정 대기)
 
 ## 복원 경로 규칙

@@ -5,10 +5,9 @@
 | 우선 | 항목 | 군 |
 |------|------|-----|
 | 1 | **STEP3 lstm 비중/eta 실제 조정 결정** | 1군 (형 결정) |
-| 2 | **RULES_FIXED R23/R31/R32 폐기 + R33 신설** | 운영 (형 직접 수정, R18) |
-| 3 | **4군** 다음 작업 | 4군 (d:\3kweon, 별도 앱) |
-| 4 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 (역질의 GO 아님) |
-| 5 | GITHUB_SSOT_RULES_20260710 형 컨펌 (+ G3 README_START 갱신 추가) | 운영 |
+| 2 | **4군** 다음 작업 | 4군 (d:\3kweon, 별도 앱) |
+| 3 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 (역질의 GO 아님) |
+| 4 | GITHUB_SSOT_RULES_20260710 형 컨펌 (+ G3 README_START 갱신 추가) | 운영 |
 
 ## HOLD (수정·이식 보류)
 
@@ -31,3 +30,4 @@
 - **STEP1 6뇌+lead1 DB 정직성적** 1131~1231 (`20260710_STEP1_6뇌_WF정직성적_측정.md`)
 - **STEP2 eta 시뮬레이션 READ-ONLY** (`20260710_STEP2_eta시뮬레이션_READONLY.md`)
 - **복원 단일화** README_START 신설 + gdoc/중복txt 삭제 (`20260710_복원단일화_README신설_잔재삭제.md`)
+- **RULES R33 복원SSOT 확정** + R23/R31/R32 폐기 (`20260710_RULES_R33확정_R23R31R32폐기.md`)
