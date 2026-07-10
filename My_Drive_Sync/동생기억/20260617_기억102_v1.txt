@@ -1,0 +1,14 @@
+# 기억102 – 5뇌 전회차 기록 적재 (2026-06-17)
+체인: …100→101→102
+
+## 작업
+- era_C 262~1228 walk-forward 5뇌 predictions+fullbacktest
+
+## raw 핵심
+- strategy_x 0→24,100행 (964회×25)
+- v13 4,550행 보존, 1~3군 간섭 0
+- hyena avg적중 0.8081 (무작위 수준, R2)
+- GET API 3건 (stats/predictions/fullbacktest)
+
+## 다음
+- UI 5뇌 표시 연결

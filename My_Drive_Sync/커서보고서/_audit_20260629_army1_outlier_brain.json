@@ -1,0 +1,382 @@
+{
+  "title": "20260629_1군6뇌_튀는번호_뇌별특기_심층정찰",
+  "date": "2026-06-29",
+  "mode": "READ_ONLY",
+  "army1_modified": false,
+  "db_writes": 0,
+  "principles": [
+    "R2 정직",
+    "R13 walk-forward",
+    "R14 1군 미수정"
+  ],
+  "eval_range": [
+    930,
+    1230
+  ],
+  "step1_brain_profiles": {
+    "n_draws": 300,
+    "profiles": [
+      {
+        "brain": "llm",
+        "avg_winning_nums_hit_per_draw": 0.6494,
+        "total_winning_slots_hit": 1169,
+        "solitary_winning_hits": 35,
+        "co_mention_winning_hits": 1134
+      },
+      {
+        "brain": "lstm",
+        "avg_winning_nums_hit_per_draw": 0.78,
+        "total_winning_slots_hit": 1404,
+        "solitary_winning_hits": 27,
+        "co_mention_winning_hits": 1377
+      },
+      {
+        "brain": "fusion",
+        "avg_winning_nums_hit_per_draw": 0.7406,
+        "total_winning_slots_hit": 1333,
+        "solitary_winning_hits": 26,
+        "co_mention_winning_hits": 1307
+      },
+      {
+        "brain": "stat",
+        "avg_winning_nums_hit_per_draw": 0.5,
+        "total_winning_slots_hit": 900,
+        "solitary_winning_hits": 18,
+        "co_mention_winning_hits": 882
+      },
+      {
+        "brain": "markov",
+        "avg_winning_nums_hit_per_draw": 0.4106,
+        "total_winning_slots_hit": 739,
+        "solitary_winning_hits": 11,
+        "co_mention_winning_hits": 728
+      },
+      {
+        "brain": "hyena",
+        "avg_winning_nums_hit_per_draw": 0.5383,
+        "total_winning_slots_hit": 969,
+        "solitary_winning_hits": 0,
+        "co_mention_winning_hits": 969
+      }
+    ],
+    "solitary_rank": [
+      "llm",
+      "lstm",
+      "fusion",
+      "stat",
+      "markov",
+      "hyena"
+    ]
+  },
+  "step2_outlier_analysis": {
+    "theory_single_num_rate": 0.1333,
+    "outlier_slots_total": 2324,
+    "outlier_winning_total": 117,
+    "outlier_win_rate": 0.0503,
+    "multi_slots_total": 10386,
+    "multi_winning_total": 1650,
+    "multi_win_rate": 0.1589,
+    "outlier_vs_multi_delta": -0.1085,
+    "outlier_vs_random_delta": -0.083,
+    "per_brain_outlier_rates": [
+      {
+        "brain": "lstm",
+        "outlier_slots": 264,
+        "outlier_winning": 27,
+        "rate": 0.1023,
+        "delta_vs_random": -0.0311
+      },
+      {
+        "brain": "fusion",
+        "outlier_slots": 319,
+        "outlier_winning": 26,
+        "rate": 0.0815,
+        "delta_vs_random": -0.0518
+      },
+      {
+        "brain": "llm",
+        "outlier_slots": 945,
+        "outlier_winning": 35,
+        "rate": 0.037,
+        "delta_vs_random": -0.0963
+      },
+      {
+        "brain": "stat",
+        "outlier_slots": 490,
+        "outlier_winning": 18,
+        "rate": 0.0367,
+        "delta_vs_random": -0.0966
+      },
+      {
+        "brain": "markov",
+        "outlier_slots": 306,
+        "outlier_winning": 11,
+        "rate": 0.0359,
+        "delta_vs_random": -0.0974
+      },
+      {
+        "brain": "hyena",
+        "outlier_slots": 0,
+        "outlier_winning": 0,
+        "rate": 0.0,
+        "delta_vs_random": 0.0
+      }
+    ],
+    "step2_verdict": "🔴 뇌별·집단 튀는번호는 random(6/45)과 구분 안 됨 또는 미약",
+    "best_outlier_brain": "lstm",
+    "hypothesis_seed": false
+  },
+  "step3_hybrid_defs": [
+    {
+      "name": "MIX_co4_hyena2",
+      "desc": "공동지목 상위4 + hyena 튀는번호2"
+    },
+    {
+      "name": "MIX_co3_hyena3",
+      "desc": "공동지목 상위3 + hyena 튀는번호3"
+    },
+    {
+      "name": "MIX_co4_fusion2",
+      "desc": "공동지목 상위4 + fusion 튀는번호2"
+    },
+    {
+      "name": "MIX_co3_fusion3",
+      "desc": "공동지목 상위3 + fusion 튀는번호3"
+    },
+    {
+      "name": "MIX_co4_lstm2",
+      "desc": "공동지목 상위4 + lstm 튀는번호2"
+    },
+    {
+      "name": "MIX_co3_bestWF3",
+      "desc": "공동지목 상위3 + walk-forward 특기뇌 튀는번호3"
+    }
+  ],
+  "step4_backtest": {
+    "n_eval": 300,
+    "eval_range": [
+      930,
+      1230
+    ],
+    "individual_best_avg": 3.53,
+    "yesterday_reference": {
+      "RULE2": 2.42,
+      "INDIVIDUAL_BEST": 3.53
+    },
+    "summary_rows": [
+      {
+        "arm": "RANDOM",
+        "n_eval": 300,
+        "avg_matched": 0.8273,
+        "std_matched": 0.1221,
+        "hit6": 0,
+        "hit5plus": 0,
+        "hit4plus": 0,
+        "delta_vs_random": 0.0,
+        "delta_vs_individual_best": -2.7027,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": null,
+        "paired_ttest_vs_individual_best": null,
+        "verdict": "풀 랜덤"
+      },
+      {
+        "arm": "RULE2_weighted",
+        "n_eval": 300,
+        "avg_matched": 2.42,
+        "std_matched": 1.02,
+        "hit6": 0,
+        "hit5plus": 8,
+        "hit4plus": 36,
+        "delta_vs_random": 1.5927,
+        "delta_vs_individual_best": -1.11,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 26.9678,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.5927
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -24.4174,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.11
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "INDIVIDUAL_BEST",
+        "n_eval": 300,
+        "avg_matched": 3.53,
+        "std_matched": 0.7644,
+        "hit6": 3,
+        "hit5plus": 23,
+        "hit4plus": 154,
+        "delta_vs_random": 2.7027,
+        "delta_vs_individual_best": 0.0,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 61.3273,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 2.7027
+        },
+        "paired_ttest_vs_individual_best": null,
+        "verdict": "참조 (30세트 최고, 어제 avg=3.53)"
+      },
+      {
+        "arm": "MIX_co4_hyena2",
+        "n_eval": 300,
+        "avg_matched": 2.3,
+        "std_matched": 1.0711,
+        "hit6": 0,
+        "hit5plus": 6,
+        "hit4plus": 35,
+        "delta_vs_random": 1.4727,
+        "delta_vs_individual_best": -1.23,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 23.9491,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.4727
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -25.2336,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.23
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "MIX_co3_hyena3",
+        "n_eval": 300,
+        "avg_matched": 2.3,
+        "std_matched": 1.0711,
+        "hit6": 0,
+        "hit5plus": 6,
+        "hit4plus": 35,
+        "delta_vs_random": 1.4727,
+        "delta_vs_individual_best": -1.23,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 23.9491,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.4727
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -25.2336,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.23
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "MIX_co4_fusion2",
+        "n_eval": 300,
+        "avg_matched": 2.1233,
+        "std_matched": 1.0287,
+        "hit6": 0,
+        "hit5plus": 2,
+        "hit4plus": 25,
+        "delta_vs_random": 1.2961,
+        "delta_vs_individual_best": -1.4067,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 21.9159,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.2961
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -26.9494,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.4067
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "MIX_co3_fusion3",
+        "n_eval": 300,
+        "avg_matched": 2.0967,
+        "std_matched": 1.0251,
+        "hit6": 0,
+        "hit5plus": 2,
+        "hit4plus": 23,
+        "delta_vs_random": 1.2694,
+        "delta_vs_individual_best": -1.4333,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 21.5253,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.2694
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -27.2778,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.4333
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "MIX_co4_lstm2",
+        "n_eval": 300,
+        "avg_matched": 2.2,
+        "std_matched": 1.0601,
+        "hit6": 0,
+        "hit5plus": 6,
+        "hit4plus": 28,
+        "delta_vs_random": 1.3727,
+        "delta_vs_individual_best": -1.33,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 22.5337,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.3727
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -26.8356,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.33
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      },
+      {
+        "arm": "MIX_co3_bestWF3",
+        "n_eval": 300,
+        "avg_matched": 2.13,
+        "std_matched": 1.0376,
+        "hit6": 0,
+        "hit5plus": 3,
+        "hit4plus": 23,
+        "delta_vs_random": 1.3027,
+        "delta_vs_individual_best": -1.4,
+        "beats_individual_best_avg": false,
+        "paired_ttest_vs_random": {
+          "t_stat": 21.8154,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.3027
+        },
+        "paired_ttest_vs_individual_best": {
+          "t_stat": -28.1415,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": -1.4
+        },
+        "verdict": "🔴 INDIVIDUAL_BEST 미달"
+      }
+    ],
+    "green_candidates": [],
+    "final_verdict": "🔴 조합·혼합 공식 모두 INDIVIDUAL_BEST(30세트 최고)를 넘지 못함"
+  },
+  "step5_verdict": "🔴 조합·혼합 공식 모두 INDIVIDUAL_BEST(30세트 최고)를 넘지 못함"
+}

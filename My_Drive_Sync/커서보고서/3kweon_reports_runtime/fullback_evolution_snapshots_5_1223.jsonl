@@ -1,0 +1,3 @@
+{"after_draw": 100, "weights_for_predict_draw": 101, "player_seq": 0.479167, "player_struct": 0.520833, "chief_v13_seq": 0.166667, "chief_v13_struct": 0.181159}
+{"after_draw": 300, "weights_for_predict_draw": 301, "player_seq": 0.359951, "player_struct": 0.640049, "chief_v13_seq": 0.157867, "chief_v13_struct": 0.280711}
+{"after_draw": 500, "weights_for_predict_draw": 501, "player_seq": 0.398522, "player_struct": 0.601478, "chief_v13_seq": 0.180903, "chief_v13_struct": 0.273032}

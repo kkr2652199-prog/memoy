@@ -1,0 +1,517 @@
+=== 4군 풀 백테스트 (Army4 full backtest) ===
+DB: D:\3kweon\data\lotto4.db
+구간: 5~1223 (실행 대상 1219회차)
+뇌: ['v13_seq', 'v13_struct', 'v13_gap', 'v13_diversity', 'v13_ev', 'v13_evolution', 'v13_ensemble']
+
+  [진행] 1/1219 완료 (0.1%) | draw 5 OK (1.8s, 누적 2s)
+  [진행] 2/1219 완료 (0.2%) | draw 6 OK (2.2s, 누적 4s)
+  [진행] 3/1219 완료 (0.2%) | draw 7 OK (1.7s, 누적 6s)
+  [진행] 4/1219 완료 (0.3%) | draw 8 OK (2.5s, 누적 8s)
+  [진행] 5/1219 완료 (0.4%) | draw 9 OK (2.0s, 누적 10s)
+  [진행] 6/1219 완료 (0.5%) | draw 10 OK (2.9s, 누적 13s)
+  [진행] 7/1219 완료 (0.6%) | draw 11 OK (2.2s, 누적 15s)
+  [진행] 8/1219 완료 (0.7%) | draw 12 OK (3.0s, 누적 18s)
+  [진행] 9/1219 완료 (0.7%) | draw 13 OK (3.6s, 누적 22s)
+  [진행] 10/1219 완료 (0.8%) | draw 14 OK (6.2s, 누적 28s)
+  [진행] 11/1219 완료 (0.9%) | draw 15 OK (3.2s, 누적 31s)
+  [진행] 12/1219 완료 (1.0%) | draw 16 OK (3.3s, 누적 35s)
+  [진행] 13/1219 완료 (1.1%) | draw 17 OK (2.6s, 누적 37s)
+  [진행] 14/1219 완료 (1.1%) | draw 18 OK (2.7s, 누적 40s)
+  [진행] 15/1219 완료 (1.2%) | draw 19 OK (3.5s, 누적 43s)
+  [진행] 16/1219 완료 (1.3%) | draw 20 OK (5.6s, 누적 49s)
+[ERROR] v13_struct draw=21: [15:38:13] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=21: [15:38:14] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 17/1219 완료 (1.4%) | draw 21 OK (0.5s, 누적 49s)
+[ERROR] v13_struct draw=22: [15:38:14] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=22: [15:38:14] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 18/1219 완료 (1.5%) | draw 22 OK (0.4s, 누적 50s)
+[ERROR] v13_struct draw=23: [15:38:14] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=23: [15:38:14] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 19/1219 완료 (1.6%) | draw 23 OK (0.5s, 누적 50s)
+[ERROR] v13_struct draw=24: [15:38:15] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=24: [15:38:15] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 20/1219 완료 (1.6%) | draw 24 OK (0.5s, 누적 51s)
+[ERROR] v13_struct draw=25: [15:38:15] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=25: [15:38:15] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 21/1219 완료 (1.7%) | draw 25 OK (0.4s, 누적 51s)
+[ERROR] v13_struct draw=26: [15:38:15] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=26: [15:38:16] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 22/1219 완료 (1.8%) | draw 26 OK (0.5s, 누적 52s)
+[ERROR] v13_struct draw=27: [15:38:16] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=27: [15:38:16] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 23/1219 완료 (1.9%) | draw 27 OK (0.6s, 누적 52s)
+[ERROR] v13_struct draw=28: [15:38:16] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=28: [15:38:19] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 24/1219 완료 (2.0%) | draw 28 OK (3.3s, 누적 56s)
+[ERROR] v13_struct draw=29: [15:38:23] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=29: [15:38:23] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 25/1219 완료 (2.1%) | draw 29 OK (3.8s, 누적 59s)
+[ERROR] v13_struct draw=30: [15:38:24] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=30: [15:38:29] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 26/1219 완료 (2.1%) | draw 30 OK (5.6s, 누적 65s)
+[ERROR] v13_struct draw=31: [15:38:29] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=31: [15:38:30] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 27/1219 완료 (2.2%) | draw 31 OK (0.5s, 누적 65s)
+[ERROR] v13_struct draw=32: [15:38:30] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=32: [15:38:30] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 28/1219 완료 (2.3%) | draw 32 OK (0.6s, 누적 66s)
+[ERROR] v13_struct draw=33: [15:38:30] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=33: [15:38:31] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 29/1219 완료 (2.4%) | draw 33 OK (0.5s, 누적 66s)
+[ERROR] v13_struct draw=34: [15:38:31] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=34: [15:38:31] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 30/1219 완료 (2.5%) | draw 34 OK (0.4s, 누적 67s)
+[ERROR] v13_struct draw=35: [15:38:31] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=35: [15:38:31] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 31/1219 완료 (2.5%) | draw 35 OK (0.4s, 누적 67s)
+[ERROR] v13_struct draw=36: [15:38:32] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=36: [15:38:32] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 32/1219 완료 (2.6%) | draw 36 OK (0.4s, 누적 68s)
+[ERROR] v13_struct draw=37: [15:38:36] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=37: [15:38:36] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 33/1219 완료 (2.7%) | draw 37 OK (4.2s, 누적 72s)
+[ERROR] v13_struct draw=38: [15:38:36] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=38: [15:38:37] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 34/1219 완료 (2.8%) | draw 38 OK (0.5s, 누적 72s)
+[ERROR] v13_struct draw=39: [15:38:37] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=39: [15:38:37] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 35/1219 완료 (2.9%) | draw 39 OK (0.5s, 누적 73s)
+[ERROR] v13_struct draw=40: [15:38:37] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=40: [15:38:38] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 36/1219 완료 (3.0%) | draw 40 OK (0.7s, 누적 74s)
+[ERROR] v13_struct draw=41: [15:38:38] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=41: [15:38:38] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 37/1219 완료 (3.0%) | draw 41 OK (0.5s, 누적 74s)
+[ERROR] v13_struct draw=42: [15:38:38] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=42: [15:38:39] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 38/1219 완료 (3.1%) | draw 42 OK (3.7s, 누적 78s)
+[ERROR] v13_struct draw=43: [15:38:42] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=43: [15:38:42] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 39/1219 완료 (3.2%) | draw 43 OK (0.4s, 누적 78s)
+[ERROR] v13_struct draw=44: [15:38:42] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=44: [15:38:43] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 40/1219 완료 (3.3%) | draw 44 OK (0.5s, 누적 79s)
+[ERROR] v13_struct draw=45: [15:38:43] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=45: [15:38:43] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 41/1219 완료 (3.4%) | draw 45 OK (0.5s, 누적 79s)
+[ERROR] v13_struct draw=46: [15:38:43] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=46: [15:38:44] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 42/1219 완료 (3.4%) | draw 46 OK (0.4s, 누적 80s)
+[ERROR] v13_struct draw=47: [15:38:44] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=47: [15:38:44] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 43/1219 완료 (3.5%) | draw 47 OK (0.4s, 누적 80s)
+[ERROR] v13_struct draw=48: [15:38:44] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=48: [15:38:45] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 44/1219 완료 (3.6%) | draw 48 OK (4.9s, 누적 85s)
+[ERROR] v13_struct draw=49: [15:38:49] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=49: [15:38:50] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 45/1219 완료 (3.7%) | draw 49 OK (0.4s, 누적 85s)
+[ERROR] v13_struct draw=50: [15:38:50] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=50: [15:38:50] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+  [진행] 46/1219 완료 (3.8%) | draw 50 OK (0.5s, 누적 86s)
+[ERROR] v13_struct draw=51: [15:38:50] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=51: [15:38:50] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=52: [15:38:51] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=52: [15:38:51] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=53: [15:38:52] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=53: [15:38:52] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=54: [15:38:52] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=54: [15:38:52] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=55: [15:38:56] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=55: [15:38:56] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=56: [15:38:57] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=56: [15:38:57] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=57: [15:38:57] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=57: [15:38:58] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=58: [15:38:58] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=58: [15:38:58] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=59: [15:38:58] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=59: [15:38:59] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=60: [15:38:59] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=60: [15:38:59] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=61: [15:39:04] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=61: [15:39:04] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=62: [15:39:04] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=62: [15:39:05] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=63: [15:39:09] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=63: [15:39:09] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=64: [15:39:09] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=64: [15:39:10] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=65: [15:39:10] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=65: [15:39:10] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=66: [15:39:10] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=66: [15:39:11] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=67: [15:39:11] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=67: [15:39:11] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=68: [15:39:12] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=68: [15:39:12] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=69: [15:39:12] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=69: [15:39:12] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=70: [15:39:13] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=70: [15:39:13] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=71: [15:39:17] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=71: [15:39:17] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=72: [15:39:17] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=72: [15:39:17] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=73: [15:39:18] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=73: [15:39:18] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=74: [15:39:18] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=74: [15:39:19] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=75: [15:39:19] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=75: [15:39:19] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=76: [15:39:25] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=76: [15:39:26] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=77: [15:39:26] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=77: [15:39:26] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=78: [15:39:26] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=78: [15:39:27] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=79: [15:39:27] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=79: [15:39:27] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=80: [15:39:27] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=80: [15:39:28] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=81: [15:39:28] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=81: [15:39:28] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=82: [15:39:28] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=82: [15:39:29] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=83: [15:39:32] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=83: [15:39:32] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=84: [15:39:33] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=84: [15:39:33] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=85: [15:39:33] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=85: [15:39:34] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=86: [15:39:38] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=86: [15:39:39] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=87: [15:39:39] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=87: [15:39:39] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=88: [15:39:40] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=88: [15:39:40] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=89: [15:39:40] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_ensemble draw=89: [15:39:40] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+[ERROR] v13_struct draw=90: [15:39:41] C:\actions-runner\_work\xgboost\xgboost\src\common\json.cc:409: Expecting: """, got: "76 ", around character position: 1
+    {L\0\0\0\0\0\0\0
+    ^~~~~~~~~
+=== 4군 풀 백테스트 (Army4 full backtest) ===
+DB: D:\3kweon\data\lotto4.db
+구간: 5~1223 (실행 대상 1219회차)
+뇌: ['v13_seq', 'v13_struct', 'v13_gap', 'v13_diversity', 'v13_ev', 'v13_evolution', 'v13_ensemble']
+
+  [진행] 1/1219 완료 (0.1%) | draw 5 OK (1.2s, 누적 1s)
+  [진행] 2/1219 완료 (0.2%) | draw 6 OK (1.2s, 누적 2s)
+  [진행] 3/1219 완료 (0.2%) | draw 7 OK (1.3s, 누적 4s)
+  [진행] 4/1219 완료 (0.3%) | draw 8 OK (7.4s, 누적 11s)
+  [진행] 5/1219 완료 (0.4%) | draw 9 OK (2.6s, 누적 14s)
+  [진행] 6/1219 완료 (0.5%) | draw 10 OK (2.1s, 누적 16s)
+  [진행] 7/1219 완료 (0.6%) | draw 11 OK (1.6s, 누적 17s)
+  [진행] 8/1219 완료 (0.7%) | draw 12 OK (2.4s, 누적 20s)
+  [진행] 9/1219 완료 (0.7%) | draw 13 OK (1.8s, 누적 22s)
+  [진행] 10/1219 완료 (0.8%) | draw 14 OK (2.0s, 누적 24s)
+  [진행] 11/1219 완료 (0.9%) | draw 15 OK (2.1s, 누적 26s)
+  [진행] 12/1219 완료 (1.0%) | draw 16 OK (5.5s, 누적 31s)
+  [진행] 13/1219 완료 (1.1%) | draw 17 OK (2.5s, 누적 34s)
+  [진행] 14/1219 완료 (1.1%) | draw 18 OK (2.0s, 누적 36s)
+  [진행] 15/1219 완료 (1.2%) | draw 19 OK (2.0s, 누적 38s)
+  [진행] 16/1219 완료 (1.3%) | draw 20 OK (3.5s, 누적 41s)
+  [진행] 17/1219 완료 (1.4%) | draw 21 OK (5.3s, 누적 47s)
+  [진행] 18/1219 완료 (1.5%) | draw 22 OK (2.5s, 누적 49s)
+  [진행] 19/1219 완료 (1.6%) | draw 23 OK (4.8s, 누적 54s)
+  [진행] 20/1219 완료 (1.6%) | draw 24 OK (3.3s, 누적 57s)
+  [진행] 21/1219 완료 (1.7%) | draw 25 OK (4.8s, 누적 62s)
+  [진행] 22/1219 완료 (1.8%) | draw 26 OK (1.9s, 누적 64s)
+  [진행] 23/1219 완료 (1.9%) | draw 27 OK (2.4s, 누적 66s)
+  [진행] 24/1219 완료 (2.0%) | draw 28 OK (2.6s, 누적 69s)
+  [진행] 25/1219 완료 (2.1%) | draw 29 OK (2.0s, 누적 71s)
+  [진행] 26/1219 완료 (2.1%) | draw 30 OK (2.1s, 누적 73s)
+  [진행] 27/1219 완료 (2.2%) | draw 31 OK (3.6s, 누적 77s)
+  [진행] 28/1219 완료 (2.3%) | draw 32 OK (3.3s, 누적 80s)
+  [진행] 29/1219 완료 (2.4%) | draw 33 OK (3.3s, 누적 83s)
+  [진행] 30/1219 완료 (2.5%) | draw 34 OK (2.9s, 누적 86s)
+  [진행] 31/1219 완료 (2.5%) | draw 35 OK (2.0s, 누적 88s)
+  [진행] 32/1219 완료 (2.6%) | draw 36 OK (6.1s, 누적 94s)
+  [진행] 33/1219 완료 (2.7%) | draw 37 OK (2.2s, 누적 96s)
+  [진행] 34/1219 완료 (2.8%) | draw 38 OK (3.0s, 누적 99s)
+  [진행] 35/1219 완료 (2.9%) | draw 39 OK (2.3s, 누적 102s)
+  [진행] 36/1219 완료 (3.0%) | draw 40 OK (5.8s, 누적 107s)
+  [진행] 37/1219 완료 (3.0%) | draw 41 OK (2.7s, 누적 110s)
+  [진행] 38/1219 완료 (3.1%) | draw 42 OK (2.4s, 누적 113s)
+  [진행] 39/1219 완료 (3.2%) | draw 43 OK (2.7s, 누적 115s)
+  [진행] 40/1219 완료 (3.3%) | draw 44 OK (3.0s, 누적 118s)
+  [진행] 41/1219 완료 (3.4%) | draw 45 OK (3.9s, 누적 122s)
+  [진행] 42/1219 완료 (3.4%) | draw 46 OK (5.4s, 누적 128s)
+  [진행] 43/1219 완료 (3.5%) | draw 47 OK (6.2s, 누적 134s)
+  [진행] 44/1219 완료 (3.6%) | draw 48 OK (8.2s, 누적 142s)

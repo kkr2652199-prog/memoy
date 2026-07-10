@@ -1,0 +1,83 @@
+20260701_1군6뇌_7뇌선택공식_재현성검증_전군적용전제
+동생 → 커서 | 2026-07-01 | READ-ONLY
+
+현황: 1군 6뇌만 존재. 7뇌(선택뇌) 미존재 — 본 검증은 도입 여부 결정용.
+1군 app/lotto/ · DB 수정 0건 | JSON: _audit_20260701_army1_7brain_reproducibility.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — 3구간 재현성 (330~630 / 630~930 / 930~1230)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[A] draw [330, 629] n=298 HR avg=1.396
+arm | avg(5) | best-of-5 | dHR | p | 3구간통과?
+  SEL1_recent_K10 | 2.3597 | 2.9497 | 0.9637 | 0.0 | PASS
+  SEL1_recent_K20 | 2.3658 | 2.9497 | 0.9698 | 0.0 | PASS
+  SEL1_recent_K30 | 2.3658 | 2.9497 | 0.9698 | 0.0 | PASS
+  SEL2_hist_weight | 2.3658 | 2.9497 | 0.9698 | 0.0 | PASS
+  SEL3_safe_co_mention | 1.949 | 3.2953 | 0.553 | 0.0 | PASS
+  SEL4_consensus_vote | 2.3926 | 3.0067 | 0.9966 | 0.0 | PASS
+  → 구간 통과: ['SEL1_recent_K10', 'SEL1_recent_K20', 'SEL1_recent_K30', 'SEL2_hist_weight', 'SEL3_safe_co_mention', 'SEL4_consensus_vote']
+
+[B] draw [630, 929] n=300 HR avg=1.4004
+arm | avg(5) | best-of-5 | dHR | p | 3구간통과?
+  SEL1_recent_K10 | 2.336 | 2.9433 | 0.9356 | 0.0 | PASS
+  SEL1_recent_K20 | 2.34 | 2.9367 | 0.9396 | 0.0 | PASS
+  SEL1_recent_K30 | 2.34 | 2.9367 | 0.9396 | 0.0 | PASS
+  SEL2_hist_weight | 2.34 | 2.9367 | 0.9396 | 0.0 | PASS
+  SEL3_safe_co_mention | 1.9367 | 3.2667 | 0.5362 | 0.0 | PASS
+  SEL4_consensus_vote | 2.356 | 2.9767 | 0.9556 | 0.0 | PASS
+  → 구간 통과: ['SEL1_recent_K10', 'SEL1_recent_K20', 'SEL1_recent_K30', 'SEL2_hist_weight', 'SEL3_safe_co_mention', 'SEL4_consensus_vote']
+
+[C] draw [930, 1230] n=300 HR avg=1.3562
+arm | avg(5) | best-of-5 | dHR | p | 3구간통과?
+  SEL1_recent_K10 | 2.2567 | 2.88 | 0.9005 | 0.0 | PASS
+  SEL1_recent_K20 | 2.262 | 2.8767 | 0.9058 | 0.0 | PASS
+  SEL1_recent_K30 | 2.262 | 2.8767 | 0.9058 | 0.0 | PASS
+  SEL2_hist_weight | 2.262 | 2.8767 | 0.9058 | 0.0 | PASS
+  SEL3_safe_co_mention | 1.8233 | 3.1033 | 0.4672 | 0.0 | PASS
+  SEL4_consensus_vote | 2.2793 | 2.9033 | 0.9232 | 0.0 | PASS
+  → 구간 통과: ['SEL1_recent_K10', 'SEL1_recent_K20', 'SEL1_recent_K30', 'SEL2_hist_weight', 'SEL3_safe_co_mention', 'SEL4_consensus_vote']
+
+3구간 재현 매트릭스 (PASS=Δ>0.05 & p<0.05):
+arm | A | B | C | 3/3
+  SEL1_recent_K10 | PASS | PASS | PASS | 3/3
+  SEL1_recent_K20 | PASS | PASS | PASS | 3/3
+  SEL1_recent_K30 | PASS | PASS | PASS | 3/3
+  SEL2_hist_weight | PASS | PASS | PASS | 3/3
+  SEL3_safe_co_mention | PASS | PASS | PASS | 3/3
+  SEL4_consensus_vote | PASS | PASS | PASS | 3/3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — SEL3 1등 정체 (전구간 추적)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1등(6) 회차: 6건 | 구간: ['B', 'C']
+당첨번호 평균 공동지목수: 5.477/6
+SEL3 1순위 세트 평균 co-score: 6/6
+판정: 🟢 여러 구간 분산 (우연 편향 낮음)
+  draw 725 [B] win=[6, 7, 19, 21, 41, 43] co_in_win=6/6 top_set=[2, 3, 6, 19, 21, 42]
+  draw 774 [B] win=[12, 15, 18, 28, 34, 42] co_in_win=6/6 top_set=[2, 23, 27, 33, 38, 43]
+  draw 800 [B] win=[1, 4, 10, 12, 28, 45] co_in_win=6/6 top_set=[1, 4, 10, 12, 28, 45]
+  draw 1037 [C] win=[2, 14, 15, 22, 27, 33] co_in_win=6/6 top_set=[2, 14, 15, 22, 27, 33]
+  draw 1040 [C] win=[8, 16, 26, 29, 31, 36] co_in_win=6/6 top_set=[2, 15, 27, 34, 37, 44]
+  draw 1122 [C] win=[3, 6, 21, 30, 34, 35] co_in_win=6/6 top_set=[3, 6, 21, 30, 34, 35]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3 — 최우수 규칙
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 3구간 재현: SEL1_recent_K10, SEL1_recent_K20, SEL1_recent_K30, SEL2_hist_weight, SEL3_safe_co_mention, SEL4_consensus_vote — 1순위 SEL4_consensus_vote
+  1순위: SEL4_consensus_vote | 3구간 mean Δ=0.9585 | mean best-of-5=2.9622
+  구간별 Δ: [0.9966, 0.9556, 0.9232]
+  구간별 best-of-5: [3.0067, 2.9767, 2.9033]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4 — 전군 적용 타당성
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+범용 논리: True
+설명: 30세트 풀 내 세트 점수(공동지목/표합) — 뇌 개수·태그와 무관
+권고: 2/3/4군 동일 논리 적용 가능. 단 군별 세트 수·뇌 구조 다르므로 군별 재검증 필수.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 5 — 최종 결론
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 재현성 통과 — 7뇌 공식 후보: SEL4_consensus_vote. 각 군 앱 신규 7뇌 도입 검토(6뇌 미변경, 형 확인 후).
+기억 갱신: 형 확인 후

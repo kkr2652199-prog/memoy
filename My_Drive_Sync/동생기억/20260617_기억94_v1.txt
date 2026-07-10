@@ -1,0 +1,18 @@
+# 기억94 – 홈페이지 recommend 연결 정찰 (2026-06-17)
+체인: …92→93→94
+
+## 작업
+- 홈페이지 구조 recommend 연결 정찰 (READ-ONLY)
+- truth 탭 패턴 + sets-grid/balls 재사용 확인
+
+## raw 핵심
+- 최소 변경: index 탭1+패널1, js 함수1~2, css 재사용
+- 대공사 불필요
+- API recommend 이미 구현됨
+
+## 원칙
+- 1~3군 간섭 0건
+- predict 파이프라인 미변경
+
+## 다음
+- 전략 X UI 최소 패치

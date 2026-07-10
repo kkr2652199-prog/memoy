@@ -1,0 +1,233 @@
+{
+  "title": "20260628_1군6뇌_조합뇌_확률검증",
+  "date": "2026-06-28",
+  "mode": "READ_ONLY",
+  "army1_modified": false,
+  "db_writes": 0,
+  "principles": [
+    "R2 정직",
+    "R13 walk-forward",
+    "R14 1군 미수정"
+  ],
+  "step0_scout": {
+    "sample_draw": 1230,
+    "sets_per_brain_sample": {
+      "stat": 5,
+      "markov": 5,
+      "llm": 5,
+      "lstm": 5,
+      "fusion": 5,
+      "hyena": 5
+    },
+    "total_sets_sample": 30,
+    "union_unique_numbers_sample": 43,
+    "per_brain_db": {
+      "stat": {
+        "total_rows": 6005,
+        "draws": 1201,
+        "draw_range": [
+          2,
+          1230
+        ]
+      },
+      "markov": {
+        "total_rows": 6000,
+        "draws": 1200,
+        "draw_range": [
+          3,
+          1230
+        ]
+      },
+      "llm": {
+        "total_rows": 6001,
+        "draws": 1201,
+        "draw_range": [
+          2,
+          1230
+        ]
+      },
+      "lstm": {
+        "total_rows": 6005,
+        "draws": 1201,
+        "draw_range": [
+          2,
+          1230
+        ]
+      },
+      "fusion": {
+        "total_rows": 6005,
+        "draws": 1201,
+        "draw_range": [
+          2,
+          1230
+        ]
+      },
+      "hyena": {
+        "total_rows": 6000,
+        "draws": 1200,
+        "draw_range": [
+          3,
+          1230
+        ]
+      }
+    }
+  },
+  "step1_rules": {
+    "RULE1_vote": "6뇌 30세트 번호 등장횟수 상위 6",
+    "RULE2_weighted": "뇌별 과거 avg(matched_count) 가중 합산 상위 6 (draw<N만)",
+    "RULE3_co_mention": "2개 이상 서로 다른 뇌 공동지목 번호 상위 6"
+  },
+  "step2_backtest": {
+    "n_eval": 300,
+    "eval_draw_range": [
+      930,
+      1230
+    ],
+    "summary_rows": [
+      {
+        "arm": "RANDOM",
+        "n_eval": 300,
+        "avg_matched": 0.8273,
+        "std_matched": 0.1221,
+        "hit5plus": 0,
+        "hit4plus": 0,
+        "delta_vs_random": 0.0,
+        "paired_ttest_vs_random": null,
+        "verdict": "기준선 (랜덤)"
+      },
+      {
+        "arm": "RULE1_vote",
+        "n_eval": 300,
+        "avg_matched": 2.3,
+        "std_matched": 1.0711,
+        "hit5plus": 6,
+        "hit4plus": 35,
+        "delta_vs_random": 1.4727,
+        "paired_ttest_vs_random": {
+          "t_stat": 23.9491,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.4727
+        },
+        "verdict": "🟢 채택 후보 (Δ>0.05, p<0.05)"
+      },
+      {
+        "arm": "RULE2_weighted",
+        "n_eval": 300,
+        "avg_matched": 2.42,
+        "std_matched": 1.02,
+        "hit5plus": 8,
+        "hit4plus": 36,
+        "delta_vs_random": 1.5927,
+        "paired_ttest_vs_random": {
+          "t_stat": 26.9678,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 1.5927
+        },
+        "verdict": "🟢 채택 후보 (Δ>0.05, p<0.05)"
+      },
+      {
+        "arm": "RULE3_co_mention",
+        "n_eval": 300,
+        "avg_matched": 1.7967,
+        "std_matched": 1.0515,
+        "hit5plus": 1,
+        "hit4plus": 19,
+        "delta_vs_random": 0.9694,
+        "paired_ttest_vs_random": {
+          "t_stat": 15.9292,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 0.9694
+        },
+        "verdict": "🟢 채택 후보 (Δ>0.05, p<0.05)"
+      },
+      {
+        "arm": "INDIVIDUAL_BEST",
+        "n_eval": 300,
+        "avg_matched": 3.53,
+        "std_matched": 0.7644,
+        "hit5plus": 23,
+        "hit4plus": 154,
+        "delta_vs_random": 2.7027,
+        "paired_ttest_vs_random": {
+          "t_stat": 61.3273,
+          "p_value": 0.0,
+          "n": 300,
+          "mean_diff": 2.7027
+        },
+        "verdict": "참조 (30세트 최고)"
+      }
+    ],
+    "any_adopt_candidate": true,
+    "final_verdict": "🟢 채택 후보 존재",
+    "per_draw_sample_tail": [
+      {
+        "draw_no": 1226,
+        "pool_size": 42,
+        "RANDOM": 1.06,
+        "INDIVIDUAL_BEST": 2,
+        "RULE1_vote": 1,
+        "RULE2_weighted": 1,
+        "RULE3_co_mention": 0
+      },
+      {
+        "draw_no": 1227,
+        "pool_size": 44,
+        "RANDOM": 0.86,
+        "INDIVIDUAL_BEST": 2,
+        "RULE1_vote": 0,
+        "RULE2_weighted": 0,
+        "RULE3_co_mention": 0
+      },
+      {
+        "draw_no": 1228,
+        "pool_size": 44,
+        "RANDOM": 0.66,
+        "INDIVIDUAL_BEST": 3,
+        "RULE1_vote": 0,
+        "RULE2_weighted": 0,
+        "RULE3_co_mention": 1
+      },
+      {
+        "draw_no": 1229,
+        "pool_size": 44,
+        "RANDOM": 0.82,
+        "INDIVIDUAL_BEST": 3,
+        "RULE1_vote": 2,
+        "RULE2_weighted": 2,
+        "RULE3_co_mention": 2
+      },
+      {
+        "draw_no": 1230,
+        "pool_size": 43,
+        "RANDOM": 0.86,
+        "INDIVIDUAL_BEST": 2,
+        "RULE1_vote": 0,
+        "RULE2_weighted": 0,
+        "RULE3_co_mention": 0
+      }
+    ]
+  },
+  "step3_threshold": {
+    "delta_min": 0.05,
+    "p_max": 0.05
+  },
+  "compare_4gun_v13": {
+    "source": "20260627_4군_A안통합검증",
+    "V13_ensemble_delta_vs_random": 0.0138,
+    "V13_p_value": 0.54859,
+    "note": "4군 era_C 887회 walk-forward"
+  },
+  "r2_honesty": {
+    "random_baseline_note": "STEP2 RANDOM = 30세트 합집합(약43개)에서 무작위 6개, 회차당 50회 평균",
+    "absolute_random_1to45_avg": 0.7867,
+    "hit6_in_300": {
+      "RULE1_vote": 0,
+      "RULE2_weighted": 0,
+      "RULE3_co_mention": 0
+    },
+    "caveat": "조합 규칙 우위는 동일 풀 내 조립법 비교. 1등(6개) 적중 0건. 4군 V13과 랜덤 정의 상이."
+  }
+}

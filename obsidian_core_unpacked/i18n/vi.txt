@@ -1,0 +1,2517 @@
+Tùy chọn
+
+Plugin cốt lõi
+Tùy chọn plugin
+Ví dụ: folder 1/folder 2
+Ví dụ: folder/note
+Thay đổi tùy chọn này yêu cầu khởi động lại để có hiệu lực.
+Trình soạn thảo
+Hành vi
+Hiển thị
+Kiểm tra chính tả
+Bật kiểm tra chính tả. Hiện chỉ hoạt động cho tiếng Anh (Mỹ).
+Ngôn ngữ kiểm tra chính tả
+Chọn các ngôn ngữ để sử dụng trong kiểm tra chính tả.
+Công cụ kiểm tra chính tả gốc sẽ tự động phát hiện ngôn ngữ đang sử dụng trên macOS.
+Từ điển kiểm tra chính tả
+Từ điển kiểm tra chính tả trống.
+Tiêu đề nội tuyến
+Hiển thị tên tệp như tiêu đề có thể chỉnh sửa nội tuyến với nội dung tệp.
+Độ dài dòng hợp lý
+Giới hạn độ dài dòng tối đa. Hiển thị ít nội dung hơn trên màn hình nhưng làm cho đoạn văn dài hơn dễ đọc hơn.
+Ngắt dòng nghiêm ngặt
+Trong chế độ xem trước, bỏ qua ngắt dòng duy nhất theo quy định Markdown. Tắt tùy chọn này để hiển thị ngắt dòng duy nhất trong xem trước.
+Thuộc tính trong tài liệu
+Chọn cách hiển thị thuộc tính trong trình chỉnh sửa. Chọn "source" để hiển thị thuộc tính dưới dạng YAML.
+Ẩn
+Hiển thị
+Nguồn
+Tự động ghép cặp dấu ngoặc đơn
+Tự động ghép cặp dấu ngoặc và dấu trích dẫn.
+Tự động ghép cặp cú pháp Markdown
+Tự động ghép cặp các ký hiệu cho chữ đậm, nghiêng, đánh dấu, gạch ngang và mã.
+Thụt đầu dòng thông minh cho danh sách
+Chăm sóc thụt đầu dòng và chỉ mục cho bạn.
+Thu gọn tiêu đề
+Cho phép bạn thu gọn tất cả mọi thứ dưới tiêu đề.
+Thu gọn thụt đầu dòng
+Cho phép bạn thu gọn một phần của cùng một thụt đầu dòng, chẳng hạn như danh sách.
+Giao diện mặc định cho tab mới
+Giao diện mặc định cho tab Markdown mới được mở trong.
+Chế độ chỉnh sửa
+Chế độ đọc
+Luôn tập trung vào tab mới
+Khi bạn mở một liên kết trong tab mới, chuyển đến tab đó ngay lập tức.
+Chế độ chỉnh sửa mặc định
+Chế độ chỉnh sửa mặc định mà một bảng chỉnh sửa mới sẽ bắt đầu.
+Chế độ nguồn
+Xem trước trực tiếp
+Số dòng
+Hiển thị số dòng trong dòng gutter.
+Đường dẫn thụt lề
+Hiển thị các đường dẫn thụt đầu dòng dọc giữa các điểm đánh dấu danh sách để hướng dẫn mắt.
+Sử dụng tab
+Sử dụng tab để thụt đầu dòng khi nhấn phím "Tab". Tắt tùy chọn này để sử dụng khoảng trắng.
+Kích thước tab
+Số khoảng trắng tương đương với một tab.
+Hướng văn bản từ phải sang trái (RTL)
+Đặt hướng văn bản của các ghi chú để hiển thị từ phải sang trái.
+Tự động chuyển đổi HTML
+Tự động chuyển đổi HTML thành Markdown khi dán và kéo và thả từ các trang web. Sử dụng Ctrl/Cmd+Shift+V để dán mà không cần chuyển đổi.
+Phím tắt Vim
+Cho phép bạn sử dụng các phím tắt Vim trong trình soạn thảo nguồn.
+Trên các thiết bị di động, tùy chọn này được lưu trữ theo từng thiết bị và không được đồng bộ hóa thông qua tệp cấu hình.
+Xây dựng lại bộ nhớ đệm kho
+Việc xây dựng lại bộ nhớ đệm có thể mất từ vài giây đến vài phút tùy theo kích thước kho của bạn.
+Xây dựng lại
+Xác nhận kích hoạt chế độ Vim
+Chế độ Vim được thiết kế để chỉnh sửa văn bản hiệu quả nhưng có thể khá khó hiểu. Nếu bạn không quen với Vim, tùy chọn này có thể khiến Obsidian trông như đã ngừng hoạt động.
+Để xác minh bạn đã biết cách sử dụng Vim, hãy nhập lệnh để thoát Vim mà không lưu dưới đây:
+Câu trả lời của bạn
+Nhập lệnh...
+Cho phép tôi kích hoạt Vim
+Lệnh là chính xác. Chế độ Vim được bật.
+Lệnh không chính xác. Chế độ Vim vẫn bị tắt để bảo vệ bạn.
+Vui lòng nhập lệnh để bật chế độ Vim
+Tệp & Liên kết
+Xác nhận trước khi xóa tệp
+Tránh vô tình xóa tệp.
+Thùng rác
+Tệp đã xóa
+Xử lý tệp sau khi bạn xóa chúng.
+Di chuyển vào thùng rác hệ thống
+Di chuyển vào thùng rác Obsidian (.trash folder)
+Xóa vĩnh viễn
+Xóa tệp đính kèm khi xóa tệp
+Tự động loại bỏ các tệp đính kèm được liên kết với tệp đã xóa nếu chúng không được dùng ở nơi khác.
+Luôn luôn
+Hỏi mỗi lần
+Không bao giờ
+Tệp mặc định để mở
+Chọn tệp sẽ mở khi ứng dụng khởi động.
+Lần mở gần nhất
+Ghi chú mới
+Tệp cụ thể
+Ghi chú hằng ngày
+Tệp để mở
+Chọn một tệp cụ thể để mặc định mở.
+Luôn cập nhật liên kết nội bộ
+Cho phép tự động cập nhật liên kết sau khi đổi tên một tệp hoặc nhận thông báo.
+Vị trí mặc định cho ghi chú mới
+Nơi để đặt ghi chú mới được tạo. Cài đặt plugin sẽ ghi đè lên điều này.
+Thư mục gốc
+Cùng một thư mục với tệp
+Trong thư mục được chỉ định dưới đây
+Đường dẫn thư mục để tạo ghi chú mới
+Ghi chú mới được tạo sẽ xuất hiện dưới thư mục này. Cài đặt plugin sẽ ghi đè lên điều này.
+Sử dụng [[Liên kết Wiki]]
+Tự động tạo liên kết Wiki cho [[liên kết]] và ![[hình ảnh]] thay vì liên kết và hình ảnh Markdown. Vô hiệu hóa tùy chọn này để tạo liên kết Markdown thay thế.
+Phát hiện tất cả các phần mở rộng tệp
+Hiển thị các tệp có bất kỳ phần mở rộng nào, ngay cả khi Obsidian không thể mở chúng một cách tự nhiên, để bạn có thể liên kết đến chúng và xem chúng trong Trình duyệt tệp và Trình chuyển đổi nhanh.
+Liên kết
+Định dạng liên kết mới
+Liên kết nào sẽ được chèn khi tự động tạo liên kết nội bộ.
+Đường dẫn ngắn nhất nếu có thể
+Đường dẫn tương đối đến tệp
+Đường dẫn tuyệt đối trong khóa
+Vị trí mặc định cho đính kèm mới
+Nơi đặt tệp đính kèm mới được thêm.
+Tệp đính kèm
+Trong thư mục con dưới thư mục hiện tại
+Đường dẫn thư mục đính kèm
+Tệp đính kèm mới được tạo sẽ xuất hiện ở đây. Điều này bao gồm hình ảnh được tạo bằng cách kéo và thả hoặc dán và ghi âm âm thanh.
+Tên thư mục con
+Nếu tệp của bạn nằm dưới "khóa/thư mục" và bạn đặt tên thư mục con của mình là "đính kèm", tệp đính kèm sẽ được lưu vào "khóa/thư mục/đính kèm".
+Tệp bị loại trừ
+Các tệp bị loại trừ sẽ bị ẩn hoặc ít nổi bật trong các vị trí khác nhau, chẳng hạn như Trình chuyển đổi nhanh, đề xuất liên kết và Xem biểu đồ.
+Hiện tại không áp dụng bộ lọc bị loại trừ nào. Thêm một bộ lọc dưới đây.
+Các tệp phù hợp với các bộ lọc sau đây hiện đang bị loại trừ:
+Bộ lọc
+Bộ lọc không thể để trống
+Nhập đường dẫn hoặc "/regex/"...
+Cho phép callback URI
+Bật việc sử dụng x-callback-url thông qua x-success hoặc x-error khi xử lý URI của Obsidian.
+Giao diện
+Chủ đề cơ bản
+Chọn sơ đồ màu mặc định của Obsidian.
+Màu nhấn
+Chọn màu nhấn được sử dụng trong toàn bộ ứng dụng.
+Tối
+Sáng
+Thích ứng với hệ thống
+Phông chữ
+Nâng cao
+Giao diện
+Phông chữ giao diện
+Thiết lập phông chữ cơ sở cho Obsidian.
+Tỷ lệ thu phóng
+Điều khiển tỷ lệ thu phóng tổng thể của ứng dụng.
+Phông chữ văn bản
+Thiết lập phông chữ cho chế độ chỉnh sửa và xem.
+Phông chữ không chia khoảng
+Thiết lập phông chữ cho các vị trí như khối mã và frontmatter.
+ Phông chữ đang áp dụng: 
+ Các phông chữ sau đang áp dụng:
+Nhập tên phông chữ...
+Hiện không có phông chữ tùy chỉnh nào được áp dụng. Thêm một phông chữ dưới đây.
+Phông chữ đầu tiên từ danh sách này mà có sẵn trên hệ thống của bạn sẽ được áp dụng.
+Phông chữ này không được phát hiện trên hệ thống của bạn.
+Phông chữ này đã được phát hiện trên hệ thống của bạn.
+Tên phông chữ
+Mở các chủ đề cộng đồng
+Xem trước và sử dụng các chủ đề tuyệt vời được tạo bởi cộng đồng.
+Duyệt
+Cỡ chữ
+Cỡ chữ tính bằng pixel ảnh ảnh hưởng đến chỉnh sửa và xem trước.
+Điều chỉnh nhanh cỡ chữ
+Điều chỉnh cỡ chữ bằng cách sử dụng Ctrl + Cuộn, hoặc sử dụng cử chỉ thu phóng bằng cách kẹp trackpad.
+Chủ đề
+Quản lý chủ đề đã cài đặt và duyệt các chủ đề cộng đồng.
+Quản lý
+Không
+Các menu hệ thống
+Các menu trong ứng dụng sẽ phù hợp với hệ điều hành. Chúng sẽ không bị ảnh hưởng bởi chủ đề của bạn.
+Tải lại chủ đề
+Đã tải lại các chủ đề CSS tùy chỉnh.
+Mở thư mục chủ đề
+Mẩu CSS
+Không có mẩu CSS nào được tìm thấy trong thư mục mẩu.
+Mẩu CSS được lưu trữ trong "{{path}}".
+Tải lại mẩu
+Mở thư mục mẩu
+Đã tải lại các mẩu CSS.
+Áp dụng mẩu CSS tại "{{path}}".
+Các chủ đề đã cài đặt
+Không có hình ảnh màn hình
+Mặc định
+Nhấp để phóng to
+Cập nhật
+Đang hoạt động
+Kiểu khung cửa sổ
+Xác định phong cách thanh tiêu đề của các cửa sổ Obsidian. Yêu cầu khởi động lại đầy đủ để có hiệu lực.
+Ẩn (mặc định)
+Khung Obsidian
+Khung gốc
+Biểu tượng ứng dụng tùy chỉnh
+Đặt biểu tượng tùy chỉnh cho ứng dụng
+Chọn biểu tượng tùy chỉnh
+Menu Ribbon
+Cấu hình các lệnh hiển thị trong menu Ribbon ở thanh điều hướng đó.
+Mục Ribbon truy cập nhanh di động
+Chạm vào mục Ribbon trong menu điều hướng sẽ kích hoạt mục Ribbon này. Chạm và giữ vẫn sẽ hiển thị menu.
+Mở menu Ribbon
+Cấu hình
+Hiển thị Ribbon
+Hiển thị thanh công cụ dọc ở bên cạnh cửa sổ.
+Các mục Ribbon khác
+Cấu hình Ribbon
+Chọn các mục bạn muốn kích hoạt trong Ribbon. Kéo và thả để thay đổi thứ tự.
+Hiển thị thanh tiêu đề tab
+Hiển thị tiêu đề ở phía trên của mỗi tab.
+Điều hướng nổi
+Các nút điều hướng nổi trên nội dung thay vì được neo cố định.
+Thanh bên trượt
+Thanh bên trượt ra cạnh nội dung thay vì nổi phía trên.
+Toàn màn hình
+Tự động ẩn các thành phần giao diện khi đọc.
+Tìm thấy {{count}} chủ đề cần cập nhật.
+Tìm thấy {{count}} chủ đề cần cập nhật.
+Kiểm tra cập nhật
+Xem cập nhật
+Cập nhật tất cả
+Các chủ đề cộng đồng hiện tại
+Bạn hiện có {{count}} chủ đề đã cài đặt.
+Bạn hiện có {{count}} chủ đề đã cài đặt.
+Phím tắt
+Tìm kiếm phím tắt
+Hiển thị {{count}} phím tắt. 
+Hiển thị {{count}} phím tắt. 
+{{count}} lệnh có xung đột.
+{{count}} lệnh có xung đột.
+Lọc...
+Xóa phím tắt
+Nhấn phím tắt...
+Tất cả
+Chưa được gán
+Đã được gán
+Được gán bởi tôi
+Khôi phục mặc định
+Tùy chỉnh lệnh này
+Phím tắt này có xung đột với "{{command}}"
+Phím tắt này có xung đột với {{count}} lệnh khác
+Trống
+
+Bí mật
+Thêm bí mật
+Chỉnh sửa bí mật
+Hiện bí mật
+Ẩn bí mật
+
+Bí mật
+ten-bi-mat
+Chỉ chữ thường, số và dấu gạch ngang.
+Nhập bí mật của bạn.
+Chưa từng truy cập
+Không thể cập nhật bí mật.
+Không thể thêm bí mật.
+Một bí mật với ID này đã tồn tại.
+Giá trị bí mật không được để trống.
+ID bí mật không hợp lệ. Chỉ dùng chữ thường, số và dấu gạch ngang. Tối đa 64 ký tự.
+Chưa có bí mật nào được thêm. Bí mật được dùng để lưu thông tin như khóa API và mật khẩu mà plugin có thể sử dụng.
+Chọn bí mật
+Tìm bí mật...
+Thêm bí mật...
+Liên kết...
+Các bí mật được lưu trữ không mã hóa vì không có kho bí mật khả dụng trên hệ thống này.
+Các bí mật không được mã hóa
+Không hiển thị lại
+Không có mã hóa
+Mã hóa được cung cấp bởi kho bí mật của hệ điều hành. Nếu không có kho bí mật, các bí mật của bạn sẽ được lưu trữ không mã hóa.
+Trên Linux, các kho bí mật được hỗ trợ bao gồm:
+Thông tin
+Bản quyền thương mại
+Mã bản quyền
+Mã bản quyền của bạn...
+Kích hoạt bản quyền
+Kích hoạt
+Không rõ
+Phiên bản {{version}}
+Phiên bản trình cài đặt: {{version}}
+Đọc thông tin về các thay đổi.
+Để hỗ trợ các tính năng mới nhất và nhận các bản vá bảo mật mới nhất, Obsidian cần một bản cài đặt lớn. Bạn cần tải xuống và cài đặt lại Obsidian thủ công.
+Đã có một phiên bản mới để cài đặt. 
+Cập nhật đã bị vô hiệu hóa.
+Khởi động lại
+Kiểm tra cập nhật
+Tự động cập nhật
+Tắt tùy chọn này để ngăn ứng dụng kiểm tra cập nhật.
+Thông báo nếu khởi động lâu hơn dự kiến
+Chẩn đoán sự cố với ứng dụng của bạn bằng cách xem điều gì khiến ứng dụng tải chậm.
+Kiểm tra ngay
+Giao diện dòng lệnh
+Cho phép tương tác với Obsidian từ dòng lệnh.
+Thiết lập CLI để hoạt động trong terminal
+Đăng ký "obsidian" trong PATH để có thể truy cập lệnh "obsidian" ở bất kỳ đâu từ terminal của bạn.
+Đăng ký
+Nhận trợ giúp
+Nhận trợ giúp về việc sử dụng Obsidian.
+Mở
+Ngôn ngữ
+Thay đổi ngôn ngữ hiển thị.
+Nhận các bản dựng Insider
+Tự động cập nhật các bản dựng Insider để thử nghiệm các tính năng mới. Lưu ý rằng các bản dựng này là phiên bản cực kỳ mới và có thể không ổn định.
+Nâng cao
+Tăng tốc phần cứng
+Bật Tăng tốc phần cứng, sử dụng GPU của bạn để Obsidian hoạt động mượt mà hơn.
+Nếu tắt tùy chọn này, hiệu suất ứng dụng sẽ bị suy giảm nghiêm trọng.
+Ghi đè thư mục cấu hình
+Sử dụng thư mục cấu hình khác với thư mục mặc định. Phải bắt đầu bằng một dấu chấm.
+Vị trí cấu hình phải là một tên thư mục hợp lệ bắt đầu bằng một dấu chấm.
+Bản quyền
+Mã bản quyền thương mại của bạn là "{{key}}".
+Đăng ký cho "{{company}}" với {{seats}} người dùng. Hiệu lực đến {{expiry}}.
+Đang xác nhận...
+Bản quyền không hợp lệ: 
+Gỡ bỏ
+Bản quyền Catalyst
+Bạn hiện đang có bản quyền Catalyst {{tier}}. Cảm ơn sự hỗ trợ của bạn!
+Bạn hiện không có bản quyền Catalyst. Bản quyền Catalyst là đóng góp một lần để hỗ trợ phát triển Obsidian.
+Ứng dụng
+Xem cách thêm ngôn ngữ của bạn vào Obsidian.
+Tài khoản
+Tài khoản của bạn
+Bạn hiện đang đăng nhập với tên {{name}} ({{email}}).
+Bạn hiện không đăng nhập. Một tài khoản chỉ cần thiết cho Obsidian Sync, Obsidian Publish và các bản dựng Insider của Catalyst.
+Nâng cấp
+Bản quyền thương mại
+Giúp Obsidian luôn được hỗ trợ 100% bởi người dùng.
+Mua
+Đăng xuất
+Đăng nhập
+Đăng ký
+
+Email của bạn...
+Họ và tên
+Mật khẩu
+Mật khẩu của bạn...
+Quên mật khẩu?
+Đăng nhập
+Email không thể để trống.
+Email không hợp lệ.
+Mật khẩu không thể để trống.
+Đăng nhập thất bại, vui lòng kiểm tra lại email và mật khẩu của bạn.
+Đăng ký thất bại
+Bạn chưa có tài khoản? 
+Đăng ký ngay
+Mã 2FA gồm 6 chữ số
+Mã xác thực 2FA phải gồm 6 chữ số.
+Mã 2FA không chính xác, vui lòng kiểm tra lại ứng dụng xác thực của bạn.
+Danh sách phần mở rộng
+Tìm kiếm phần mở rộng cốt lõi
+Lọc phần mở rộng theo tên hoặc mô tả.
+Tìm kiếm phần mở rộng...
+Phần mở rộng của bên thứ ba
+Chế độ hạn chế
+Chế độ Hạn chế đã được tắt. Bật để vô hiệu hóa các phần mở rộng từ cộng đồng.
+Bật
+Tự động kiểm tra cập nhật plugin
+Định kỳ kiểm tra cập nhật plugin.
+Phần mở rộng từ cộng đồng
+Duyệt và cài đặt các phần mở rộng của bên thứ ba do cộng đồng tuyệt vời của chúng ta tạo ra.
+Duyệt
+Thoát khỏi Chế độ Hạn chế
+Phần mở rộng từ cộng đồng, giống như bất kỳ phần mềm khác mà bạn cài đặt, có thể gây ra vấn đề về toàn vẹn dữ liệu và bảo mật.
+Bảo mật của phần mở rộng là điều quan trọng đối với chúng tôi. Dưới đây là những gì chúng tôi thực hiện:
+Mặc dù chúng tôi đã nỗ lực, vẫn có một khả năng nhỏ rằng một số phần mở rộng từ cộng đồng có thể hoạt động không đúng.
+Đánh giá mã ban đầu
+Các phần mở rộng phải trải qua đánh giá mã ban đầu từ đội ngũ của chúng tôi trước khi xuất hiện trong cửa hàng.
+Mã nguồn mở
+Hầu hết các phần mở rộng đều mã nguồn mở trên GitHub, vì vậy bạn có thể kiểm tra mã nguồn một cách tự do.
+Đánh giá đồng nghiệp
+Chúng tôi có một cộng đồng lớn của các nhà phát triển theo dõi lẫn nhau.
+Cơ chế báo cáo
+Chúng tôi tiếp tục theo dõi và gỡ bỏ các phần mở rộng lỗi sau khi người dùng báo cáo.
+Bạn có muốn thoát khỏi Chế độ Hạn chế để kích hoạt các phần mở rộng từ cộng đồng không? Chúng tôi khuyên bạn nên sao lưu dữ liệu trước khi làm điều này.
+Tìm hiểu thêm về bảo mật phần mở rộng
+Bật phần mở rộng từ cộng đồng
+Bạn tin tưởng tác giả của kho lưu trữ này không?
+Bạn đang mở kho lưu trữ này lần đầu tiên, và nó đi kèm với một số phần mở rộng.
+Nếu bạn nhận được kho lưu trữ này từ người khác, hãy lưu ý rằng các phần mở rộng không rõ nguồn gốc có thể tạo ra rủi ro về bảo mật.
+Nếu bạn không tin tưởng hoàn toàn tác giả của kho lưu trữ này, chúng tôi khuyên bạn nên ở trong Chế độ Hạn chế để các phần mở rộng trong kho này không chạy.
+Tin tưởng tác giả và kích hoạt phần mở rộng
+Duyệt kho lưu trữ trong Chế độ Hạn chế
+Tìm kiếm phần mở rộng từ cộng đồng...
+Không tải được các phần mở rộng từ cộng đồng.
+Đã cài đặt
+Cài đặt
+Kích hoạt
+Vô hiệu hóa
+Sao chép liên kết chia sẻ
+Ủng hộ
+Không tìm thấy kết quả.
+Không tìm thấy tệp gần đây. Nhập để tìm kiếm...
+Không tải được tệp mô tả phần mở rộng.
+Phiên bản: {{version}}
+ (đã cài đặt phiên bản: {{version}})
+Tác giả 
+Kho lưu trữ: 
+Cập nhật lần cuối: 
+Xem cập nhật mới nhất
+Phần mở rộng này không hỗ trợ thiết bị của bạn.
+Cập nhật
+Phần mở rộng này không cung cấp tệp README.
+Đang cài đặt phần mở rộng "{{name}}"...
+Không cài đặt được phần mở rộng "{{name}}".
+Cài đặt phần mở rộng "{{name}}" thành công.
+Không thể gỡ cài đặt plugin “{{id}}”.
+Không thể tắt plugin “{{id}}”.
+Phần mở rộng đã cài đặt
+Tải lại phần mở rộng
+Tải lại phần mở rộng của bên thứ ba.
+Gỡ bỏ cài đặt
+Gỡ bỏ cài đặt phần mở rộng
+Bạn có chắc chắn muốn gỡ bỏ cài đặt phần mở rộng này không? Điều này sẽ xóa thư mục của phần mở rộng.
+Mở thư mục phần mở rộng
+Kiểm tra cập nhật
+Cập nhật tất cả
+Phần mở rộng hiện tại
+Đang kiểm tra cập nhật...
+Bạn hiện đang có {{count}} phần mở rộng được cài đặt.
+Bạn hiện đang có {{count}} phần mở rộng được cài đặt.
+Không tìm thấy cập nhật phần mở rộng.
+Tìm thấy {{count}} phần mở rộng cần cập nhật.
+Tìm thấy {{count}} phần mở rộng cần cập nhật.
+Cập nhật lên phiên bản {{version}}
+Tìm kiếm phần mở rộng đã cài đặt
+Lọc phần mở rộng đã cài đặt theo tên hoặc mô tả.
+Tìm kiếm phần mở rộng đã cài đặt...
+Chỉ hiển thị đã cài đặt
+Ủng hộ {{name}}
+Các nhà phát triển phần mở rộng là những tình nguyện viên trong cộng đồng tạo ra những điều tuyệt vời với đam mê. Nếu bạn thấy phần mở rộng này hữu ích, xin vui lòng xem xét hỗ trợ việc phát triển của nó.
+100% đóng góp của bạn sẽ được chuyển cho nhà phát triển phần mở rộng; Obsidian không thu phí. Nền tảng gọi vốn mà họ chọn có thể tính phí.
+Cảm ơn sự hỗ trợ rộng lượng của bạn!
+Hỗ trợ phần mở rộng này:
+Hiển thị {{pluginCount}}:
+Phổ biến nhất
+Mới phát hành
+Cập nhật gần đây
+Theo bảng chữ cái
+Cập nhật {{time}}
+Thanh công cụ di động
+Cấu hình Hành động Nhanh di động
+Cấu hình lệnh nào được kích hoạt khi kéo xuống từ phía trên. Lệnh hiện tại được đặt là "{{command}}".
+Chưa cấu hình hành động
+Cấu hình
+Chọn Hành động Nhanh...
+Không có
+Quản lý tùy chọn thanh công cụ
+Thêm liên kết nội bộ
+Thêm nhúng
+Thêm thẻ
+Chuyển đổi tiêu đề
+Chuyển đổi gạch ngang
+Chuyển đổi đánh dấu
+Chuyển đổi mã
+Chuyển đổi trích dẫn khối
+Bật/tắt toán học nội dòng
+Bật/tắt khối toán học
+Thêm liên kết Markdown
+Chuyển đổi danh sách đánh dấu
+Chuyển đổi danh sách đánh số
+Thụt đầu dòng danh sách
+Hủy thụt đầu dòng danh sách
+Hoàn tác
+Làm lại
+Di chuyển dấu nhắc lên
+Di chuyển dấu nhắc xuống
+Di chuyển dấu nhắc sang trái
+Di chuyển dấu nhắc sang phải
+Đi đến dòng đầu tiên
+Đi đến dòng cuối cùng
+Chuyển đổi bàn phím
+Cấu hình thanh công cụ di động
+Các tùy chọn đã thêm
+Thêm tùy chọn thanh công cụ
+Chèn tệp đính kèm
+Tìm kiếm
+Thay thế
+Thoát tìm kiếm
+Tiếp
+Trước
+Tìm tất cả
+Thay thế
+Thay thế tất cả
+Nhập #
+để liên kết đến tiêu đề
+Nhập ^
+để liên kết đến khối
+Nhập |
+để thay đổi văn bản hiển thị
+Văn bản hiển thị
+Tiêu đề
+Không tìm thấy kết quả nào
+Kích thước hình ảnh: rộng {{size}}px
+để chấp nhận
+Chú thích mới...
+Không có gợi ý...
+Thêm vào từ điển
+Chỉnh sửa liên kết
+Chỉnh sửa thẻ
+Chỉnh sửa khối này
+Xóa chú thích và tham chiếu
+Đặt lại kích thước
+Xóa hình ảnh
+Không có tiêu đề
+Tiêu đề cấp {{level}}
+Xuất ra PDF
+Xuất "{{filename}}" ra PDF với các cài đặt bên dưới.
+Kích thước trang
+Bao gồm tên tệp làm tiêu đề
+Ngang
+Lề
+Mặc định
+Tối thiểu
+Không có lề
+Phần trăm thu nhỏ
+Xuất ra PDF
+Theo liên kết
+Mở liên kết
+Tìm kiếm theo thẻ
+Không tìm thấy:
+Không thể tìm “{{subpath}}” trong {{file}}
+Mở trong ứng dụng mặc định
+Thanh bên trống, hãy thử kéo một khung vào đây.
+Mở rộng
+Thu gọn
+Không thể lưu tệp "{{filepath}}". {{message}}.
+Không thể tải plugin “{{plugin}}”
+Plugin “{{plugin}}” gặp lỗi khi tải
+Không thể mở “{{filepath}}”
+Không thể mở vị trí “{{href}}”
+Không có tệp
+"{{file}}" đã bị thay đổi bên ngoài, hợp nhất các thay đổi tự động.
+Quản lý kho...
+Trợ giúp
+Cài đặt
+Kéo để sắp xếp lại
+Chuyển chế độ xem mặc định thành chế độ đọc.
+Chuyển chế độ xem mặc định thành chế độ chỉnh sửa.
+Để sử dụng tính năng này, vui lòng cài đặt lại bằng bản cài đặt mới nhất có sẵn trên trang web của chúng tôi.
+Phát hiện thời gian khởi động chậm.
+Tính năng này chỉ có trên ứng dụng máy tính.
+Khôi phục cài đặt mặc định
+Sao chép vào clipboard
+Sao chép
+Đã sao chép vào clipboard của bạn
+{{item}} đã được sao chép vào clipboard của bạn
+Không thể sao chép vào bảng tạm của bạn
+Bộ lọc...
+Gặp lỗi khi kết xuất khối mã.
+Mở tệp "{{path}}"
+Không tìm thấy tệp "{{name}}".
+Hành động URI không được nhận dạng: {{action}}
+Xóa
+Obsidian đang lập chỉ mục cho khối lưu trữ của bạn...\nĐiều này chỉ xảy ra một lần duy nhất.\nMột số chức năng có thể không khả dụng cho đến khi quá trình này hoàn tất.
+Một số chức năng có thể không khả dụng cho đến khi hoàn tất.
+Hoàn tất lập chỉ mục.
+Đây là một khối lưu trữ sandbox.\nCác thay đổi bạn thực hiện trong khối lưu trữ này sẽ bị mất.
+Tính năng này yêu cầu IndexedDB, nhưng hiện đang bị tắt.
+Nếu bạn đang dùng iOS ở Chế độ Lockdown, vui lòng loại trừ Obsidian khỏi cài đặt "Configure Web Browsing" của Chế độ Lockdown.
+Nhấn Enter để tạo mới
+Cập nhật có sẵn
+Thông tin gỡ lỗi
+Tìm hiểu thêm
+Không bây giờ
+Thêm
+Quản lý
+Tab mới
+Ẩn thanh công cụ
+Tab này hiện đang bận, vui lòng thử lại sau
+Định dạng
+Đoạn văn
+Chèn
+Thêm liên kết
+Thêm liên kết bên ngoài
+Chèn lời gọi
+Chèn đường kẻ ngang
+Chèn khối mã
+Chèn khối toán học
+Chèn bảng
+Chú thích
+In đậm
+Mã
+Bình luận
+Tô sáng
+In nghiêng
+Gạch ngang
+Toán học
+Danh sách đánh dấu
+Danh sách công việc
+Danh sách đánh số
+Tiêu đề {{level}}
+Nội dung
+Xóa định dạng
+Trích dẫn
+Trống
+Không có tệp nào được mở
+Tạo tệp mới
+Đi tới tệp
+Xem tệp gần đây
+Đóng
+Đóng tất cả thẻ “{{id}}” ({{count}})
+Plugin không còn hoạt động
+Plugin tạo khung này ({{type}}) đã biến mất
+Ghi chú phát hành {{version}}
+Không có ghi chú phát hành cho {{version}}.
+Không thể tải ghi chú phát hành cho {{version}}.
+Phát hành vào {{date}}
+Có gì mới trong {{version}}
+Chỉnh sửa (Ctrl/Cmd+Bấm để chỉnh sửa trong khung mới)
+Xem hiện tại: Đọc
+Thanh công cụ
+Thanh bên trái
+Thanh bên phải
+Bấm để chỉnh sửa
+Bấm để đọc
+{{key}}+Bấm để mở vào tab mới
+Nhấn {{key}}+C để sao chép nguồn
+Tìm kiếm...
+Thay thế...
+Chỉnh sửa
+Xóa
+Xóa khỏi danh sách
+Đổi tên
+Xem trước
+Tùy chọn khác
+Đóng
+Đóng tất cả
+Đóng {{count}} thẻ
+Đóng {{count}} thẻ
+Đóng các tab khác
+Đóng các thẻ sau
+Ghim
+Bỏ ghim
+Bỏ liên kết tab
+Liên kết với tab...
+Chế độ nguồn
+Chế độ đọc
+Thêm thuộc tính tệp
+Xóa tệp
+Tạo tệp này
+Mở liên kết
+Mở trong tab mới
+Mở sang bên phải
+Sao chép URL
+Sao chép
+Cắt
+Dán
+Sao chép đường dẫn
+Sao chép hình ảnh
+dưới dạng URL Obsidian
+từ thư mục gốc của hệ thống
+từ thư mục kho
+Dán dưới dạng văn bản thuần
+Tra cứu “{{selection}}”
+Chọn tất cả
+Đổi tên tiêu đề này...
+Đổi tên Block ID này...
+Mở trong cửa sổ mới
+Di chuyển vào cửa sổ mới
+Mở trong trình duyệt
+Xếp các tab
+Không xếp các tab
+Mở xem liên kết
+Bấm để mở rộng
+Bấm để thu gọn
+Bí danh
+Chưa được tạo, bấm để tạo
+Phiên bản
+Tạo khối lưu trữ cục bộ
+Mở thư mục như một khối lưu trữ
+Chọn một thư mục hiện có chứa các tệp Markdown.
+Tạo khối lưu trữ mới
+Tạo một khối lưu trữ Obsidian mới trong một thư mục.
+Kết nối với Obsidian Sync
+Thiết lập khối lưu trữ đồng bộ hóa với khối lưu trữ từ xa hiện có.
+Tên khối lưu trữ
+Chọn một tên cho khối lưu trữ tuyệt vời của bạn.
+Vị trí
+Chọn một nơi để đặt khối lưu trữ mới của bạn.
+Khối lưu trữ mới của bạn sẽ được đặt ở: 
+Hiển thị khối lưu trữ trong trình duyệt hệ thống
+Hiển thị khối lưu trữ trong Finder
+Đổi tên khối lưu trữ...
+Sao chép vault ID
+Đã có một khối lưu trữ với tên này.
+Không thể di chuyển khối lưu trữ vào một thư mục con của nó.
+Không thể đổi tên khối lưu trữ đang mở.
+Không thể đổi tên khối lưu trữ.
+Đổi tên khối lưu trữ thành công.
+Di chuyển khối lưu trữ...
+Chọn thư mục đích
+Đã có một khối lưu trữ ở đích.
+Không thể di chuyển khối lưu trữ đang mở.
+Không thể di chuyển khối lưu trữ.
+Di chuyển khối lưu trữ thành công.
+Xóa khỏi danh sách
+Bắt đầu nhanh
+Mở
+Duyệt
+Kết nối
+Tạo
+Quay lại
+Tên khối lưu trữ không thể để trống.
+Tên kho không thể kết thúc bằng dấu chấm.
+Vui lòng chọn một thư mục hợp lệ.
+Không thể tạo khối lưu trữ.
+Không thể tạo khối lưu trữ tại vị trí đã cho. Vui lòng kiểm tra lại vị trí và quyền hạn.
+Không thể mở.
+Không thể xóa khối lưu trữ đang mở.
+Nhận trợ giúp
+email
+Email của bạn...
+Mật khẩu
+Mật khẩu của bạn...
+Đăng nhập
+Thiết lập
+Tạo một khối lưu trữ đồng bộ trên thiết bị này.
+Đây là một khối lưu trữ từ xa do bạn sở hữu.
+Đây là một khối lưu trữ từ xa được chia sẻ với bạn.
+Suy nghĩ của bạn là của bạn.
+đã đồng bộ
+chưa đồng bộ
+Không có
+Được đề xuất
+Obsidian lưu ghi chú trên thiết bị của bạn, để bạn có thể truy cập nhanh chóng và riêng tư, ngay cả khi ngoại tuyến.\nDữ liệu của bạn được lưu trong một thư mục cục bộ an toàn gọi là **kho**.
+Tạo một kho
+Dùng kho hiện có của tôi
+Để truy cập ghi chú trên các thiết bị khác, bạn cần thiết lập đồng bộ.
+Vì Obsidian lưu ghi chú của bạn trên các thiết bị, bạn sẽ cần thiết lập đồng bộ nếu muốn truy cập ghi chú trên một điện thoại hoặc máy tính khác.\nBạn có thể thiết lập đồng bộ ngay bây giờ, hoặc chỉ cần bắt đầu viết và thiết lập sau.
+Thiết lập đồng bộ
+Skip for now
+Bỏ qua
+Choose a name for your vault.
+Tạo kho
+Thiết lập đồng bộ
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Mã hóa đồng bộ
+Mã hóa đầu cuối
+Cung cấp mức bảo mật mạnh nhất nhưng yêu cầu bạn lưu mật khẩu mã hóa một cách an toàn
+Mã hóa tiêu chuẩn
+Dùng một khóa do Obsidian quản lý để bảo vệ dữ liệu của bạn khi truyền tải và trên máy chủ của chúng tôi.
+Cài đặt đồng bộ
+Bạn có muốn loại trừ thư mục hoặc tệp nào khi đồng bộ với thiết bị này không?
+Bắt đầu đồng bộ
+Tạo tài khoản Obsidian hoặc đăng nhập
+đăng ký
+Đăng nhập
+Gửi lại email
+Bạn có các kho Sync hiện có
+Bạn muốn tạo kho mới hay kết nối với một kho đã được đồng bộ?
+Tạo kho Sync mới
+Chọn một kho hiện có
+Log Out
+Quên mật khẩu
+Tên kho
+Vị trí kho
+Bộ nhớ thiết bị
+Cho phép dữ liệu Obsidian được truy cập bởi các ứng dụng khác.
+Yêu cầu quyền bổ sung.
+Bộ nhớ ứng dụng
+Dữ liệu của bạn sẽ không thể được truy cập bởi các ứng dụng khác.
+Android sẽ xóa dữ liệu của bạn nếu bạn gỡ cài đặt Obsidian.
+Kho mới của bạn sẽ được đặt trong {{vaultLocation}}
+Khu vực
+Chọn khu vực máy chủ gần bạn để việc đồng bộ nhanh hơn.
+Khóa mã hóa
+Mật khẩu này không thể thay đổi về sau. Nếu bạn quên mật khẩu, mọi dữ liệu từ xa trên máy chủ Sync sẽ không thể truy cập vĩnh viễn.
+Kho của tôi
+Tự động
+Chọn một kho
+Tài khoản **{{email}}** của bạn có các kho hiện có mà bạn có thể kết nối.
+Đăng nhập vào tài khoản Obsidian của bạn
+Quên mật khẩu
+Đặt lại mật khẩu
+Chúng tôi đã gửi một email đến {{email}} để đặt lại mật khẩu của bạn.
+Chọn cách đồng bộ ghi chú của bạn
+Để dùng Obsidian trên các thiết bị của bạn, bạn sẽ cần đồng bộ dữ liệu.
+Mượt mà trên mọi thiết bị và hệ điều hành.
+Được bảo vệ bằng tiêu chuẩn mã hóa đầu cuối mạnh nhất.
+Yêu cầu một tài khoản Obsidian.
+Chỉ dành cho iOS và macOS.
+Không được mã hóa theo mặc định.
+Yêu cầu plugin hoặc công cụ bên thứ ba.
+Có thể không được mã hóa theo mặc định.
+Dùng Obsidian Sync
+Dùng iCloud
+Use Third-party sync
+Các phương thức đồng bộ khác
+Dùng các phương thức đồng bộ được hỗ trợ
+Kho của bạn nằm ở đâu?
+Khác
+Đồng bộ bên thứ ba
+Trên thiết bị này
+Kết nối với iCloud
+Kết nối với dịch vụ đồng bộ khác
+Kết nối với Obsidian Sync
+Chọn thư mục
+Các phương thức đồng bộ khác
+Obsidian chính thức hỗ trợ hai phương thức đồng bộ: **Obsidian Sync** và **iCloud**.\nTuy nhiên, vì Obsidian cho bạn quyền kiểm soát dữ liệu nên có những tùy chọn đồng bộ khác mà bạn có thể dùng.\nNhững tùy chọn này bao gồm plugin bên thứ ba và các công cụ khác, có thể yêu cầu thiết lập nâng cao hơn.\nĐể dùng một phương thức đồng bộ thay thế, hãy **tạo một kho** và làm theo hướng dẫn do plugin hoặc nhà cung cấp đồng bộ bên thứ ba cung cấp.
+Nhập email của bạn
+Email của bạn là bắt buộc để tạo một tài khoản Obsidian.
+Nhập tên và mật khẩu của bạn
+Kết nối với Obsidian Sync
+Bạn sẽ sớm nhận được một email đến **{{email}}** kèm hướng dẫn để kết nối với Obsidian Sync.
+Không phát hiện kho iCloud của bạn. Điều này có thể do một trong các lý do sau:
+Kho của bạn nằm trên một tài khoản iCloud khác với tài khoản mà bạn hiện đang đăng nhập trên thiết bị này.
+Kho của bạn không được lưu trong thư mục Obsidian cấp cao nhất của iCloud Drive.
+iCloud không được hỗ trợ
+Đồng bộ iCloud chỉ khả dụng trên các thiết bị Apple. Nếu kho của bạn hiện đang đồng bộ qua iCloud, hãy tìm hiểu cách chuyển kho của bạn sang một dịch vụ đồng bộ khác.
+Cho phép truy cập tệp
+Đang đăng nhập...
+Tên kho là bắt buộc
+Đã gửi email xác nhận mới.
+Gửi lại email thất bại.
+Vị trí kho phải là một thư mục.
+Chào mừng
+Đây là *khối lưu trữ* mới của bạn.\n\nGhi chú điều gì đó, [[tạo một liên kết]], hoặc thử [Trình nhập](https://help.obsidian.md/Plugins/Importer)!\n\nKhi bạn đã sẵn sàng, xóa ghi chú này và biến kho lưu trữ này thành của riêng bạn.
+Chèn liên kết vào đây
+Chèn các liên kết vào đây
+Di chuyển vào thư mục "{{folder}}"
+Đánh dấu sao cho tệp này
+Đánh dấu sao cho các tệp này
+Mở trong tab này
+Mở dưới dạng tab mới
+Phóng to
+Thu nhỏ
+Khôi phục xuống
+Đóng cửa sổ
+Quay lại
+Tiến lên
+Đang tải Obsidian...
+Đã xảy ra lỗi trong quá trình tải Obsidian.
+Tải lại ứng dụng
+Tải lại ứng dụng trong chế độ an toàn
+Mở một khối lưu trữ khác
+Đang tải các plugin...
+Plugin “{{plugin}}” đang mất nhiều thời gian để tải. 
+Đang tải khối lưu trữ...
+Không thể tải khối lưu trữ: 
+Đang tải bộ nhớ cache...
+Đang tải không gian làm việc...
+Nhập vào khối lưu trữ
+Thêm văn bản vào tệp:
+Chọn một tệp để chèn
+Chèn văn bản vào {{filename}}
+Chèn liên kết vào {{filename}}
+Hiển thị tổng quan thẻ
+Đang nhập...
+Nhập thành công
+Không thể nhập tệp {{filename}}
+Nhấn lại nút back để thoát.
+Phản hồi
+Bạn có đang thích Obsidian không? Hãy giúp chúng tôi bằng cách đánh giá.
+Đánh giá ứng dụng
+Bỏ qua
+Các tệp cấu hình đã được cập nhật từ iCloud, cần tải lại
+Tải lại
+Trang web trợ giúp chính thức
+Đọc tài liệu trợ giúp chính thức của Obsidian, có sẵn trong nhiều ngôn ngữ.
+Truy cập
+Trò chuyện qua Discord
+Discord là nơi tốt nhất để trò chuyện với các người dùng Obsidian có kinh nghiệm từ khắp nơi trên thế giới.
+Tham gia
+Diễn đàn chính thức
+Giúp đỡ lẫn nhau, đăng yêu cầu tính năng, báo cáo lỗi và có những cuộc thảo luận sâu sắc về quản lý kiến thức.
+Khối lưu trữ sandbox
+Chơi và thử nghiệm các tính năng khác nhau. Lưu ý rằng các thay đổi của bạn sẽ không được lưu lại.
+Lưu tệp hiện tại
+Tải xuống tệp đính kèm cho tệp hiện tại
+Chuyển tới liên kết dưới con trỏ
+Mở liên kết dưới con trỏ vào tab mới
+Mở liên kết dưới con trỏ sang bên phải
+Mở liên kết dưới con trỏ vào cửa sổ mới
+Chuyển tới nhóm tab phía trên
+Chuyển tới nhóm tab phía dưới
+Chuyển tới nhóm tab bên trái
+Chuyển tới nhóm tab bên phải
+Bật/tắt ghim
+Chia làm hai cửa sổ bên phải
+Chia làm hai cửa sổ bên dưới
+Bật/tắt các tab xếp chồng
+Bật/tắt độ dài dòng dễ đọc
+Bật/tắt số dòng
+Quay lại trang trước
+Chuyển tới trang sau
+Bật/tắt chế độ sáng/tối
+Thay đổi chủ đề...
+Đổi kho...
+Mở kho...
+Quản lý kho
+Tìm kiếm trong tệp hiện tại
+Tìm kiếm và thay thế trong tệp hiện tại
+Thêm thuộc tính tệp
+Tên (A đến Z)
+Tên (Z đến A)
+Thêm bí danh
+Xóa thuộc tính tệp
+Mở cài đặt
+Mở trợ giúp
+Bật/tắt chế độ chỉnh sửa/xem
+Bật/tắt chế độ xem trước/nguồn
+Xóa tệp hiện tại
+Tab mới
+Cửa sổ mới
+Hiển thị thùng rác
+Đóng tất cả tab
+Đóng tab hiện tại
+Đóng các tab khác trong nhóm tab
+Đóng tất cả các tab khác
+Đóng nhóm tab này
+Bật/tắt thanh bên trái
+Bật/tắt thanh công cụ
+Bật/tắt thanh bên phải
+Bật/tắt chế độ mặc định cho tab mới
+Thêm con trỏ phía trên
+Thêm con trỏ phía dưới
+Chuyển tới trình soạn thảo
+Bật/tắt thu gọn thuộc tính trong tệp hiện tại
+Bật/tắt gấp dòng ở dòng hiện tại
+Gấp tất cả tiêu đề và danh sách
+Mở rộng tất cả tiêu đề và danh sách
+Gấp nhiều hơn
+Gấp ít hơn
+Hoán đổi dòng lên trên
+Hoán đổi dòng xuống dưới
+Xóa tiêu đề
+Đặt làm tiêu đề {{level}}
+Bật/tắt chế độ in đậm cho lựa chọn
+Bật/tắt chế độ in nghiêng cho lựa chọn
+Bật/tắt chế độ tô sáng cho lựa chọn
+Bật/tắt chế độ bình luận cho lựa chọn
+Xóa định dạng
+Chèn liên kết
+Bật/tắt kiểm tra chính tả
+Xóa đoạn văn
+Bật/tắt trạng thái checklist
+Chuyển đổi loại đầu mục/checkbox
+Chèn lời gọi
+Chèn khối mã
+Chèn khối toán học
+Chèn đường kẻ ngang
+Chèn bảng
+Chèn chú thích
+Chỉnh sửa tiêu đề tệp
+Sao chép đường dẫn tệp
+Sao chép đường dẫn tệp hiện tại từ thư mục gốc của hệ thống
+Sao chép URL Obsidian
+Xuất ra PDF
+Tải lại ứng dụng mà không lưu
+Hoàn tác đóng tab
+Hiển thị menu ngữ cảnh dưới con trỏ
+Hiển thị thông tin gỡ lỗi
+Mở kho lưu trữ sandbox
+Bật/tắt cửa sổ luôn nằm trên cùng
+Phóng to
+Thu nhỏ
+Đặt lại phóng to/thu nhỏ
+Bật/tắt chế độ chỉnh sửa/xem trước
+Di chuyển khung hiện tại vào cửa sổ mới
+Mở khung hiện tại vào cửa sổ mới
+Đổi tên tệp hiện tại
+Chuyển đến tab trước
+Chuyển đến tab tiếp theo
+Chuyển đến tab cuối cùng
+Chuyển đến tab số {{n}}
+Hiển thị ghi chú phát hành
+Điều này sẽ ảnh hưởng đến {{links}} trong {{files}}.
+Đã cập nhật {{links}} trong {{files}}.
+Cập nhật liên kết
+Bạn có muốn cập nhật các liên kết nội bộ đến tệp này không?
+Luôn cập nhật
+Chỉ một lần
+Không cập nhật
+Bạn có chắc chắn muốn xóa "{{filename}}" không?
+Tệp sẽ được di chuyển vào thùng rác của hệ thống.
+Tệp sẽ được di chuyển vào thùng rác của Obsidian, nằm trong thư mục ẩn ".trash" trong kho lưu trữ của bạn.
+Tệp sẽ bị xóa vĩnh viễn.
+Thư mục này không trống.
+Nếu bạn tiếp tục, tất cả các tệp trong thư mục này sẽ bị xóa.
+Xóa thư mục
+Xóa
+Không hỏi lại
+Hiện tại có {{count}} liên kết trỏ đến tệp này.
+Hiện tại có {{count}} liên kết trỏ đến tệp này.
+Xóa tệp
+Tải xuống tệp đính kèm
+Không có tệp đính kèm bên ngoài trong ghi chú này.
+Đã tải xuống {{count}} tệp đính kèm.
+Đã tải xuống {{count}} tệp đính kèm.
+Đã cập nhật {{count}} tệp.
+Đã cập nhật {{count}} tệp.
+Đã hoàn nguyên các thay đổi cho {{count}} tệp.
+Đã hoàn nguyên các thay đổi cho {{count}} tệp.
+Không có kết nối internet
+Đang tải...
+Quản lý
+Xem
+Xác nhận
+Hủy bỏ
+Bỏ qua
+Tải xuống
+Hoàn tất
+Lưu
+Dừng
+Thay đổi
+Tiếp tục
+Chọn
+Thử lại
+Cập nhật
+Hoàn tác
+Đang chuẩn bị PDF...
+Đổi tên tệp
+Tên tệp
+Tên mới
+Lỗi
+Đã chọn
+Đổi tên tệp thành công.
+Không thể hợp nhất ghi chú: {{message}}
+Tệp hoặc thư mục “{{path}}” không tồn tại.
+Tiêu đề không được để trống
+ID khối không được để trống
+ID khối chỉ được chứa ký tự chữ và số hoặc dấu gạch ngang
+Đổi tên tiêu đề
+Đổi tên ID khối
+Xóa tệp đính kèm?
+Tệp đính kèm này không còn được dùng trong bất kỳ ghi chú nào. Bạn có muốn xóa nó không?
+{{count}} tệp đính kèm này không còn được dùng trong bất kỳ ghi chú nào. Bạn có muốn xóa chúng không?
+Cây tệp
+Bộ sưu tập
+Tạo Ghi Chú
+Ghi Chú Mới Bên Phải
+Thẻ mới
+Cửa Sổ Mới
+Mở Chuyển Đổi Nhanh...
+Mở Kho Lưu Trữ...
+Đóng Tab
+Đóng Cửa Sổ
+Tìm Kiếm
+Thay Thế
+Khung ghi chú
+Liên Kết Markdown
+Liên Kết
+Đặt Tiêu Đề {{level}}
+Không Có Tiêu Đề
+Trích Dẫn
+Xuất PDF
+Chèn tệp đính kèm...
+Khối mã
+Khối toán học
+Bảng
+Chú thích
+Tiêu đề nội tuyến
+Số dòng
+Danh Sách Đánh Dấu
+Danh Sách Đánh Số
+Danh Sách Công Việc
+In Đậm
+Mã
+Chú Thích
+Nghiêng
+Toán
+Tô Màu
+Gạch Ngang
+Chú Thích
+Thu gọn
+Thu Gọn Tất Cả
+Mở Rộng Tất Cả
+Thu Gọn Nhiều Hơn
+Thu Gọn Ít Hơn
+Chế Độ Nguồn
+Chế Độ Đọc
+Hiển Thị Thông Tin Gỡ Lỗi
+Mở Kho Lưu Trữ Sandbox
+Chuyển sang cửa sổ mới
+Điều Hướng Quay Lại
+Điều Hướng Tiến Lên
+Bật/Tắt Thanh Bên Trái
+Bật/Tắt Thanh Bên Phải
+Thanh công cụ
+Chia 2 Bên Phải
+Chia 2 Xuống Dưới
+Lịch Sử Cập Nhật
+Plugin
+Trình duyệt tệp
+Xem tất cả các tệp trong thư mục của bạn.
+Mở trình duyệt tệp
+Hiển thị trình duyệt tệp
+Tạo ghi chú mới
+Tạo thư mục mới
+Tạo ghi chú mới trong tab hiện tại
+Tạo ghi chú bên phải
+Tự động hiện tệp hiện tại
+Thu gọn tất cả
+Mở rộng tất cả
+Ghi chú mới
+Thư mục mới
+Thay đổi thứ tự sắp xếp
+Hiển thị tệp trong trình duyệt tệp
+Hiển thị tệp hoạt động trong trình duyệt tệp
+Tạo bản sao của tệp hiện tại
+Nhân bản tệp hiện tại
+Di chuyển tệp đến thư mục khác
+Thư mục mới với mục đã chọn ({{count}} mục)
+Thư mục mới với mục đã chọn ({{count}} mục)
+Di chuyển tệp đến...
+Di chuyển thư mục đến...
+Di chuyển {{count}} mục đến...
+Nhập tên thư mục
+Không tìm thấy thư mục nào.
+để điều hướng
+để di chuyển
+để tạo
+để hủy
+Sắp xếp theo tên tệp (A đến Z)
+Sắp xếp theo tên tệp (Z đến A)
+Sắp xếp theo thời gian chỉnh sửa (mới đến cũ)
+Sắp xếp theo thời gian chỉnh sửa (cũ đến mới)
+Thời gian tạo (cũ đến mới)
+Thời gian tạo (mới đến cũ)
+Ghi chú mới
+Thư mục mới
+Đổi tên
+Xóa
+Tạo bản sao
+Nhân bản
+Tên tệp không được chứa bất kỳ ký tự sau: 
+Liên kết sẽ không hoạt động với tên tệp chứa bất kỳ ký tự sau: 
+Đã có một tệp với cùng tên
+Tên tệp không được để trống.
+Tên tệp không được bắt đầu bằng dấu chấm.
+Đã chỉnh sửa lần cuối vào lúc {{time}}
+Đã tạo vào lúc {{time}}
+Chưa đặt tên
+Chưa đặt tên
+Tệp đính kèm sẽ được lưu vào "{{path}}" từ bây giờ trở đi.
+Tìm kiếm
+Tìm kiếm từ khóa trong tất cả các ghi chú.
+Tìm kiếm trong tất cả các tệp
+Thu gọn kết quả
+Khớp chữ hoa/thường
+Giải thích thuật ngữ tìm kiếm
+Hiển thị nhiều ngữ cảnh hơn
+{{count}} kết quả
+{{count}} kết quả
+Cài đặt tìm kiếm
+Nhập để bắt đầu tìm kiếm...
+Khớp văn bản: 
+Khớp biểu thức chính quy: 
+Chứa văn bản chính xác: 
+Lớn hơn: 
+Nhỏ hơn: 
+Là true
+Là false
+Trống
+Chứa thuộc tính:
+Khớp tất cả trong: 
+Khớp bất kỳ trong: 
+Ngoại trừ: 
+Phân biệt chữ hoa/thường
+Không phân biệt chữ hoa/thường
+Khớp đường dẫn tệp: 
+Khớp tên tệp: 
+Khớp nội dung tệp: 
+Khớp nhiệm vụ: 
+Khớp nhiệm vụ (chưa hoàn thành): 
+Khớp nhiệm vụ (đã hoàn thành): 
+Khớp dòng: 
+Khớp khối: 
+Khớp mục: 
+Khớp thẻ: 
+Không tìm thấy kết quả.
+... và thêm {{count}} kết quả.
+... và thêm {{count}} kết quả.
+Sao chép kết quả tìm kiếm
+Sao chép kết quả
+Kết quả đã được sao chép vào clipboard của bạn.
+Hiển thị đường dẫn
+Hiển thị đường dẫn đầy đủ của tệp thay vì chỉ tên tệp.
+Kiểu liên kết
+Tùy chọn chuyển mỗi kết quả tệp thành liên kết.
+Không
+Liên kết Wiki
+Liên kết Markdown
+Tiền tố danh sách
+Tùy chọn thêm tiền tố mục danh sách vào mỗi kết quả tệp.
+Không
+Gạch ngang (-)
+Dấu hoa thị (*
+Đánh số
+Xóa tìm kiếm
+Tùy chọn tìm kiếm
+Thuộc tính
+Thẻ
+Đọc thêm
+Lịch sử
+Xóa lịch sử tìm kiếm
+khớp đường dẫn tệp
+khớp tên tệp
+tìm kiếm các thẻ
+tìm kiếm từ khóa trên cùng một dòng
+tìm kiếm từ khóa trong tiêu đề cùng
+khớp thuộc tính
+Tìm kiếm cho "{{keyword}}"
+Tìm kiếm trong thư mục
+Bộ chuyển đổi nhanh
+Chuyển đến bất kỳ tệp nào mà không cần rời bàn phím. Nhấn Ctrl/Cmd+O để kích hoạt.
+Chuyển đổi
+Mở bộ chuyển đổi nhanh
+để điều hướng
+để mở
+để mở trong tab mới
+để mở bên phải
+để tạo
+để hủy
+để chọn
+Không tìm thấy ghi chú nào. Nhấn Enter để tạo ghi chú mới.
+Nhập tên tệp để chuyển đến hoặc tạo...
+Nhấn Enter để tạo
+Chưa được tạo, chọn để tạo
+Chỉ hiển thị tệp đã tồn tại
+Cho phép hiển thị các liên kết đến các tệp chưa được tạo.
+Hiển thị tệp đính kèm
+Hiển thị các tệp đính kèm như hình ảnh, video và PDF.
+Hiển thị tất cả các loại tệp
+Hiển thị tất cả các tệp bao gồm cả những tệp mà Obsidian không thể mở. Tệp sẽ được mở bằng ứng dụng mặc định cho loại tệp đó.
+Xem biểu đồ
+Xem tổng quan biểu đồ về các ghi chú liên kết với nhau.
+Mở xem biểu đồ
+Mở biểu đồ cục bộ
+Sao chép ảnh chụp màn hình
+Biểu đồ của {{displayText}}
+Bộ lọc
+Tìm kiếm tệp...
+Độ sâu
+Hiển thị các nút cách này một số liên kết
+Liên kết hàng xóm
+Hiển thị liên kết giữa các hàng xóm.
+Liên kết đi ra
+Hiển thị liên kết đến các tệp khác
+Liên kết đến
+Hiển thị liên kết từ các tệp khác
+Thẻ
+Thẻ liên kết với các tệp chứa chúng
+Tệp đính kèm
+Hiển thị các tệp đính kèm được bao gồm bởi tệp
+Chỉ hiển thị tệp hiện có
+Khi được chọn, các liên kết đến các tệp không tồn tại sẽ không được hiển thị
+Tệp mô côi
+Hiển thị các tệp không liên kết với bất kỳ tệp nào khác
+Hiển thị
+Mũi tên
+Hiển thị mũi tên khi phóng to
+Ngưỡng mờ văn bản
+Kích thước nút
+Độ dày liên kết
+Lực
+Lực tâm
+Lực liên kết
+Khoảng cách liên kết
+Lực đẩy
+Mở cài đặt biểu đồ
+Ảnh chụp màn hình đã được sao chép vào clipboard.
+Nhóm
+Nhập truy vấn...
+Xóa nhóm
+Nhóm mới
+Nhấp để thay đổi màu sắc\nKéo để sắp xếp lại các nhóm
+Bắt đầu hoạt ảnh dòng thời gian của biểu đồ
+Bắt đầu hoạt ảnh dòng thời gian
+Hoạt ảnh
+Liên kết đến
+Hiển thị số lượng liên kết đến trong thanh trạng thái.
+Mở liên kết đến
+Hiển thị thanh liên kết đến
+Mở liên kết đến cho tệp hiện tại
+Bật/tắt liên kết đến trong tài liệu
+Liên kết đến trong tài liệu
+Lưu ý đã liên kết
+Không tìm thấy liên kết đến nào.
+Lưu ý không liên kết
+Hiển thị bộ lọc tìm kiếm
+Liên kết
+Liên kết đến của {{displayText}}
+Không tìm thấy lưu ý không liên kết nào.
+
+Liên kết đến trong tài liệu
+Mặc định hiển thị liên kết đến trong tài liệu khi mở các ô mới.
+Liên kết đi ra
+Hiển thị các liên kết đi ra và phát hiện các lưu ý không liên kết của các ghi chú khác trong ghi chú hiện tại.
+Mở liên kết đi ra
+Hiển thị thanh liên kết đi ra
+Mở liên kết đi ra cho tệp hiện tại
+Liên kết đi ra từ {{displayText}}
+Liên kết
+Không tìm thấy liên kết nào.
+Lưu ý không liên kết
+Liên kết tệp này
+Chưa được tạo
+Cửa sổ thẻ
+Thẻ
+Hiển thị tất cả các thẻ của bạn cùng với số lần xuất hiện của chúng.
+Hiển thị cửa sổ thẻ
+Không tìm thấy thẻ nào.
+Tên thẻ (A đến Z)
+Tên thẻ (Z đến A)
+Tần suất (cao đến thấp)
+Tần suất (thấp đến cao)
+Hiển thị thẻ lồng nhau
+Thu gọn tất cả
+Mở rộng tất cả
+Chế độ xem chú thích
+Chú thích
+Hiển thị danh sách chú thích từ ghi chú hiện tại.
+Hiển thị chú thích
+Không tìm thấy chú thích nào.
+Xem thuộc tính
+Hiển thị metadata cho các tệp của bạn.
+Tất cả thuộc tính
+Thuộc tính tệp
+Thuộc tính tệp cho {{displayText}}
+Hiển thị tất cả thuộc tính
+Hiển thị thuộc tính tệp
+Xóa thuộc tính
+Xóa các thuộc tính
+Tự động
+Tự động ({{type}})
+Không tìm thấy thuộc tính nào.
+Thuộc tính không hợp lệ.
+Tên thuộc tính (A đến Z)
+Tên thuộc tính (Z đến A)
+Tần suất (cao đến thấp)
+Tần suất (thấp đến cao)
+Hợp nhất thuộc tính “{{oldKey}}” với “{{newKey}}”?
+Trong trường hợp có xung đột, các giá trị sẽ được hợp nhất hoặc giá trị từ “{{oldKey}}” sẽ được sử dụng.
+Thu gọn tất cả
+Mở rộng tất cả
+Mở thuộc tính tệp
+Mở ghi chú hàng ngày
+Xem trước trang
+Xem trước ghi chú khi di chuột qua liên kết nội bộ. Nhấn Ctrl/Cmd + di chuột trong chế độ chỉnh sửa.
+Không tìm thấy “{{linktext}}”.
+"{{linktext}}" chưa được tạo. Nhấp để tạo.
+Không tìm thấy chú thích {{id}}. Nhấp để tạo.
+Trình chỉnh sửa
+Xem trước
+Tìm kiếm, Liên kết đến và Liên kết đi ra
+Tiêu đề thẻ
+Yêu cầu {{key}} để kích hoạt xem trước trang khi di chuột qua
+Đánh dấu
+Đánh dấu tệp và tìm kiếm được sử dụng thường xuyên.
+Hiển thị đánh dấu
+Thu gọn tất cả
+Đánh dấu tab hoạt động...
+Nhóm đánh dấu mới
+Đánh dấu...
+Thêm dấu trang
+Chỉnh sửa đánh dấu
+Đánh dấu khối dưới con trỏ...
+Đánh dấu tiêu đề dưới con trỏ...
+Đánh dấu tìm kiếm hiện tại...
+Xóa đánh dấu cho tệp hiện tại
+Đánh dấu {{count}} tab...
+Đánh dấu {{count}} tab...
+Đánh dấu tất cả các tab...
+Đánh dấu biểu đồ này...
+Dấu trang
+Đã đánh dấu trang
+{{count}} đánh dấu
+{{count}} đánh dấu
+Không tìm thấy đánh dấu nào
+Không thể tải dấu trang.
+Tệp dữ liệu đã bị hỏng.
+Nhóm không có tiêu đề
+Biểu đồ chưa đặt tên
+Chỉnh sửa...
+Xóa
+Đổi tên
+Đánh dấu trang khối này...
+Đánh dấu tiêu đề này...
+Không có truy vấn tìm kiếm để đánh dấu.
+Đường dẫn
+Truy vấn
+Tiêu đề
+Nhóm đánh dấu
+Đánh dấu
+CSS tùy chỉnh
+Đọc và áp dụng “obsidian.css” trong thư mục kho.
+Chủ đề cộng đồng
+Đang lấy dữ liệu chủ đề cộng đồng...
+Bộ lọc...
+Chỉ chủ đề tối
+Chỉ chủ đề sáng
+Sử dụng
+Ngừng sử dụng chủ đề này
+Cài đặt và sử dụng
+Cập nhật
+Chủ đề này không cung cấp tệp README.
+Xóa chủ đề
+Ghé thăm trên GitHub
+Không thể tải dữ liệu chủ đề cộng đồng, vui lòng kiểm tra mạng của bạn.
+Bạn đang sử dụng chủ đề {{title}} làm CSS của bạn.
+Chủ đề {{title}} đã bị xóa.
+Chủ đề {{title}} đã được cập nhật.
+Đã cài đặt
+Kế thừa
+Cập nhật tất cả
+Không thể tải dữ liệu chủ đề cộng đồng.
+Không tìm thấy cập nhật chủ đề.
+Tìm thấy {{count}} chủ đề để cập nhật.
+Tìm thấy {{count}} chủ đề để cập nhật.
+Không thể cài đặt chủ đề "{{name}}".
+Đã cài đặt thành công chủ đề "{{name}}".
+Đang cài đặt chủ đề "{{name}}"...
+Hiển thị {{themeCount}}:
+Có cập nhật
+Khay lệnh
+Gõ một lệnh để kích hoạt nó. Không cần sử dụng giao diện người dùng hoặc nhớ phím tắt.
+Mở khay lệnh
+để di chuyển
+để sử dụng
+để hủy
+Không tìm thấy lệnh.
+Nhập lệnh...
+Lệnh được ghim
+Bộ chuyển đổi định dạng Markdown
+Chuyển đổi định dạng Markdown từ các ứng dụng khác sang định dạng Obsidian.
+Mở trình chuyển đổi Markdown
+Sửa lỗi thẻ Roam Research
+Chuyển "#tag" và "#[[tag]]" thành "[[tag]]".
+Sửa lỗi tô sáng Roam Research
+Chuyển "^^highlight^^" thành "==highlight==".
+Chuyển đổi ToDo Roam Research
+Chuyển "{{[[TODO]]}}" thành "[ ]".
+Sửa lỗi tô sáng Bear
+Chuyển "::highlight::" thành "==highlight==".
+Sửa lỗi liên kết Zettelkasten
+Sửa liên kết "[[UID]]" thành "[[UID File Name]]" đầy đủ.
+Sửa lỗi liên kết Zettelkasten
+Sửa liên kết "[[UID]]" và làm đẹp chúng "[[UID File Name|File Name]]".
+Di chuyển siêu dữ liệu đầu tệp
+Di chuyển thẻ, bí danh và cssclasses trong frontmatter sang định dạng nghiêm ngặt mà Obsidian v1.9+ yêu cầu
+Cảnh báo: trình chuyển đổi sẽ chuyển đổi tất cả các tệp trong hòm chứa của bạn, không chỉ tệp hiện tại.
+Các tệp của bạn sẽ bị ghi đè. Sao lưu tất cả các tệp của bạn trước khi thực hiện việc chuyển đổi.
+Bắt đầu Chuyển đổi
+Dừng
+Quay lại
+Xong
+Đang xử lý...
+Đang hủy...
+Hoàn tất!
+Tệp đã xử lý
+Tệp đã sửa đổi
+Tổng số sửa đổi
+Thất bại
+Ghi chú hàng ngày
+Mở ghi chú hàng ngày hôm nay hoặc tạo một ghi chú mới nếu không có.
+Hôm nay
+Mở ghi chú hôm nay
+Mở ghi chú hàng ngày trước đó
+Mở ghi chú hàng ngày kế tiếp
+Chèn văn bản vào ghi chú hàng ngày
+Chèn liên kết vào ghi chú hàng ngày
+Không thể tạo ghi chú hàng ngày. "{{format}}" không phải là định dạng hợp lệ.
+Không thể tạo ghi chú hàng ngày. Thư mục "{{folderOption}}" không tìm thấy.
+Không thể tạo ghi chú hàng ngày. Tệp mẫu "{{template}}" không tìm thấy.
+Không có ghi chú hàng ngày trước đó.
+Không có ghi chú hàng ngày sau đó.
+Định dạng ngày
+Chọn cách đặt tên ghi chú hằng ngày trong kho của bạn.
+Định dạng tùy chỉnh
+Tùy chỉnh
+Định dạng ngày không hợp lệ
+Không tìm thấy thư mục ghi chú hằng ngày.
+Để biết thêm cú pháp, hãy tham khảo: 
+tham chiếu định dạng
+Dưới đây là nhìn trước trực tiếp: 
+Vị trí tệp mới
+Đường dẫn thư mục để tạo ghi chú hàng ngày mới.
+Vị trí tệp mẫu
+Đường dẫn tệp để sử dụng làm mẫu.
+Tạo ghi chú duy nhất
+Tạo ghi chú với tiền tố thời gian duy nhất, cho các quy trình làm việc như zettelkasten hoặc slip box.
+Duy nhất
+Tạo ghi chú mới duy nhất
+Ghi chú mới không trùng
+Thêm liên kết nội bộ duy nhất
+Vị trí tập tin mới
+Đường dẫn thư mục để tạo ghi chú mới duy nhất.
+Không thể tạo ghi chú duy nhất. Thư mục "{{folderOption}}" không tìm thấy.
+Vị trí tập tin mẫu
+Đường dẫn tập tin để sử dụng làm mẫu.
+Ví dụ: folder1/note
+Định dạng tiền tố duy nhất
+Không thể tạo ghi chú duy nhất. Tập tin mẫu "{{template}}" không tìm thấy.
+Không thể tạo một ghi chú duy nhất với định dạng "{{format}}
+Ghi chú ngẫu nhiên
+Mở một ghi chú ngẫu nhiên. Hữu ích để xem xét và khám phá.
+Ngẫu nhiên
+Mở ghi chú ngẫu nhiên
+Đề cương
+Hiển thị đề cương của tập tin hiện tại hoặc ô liên kết.
+Mở đề cương
+Hiển thị bảng điều khiển đề cương
+Mở đề cương của tập tin hiện tại
+Đề cương của {{displayText}}
+Không tìm thấy tiêu đề.
+Tự động cuộn đến phần hiện tại
+Số từ
+Hiển thị số từ trong thanh trạng thái.
+Trang trình chiếu
+Trình diễn từ Markdown. Sử dụng "---" để tách các trang.
+Bắt đầu trình diễn
+Máy ghi âm
+Ghi âm âm thanh và lưu trữ dưới dạng tệp đính kèm.
+Bắt đầu ghi âm âm thanh
+Dừng ghi âm âm thanh
+Bắt đầu/Dừng ghi âm
+Từ chối truy cập microphone, vui lòng bật nó từ bảng ưa thích.
+Vui lòng cấp quyền truy cập microphone để bắt đầu ghi âm.
+Không có microphone được kết nối.
+Mở trong ứng dụng mặc định
+Thêm nút để mở tập tin hiện tại trong ứng dụng mặc định.
+Mở trong ứng dụng mặc định
+Chia sẻ
+Hiển thị trong thư mục
+Hiển thị trong Finder
+Mẫu
+Chèn nội dung mẫu từ thư mục chứa các tập tin mẫu.
+Chèn mẫu
+Chèn ngày hiện tại
+Chèn thời gian hiện tại
+Vị trí thư mục mẫu
+Các tập tin trong thư mục này sẽ được sử dụng như các mẫu.
+Định dạng ngày
+{{date}} trong tệp mẫu sẽ được thay thế bằng giá trị này.
+Bạn cũng có thể sử dụng {{date:YYYY-MM-DD}} để ghi đè định dạng một lần.
+Định dạng thời gian
+{{time}} trong tệp mẫu sẽ được thay thế bằng giá trị này.
+Bạn cũng có thể sử dụng {{time:HH:mm}} để ghi đè định dạng một lần.
+để di chuyển
+để chèn mẫu
+để hủy
+Không tìm thấy mẫu
+Không thể liệt kê mẫu. Thư mục mẫu không hợp lệ.
+Không thể liệt kê mẫu. Thư mục "{{folderOption}}" không tìm thấy.
+Không thể chèn mẫu. Các thuộc tính trong tệp mẫu không thể đọc được.
+Không thể liệt kê mẫu. Chưa cấu hình thư mục mẫu.
+Nhập tên mẫu...
+Cửa sổ trong suốt
+Bật hiệu ứng trong suốt để tăng cảm giác chiều sâu. Tốt nhất khi sử dụng chế độ tối. Không hỗ trợ trên Linux.
+Lệnh gạch chéo
+Cho phép kích hoạt các lệnh gạch chéo trong trình soạn thảo bằng cách gõ dấu gạch chéo.
+Trạng thái trình soạn thảo
+Thêm một mục thanh trạng thái để hiển thị và thay đổi chế độ trình soạn thảo hiện tại.
+Đọc
+Chế độ nguồn
+Xem trước trực tiếp
+Xuất bản
+Xuất bản ghi chú của bạn thông qua Obsidian Publish.
+Xuất bản các thay đổi...
+Xuất bản tệp hiện tại
+Bạn cần truy cập internet để xuất bản các thay đổi.
+Obsidian Publish là một dịch vụ trả phí bổ sung cho phép bạn xuất bản ghi chú của mình trực tuyến trực tiếp từ Obsidian.
+Để bắt đầu xuất bản, vui lòng đăng nhập hoặc tạo một tài khoản Obsidian mới.
+Bạn chưa có đăng ký Obsidian Publish.
+Mua
+Quản lý trang web
+Bạn chưa có bất kỳ trang web nào.
+Chọn
+Sửa ID trang web
+Xóa trang web
+Bạn có chắc muốn xóa trang web này?
+Hành động này sẽ xóa trang web của bạn ngay lập tức và không thể hoàn tác.
+Xác nhận xóa trang web "{{site}}"
+ID trang web
+Trang web của bạn sẽ có địa chỉ https://publish.obsidian.md/{site id}. Bạn có thể thay đổi sau này. Chỉ cho phép viết thường, số và dấu gạch ngang.
+Chọn một ID trang web
+Tạo mới
+ID trang web chỉ có thể chứa chữ thường, số và dấu gạch ngang.
+ID trang web này đã được sử dụng, hãy thử một ID khác.
+Đã xảy ra sự cố khi tạo trang web của bạn.
+Cài đặt trang web
+Chung
+Các thành phần
+Giao diện
+Trải nghiệm đọc
+Các cài đặt khác của trang web
+Tên trang web
+Tên của trang web đã xuất bản. Nó sẽ hiển thị trong tiêu đề trang của trang web của bạn.
+Tên trang web của bạn
+Tập tin trang chủ
+Trang đầu tiên người dùng thấy khi truy cập trang web đã xuất bản của bạn
+Chọn một tập tin đã xuất bản
+
+Chọn một tập tin hình ảnh làm logo của trang web.
+Bất kỳ hình ảnh nào đã tải lên trong thư mục của bạn...
+Hợp tác trang web
+Quản lý người đóng góp cho trang web này.
+Tùy chỉnh điều hướng
+Ghi đè thứ tự các mục điều hướng và ẩn trang hoặc thư mục để không hiển thị.
+Thứ tự hiển thị các mục điều hướng
+Ẩn trang hoặc thư mục trong điều hướng
+Nhấp chuột phải và chọn "Ẩn" để ngăn các trang cụ thể không hiển thị trong điều hướng trang web. Các trang vẫn có thể truy cập qua liên kết hoặc URL trực tiếp.
+Hiển thị các mục đã ẩn
+Quản lý
+Điều hướng
+Kéo và thả để tùy chỉnh thứ tự các mục điều hướng xuất hiện trên trang Publish của bạn.
+Ẩn trong điều hướng
+Quản lý
+Chủ đề
+Chọn giao diện màu sắc mặc định cho trang web của bạn.
+Tùy chỉnh theo hệ thống
+Chuyển đổi ánh sáng/ tối
+Cho phép người truy cập tự chuyển đổi giữa chế độ ánh sáng và tối.
+Hiển thị điều hướng
+Hiển thị danh sách tất cả các trang đã xuất bản ở phía bên trái trang web của bạn.
+Hiển thị thanh tìm kiếm
+Hiển thị thanh tìm kiếm phía trên điều hướng, cho phép người truy cập tìm kiếm trang và tiêu đề trên trang web của bạn.
+Hiển thị chế độ xem biểu đồ
+Hiển thị một biểu đồ nhỏ trên mỗi trang.
+Hiển thị mục lục
+Hiển thị mục lục các tiêu đề trên mỗi trang.
+Hiển thị các liên kết trả về
+Hiển thị mục liên kết trả về ở cuối mỗi trang.
+Sử dụng chế độ cửa sổ trượt
+Mở các trang trong các ô mới bên phải. Cho phép cuộn qua các ô theo chiều ngang.
+Hiển thị xem trước khi di chuột
+Hiển thị xem trước trang khi di chuột qua liên kết.
+Ẩn tiêu đề trang
+Ẩn tiêu đề trang. Hữu ích khi bạn có tiêu đề riêng tại đầu mỗi trang.
+Độ dài dòng dễ đọc
+Giới hạn độ dài dòng tối đa. Hiển thị ít nội dung hơn trên màn hình nhưng làm cho các đoạn văn dài hơn dễ đọc hơn.
+Mật khẩu trang web
+Hạn chế truy cập vào trang web của bạn bằng mật khẩu.
+Mã theo dõi Google Analytics
+Cấu hình Google Analytics cho trang web của bạn. Chỉ khả dụng cho người truy cập từ URL tên miền tùy chỉnh của bạn. Vui lòng kiểm tra trước với luật pháp và quy định địa phương.
+Quản lý
+Lưu cài đặt trang web
+Cập nhật tùy chọn cho trang web của bạn.
+Quay lại
+Xuất bản đến
+Chuyển đổi trang web
+Thêm liên kết
+Thêm tất cả các tập tin đã được liên kết bởi các mục hiện tại
+{{count}} tập tin đã được liên kết đã được thêm.
+{{count}} tập tin đã được liên kết đã được thêm.
+Thay đổi cài đặt trang web
+Không phát hiện thay đổi nào.
+Thay đổi
+Không thay đổi (chọn để xóa)
+ được chọn
+Chọn tất cả
+Các mục điều hướng
+Bỏ chọn tất cả
+Mới
+Xuất bản
+Bạn không có quyền xuất bản đến trang web hiện tại.
+Vui lòng chọn ít nhất một tập tin.
+Tải lên các thay đổi
+Hoàn thành
+Dừng
+Đang tải lên
+Sẵn sàng xuất bản
+Sẵn sàng xóa
+Đã xuất bản
+Đã xóa
+Lỗi
+Đã hủy
+Thay đổi
+Cần mất vài phút để các thay đổi được hiển thị trên trang web của bạn. Nếu bạn không thấy những thay đổi mới nhất, hãy thử xóa bộ nhớ cache trong trình duyệt của bạn.
+Bạn có thể truy cập trang web của mình tại đây: 
+Đã xảy ra sự cố. Vui lòng kiểm tra bảng điều khiển nhà phát triển để biết thông tin chi tiết.
+Đã xảy ra lỗi mạng. 
+Quản lý mật khẩu
+Thêm mật khẩu
+Mật khẩu mới
+Trang web của bạn hiện không có bất kỳ mật khẩu nào. Bất kỳ ai cũng có thể truy cập nó.
+Trang web của bạn được bảo vệ bằng mật khẩu. Nếu bạn có nhiều mật khẩu, người truy cập có thể truy cập trang web của bạn bằng cách nhập bất kỳ mật khẩu nào.
+Mật khẩu
+Một bản hash của mật khẩu của bạn sẽ được lưu trữ an toàn. Một khi đã đặt mật khẩu, nó không thể được hiển thị dưới dạng văn bản thuần.
+Mật khẩu của bạn
+Biệt danh (tùy chọn)
+Đặt một biệt danh để nhắc nhở mình về mục đích sử dụng hoặc người dùng của mật khẩu.
+Thêm mật khẩu này
+Mật khẩu chưa có tiêu đề
+Đã tạo {{time}}
+Đã thêm mật khẩu mới.
+Tên miền tùy chỉnh
+Sử dụng tên miền của riêng bạn thay vì URL https://publish.obsidian.md/{site id}.
+Cấm chỉ số hệ thống tìm kiếm
+Ngăn các hệ thống tìm kiếm chỉ số trang web của bạn.
+Cấu hình
+Cấu hình tên miền tùy chỉnh
+URL tùy chỉnh
+URL mà trang web của bạn sẽ được đặt tại.
+Chuyển hướng đến tên miền tùy chỉnh của bạn
+Chuyển hướng người truy cập trên publish.obsidian.md/id đến tên miền tùy chỉnh của bạn.
+Cập nhật cài đặt tên miền
+Vui lòng tham khảo {{link}} trên trang trợ giúp của chúng tôi để biết thêm thông tin.
+hướng dẫn cài đặt tên miền tùy chỉnh
+Bạn đã sử dụng {{site}} trong số {{limit}}.
+Mua thêm trang web
+Bạn chưa mua bất kỳ trang web nào.
+Nhận trang web
+Quản lý chia sẻ cho "{{name}}"
+Hiện tại, trang web này đang được chia sẻ với các người dùng sau đây.
+Hiện tại, trang web này không được chia sẻ với bất kỳ ai.
+Đang chờ
+Xóa người dùng
+Mời người dùng
+Nhập địa chỉ email của họ...
+Vui lòng nhập một địa chỉ email hợp lệ để mời một người nào đó.
+Vui lòng kích hoạt plugin Publish core trong Cài đặt -> Plugin cốt lõi để xem trang web.
+Trang web của bạn
+Trang web đã chia sẻ với bạn
+Ngừng cộng tác trên trang web này
+Xác nhận ngừng cộng tác trang web
+Hành động này sẽ xóa trang web này khỏi danh sách các trang web được chia sẻ với bạn. Hành động này không thể hoàn tác.
+Vui lòng liên hệ với chủ sở hữu của trang web nếu bạn muốn cộng tác trên trang web này một lần nữa.
+Rời đi
+So sánh với phiên bản trực tiếp
+Sử dụng phiên bản trực tiếp
+Xác nhận ghi đè phiên bản cục bộ
+Bạn có chắc chắn muốn ghi đè phiên bản cục bộ?
+Phiên bản trực tuyến sẽ được sử dụng và phiên bản cục bộ của bạn sẽ bị loại bỏ. Vui lòng sao lưu nếu cần thiết.
+Tiếp tục
+Đã sử dụng phiên bản trực tiếp thành công để ghi đè phiên bản cục bộ của bạn.
+Mở trên trang trực tiếp
+Mở tập tin
+Quản lý bộ lọc xuất bản
+Thư mục đã bao gồm
+Các tập tin dưới các thư mục này sẽ tự động được chọn khi bạn xem xét các thay đổi để xuất bản.
+ Các thư mục sau đây hiện đang được bao gồm:
+Thư mục đã loại trừ
+Các tập tin dưới các thư mục này sẽ không xuất hiện khi bạn xem xét các thay đổi để xuất bản. Thiết lập này ưu tiên hơn các thư mục đã bao gồm ở trên.
+Obsidian Publish hiện đang bao gồm {{folders}}.
+Obsidian Publish hiện đang loại trừ {{folders}}.
+Quản lý các thư mục đã bao gồm
+Quản lý các thư mục đã loại trừ
+Bao gồm một thư mục
+Bạn có thể bao gồm cả các thư mục hiện có và các thư mục chưa được tạo.
+Liên hệ với bộ phận hỗ trợ
+Xem trước điều hướng
+Khung làm việc
+Lưu và tải cấu trúc khung làm việc.
+Tải cấu trúc khung làm việc
+Quản lý cấu trúc khung làm việc
+Lưu bố cục
+Lưu và tải một cấu trúc khung làm việc khác
+Lưu cấu trúc khung làm việc hiện tại với tên...
+Lưu
+Tải
+Xóa cấu trúc khung làm việc
+Vui lòng nhập tên cho cấu trúc khung làm việc mới.
+Lưu cấu trúc khung làm việc thành công.
+Không tìm thấy cấu trúc khung làm việc đã lưu.
+Đã sửa đổi {{time}}
+Nhập tên cấu trúc khung làm việc để tìm...
+Đồng bộ hóa
+Đồng bộ hóa các tập tin của bạn thông qua Obsidian Sync.
+Xem lịch sử phiên bản
+Thiết lập Sync
+Mở lịch sử phiên bản
+Hiển thị lịch sử Sync
+Mở nhật ký hoạt động
+Tải thêm
+Hiển thị khác biệt
+Sao chép vào clipboard
+Khôi phục phiên bản này
+Phiên bản này đã là phiên bản mới nhất.
+Khôi phục thành công phiên bản từ {{time}}
+Tập tin này đã bị xóa
+Đã xóa qua {{ device }}
+This file was renamed from "{{filepath}}"
+Đã đổi tên từ “{{from}}” thành “{{to}}”
+Đã di chuyển từ “{{from}}”
+Đã di chuyển từ “{{from}}” đến “{{to}}”
+1 revision
+{{revisions}} revisions
+qua {{device}}
+Không có lịch sử Sync cho tệp này.
+Trống
+Không thể truy xuất lịch sử phiên bản
+Tập tin cài đặt
+Tập tin đã xóa
+Lịch sử phiên bản
+Nhấp vào một tập tin đã xóa để xem lịch sử của nó.
+Tạo hòm lưu trữ từ xa
+Vui lòng nhập mật khẩu.
+Tên hòm lưu trữ không thể để trống.
+Tạo thành công hòm lưu trữ từ xa "{{name}}".
+Hòm lưu trữ từ xa đồng bộ an toàn kho lưu trữ của bạn giữa các thiết bị.
+Tên hòm lưu trữ
+Giúp bạn nhớ đây là hòm lưu trữ dùng cho mục đích gì.
+Khu vực
+Tự động
+Chọn khu vực máy chủ gần bạn nhất để lưu kho từ xa. Không thể thay đổi về sau.
+Hòm lưu trữ tuyệt vời của tôi
+Mã hóa
+Mã hóa đầu cuối cung cấp mức bảo mật mạnh nhất nhưng yêu cầu bạn lưu trữ an toàn mật khẩu mã hóa. Mã hóa tiêu chuẩn sử dụng một khóa do Obsidian quản lý để bảo vệ dữ liệu của bạn khi truyền tải và trên máy chủ của chúng tôi.
+Không thể thay đổi tùy chọn này về sau.
+Mã hóa đầu cuối
+Mã hóa tiêu chuẩn
+Mật khẩu mã hóa
+Mật khẩu này không thể thay đổi sau này.
+Nếu bạn quên mật khẩu này, bất kỳ dữ liệu từ xa nào sẽ không thể sử dụng mãi mãi.
+Điều này không ảnh hưởng đến dữ liệu cục bộ của bạn.
+Kho từ xa “{{name}}” hiện đang được mã hóa. Nhập mật khẩu của bạn để mở khóa.
+Mật khẩu của bạn
+Mở khóa kho từ xa của bạn
+Mở khóa hòm lưu trữ
+Các hòm lưu trữ từ xa của bạn
+Đã tạo vào {{time}}
+Xóa
+Đổi tên
+Rename remote vault "{{name}}"
+Nhập tên mới cho kho từ xa này.
+Quản lý chia sẻ
+Xác nhận xóa hòm lưu trữ
+Bạn có chắc chắn muốn xóa hòm lưu trữ từ xa này không?
+Tất cả dữ liệu trên máy chủ của chúng tôi, bao gồm lịch sử phiên bản, sẽ bị xóa. Các tập tin cục bộ của bạn sẽ vẫn không bị ảnh hưởng.
+Hành động này là vĩnh viễn và không thể hoàn tác.
+{{name}} đã bị xóa.
+Obsidian Sync: Kho từ xa đã kết nối không còn tồn tại.
+Kết nối
+Ngắt kết nối
+
+Bạn chưa có bất kỳ hòm lưu trữ từ xa nào.
+Bạn không có gói đăng ký Obsidian Sync đang hoạt động.
+Vui lòng truy cập
+Không thể xem trước các tệp {{type}}.
+Tạo hòm lưu trữ mới
+Nhật ký đồng bộ hóa
+Tất cả
+Lỗi
+Đã bỏ qua
+Xung đột hợp nhất
+Sao chép nhật ký đồng bộ hóa
+Sao chép nhật ký đồng bộ hóa thành công.
+Thử lại
+Mua
+Phát hiện dịch vụ đồng bộ tập tin xung đột
+Cảnh báo: Kho lưu trữ của bạn có vẻ đang sử dụng {{service}} như một dịch vụ đồng bộ tập tin của bên thứ ba. Nếu bạn sử dụng Obsidian Sync với kho lưu trữ này, bạn có thể gặp xung đột, hỏng tập tin hoặc mất dữ liệu.
+Nếu bạn đang sử dụng iCloud Drive, thư mục Documents và Desktop của bạn có thể được đồng bộ hóa bởi iCloud. Điều này có thể gây xung đột với Obsidian Sync.
+Hòm lưu trữ từ xa
+Chọn
+Quản lý
+Đã kết nối với hòm lưu trữ từ xa "{{name}}".
+Hiện không kết nối với bất kỳ hòm lưu trữ từ xa nào.
+Trạng thái đồng bộ hóa
+Obsidian Sync đang tạm dừng.
+Obsidian Sync đang chạy.
+Tên thiết bị
+Tên này sẽ được hiển thị trong nhật ký đồng bộ hóa. Để trống để sử dụng tên mặc định.
+Tiếp tục
+Tạm dừng
+Các tập tin đã xóa
+Xem và khôi phục các tập tin đã xóa.
+Hoạt động đồng bộ hóa
+Xem hoạt động đồng bộ hóa gần đây để gỡ lỗi.
+Xem
+Khôi phục hàng loạt
+Khôi phục tệp
+Khôi phục {{count}} tệp
+Khôi phục {{count}} tệp
+Đang khôi phục...
+`Hoàn tất khôi phục: {{succeeded}} thành công và {{failed}} thất bại.`
+Vault size
+Bạn đang sử dụng {{size}} trên {{limit}}
+Không thể truy xuất dung lượng kho của bạn.
+Đang truy xuất dung lượng kho của bạn...
+Kích thước kho lưu trữ vượt quá giới hạn
+Dung lượng kho sắp chạm giới hạn
+Xem các tập tin lớn nhất
+Đây là các tập tin từ xa đang chiếm không gian nhiều nhất. Sau khi xóa các tệp đính kèm, hãy sử dụng nút xóa để giải phóng không gian trong hòm lưu trữ từ xa.
+Nâng cấp dung lượng lưu trữ
+Xóa vĩnh viễn
+Ẩn các thay đổi của tôi
+Xóa vĩnh viễn các tệp đính kèm đã xóa khỏi hòm lưu trữ từ xa để giải phóng không gian.
+Xóa vĩnh viễn hoàn tất.
+Ngăn thiết bị vào chế độ ngủ
+Ngăn thiết bị vào chế độ ngủ khi vẫn còn tệp tin đang được đồng bộ hóa.
+Đồng bộ hóa chọn lọc
+Thư mục bị loại trừ
+Ngăn cản một số thư mục không được đồng bộ hóa.
+ Các thư mục đang bị loại trừ:
+Quản lý
+Đồng bộ hóa hình ảnh
+Đồng bộ hóa các tệp hình ảnh với các phần mở rộng sau: {{extensions}}.
+Đồng bộ hóa âm thanh
+Đồng bộ hóa các tệp âm thanh với các phần mở rộng sau: {{extensions}}.
+Đồng bộ hóa video
+Đồng bộ hóa các tệp video với các phần mở rộng sau: {{extensions}}.
+Đồng bộ hóa PDF
+Đồng bộ hóa các tệp PDF.
+Đồng bộ hóa tất cả các loại tệp khác
+Đồng bộ hóa các loại tệp không được hỗ trợ.
+Đồng bộ hóa cấu hình hòm lưu trữ
+Lịch sử phiên bản cài đặt
+Xem và khôi phục lịch sử phiên bản của các tệp cài đặt.
+Cài đặt chính
+Cho phép đồng bộ hóa cài đặt trình soạn thảo, cài đặt tệp và liên kết tùy chỉnh, v.v.
+Cài đặt giao diện
+Đồng bộ hóa cài đặt giao diện như chế độ tối, chủ đề đang hoạt động và mô đun được bật.
+Chủ đề và mô đun
+Đồng bộ hóa chủ đề và mô đun đã tải về. Việc có bật chúng phụ thuộc vào cài đặt trước đó.
+Phím tắt
+Đồng bộ hóa các phím tắt tùy chỉnh.
+Danh sách plugin lõi đang hoạt động
+Đồng bộ hóa plugin lõi nào đang được bật.
+Cài đặt plugin lõi
+Đồng bộ hóa cài đặt plugin lõi.
+Danh sách plugin cộng đồng đang hoạt động
+Đồng bộ hóa plugin cộng đồng nào đang được bật.
+Cài đặt plugin cộng đồng đã cài đặt
+Đồng bộ hóa plugin cộng đồng đã cài đặt (tệp .js, .css và manifest.json) và cài đặt của chúng.
+Sync vẫn đang tải, vui lòng làm mới trang này sau.
+Obsidian Sync là dịch vụ đồng bộ hóa của Obsidian với mã hóa đầu cuối và lịch sử phiên bản.
+Để bắt đầu đồng bộ hóa, vui lòng đăng nhập hoặc tạo tài khoản Obsidian mới.
+Tệp hiện tại
+Thay đổi Sync
+Hôm nay
+Hôm qua
+Tuần này
+Cũ hơn
+Lần Sync gần nhất
+Thêm {{count}}
+Đăng ký
+Đăng nhập
+Quản lý thư mục bị loại trừ
+{{folders}} hiện đang bị loại trừ khỏi việc đồng bộ hóa.
+Loại trừ một thư mục
+Bạn có thể loại trừ cả thư mục hiện có và thư mục chưa được tạo.
+Loại bỏ khỏi danh sách loại trừ
+Thiết lập kết nối
+Đang kết nối...
+Kết nối thất bại
+Không thể kết nối tới kho từ xa.
+Bạn hiện đã kết nối với "{{name}}".
+Bắt đầu đồng bộ hóa
+Xác nhận hợp nhất hòm lưu trữ
+Kho lưu trữ cục bộ của bạn đã chứa một số ghi chú.
+Nếu bạn kết nối với hòm lưu trữ từ xa "{{name}}", các ghi chú trong kho lưu trữ cục bộ của bạn sẽ được hợp nhất với ghi chú từ hòm lưu trữ từ xa của bạn. Trong trường hợp xung đột, phiên bản ghi chú mới nhất sẽ được bảo tồn.
+Vui lòng cập nhật tùy chọn này và khởi động lại ứng dụng trên tất cả các thiết bị mà bạn muốn tùy chọn này có hiệu lực.
+Hòm lưu trữ từ xa này hiện đang được chia sẻ với các người dùng sau đây.
+Hòm lưu trữ từ xa này hiện không được chia sẻ với bất kỳ ai.
+Hòm lưu trữ được chia sẻ với bạn
+Ngừng cộng tác trên hòm lưu trữ này
+Xác nhận ngừng cộng tác trên hòm lưu trữ
+Điều này sẽ loại bỏ hòm lưu trữ này khỏi danh sách hòm lưu trữ được chia sẻ với bạn. Hành động này không thể hoàn tác.
+Vui lòng liên hệ với chủ sở hữu hòm lưu trữ nếu bạn muốn cộng tác trên hòm lưu trữ này lại.
+Rời khỏi
+Không tải được các kho từ xa.
+Bạn cần một đăng ký Obsidian Sync để kết nối với hòm lưu trữ này.
+Liên hệ hỗ trợ
+Nếu bạn gặp bất kỳ vấn đề nào với Obsidian Sync, vui lòng liên hệ chúng tôi để chúng tôi có thể giúp bạn! Bạn có thể liên hệ với chúng tôi qua địa chỉ support@obsidian.md.
+Sao chép thông tin gỡ lỗi
+Liên hệ qua email
+Sync chưa được kết nối với kho từ xa.
+Obsidian Sync cho phép bạn tạo tối đa 5 hòm lưu trữ từ xa. Để tạo một hòm lưu trữ từ xa mới, vui lòng xóa một hòm lưu trữ hiện có.
+Nâng cấp kho
+Nâng cấp mã hóa kho
+Có phiên bản mã hóa mới dành cho các kho từ xa.
+Di chuyển kho từ xa
+Cấu hình kho từ xa
+Di chuyển
+Thao tác này sẽ xóa kho từ xa của bạn và tạo lại với mã hóa mới nhất. Các tệp cục bộ sẽ không bị ảnh hưởng, tuy nhiên lịch sử phiên bản của bạn sẽ bị mất.
+Xác nhận di chuyển kho
+Để nâng cấp mã hóa, toàn bộ dữ liệu trong kho sẽ được tải lên lại các máy chủ Obsidian Sync bằng phương thức mã hóa mới. Quy trình này sẽ xóa vĩnh viễn toàn bộ dữ liệu đã được mã hóa bằng mã hóa cũ, bao gồm cả lịch sử phiên bản của kho của bạn.
+Quan trọng: chúng tôi đặc biệt khuyến nghị tạo bản sao lưu kho của bạn trước khi tiếp tục để tránh mọi khả năng mất dữ liệu.
+Sau khi hoàn tất nâng cấp, bạn sẽ cần kết nối lại tất cả thiết bị của mình với kho từ xa đã được cập nhật.
+Di chuyển kho của bạn có thể mất một thời gian. Bạn cần giữ Obsidian hoạt động trên thiết bị này để tải lên lại toàn bộ ghi chú và tệp đính kèm. Tốt nhất là thực hiện trên thiết bị chính của bạn.
+Bạn có muốn tiếp tục không?
+Đang di chuyển kho.
+Đã hoàn tất di chuyển kho.
+Giải quyết xung đột
+Chọn cách giải quyết xung đột khi một ghi chú được chỉnh sửa độc lập trên nhiều thiết bị.
+Tự động hợp nhất
+Tạo tệp xung đột
+Khôi phục tập tin
+Cho phép bạn khôi phục các bản snapshot gần đây để phục hồi khỏi việc mất dữ liệu vô tình. Các snapshot chỉ được lưu trữ cho các tập tin Markdown.
+Mở các snapshot đã lưu
+Khoảng thời gian snapshot
+Khoảng thời gian tối thiểu (tính bằng phút) giữa hai snapshot.
+Thời gian lưu trữ lịch sử
+Thời gian (tính bằng ngày) lưu trữ các snapshot.
+Các snapshot
+Xem và khôi phục các snapshot đã lưu.
+Xem
+Xóa lịch sử
+Xóa tất cả các snapshot.
+Xóa
+Bạn có chắc chắn muốn xóa tất cả các snapshot không? Lưu ý chỉ các snapshot sẽ bị xóa. Tất cả các tập tin trong kho lưu trữ sẽ không bị ảnh hưởng.
+Các snapshot đã được xóa.
+Không tìm thấy snapshot.
+Chọn một tập tin...
+Vui lòng chọn một tập tin ở bên trái để xem các snapshot.
+Trình soạn thảo ghi chú
+Kết hợp, chia nhỏ và tái cấu trúc các ghi chú.
+Xác nhận khi kết hợp tập tin
+Hiển thị cảnh báo trước khi kết hợp hai tập tin.
+Văn bản sau khi trích xuất
+Hiển thị gì thay thế văn bản đã chọn sau khi trích xuất nó.
+Liên kết đến tập tin mới
+Nhúng tập tin mới
+Không có
+Vị trí tập tin mẫu
+Tập tin mẫu sử dụng khi kết hợp hoặc trích xuất. Biến có sẵn: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, ví dụ {{date:YYYY-MM-DD}}.
+Kết hợp tập tin hiện tại với tập tin khác...
+Kết hợp toàn bộ tập tin với...
+Không tìm thấy tập tin.
+để điều hướng
+để kết hợp
+để tạo mới
+để kết hợp ở đầu
+để hủy
+Chọn tập tin để kết hợp vào...
+Kết hợp tập tin
+Bạn có chắc chắn muốn kết hợp "{{file}}" vào "{{destination}}"? "{{file}}" sẽ bị xóa.
+Kết hợp
+Trích xuất lựa chọn hiện tại...
+Trích xuất tiêu đề này...
+để di chuyển xuống cuối
+để di chuyển lên đầu
+Không thể tìm tập tin mẫu: Không tìm thấy "{{template}}".
+Không tìm thấy tiêu đề
+Trình xem web
+Lịch sử web
+Mở các liên kết bên ngoài tới trang web bên trong Obsidian.
+Mở trình xem web
+Hiển thị lịch sử
+Bật/tắt chế độ đọc
+Sao chép URL
+Xóa khỏi lịch sử
+Xóa lịch sử
+Mở liên kết
+Mở liên kết trong thẻ mới
+Mở liên kết sang bên phải
+Mở liên kết trong cửa sổ mới
+Mở liên kết trong trình duyệt mặc định
+Mở liên kết trong trình xem web
+Sao chép địa chỉ liên kết
+Đánh dấu liên kết
+Tìm kiếm “{{query}}”
+Trích xuất phần chọn sang ghi chú mới
+Sao chép
+Cắt
+Dán
+Xóa
+Chọn tất cả
+Lưu vào kho
+Lưu hình ảnh vào kho
+Sao chép liên kết hình ảnh
+Quay lại
+Tiến
+Tải lại
+Đánh dấu trang
+Mở trong trình duyệt mặc định
+Đưa tiêu điểm vào thanh địa chỉ
+Tìm kiếm trên web
+Xóa dữ liệu
+Cookie
+Có thể khiến bạn bị đăng xuất khỏi các website.
+Dữ liệu đã lưu trong bộ nhớ đệm
+Lịch sử
+Tất cả dữ liệu trình xem web
+Xóa tất cả mục trên, cũng như local storage và các phiên đang hoạt động.
+Trình xem web mới
+Unable to load that site.
+Please make sure you have the correct address.
+Tìm kiếm trên web
+Dữ liệu trình xem web
+Xóa dữ liệu trình xem web
+Mở liên kết bên ngoài
+Mở liên kết trong Obsidian thay vì mặc định của hệ thống.
+Trang chủ
+Trang sẽ hiển thị khi mở trình xem web
+Thư mục trang đã lưu
+Các website được lưu dưới dạng Markdown sẽ được đặt ở đây.
+Công cụ tìm kiếm
+Công cụ tìm kiếm dùng khi tìm từ thanh địa chỉ.
+Công cụ tìm kiếm tùy chỉnh
+Dùng %s thay cho truy vấn.
+Tùy chỉnh
+Bật chặn quảng cáo
+Nếu bật, các danh sách bộ lọc bên dưới sẽ được áp dụng cho tất cả thẻ trình xem web.
+Quy tắc chặn quảng cáo
+Một URL danh sách chặn quảng cáo mỗi dòng. Được chia sẻ bởi tất cả các kho.
+Tần suất cập nhật chặn quảng cáo
+Số ngày giữa các lần cập nhật danh sách bộ lọc. 0 nghĩa là đã tắt. Được chia sẻ bởi tất cả các kho.
+Xóa dữ liệu trình xem web
+Unexected error extracting content.
+Không thể tìm thấy nội dung để trích xuất.
+Bảng
+Sắp xếp và kết nối các ghi chú trên một bảng vô tận.
+Thêm ghi chú từ kho lưu trữ
+Thêm phương tiện từ kho lưu trữ
+Thêm thẻ
+Thêm trang web
+Tạo nhóm
+Tạo một thẻ có kích thước cụ thể
+Chuyển đổi thành tập tin...
+Kéo để thêm ghi chú từ kho lưu trữ
+Kéo để thêm phương tiện từ kho lưu trữ
+Kéo để thêm thẻ
+Chỉnh sửa nhãn
+Xóa nhãn
+Tìm kiếm tập tin
+Đặt màu
+Căn chỉnh
+Căn chỉnh bên trái
+Căn chỉnh chính giữa
+Căn chỉnh bên phải
+Căn chỉnh bên trên
+Căn chỉnh giữa
+Căn chỉnh bên dưới
+Phân phối khoảng cách ngang
+Phân phối khoảng cách dọc
+Căn chỉnh đều ngang
+Căn chỉnh đều dọc
+Sắp xếp theo hàng
+Sắp xếp theo cột
+Sắp xếp theo lưới
+Xuất thành hình ảnh
+Nhảy đến nhóm
+Đặt nền
+Chỉnh sửa nền
+Thay thế nền
+Xóa nền
+Không tìm thấy hình ảnh.
+Không tìm thấy phương tiện.
+Xuất "{{title}}" thành hình ảnh PNG với các cài đặt dưới đây.
+Kích thước hình ảnh ước tính: {{dimensions}}
+Phân phối
+Căn chỉnh đều
+Sắp xếp
+Luôn luôn
+Khi di chuột
+Không bao giờ
+Không tìm thấy phần
+Thao tác bánh xe chuột mặc định
+Thao tác mặc định {{key}}
+Hiển thị menu
+Vị trí mặc định cho các tập tin bảng mới
+Nơi các tập tin bảng mới được đặt.
+Thư mục để tạo các tập tin bảng mới
+Các tập tin bảng mới được hiển thị dưới thư mục này.
+Hiển thị nhãn thẻ
+Gắn vào lưới
+Gắn các thẻ vào lưới nền khi di chuyển và thay đổi kích thước.
+Gắn vào các đối tượng
+Gắn các thẻ vào các đối tượng gần như khi di chuyển và thay đổi kích thước.
+Ngưỡng thu phóng để ẩn nội dung thẻ
+Giá trị thấp sẽ tăng hiệu suất nhưng ẩn nội dung thẻ sớm hơn khi thu phóng ra ngoài.
+Hiển thị biểu trưng
+Hiển thị biểu trưng Obsidian ở góc dưới bên trái.
+Chế độ bảo mật
+Ẩn bất kỳ văn bản nào trên bảng của bạn.
+Thu phóng
+Thu phóng cao hơn sẽ tạo ra hình ảnh có độ phân giải cao hơn.
+Khung nhìn
+Chọn cách hiển thị toàn bộ bảng hoặc chỉ khu vực nhìn thấy hiện tại.
+Toàn bộ bảng
+Chỉ khu vực nhìn thấy
+Bao phủ
+Giữ tỷ lệ khung hình
+Lặp lại
+Bảng mới
+Nhân bản
+Xóa
+Thu hẹp đến tiêu đề...
+Thu hẹp đến khối...
+Ghim chế độ xem...
+Trao đổi tập tin...
+Thay đổi URL...
+Thu phóng để vừa với khung
+Thu phóng để vừa với lựa chọn
+Tải lại trang
+Theo dõi kết nối
+Tạo bảng mới
+Chuyển đổi thành tập tin...
+để nhúng tiêu đề
+để nhúng khối
+để điều hướng đến nhóm
+Nhập tên tiêu đề
+Nhập URL
+"{{linktext}}" không thể tìm thấy.
+Thêm văn bản...
+Nhập để tìm kiếm...
+Trợ giúp Bảng
+Cài đặt Bảng
+Hiển thị toàn bộ tập tin
+Hiển thị chế độ xem mặc định
+Chỉ đọc
+Tắt chế độ chỉ đọc
+Di chuyển
+Di chuyển ngang
+Thu phóng
+Chọn tất cả
+Thêm vào / xóa khỏi lựa chọn
+Nhân bản thẻ
+Hạn chế di chuyển thẻ theo trục
+Tắt khít khi kéo
+Xóa thẻ
+Kéo từ phía dưới hoặc nhấp đúp
+Chạm và giữ để thêm / di chuyển / chọn
+Kéo để di chuyển
+Kéo nhẹ để thu phóng
+Space + Kéo để di chuyển
+Cuộn để thu phóng
+Nhóm chưa đặt tên
+Hướng dòng
+Không hướng
+Một chiều
+Hai chiều
+Hình ảnh
+Kiểu dáng
+Không tìm thấy nhóm
+Không thể xuất bảng trống
+Canvas phát hiện việc đổi tên tệp ảnh hưởng đến {{count}} tệp Canvas, đang cập nhật...
+Canvas phát hiện việc đổi tên tệp ảnh hưởng đến {{count}} tệp Canvas, đang cập nhật...
+Canvas đã cập nhật {{count}} thẻ nhúng
+Canvas đã cập nhật {{count}} thẻ nhúng
+Cơ sở
+Create bases by querying note properties.
+Cơ sở mới
+Add property
+Thêm tóm tắt "{{name}}"
+Thêm công thức
+Ẩn tất cả
+Bật/tắt hiển thị
+Xóa công thức
+Chế độ xem mặc định
+Nhân bản chế độ xem
+Xóa chế độ xem
+Xóa tóm tắt
+Xuất CSV...
+Tạo cơ sở mới
+Chèn cơ sở mới
+Sao chép bảng vào bảng tạm
+Change view
+Thêm chế độ xem
+Thêm mục
+Thêm chế độ xem
+Thêm bộ lọc
+Thêm nhóm bộ lọc
+Hiển thị tất cả
+Hiển thị tất cả ({{count}})
+Thêm tóm tắt
+Ẩn tóm tắt
+Tất cả chế độ xem
+Chế độ xem này
+Tìm hoặc tạo...
+Thuộc tính được tính toán
+Loại thuộc tính
+Ẩn thuộc tính
+Hiển thị thuộc tính
+Chỉnh sửa thuộc tính
+Chỉnh sửa {{name}}
+Cấu hình chế độ xem
+Bố cục
+Bộ lọc toàn cục
+Bộ lọc chế độ xem
+Tên chế độ xem
+Chế độ xem
+Bảng
+Tên hiển thị
+Tên tóm tắt
+Công thức
+Các chế độ xem
+Sắp xếp
+Bộ lọc
+Tìm kiếm
+Thuộc tính
+Mới
+Đang hiển thị {{count}}
+Tệp mẫu mục mới
+Thư mục mục mới
+Bất kỳ điều nào sau đây đúng
+Tất cả điều sau đây đúng
+Không có điều nào sau đây đúng
+trong đó
+hoặc
+và
+Thuộc tính
+Không có tiêu đề
+tệp
+name
+tên cơ sở của tệp
+tên đầy đủ của tệp
+path
+thư mục
+extension
+thời gian tạo
+thời gian sửa đổi
+kích thước tệp
+liên kết ngược của tệp
+liên kết của tệp
+nhúng của tệp
+thẻ của tệp
+Thêm sắp xếp
+Nhóm theo
+Sắp xếp theo
+Giới hạn số lượng kết quả
+
+
+Cũ đến mới
+Mới đến cũ
+
+
+Tên chế độ xem không được chứa: 
+Tên chế độ xem đã tồn tại.
+Tên chế độ xem không được để trống.
+Bộ lọc này không thể được biểu diễn bằng trình tạo bộ lọc đơn giản.
+Không thể phân tích bộ lọc. Không thể dùng trình tạo bộ lọc cơ bản.
+Cấu hình thuộc tính không hợp lệ.
+Cấu hình thuộc tính không hợp lệ cho "{{ name }}".
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+Không thể phân tích tệp cơ sở của bạn:
+Không tìm thấy chế độ xem "{{ view }}"
+Base configured with an unknown view type: {{ viewtype }}
+Chế độ xem phải là một mảng
+Giá trị hiển thị phải là chuỗi. Giá trị cho thuộc tính {{ key }} không phải.
+"{{ key }}" phải là một {{ type }}
+"filters" phải là một chuỗi hoặc một đối tượng
+Bộ lọc "{{ conjunction }}" phải là một mảng
+"filters" chỉ được có một trong các khóa "and", "or", hoặc "not".
+Không thể đánh giá bộ lọc: {{ message }}
+Giá trị công thức phải là chuỗi. Giá trị cho thuộc tính {{ key }} không phải.
+Không thể tính giá trị của thuộc tính "{{ key }}": {{ message }}
+Truy vấn có định dạng không hợp lệ. Nó phải là một đối tượng YAML.
+Các mục "view" phải là một đối tượng YAML, tuy nhiên mục {{ index }} thì không
+Thiếu hoặc không hợp lệ "name" trong chế độ xem {{ index }}
+Yêu cầu "{{ key }}" trong chế độ xem "{{ viewName }}"
+"{{ key }}" phải là một {{ type }} trong chế độ xem "{{ viewName }}"
+Các giá trị của "{{ key }}" phải đều thuộc kiểu {{ type }} trong chế độ xem "{{ viewName }}"
+Không thể phân tích filters trong chế độ xem "{{ viewName }}": {{ message }}
+Phát hiện vòng lặp vô hạn trong công thức
+Thuộc tính không hợp lệ
+Ghi chú này sẽ bị lọc bỏ vì không khớp với tiêu chí của bạn
+Bộ lọc nâng cao
+vd. 10
+Bộ lọc nâng cao
+Bộ lọc đơn giản
+Xóa bộ lọc
+Không
+Danh sách
+Dấu đánh dấu
+Thụt lề thuộc tính
+Dấu phân cách thuộc tính
+Dấu đầu dòng
+Số
+Không
+Thẻ
+Kích thước thẻ
+Thuộc tính hình ảnh
+Vừa khung hình ảnh
+Phủ kín
+Chứa trong
+Tỷ lệ khung hình
+Bảng
+Ẩn cột
+Chỉnh sửa thuộc tính...
+Chỉnh sửa công thức...
+Xóa sắp xếp
+Sắp xếp A → Z
+Sắp xếp Z → A
+Chiều cao hàng
+Thấp
+Vừa
+Cao
+Rất cao
+Tóm tắt...
+Nhóm theo thuộc tính này
+Xóa giá trị
+Tóm tắt
+Không thể phân tích công thức "{{ formula }}"
+Không tìm thấy hàm "{{ function }}"
+Không tìm thấy hàm "{{ function }}" trên kiểu {{ type }}
+Không thể gọi hàm "{{ function }}", không đủ đối số.
+Không thể gọi hàm "{{ function }}", quá nhiều đối số.
+Lỗi kiểu trong "{{ function }}", tham số "{{ parameter }}". Mong đợi {{ expected }}, nhận được {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Tô sáng hết
+Phù hợp với dấu thanh
+Toàn bộ từ
+Ảnh thu nhỏ
+Mục lục
+Hiển thị trang trong mục lục
+Chuyển đổi thanh bên
+Trang trước
+Trang tiếp theo
+Vừa chiều rộng
+Vừa chiều cao
+Lưu vị trí hiện tại trong tài liệu
+Sao chép chú thích
+Sao chép như trích dẫn
+Sao chép liên kết đến phần được chọn
+Sao chép liên kết đến chú thích
+Sao chép liên kết đến phần
+Sao chép liên kết đến “{{title}}”
+Sao chép liên kết đến trang {{page}}
+{{current}} trên hơn {{limit}} kết quả
+{{current}} trên {{total}} kết quả
+{{current}} trên {{total}} kết quả
+PDF này được bảo vệ bằng mật khẩu
+Mật khẩu không hợp lệ
+Nhập mật khẩu dưới đây
+của {{count}}
+({{current}} của {{count}})
+Một trang
+Hai trang (lẻ)
+Hai trang (chẵn)
+Tùy chọn thanh bên
+Tùy chọn hiển thị
+Thích ứng với chủ đề
+trang {{page}}
+Trang {{page}}
+Trang {{page}}
+Trang {{page}}
+[Chú thích {{type}}]
+
+Danh sách
+Chưa biết
+Chữ
+Bí danh
+Thẻ
+Thư mục
+Tệp
+Thuộc tính
+Ngày
+Ngày tháng
+Số
+Hộp kiểm
+Loại [[
+để liên kết ghi chú
+để hủy
+Loại thuộc tính
+Sắp xếp
+Tên thuộc tính không thể để trống.
+Thuộc tính đã tồn tại.
+Tên thẻ không hợp lệ
+Số không hợp lệ
+Không thể đọc các thuộc tính.
+Không có giá trị
+Thuộc tính
+Thuộc tính không hợp lệ
+Hiện nguồn
+Lỗi cú pháp. Frontmatter của bạn không hợp lệ.
+Thêm thuộc tính
+Không khớp loại, dự kiến là {{type}}
+Không khớp kiểu
+Hiển thị dưới dạng {{type}}?
+Dữ liệu {{oldType}} của bạn không tương thích. Dữ liệu sẽ được điều chỉnh để phù hợp với định dạng mới.
+Cột
+Hàng
+Thêm hàng phía sau
+Thêm cột phía sau
+Thêm hàng phía trước
+Di chuyển hàng lên
+Di chuyển hàng xuống
+Thêm cột phía trước
+Di chuyển cột sang trái
+Di chuyển cột sang phái
+Nhân đôi hàng
+Nhân đôi cột
+Xóa hàng
+Xóa cột
+Căn trái
+Căn giữa
+Căn phải
+Xóa ô
+Xóa nội dung ô
+Sắp xếp theo cột (A đến Z)
+Sắp xếp theo cột (Z đến A)
+Bảng: {{command}}
+Loại chú thích
+Thông tin
+Quan trọng
+Mẹo
+Thành công
+Câu hỏi
+Cảnh báo
+Trích dẫn
+Ví dụ
+Không
+Khác...
+Loại chú thích...
+
+{{count}} từ
+{{count}} từ
+{{count}} kết quả
+{{count}} kết quả
+{{count}} ký tự
+{{count}} ký tự
+{{count}} liên kết
+{{count}} liên kết
+{{count}} tập tin
+{{count}} tập tin
+{{count}} thư mục
+{{count}} thư mục
+{{count}} liên kết trở lại
+{{count}} liên kết trở lại
+{{count}} thẻ
+{{count}} thẻ
+{{count}} thuộc tính
+{{count}} thuộc tính
+{{count}} trang web
+{{count}} trang web
+{{count}} gắn thêm
+{{count}} gắn thêm
+{{count}} đang hoạt động
+{{count}} đoạn trích
+{{count}} đoạn trích
+{{count}} giao diện
+{{count}} giao diện

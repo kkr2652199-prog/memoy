@@ -1,0 +1,942 @@
+{
+  "title": "20260701_1군6뇌_7뇌선택공식_재현성검증_전군적용전제",
+  "date": "2026-07-01",
+  "mode": "READ_ONLY",
+  "army1_modified": false,
+  "army1_brain_count": 6,
+  "brain7_exists": false,
+  "db_writes": 0,
+  "criteria": {
+    "delta_min": 0.05,
+    "p_max": 0.05,
+    "pass_requires": "3/3 periods"
+  },
+  "step1_periods": [
+    {
+      "label": "A",
+      "range": [
+        330,
+        629
+      ],
+      "n_eval": 298,
+      "human_random_avg": 1.396,
+      "backtest": {
+        "n_eval": 298,
+        "eval_range": [
+          330,
+          629
+        ],
+        "human_random_avg": 1.396,
+        "individual_best_avg": 3.6074,
+        "rule2_combo_avg": 2.5067,
+        "summary_rows": [
+          {
+            "arm": "HUMAN_RANDOM",
+            "n_eval": 298,
+            "avg_matched_5sets": 1.396,
+            "avg_best_of_5": 2.7416,
+            "std_matched": 0.3283,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 11,
+            "hit4plus_best": 60,
+            "delta_vs_human_random": 0.0,
+            "delta_vs_individual_best_avg": -2.2114,
+            "paired_ttest_vs_human_random": null,
+            "verdict": "① 인간 랜덤 (형이 이기고 싶은 상대)"
+          },
+          {
+            "arm": "INDIVIDUAL_BEST",
+            "n_eval": 298,
+            "avg_matched_5sets": 3.6074,
+            "avg_best_of_5": 3.6074,
+            "std_matched": 0.7545,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 35,
+            "hit4plus_best": 160,
+            "delta_vs_human_random": 2.2114,
+            "delta_vs_individual_best_avg": 0.0,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 62.8208,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 2.2114
+            },
+            "verdict": "② 30세트 최고 상한 (참조 avg=3.53)"
+          },
+          {
+            "arm": "RULE2_combo_ref",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.5067,
+            "avg_best_of_5": 2.5067,
+            "std_matched": 1.042,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 9,
+            "hit4plus_best": 49,
+            "delta_vs_human_random": 1.1107,
+            "delta_vs_individual_best_avg": -1.1007,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 23.6541,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 1.1107
+            },
+            "verdict": "③ 어제 RULE2 조합 참조 (avg=2.42, 1세트)"
+          },
+          {
+            "arm": "SEL1_recent_K10",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.3597,
+            "avg_best_of_5": 2.9497,
+            "std_matched": 0.8552,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 16,
+            "hit4plus_best": 75,
+            "delta_vs_human_random": 0.9637,
+            "delta_vs_individual_best_avg": -1.2477,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 27.7661,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.9637
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K20",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.3658,
+            "avg_best_of_5": 2.9497,
+            "std_matched": 0.8568,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 16,
+            "hit4plus_best": 75,
+            "delta_vs_human_random": 0.9698,
+            "delta_vs_individual_best_avg": -1.2416,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 28.0187,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.9698
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K30",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.3658,
+            "avg_best_of_5": 2.9497,
+            "std_matched": 0.8568,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 16,
+            "hit4plus_best": 75,
+            "delta_vs_human_random": 0.9698,
+            "delta_vs_individual_best_avg": -1.2416,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 28.0187,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.9698
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL2_hist_weight",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.3658,
+            "avg_best_of_5": 2.9497,
+            "std_matched": 0.8568,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 16,
+            "hit4plus_best": 75,
+            "delta_vs_human_random": 0.9698,
+            "delta_vs_individual_best_avg": -1.2416,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 28.0187,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.9698
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL3_safe_co_mention",
+            "n_eval": 298,
+            "avg_matched_5sets": 1.949,
+            "avg_best_of_5": 3.2953,
+            "std_matched": 0.619,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 22,
+            "hit4plus_best": 125,
+            "delta_vs_human_random": 0.553,
+            "delta_vs_individual_best_avg": -1.6584,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 20.3335,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.553
+            },
+            "verdict": "🟢 1차 통과 + 2차 근접 (best-of-5 high)"
+          },
+          {
+            "arm": "SEL4_consensus_vote",
+            "n_eval": 298,
+            "avg_matched_5sets": 2.3926,
+            "avg_best_of_5": 3.0067,
+            "std_matched": 0.8834,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 15,
+            "hit4plus_best": 89,
+            "delta_vs_human_random": 0.9966,
+            "delta_vs_individual_best_avg": -1.2148,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 27.7685,
+              "p_value": 0.0,
+              "n": 298,
+              "mean_diff": 0.9966
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          }
+        ],
+        "green_primary": [
+          "SEL1_recent_K10",
+          "SEL1_recent_K20",
+          "SEL1_recent_K30",
+          "SEL2_hist_weight",
+          "SEL3_safe_co_mention",
+          "SEL4_consensus_vote"
+        ],
+        "green_strong": [],
+        "step3_primary_verdict": "🟢 인간랜덤 초과 규칙: SEL1_recent_K10, SEL1_recent_K20, SEL1_recent_K30, SEL2_hist_weight, SEL3_safe_co_mention, SEL4_consensus_vote",
+        "step4_conclusion": "7뇌(합리적 선택) 후보 → 4군 이식 검토(1군 앱 미변경, 형 확인 후)"
+      },
+      "sel_passed": [
+        "SEL1_recent_K10",
+        "SEL1_recent_K20",
+        "SEL1_recent_K30",
+        "SEL2_hist_weight",
+        "SEL3_safe_co_mention",
+        "SEL4_consensus_vote"
+      ]
+    },
+    {
+      "label": "B",
+      "range": [
+        630,
+        929
+      ],
+      "n_eval": 300,
+      "human_random_avg": 1.4004,
+      "backtest": {
+        "n_eval": 300,
+        "eval_range": [
+          630,
+          929
+        ],
+        "human_random_avg": 1.4004,
+        "individual_best_avg": 3.6233,
+        "rule2_combo_avg": 2.48,
+        "summary_rows": [
+          {
+            "arm": "HUMAN_RANDOM",
+            "n_eval": 300,
+            "avg_matched_5sets": 1.4004,
+            "avg_best_of_5": 2.68,
+            "std_matched": 0.3322,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 6,
+            "hit4plus_best": 54,
+            "delta_vs_human_random": 0.0,
+            "delta_vs_individual_best_avg": -2.2229,
+            "paired_ttest_vs_human_random": null,
+            "verdict": "① 인간 랜덤 (형이 이기고 싶은 상대)"
+          },
+          {
+            "arm": "INDIVIDUAL_BEST",
+            "n_eval": 300,
+            "avg_matched_5sets": 3.6233,
+            "avg_best_of_5": 3.6233,
+            "std_matched": 0.7981,
+            "hit6_best_of_5": 3,
+            "hit5plus_best": 35,
+            "hit4plus_best": 168,
+            "delta_vs_human_random": 2.2229,
+            "delta_vs_individual_best_avg": 0.0,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 62.9774,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 2.2229
+            },
+            "verdict": "② 30세트 최고 상한 (참조 avg=3.53)"
+          },
+          {
+            "arm": "RULE2_combo_ref",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.48,
+            "avg_best_of_5": 2.48,
+            "std_matched": 1.0833,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 8,
+            "hit4plus_best": 48,
+            "delta_vs_human_random": 1.0796,
+            "delta_vs_individual_best_avg": -1.1433,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 22.6392,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 1.0796
+            },
+            "verdict": "③ 어제 RULE2 조합 참조 (avg=2.42, 1세트)"
+          },
+          {
+            "arm": "SEL1_recent_K10",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.336,
+            "avg_best_of_5": 2.9433,
+            "std_matched": 0.9224,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 15,
+            "hit4plus_best": 85,
+            "delta_vs_human_random": 0.9356,
+            "delta_vs_individual_best_avg": -1.2873,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.005,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9356
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K20",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.34,
+            "avg_best_of_5": 2.9367,
+            "std_matched": 0.9146,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 15,
+            "hit4plus_best": 85,
+            "delta_vs_human_random": 0.9396,
+            "delta_vs_individual_best_avg": -1.2833,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.3786,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9396
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K30",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.34,
+            "avg_best_of_5": 2.9367,
+            "std_matched": 0.9146,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 15,
+            "hit4plus_best": 85,
+            "delta_vs_human_random": 0.9396,
+            "delta_vs_individual_best_avg": -1.2833,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.3786,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9396
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL2_hist_weight",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.34,
+            "avg_best_of_5": 2.9367,
+            "std_matched": 0.9146,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 15,
+            "hit4plus_best": 85,
+            "delta_vs_human_random": 0.9396,
+            "delta_vs_individual_best_avg": -1.2833,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.3786,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9396
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL3_safe_co_mention",
+            "n_eval": 300,
+            "avg_matched_5sets": 1.9367,
+            "avg_best_of_5": 3.2667,
+            "std_matched": 0.6195,
+            "hit6_best_of_5": 3,
+            "hit5plus_best": 24,
+            "hit4plus_best": 122,
+            "delta_vs_human_random": 0.5362,
+            "delta_vs_individual_best_avg": -1.6867,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 20.3733,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.5362
+            },
+            "verdict": "🟢 1차 통과 + 2차 근접 (best-of-5 high)"
+          },
+          {
+            "arm": "SEL4_consensus_vote",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.356,
+            "avg_best_of_5": 2.9767,
+            "std_matched": 0.9389,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 19,
+            "hit4plus_best": 90,
+            "delta_vs_human_random": 0.9556,
+            "delta_vs_individual_best_avg": -1.2673,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 24.9633,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9556
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          }
+        ],
+        "green_primary": [
+          "SEL1_recent_K10",
+          "SEL1_recent_K20",
+          "SEL1_recent_K30",
+          "SEL2_hist_weight",
+          "SEL3_safe_co_mention",
+          "SEL4_consensus_vote"
+        ],
+        "green_strong": [],
+        "step3_primary_verdict": "🟢 인간랜덤 초과 규칙: SEL1_recent_K10, SEL1_recent_K20, SEL1_recent_K30, SEL2_hist_weight, SEL3_safe_co_mention, SEL4_consensus_vote",
+        "step4_conclusion": "7뇌(합리적 선택) 후보 → 4군 이식 검토(1군 앱 미변경, 형 확인 후)"
+      },
+      "sel_passed": [
+        "SEL1_recent_K10",
+        "SEL1_recent_K20",
+        "SEL1_recent_K30",
+        "SEL2_hist_weight",
+        "SEL3_safe_co_mention",
+        "SEL4_consensus_vote"
+      ]
+    },
+    {
+      "label": "C",
+      "range": [
+        930,
+        1230
+      ],
+      "n_eval": 300,
+      "human_random_avg": 1.3562,
+      "backtest": {
+        "n_eval": 300,
+        "eval_range": [
+          930,
+          1230
+        ],
+        "human_random_avg": 1.3562,
+        "individual_best_avg": 3.53,
+        "rule2_combo_avg": 2.42,
+        "summary_rows": [
+          {
+            "arm": "HUMAN_RANDOM",
+            "n_eval": 300,
+            "avg_matched_5sets": 1.3562,
+            "avg_best_of_5": 2.58,
+            "std_matched": 0.3434,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 3,
+            "hit4plus_best": 42,
+            "delta_vs_human_random": 0.0,
+            "delta_vs_individual_best_avg": -2.1738,
+            "paired_ttest_vs_human_random": null,
+            "verdict": "① 인간 랜덤 (형이 이기고 싶은 상대)"
+          },
+          {
+            "arm": "INDIVIDUAL_BEST",
+            "n_eval": 300,
+            "avg_matched_5sets": 3.53,
+            "avg_best_of_5": 3.53,
+            "std_matched": 0.7644,
+            "hit6_best_of_5": 3,
+            "hit5plus_best": 23,
+            "hit4plus_best": 154,
+            "delta_vs_human_random": 2.1738,
+            "delta_vs_individual_best_avg": 0.0,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 65.1839,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 2.1738
+            },
+            "verdict": "② 30세트 최고 상한 (참조 avg=3.53)"
+          },
+          {
+            "arm": "RULE2_combo_ref",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.42,
+            "avg_best_of_5": 2.42,
+            "std_matched": 1.02,
+            "hit6_best_of_5": 0,
+            "hit5plus_best": 8,
+            "hit4plus_best": 36,
+            "delta_vs_human_random": 1.0638,
+            "delta_vs_individual_best_avg": -1.11,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 24.471,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 1.0638
+            },
+            "verdict": "③ 어제 RULE2 조합 참조 (avg=2.42, 1세트)"
+          },
+          {
+            "arm": "SEL1_recent_K10",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.2567,
+            "avg_best_of_5": 2.88,
+            "std_matched": 0.8909,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 11,
+            "hit4plus_best": 81,
+            "delta_vs_human_random": 0.9005,
+            "delta_vs_individual_best_avg": -1.2733,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.5413,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9005
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K20",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.262,
+            "avg_best_of_5": 2.8767,
+            "std_matched": 0.8956,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 11,
+            "hit4plus_best": 81,
+            "delta_vs_human_random": 0.9058,
+            "delta_vs_individual_best_avg": -1.268,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.5536,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9058
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL1_recent_K30",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.262,
+            "avg_best_of_5": 2.8767,
+            "std_matched": 0.8956,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 11,
+            "hit4plus_best": 81,
+            "delta_vs_human_random": 0.9058,
+            "delta_vs_individual_best_avg": -1.268,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.5536,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9058
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL2_hist_weight",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.262,
+            "avg_best_of_5": 2.8767,
+            "std_matched": 0.8956,
+            "hit6_best_of_5": 1,
+            "hit5plus_best": 11,
+            "hit4plus_best": 81,
+            "delta_vs_human_random": 0.9058,
+            "delta_vs_individual_best_avg": -1.268,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.5536,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9058
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          },
+          {
+            "arm": "SEL3_safe_co_mention",
+            "n_eval": 300,
+            "avg_matched_5sets": 1.8233,
+            "avg_best_of_5": 3.1033,
+            "std_matched": 0.6472,
+            "hit6_best_of_5": 3,
+            "hit5plus_best": 18,
+            "hit4plus_best": 102,
+            "delta_vs_human_random": 0.4672,
+            "delta_vs_individual_best_avg": -1.7067,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 17.342,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.4672
+            },
+            "verdict": "🟢 1차 통과 + 2차 근접 (best-of-5 high)"
+          },
+          {
+            "arm": "SEL4_consensus_vote",
+            "n_eval": 300,
+            "avg_matched_5sets": 2.2793,
+            "avg_best_of_5": 2.9033,
+            "std_matched": 0.9056,
+            "hit6_best_of_5": 2,
+            "hit5plus_best": 10,
+            "hit4plus_best": 88,
+            "delta_vs_human_random": 0.9232,
+            "delta_vs_individual_best_avg": -1.2507,
+            "paired_ttest_vs_human_random": {
+              "t_stat": 25.8303,
+              "p_value": 0.0,
+              "n": 300,
+              "mean_diff": 0.9232
+            },
+            "verdict": "🟢 1차 통과: 인간랜덤 초과"
+          }
+        ],
+        "green_primary": [
+          "SEL1_recent_K10",
+          "SEL1_recent_K20",
+          "SEL1_recent_K30",
+          "SEL2_hist_weight",
+          "SEL3_safe_co_mention",
+          "SEL4_consensus_vote"
+        ],
+        "green_strong": [],
+        "step3_primary_verdict": "🟢 인간랜덤 초과 규칙: SEL1_recent_K10, SEL1_recent_K20, SEL1_recent_K30, SEL2_hist_weight, SEL3_safe_co_mention, SEL4_consensus_vote",
+        "step4_conclusion": "7뇌(합리적 선택) 후보 → 4군 이식 검토(1군 앱 미변경, 형 확인 후)"
+      },
+      "sel_passed": [
+        "SEL1_recent_K10",
+        "SEL1_recent_K20",
+        "SEL1_recent_K30",
+        "SEL2_hist_weight",
+        "SEL3_safe_co_mention",
+        "SEL4_consensus_vote"
+      ]
+    }
+  ],
+  "step1_repro_matrix": {
+    "SEL1_recent_K10": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    },
+    "SEL1_recent_K20": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    },
+    "SEL1_recent_K30": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    },
+    "SEL2_hist_weight": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    },
+    "SEL3_safe_co_mention": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    },
+    "SEL4_consensus_vote": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "count": 3
+    }
+  },
+  "step2_sel3_hits": {
+    "hit6_draws": [
+      {
+        "draw_no": 725,
+        "winning": [
+          6,
+          7,
+          19,
+          21,
+          41,
+          43
+        ],
+        "sel3_top_set": [
+          2,
+          3,
+          6,
+          19,
+          21,
+          42
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "B"
+      },
+      {
+        "draw_no": 774,
+        "winning": [
+          12,
+          15,
+          18,
+          28,
+          34,
+          42
+        ],
+        "sel3_top_set": [
+          2,
+          23,
+          27,
+          33,
+          38,
+          43
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "B"
+      },
+      {
+        "draw_no": 800,
+        "winning": [
+          1,
+          4,
+          10,
+          12,
+          28,
+          45
+        ],
+        "sel3_top_set": [
+          1,
+          4,
+          10,
+          12,
+          28,
+          45
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "B"
+      },
+      {
+        "draw_no": 1037,
+        "winning": [
+          2,
+          14,
+          15,
+          22,
+          27,
+          33
+        ],
+        "sel3_top_set": [
+          2,
+          14,
+          15,
+          22,
+          27,
+          33
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "C"
+      },
+      {
+        "draw_no": 1040,
+        "winning": [
+          8,
+          16,
+          26,
+          29,
+          31,
+          36
+        ],
+        "sel3_top_set": [
+          2,
+          15,
+          27,
+          34,
+          37,
+          44
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "C"
+      },
+      {
+        "draw_no": 1122,
+        "winning": [
+          3,
+          6,
+          21,
+          30,
+          34,
+          35
+        ],
+        "sel3_top_set": [
+          3,
+          6,
+          21,
+          30,
+          34,
+          35
+        ],
+        "co_in_winning": 6,
+        "sel3_top_co_score": 6,
+        "period": "C"
+      }
+    ],
+    "hit6_count": 6,
+    "periods_with_hit6": [
+      "B",
+      "C"
+    ],
+    "avg_co_mention_in_winning_nums": 5.477,
+    "avg_sel3_top_set_co_score": 6,
+    "step2_verdict": "🟢 여러 구간 분산 (우연 편향 낮음)"
+  },
+  "step3_best_rule": {
+    "reproducible_3of3": [
+      "SEL1_recent_K10",
+      "SEL1_recent_K20",
+      "SEL1_recent_K30",
+      "SEL2_hist_weight",
+      "SEL3_safe_co_mention",
+      "SEL4_consensus_vote"
+    ],
+    "best_rule": {
+      "arm": "SEL4_consensus_vote",
+      "mean_delta_vs_human_random": 0.9585,
+      "mean_best_of_5": 2.9622,
+      "per_period_delta": [
+        0.9966,
+        0.9556,
+        0.9232
+      ],
+      "per_period_best_of_5": [
+        3.0067,
+        2.9767,
+        2.9033
+      ]
+    },
+    "all_reproducible_ranked": [
+      {
+        "arm": "SEL4_consensus_vote",
+        "mean_delta_vs_human_random": 0.9585,
+        "mean_best_of_5": 2.9622,
+        "per_period_delta": [
+          0.9966,
+          0.9556,
+          0.9232
+        ],
+        "per_period_best_of_5": [
+          3.0067,
+          2.9767,
+          2.9033
+        ]
+      },
+      {
+        "arm": "SEL1_recent_K20",
+        "mean_delta_vs_human_random": 0.9384,
+        "mean_best_of_5": 2.921,
+        "per_period_delta": [
+          0.9698,
+          0.9396,
+          0.9058
+        ],
+        "per_period_best_of_5": [
+          2.9497,
+          2.9367,
+          2.8767
+        ]
+      },
+      {
+        "arm": "SEL1_recent_K30",
+        "mean_delta_vs_human_random": 0.9384,
+        "mean_best_of_5": 2.921,
+        "per_period_delta": [
+          0.9698,
+          0.9396,
+          0.9058
+        ],
+        "per_period_best_of_5": [
+          2.9497,
+          2.9367,
+          2.8767
+        ]
+      },
+      {
+        "arm": "SEL2_hist_weight",
+        "mean_delta_vs_human_random": 0.9384,
+        "mean_best_of_5": 2.921,
+        "per_period_delta": [
+          0.9698,
+          0.9396,
+          0.9058
+        ],
+        "per_period_best_of_5": [
+          2.9497,
+          2.9367,
+          2.8767
+        ]
+      },
+      {
+        "arm": "SEL1_recent_K10",
+        "mean_delta_vs_human_random": 0.9333,
+        "mean_best_of_5": 2.9243,
+        "per_period_delta": [
+          0.9637,
+          0.9356,
+          0.9005
+        ],
+        "per_period_best_of_5": [
+          2.9497,
+          2.9433,
+          2.88
+        ]
+      },
+      {
+        "arm": "SEL3_safe_co_mention",
+        "mean_delta_vs_human_random": 0.5188,
+        "mean_best_of_5": 3.2218,
+        "per_period_delta": [
+          0.553,
+          0.5362,
+          0.4672
+        ],
+        "per_period_best_of_5": [
+          3.2953,
+          3.2667,
+          3.1033
+        ]
+      }
+    ],
+    "step3_verdict": "🟢 3구간 재현: SEL1_recent_K10, SEL1_recent_K20, SEL1_recent_K30, SEL2_hist_weight, SEL3_safe_co_mention, SEL4_consensus_vote — 1순위 SEL4_consensus_vote"
+  },
+  "step4_generalizability": {
+    "universal": true,
+    "logic": "30세트 풀 내 세트 점수(공동지목/표합) — 뇌 개수·태그와 무관",
+    "recommendation": "2/3/4군 동일 논리 적용 가능. 단 군별 세트 수·뇌 구조 다르므로 군별 재검증 필수.",
+    "depends_on_army1_brain_tags": false
+  },
+  "step5_final": "🟢 재현성 통과 — 7뇌 공식 후보: SEL4_consensus_vote. 각 군 앱 신규 7뇌 도입 검토(6뇌 미변경, 형 확인 후).",
+  "prior_report_20260630": "SEL3 best-of-5 3.10, hit6=3 in C only — unverified"
+}

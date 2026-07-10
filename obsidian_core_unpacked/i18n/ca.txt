@@ -1,0 +1,2517 @@
+Opcions
+Connector
+Connectors principals
+Opcions del connector
+Exemple: carpeta 1/carpeta 2
+Exemple: carpeta/nota
+Canviar aquesta opció requereix un reinici perquè tingui efecte.
+
+Comportament
+Visualització
+Corrector ortogràfic
+Activa el corrector ortogràfic. Actualment només funciona en anglès (EUA).
+Idiomes del corrector ortogràfic
+Tria els idiomes que el corrector ortogràfic ha d'utilitzar.
+El corrector ortogràfic natiu detectarà automàticament l'idioma que s'està utilitzant a macOS.
+Diccionari del corrector ortogràfic
+El diccionari del corrector ortogràfic està buit.
+Títol en línia
+Mostra el nom del fitxer com un títol editable en línia amb el contingut del fitxer.
+Longitud de línia llegible
+Limita la longitud màxima de la línia. Redueix la quantitat de contingut a la pantalla, però fa que els paràgrafs llargs siguin més llegibles.
+Trencament de línia estricte
+En mode de visualització prèvia, ignora els salts de línia simples segons les especificacions de Markdown. Desactiva això per mostrar els salts de línia simples en la visualització prèvia.
+Propietats en el document
+Tria com es mostren les propietats dins de l'editor. Selecciona "font" per mostrar les propietats com a YAML.
+Amagades
+Visibles
+Font
+Autoemparella els parèntesis
+Autoemparella els parèntesis i les cometes automàticament.
+Autoemparella la sintaxi Markdown
+Autoemparella els símbols automàticament per a negreta, cursiva, ressaltat, ratllat i codi.
+Sagnat intel·ligent de llistes
+Gestiona el sagnat i el marcador de llistes per a tu.
+Plega l'encapçalament
+Et permet plegar tot el que hi ha sota d'un encapçalament.
+Plega la sagnia
+Et permet plegar una part de la mateixa sagnia, com ara llistes.
+Visualització per defecte per a pestanyes noves
+La visualització per defecte que s'obté en obrir una nova pestanya de Markdown.
+Visualització d'edició
+Visualització de lectura
+Mantén sempre les pestanyes noves en primer pla
+Quan obres un enllaç en una nova pestanya, canvia immediatament a aquesta.
+Mode d'edició per defecte
+El mode d'edició per defecte amb el qual s'iniciarà una nova finestra.
+Mode font
+Previsualització en viu
+Números de línia
+Mostra el número de línia a la vora.
+Guies de sagnat
+Mostra línies verticals de relació entre els pics per a l'orientació visual.
+Utilitza les tabulacions
+Utilitza les tabulacions per fer el sagnat quan premis la tecla "Tab". Desactiva-ho per utilitzar espais.
+Mida de la tabulació
+Nombre d'espais equivalents a una tabulació.
+Dreta a esquerra (RTL)
+Defineix la direcció del text de les notes com a de dreta a esquerra.
+Conversió automàtica d'HTML
+Converteix automàticament HTML a Markdown quan enganxes i arrossegues contingut de pàgines web. Utilitza Ctrl/Cmd+Maj+V per enganxar sense conversió.
+Vincles de tecles Vim
+Permet utilitzar els vincles de tecles Vim a l'editor font.
+En dispositius mòbils, aquesta configuració és per dispositiu i no es sincronitza mitjançant el fitxer de configuració.
+Reconstrueix la memòria cau de la cambra forta
+Reconstruir la memòria cau pot trigar d'uns segons a uns quants minuts segons la mida de la cambra forta.
+Reconstrueix
+Confirma l'entrada al mode Vim
+El mode Vim és per a l'edició de text eficient, però pot ser bastant contra-intuïtiu. Si no estàs familiaritzat amb Vim, aquesta opció podria fer que sembli que Obsidian ha deixat de funcionar.
+Per verificar que coneixes Vim, introdueix l'ordre per sortir de Vim sense desar-lo a continuació:
+La teva resposta
+Introdueix una ordre...
+Permet-me habilitar Vim
+L'ordre és correcta. El mode Vim ara està habilitat.
+L'ordre no és correcta. El mode Vim continua deshabilitat per a la teva protecció.
+Si us plau, introdueix l'ordre per habilitar el mode Vim
+Fitxers i Enllaços
+Confirma abans de suprimir fitxers
+Evita suprimir fitxers accidentalment.
+Paperera
+Fitxers eliminats
+Què fer amb els fitxers després d'eliminar-los.
+Moure a la paperera del sistema
+Moure a la paperera d'Obsidian (carpeta .trash)
+Eliminar permanentment
+Suprimeix els adjunts en suprimir fitxers
+Elimina automàticament els adjunts enllaçats al fitxer suprimit si no s'utilitzen en cap altre lloc.
+Sempre
+Pregunta cada vegada
+Mai
+Fitxer per defecte en obrir
+Tria quin fitxer s'ha d'obrir quan s'inicia l'aplicació.
+Últim obert
+Nota nova
+Fitxer específic
+Nota diària
+Fitxer per obrir
+Selecciona un fitxer específic perquè s'obri per defecte.
+Sempre actualitza els enllaços interns
+Si s'actualitzen automàticament els enllaços després de canviar el nom d'un fitxer o d'un missatge.
+Ubicació predeterminada de les notes noves
+On posar les noves notes creades. Les configuracions dels connectors poden canviar això.
+Arrel de l'arca
+Mateixa carpeta on es troba el fitxer
+Dins la carpeta especificada a continuació
+Carpeta per crear notes noves
+Les notes noves creades apareixeran en aquesta carpeta. Les configuracions dels connectors poden canviar això.
+Utilitzar [[Wikienllaços]]
+Generar automàticament Wikienllaços per a [[links]] i ![[images]] en lloc d'enllaços i imatges de Markdown. Desactiva aquesta opció per generar enllaços de Markdown.
+Detectar totes les extensions de fitxers
+Mostrar fitxers amb qualsevol extensió, fins i tot si Obsidian no els pot obrir nativament, perquè puguis enllaçar-hi i veure'ls a l'Explorador de Fitxers i al Quick Switcher.
+Enllaços
+Nou format d'enllaç
+Quins enllaços inserir quan es generen automàticament enllaços interns.
+Camí més curt quan sigui possible
+Camí relatiu al fitxer
+Camí absolut a l'arca
+Ubicació predeterminada per a nous fitxers adjunts
+On es col·loquen els fitxers adjunts afegits recentment.
+Adjunts
+En una subcarpeta sota la carpeta actual
+Ruta de la carpeta de fitxers adjunts
+Els fitxers adjunts creats recentment apareixeran aquí. Això inclou imatges creades mitjançant arrossegar i deixar anar o enganxar, i enregistraments d'àudio.
+Nom de la subcarpeta
+Si el teu fitxer es troba a "arca/carpeta", i estableixes el nom de la subcarpeta com "adjunts", els fitxers adjunts es guardaran a "arca/carpeta/adjunts".
+Fitxers exclosos
+Els fitxers exclosos es mostraran ocults o menys visibles en diversos llocs, com ara al Quick Switcher, la suggerència d'enllaços i la Vista de Gràfic.
+No s'aplica cap filtre d'exclusió ara mateix. Afegeix-ne un a continuació.
+Actualment s'exclouen els fitxers que coincideixen amb els següents filtres:
+Filtre
+El filtre no pot estar buit
+Introdueix la ruta o "/regex/"...
+Permet callbacks d'URI
+Activa l'ús de x-callback-url mitjançant x-success o x-error en gestionar els URI d'Obsidian.
+Aparença
+Tema base
+Tria l'esquema de colors per defecte d'Obsidian.
+Color d'accent
+Tria el color d'accent utilitzat a tota l'aplicació.
+Fosc
+Clar
+Adaptat al sistema
+Tipus de lletra
+Avançat
+Interfície
+Font d'interfície
+Estableix la font base per a tot l'Obsidian.
+Nivell de zoom
+Controla el nivell de zoom global de l'aplicació.
+Font de text
+Estableix la font per a les vistes d'edició i lectura.
+Font monoespaiada
+Estableix la font per a llocs com ara blocs de codi i metadades.
+ Font actualment aplicada: 
+ Les següents fonts s'apliquen actualment:
+Introdueix el nom de la font...
+Actualment no s'aplica cap font personalitzada. Afegeix-ne una a continuació.
+S'aplicarà la primera font d'aquesta llista que estigui disponible al teu sistema.
+Aquesta font no s'ha detectat al teu sistema.
+Aquesta font s'ha detectat al teu sistema.
+Nom de la font
+Obre els temes de la comunitat
+Previsualitza i utilitza temes increïbles creats per la comunitat.
+Navega
+Mida de la font
+Mida de la font en píxels que afecta l'editor i a la visualització prèvia.
+Ajust ràpid de la mida de la font
+Ajusta la mida de la font amb Ctrl + Roda o fent servir el gest de pessigada.
+Temes
+Gestiona els temes instal·lats i navega pels temes de la comunitat.
+Gestiona
+Cap
+Menús nadius
+Els menús a tota l'aplicació coincidiran amb el sistema operatiu. No es veuran afectats pel teu tema.
+Recarrega els temes
+Temes CSS personalitzats recarregats.
+Obre la carpeta de temes
+Pedaços de CSS
+No s'han trobat pedaços de CSS a la carpeta de pedaços.
+Els Pedaços de CSS s'emmagatzemen a "{{path}}".
+Recarrega els pedaços
+Obre la carpeta de pedaços
+Pedaços de CSS recarregats.
+Aplica el tros de CSS a "{{path}}".
+Temes instal·lats
+Captura de pantalla no disponible
+Per defecte
+Fes clic per ampliar
+Actualitzar
+Activa
+Estil del marc de finestra
+Determina l'estil de la barra de títols de les finestres d'Obsidian. Cal reiniciar perquè tingui efecte.
+Amagat (predeterminat)
+Marc d'Obsidian
+Marc nadiu
+Icona personalitzada de l'aplicació
+Estableix una icona personalitzada per a l'aplicació
+Tria una icona personalitzada
+Menú de cinta
+Configura quines ordres apareixen al menú de cinta a la barra de navegació.
+Accés ràpid a Element de la cinta
+Tocar l'element de la cinta a la barra de navegació activarà aquest element de la cinta. Prémer i mantenir premut encara mostrarà el menú.
+Obre el menú de la barra d'eines
+Configurar
+Mostra la cinta
+Mostra la barra d'eines vertical al costat de la finestra.
+Altres elements de la cinta
+Configuració de la cinta
+Tria quins elements vols que estiguin actius a la cinta. Arrossega i deixa anar per canviar l'ordre.
+Mostra la barra de títol de les pestanyes
+Mostra la capçalera a la part superior de cada pestanya.
+Navegació flotant
+Els botons de navegació floten sobre el contingut en lloc d'estar ancorats.
+Barres laterals lliscants
+Les barres laterals llisquen al costat del contingut en lloc de flotar a sobre.
+Pantalla completa
+Amaga automàticament elements de la interfície mentre llegeixes.
+S'ha trobat {{count}} tema per actualitzar.
+S'han trobat {{count}} temes per actualitzar.
+Comprovar actualitzacions
+Veure les actualitzacions
+Actualitzar tots
+Temes comunitaris actuals
+Actualment tens {{count}} tema instal·lat.
+Actualment tens {{count}} temes instal·lats.
+Dreceres de teclat
+Cercar drecera de teclat
+Mostrant {{count}} drecera.
+Mostrant {{count}} dreceres.
+{{count}} comandament amb conflicte.
+{{count}} comandaments amb conflictes.
+Filtrar...
+Eliminar la drecera
+Prem la tecla de drecera...
+Totes
+No assignades
+Assignades
+Assignades per mi
+Restaurar la configuració predeterminada
+Personalitza aquest comandament
+Aquesta drecera té conflicte amb "{{command}}"
+Aquesta drecera té conflicte amb {{count}} altres comandaments
+Buida
+Clauer
+
+Afegeix un secret
+Edita el secret
+Mostra el secret
+Amaga el secret
+
+
+nom-del-secret
+Només lletres en minúscula, números i guions.
+Introdueix el teu secret.
+No s'ha accedit mai
+No s'ha pogut actualitzar el secret.
+No s'ha pogut afegir el secret.
+Ja existeix un secret amb aquest ID.
+El valor del secret no pot estar buit.
+L'ID del secret no és vàlid. Fes servir només lletres en minúscula, números i guions. Màxim 64 caràcters.
+No s'ha afegit cap secret. Els secrets s'utilitzen per emmagatzemar informació com ara claus d'API i contrasenyes que els connectors poden utilitzar.
+Selecciona un secret
+Cerca un secret...
+Afegeix un secret...
+Enllaça...
+Els secrets s'emmagatzemen sense xifratge perquè en aquest sistema no hi ha cap magatzem de secrets disponible.
+Els secrets no estan xifrats
+No ho tornis a mostrar
+Xifratge no disponible
+El xifratge el proporciona el magatzem de secrets del teu sistema operatiu. Sense un magatzem de secrets, els teus secrets s'emmagatzemaran sense xifratge.
+A Linux, els magatzems de secrets compatibles inclouen:
+Quant a
+Llicència comercial
+Clau de llicència
+La teva clau de llicència...
+Activar la llicència
+Activar
+Desconeguda
+Versió {{version}}
+Versió de l'instal·lador: {{version}}
+Llegeix el registre de canvis.
+Per donar suport a les últimes característiques i rebre les últimes actualitzacions de seguretat, Obsidian necessita una actualització important de l'instal·lador. Has de descarregar i reinstal·lar manualment l'Obsidian.
+Hi ha una nova versió llesta per ser instal·lada. 
+Les actualitzacions estan desactivades.
+Torna a iniciar
+Comprovar actualitzacions
+Actualitzacions automàtiques
+Desactiva això per evitar que l'aplicació comprovi actualitzacions.
+Notifica si l'inici triga més del que s'espera
+Diagnostica problemes de l'aplicació veient què fa que l'aplicació es carregui lentament.
+Comprova-ho ara
+Interfície de línia d'ordres
+Permet interaccions amb Obsidian des de la línia d'ordres.
+Configura la CLI perquè funcioni al terminal
+Registra "obsidian" al PATH per permetre l'accés a l'ordre "obsidian" des de qualsevol lloc del teu terminal.
+Registra
+Obtenir ajuda
+Obtén ajuda sobre com utilitzar Obsidian.
+Obre
+Idioma
+Canvia l'idioma mostrat.
+Rebre versions de prova
+Actualitza automàticament a les versions dde prova per testar les noves característiques. Tingues en compte que aquestes versions són molt experimentals i poden ser menys estables.
+Avançat
+Acceleració de maquinari
+Activa l'acceleració de maquinari, que utilitza la GPU per fer que Obsidian sigui més fluïda.
+Si desactives això, el rendiment de l'aplicació es veurà greument afectat.
+Ubicació de configuració personalitzada
+Utilitza una carpeta de configuració diferent de la predeterminada. Ha de començar amb un punt.
+L'ubicació de configuració ha de ser un nom de carpeta vàlid que comenci amb un punt.
+Llicència
+La teva clau de llicència comercial és "{{key}}".
+Registrada a "{{company}}" per a {{seats}} usuaris. Vàlida fins a {{expiry}}.
+Validant...
+Llicència no vàlida: 
+Eliminar
+Llicència Catalyst
+Actualment tens la llicència Catalyst {{tier}}. Gràcies pel teu suport!
+Ara mateix no tens una llicència Catalyst. La llicència Catalyst és una donació única per donar suport al desenvolupament d'Obsidian.
+Aplicació
+Consulta com afegir el teu idioma a Obsidian.
+Compte
+El teu compte
+Actualment has iniciat la sessió com a {{name}} ({{email}}).
+Encara no has iniciat la sessió. És necessari un compte per a Obsidian Sync, Obsidian Publish i les versions de l'insider de Catalyst.
+Millorar
+Llicència comercial
+Ajuda a mantenir Obsidian 100% finançat pels usuaris.
+Comprar
+Tancar la sessió
+Iniciar la sessió
+Registra't
+Correu electrònic
+El teu correu electrònic...
+Nom complet
+Contrasenya
+La teva contrasenya...
+Has oblidat la contrasenya?
+Iniciar la sessió
+El correu electrònic no pot estar buit.
+El correu electrònic no és vàlid.
+La contrasenya no pot estar buida.
+Error d'inici de sessió, comprova el correu electrònic i la contrasenya.
+No s'ha pogut registrar
+No tens un compte? 
+Registra't ara
+Codi 2FA de 6 dígits
+El codi autenticador 2FA ha de tenir 6 dígits.
+El codi 2FA no és correcte, comprova l'aplicació autenticadora.
+Llista de connectors
+Cerca els connectors principals
+Filtra els connectors per nom o descripció.
+Cerca connectors...
+Connectors de tercers
+Mode restringit
+El mode restringit està apagat. Activa'l per desactivar els connectors de la comunitat.
+Activar
+Comprova automàticament les actualitzacions dels connectors
+Comprova periòdicament les actualitzacions dels connectors.
+Connectors de la comunitat
+Navega i instaŀla connectors de tercers creats per la nostra increïble comunitat.
+Navega
+Sortir del mode restringit
+Els connectors de la comunitat, com qualsevol altra aplicació que instal·les, podrien causar problemes d'integritat de dades i seguretat.
+La seguretat dels connectors és important per a nosaltres. Així és com ho gestionem:
+Tot i els nostres esforços, encara hi ha una petita possibilitat que un connector de la comunitat pugui funcionar incorrectament.
+Revisió de codi inicial
+Els connectors passen per una revisió de codi inicial per part del nostre equip abans d'aparèixer a la botiga.
+Codi obert
+La majoria dels connectors tenen codi obert a GitHub, així pots inspeccionar el codi tu mateix.
+Auditoria de companys
+Tenim una gran comunitat de desenvolupadors que vetllen els uns pels altres.
+Mecanisme de notificació
+Donem seguiment i eliminem els connectors defectuosos quan els usuaris ho notifiquen.
+Vols sortir del mode restringit per habilitar els connectors de la comunitat? Recomanem molt fer còpies de seguretat de les teves dades abans de fer-ho.
+Més informació sobre la seguretat dels connectors
+Habilitar els connectors de la comunitat
+Confies en l'autor d'aquesta arca?
+Estàs obrint aquesta arca per primera vegada i conté alguns connectors.
+Si has obtingut aquest arca d'algú altre, tingues en compte que els connectors d'origen desconegut podrien comportar riscos de seguretat.
+Si no confies totalment en l'autor d'aquesta arca, et recomanem que et quedis en mode restringit perquè els connectors d'aquesta arca no s'executin.
+Confiar en l'autor i habilitar els connectors
+Navega per l'arca en mode restringit
+Cerca connectors de la comunitat...
+Error al carregar els connectors de la comunitat.
+Instal·lat
+Instal·lar
+Habilitar
+Desactivar
+Copiar l'enllaç de compartició
+Donar
+No s'han trobat resultats.
+No s'han trobat fitxers recents. Escriu per buscar...
+Error al carregar el manifest del connector.
+Versió: {{version}}
+ (instal·lat actualment: {{version}})
+Per 
+Repositori: 
+Última actualització: 
+Veure l'última actualització
+Aquest connector no és compatible amb el teu dispositiu.
+Actualitzar
+Aquest connector no proporciona un fitxer README.
+S'està instal·lant el connector "{{name}}"...
+No s'ha pogut instal·lar el connector "{{name}}".
+El connector "{{name}}" s'ha instal·lat correctament.
+No s'ha pogut desinstal·lar el connector «{{id}}».
+No s'ha pogut desactivar el connector “{{id}}”.
+Connectors instal·lats
+Recarregar connectors
+S'han recarregat els connectors tercers.
+Desinstal·lar
+Desinstal·lar connector
+Segur que vols desinstal·lar aquest connector? Això eliminarà la carpeta del connector.
+Obrir la carpeta de connectors
+Comprovar actualitzacions
+Actualitzar-ho tot
+Connectors actuals
+S'estan comprovant les actualitzacions...
+Actualment tens {{count}} connector instal·lat.
+Actualment tens {{count}} connectors instal·lats.
+No s'han trobat actualitzacions de connectors.
+S'ha trobat {{count}} connector per actualitzar.
+S'han trobat {{count}} connectors per actualitzar.
+Actualitzar a la versió {{version}}
+Cerca connectors instal·lats
+Filtra els connectors instal·lats pel nom o la descripció.
+Cerca connectors instal·lats...
+Mostra només els instal·lats
+Fes una donació per donar suport a {{name}}
+Els desenvolupadors de connectors són voluntaris de la comunitat que fan coses increïbles amb passió. Si trobes aquest connector útil, considera fer-hi una donació.
+El 100% de la teva contribució anirà al desenvolupador del connector; Obsidian no se'n queda cap comissió. La plataforma de finançament que hagin triat podria quedar-se'n una part.
+Gràcies pel teu generós suport!
+Dona suport a aquest connector:
+Mostrant {{pluginCount}}:
+Més descarregats
+Recentment publicats
+Recentment actualitzats
+Per ordre alfabètic
+Actualitzat {{time}}
+Barra d'eines mòbil
+Configura l'Acció Ràpida mòbil
+Configura quina ordre s'inicia en fer lliscar des de dalt cap avall. L'a 'ordre actual està establerta com a "{{command}}".
+Acció no configurada
+Configura
+Selecciona una Acció Ràpida...
+Cap
+Gestiona les opcions de la barra d'eines
+Afegeix un enllaç intern
+Afegeix un incrustat intern
+Afegeix una etiqueta
+Activa/desactiva els títols
+Activa/desactiva el ratllat
+Activa/desactiva el ressaltat
+Activa/desactiva el codi
+Activa/desactiva la citació
+Activa/desactiva la notació matemàtica en línia
+Activa/desactiva el bloc de notació matemàtica
+Afegeix un enllaç Markdown
+Activa/desactiva la llista amb pic
+Activa/desactiva la llista numerada
+Afegeix una sagnia a l'element de la llista
+Treu una sagnia a l'element de la llista
+Desfés
+Refer
+Mou el cursor amunt
+Mou el cursor avall
+Mou el cursor a l'esquerra
+Mou el cursor a la dreta
+Ves a la primera línia
+Ves a l'última línia
+Activa/desactiva el teclat
+Configura la barra d'eines mòbil
+Opcions afegides
+Més opcions de la barra d'eines
+Insereix un adjunt
+Cerca
+Reemplaça
+Sortir de la cerca
+Següent
+Anterior
+Troba'ls tots
+Reemplaça
+Reemplaça-ho tot
+Escriu #
+per enllaçar a títol
+Escriu ^
+per enllaçar a blocs
+Escriu |
+per canviar el text de visualització
+Mostra el text
+Encapçalament
+No s'ha trobat coincidència
+Mida d'imatge: {{size}}px d'ample
+acceptar
+Nota a peu de pàgina nova...
+Sense suggeriments...
+Afegir al diccionari
+Edita l'enllaç
+Edita l'etiqueta
+Edita aquest bloc
+Suprimeix la nota a peu de pàgina i la referència
+Restableix la mida
+Suprimeix la imatge
+Sense títol
+Títol {{level}}
+Exporta a PDF
+Exporta "{{filename}}" a PDF amb la configuració següent.
+Mida de pàgina
+Inclou el nom del fitxer com a títol
+Horitzontal
+Marge
+Per defecte
+Mínim
+Cap
+Redueix la mida en percentatge
+Exporta a PDF
+Segueix l'enllaç
+Obre l'enllaç
+Cerca l'etiqueta
+No es pot trobar:
+No s'ha pogut trobar “{{subpath}}” a {{file}}
+Obre-ho en l'aplicació predeterminada
+La barra lateral està buida; prova d'arrossegar una finestra aquí.
+Amplia
+Redueix
+No s'ha pogut desar el fitxer "{{filepath}}". {{message}}.
+No s'ha pogut carregar el connector “{{plugin}}”
+El connector “{{plugin}}” ha trobat un error en carregar-se
+No s'ha pogut obrir “{{filepath}}”
+No es pot obrir la ubicació “{{href}}”
+Sense fitxer
+"{{file}}" ha estat modificat externament, s'estan fusionant els canvis automàticament.
+Gestiona les arques...
+Ajuda
+Configuració
+Arrossega per reorganitzar
+S'ha canviat el mode de visualització per defecte a la visualització de lectura.
+S'ha canviat el mode de visualització per defecte a l'editor.
+Per utilitzar aquesta característica, si us plau, torna a instal·lar-la amb l'últim instal·lador disponible al nostre lloc web.
+S'ha detectat un temps d'inici lent.
+Aquesta funció només està disponible a l'aplicació d'escriptori.
+Restaura la configuració predeterminada
+Copia al porta-retalls
+Copiar
+Copiat al teu porta-retalls
+{{item}} copiat al teu porta-retalls
+No s'ha pogut copiar al porta-retalls
+Filtre...
+S'ha trobat un error en renderitzar el bloc de codi.
+Fitxer obert "{{path}}"
+No s'ha trobat el fitxer "{{name}}".
+Acció d'URI no reconeguda: {{action}}
+Esborra
+Obsidian està indexant la teva arca...\nAixò només hauria de passar una vegada.\nAlgunes funcions poden no estar disponibles fins que això acabi.
+Algunes funcions poden no estar disponibles fins que això s'hagi completat.
+Indexació completa.
+Aquesta és una arca de proves. \nEls canvis que facis en aquesta arca es perdran.
+Cal IndexedDB per a aquesta funció, però actualment està desactivat.
+Si feu servir iOS en Mode de bloqueig, excloeu Obsidian de la configuració «Configura la navegació web» del Mode de bloqueig.
+Prem Enter per crear
+Actualització disponible
+Informació de depuració
+Aprèn'n més
+Ara no
+Afegir
+Gestionar
+Nova pestanya
+Amaga la cinta
+Aquesta pestanya està actualment ocupada; si us plau, torna-ho a provar més tard
+
+Paràgraf
+Insertar
+Afegir enllaç
+Afegir enllaç extern
+Destacat
+Línia horitzontal
+Bloc de Codi
+Bloc matemàtic
+Taula
+Nota a peu de pàgina
+Negreta
+Codi
+Comentari
+Ressaltar
+Cursiva
+Ratllat
+Matemàtic
+Llista
+Llista de tasques
+Llista numerada
+Títol {{level}}
+Cos
+Netaja el format
+Citació
+Buit
+No s'ha obert cap fitxer
+Crea un fitxer nou
+Vés al fitxer
+Mostra els fitxers recents
+Tanca
+Tanca totes les pestanyes “{{id}}” ({{count}})
+El connector ja no està actiu
+El connector que va crear aquest panell ({{type}}) ha desaparegut
+Notes de la versió {{version}}
+No hi ha notes de la versió disponibles per a {{version}}.
+No s'han pogut carregar les notes de la versió per a {{version}}.
+Publicat el {{date}}
+Novetats de la versió {{version}}
+Edita (Ctrl/Cmd+Clica per editar en una nova finestra)
+Vista actual: lectura
+Cinta
+Columna esquerra
+Columna dreta
+Clica per editar
+Clica per llegir
+{{key}}+Clic per obrir en una nova pestanya
+Premeu {{key}}+C per copiar el codi font
+Cerca...
+Reemplaça...
+Edita
+Elimina
+Elimina de la llista
+Canvia el nom
+Previsualitza
+Més opcions
+Tanca
+Tanca-ho tot
+Tanca {{count}} pestanya
+Tanca {{count}} pestanyes
+Tanca les altres
+Tanca les pestanyes posteriors
+Fixa
+Desfixa
+Desenllaça la pestanya
+Enllaça amb la pestanya...
+Mode codi
+Vista de lectura
+Afegeix una propietat del fitxer
+Esborra el fitxer
+Crea aquest fitxer
+Obre l'enllaç
+Obre en una nova pestanya
+Obre cap a la dreta
+Copia la URL
+Copia
+Talla
+Enganxa
+Copia el camí
+Copia la imatge
+com a URL d'Obsidian
+des de l'arrel del sistema
+des de la carpeta de la cambra forta
+Enganxa com a text pla
+Cerca “{{selection}}”
+Selecciona-ho tot
+Reanomena aquesta capçalera...
+Reanomena aquesta ID de bloc...
+Obre en una finestra nova
+Mou a una finestra nova
+Obre en el navegador
+Apila les pestanyes
+Desapila les pestanyes
+Obre la vista enllaçada
+Feu clic per expandir
+Feu clic per contraure
+Àlies
+Encara no creat, seleccioneu per crear-lo
+Versió
+Crear arca local
+Obrir carpeta com a arca
+Trieu una carpeta existent d'arxius Markdown.
+Crear una arca nova
+Creeu una nova arca Obsidian dins una carpeta.
+Connectar a Obsidian Sync
+Configureu una arca sincronitzada amb una arca remota existent.
+Nom de l'arca
+Trieu un nom per a la vostra magnífica arca.
+Ubicació
+Trieu un lloc per posar la vostra arca nova.
+La vostra arca nova s'ubicarà a: 
+Mostrar arca a l'explorador del sistema
+Mostrar arca al Finder
+Canviar nom de l'arca...
+Copia la ID de l'arca
+Ja existeix una arca amb aquest nom.
+No es pot moure l'arca a una subcarpeta de si mateix.
+No es pot canviar el nom d'una arca que està oberta actualment.
+No s'ha pogut canviar el nom de l'arca.
+S'ha canviat el nom de l'arca amb èxit.
+Moure arca...
+Seleccioneu la carpeta de destinació
+Ja existeix una arca a la destinació.
+No es pot moure una arca que està oberta actualment.
+No s'ha pogut moure l'arca.
+L'arca s'ha mogut amb èxit.
+Eliminar de la llista
+Inici ràpid
+Obrir
+Navegar
+Connectar
+Crear
+Enrere
+El nom de l'arca no pot estar buit.
+El nom de l'Arca no pot acabar amb un punt.
+Trieu una carpeta vàlida.
+No s'ha pogut crear l'arca.
+No s'ha pogut crear l'arca a la ubicació proporcionada. Comproveu-ne la ubicació i els permisos.
+No s'ha pogut obrir.
+No es pot eliminar una arca que està oberta actualment.
+Obtenir ajuda
+Correu electrònic
+El vostre correu electrònic...
+Contrasenya
+La vostra contrasenya...
+Iniciar sessió
+Configuració
+Creeu una arca sincronitzada en aquest dispositiu.
+Aquesta és una arca remota que us pertany.
+Aquesta és una arca remota compartida.
+Els teus pensaments són teus.
+sincronitzat
+no sincronitzat
+Cap
+Recomanat
+Obsidian desa les notes al dispositiu, perquè hi pugueu accedir de manera ràpida i privada, fins i tot sense connexió.\nLes dades s'emmagatzemen en una carpeta local segura anomenada **cambra forta**.
+Crea una cambra forta
+Fes servir la meva cambra forta existent
+Per accedir a les notes en altres dispositius, cal que configureu la sincronització.
+Com que Obsidian desa les notes als dispositius, haureu de configurar la sincronització si voleu accedir a les notes en un altre telèfon o ordinador.\nPodeu configurar la sincronització ara, o bé començar a escriure i configurar-la més endavant.
+Configura la sincronització
+Skip for now
+Omet
+Choose a name for your vault.
+Crea una cambra forta
+Configuració de Sync
+Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Xifratge de Sync
+Xifratge d'extrem a extrem
+Ofereix la seguretat més alta, però requereix que emmagatzemeu de manera segura la vostra contrasenya de xifratge
+Xifratge estàndard
+Utilitza una clau gestionada per Obsidian per protegir les vostres dades durant la transmissió i als nostres servidors.
+Configuració de Sync
+Voleu excloure alguna carpeta o fitxer en sincronitzar amb aquest dispositiu?
+Inicia la sincronització
+Creeu un compte d'Obsidian o inicieu la sessió
+Registra't
+Inicia la sessió
+Torna a enviar el correu electrònic
+Teniu cambres fortes de Sync existents
+Voleu crear una cambra forta nova o connectar-vos a una cambra forta sincronitzada existent?
+Crea una cambra forta de Sync nova
+Trieu una cambra forta existent
+Log Out
+Heu oblidat la contrasenya
+Nom de la cambra forta
+Ubicació de la cambra forta
+Emmagatzematge del dispositiu
+Permet que altres aplicacions accedeixin a les dades d'Obsidian.
+Requereix permisos addicionals.
+Emmagatzematge de l'aplicació
+Les vostres dades no seran accessibles per a altres aplicacions.
+Android suprimirà les vostres dades si desinstal·leu Obsidian.
+La vostra cambra forta nova es col·locarà a {{vaultLocation}}
+Regió
+Trieu una regió de servidor propera per fer que la sincronització sigui més ràpida.
+Clau de xifratge
+Aquesta contrasenya no es pot canviar més endavant. Si oblideu la contrasenya, totes les dades remotes als servidors de Sync seran inaccessibles per sempre.
+La meva cambra forta
+Automàtic
+Trieu una cambra forta
+El vostre compte **{{email}}** té cambres fortes existents a les quals us podeu connectar.
+Inicieu la sessió al vostre compte d'Obsidian
+Heu oblidat la contrasenya
+Restableix la contrasenya
+Hem enviat un correu electrònic a {{email}} per restablir la vostra contrasenya.
+Trieu com sincronitzar les vostres notes
+Per utilitzar Obsidian als vostres dispositius, haureu de sincronitzar les vostres dades.
+Sense interrupcions a tots els dispositius i sistemes operatius.
+Protegit amb l'estàndard de xifratge d'extrem a extrem més fort.
+Requereix un compte d'Obsidian.
+Només per a iOS i macOS.
+No està xifrat per defecte.
+Requereix connectors o eines de tercers.
+Pot ser que no estigui xifrat per defecte.
+Utilitza Obsidian Sync
+Utilitza iCloud
+Use Third-party sync
+Altres mètodes de sincronització
+Utilitza mètodes de sincronització compatibles
+On es troba la teva cambra forta?
+Altres
+Sincronització de tercers
+En aquest dispositiu
+Connecta a iCloud
+Connecta a un altre servei de sincronització
+Connecta a Obsidian Sync
+Tria una carpeta
+Altres mètodes de sincronització
+Obsidian admet oficialment dos mètodes de sincronització: **Obsidian Sync** i **iCloud**.\nTanmateix, com que Obsidian et dona control sobre les teves dades, hi ha altres opcions de sincronització que pots utilitzar.\nAquestes opcions inclouen connectors de tercers i altres eines que poden requerir una configuració més avançada.\nPer utilitzar un mètode de sincronització alternatiu, **crea una cambra forta** i segueix les instruccions proporcionades pel connector o el proveïdor de sincronització de tercers.
+Introdueix el teu correu electrònic
+El teu correu electrònic és necessari per crear un compte d'Obsidian.
+Introdueix el teu nom i contrasenya
+Connecta a Obsidian Sync
+Hauries de rebre aviat un correu electrònic a **{{email}}** amb instruccions per connectar-te a Obsidian Sync.
+No s'ha detectat la teva cambra forta d'iCloud. Això pot ser degut a algun dels motius següents:
+La teva cambra forta és en un compte d'iCloud diferent del que tens iniciat actualment en aquest dispositiu.
+La teva cambra forta no està desada a la carpeta d'Obsidian de nivell superior de l'iCloud Drive.
+iCloud no compatible
+La sincronització amb iCloud només està disponible en dispositius Apple. Si la teva cambra forta s'està sincronitzant actualment mitjançant iCloud, informa't sobre com migrar-la a un servei de sincronització diferent.
+Permet l'accés als fitxers
+S'està iniciant la sessió...
+El nom de la cambra forta és obligatori
+S'ha enviat un nou correu de confirmació.
+No s'ha pogut reenviar el correu electrònic.
+La ubicació de la cambra forta ha de ser una carpeta.
+Hola
+Aquesta és la teva nova *arca*.\n\nFes una nota d'alguna cosa, [[crea un enllaç]] o prova [l'importador](https://help.obsidian.md /Plugins/Importer)!\n\nQuan estiguis a punt, suprimeix aquesta nota i fes la teva arca.
+Insereix l'enllaç aquí
+Insereix els enllaços aquí
+Mou a "{{folder}}"
+Destaca aquest fitxer
+Destaca aquests fitxers
+Obre en aquesta pestanya
+Obre com a nova pestanya
+Maximitza
+Minimitza
+Restaura
+Tanca la finestra
+Torna enrere
+Avança
+Carregant Obsidian...
+S'ha produït un error en carregar Obsidian.
+Recarrega l'aplicació
+Recarrega l'aplicació en mode segur
+Obre una altra arca
+Carregant connectors...
+El connector “{{plugin}}” està trigant a carregar. 
+Carregant arca...
+No s'ha pogut carregar l'arca: 
+Carregant memòria cau...
+Carregant espai de treball...
+Importa a l'arca
+Afegeix text al fitxer:
+Tria un fitxer per inserir
+Insereix text a {{filename}}
+Insereix enllaç a {{filename}}
+Mostra la vista general de pestanyes
+Important...
+Importació realitzada amb èxit
+No s'ha pogut importar el fitxer {{filename}}
+Prem de nou enrere per sortir.
+Comentaris
+T'està agradant Obsidian? Ajuda'ns valorant-lo.
+Valora l'aplicació
+Descarta
+S'han actualitzat els fitxers de configuració des d'iCloud; cal tornar a carregar
+Torna a carregar
+Lloc web d'ajuda oficial
+Llegeix la documentació oficial d'ajuda d'Obsidian, disponible en diverses llengües.
+Visitar
+Xat de Discord
+Discord és el millor lloc per xatejar amb altres usuaris experimentats d'Obsidian de tot el món.
+Uneix-t'hi
+Fòrum oficial
+Ajudeu-vos mútuament, publiqueu sol·licituds de funcionalitats, informeu d'errors i feu discussions a fons sobre la gestió del coneixement.
+Arca d'experimentació
+Juga i experimenta amb diferents funcionalitats. Tingueu en compte que els canvis no es desaran.
+Desa l'arxiu actual
+Descarrega els adjunts del fitxer actual
+Segueix l'enllaç sota el cursor
+Obre l'enllaç sota el cursor en una nova pestanya
+Obre l'enllaç sota el cursor a la dreta
+Obre l'enllaç sota el cursor en una finestra nova
+Focalitza en el grup de pestanyes superior
+Focalitza en el grup de pestanyes inferior
+Focalitza en el grup de pestanyes a l'esquerra
+Focalitza en el grup de pestanyes a la dreta
+Activa/desactiva la fixació
+Divideix a la dreta
+Divideix cap avall
+Alterna les pestanyes apilades
+Commuta la longitud de línia llegible
+Activa/desactiva els números de línia
+Navega enrere
+Navega endavant
+Commuta el mode clar/fosc
+Canvia el tema...
+Canvia la cambra forta...
+Obre la cambra forta...
+Gestiona les cambres fortes
+Cerca a l'arxiu actual
+Cerca i substitueix a l'arxiu actual
+Afegeix propietat a l'arxiu
+Nom (A a Z)
+Nom (Z a A)
+Afegeix un àlies
+Esborra les propietats de l'arxiu
+Obre la configuració
+Obre l'ajuda
+Alterna entre la vista d'edició i la de lectura
+Alterna entre la vista prèvia en directe i el mode font
+Esborra l'arxiu actual
+Nova pestanya
+Finestra nova
+Mostra la paperera
+Tanca totes les pestanyes
+Tanca la pestanya actual
+Tanca les altres en el grup de pestanyes
+Tanca totes les altres pestanyes
+Tanca aquest grup de pestanyes
+Alterna la barra lateral esquerra
+Alterna la cinta
+Alterna la barra lateral dreta
+Alterna el mode per defecte per a les noves pestanyes
+Afegeix el cursor a sobre
+Afegeix el cursor a sota
+Focalitza en l'editor
+Alterna l'ocultació de les propietats a l'arxiu actual
+Alterna l'ocultació a la línia actual
+Oculta totes les capçaleres i llistes
+Desoculta totes les capçaleres i llistes
+Oculta més
+Oculta menys
+Intercanvia la línia cap amunt
+Intercanvia la línia cap avall
+Elimina la capçalera
+Estableix com a capçalera {{level}}
+Alterna la negreta per a la selecció
+Alterna la cursiva per a la selecció
+Alterna el ressaltat per a la selecció
+Alterna els comentaris per a la selecció
+Neteja el format
+Insereix un enllaç
+Alterna la correcció ortogràfica
+Elimina el paràgraf
+Alterna l'estat de la llista de verificació
+Alterna entre pic/casella de selecció
+Insereix una nota
+Insereix un bloc de codi
+Insereix un bloc de fórmules matemàtiques
+Insereix fila horitzontal
+Insereix taula
+Insereix una nota a peu de pàgina
+Edita el títol de l'arxiu
+Copia la ruta de l'arxiu
+Copia el camí del fitxer actual des de l'arrel del sistema
+Copia l'URL d'Obsidian
+Exporta a PDF
+Recarrega l'aplicació sense desar
+Desfés el tancament de la pestanya
+Mostra el menú contextual sota el cursor
+Mostra la informació de depuració
+Obre l'arca de proves
+Alterna la finestra sempre visible
+Augmenta el zoom
+Redueix el zoom
+Restableix el zoom
+Alterna entre la vista d'edició i la de previsualització
+Mou el panell actual a una nova finestra
+Obre el panell actual en una finestra nova
+Reanomena l'arxiu actual
+Ves a la pestanya anterior
+Ves a la següent pestanya
+Ves a l'última pestanya
+Ves a la pestanya núm. {{n}}
+Mostra les notes de la versió
+Això afectarà {{links}} en {{files}}.
+S'han actualitzat {{links}} en {{files}}.
+Actualitza els enllaços
+Voleu actualitzar els enllaços interns que apunten a aquest arxiu?
+Actualitza sempre
+Només aquesta vegada
+No actualitzis
+Segur que voleu suprimir "{{filename}}"?
+S'enviarà a la paperera del sistema.
+S'enviarà a la paperera d'Obsidian, que es troba a la carpeta oculta ".trash" del vostre arca.
+L'arxiu s'eliminarà permanentment.
+Aquesta carpeta no està buida.
+Si continueu, totes les arxius dins d'aquesta carpeta s'eliminaran.
+Suprimeix la carpeta
+Suprimeix
+No ho preguntis més
+Actualment hi ha {{count}} enllaç que apunta a aquest fitxer.
+Actualment hi ha {{count}} enllaços que apunten a aquest fitxer.
+Suprimeix l'arxiu
+Descarrega adjunts
+No hi ha adjunts externs en aquesta nota.
+S'ha descarregat {{count}} adjunt.
+S'han descarregat {{count}} adjunts.
+S'ha actualitzat {{count}} fitxer.
+S'han actualitzat {{count}} fitxers.
+S'han revertit els canvis a {{count}} fitxer.
+S'han revertit els canvis a {{count}} fitxers.
+Sense connexió a Internet
+S'està carregant...
+Gestiona
+Mostra
+Confirma
+Cancel·la
+Omet
+Baixa
+Fet
+Desa
+Atura
+Canvia
+Continua
+Tria
+Torna-ho a provar
+Actualitza
+Desfés
+Preparant el PDF...
+Canvia el nom de l'arxiu
+Nom de l'arxiu
+Nou nom
+
+Seleccionat
+S'ha canviat el nom de l'arxiu amb èxit.
+Error en fusionar les notes: {{message}}
+El fitxer o carpeta “{{path}}” no existeix.
+L'encapçalament no pot estar buit
+L'ID del bloc no pot estar buit
+L'ID del bloc només pot contenir caràcters alfanumèrics o un guionet
+Canvia el nom de la capçalera
+Canvia el nom de l'ID del bloc
+Vols suprimir els adjunts del fitxer?
+Aquest adjunt ja no s'utilitza en cap nota. Vols suprimir-lo?
+Aquests {{count}} adjunts ja no s'utilitzen en cap nota. Vols suprimir-los?
+Arbre de fitxers
+Galeria
+Crear nota
+Nova nota a la dreta
+Pestanya nova
+Nova finestra
+Obre ràpidament...
+Obre Arca...
+Tanca la pestanya
+Tanca la finestra
+Cerca
+Reemplaça
+Destacats
+Enllaç Markdown
+Enllaç
+Capçalera {{level}}
+Sense capçalera
+Cita
+Exporta a PDF
+Insereix adjunt...
+Bloc de codi
+Bloc de matemàtiques
+Taula
+Nota a peu de pàgina
+Títol en línia
+Números de línia
+Llista
+Llista numerada
+Llista de tasques
+Negreta
+Codi
+Comentari
+Cursiva
+Matemàtica en línia
+Ressaltat
+Ratllat
+Comentaris
+Plegat
+Plega-ho tot
+Desplega-ho tot
+Plega més
+Plega menys
+Mode font
+Vista de lectura
+Mostra informació de depuració
+Obre l'Arca de proves
+Mou a una finestra nova
+Navega enrere
+Navega endavant
+Alterna la barra lateral esquerra
+Alterna la barra lateral dreta
+Cinta
+Divideix cap a la dreta
+Divideix cap avall
+Notes de la versió
+Connectors
+Explorador de fitxers
+Mostra tots els fitxers de la teva Arca.
+Obre l'explorador de fitxers
+Mostra l'explorador de fitxers
+Crea una nota nova
+Crea una carpeta nova
+Crea una nota nova a la pestanya actual
+Crea una nota a la dreta
+Revela automàticament el fitxer actual
+Redueix-ho tot
+Expandeix-ho tot
+Nota nova
+Carpeta nova
+Canvia l'ordre de classificació
+Mostra el fitxer a l'explorador de fitxers
+Mostra el fitxer actiu a l'explorador de fitxers
+Fes una còpia del fitxer actual
+Duplica el fitxer actual
+Mou el fitxer a una altra carpeta
+Carpeta nova amb la selecció ({{count}} element)
+Carpeta nova amb la selecció ({{count}} elements)
+Mou el fitxer a...
+Mou la carpeta a...
+Mou {{count}} elements a...
+Escriu el nom de la carpeta
+No s'han trobat carpetes.
+per navegar
+per moure
+per crear
+per descartar
+Ordena per nom de fitxer (A a Z)
+Ordena per nom de fitxer (Z a A)
+Ordena per hora d'edició (nou a vell)
+Ordena per hora d'edició (vell a nou)
+Hora de creació (vell a nou)
+Hora de creació (nou a vell)
+Nota nova
+Carpeta nova
+Reanomena
+Suprimeix
+Fes una còpia
+Duplicar
+El nom del fitxer no pot contenir cap dels següents caràcters: 
+Els enllaços no funcionaran amb noms de fitxers que continguin aquests caràcters: 
+Ja existeix un fitxer amb el mateix nom
+El nom del fitxer no pot estar buit.
+El nom del fitxer no pot començar amb un punt.
+Darrera modificació a les {{time}}
+Creat a les {{time}}
+Sense títol
+Sense títol
+Els adjunts s'han de desar a "{{path}}" a partir d'ara.
+Cerca
+Cerca una paraula clau en totes les notes.
+Cerca en tots els fitxers
+Redueix els resultats
+Coincidència de majúscules i minúscules
+Explica el terme de cerca
+Mostra més context
+{{count}} resultat
+{{count}} resultats
+Configuració de cerca
+Escriu per començar la cerca...
+Coincideix amb el text: 
+Coincideix amb l'expressió regular: 
+Conté el text exacte: 
+Més gran que: 
+Menys que: 
+És veritat
+És fals
+Està buit
+Conté la propietat:
+Coincideix amb tots els següents: 
+Coincideix amb qualsevol dels següents: 
+Excloent: 
+Coincidència amb majúscules i minúscules
+Coincidència sense distinció de majúscules i minúscules
+Coincideix amb la ruta del fitxer: 
+Coincideix amb el nom del fitxer: 
+Coincideix amb el contingut del fitxer: 
+Coincideix amb la tasca: 
+Coincideix amb la tasca (pendent): 
+Coincideix amb la tasca (feta): 
+Coincideix amb la línia: 
+Coincideix amb el bloc: 
+Coincideix amb la secció: 
+Coincideix amb l'etiqueta: 
+No s'han trobat coincidències.
+... i {{count}} coincidència més.
+... i {{count}} coincidències més.
+Copia els resultats de la cerca
+Copia els resultats
+Els resultats s'han copiat al porta-retalls.
+Mostra la ruta
+Mostra la ruta completa del fitxer en lloc només del nom del fitxer.
+Estil de l'enllaç
+Converteix cada resultat de fitxer en un enllaç de manera opcional.
+Cap
+Wikienllaç
+Enllaç de Markdown
+Prefix de la llista
+Afegeix de manera opcional un prefix d'element de llista a cada resultat de fitxer.
+Cap
+Guió (-)
+Asterisc (*)
+Numerat
+Neteja la cerca
+Opcions de cerca
+Propietats
+Etiquetes
+Llegeix més
+Historial
+Neteja l'historial de cerca
+coincideix amb la ruta del fitxer
+coincideix amb el nom del fitxer
+cerca etiquetes
+cerca paraules clau a la mateixa línia
+cerca paraules clau sota la mateixa capçalera
+coincideix amb la propietat
+Cerca "{{keyword}}"
+Cerca a la carpeta
+Selector ràpid
+Salta a qualsevol fitxer sense deixar el teclat. Ctrl/Cmd+O per activar.
+Selector
+Obre el selector ràpid
+per navegar
+per obrir
+per obrir en una pestanya nova
+per obrir a la dreta
+per crear
+per descartar
+per seleccionar
+No s'han trobat notes. Prem Enter per crear-ne una de nova.
+Escriu el nom del fitxer al qual vols saltar o crear...
+Enter per crear
+Encara no s'ha creat, selecciona per crear
+Mostra només els existents
+Mostra només enllaços als fitxers que encara no s'han creat.
+Mostra els fitxers adjunts
+Mostra els fitxers adjunts com ara imatges, vídeos i PDF.
+Mostra tots els tipus de fitxer
+Mostra tots els fitxers, inclosos aquells que Obsidian no pot obrir. El fitxer s'obrirà amb l'aplicació predeterminada per a aquest tipus de fitxer.
+Vista gràfica
+Visualitza un gràfic de les notes que estan enllaçades entre elles.
+Obre la vista gràfica
+Obre la vista gràfica local
+Copia la captura de pantalla
+Gràfic de {{displayText}}
+Filtres
+Cerca fitxers...
+Profunditat
+Mostra els nodes a aquesta distància de links
+Enllaços de veïns
+Mostra els enllaços entre veïns.
+Enllaços sortints
+Mostra els enllaços cap a altres fitxers
+Enllaços entrants
+Mostra els enllaços des d'altres fitxers
+Etiquetes
+Les etiquetes estan enllaçades als fitxers que les contenen
+Fitxers adjunts
+Mostra els fitxers adjunts inclosos pels fitxers
+Només fitxers existents
+Si està marcat, no es mostraran els enllaços a fitxers que no existeixen
+Òrfes
+Mostra els fitxers que no estan enllaçats amb cap altre fitxer
+Visualització
+Fletxes
+Mostra les fletxes quan estigui ampliat
+Llindar d'esvaïment del text
+Mida del node
+Gruix de l'enllaç
+
+Força de centrat
+Força de l'enllaç
+Distància de l'enllaç
+Força de repulsió
+Obre la configuració de la vista gràfica
+Captura de pantalla copiada al porta-retalls.
+Grups
+Introdueix la consulta...
+Esborra el grup
+Nou grup
+Fes clic per canviar el color\nArrossega per reordenar els grups
+Inicia l'animació de lapse de temps del gràfic
+Inicia l'animació de lapse de temps
+Animar
+Retroenllaços
+Mostra el nombre de retroenllaços a la barra d'estat.
+Obre els retroenllaços
+Mostra el panell de retroenllaços
+Obre els retroenllaços per al fitxer actual
+Alterna els retroenllaços al document
+Retroenllaços al document
+Mencions enllaçades
+No s'han trobat retroenllaços.
+Mencions sense enllaçar
+Mostra el filtre de cerca
+Enllaç
+Retroenllaços per a {{displayText}}
+No s'han trobat mencions sense enllaçar.
+
+Retroenllaç al document
+Mostra els retroenllaços al document per defecte en obrir nous panells.
+Enllaços sortints
+Mostra els enllaços sortints i detecta mencions sense enllaçar d'altres notes en el fitxer actual.
+Obre els enllaços sortints
+Mostra el panell d'enllaços sortints
+Obre els enllaços sortints per al fitxer actual
+Enllaços sortints de {{displayText}}
+Enllaços
+No s'han trobat enllaços.
+Mencions sense enllaçar
+Enllaça aquest fitxer
+Encara no creat
+Panell d'etiquetes
+Etiquetes
+Mostra totes les teves etiquetes juntament amb el seu nombre d'aparicions.
+Mostra el panell d'etiquetes
+No s'han trobat etiquetes.
+Nom de l'etiqueta (A a Z)
+Nom de l'etiqueta (Z a A)
+Freqüència (d'alta a baixa)
+Freqüència (de baixa a alta)
+Mostra les etiquetes emmascarades
+Redueix-ho tot
+Expandeix-ho tot
+Vista de notes a peu de pàgina
+Notes a peu de pàgina
+Mostra una llista de notes a peu de pàgina de la nota actual.
+Mostra les notes a peu de pàgina
+No s'han trobat notes a peu de pàgina.
+Vista de propietats
+Mostra les metadades dels teus fitxers.
+Totes les propietats
+Propietats del fitxer
+Propietats del fitxer per a {{displayText}}
+Mostra totes les propietats
+Mostra les propietats del fitxer
+Suprimeix la propietat
+Suprimeix les propietats
+Automàtic
+Automàtic ({{type}})
+No s'han trobat propietats.
+Propietats no vàlides.
+Nom de la propietat (A a Z)
+Nom de la propietat (Z a A)
+Freqüència (d'alta a baixa)
+Freqüència (de baixa a alta)
+Vols fusionar la propietat “{{oldKey}}” amb “{{newKey}}”?
+En cas de conflictes, els valors es fusionaran o es farà servir el valor de “{{oldKey}}”.
+Redueix-ho tot
+Expandeix-ho tot
+Obre les propietats del fitxer
+Obre nota diària
+Previsualització de la pàgina
+Previsualitza una nota en passar el ratolí per damunt d'un enllaç intern. Ctrl/Cmd + passa el ratolí en mode d'edició.
+No s'ha pogut trobar “{{linktext}}”.
+"{{linktext}}" encara no s'ha creat. Fes clic per crear-la.
+No s'ha trobat la nota a peu de pàgina {{id}}. Feu clic per crear-la.
+Editor
+Previsualització
+Cerca, Retroenllaços i Enllaços sortints
+Capçalera de la pestanya
+Cal {{key}} per activar la previsualització de la pàgina en passar el ratolí
+Marcadors
+Marca fitxers i cerques que fas servir amb freqüència.
+Mostra els marcadors
+Redueix-ho tot
+Marca la pestanya activa...
+Nou grup de marcadors
+Marca...
+Afegeix un marcador
+Edita el marcador
+Marca el bloc sota el cursor...
+Marca l'encapçalament sota el cursor...
+Marca la cerca actual...
+Elimina el marcador per al fitxer actual
+Marca {{count}} pestanya...
+Marca {{count}} pestanyes...
+Marca totes les pestanyes...
+Marca aquesta gràfica...
+Marcador
+Marcats
+{{count}} marcador
+{{count}} marcadors
+No s'han trobat marcadors
+Error en carregar els marcadors.
+El fitxer de dades està corromput.
+Grup sense títol
+Gràfica sense títol
+Edita...
+Elimina
+Canvia el nom
+Marca aquest bloc...
+Marca aquest encapçalament...
+No hi ha cap cerca per marcar.
+Ruta
+Cerca
+Títol
+Grup de marcadors
+Marcadors
+CSS personalitzat
+Llegeix i aplica “obsidian.css” a la carpeta de la cambra forta.
+Temes de la comunitat
+S'estan obtenint les dades dels temes de la comunitat...
+Filtre...
+Només temes foscos
+Només temes clars
+Fes servir
+Deixa d'utilitzar aquest tema
+Instal·la i fes-lo servir
+Actualitza
+Aquest tema no proporciona un fitxer README.
+Elimina el tema
+Visita a GitHub
+No s'han pogut carregar els temes de la comunitat, comprova la teva connexió a la xarxa.
+Ara estàs fent servir {{title}} com a tema CSS.
+S'ha eliminat el tema {{title}}.
+S'ha actualitzat el tema {{title}}.
+Instal·lat
+Antic
+Actualitza-ho tot
+No s'han pogut carregar els temes de la comunitat.
+No s'han trobat actualitzacions de temes.
+S'ha trobat 1 tema per actualitzar.
+S'han trobat {{count}} temes per actualitzar.
+No s'ha pogut instal·lar el tema "{{name}}".
+S'ha instal·lat correctament el tema "{{name}}".
+S'està instal·lant el tema "{{name}}"...
+Mostrant {{themeCount}}:
+Actualització disponible
+Paleta d'ordres
+Escriu una ordre per invocar-la. No cal utilitzar la interfície d'usuari o recordar el drecera.
+Obre la paleta d'ordres
+per navegar
+per utilitzar
+per descartar
+No s'han trobat ordres.
+Escriu una ordre...
+Ordres fixades
+Importador de format Markdown
+Converteix Markdown d'altres aplicacions al format Obsidian.
+Obre l'importador Markdown
+Reparador d'etiquetes de Roam Research
+Converteix "#etiqueta" i "#[[etiqueta]]" a "[[etiqueta]]".
+Reparador de ressalts de Roam Research
+Converteix "^^ressaltat^^" a "==ressaltat==".
+Conversor de tasques de Roam Research
+Converteix "{{[[TODO]]}}" a "[ ]".
+Reparador de ressaltats de Bear
+Converteix "::ressaltat::" a "==ressaltat==".
+Reparador d'enllaços Zettelkasten
+Corregir els enllaços "[[UID]]" a "[[Nom del fitxer UID]]".
+Embellidor d'enllaços Zettelkasten
+Corregir els enllaços "[[UID]]" i també els embelleix "[[Nom del fitxer UID|Nom del fitxer]]".
+Migració de metadades inicials
+Migra les etiquetes de les metadades inicials, els àlies i les cssclasses al format estricte requerit per Obsidian v1.9+
+Advertència: l'importador convertirà tots els fitxers del teu calaix, no només el fitxer actual.
+Els teus fitxers seran sobreescrits. Fes una còpia de seguretat de tots els teus fitxers abans d'intentar la conversió.
+Inicia la conversió
+Atura
+Torna enrere
+Fet
+Processant...
+Cancel·lant...
+Fet!
+Fitxers processats
+Fitxers modificats
+Reemplaçaments totals
+Ha fallat
+Notes diàries
+Obre la nota diària d'avui o en crea una si no hi és.
+Avui
+Obre la nota d'avui
+Obre la nota diària anterior
+Obre la nota diària següent
+Insereix text a la nota diària
+Insereix un enllaç a la nota diària
+No s'ha pogut crear la nota diària. "{{format}}" no és un format vàlid.
+No s'ha pogut crear la nota diària. Carpeta "{{folderOption}}" no trobada.
+No s'ha pogut crear la nota diària. Fitxer de plantilla "{{template}}" no trobat.
+No hi ha cap nota diària abans d'aquesta.
+No hi ha cap nota diària després d'aquesta.
+Format de data
+Trieu com s'anomenen les notes diàries a la vostra cambra forta.
+Format personalitzat
+Personalitzat
+Format de data no vàlid
+No s'ha trobat la carpeta de notes diàries.
+Per a més sintaxi, consulta: 
+referència del format
+Aquí tens com ho veuràs: 
+Ubicació del fitxer nou
+La ruta de la carpeta per crear la nova nota diària.
+Ubicació del fitxer de plantilla
+La ruta del fitxer a utilitzar com a plantilla.
+Creador de notes úniques
+Crea notes amb prefixes de temps únics, per a fluxos de treball com ara Zettelkasten o Slip Box.
+Única
+Crea una nova nota única
+Nota única nova
+Afegeix un enllaç intern únic
+Ubicació del fitxer nou
+La ruta de la carpeta per crear la nova nota única.
+No s'ha pogut crear la nota única. Carpeta "{{folderOption}}" no trobada.
+Ubicació del fitxer de plantilla
+La ruta del fitxer a utilitzar com a plantilla.
+Exemple: carpeta1/nota
+Format de prefix
+No s'ha pogut crear la nota única. Fitxer de plantilla "{{template}}" no trobat.
+No s'ha pogut generar una nota única amb el format "{{format}}
+Nota aleatòria
+Obre una nota aleatòria. Útil per revisar i descobrir.
+Aleatòria
+Obre nota aleatòria
+Esquema
+Mostra l'esquema de l'arxiu actual o del panell vinculat.
+Obre esquema
+Mostra el panell d'esquema
+Obre l'esquema de l'arxiu actual
+Esquema de {{displayText}}
+No s'han trobat capçaleres.
+Desplaçament automàtic a la secció actual
+Comptador de paraules
+Mostra el comptador de paraules a la barra d'estat.
+Presentació
+Presenta des de Markdown. Usa "---" per separar les diapositives.
+Inicia presentació
+Enregistrament d'àudio
+Enregistra àudio i desa com a adjunt.
+Inicia enregistrament d'àudio
+Atura enregistrament d'àudio
+Inicia/atura enregistrament
+S'ha denegat l'accés al micròfon, si us plau, habilita'l des del panell de preferències.
+Si us plau, concedeix permisos per accedir al micròfon i començar l'enregistrament.
+No hi ha cap micròfon connectat.
+Obre amb l'aplicació predeterminada
+Afegeix un botó per obrir l'arxiu actual a l'aplicació predeterminada.
+Obre a l'aplicació predeterminada
+Comparteix
+Mostra a la carpeta
+Mostra al Finder
+Plantilles
+Insereix contingut de plantilla des d'una carpeta de fitxers de plantilla.
+Inserir plantilla
+Inserir data actual
+Inserir hora actual
+Ubicació de la carpeta de plantilles
+Els fitxers d'aquesta carpeta estaran disponibles com a plantilles.
+Format de data
+{{date}} en el fitxer de plantilla serà reemplaçat amb aquest valor.
+També pots utilitzar {{date:YYYY-MM-DD}} per anul·lar el format una vegada.
+Format d'hora
+{{time}} en el fitxer de plantilla serà reemplaçat amb aquest valor.
+També pots utilitzar {{time:HH:mm}} per anul·lar el format una vegada.
+per navegar
+per inserir la plantilla
+per descartar
+No s'han trobat plantilles
+No s'han pogut llistar les plantilles. La carpeta de plantilles no és vàlida.
+No s'han pogut llistar les plantilles. Carpeta "{{folderOption}}" no trobada.
+No es pot inserir la plantilla; no s'han pogut llegir les propietats del fitxer de plantilla.
+No s'han pogut llistar les plantilles. No hi ha cap carpeta de plantilles configurada.
+Escriu el nom d'una plantilla...
+Finestra translúcida
+Activa l'efecte de translucidesa per millorar la sensació de profunditat. Millor utilitzat amb el mode fosc. No compatible amb Linux.
+Comandes de barra inclinada
+Habilita la capacitat d'activar comandes de barra inclinada a l'editor, escrivint la barra inclinada cap endavant.
+Estat de l'editor
+Afegeix un element a la barra d'estat per mostrar i canviar el mode actual de l'editor.
+Lectura
+Mode de font
+Previsualització en directe
+
+Publica les teves notes a través d'Obsidian Publish.
+Publica els canvis...
+Publica el fitxer actual
+Necessites accés a internet per publicar els canvis.
+Obsidian Publish és un servei addicional de pagament que et permet publicar les teves notes en línia directament des d'Obsidian.
+Per començar a publicar, inicia la sessió o crea un compte nou a Obsidian.
+Encara no tens cap subscripció a Obsidian Publish.
+Comprar
+Gestionar llocs
+No tens cap lloc.
+Escollir
+Editar l'ID del lloc
+Eliminar lloc
+Segur que vols eliminar aquest lloc?
+Això eliminarà immediatament i de forma permanent el teu lloc.
+Confirma l'eliminació del lloc "{{site}}"
+ID del lloc
+El teu lloc estarà a https://publish.obsidian.md/{site id}. Pots canviar-lo més endavant. Només es permeten lletres minúscules, nombres i guions.
+Escull un ID del lloc
+Crear
+L'ID del lloc només pot contenir lletres minúscules, nombres i guions.
+Aquest ID de lloc està en ús, si us plau, prova'n un altre.
+S'ha produït un problema en crear el teu lloc.
+Opcions del lloc
+
+
+Aparença
+Experiència de lectura
+Altres configuracions del lloc
+Nom del lloc
+Nom del teu lloc publicat. Apareixerà al títol de la pàgina del teu lloc.
+Nom del teu lloc
+Fitxer d'inici
+La primera pàgina que l'usuari veu en arribar al teu lloc publicat
+Tria un fitxer publicat
+Logotip
+Tria un fitxer d'imatge com a logotip del teu lloc.
+Qualsevol imatge pujada a la teva arca...
+Col·laboració al lloc
+Gestiona els col·laboradors d'aquest lloc.
+Personalitza la navegació
+Substitueix l'ordre dels elements de navegació i amaga pàgines o carpetes perquè no es mostrin.
+Ordre de visualització dels elements de navegació
+Amagar pàgines o carpetes de la navegació
+Fes clic amb el botó dret i selecciona "Amagar" per evitar que determinades pàgines apareguin a la navegació del lloc. Les pàgines seguiran sent accessibles mitjançant enllaços o accedint a la URL directament.
+Mostrar amagades
+Gestionar
+Navegació
+Arrossega i deixa anar per personalitzar l'ordre en què apareixen els elements de navegació al teu lloc de Publish.
+Amagar a la navegació
+Gestionar
+Tema
+Tria un esquema de colors per defecte per al teu lloc.
+Adaptar-se al del sistema
+Commutador de clar/fosc
+Permet que el visitant commuti entre el tema clar i el fosc ell mateix.
+Mostrar navegació
+Mostrar una llista de totes les pàgines publicades a l'esquerra del teu lloc publicat.
+Mostrar la barra de cerca
+Mostrar una barra de cerca a la part superior de la navegació que permet als visitants cercar pàgines i títols del teu lloc.
+Mostrar vista gràfica
+Mostra un petit gràfic local a cada pàgina.
+Mostra l'Índex
+Mostra l'estructura de títols de cada pàgina.
+Mostra els retroenllaços
+Mostra la secció de retroenllaços al final de cada pàgina.
+Utilitza finestres desplaçables
+Obre pàgines en finestres noves a la dreta. Permet desplaçar-te horitzontalment entre les planes.
+Mostra la previsualització en passar el cursor
+Mostra una previsualització de la pàgina en passar el cursor per sobre dels enllaços.
+Amaga el títol de la pàgina
+Amaga l'encapçalament del títol de la pàgina. Útil quan tens els teus propis títols a l'inici de cada pàgina.
+Longitud de línia llegible
+Limita la longitud màxima de línia. Mostra menys contingut a la pantalla, però fa que els paràgrafs llargs siguin més llegibles.
+Contrasenyes
+Restringeix l'accés al teu lloc amb contrasenyes.
+Codi de seguiment de Google Analytics
+Configura Google Analytics per al teu lloc. Només està disponible per als visitants amb URL de domini personalitzada. Si us plau, consulta les lleis i regulacions locals.
+Gestionar
+Desa les configuracions del lloc
+Opcions actualitzades per al teu lloc.
+Enrere
+Publicant a
+Canvia de lloc
+Afegir enllaçat
+Afegeix tots els fitxers que estan enllaçats als elements seleccionats actualment
+S'ha afegit {{count}} fitxer enllaçat.
+S'han afegit {{count}} fitxers enllaçats.
+Canvia les opcions del lloc
+No s'han detectat canvis.
+Canvis
+No modificats (selecciona per eliminar)
+ seleccionat
+Selecciona-ho tot
+Elements de navegació
+Desselecciona-ho tot
+Nou
+Publica
+No tens permisos per publicar al lloc actual.
+Si us plau, selecciona almenys un fitxer.
+Puja els canvis
+Fet
+Atura
+Pujant
+Per publicar
+Per eliminar
+Publicat
+Eliminat
+Fallit
+Cancel·lat
+Canviar
+Es pot trigar uns minuts a mostrar els canvis al lloc. Si no veus les darreres actualitzacions, prova a netejar la memòria cau del teu navegador.
+Pots visitar el teu lloc aquí: 
+Alguna cosa ha anat malament. Si us plau, comprova la consola de desenvolupador per obtenir més detalls.
+S'ha produït un error de xarxa. 
+Gestiona les contrasenyes
+Afegir contrasenya
+Nova contrasenya
+Actualment, el teu lloc no té cap contrasenya. Qualsevol pot visitar-lo.
+El teu lloc està protegit amb contrasenya. Si tens diverses contrasenyes, els visitants poden accedir al teu lloc introduint-ne qualsevol d'elles.
+Contrasenya
+S'emmagatzemarà de forma segura un hash de la teva contrasenya. Un cop s'hagi establert la contrasenya, no es podrà revelar en text pla.
+La teva contrasenya
+Sobrenom (opcional)
+Estableix un sobrenom per recordar per a què o per a qui és la contrasenya.
+Afegir aquesta contrasenya
+Contrasenya sense títol
+Creat el {{time}}
+S'ha afegit una nova contrasenya.
+Domini personalitzat
+Utilitza el teu propi domini enlloc de la URL https://publish.obsidian.md/{site id}.
+Prohibir la indexació als motors de cerca
+Evita que els motors de cerca indexin el teu lloc.
+Configurar
+Configura el domini personalitzat
+URL personalitzada
+La URL on estarà ubicat el teu lloc.
+Redirigeix al teu domini personalitzat
+Redirigeix els visitants de publish.obsidian.md/id al teu domini personalitzat.
+Actualitza la configuració del domini
+Consulta la nostra {{link}} a la nostra pàgina d'ajuda per obtenir més informació.
+guia de configuració de domini personalitzat
+Estàs utilitzant {{site}} del teu límit de {{limit}}.
+Compra més llocs
+No has comprat cap lloc.
+Obtén un lloc
+Gestiona la compartició per a "{{name}}"
+Actualment aquest lloc es comparteix amb les següents persones.
+Actualment aquest lloc no es comparteix amb ningú.
+Pendent
+Elimina l'usuari
+Convida un usuari
+Introdueix el seu correu electrònic...
+Si us plau, introdueix un correu electrònic vàlid per convidar algú.
+Si us plau, habilita el onnector Publish almenys en la configuració -> Connectors principals per veure els llocs.
+Els teus llocs
+Llocs compartits amb tu
+Deixa de col·laborar en aquest lloc
+Confirma la finalització de col·laboració en el lloc
+Això eliminarà aquest lloc de la llista de llocs compartits amb tu. Aquesta acció no es pot desfer.
+Si us plau, contacta amb el propietari del lloc si vols col·laborar en aquest lloc de nou.
+Marxar
+Compara amb la versió en directe
+Utilitza la versió en directe
+Confirma la substitució de la versió local
+Estàs segur que vols substituir la versió local?
+S'utilitzarà la versió en directe i la teva versió local es descartarà. Si us plau, fes còpies de seguretat si és necessari.
+Continua
+S'ha utilitzat amb èxit la versió en directe per substituir la teva versió local.
+Obre al lloc en directe
+Obre el fitxer
+Gestiona els filtres de publicació
+Carpetes incloses
+Els fitxers d'aquestes carpetes es seleccionaran automàticament quan revisis els canvis per publicar.
+ Actualment, aquestes carpetes hi estan incloses:
+Carpetes excloses
+Els fitxers d'aquestes carpetes no apareixeran quan revisis els canvis per publicar. Aquesta configuració té prioritat sobre les carpetes incloses anteriorment.
+Obsidian Publish inclou actualment {{folders}}.
+Obsidian Publish exclou actualment {{folders}}.
+Gestiona les carpetes incloses
+Gestiona les carpetes excloses
+Inclou una carpeta
+Pots incloure tant carpetes existents com carpetes que encara no s'han creat.
+Contacta amb l'assitència
+Previsualització de navegació
+Espais de treball
+Desa i carrega la disposició de l'espai de treball.
+Carrega la disposició de l'espai de treball
+Gestiona les disposicions de l'espai de treball
+Desa la disposició
+Desa i carrega una altra disposició
+Desa l'actual disposició de l'espai de treball com a...
+Desa
+Carrega
+Esborra la disposició
+Si us plau, introdueix un nom per a la nova disposició.
+S'ha desat correctament la disposició.
+No s'ha trobat cap disposició desada.
+Modificat {{time}}
+Escriu el nom de la disposició...
+Sincronització
+Sincronitza els teus fitxers a través d'Obsidian Sync.
+Veure l'historial de versions
+Configura Sync
+Obre l'historial de versions
+Mostra l'historial de Sync
+Obre el registre d'activitat
+Carrega'n més
+Mostra la diferència
+Copia-ho al porta-retalls
+Restaura aquesta versió
+Aquesta versió és ja la més recent.
+Versió restaurada amb èxit de {{time}}
+Aquest fitxer s'ha eliminat
+Suprimit mitjançant {{ device }}
+Aquest fitxer s'ha reanomenat de "{{filepath}}"
+Canviat el nom de “{{from}}” a “{{to}}”
+Mogut des de “{{from}}”
+Mogut de “{{from}}” a “{{to}}”
+1 revisió
+{{revisions}} revisions
+mitjançant {{device}}
+No hi ha historial de sincronització per aquest fitxer.
+Buit
+No es pot recuperar l'historial de versions.
+Fitxers de configuració
+Fitxers eliminats
+Historial de versions
+Feu clic en un fitxer eliminat per veure el seu historial.
+Crea una arca remota
+Si us plau, introdueix una contrasenya.
+El nom de l'arca no pot estar buit.
+Arca remota "{{name}}" creada amb èxit.
+Les arques remotes se sincronitzen de forma segura als teus dispositius.
+Nom de l'arca'
+T'ajuda a recordar per a què és aquesta arca.
+Regió
+Automàtic
+Selecciona la regió del servidor més propera a tu per emmagatzemar l'Arca remota. Aquesta opció no es pot canviar en el futur.
+La meva magnífica arca
+Xifratge
+El xifratge d'extrem a extrem ofereix la seguretat més alta, però requereix que deseu de manera segura la vostra contrasenya de xifratge. El xifratge estàndard utilitza una clau gestionada per Obsidian per protegir les vostres dades en trànsit i als nostres servidors.
+Aquesta opció no es pot canviar més endavant.
+Xifratge d'extrem a extrem
+Xifratge estàndard
+Contrasenya d'encriptació
+Aquesta contrasenya no es pot canviar més endavant.
+Si oblideu aquesta contrasenya, qualsevol dada remota romandrà inutilitzable per sempre.
+Això no afecta les teves dades locals.
+La cambra remota “{{name}}” està xifrada. Introduïu la vostra contrasenya per desbloquejar-la.
+La teva contrasenya
+Desbloca l'arca remota
+Desbloca l'arca
+Les teves arques remotes
+Creat el {{time}}
+Elimina
+Reanomena
+Reanomena l'arca remota "{{name}}"
+Introdueix un nou nom per a aquesta arca remota.
+Gestiona la compartició
+Confirma l'eliminació de l'arca
+Segur que vols eliminar aquesta arca remota?
+Totes les dades al nostre servidor, incloent-hi l'historial de versions, s'eliminaran. Els vostres fitxers locals es mantindran intactes.
+Aquesta acció és permanent i irreversible.
+{{name}} s'ha eliminat.
+Obsidian Sync: L'arca remota connectada ja no existeix.
+Connecta
+Desconnecta
+Sincronització: {{status}}
+No tens cap arca remota.
+No tens una subscripció activa d'Obsidian Sync.
+Si us plau, visita
+No es poden previsualitzar els fitxers {{type}}.
+Crea una arca nova
+Registre de sincronització
+Tots
+
+Omesos
+Conflictes de fusió
+Copia el registre de sincronització
+Registre de sincronització copiat amb èxit.
+Torna a intentar
+Compra
+S'ha detectat un servei de sincronització de fitxers en conflicte
+Advertència: La vostra arca sembla estar utilitzant {{service}} com a servei de sincronització de tercers. Si feu servir Obsidian Sync amb aquesta arca, podeu trobar-vos amb conflictes, corrupció de fitxers o pèrdua de dades.
+Si feu servir iCloud Drive, les carpetes Documents i Escriptori podrien estar sincronitzades amb iCloud. Això podria causar conflictes amb Obsidian Sync.
+Arca remota
+Escull
+Gestiona
+Actualment connectat a l'arca remota "{{name}}".
+Actualment no connectat a cap arca remota.
+Estat de sincronització
+La sincronització d'Obsidian està actualment en pausa.
+La sincronització d'Obsidian està actualment en marxa.
+Nom del dispositiu
+Aquest nom es mostrarà al registre de sincronització. Deixa-ho en blanc per utilitzar el nom predeterminat.
+Reprendre
+Pausa
+Fitxers eliminats
+Mostra i restaura els fitxers eliminats.
+Activitat de sincronització
+Visualitza l'activitat de sincronització recent per a la depuració.
+Visualitzar
+Restauració massiva
+Restaura fitxers
+Restaura {{count}} fitxer
+Restaura {{count}} fitxers
+Restaurant...
+Restauració completada: {{succeeded}} èxit i {{failed}} fallades.
+Mida de l'arca
+Estàs utilitzant {{size}} de {{limit}} a l'arca
+No es pot recuperar la mida de l'arca.
+Recuperant la mida de l'arca...
+Mida de l'arca per sobre del límit
+La mida de l'arca s'acosta al seu límit
+Veure els fitxers més grans
+Aquests són els fitxers remots que ocupen més espai. Després d'eliminar els fitxers adjunts, utilitza el botó de purga per alliberar espai de l'arca remot.
+Actualitza l'emmagatzematge
+Purga
+Amaga els meus canvis
+Elimina definitivament els fitxers adjunts eliminats de l'arca remota per estalviar espai.
+Purga completada.
+Evitar la suspensió del dispositiu
+Evita que el dispositiu entri en mode de suspensió quan hi ha fitxers per sincronitzar.
+Sincronització selectiva
+Carpetes excloses
+Impedeix que certes carpetes es sincronitzin.
+Actualment, aquestes carpetes estan excloses:
+Gestionar
+Sincronitzar imatges
+Sincronitza fitxers d'imatges amb aquestes extensions: {{extensions}}.
+Sincronitzar àudio
+Sincronitza fitxers d'àudio amb aquestes extensions: {{extensions}}.
+Sincronitzar vídeos
+Sincronitza fitxers de vídeo amb aquestes extensions: {{extensions}}.
+Sincronitzar PDFs
+Sincronitza fitxers PDF.
+Sincronitzar tots els altres tipus
+Sincronitza tipus de fitxer no compatibles.
+Configuració de sincronització de l'arca
+Historial de versions de la configuració
+Mostra i restaura l'historial de versions dels fitxers de configuració.
+Configuració principal
+Activa la sincronització de la configuració de l'editor, fitxers i enllaços, tecles d'accés ràpid personalitzades, etc.
+Configuració d'aparença
+Sincronitza la configuració de l'aparença com el mode fosc, el tema actiu i les funcionalitats habilitades.
+Temes i funcionalitats
+Sincronitza temes i funcionalitats descarregades. Si estan habilitats o no depèn de l'opció anterior.
+Tecles d'accés ràpid
+Sincronitza les tecles d'accés ràpid personalitzades.
+Llista de connectors bàsics actius
+Sincronitza quins connectors bàsics estan habilitats.
+Configuració dels connectors bàsics
+Sincronitza la configuració dels connectors bàsics.
+Llista de connectors de la comunitat actius
+Sincronitza quins connectors de la comunitat estan habilitats.
+Connectors de la comunitat instal·lats
+Sincronitza connectors de la comunitat instal·lats (fitxers .js, .css i manifest.json) i la seva configuració.
+Sync encara s'està carregant. Actualitzeu aquesta pàgina més tard.
+Obsidian Sync és el servei de sincronització addicional d'Obsidian amb xifrat d'extrem a extrem i historial de versions.
+Per començar la sincronització, inicieu la sessió o creeu un compte nou d'Obsidian.
+Fitxers actuals
+Sincronitza els canvis
+Avui
+Ahir
+Aquesta setmana
+Més antic
+Darrera sincronització
+{{count}} més
+Registra't
+Inicia sessió
+Gestiona les carpetes excloses
+Actualment, s'exclouen {{folders}} carpetes de la sincronització.
+Exclou una carpeta
+Pots excloure tant carpetes existents com carpetes que encara no s'han creat.
+Treure de la llista d'exclusió
+Configura la connexió
+S'està connectant...
+La connexió ha fallat
+No s'ha pogut connectar a la cambra remota.
+Ara estàs connectat a "{{name}}".
+Inicia la sincronització
+Confirma la fusió de l'arca
+La teva arca local ja conté algunes notes.
+Si et connectes a l'arca remota "{{name}}", les notes de la teva arca local es fusionaran amb les notes de l'arca remota. En cas de conflicte, es conservarà la versió més recent de la nota.
+Actualitza aquesta opció i reinicia l'aplicació a tots els dispositius on vulguis que tingui efecte.
+Aquesta arca remota està actualment compartida amb les següents persones.
+Aquesta arca remota no està actualment compartida amb cap persona.
+Arques compartides amb tu
+Deixa de col·laborar en aquesta arca
+Confirma la fi de la col·laboració amb l'arca
+Això eliminarà aquesta arca de la llista d'arques compartides amb tu. Aquesta acció no es pot desfer.
+Si desitges tornar a col·laborar en aquesta arca, posa't en contacte amb el propietari de l'arca.
+Marxar
+No s'han pogut carregar les arues remotes.
+Necessites una subscripció d'Obsidian Sync per connectar-te a aquesta arca.
+Contacta amb el suport
+Si trobes algun problema amb Obsidian Sync, posa't en contacte amb nosaltres perquè et puguem ajudar. Pots contactar amb nosaltres a support@obsidian.md.
+Copia la informació de depuració
+Envia un correu al suport
+Sync no està connectat a cap arca remota.
+Obsidian Sync et permet crear fins a 5 arcque remotes. Per crear una arca remota nova, elimina'n una d'existent.
+Actualitza la cambra forta
+Actualitza el xifratge de la cambra forta
+Hi ha disponible una versió nova de xifratge per a les cambres remotes.
+Migra la cambra remota
+Configuració de la cambra remota
+Migra
+Això suprimirà la vostra cambra remota i la recrearà amb el xifratge més recent. Els fitxers locals no se'n veuran afectats; tanmateix, es perdrà l'historial de versions.
+Confirma la migració de la cambra forta
+Per actualitzar el xifratge, totes les dades de la cambra forta es tornaran a pujar als servidors d'Obsidian Sync amb el nou mètode de xifratge. Aquest procés suprimirà de manera permanent totes les dades xifrades amb el xifratge antic, inclòs l'historial de versions de la vostra cambra forta.
+Important: recomanem fermament crear una còpia de seguretat de la vostra cambra forta abans de continuar per evitar qualsevol possible pèrdua de dades.
+Un cop completada l'actualització, haureu de reconnectar tots els vostres dispositius a la cambra remota actualitzada.
+La migració de la cambra forta pot trigar una estona. Haureu de mantenir Obsidian actiu en aquest dispositiu per tornar a pujar totes les vostres notes i adjunts. És millor fer-ho al vostre dispositiu principal.
+Voleu continuar?
+La migració de la cambra forta està en curs.
+La migració de la cambra forta s'ha completat.
+Resolució de conflictes
+Trieu com es resolen els conflictes quan una nota es modifica de manera independent en diversos dispositius.
+Fusiona automàticament
+Crea un fitxer de conflicte
+Recuperació de fitxers
+Permet restaurar instantànies recents per recuperar-se de la pèrdua accidental de dades. Les instantànies només es guarden per a fitxers Markdown.
+Obre les instantànies desades
+Interval de l'instantània
+Interval mínim en minuts entre dues instantànies.
+Longitud de l'historial
+Nombre de dies que es mantenen les instantànies.
+Instantànies
+Visualitza i restaura les instantànies desades.
+Mostra
+Esborra l'historial
+Elimina totes les instantànies.
+Esborra
+Esteu segur que voleu eliminar totes les instantànies? Tingueu en compte que només s'eliminaran les instantànies. Tots els fitxers dins de la vostra arca no es veuran afectats.
+Instantànies esborrades.
+No s'han trobat instantànies.
+Trieu un fitxer...
+Seleccioneu un fitxer a l'esquerra per veure les instantànies.
+Compositor de notes
+Uneix, divideix i reorganitza notes.
+Confirma la fusió de fitxers
+Sol·licita confirmació abans de fusionar dos fitxers.
+Text després de l'extracció
+Què mostrar en lloc del text seleccionat després d'extreure'l.
+Enllaça al nou fitxer
+Incrusta el nou fitxer
+Cap
+Ubicació del fitxer de plantilla
+Fitxer de plantilla a utilitzar en la fusió o extracció. Variables disponibles: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, p. ex., {{date:YYYY-MM-DD}}.
+Fusiona el fitxer actual amb un altre fitxer...
+Fusiona tot el fitxer amb...
+No s'han trobat fitxers.
+per navegar
+per fusionar
+per crear de nou
+per fusionar a la part superior
+per descartar
+Seleccioneu el fitxer per fusionar amb...
+Fusiona el fitxer
+Esteu segur que voleu fusionar "{{file}}" amb "{{destination}}"? "{{file}}" s'eliminarà.
+Fusiona
+Extreu la selecció actual...
+Extreu aquest encapçalament...
+per moure a la part inferior
+per moure a la part superior
+No s'ha pogut obtenir el fitxer de plantilla: "{{template}}" no s'ha trobat.
+No s'ha pogut trobar l'encapçalament
+Visor web
+Historial web
+Obre enllaços externs a pàgines web dins d'Obsidian.
+Obre el visor web
+Mostra l'historial
+Alterna el mode de lectura
+Copia l'URL
+Suprimeix de l'historial
+Esborra l'historial
+Obre l'enllaç
+Obre l'enllaç en una pestanya nova
+Obre l'enllaç a la dreta
+Obre l'enllaç en una finestra nova
+Obre l'enllaç al navegador per defecte
+Obre l'enllaç al visor web
+Copia l'adreça de l'enllaç
+Afegeix l'enllaç als marcadors
+Cerca “{{query}}”
+Extreu la selecció a una nota nova
+Copia
+Retalla
+Enganxa
+Suprimeix
+Selecciona-ho tot
+Desa a la cambra forta
+Desa la imatge a la cambra forta
+Copia l'enllaç de la imatge
+Enrere
+Endavant
+Recarrega
+Afegeix la pàgina als marcadors
+Obre al navegador per defecte
+Posa el focus a la barra d'adreces
+Cerca al web
+Esborra les dades
+
+Pot tancar-te la sessió dels llocs web.
+Dades en memòria cau
+Historial
+Totes les dades del visor web
+Elimina tot l'anterior, així com l'emmagatzematge local i les sessions actives.
+Visor web nou
+Unable to load that site.
+Please make sure you have the correct address.
+Cerca al web
+Dades del visor web
+Esborra les dades del visor web
+Obre enllaços externs
+Obre els enllaços a Obsidian en lloc del valor per defecte del sistema.
+Pàgina d'inici
+Quina pàgina s'ha de mostrar quan s'obre un visor web
+Carpeta de pàgines desades
+Els llocs web desats com a Markdown es col·locaran aquí.
+Motor de cerca
+Motor de cerca utilitzat en cercar des de la barra d'adreces.
+Motor de cerca personalitzat
+Utilitzeu %s en lloc de la consulta.
+Personalitzat
+Activa el bloquejador d'anuncis
+Si està activat, les llistes de filtres següents s'aplicaran a totes les pestanyes del visor web.
+Regles de bloqueig d'anuncis
+Un URL de llista de bloqueig d'anuncis per línia. Compartit per totes les cambres fortes.
+Freqüència d'actualització del bloqueig d'anuncis
+Dies entre actualitzacions de les llistes de filtres. 0 indica desactivat. Compartit per totes les cambres fortes.
+Esborra les dades del visor web
+Unexected error extracting content.
+No s'ha pogut trobar contingut per extreure.
+Llenç
+Organitza i connecta notes en un llenç infinit.
+Afegeix nota de l'arca
+Afegeix mitjans de l'arca
+Afegeix targeta
+Afegeix pàgina web
+Crea grup
+Crea una targeta amb mida específica
+Converteix a fitxer...
+Arrossega per afegir una nota de l'arca
+Arrossega per afegir mitjans de l'arca
+Arrossega per afegir targeta
+Edita l'etiqueta
+Elimina l'etiqueta
+Cerca fitxer
+Estableix el color
+Alinea
+Alinea a l'esquerra
+Alinea al centre
+Alinea a la dreta
+Alinea a dalt
+Alinea al mig
+Alinea a baix
+Distribueix l'espai horitzontal
+Distribueix l'espai vertical
+Justifica horitzontalment
+Justifica verticalment
+Organitza en fila
+Organitza en columna
+Organitza en graella
+Exporta com a imatge
+Salta al grup
+Estableix el fons
+Edita el fons
+Canvia el fons
+Elimina el fons
+No s'han trobat imatges.
+No s'ha trobat cap contingut multimèdia.
+Exporta "{{title}}" com a fitxer PNG amb la configuració següent.
+Dimensions estimades de la imatge: {{dimensions}}
+Distribueix
+Justifica
+Organitza
+Sempre
+En passar el cursor
+Mai
+No s'ha trobat cap secció
+Comportament predeterminat de la roda del ratolí
+Comportament predeterminat de {{key}}
+Mostra el menú
+Ubicació predeterminada per als nous fitxers de llenç
+On es col·loquen els fitxers de llenç creats recentment.
+Carpeta per crear nous fitxers de llenç
+Els fitxers de llenç creats recentment apareixeran en aquesta carpeta.
+Mostra l'etiqueta de la targeta
+Ajusta a la graella
+Ajusta les targetes a la graella de fons quan es mouen i es redimensionen.
+Ajusta als objectes
+Ajusta les targetes als objectes propers quan es mouen i es redimensionen.
+Llindar de zoom per amagar el contingut de la targeta
+Valors més baixos augmentaran el rendiment però ocultaran abans el contingut de la targeta en fer zoom cap enrere.
+Mostra el logotip
+Això afegirà el logotip d'Obsidian a la part inferior esquerra.
+Mode de privacitat
+Això ocultarà qualsevol text al teu llenç.
+Ampliar
+Un zoom més alt generarà una imatge de resolució més elevada.
+Vista
+Escull si vols representar tot el llenç o només la vista actual.
+Llenç complet
+Només la vista
+Cobertura
+Mantén la proporció
+Repeteix
+Nou llenç
+Duplicar
+Elimina
+Redueix a l'encapçalament...
+Redueix al bloc...
+Fixa la vista...
+Canvia el fitxer...
+Canvia la URL...
+Ajusta al zoom
+Ajusta a la selecció
+Recarrega la pàgina
+Segueix la connexió
+Crea un llenç nou
+Converteix a fitxer...
+per incrustar l'encapçalament
+per incrustar el bloc
+per navegar al grup
+Escriu el nom de l'encapçalament
+Introduïu la URL
+"{{linktext}}" no s'ha pogut trobar.
+Afegir text...
+Escriu per cercar...
+Ajuda del llenç
+Configuració del llenç
+Mostra tot el fitxer
+Mostra la vista per defecte
+Només lectura
+Deshabilita només lectura
+Arrossega
+Arrossega horitzontalment
+Ampliar
+Selecciona-ho tot
+Afegeix / Elimina de la selecció
+Clona la targeta
+Restringeix el moviment de la targeta a l'eix
+Deshabilita l'ajustament mentre es s'arrossega
+Elimina la targeta
+Arrossega des de sota o fes doble clic
+Toca i mantén per afegir / moure / seleccionar
+Arrossega per moure
+Pinça per fer zoom
+Espai + Arrossega per moure
+Desplaça per fer zoom
+Grup sense títol
+Direcció de la línia
+No direccional
+Unidireccional
+Bidireccional
+Imatge
+Estil
+No s'han trobat grups
+No es pot exportar un llenç buit
+Canvas ha detectat canvis de nom de fitxers que afecten {{count}} fitxer de Canvas; s'està actualitzant...
+Canvas ha detectat canvis de nom de fitxers que afecten {{count}} fitxers de Canvas; s'està actualitzant...
+Canvas ha actualitzat {{count}} targeta incrustada
+Canvas ha actualitzat {{count}} targetes incrustades
+
+Create bases by querying note properties.
+Base nova
+Add property
+Afegeix el resum de "{{name}}"
+Afegeix una fórmula
+Amaga-ho tot
+Alterna la visibilitat
+Suprimeix la fórmula
+Vista per defecte
+Duplica la vista
+Suprimeix la vista
+Suprimeix el resum
+Exporta CSV...
+Crea una base nova
+Insereix una base nova
+Copia la taula al porta-retalls
+Change view
+Afegeix una vista
+Afegeix un element
+Afegeix una vista
+Afegeix un filtre
+Afegeix un grup de filtres
+Mostra-ho tot
+Mostra-ho tot ({{count}})
+Afegeix un resum
+Amaga el resum
+Totes les vistes
+Aquesta vista
+Cerca o crea...
+Propietats calculades
+Tipus de propietat
+Amaga la propietat
+Mostra la propietat
+Edita la propietat
+Edita {{name}}
+Configura la vista
+Disposició
+Filtres globals
+Filtres de vista
+Nom de la vista
+Vista
+Taula
+Nom per mostrar
+Nom del resum
+Fórmula
+Vistes
+Ordena
+Filtre
+Cerca
+Propietats
+Nou
+Es mostren {{count}}
+Fitxer de plantilla d'element nou
+Carpeta d'elements nous
+Qualsevol de les següents és certa
+Totes les següents són certes
+Cap de les següents és certa
+on
+o
+i
+Propietat
+Sense títol
+fitxer
+name
+nom base del fitxer
+nom complet del fitxer
+path
+carpeta
+extension
+hora de creació
+hora de modificació
+mida del fitxer
+enllaços inversos del fitxer
+enllaços del fitxer
+incrustacions del fitxer
+etiquetes del fitxer
+Afegeix ordenació
+Agrupa per
+Ordena per
+Limita el nombre de resultats
+
+
+De vell a nou
+De nou a antic
+
+
+El nom de la vista no pot contenir: 
+El nom de la vista ja existeix.
+El nom de la vista no pot estar buit.
+Aquest filtre no es pot representar amb el constructor de filtres simple.
+No es pot analitzar el filtre. No es pot utilitzar el constructor de filtres bàsic.
+Configuració de propietats no vàlida.
+Configuració de propietat no vàlida per a "{{ name }}".
+Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+No s'ha pogut analitzar el fitxer de base:
+No s'ha trobat la vista "{{ view }}"
+Base configured with an unknown view type: {{ viewtype }}
+Les vistes han de ser una matriu
+Els valors de visualització han de ser cadenes. El valor de la propietat {{ key }} no ho és.
+"{{ key }}" ha de ser un/a {{ type }}
+"filters" ha de ser una cadena o un objecte
+El filtre "{{ conjunction }}" ha de ser una matriu
+"filters" només pot tenir una de les claus "and", "or" o "not".
+No s'ha pogut avaluar un filtre: {{ message }}
+Els valors de la fórmula han de ser cadenes. El valor de la propietat {{ key }} no ho és.
+No s'ha pogut calcular el valor de la propietat "{{ key }}": {{ message }}
+La consulta té un format no vàlid. Hauria de ser un objecte YAML.
+Els elements de "view" han de ser un objecte YAML, però l'element {{ index }} no ho és
+Falta el "name" a la vista {{ index }} o no és vàlid
+"{{ key }}" és obligatori a la vista "{{ viewName }}"
+"{{ key }}" ha de ser un/a {{ type }} a la vista "{{ viewName }}"
+Tots els valors de "{{ key }}" han de ser del tipus {{ type }} a la vista "{{ viewName }}"
+No s'han pogut analitzar els filtres a la vista "{{ viewName }}": {{ message }}
+S'ha detectat un bucle infinit a la fórmula
+Propietat no vàlida
+Aquesta nota es filtrarà perquè no coincideix amb els teus criteris
+Filtre avançat
+p. ex. 10
+Filtre avançat
+Filtre simple
+Elimina el filtre
+Cap
+Llista
+Marcadors
+Sagnar propietats
+Separador de propietats
+Vinyeta
+Nombre
+Cap
+Targetes
+Mida de la targeta
+Propietat d'imatge
+Ajust de la imatge
+Cobrir
+Contenir
+Relació d'aspecte de la imatge
+Taula
+Amaga la columna
+Edita la propietat...
+Edita la fórmula...
+Esborra l'ordre
+Ordena A → Z
+Ordena Z → A
+Alçada de la fila
+Baixa
+Mitjana
+Alta
+Molt alta
+Resumeix...
+Agrupa per aquesta propietat
+Esborra els valors
+Resum
+No s'ha pogut analitzar la fórmula "{{ formula }}"
+No es pot trobar la funció "{{ function }}"
+No es pot trobar la funció "{{ function }}" al tipus {{ type }}
+No es pot cridar la funció "{{ function }}", falten arguments.
+No es pot cridar la funció "{{ function }}", hi ha massa arguments.
+Error de tipus a "{{ function }}", paràmetre "{{ parameter }}". S'esperava {{ expected }}, s'ha rebut {{ given }}.
+Cannot access index {{ index }} of non-array value
+Cannot find {{ index }} on type {{ type }}
+Ressaltar-ho tot
+Coincidir amb diacrítics
+Paraules completes
+Miniatures
+Índex
+Revelar pàgina a l'índex
+Commutar la barra lateral
+Pàgina anterior
+Pàgina següent
+Ajustar a l'amplada
+Ajustar a l'alçada
+Desar posició actual al document
+Copiar anotació
+Copiar com a cita
+Copiar enllaç a la selecció
+Copiar enllaç a l'anotació
+Copiar enllaç a la secció
+Copiar enllaç a “{{title}}”
+Copiar enllaç a la pàgina {{page}}
+{{current}} de més de {{limit}} coincidències
+{{current}} de {{total}} coincidència
+{{current}} de {{total}} coincidències
+Aquest PDF està protegit amb contrasenya
+Contrasenya no vàlida
+Introdueix la contrasenya a continuació
+de {{count}}
+({{current}} de {{count}})
+Pàgina única
+Dues pàgines (imparell)
+Dues pàgines (parell)
+Opcions de la barra lateral
+Opcions de visualització
+Adaptar al tema
+pàgina {{page}}
+Pàgina {{page}}
+Pàgina {{page}}
+Pàgina {{page}}
+[Anotació de {{type}}]
+
+Llista
+Desconegut
+
+Àlies
+Etiquetes
+Carpeta
+Fitxer
+Propietat
+Data
+Data i hora
+Número
+Casella de selecció
+Escriu [[
+per enllaçar una nota
+per descartar
+Tipus de propietat
+Ordena
+El nom de la propietat no pot estar buit.
+La propietat ja existeix
+Nom d'etiqueta no vàlid
+Número no vàlid
+No s'han pogut llegir les propietats.
+Sense valor
+Propietats
+Propietats no vàlides
+Mostra el codi font
+Error de sintaxi. El teu frontmatter no és vàlid.
+Afegir propietat
+Incompatibilitat de tipus, s'esperava {{type}}
+Incompatibilitat de tipus
+Mostra com a {{type}}?
+Les vostres dades de tipus {{oldType}} no són compatibles. S'adaptaran per ajustar-se al nou format.
+Columna
+Fila
+Afegir fila després
+Afegir columna després
+Afegir fila abans
+Moure fila amunt
+Moure fila avall
+Afegir columna abans
+Moure columna a l'esquerra
+Moure columna a la dreta
+Duplicar fila
+Duplicar columna
+Eliminar fila
+Eliminar columna
+Alinea a l'esquerra
+Alinea al centre
+Alinea a la dreta
+Eliminar cel·les
+Netejar cel·les
+Ordena per columna (A a Z)
+Ordena per columna (Z a A)
+Taula: {{command}}
+Tipus de destacat
+Informació
+
+Consell
+Èxit
+Pregunta
+Advertència
+Cita
+Exemple
+Cap
+Altres...
+Tipus de destacat...
+
+{{count}} paraula
+{{count}} paraules
+{{count}} resultat
+{{count}} resultats
+{{count}} caràcter
+{{count}} caràcters
+{{count}} enllaç
+{{count}} enllaços
+{{count}} fitxer
+{{count}} fitxers
+{{count}} carpeta
+{{count}} carpetes
+{{count}} retroenllaç
+{{count}} retroenllaços
+{{count}} pestanya
+{{count}} pestanyes
+{{count}} propietat
+{{count}} propietats
+{{count}} lloc
+{{count}} llocs
+{{count}} connector
+{{count}} connectors
+{{count}} actiu
+{{count}} fragment
+{{count}} fragments
+{{count}} tema
+{{count}} temes

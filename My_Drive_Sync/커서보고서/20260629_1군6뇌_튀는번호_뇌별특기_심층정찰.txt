@@ -1,0 +1,66 @@
+20260629_1군6뇌_튀는번호_뇌별특기_심층정찰
+동생 → 커서 | 2026-06-29 | READ-ONLY 분석
+
+원칙: R2 정직 / R13 walk-forward / R14 1군 6뇌 미수정
+DB: INSERT·UPDATE·DELETE 0건 | app/lotto/ 수정 0건
+JSON: _audit_20260629_army1_outlier_brain.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — 뇌별 특기 프로파일 (300회, 930~1230)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+brain | avg당첨적중/6 | 고독한정답 | 공동정답
+llm | 0.6494 | 35 | 1134
+lstm | 0.78 | 27 | 1377
+fusion | 0.7406 | 26 | 1307
+stat | 0.5 | 18 | 882
+markov | 0.4106 | 11 | 728
+hyena | 0.5383 | 0 | 969
+고독한 정답 순위: llm > lstm > fusion > stat > markov > hyena
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — 튀는 번호 정체 (1뇌만 지목 vs 공동지목)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+이론 단일번호 당첨률: 0.1333 (6/45)
+튀는번호 slots=2324 winning=117 rate=0.0503
+공동지목 slots=10386 winning=1650 rate=0.1589
+outlier - multi: -0.1085 | outlier - random: -0.083
+STEP2 판정: 🔴 뇌별·집단 튀는번호는 random(6/45)과 구분 안 됨 또는 미약
+
+뇌별 튀는번호 당첨률:
+  lstm | rate=0.1023 slots=264 wins=27 dRandom=-0.0311
+  fusion | rate=0.0815 slots=319 wins=26 dRandom=-0.0518
+  llm | rate=0.037 slots=945 wins=35 dRandom=-0.0963
+  stat | rate=0.0367 slots=490 wins=18 dRandom=-0.0966
+  markov | rate=0.0359 slots=306 wins=11 dRandom=-0.0974
+  hyena | rate=0.0 slots=0 wins=0 dRandom=0.0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3 — 혼합 공식 후보 (안전빵+튀는번호)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MIX_co4_hyena2: 공동지목 상위4 + hyena 튀는번호2
+  MIX_co3_hyena3: 공동지목 상위3 + hyena 튀는번호3
+  MIX_co4_fusion2: 공동지목 상위4 + fusion 튀는번호2
+  MIX_co3_fusion3: 공동지목 상위3 + fusion 튀는번호3
+  MIX_co4_lstm2: 공동지목 상위4 + lstm 튀는번호2
+  MIX_co3_bestWF3: 공동지목 상위3 + walk-forward 특기뇌 튀는번호3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4 — 혼합 백테스트 (300회) INDIVIDUAL_BEST avg=3.53
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+arm | avg | hit6 | hit5+ | hit4+ | dIB | p(vs IB) | 판정
+RANDOM | 0.8273 | 0 | 0 | 0 | -2.7027 | - | 풀 랜덤
+RULE2_weighted | 2.42 | 0 | 8 | 36 | -1.11 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+INDIVIDUAL_BEST | 3.53 | 3 | 23 | 154 | 0.0 | - | 참조 (30세트 최고, 어제 avg=3.53)
+MIX_co4_hyena2 | 2.3 | 0 | 6 | 35 | -1.23 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+MIX_co3_hyena3 | 2.3 | 0 | 6 | 35 | -1.23 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+MIX_co4_fusion2 | 2.1233 | 0 | 2 | 25 | -1.4067 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+MIX_co3_fusion3 | 2.0967 | 0 | 2 | 23 | -1.4333 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+MIX_co4_lstm2 | 2.2 | 0 | 6 | 28 | -1.33 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+MIX_co3_bestWF3 | 2.13 | 0 | 3 | 23 | -1.4 | 0.0000 | 🔴 INDIVIDUAL_BEST 미달
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 5 — 판정 (R2)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+최종: 🔴 조합·혼합 공식 모두 INDIVIDUAL_BEST(30세트 최고)를 넘지 못함
+1등(6개) 적중: [('INDIVIDUAL_BEST', 3)]
+기억 갱신: 형 확인 후

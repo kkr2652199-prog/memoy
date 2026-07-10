@@ -1,0 +1,6 @@
+﻿
+IsRunning Elapsed          ElapsedMilliseconds ElapsedTicks
+--------- -------          ------------------- ------------
+     True 00:00:00.0055752                   5        58693
+
+

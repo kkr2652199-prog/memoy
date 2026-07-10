@@ -1,0 +1,17 @@
+# 기억96 – 전략X 예측로깅·cooccur슬라이스 (2026-06-17)
+체인: …94→95→96
+
+## 작업
+- strategy_x/recommend → lotto_predictions_army4 적재 (20행/회차)
+- cooccur walk-forward 슬라이스 함수 신규 (R13)
+
+## raw 핵심
+- brain_tag: strategy_x_* (predict v13_% DELETE와 충돌 없음)
+- aggregate_cooccur_before(N): draw_no < N 만 집계
+
+## 원칙
+- predict·1~3군 미변경
+- 당첨확률 향상 문구 금지
+
+## 다음
+- 5뇌 cooccur + 하이에나 조율

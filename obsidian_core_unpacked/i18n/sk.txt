@@ -1,0 +1,2517 @@
+Možnosti
+Doplnok
+Vstavané pluginy
+Možnosti pluginov
+Napr. priečinok 1/priečinok 2
+Napr. priečinok/poznámka
+Na prejavenie tejto zmeny je nutný reštart.
+
+Správanie
+Zobrazenie
+Kontrola pravopisu
+Zapnutie kontrolu pravopisu. V súčasnosti je podporovaná iba Angličtina (US).
+Jazyky kontroly pravopisu
+Zvoľte jazyky pre kontrolu pravopisu.
+Natívna kontrola pravopisu automaticky rozpozná jazyk, ktorý používate v macOS.
+Slovník kontroly pravopisu
+Slovník kontroly pravopisu je prázdny.
+Riadkový nadpis
+Zobrazí názov súboru ako upraviteľný nadpis zarovno s obsahom súboru.
+Čitateľná dĺžka riadku
+Obmedziť maximálnu dĺžku riadku. Na obrazovku sa zmestí menej obsahu, ale dlhé odseky budú čitateľnejšie.
+Prísne zalomenia riadkov
+V režime náhľadu ignoruje zalomenia jednotlivých riadkov podľa špecifikácií Markdown. Túto možnosť vypnite, aby sa zlomy jedného riadku zobrazovali v náhľade.
+Vlastnosti v dokumente
+Vybrať zobrazenie vlastností v editore. Zvoľte "zdroj" aby sa vlastnosti zobrazili ako YAML.
+Skryté
+Viditeľné
+Zdroj
+Automatické párovanie zátvoriek
+Automatické pridávanie párovacie (ukončovacie) zátvorky a úvodzovky.
+Automatické párovanie Markdown syntaxe
+Automaticky spáruje symboly pre tučné písmo, kurzívu, zvýraznenie, prečiarknutý text a kód.
+Inteligentné odsadzovanie zoznamov
+Postará sa o automatické odsadenie a očíslovanie zoznamu.
+Zrolovateľné nadpisy
+Umožňuje skryť všetko pod nadpisom.
+Zrolovateľné odsadenie
+Umožňuje skryť časť rovnakého odsadenia, napríklad zoznamy.
+Predvolené zobrazenie pre nové karty
+Predvolené zobrazenie, v ktorom sa otvorí nová karta Markdown.
+Režim úprav
+Režim čítania
+Otvoriť novú kartu v popredí
+Pri otvorení odkazu v novej karte, sa na ňu hneď prepne.
+Predvolený režim úprav
+Predvolený režim úprav, ktorý sa použije na nový panel.
+Režim zdrojového kódu
+Režim živého náhľadu
+Čísla riadkov
+Zobrazí čísla riadkov za ľavým okrajom.
+Vodiace čiary odsadenia
+Zobraziť vertikálne vodiace čiary medzi odrážkami pre vizuálnu orientáciu.
+Používať tabulátor
+Používať tabulátor na odsadenie po stlačení klávesy "Tab". Ak chcete použiť medzery, vypnite túto možnosť.
+Veľkosť tabulátora
+Počet medzier, ktoré sú ekvivalentné jednému tabulátoru.
+Zprava doľava (RTL)
+Nastavenie smeru textu poznámok na zobrazenie zprava doľava.
+Automaticky konvertovať HTML
+Automatická konverzia HTML na Markdown pri vložení a pretiahnutí z webových stránok. Použite Ctrl/Cmd+Shift+V pre vloženie bez konverzie.
+Klávesové skratky Vim
+Umožňuje používať klávesové skratky Vim v režime zdrojového kódu.
+Na mobilných zariadeniach je táto možnosť určená pre jednotlivé zariadenia a nie je synchronizovaná cez konfiguračný súbor.
+Obnoviť vyrovnávaciu pamäť trezoru
+Obnovenie vyrovnávacej pamäti môže trvať niekoľko sekúnd až minút v závislosti na veľkosti vášho trezoru.
+Obnoviť
+Potvrdiť zapnutie režimu Vim
+Režim Vim je určený pre efektívne upravovanie textu, ale pre neskúsených užívateľov môže byť neintuitívny. Ak Vim nepoznáte, táto možnosť môže spôsobiť, že Obsidian nebudete vedieť používať.
+Pre overenie, že ovládate Vim, zadajte nižšie príkaz na ukončenie Vim bez uloženia zmien:
+Vaša odpoveď
+Zadajte príkaz...
+Zapnúť režim Vim
+Príkaz je správny. Režim Vim je teraz zapnutý.
+Príkaz je nesprávny. Režim Vim zostáva pre vašu ochranu vypnutý.
+Zadajte prosím príkaz na zapnutie režimu Vim
+Súbory a odkazy
+Potvrdiť pred odstránením súborov
+Zabráni náhodnému odstráneniu súborov.
+Kôš
+Odstránené súbory
+Čo urobiť s odstránenými súbormi?
+Presunúť do systémového koša
+Presunúť do koša aplikácie Obsidian (.trash priečinok)
+Permanentné odstránenie
+Odstrániť prílohy pri odstraňovaní súborov
+Automaticky odstráni prílohy prepojené s odstráneným súborom, ak sa nepoužívajú inde.
+Vždy
+Pýtať sa zakaždým
+Nikdy
+Predvolený súbor na otvorenie
+Vyberte, ktorý súbor sa má otvoriť pri spustení aplikácie.
+Naposledy otvorené
+Nová poznámka
+Konkrétny súbor
+Denná poznámka
+Súbor na otvorenie
+Vyberte konkrétny súbor, ktorý sa má predvolene otvoriť.
+Vždy aktualizovať interné odkazy
+Automaticky aktualizovať odkazy po premenovaní súboru alebo príkazu.
+Predvolené umiestnenie novej poznámky
+Špecifikujte kde sa majú vytvárať nové poznámky? Nastavenia iných pluginov toto natavenie prepíšu.
+Koreňový adresár trezoru
+Rovnaký priečinok v akom je aktuálny súbor
+V priečinku uvedenom nižšie
+Priečinok pre vytváranie nových poznámok
+Novo vytvorené poznámky sa budú vytvárať pod týmto priečinkom. Nastavenia iných pluginov toto nastavenie prepíšu
+Používať [[Wiki-odkaz]]
+Automaticky generovať Wiki-odkaz pre [[links]] a ![[images]] namiesto Markdown odkazy a obrázkov. Deaktivujte túto možnosť, pre vytváranie Markdown odkazov.
+Rozpoznávať všetky typy súborov
+Zobrazovať súbory s akoukoľvek príponou, aj tie ktoré nevie Obsidian otvoriť, aby ste mohli na ne odkazovať a zobraziť ich v Prieskumníkovi, alebo v Rýchlom prepínači.
+Odkazy
+Formát automaticky generovaných odkazov
+Formát automaticky generovaných interných odkazov.
+Najkratšia možná cesta
+Relatívna cesta k súboru
+Absolútna cesta k súboru
+Predvolené umiestnenie pre nové prílohy
+Kde sa umiestňujú novo pridané prílohy.
+prílohy
+V podpriečinku pod aktuálnym priečinkom
+Umiestnenie priečinku s prílohami
+Novo vytvorené prílohy sa presunú sem. Medzi prílohy patria vložené obrázky a audio nahrávky.
+Názov podpriečinku
+Pokiaľ je váš súbor v "trezor/priečinok", a názov podpriečinoku nastavíte na "prílohy", tak sa prílohy budú ukladať do "trezor/priečinok/prílohy".
+Vylúčené súbory
+Vylúčené súbory budú buď skryté, alebo menej viditeľné na rôznych miestach, ako napríklad Rýchly prepínač, návrhy odkazov, a zobrazenie grafu.
+Žiadny filter vylúčených súborov nie je aktuálne použitý. Pridáte ho nižšie.
+Súbory zodpovedajúce nasledujúcim filtrom sú aktuálne vylúčené:
+
+Filter nemôže byť prázdny
+Zadajte cestu, alebo "/regulárny výraz (regex)/"...
+Povoliť URI callbacky
+Povoľuje použitie x-callback-url cez x-success alebo x-error pri spracovaní URI Obsidianu.
+Vzhľad
+Základná téma
+Vyberte predvolenú farebnú tému pre Obsidian.
+Farba akcentu
+Vyberte farbu akcentu, ktorá sa bude používať v aplikácií.
+Tmavá
+Svetlá
+Prispôsobiť systému
+Písmo
+Pokročilé
+Rozhranie
+Písmo používateľského rozhrania
+Nastavenie základného písma pre všetky texty v aplikácií.
+Veľkosť priblíženia
+Ovládanie celkového priblíženia aplikácie.
+Písmo textu
+Nastavenie písma pre režim úprav a režim čítania.
+Monospace písmo
+Nastavenie písma pre režim zdrojového kódu a frontmatter.
+ Aktuálne písmo: 
+ Tieto písma sú práve používané:
+Zadajte názov písma...
+Práve sa nepoužíva žiadne vlastné písmo. Vyberte písmo, ktoré chcete použiť.
+Bude použité prvé písmo z tohto zoznamu, ktoré je v systéme k dispozícií.
+Toto písmo vo vašom systéme nie je dostupné.
+Toto písmo vo vašom systéme je dostupné.
+Názov písma
+Otvoriť komunitné témy
+Preskúmajte úžasné témy vytvorené komunitou.
+Prehľadávať
+Veľkosť písma
+Veľkosť písma v pixeloch, pre editor a náhľad.
+Rýchla zmena veľkosti písma
+Upraviť veľkosť písma pomocou Ctrl + Koliesko myši, alebo použitím gesta na touchpade.
+Témy
+Spravovať nainštalované a prehliadať komunitné témy.
+Spravovať
+Žiadne
+Predvolené menu
+Menu v aplikácii sa bude zhodovať s operačným systémom. Menu nebude ovplyvnené témou.
+Znovu načítať témy
+Znovu načítať vlastné CSS témy.
+Otvoriť priečinok s témami
+CSS snippety
+Žiadne CSS snippety nájdené v priečinku snippetov.
+CSS snippety sú uložené v "{{path}}".
+Znovu načítať snippety
+Otvoriť priečinok so snippetmi
+Znovu načítané CSS snippety.
+Použi CSS snippet na "{{path}}".
+Nainštalované témy
+Snímok obrazovky nedostupný
+Základná
+Klikni pre zväčšenie
+Aktualizovať
+Aktívna
+Štýl rámčeku
+Určuje štýl nadpisov okien Obsidianu. Pre aplikovanie zmien je potrebný úplný reštart aplikácie.
+Skryté (predvolené)
+Obsidian rámček
+Predvolený rámček
+Vlastná ikona aplikácie
+Nastavenie vlastnej ikony aplikácie
+Vyberte vlastnú ikonu
+Panel nástrojov
+Nastavenie príkazov, zobrazených v paneli nástrojov v navigačnom paneli.
+Položka s rýchlym prístupom v paneli nástrojov
+Kliknutím na položku v paneli nástrojov aktivujete danú položku. Kliknutím a podržaním bude panel stále zobrazovaný.
+Otvoriť panel nástrojov
+Konfigurovať
+Zobraziť panel nástrojov
+Zobrazovať vertikálny panel nástrojov na kraji okna.
+Ďalšie položky panelu nástrojov
+Konfigurácia panelu nástrojov
+Vyberte položky, ktoré chcete, aby boli aktívne v paneli nástrojov. Potiahnutím a pustením zmeníte ich poradie.
+Zobraziť nadpis karty
+Zobrazovať nadpis na vrchu každej karty.
+Plávajúca navigácia
+Navigačné tlačidlá plávajú nad obsahom namiesto toho, aby boli ukotvené.
+Výsuvné bočné panely
+Bočné panely sa vysúvajú k okraju obsahu namiesto toho, aby plávali nad ním.
+Celá obrazovka
+Počas čítania automaticky skrýva prvky rozhrania.
+Nájdená {{count}} téma na aktualizáciu.
+Nájdené(ých) {{count}} témy(m) na aktualizáciu.
+Skontrolovať aktualizácie
+Zobraziť aktualizácie
+Aktualizovať všetky témy
+Aktuálne komunitné témy
+Aktuálne máte nainštalovanú {{count}} tému.
+Aktuálne máte nainštalované(ých) {{count}} témy(m).
+Klávesové skratky
+Vyhľadať klávesové skratky
+Zobrazená {{count}} klávesovej skratky.
+Zobrazené(ých) {{count}} klávesové(ých) skratky(iek).
+{{count}} príkaz s konfliktom.
+{{count}} príkazy(ov) s konfliktmi.
+Filtrovať...
+Odstrániť klávesovú skratku
+Stlačte klávesovú skratku...
+Všetko
+Nepriradené
+Priradené
+Priradené mnou
+Obnoviť predvolené
+Prispôsobiť tento príkaz
+Táto klávesová skratka je v konflikte s "{{command}}"
+Táto klávesová skratka je v konflikte s {{count}} ďalšími príkazmi
+Žiadna
+Kľúčenka
+Tajomstvá
+Pridať tajomstvo
+Upraviť tajomstvo
+Zobraziť tajomstvo
+Skryť tajomstvo
+
+Tajomstvo
+nazov-tajomstva
+Iba malé písmená, čísla a pomlčky.
+Zadajte svoje tajomstvo.
+Nikdy nepoužité
+Nepodarilo sa aktualizovať tajomstvo.
+Nepodarilo sa pridať tajomstvo.
+Tajomstvo s týmto ID už existuje.
+Hodnota tajomstva nemôže byť prázdna.
+ID tajomstva je neplatné. Použite iba malé písmená, čísla a pomlčky. Max. 64 znakov.
+Neboli pridané žiadne tajomstvá. Tajomstvá sa používajú na ukladanie informácií, ako sú API kľúče a heslá, ktoré môžu doplnky používať.
+Vybrať tajomstvo
+Nájsť tajomstvo...
+Pridať tajomstvo...
+Prepojiť...
+Tajomstvá sa ukladajú bez šifrovania, pretože v tomto systéme nie je k dispozícii úložisko tajomstiev.
+Tajomstvá nie sú šifrované
+Už nezobrazovať
+Šifrovanie nie je dostupné
+Šifrovanie poskytuje úložisko tajomstiev vášho operačného systému. Bez úložiska tajomstiev sa vaše tajomstvá budú ukladať bez šifrovania.
+V systéme Linux medzi podporované úložiská tajomstiev patria:
+Všeobecné
+Komerčná licencia
+Licenčný kľúč
+Váš licenčný kľúč...
+Aktivovať licenciu
+Aktivovať
+Neznáma
+Verzia {{version}}
+Verzia inštalátoru: {{version}}
+Prečítať zoznam zmien.
+Pre získanie najnovších funkcií a aktuálnych bezpečnostných opráv je nutné stiahnuť nový inštalátor aplikácie. Je nutné manuálne stiahnuť a nainštalovať novú verziu aplikácie Obsidian.
+Nová verzia je pripravená na inštaláciu. 
+Aktualizácie sú vypnuté.
+Reštartovať
+Vyhľadať aktualizácie
+Automatické aktualizácie
+Vypnite ak nechcete, aby si aplikácia sama vyhľadávala aktualizácie.
+Upozorniť ak spustenie trvá príliš dlho
+Diagnostikujte problémy s aplikáciou tak, že zistíte čo spôsobuje dlhé načítanie aplikácie.
+Skontrolovať
+Rozhranie príkazového riadku
+Povolí interakcie s Obsidian z príkazového riadku.
+Nastaviť CLI na použitie v termináli
+Zaregistruje „obsidian“ do PATH, aby bolo možné pristupovať k príkazu „obsidian“ odkiaľkoľvek z terminálu.
+Zaregistrovať
+Nápoveda
+Potrebujem pomôcť s používaním Obsidianu.
+Otvoriť
+Jazyk
+Zmena zobrazovaného jazyka.
+Dostávať insider buildy
+Automatická aktualizácia insider buildov pre vyskúšanie najnovších funkcií. Varujeme, že tieto buildy obsahujú najnovšie vylepšenia, ktoré môžu byť nestabilné.
+Rozšírené
+Hardvérová akcelerácia
+Zapnutie hardvérovej akcelerácie, ktorá používa GPU pre plynulejší chod aplikácie Obsidian.
+Vypnutím výkon aplikácie poklesne.
+Prepísanie priečinka konfigurácie
+Použite iný konfiguračný priečinok ako je predvolený. Priečinok musí začínať bodkou.
+Umiestnenie konfigurácie musí mať platný názov priečinka, ktorý začína bodkou.
+Licencia
+Kľúč vašej komerčnej licencie je "{{key}}".
+Registrované "{{company}}" pre {{seats}} používateľov. Platné do {{expiry}}.
+Overovanie...
+Licencia je neplatná: 
+Odobrať
+Licencia Catalyst
+Aktuálne máte aktívnu Catalyst licenciu {{tier}}. Ďakujeme za podporu!
+Aktuálne nemáte aktívnu Catalyst licenciu. Kúpou Catalyst licencie jednorázovo podporíte vývoj aplikácie Obsidian.
+Aplikácia
+Pozrite sa ako pridať váš jazyk do Obsidianu.
+Účet
+Váš účet
+Prihlásený ako {{name}} ({{email}}).
+Nie ste prihlásený. Účet je potrebný pre Obsidian sync, Obsidian Publish, a Catalyst insider buildy.
+Vylepšiť
+Komerčná licencia
+Ak používate Obsidian pre komerčné použitie, musíte si kúpiť komerčnú licenciu.
+Kúpiť
+Odhlásiť
+Prihlásiť
+Registrovať
+E-mail
+Váš email...
+Meno
+Heslo
+Vaše heslo...
+Zabudli ste heslo?
+Prihlásiť
+Email nesmie byť prázdny.
+Email je nesprávny.
+Heslo nesmie byť prázdne.
+Prihlásenie zlyhalo, prosím skontrolujte váš email a heslo.
+Registrácia zlyhala
+Nemáte účet? 
+Zaregistrujte sa
+6-ciferný 2FA kód
+2FA kód musí byť 6 miestny.
+2FA kód je nesprávny, prosím skontrolujte aplikáciu autentifikátora.
+Zoznam pluginov
+Hľadať základné pluginy
+Filtrovať pluginy podľa názvu alebo popisu.
+Hľadať pluginy...
+Pluginy tretích strán
+Obmedzený režim
+Obmedzený režim je vypnutý. Zapnutím zakážete komunitné pluginy.
+Zapnúť a obnoviť
+Automaticky kontrolovať aktualizácie doplnkov
+Pravidelne kontrolovať aktualizácie doplnkov.
+Komunitné pluginy
+Prechádzajte a inštalujte pluginy tretích strán vytvorené našou super komunitou.
+Prehľadávať
+Ukončiť obmedzený režim
+Komunitné pluginy, rovnako ako akýkoľvek iný softvér, môžu potenciálne spôsobiť problémy so stratou a zabezpečením dát.
+Zabezpečenie pluginov je pre nás dôležité. Zoznam kritérií, ktorými musí prejsť každý plugin:
+Napriek nášmu úsiliu stále existuje malá pravdepodobnosť, že komunitný plugin bude chybný.
+Prvotná revízia kódu
+Skôr ako sa pluginy objavia v ponuke, prejdú úvodnou kontrolou našim tímom.
+Otvorený zdrojový kód
+Väčšina pluginov má otvorený zdrojový kód na Githube, takže si ho môžete skontrolovať.
+Vzájomný audit
+Máme veľkú komunitu vývojárov, ktorí na seba navzájom dohliadajú.
+Mechanizmus nahlásenia
+Chybné pluginy sledujeme a odstraňujeme na základe nahlásení od používateľov.
+Chcete ukončiť obmedzený režim a povoliť komunitné pluginy? Odporúčame najprv zálohovať svoje dáta.
+Ďalšie informácie o zabezpečení pluginov
+Zapnúť komunitné pluginy
+Veríte autorovi tohto trezoru?
+Trezor, ktorý otvárate po prvýkrát, obsahuje niektoré pluginy.
+Ak ste tento trezor dostali od niekoho iného, pamätajte, že niektoré pluginy neznámeho pôvodu môžu predstavovať bezpečnostné riziko.
+Ak autorovi tohto trezoru plne nedôverujete, odporúčame zostať v obmedzenom režime, aby pluginy v tomto trezore zostali vypnuté.
+Dôverovať autorovi a povoliť pluginy
+Prehliadať trezor v obmedzenom režime
+Hľadať komunitné pluginy...
+Načítavanie komunitných pluginov zlyhalo.
+Nainštalované
+Inštalovať
+Zapnúť
+Vypnúť
+Kopírovať odkaz
+Prispieť
+Žiadne výsledky hľadania.
+Nedávne súbory neboli nájdené. Píšte pre spustenie hľadania...
+Nepodarilo sa načítať manifest pluginov.
+Verzia: {{version}}
+ (aktuálne nainštalovaná: {{version}})
+Autor 
+Repozitár: 
+Posledná aktualizácia: 
+Zobraziť najnovšiu aktualizáciu
+Tento plugin vaše zariadenie nepodporuje.
+Aktualizovať
+Tento plugin neposkytol README súbor.
+Inštaluje sa plugin "{{name}}"...
+Plugin "{{name}}" sa nepodarilo nainštalovať.
+Plugin "{{name}}" bol úspešne nainštalovaný.
+Nepodarilo sa odinštalovať plugin “{{id}}”.
+Nepodarilo sa vypnúť plugin “{{id}}”.
+Nainštalované pluginy
+Znovu načítať pluginy
+Pluginy tretích strán boli znovu načítané.
+Odinštalovať
+Odinštalovať plugin
+Ste si istý, že chcete odinštalovať tento plugin? Priečinok tohto pluginu bude odstránený.
+Otvoriť priečinok pluginov
+Skontrolovať aktualizácie
+Aktualizovať všetko
+Aktuálne pluginy
+Kontrolujú sa aktualizácie...
+Aktuálne máte nainštalovaný {{count}} plugin.
+Aktuálne máte nainštalované(ých) {{count}} pluginy(ov).
+Neboli nájdené žiadne aktualizácie pluginov.
+Nájdená aktualizácia pre {{count}} plugin.
+Nájdené aktualizácie pre {{count}} pluginy(ov).
+Aktualizovať na verziu {{version}}
+Hľadať nainštalované pluginy
+Filtrovať nainštalované pluginy podľa mena alebo popisu.
+Hľadať nainštalované pluginy...
+Zobraziť iba nainštalované
+Prispieť na podporu {{name}}
+Vývojári pluginov sú dobrovoľníci, ktorí nadšene vytvárajú úžasné veci. Ak je pre vás tento plugin užitočný, zvážte prosím spolu-financovanie jeho vývoja.
+100% z vašich príspevkov ide vývojárom pluginov; Obsidian si neberie žiadny podiel. Platba môže obsahovať poplatok z vašej banky alebo kreditnej spoločnosti.
+Ďakujeme za vašu podporu!
+Prispieť na tento plugin:
+Zobrazujem {{pluginCount}}:
+Najsťahovanejšie
+Nedávno vydané
+Nedávno aktualizované
+Abecedne
+Aktualizované {{time}}
+Mobilný nástrojový panel
+Konfigurovať rýchlu mobilnú akciu
+Konfigurovať čo sa má stať pri ťahaní z hornej časti. Aktuálne nastavené na "{{command}}".
+Akcia nie je nakonfigurovaná
+Konfigurovať
+Zvoliť rýchlu akciu...
+Žiadna
+Upraviť panel nástrojov
+Pridať interný odkaz
+Pridať embed
+Pridať štítok
+Nadpis
+Prečiarknuť
+Zvýrazniť
+Kód
+Citácia
+Matematika v riadku
+Matematika v bloku
+Pridať Markdown odkaz
+Odrážky
+Číslovanie
+Odsadenie riadku
+Zrušiť odsadenie riadku
+Vrátiť späť
+Zopakovať
+Presunúť vsuvku nahor
+Presunúť vsuvku nadol
+Presunúť vsuvku vľavo
+Presunúť vsuvku vpravo
+Prejsť na prvý riadok
+Prejsť na posledný riadok
+Klávesnica
+Konfigurovať nástrojový panel
+Pridať možnosti
+Ďalšie nastavenia panela nástrojov
+Vložiť prílohu
+Hľadať
+Nahradiť
+Zavrieť vyhľadávanie
+Nasledujúci
+Predchádzajúci
+Hľadať všetky
+Nahradiť
+Nahradiť všetky
+Zadajte #
+pre odkaz na nadpis
+Zadajte ^
+pre odkaz na blok
+Zadajte |
+pre zmenu zobrazovaného textu
+Zobraziť text
+Nadpis
+Nenašla sa žiadna zhoda
+Veľkosť obrázku: {{size}}px široký
+prijať
+Nová poznámka pod čiarou...
+Žiadne návrhy...
+Pridať do slovníka
+Upraviť odkaz
+Upraviť značku
+Upraviť blok
+Odstrániť odkaz a poznámku pod čiarou
+Obnoviť veľkosť
+Odstrániť obrázok
+Žiadny nadpis
+Nadpis {{level}}
+Exportovať do PDF
+Exportovať "{{filename}}" do PDF s nasledujúcimi nastaveniami.
+Veľkosť strany
+Použiť názov súboru ako nadpis
+Na šírku
+Okraj
+Základný
+Minimálny
+Žiadny
+Percentuálne zmenšenie
+Exportovať do PDF
+Nasledovať odkaz
+Otvoriť odkaz
+Vyhľadať štítok
+Nepodarilo sa nájsť:
+Nepodarilo sa nájsť “{{subpath}}” v {{file}}
+Otvoriť v predvolenej aplikácií
+Postranný panel je prázdny, skúste sem pretiahnuť nejaký panel.
+Zobraziť postranný panel
+Skryť postranný panel
+Súbor "{{filepath}}" sa nepodarilo uložiť. {{message}}.
+Nepodarilo sa načítať plugin “{{plugin}}”
+Pri načítaní pluginu “{{plugin}}” došlo k chybe
+Nepodarilo sa otvoriť “{{filepath}}”
+Nie je možné otvoriť “{{href}}”
+Žiadny súbor
+"{{file}}" bol upravený externe, automatické zlúčenie zmien.
+Spravovať trezory...
+Nápoveda
+Nastavenia
+Pretiahnutím zmeníte usporiadanie
+Predvolený režim bol prepnutý na režim čítania.
+Predvolený režim bol prepnutý na režim úprav.
+Pre použitie tejto funkcie, znovu nainštalujte Obsidian najnovším inštalátorom, ktorý je dostupný na našich stránkach.
+Zistil sa pomalý čas spustenia.
+Táto funkcia je dostupná iba v desktopovej aplikácií.
+Obnoviť predvolené nastavenia
+Skopírovať do schránky
+Kopírovať
+Skopírované do schránky
+{{item}} bol skopírovaný do schránky
+Nepodarilo sa skopírovať do schránky
+
+Chyba pri vykresľovaní bloku kódu.
+Otvorený súbor "{{path}}"
+Súbor "{{name}}" nenájdený.
+Nerozpoznaná akcia URI: {{action}}
+Odstrániť
+Indexovanie trezora...
+Niektoré funkcionality môžu byť nedostupné pokiaľ indexovanie neskončí.
+Indexovanie hotové.
+Toto je trezor pieskoviska.\nZmeny vykonané v tomto trezore budú stratené.
+Pre túto funkciu je potrebná indexovaná databáza, ktorá je však teraz vypnutá.
+Ak používate iOS v režime blokovania, vylúčte Obsidian z nastavenia "Konfigurovať prechádzanie webu" v režime blokovania.
+Enter pre vytvorenie
+Je dostupná aktualizácia
+Ladiace informácie
+Viac informácií
+Teraz nie
+Pridať
+Spravovať
+Nová karta
+Skryť panel nástrojov
+Karta sa teraz používa, skúste to neskôr
+Formátovať
+Odsek
+Vložiť
+Pridať odkaz
+Pridať externý odkaz
+Popis
+Vodorovné pravítko
+Blok kódu
+Blok matematiky
+Tabuľka
+Poznámka pod čiarou
+Tučný
+Kód
+Komentár
+Zvýraznenie
+Kurzíva
+Prečiarknutie
+Matematika
+Odrážky
+Zoznam úloh
+Číslovanie
+Nadpis {{level}}
+Telo
+Odstrániť formátovanie
+Citácia
+Prázdne
+Nie je otvorený žiadny súbor
+Vytvoriť nový súbor
+Prejsť k súboru
+Nedávne súbory
+Zavrieť
+Zatvoriť všetky “{{id}}” ({{count}}) záložky
+Plugin už nie je aktívny
+Plugin, ktorý vytvoril tento panel ({{type}}) je nedostupný
+Poznámky k vydaniu {{version}}
+Žiadne poznámky k vydaniu pre {{version}}.
+Poznámky k vydaniu {{version}} sa nepodarilo načítať.
+Vydané dňa {{date}}
+Novinky vo verzii {{version}}
+Režim úprav (Ctrl/Cmd+Klik pre úpravu v novom paneli)
+Aktuálne zobrazenie: režim čítania
+Panel nástrojov
+Ľavý panel
+Pravý panel
+Kliknite pre úpravu
+Kliknite pre čítanie
+{{key}}+Klik pre otvorenie v novej karte
+Stlačte {{key}}+C na kopírovanie zdroja
+Vyhľadať...
+Nahradiť...
+Upraviť
+Odstrániť
+Odstrániť zo zoznamu
+Premenovať
+Náhľad
+Viac možností
+Zavrieť
+Zavrieť všetko
+Zavrieť {{count}} kartu
+Zavrieť {{count}} karty(iet)
+Zavrieť ostatné karty
+Zavrieť nasledujúce karty
+Pripnúť
+Odopnúť
+Odpojiť kartu
+Prepojiť s kartou...
+Režim zdrojového kódu
+Režim čítania
+Pridať vlastnosť súboru
+Odstrániť súbor
+Vytvoriť súbor
+Otvoriť odkaz
+Otvoriť v novej karte
+Otvoriť vpravo
+Kopírovať URL
+Kopírovať
+Vystrihnúť
+Prilepiť
+Kopírovať cestu
+Kopírovať obrázok
+ako Obsidian URL
+zo systémového koreňa
+z priečinka trezora
+Prilepiť ako text
+Pozrieť sa na “{{selection}}”
+Vybrať všetko
+Premenovať nadpis...
+Premenovať číslo bloku...
+Otvoriť v novom okne
+Presunúť do nového okna
+Otvoriť v prehliadači
+Navrstviť karty
+Zrušiť vrstvenie kariet
+Otvoriť prepojené zobrazenie
+Kliknutím rozbalíte
+Kliknutím zbalíte
+
+Zatiaľ nevytvorené, zvolením vytvoríte
+Verzia
+Vytvoriť lokálny trezor
+Použiť priečinok ako trezor
+Vyberte existujúci priečinok s Markdown súbormi.
+Vytvoriť nový trezor
+Vytvoriť v priečinku nový Obsidian trezor.
+Pripojiť k Obsidian Sync
+Nastaviť a synchronizovať trezor s existujúcim vzdialeným trezorom.
+Meno trezoru
+Zadajte meno vášho úžasného trezoru.
+Umiestnenie
+Zvoľte umiestnenie nového trezoru.
+Váš novo vytvorený trezor bude umiestnený v: 
+Zobraziť umiestnenie trezoru v systémovom prieskumníku súborov
+Zobraziť trezor vo Finderi
+Premenovať trezor...
+Kopírovať ID trezora
+Trezor s týmto menom už existuje.
+Nepodarilo sa presunúť trezor do podpriečinka seba samého.
+Práve otvorený trezor sa nedá premenovať.
+Chyba pri premenovaní trezoru.
+Trezor bol úspešne premenovaný.
+Presunúť trezor...
+Zvoľte cieľový priečinok
+Na zadanom mieste sa už trezor nachádza.
+Práve otvorený trezor sa nedá presunúť.
+Trezor sa nepodarilo presunúť.
+Trezor bol úspešne presunutý.
+Odstrániť zo zoznamu
+Rýchly štart
+Otvoriť
+Prehľadávať
+Pripojiť
+Vytvoriť
+Späť
+Meno trezoru nesmie byť prázdne.
+Meno trezoru nesmie končiť bodkou.
+Zvoľte prosím platný priečinok.
+Trezor sa nepodarilo vytvoriť.
+Trezor sa nepodarilo vytvoriť v zvolenom umiestnení. Znovu skontrolujte umiestnenie a oprávnenia.
+Trezor sa nepodarilo otvoriť.
+Práve otvorený trezor sa nedá odstrániť.
+Získať nápovedu
+E-mail
+Váš email...
+Heslo
+Vaše heslo...
+Prihlásiť
+Nastavenia
+Vytvoriť synchronizovaný trezor na tomto zariadení.
+Toto je váš vzdialený trezor.
+Toto je vzdialený trezor zdieľaný s vami.
+Vaše myšlienky sú vaše.
+synchronizované
+nesynchronizované
+Žiadny
+Odporúčané
+Obsidian ukladá poznámky vo vašom zariadení, takže k nim máte rýchly a súkromný prístup aj keď ste offline.\nVaše dáta sú bezpečne uložené v lokálnom priečinku s názvom **vault**.
+Vytvoriť trezor
+Použiť existujúci trezor
+Pre prístup k vašim poznámkam na ďalších zariadeniach, si musíte nastaviť synchronizáciu.
+Keďže Obsidian ukladá vaše poznámky lokálne v zariadení, musíte si nastaviť synchronizáciu, ak chcete pristupovať k vašim poznámkam na telefóne alebo počítači.\nNastavte si synchronizáciu teraz, alebo pokračujte písaním poznámok a synchronizáciu nastavíte neskôr.
+Nastaviť synchronizáciu
+Zatiaľ preskočiť
+Preskočiť
+Zadajte meno pre váš trezor.
+Vytvoriť trezor
+Nastavenie synchronizácie
+Vytvoriť synchronizovaný trezor na vašom Obsidian účte pre prístup k dátam z iných zariadení.
+Synchronizovať šifrovanie
+Šifrovanie end-to-end
+Ponúka najsilnejšie zabezpečenie, ale vyžaduje, aby ste si bezpečne uložili svoje šifrovacie heslo
+Štandardné šifrovanie
+Používa kľúč spravovaný Obsidianom na ochranu vašich údajov počas prenosu a na našich serveroch.
+Synchronizovať nastavenia
+Chcete pri synchronizovaní s týmto zariadením vylúčiť zo synchronizácie nejaké priečinky alebo súbory?
+Spustiť synchronizáciu
+Vytvoriť Obsidian účet alebo sa prihlásiť
+Vytvoriť účet
+Prihlásiť sa
+Znovu odoslať email
+Už máte synchronizované trezory
+Chcete vytvoriť nový trezor alebo sa pripojiť k existujúcemu synchronizovanému trezorom?
+Vytvoriť nový synchronizovaný trezor
+Zvoliť existujúci trezor
+Odhlásiť
+Zabudli ste heslo
+Názov trezoru
+Umiestnenie trezora
+Úložisko zariadenia
+Umožňuje prístup k údajom Obsidianu aj iným aplikáciám.
+Vyžaduje ďalšie povolenia.
+Úložisko aplikácie
+K vašim údajom nebudú mať prístup iné aplikácie.
+Android vymaže vaše údaje, ak odinštalujete Obsidian.
+Váš nový trezor bude umiestnený v {{vaultLocation}}
+Oblasť
+Zvoľte oblasť serveru, ktorá je blízko vás pre rýchlejšiu synchronizáciu.
+Šifrovací kľúč
+Toto heslo nemôže byť neskôr zmenené. Ak heslo zabudnete, akékoľvek vzdialené dáta na synchronizačných serveroch budú navždy neprístupné.
+Môj trezor
+Automatické
+Zvoľte trezor
+Váš účet **{{email}}** už má trezory, ku ktorým sa môžte pripojiť.
+Prihlásiť sa k Obsidian účtu
+Zabudnuté heslo
+Obnoviť heslo
+Poslali sme email na {{email}} pre obnovenie vášho hesla.
+Zvoľte ako synchronizovať vaše poznámky
+Pre použitie Obsidianu na vašich zariadeniach si musíte synchronizovať dáta.
+Bezproblémovo na každom zariadení a operačnom systéme
+Zabezpečené najsilnejšími end-to-end šifrovacími štandardami.
+Vyžaduje Obsidian účet.
+Iba pre iOS a macOS.
+V predvolenom nastavení nešifrované.
+Vyžaduje nástroj alebo plugin tretej strany
+Predvolene môže byť nešifrované.
+Použiť Obsidian synchronizáciu
+Použiť iCloud
+Použiť synchronizáciu tretej strany
+Iné metódy synchronizácie
+Použiť podporované metódy synchronizácie
+Kde je umiestnený váš trezor?
+Iné
+Synchronizácia treťou stranou
+Na tomto zariadení
+Pripojiť k iCloud
+Pripojiť k iným synchronizačným službám
+Pripojiť k Obsidian Sync
+Zvoľte priečinok
+Iné metódy synchronizácie
+Obsidian oficiálne podporuje dve metódy synchronizácie: **Obsidian Sync** a **iCloud**.\nAvšak, Obsidian vám umožňuje plnú kontrolu nad dátami, čiže existujú aj iné metódy synchronizácie, ktoré môžte použiť.\nTieto možnosti obsahujú pluginy tretej strany a iné nástroje, ktoré môžu vyžadovať zložitejšie nastavenie.\nPre použitie alternatívnej synchronizačnej metódy, **create a vault** a postupujte podľa inštrukcií poskytnutých pluginom alebo poskytovateľom služby tretej strany.
+Zadajte váš email
+Email je nutný na vytvorenie Obsidian účtu.
+Zadajte vaše meno a heslo
+Pripojiť k Obsidian Sync
+O chvíľu by ste mali dostať email na **{{email}}** s inštrukciami pre pripojenie k Obsidian Sync.
+Váš iCloud trezor nebol nájdený. Spôsobiť to mohol niektorý z nasledujúcich dôvodov:
+Váš trezor je na inom iCloud účte, než na akom ste aktuálne prihlásený v tomto zariadení.
+Váš trezor nie je uložený v najvyššom Obsidian priečinku vášho iCloud Drive.
+iCloud nie je podporovaný
+iCloud synchronizácia je dostupná iba na Apple zariadeniach. Ak je synchronizácia trezoru nastavená aktuálne cez iCloud, zistite ako presunúť váš trezor do inej synchronizačnej služby.
+Povoliť prístup k súborom
+Prihlasovanie...
+Vyžaduje sa názov trezora
+Bol odoslaný nový potvrdzujúci email.
+Opätovné odoslanie emailu zlyhalo.
+Trezor musí byť umiestnený v priečinku.
+Vitajte
+Toto je váš nový *trezor*.\n\nVytvorte si poznámku o niečom, [[vytvorte odkaz]], alebo skúste [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nAk ste pripravený odstráňte túto poznámku a vytvorte si vlastný trezor.
+Tu vložte odkaz
+Tu vložte odkazy
+Presunúť do priečinka "{{folder}}"
+Označiť súbor hviezdičkou
+Označiť súbory hviezdičkami
+Otvoriť v tejto karte
+Otvoriť ako novú kartu
+Maximalizovať
+Minimalizovať
+Obnoviť nadol
+Zavrieť okno
+Vzad
+Vpred
+Obsidian sa načítava...
+Pri načítavaní Obsidianu sa objavila chyba.
+Znovu načítať aplikáciu
+Znovu načítať aplikáciu v bezpečnom režime
+Otvoriť iný trezor
+Načítavanie pluginov...
+Pluginu “{{plugin}}” trvá dlho, kým sa načíta. 
+Načítavanie trezoru...
+Nepodarilo sa načítať trezor: 
+Načítavanie vyrovnávacej pamäte...
+Načítavanie pracovného priestoru...
+Importovať do trezoru
+Pridať text do súboru:
+Zvoliť súbor pre vloženie
+Vložiť text do {{filename}}
+Vložiť odkaz do {{filename}}
+Zobraziť prehľad kariet
+Importuje sa...
+Import úspešný
+Nepodarilo sa importovať súbor {{filename}}
+Stlačte späť pre ukončenie.
+Spätná väzba
+Páči sa vám Obsidian? Pomôžte nám ohodnotením.
+Ohodnotiť aplikáciu
+Zamietnuť
+Konfiguračné súbory aktualizované z iCloudu, vyžaduje sa opätovné načítanie
+Znovu načítať
+Oficiálna stránka s nápovedou
+Prečítajte si oficiálnu viacjazyčnú nápovedu k Obsidianu.
+Navštíviť
+
+Discord je najlepšie miesto pre komunikáciu s inými skúsenými užívateľmi Obsidianu z celého sveta.
+Pripojiť sa
+Oficiálne fórum
+Pomáhajte si navzájom, posielajte požiadavky na nové funkcie, nahlasujte chyby a podrobne diskutujte o znalostiach.
+Trezor pieskoviska
+Skúšajte a experimentujte s rôznymi funkciami. Upozorňujeme, že zmeny sa nebudú ukladať.
+Uložiť aktuálny súbor
+Stiahnuť prílohy pre aktuálny súbor
+Nasledovať odkaz pod kurzorom
+Otvoriť odkaz pod kurzorom na novej karte
+Otvoriť odkaz pod kurzorom napravo
+Otvoriť odkaz pod kurzorom v novom okne
+Zamerať sa na vyššiu skupinu kariet
+Zamerať sa na nižšiu skupinu kariet
+Zamerať sa na ľavú skupinu kariet
+Zamerať sa na pravú skupinu kariet
+Pripnúť/odopnúť
+Rozdeliť vpravo
+Rozdeliť dole
+Prepnúť naskladané karty
+Prepnúť čitateľnú dĺžku riadkov
+Prepnúť čísla riadkov
+Navigovať späť
+Navigovať vpred
+Prepnúť svetlý/tmavý režim
+Zmeniť tému...
+Zmeniť trezor...
+Otvoriť trezor...
+Spravovať trezory
+Hľadať v aktuálnom súbore
+Hľadať a nahradiť v aktuálnom súbore
+Pridať vlastnosť súboru
+Zoradiť podľa názvu (od A po Z)
+Zoradiť podľa názvu (od Z po A)
+Pridať alias
+Odstrániť vlastnosti súboru
+Otvoriť nastavenia
+Otvoriť nápovedu
+Prepnúť režim úprav/režim čítania
+Prepnúť režim náhľadu/režim zdrojového kódu
+Odstrániť aktuálny súbor
+Nová karta
+Nové okno
+Zobraziť kôš
+Zatvoriť všetky karty
+Zatvoriť aktuálnu kartu
+Zatvoriť ostatné karty v skupine
+Zatvoriť všetky ostatné karty
+Zatvoriť túto skupinu kariet
+Zobraziť/skryť ľavý bočný panel
+Zobraziť/skryť panel nástrojov
+Zobraziť/skryť pravý bočný panel
+Zapnúť/vypnúť predvolený režim pre nové karty
+Pridať kurzor vyššie
+Pridať kurzor nižšie
+Zamerať sa na editor
+Vlastnosti zrolovania v aktuálnom súbore
+Zrolovať na aktuálnom riadku
+Zrolovať všetky nadpisy a zoznamy
+Zrolovať všetko
+Zrolovať viac
+Zrolovať menej
+Vymeniť s riadkom nad
+Vymeniť s riadkom pod
+Odstrániť nadpis
+Nastaviť ako nadpis {{level}}
+Tučné písmo
+Kurzíva
+Zvýraznenie
+Komentár
+Odstrániť formátovanie
+Vložiť odkaz
+Kontrola pravopisu
+Odstrániť odstavec
+Zoznam úloh
+Odrážky/zaškrtávacie políčka
+Vložiť popis
+Vložiť blok kódu
+Vložiť blok matematiky
+Vložiť vodorovné pravítko
+Vložiť tabuľku
+Vložiť poznámku pod čiarou
+Upraviť názov súboru
+Kopírovať cestu k súboru
+Kopírovať cestu k aktuálnemu súboru od koreňa systému
+Kopírovať Obsidian URL
+Exportovať do PDF
+Reštartovať aplikáciu bez uloženia
+Vrátiť späť zatvorenie karty
+Zobraziť kontextové menu pod kurzorom
+Zobraziť ladiace informácie
+Otvoriť trezor pieskoviska
+Okno vždy navrchu
+Priblížiť
+Vzdialiť
+Resetovať priblíženie
+Prepnúť režim úprav/režim náhľadu
+Presunúť aktuálny panel do nového okna
+Otvoriť aktuálny panel v novom okne
+Premenovať aktuálny súbor
+Prejsť na predchádzajúcu kartu
+Prejsť na ďalšiu kartu
+Prejsť na poslednú kartu
+Prejsť na kartu #{{n}}
+Zobraziť poznámky k verzií
+Toto ovplyvní {{links}} v {{files}}.
+{{links}} v {{files}} boli aktualizované.
+Aktualizovať odkazy
+Chcete aktualizovať interné odkazy, ktoré odkazujú na tento súbor?
+Aktualizovať vždy
+Len raz
+Neaktualizovať
+Naozaj chcete odstrániť "{{filename}}"?
+Bude presunutý do systémového koša.
+Bude presunutý do Obsidian koša, ktorý sa nachádza v skrytom priečinku vášho trezora ".trash".
+Súbor bude natrvalo odstránený.
+Tento priečinok nie je prázdny.
+Ak budete pokračovať, všetky súbory v tomto priečinku budú odstránené.
+Odstrániť priečinok
+Odstrániť
+Už sa nepýtať
+Momentálne existuje {{count}} odkaz smerujúci na tento súbor.
+Momentálne existuje {{count}} odkazov smerujúcich na tento súbor.
+Odstrániť súbor
+Stiahnuť prílohy
+V tejto poznámke nie sú externé prílohy.
+Úspešne stiahnutá {{count}} príloha.
+Úspešne stiahnuté(ých) {{count}} prílohy(oh).
+Aktualizovaný {{count}} súbor.
+Aktualizovaných {{count}} súborov.
+Vrátené zmeny {{count}} súboru.
+Vrátené zmeny {{count}} súborov.
+Žiadne internetové pripojenie
+Načítava sa...
+Spravovať
+Zobraziť
+Potvrdiť
+Zrušiť
+Preskočiť
+Stiahnuť
+Hotovo
+Uložiť
+Zastaviť
+Zmeniť
+Pokračovať
+Zvoliť
+Zopakovať
+Aktualizovať
+Späť
+Pripravuje sa PDF...
+Premenovať súbor
+Názov súboru
+Nový názov
+Chyba
+Vybrané
+Súbor bol úspešne premenovaný.
+Nepodarilo sa zlúčiť poznámky: {{message}}
+Súbor alebo priečinok “{{path}}” neexistuje.
+Nadpis nesmie byť prázdny
+ID bloku nesmie byť prázdne
+ID bloku smie obsahovať iba alfanumerické znaky alebo čiarku
+Premenovať nadpis
+Zmeniť ID bloku
+Odstrániť prílohy súboru?
+Táto príloha sa už nepoužíva v žiadnych poznámkach. Chcete ju odstrániť?
+Týchto {{count}} príloh sa už nepoužíva v žiadnych poznámkach. Chcete ich odstrániť?
+Strom súborov
+Galéria
+Vytvoriť poznámku
+Nová poznámka vpravo
+Nová karta
+Nové okno
+Rýchlo otvoriť...
+Otvoriť trezor...
+Zatvoriť kartu
+Zatvoriť okno
+Hľadať
+Nahradiť
+Popis
+Markdown odkaz
+Odkaz
+Nadpis {{level}}
+Žiadny nadpis
+Citácia
+Exportovať do PDF
+Vložiť prílohu...
+Blok kódu
+Blok matematiky
+Tabuľka
+Poznámka pod čiarou
+Vložený názov
+Čísla riadkov
+Zoznam odrážok
+Číslovaný zoznam
+Zoznam úloh
+Tučné písmo
+Kód
+Komentár
+Kurzíva
+Matematika
+Zvýraznenie
+Prečiarknutie
+Komentáre
+Zrolovanie
+Zrolovať všetko
+Rozbaliť všetko
+Zrolovať viac
+Zrolovať menej
+Režim zdrojového kódu
+Režim čítania
+Zobraziť ladiace informácie
+Otvoriť trezor pieskoviska
+Presunúť do nového okna
+Navigovať späť
+Navigovať vpred
+Zobraziť/skryť ľavý bočný panel
+Zobraziť/skryť pravý bočný panel
+Zobraziť/skryť panel nástrojov
+Rozdeliť vpravo
+Rozdeliť dole
+Poznámky k verzií
+Pluginy
+Prieskumník súborov
+Zobraziť všetky súbory vo vašom trezore.
+Otvoriť prieskumník súborov
+Zobraziť prieskumník súborov
+Vytvoriť novú poznámku
+Vytvoriť nový priečinok
+Vytvoriť novú poznámku v aktuálnej karte
+Vytvoriť poznámku vpravo
+Automaticky zobraziť aktuálny súbor
+Zbaliť všetko
+Rozbaliť všetko
+Nová poznámka
+Nový priečinok
+Zmena zoradenia
+Zobraziť súbor v prieskumníku súborov
+Zobraziť aktívny súbor v prieskumníku súborov
+Kopírovať aktuálny súbor
+Duplikovať aktuálny súbor
+Presunúť súbor do iného priečinku
+Vytvoriť nový priečinok s vybranou ({{count}} položkou)
+Vytvoriť nový priečinok s vybranými ({{count}} položkami)
+Presunúť súbor do...
+Presunúť priečinok do...
+Presunúť {{count}} položky(iek) do...
+Zadajte priečinok
+Priečinok nebol nájdený.
+navigovať
+presunúť
+vytvoriť
+odmietnuť
+Zoradiť podľa názvu súboru (od A po Z)
+Zoradiť podľa názvu súboru (od Z po A)
+Zoradiť podľa času úpravy (od najnovšieho po najstaršie)
+Zoradiť podľa času úpravy (od najstaršieho po najnovšie)
+Zoradiť podľa času vytvorenia (od najstaršieho po najnovšie)
+Zoradiť podľa času vytvorenia (od najnovšieho po najstaršie)
+Nová poznámka
+Nový priečinok
+Premenovať
+Odstrániť
+Kopírovať
+Duplikovať
+Názov súboru nemôže obsahovať žiadny z nasledujúcich znakov: 
+Odkazy na súbory nebudú fungovať ak budú v názve súboru použité niektoré z týchto znakov: 
+Súbor s týmto názvom už existuje
+Názov súboru nesmie byť prázdny.
+Názov súboru nesmie začínať bodkou.
+Naposledy zmenené {{time}}
+Vytvorené {{time}}
+Bez názvu
+Bez názvu
+Prílohy budú odteraz uložené v "{{path}}".
+Hľadať
+Hľadanie kľúčového slova vo všetkých poznámkach.
+Hľadať vo všetkých súboroch
+Zbaliť výsledky
+Rozlišovať malé/veľké písmená
+Vysvetliť hľadaný výraz
+Zobraziť viac súvislostí
+{{count}} výsledok
+{{count}} výsledky(ov)
+Hľadať nastavenia
+Píšte pre spustenie hľadania...
+Zhoduje sa s textom: 
+Zhoduje sa s regulárnym výrazom: 
+Obsahuje presný text: 
+Väčší ako: 
+Menší ako: 
+Je pravda
+Je nepravda
+Je prázdny
+Obsahuje vlastnosť:
+Zhoduje sa zo všetkým z: 
+Zhoduje sa s niektorými z: 
+S výnimkou: 
+Rozlišovať malé/veľké písmená
+Nerozlišovať malé/veľké písmená
+Zhoduje sa s cestou k súboru: 
+Zhoduje sa s názvom súboru: 
+Zhoduje sa s obsahom súboru: 
+Zhoduje sa s úlohou: 
+Zhoduje sa s úlohou (urobiť): 
+Zhoduje sa s úlohou (hotovo): 
+Zhoduje sa s frázou: 
+Zhoduje sa s blokom: 
+Zhoduje sa s odsekom: 
+Zhoduje sa so značkou: 
+Neboli nájdené žiadne zhody.
+... a {{count}} ďalšia zhoda.
+... a {{count}} ďalšie(ích) zhody(ôd).
+Kopírovať výsledky hľadania
+Kopírovať výsledky
+Výsledky skopírované do schránky.
+Zobraziť cestu
+Radšej zobraziť celú cestu súboru ako iba názov súboru.
+Štýl odkazu
+Každý vyhľadaný súbor je možné zmeniť na odkaz.
+Žiadny
+Wiki-odkaz
+Markdown odkaz
+Predpona zoznamu
+Ku každému vyhľadanému súboru je možné pridať predponu položky zoznamu.
+Žiadny
+Pomlčka (-)
+Hviezdička (*)
+Číslovanie
+Odstrániť hľadanie
+Možnosti hľadania
+Vlastnosti
+Značky
+Čítať viac
+História
+Odstrániť históriu hľadania
+hľadať cestu k súboru
+hľadať názov súboru
+hľadať značku
+hľadať kľúčové slová v rovnakom riadku
+hľadať kľúčové slová pod rovnakým nadpisom
+hľadať vlastnosť
+Hľadať "{{keyword}}"
+Hľadať v priečinku
+Rýchly prepínač
+Preskočiť na akýkoľvek súbor bez opustenia klávesnice. Pre aktiváciu stlačte Ctrl/Cmd+O.
+Prepínač
+Otvoriť rýchly prepínač
+navigovať
+otvoriť
+otvoriť v novej karte
+otvoriť vpravo
+vytvoriť
+odmietnuť
+zvoliť
+Nenašli sa žiadne poznámky. Enter pre vytvorenie novej poznámky.
+Napíšte názov súboru, na ktorý sa chcete prepnúť alebo ho vytvoriť...
+Enter pre vytvorenie
+Zatiaľ nevytvorené, zvoľte pre vytvorenie
+Zobraziť iba existujúce
+Zobraziť iba výsledky z existujúcich súborov. Odkazy na súbory, ktoré zatiaľ nie sú vytvorené, budú skryté.
+Zobraziť prílohy
+Zobraziť prílohy súborov ako napríklad obrázky, videá a PDF súbory.
+Zobraziť všetky typy súborov
+Zobraziť všetky súbory vrátane tých, ktoré Obsidian nedokáže otvoriť. Súbor bude otvorený predvolenou aplikáciou pre daný typ súboru.
+Graf
+Pozrite sa na grafický prehľad toho, ako sú poznámky prepojené.
+Otvoriť graf
+Otvoriť lokálny graf
+Kopírovať ako snímok obrazovky
+Graf {{displayText}}
+Filtre
+Hľadať súbory...
+Hĺbka
+Zobraziť uzly tento počet odkazov ďaleko
+Susediace odkazy
+Zobraziť prepojené odkazy medzi susedmi.
+Odchádzajúce odkazy
+Zobraziť prepojenie odkazov na iné súbory
+Prichádzajúce odkazy
+Zobraziť prepojené odkazy z iných súborov na tento súbor
+Značky
+Značky budú prepojené so súbormi, ktoré ich obsahujú
+Prílohy
+Zobraziť prílohy obsiahnuté v súboroch
+Iba existujúce súbory
+Ak je zaškrtnuté, tak prepojenia na neexistujúce súbory nebudú zobrazené
+Siroty
+Zobraziť súbory, ktoré nie sú prepojené so žiadnym iným súborom
+Zobrazenie
+Šípky
+Zobraziť šípky pri priblížení
+Prahová hodnota zmiznutia textu
+Veľkosť uzlu
+Hrúbka čiar
+Sily
+Gravitácia stredu
+Sila prepojenia
+Dĺžka prepojenia
+Odpudivá sila
+Otvoriť nastavenia grafu
+Snímok obrazovky bol skopírovaný do schránky.
+Skupiny
+Vložiť dotaz...
+Odstrániť skupinu
+Nová skupina
+Kliknite pre zmenu farby\nUchopte pre zmenu poradia skupiny
+Spustiť časozbernú animáciu grafu
+Spustiť časozbernú animáciu
+Animovať
+Spätné odkazy
+Zobraziť počet spätných odkazov v stavovom riadku.
+Otvoriť spätné odkazy
+Zobraziť panel spätných odkazov
+Otvoriť spätné odkazy v aktuálnom súbore
+Zapnúť/vypnúť spätné odkazy v dokumente
+Spätné odkazy v dokumente
+Prepojené zmienky
+Žiadne spätné odkazy.
+Neprepojené zmienky
+Zobraziť filter hľadania
+Odkaz
+Spätné odkazy pre {{displayText}}
+Neboli nájdené žiadne neprepojené zmienky.
+
+Spätné odkazy v dokumente
+Pri otvorení nového panelu zobraziť spätné odkazy v dokumente.
+Odchádzajúce odkazy
+Zobraziť odchádzajúce odkazy a zistiť neprepojené zmienky o iných poznámkach v aktuálnej poznámke.
+Otvoriť odchádzajúce odkazy
+Zobraziť panel odchádzajúcich odkazov
+Otvoriť odchádzajúce odkazy v aktuálnom súbore
+Odchádzajúce odkazy z {{displayText}}
+Odkazy
+Neboli nájdené žiadne odkazy.
+Neboli nájdené žiadne neprepojené zmienky
+Vytvoriť odkaz na tento súbor
+Zatiaľ nevytvorený
+Panel značiek
+Značky
+Zobraziť všetky vaše značky spolu s množstvom ich výskytu.
+Zobraziť panel značiek
+Neboli nájdené žiadne značky.
+Zoradiť podľa názvu značiek (od A po Z)
+Zoradiť podľa názvu značiek (od Z po A)
+Zoradiť podľa počtu výskytu (od najväčšieho po najmenšie)
+Zoradiť podľa počtu výskytu (od najmenšieho po najväčšie)
+Zobraziť vnorené značky
+Zbaliť všetko
+Rozbaliť všetko
+Zobrazenie poznámok pod čiarou
+Poznámky pod čiarou
+Zobraziť zoznam poznámok pod čiarou z aktuálnej poznámky.
+Zobraziť poznámky pod čiarou
+Neboli nájdené žiadne poznámky pod čiarou.
+Vlastnosti
+Zobraziť metadáta vašich súborov.
+Všetky vlastnosti
+Vlastnosti súboru
+Vlastnosti súboru pre {{displayText}}
+Zobraziť všetky vlastnosti
+Zobraziť vlastnosti súboru
+Odstrániť vlastnosť
+Odstrániť vlastnosti
+Automaticky
+Automaticky ({{type}})
+Neboli nájdené žiadne vlastnosti.
+Neplatné vlastnosti.
+Zoradiť podľa názvu (od A po Z)
+Zoradiť podľa názvu (od Z po A)
+Zoradiť podľa počtu výskytu (od najväčšieho po najmenšie)
+Zoradiť podľa počtu výskytu (od najmenšieho po najväčšie)
+Zlúčiť vlastnosť “{{oldKey}}” s “{{newKey}}”?
+V prípade konfliktu, hodnoty budú zlúčené alebo použité z “{{oldKey}}”.
+Zbaliť všetko
+Rozbaliť všetko
+Otvoriť vlastnosti súboru
+Otvoriť dennú poznámku
+Náhľad poznámky
+Zobrazenie náhľadu poznámky pri podržaní myši na internom odkaze. Ctrl/Cmd + podržanie myši v režime úprav.
+“{{linktext}}” nebol nájdený.
+"{{linktext}}" zatiaľ neexistuje. Kliknite pre vytvorenie.
+Poznámka pod čiarou {{id}} nebola nájdená. Kliknite pre vytvorenie.
+Editor
+Náhľad
+Hľadať, Spätné odkazy, a Odchádzajúce odkazy
+Hlavička karty
+Vyžadovať {{key}} pre spustenie náhľadu stránky pri podržaní myši
+Záložky
+Uložte si záložky často používaných súborov a hľadaní.
+Zobraziť záložky
+Zbaliť všetko
+Uložiť aktívnu kartu ako záložku...
+Nová skupina záložiek
+Záložka...
+Pridať záložku
+Upraviť záložku
+Uložiť blok pod kurzorom ako záložku...
+Uložiť nadpis pod kurzorom ako záložku...
+Uložiť aktuálne hľadanie ako záložku...
+Odstrániť záložku pre aktuálny súbor
+Uložiť {{count}} kartu ako záložku...
+Uložiť {{count}} karty(iet) ako záložky...
+Uložiť všetky karty ako záložky...
+Uložiť tento graf ako záložku...
+Záložka
+Uložené ako záložka
+{{count}} záložka
+{{count}} záložky(iek)
+Neboli nájdené žiadne záložky
+Nepodarilo sa načítať záložky.
+Dátový súbor je poškodený.
+Skupina bez názvu
+Graf bez názvu
+Upraviť...
+Odstrániť
+Premenovať
+Uložiť tento blok ako záložku...
+Uložiť tento nadpis ako záložku...
+Žiadne hľadanie pre uloženie záložky.
+Cesta
+Hľadanie
+Nadpis
+Skupina záložiek
+Záložky
+Vlastné CSS
+Načíta a použije „obsidian.css“ v priečinku trezora.
+Komunitné témy
+Načítanie komunitných tém...
+Filtrovať...
+Iba tmavé témy
+Iba svetlé témy
+Použiť
+Prestať používať túto tému
+Nainštalovať a použiť
+Aktualizovať
+Táto téma neposkytla README súbor.
+Odstrániť tému
+Zobraziť na GitHube
+Nepodarilo sa načítať komunitné témy, skontrolujte si internetové pripojenie.
+Práve používate {{title}} ako vašu CSS tému.
+Téma {{title}} bola odstránená.
+Téma {{title}} bola aktualizovaná.
+Nainštalovaná
+Staršie
+Aktualizovať všetko
+Nepodarilo sa načítať komunitné témy.
+Žiadne aktualizácie tém neboli nájdené.
+Nájdená {{count}} aktualizácia témy.
+Nájdené(ých) {{count}} aktualizácie(í) tém.
+Nainštalovanie témy "{{name}}" sa nepodarilo.
+Téma "{{name}}" bola úspešne nainštalovaná.
+Téma "{{name}}" sa inštaluje...
+Zobrazených {{themeCount}}:
+Je dostupná aktualizácia
+Paleta príkazov
+Použite Cmd/Ctrl+P a zadajte príkaz, ktorý chcete vyvolať.
+Otvoriť paletu príkazov
+navigovať
+použiť
+odmietnuť
+Neboli nájdené žiadne príkazy.
+Napíšte príkaz...
+Pripnuté príkazy
+Prevodník formátov
+Prevedie Markdown z iných aplikácií do formátu aplikácie Obsidian.
+Otvoriť importér Markdown formátu
+Oprava štítkov z Roam Research
+Prevedie "#tag" a "#[[tag]]" na "[[tag]]".
+Oprava zvýraznenia Roam Research
+Prevedie "^^highlight^^" na "==highlight==".
+Oprava TODO z Roam Research
+Prevedie "{{[[TODO]]}}" na "[ ]".
+Oprava zvýraznenie z Bear
+Prevedie "::highlight::" na "==highlight==".
+Oprava Zettelkasten odkazov
+Prevedie "[[UID]]" odkazy na úplné "[[UID File Name]]".
+Skrášlenie Zettelkasten odkazov
+Prevedie "[[UID]]" odkazy a skrášli ich na "[[UID File Name|File Name]]".
+Frontmatter migrácia
+Migrovať frontmatter značky, aliasy, a css triedy pre použitie formátovania v Obsidian v1.9+
+Upozornenie: importér prevedie všetky súbory vo vašom trezore, nielen aktuálny súbor.
+Vaše súbory budú prepísané. Pred konverziou súborov si všetky súbory zálohujte.
+Spustiť konverziu
+Zastaviť
+Naspäť
+Hotovo
+Spracovávanie...
+Rušenie...
+Dokončené!
+Spracované súbory
+Upravené súbory
+Celkovo nahradených
+Zlyhalo
+Každodenné poznámky
+Otvoriť dennú poznámku, ak ešte neexistuje tak ju vytvorí.
+Dnes
+Otvoriť dennú poznámku
+Otvoriť predchádzajúcu dennú poznámku
+Otvoriť nasledujúcu dennú poznámku
+Vložiť text do dennej poznámky
+Vložiť odkaz do dennej poznámky
+Nepodarilo sa vytvoriť dennú poznámku. "{{format}}" nie je validný formát.
+Nepodarilo sa vytvoriť dennú poznámku. Priečinok "{{folderOption}}" nebol nájdený.
+Nepodarilo sa vytvoriť dennú poznámku. Súbor šablóny "{{template}}" nebol nájdený.
+Neexistuje žiadna predchádzajúca denná poznámka.
+Neexistuje žiadna nasledujúca denná poznámka.
+Formát dátumu
+Vyberte, ako sa budú denné poznámky v trezore pomenúvať.
+Vlastný formát
+Vlastné
+Neplatný formát dátumu
+Priečinok pre denné poznámky sa nenašiel.
+Viac syntaxe nájdete na: 
+dokumentácia formátu
+Ukážka ako to bude vyzerať: 
+Umiestnenie nových súborov
+Priečinok, kde sa budú vytvárať nové denné poznámky.
+Umiestnenie šablóny
+Umiestnenie súboru, ktorý bude použitý ako šablóna.
+Unikátny tvorca poznámok
+Vytvoriť poznámky s unikátnymi predponami časových značiek pre pracovné postupy ako je zettelkasten alebo slip box.
+Unikátny
+Vytvoriť novú unikátnu poznámku
+Nová jedinečná poznámka
+Pridať unikátny interný odkaz
+Umiestnenie nového súboru
+Cesta k priečinku na vytvorenie novej unikátnej poznámky.
+Unikátnu poznámku sa nepodarilo vytvoriť. Priečinok "{{folderOption}}" nebol nájdený.
+Umiestnenie súboru šablóny
+Cesta k súboru, ktorý sa použije ako šablóna.
+Napr. priečinok1/poznámka
+Unikátny formát predpony
+Vytvorenie unikátnej poznámky sa nepodarilo. Súbor šablóny "{{template}}" nebol nájdený.
+Nepodarilo sa vytvoriť unikátnu poznámku vo formáte "{{format}}
+Náhodná poznámka
+Otvoriť náhodnú poznámku. Užitočná pre kontrolovanie a objavovanie.
+Náhodná
+Otvoriť náhodnú poznámku
+Prehľad
+Zobrazí prehľad súčasného súboru alebo pripojeného panelu.
+Otvoriť prehľad
+Zobraziť panel prehľadu
+Otvoriť prehľad aktuálneho súboru
+Prehľad {{displayText}}
+Neboli nájdené žiadne nadpisy.
+Automaticky skrolovať na aktuálnu sekciu
+Počet slov
+Zobrazovať počet slov v stavovom riadku.
+Snímky
+Prezentujte priamo z Markdownu. Použite "---" pre oddelenie snímkov prezentácie.
+Spustiť prezentáciu
+Diktafón
+Nahrá zvukový záznam a uloží ho ako prílohu.
+Spustiť nahrávanie zvuku
+Zastaviť nahrávanie zvuku
+Spustiť/zastaviť nahrávanie
+Bol zamietnutý prístup k mikrofónu, povoľte ho v paneli predvolieb.
+Ak chcete spustiť nahrávanie, udeľte oprávnenie pre používanie mikrofónu.
+Nie je pripojený žiadny mikrofón.
+Otvoriť v predvolenej aplikácií
+Pridá možnosť pre otvorenie aktuálneho súboru v predvolenej aplikácií.
+Otvoriť v predvolenej aplikácií
+Zdieľať
+Zobraziť v priečinku
+Zobraziť vo Finderi
+Šablóny
+Vloží obsah šablóny z priečinku šablón.
+Vložiť šablónu
+Vložiť aktuálny dátum
+Vložiť aktuálny čas
+Umiestnenie priečinku šablón
+Súbory v tomto priečinku budú dostupné ako šablóny.
+Formát dátumu
+{{date}} v šablóne bude nahradený touto hodnotou.
+Tiež môžte použiť {{date:YYYY-MM-DD}} pre prepísanie formátu u konkrétneho súboru.
+Formát času
+{{time}} v šablóne bude nahradený touto hodnotou.
+Tiež môžte použiť {{time:HH:mm}} pre prepísanie formátu u konkrétneho súboru.
+navigovať
+vložiť šablónu
+odmietnuť
+Neboli nájdené žiadne šablóny
+Nepodarilo sa načítať šablóny. Súbor šablón je neplatný.
+Nepodarilo sa načítať šablóny. Priečinok "{{folderOption}}" nebol nájdený.
+Nie je možné vložiť šablónu, vlastnosti v súbore šablóny sa nepodarilo prečítať.
+Nepodarilo sa načítať šablóny. Priečinok šablón nie je nakonfigurovaný.
+Napíšte názov šablóny...
+Priehľadné okno
+Pridá efekt priehľadnosti pre navodenie pocitu hĺbky. Vhodnejšie pre tmavý režim. Nepodporované na Linuxe.
+Príkazy lomky
+Povolí možnosť vyvolať príkazy v editore napísaním lomky.
+Stav editora
+Pridá položku stavového riadku na zobrazenie a zmenu aktuálneho módu editora.
+Režim čítania
+Režim zdrojového kódu
+Živý náhľad
+Publikovať
+Publikovať vaše poznámky pomocou Obsidian Publish.
+Publikovať zmeny
+Publikovať aktuálny súbor
+Pre publikovanie zmien je nutný prístup k internetu.
+Obsidian Publish je doplnková platená služba, ktorá vám umožní publikovať poznámky online priamo z aplikácie Obsidian.
+Pre publikovanie sa musíte prihlásiť alebo si vytvoriť Obsidian účet.
+Obsidian Publish zatiaľ nemáte predplatený.
+Predplatiť
+Spravovať stránky
+Nemáte žiadne stránky.
+Zvoliť
+Zmeniť ID stránky
+Odstrániť stránku
+Ste si istý, že chcete túto stránku odstrániť?
+Vaša stránka bude okamžite a natrvalo odstránená.
+Potvrďte odstránenie stránky "{{site}}"
+ID stránky
+Vašu stránku nájdete na https://publish.obsidian.md/{site id}. Toto nastavenie môžte zmeniť aj neskôr. Povolené sú iba malé písmená, čísla a pomlčky.
+Zvoľte ID stránky
+Vytvoriť
+ID stránky môže obsahovať iba malé písmená, čísla a pomlčky.
+Toto ID stránky už je použité, skúste prosím iné.
+Pri vytváraní stránky došlo k chybe.
+Nastavenie stránky
+Všeobecné
+Komponenty
+Vzhľad
+Zážitok z čítania
+Iné nastavenia stránky
+Meno stránky
+Meno vašej publikovanej stránky. Zobrazí sa ako nadpis vašej stránky.
+Meno vašej stránky
+Súbor domovskej stránky
+Prvá stránka, ktorú návštevník uvidí, ak navštívi vašu publikovanú stránku
+Zvoľte publikovaný súbor
+
+Zvoľte súbor obrázku, ktorý bude použitý ako logo vašej stránky.
+Akýkoľvek nahraný súbor vo vašom trezore...
+Spolupracovníci stránky
+Spravovať spolupracovníkov pre túto stránku.
+Prispôsobiť navigáciu
+Prepísať poradie navigačných položiek a skryť stránky alebo priečinky.
+Poradie zobrazenia položky navigácie
+Skryť stránky alebo priečinky z navigácie
+Pravým kliknutím a zvolením "Hide" zabránite určitým stránkam pre zobrazením v stránke navigácie. Stránky budú stále dostupné cez odkazy alebo priamo cez URL.
+Zobraziť skryté
+Spravovať
+Navigácia
+Potiahnutím myšou prispôsobíte poradie, v ktorom sa položky navigácie zobrazujú na vašej Publikovanej stránke.
+Skryť v navigácií
+Spravovať
+Téma
+Zvoliť predvolenú tému pre vaše stránky.
+Prispôsobiť systému
+Svetlá/tmavá téma
+Umožnite návštevníkom zmeniť medzi svetlou a tmavou témou.
+Zobraziť navigáciu
+Zobraziť zoznam všetkých publikovaných stránok na ľavej strane publikovanej stránky.
+Zobraziť vyhľadávacie pole
+Zobrazí vyhľadávacie pole nad navigáciou, ktorá návštevníkom umožní vyhľadať poznámky a nadpisy na vašich stránkach.
+Zobraziť graf
+Na každej stránke zobraziť malý lokálny graf.
+Zobraziť tabuľku obsahu
+Zobraziť tabuľku s obsahom na každej stránke.
+Zobraziť spätné odkazy
+Zobraziť sekciu spätných odkazov na konci každej stránky.
+Použiť posuvné okná
+Otvárať stránky na nových paneloch vpravo. Umožňuje vodorovné skrolovanie v paneloch.
+Zobrazovať náhľad pri podržaní kurzorom
+Zobrazí náhľad stránky pri podržaní kurzora na odkaze.
+Skryť názov stránky
+Skryje nadpis stránky. Užitočné vtedy, ak máte vlastné nadpisy na začiatku každej stránky.
+Čitateľná dĺžka riadku
+Obmedzí maximálnu dĺžku riadku. Na obrazovku sa zmestí menej informácií, ale dlhé odseky budú čitateľnejšie.
+Heslá
+Obmedziť prístup na vašej stránky pomocou hesla.
+Sledovací kód Google Analytics
+Nakonfigurovať Google Analytics pre vašu stránku. Dostupné iba pre návštevníkov na vašej vlastnej URL doméne. Skontrolujte najprv miestne zákony a regulácie.
+Spravovať
+Uložiť nastavenia stránky
+Aktualizovať možnosti pre vaše stránky.
+Späť
+Publikovanie na
+Prepnúť stránku
+Pridať odkaz
+Pridá všetky súbory, ktoré sú prepojené s aktuálne zvolenou položkou
+{{count}} odkazovaný súbor bol pridaný.
+{{count}} odkazované(ých) súbory(ov) boli(o) pridané(ých).
+Zmeniť možnosti stránky
+Neboli nájdené žiadne zmeny.
+Zmeny
+Nezmenené (vybrať pre odstránenie)
+ vybrané
+Vybrať všetko
+Položky navigácie
+Zrušiť výber všetkého
+Nový
+Publikovať
+Nemáte práva pre publikovanie na aktuálnej stránke.
+Vyberte aspoň jeden súbor.
+Nahrať zmeny
+Hotovo
+Zastaviť
+Nahrávanie
+Publikovať
+Odstrániť
+Publikované
+Odstránené
+Neúspešné
+Zrušené
+Zmeny
+Zmeny na stránke sa môžu prejaviť až po niekoľkých minútach. Ak najnovšie zmeny nevidíte, skúste vymazať vyrovnávaciu pamäť prehliadača.
+Vašu stránku môžete navštíviť tu: 
+Niečo sa pokazilo. Podrobnosti nájdete v konzole pre vývojárov.
+Vyskytla sa chyba s internetovým pripojením. 
+Spravovať heslá
+Pridať heslo
+Nové heslo
+Vaša stránka aktuálne nemá žiadne heslá. Ktokoľvek ju môže navštíviť.
+Vaša stránka je chránená heslom. Ak máte viacero hesiel, návštevníci môžu použiť ktorékoľvek z nich pre návštevu vašich stránok.
+Heslo
+Hash vášho hesla bude bezpečne uložený. Ak je raz heslo nastavené, nemôže byť odhalené v textovej podobe.
+Vaše heslo
+Prezývka (voliteľné)
+Nastavte si prezývku ako pripomienku komu je heslo určené.
+Pridať toto heslo
+Heslo bez názvu
+Vytvorené {{time}}
+Nové heslo bolo pridané.
+Vlastná doména
+Použite radšej vlastnú doménu ako https://publish.obsidian.md/{site id} URL.
+Zakázať indexovanie vyhľadávacieho nástroja
+Zabráňte vyhľadávacím nástrojom v indexovaní vašich stránok.
+Konfigurovať
+Konfigurovať vlastnú doménu
+Vlastné URL
+Adresa URL, na ktorej sa bude nachádzať vaša stránka.
+Presmerujte na svoju vlastnú doménu
+Presmerujte návštevníkov z publish.obsidian.md/id na vašu vlastnú doménu.
+Aktualizovať nastavenie domény
+Viac informácií nájdete na našej stránke pomoci {{link}}.
+sprievodca nastavením vlastnej domény
+Používate {{site}} z vášho {{limit}}.
+Kúpiť viac stránok
+Neboli kúpené žiadne stránky.
+Získať stránku
+Spravovať zdieľanie pre "{{name}}"
+Táto stránka je aktuálne zdieľaná s nasledujúcimi ľuďmi.
+Táto stránka aktuálne nie je s nikým zdieľaná.
+Čakajúce
+Odstrániť používateľa
+Pozvať používateľa
+Zadajte jeho email...
+Prosím vložte platný email pre pozvánku.
+Ak chcete zobraziť stránky, povoľte plugin Publish v Nastavenia -> Vstavané pluginy.
+Vaše stránky
+Stránky zdieľané s vami
+Zastaviť spoluprácu na tejto stránke
+Potvrdiť zastavenie spolupráce na tejto stránke
+Toto odstráni stránku zo zoznamu stránok zdieľaných s vami. Túto akciu nemožno vrátiť späť.
+Kontaktujte prosím vlastníka stránky, ak chcete znovu spolupracovať na tejto stránke.
+Opustiť
+Porovnať so živou verziou
+Použiť živú verziu
+Potvrďte prepísanie lokálnej verzie
+Ste si istý, že chcete prepísať lokálnu verziu?
+Živá verzia bude použitá a lokálna verzia bude zahodená. Ak potrebujete, urobte si zálohu.
+Pokračovať
+Úspešne bola použitá živá verzia na prepísanie lokálnej verzie.
+Otvoriť na živej stránke
+Otvoriť súbor
+Správa publikačných filtrov
+Zahrnuté priečinky
+Súbory pod týmito priečinkami budú automaticky zvolené pri kontrole zmien, ktoré chcete publikovať.
+ Tieto priečinky sú aktuálne zahrnuté:
+Vylúčené priečinky
+Súbory pod týmito priečinkami nebudú zahrnuté pri kontrole zmien, ktoré chcete publikovať. Toto nastavenie má prioritu nad nastavením zahrnutých priečinkov.
+Obsidian Publish aktuálne obsahuje {{folders}}.
+Obsidian Publish aktuálne vylúčené {{folders}}.
+Spravovať zahrnuté priečinky
+Spravovať vylúčené priečinky
+Zahrnúť priečinok
+Môžete zahrnúť existujúce priečinky aj priečinky, ktoré ešte neexistujú.
+Kontaktovať podporu
+Náhľad navigácie
+Pracovné priestory
+Uložiť a načítať rozloženie pracovného priestoru.
+Načítať rozloženie pracovného priestoru
+Spravovať rozloženie pracovného priestoru
+Uložiť rozloženie
+Uložiť a načítať iné rozloženie
+Uložiť aktuálne rozloženie pracovného priestoru ako...
+Uložiť
+Načítať
+Odstrániť rozloženie
+Zadajte názov nového rozloženia.
+Rozloženie bolo úspešne uložené.
+Nebolo nájdené žiadne uložené rozloženie.
+Upravené {{time}}
+Vložte názov rozloženia...
+Synchronizácia
+Synchronizujte vaše súbory cez Obsidian Sync.
+Zobraziť históriu verzií
+Nastaviť synchronizáciu
+Otvoriť históriu verzií
+Zobraziť históriu synchronizácie
+Otvoriť záznam o činnosti
+Načítať viac
+Zobraziť zmeny
+Kopírovať do schránky
+Obnoviť túto verziu
+Táto verzia je najnovšia verzia.
+Úspešne obnovená verzia z {{time}}
+Tento súbor bol odstránený
+Odstránené zariadením {{ device }}
+Tento súbor bol premenovaný z "{{filepath}}"
+Premenované z “{{from}}” na “{{to}}”
+Presunuté z “{{from}}”
+Presunuté z “{{from}}” na “{{to}}”
+{{count}} revízia
+{{count}} revízie(í)
+zariadením {{device}}
+Žiadna história synchronizácie pre tento súbor.
+Prázdny
+Nemožno získať históriu verzií
+Nastavenie súborov
+Odstránené súbory
+História verzií
+Kliknite na odstránený súbor pre zobrazenie jeho histórie.
+Vytvoriť vzdialený trezor
+Zadajte heslo.
+Názov trezoru nesmie byť prázdny.
+Vzdialený trezor bol úspešne vytvorený "{{name}}".
+Bezpečne synchronizovať vzdialené trezory medzi vašimi zariadeniami.
+Názov trezoru
+Pomôže vám pripomenúť, čo je v tomto trezore.
+Oblasť
+Automatická
+Zvoľte oblasť serveru, ktorá je najbližšie k vám, pre uloženie vzdialeného trezoru. Toto nastavenie sa nedá v budúcnosti zmeniť.
+Môj úžasný trezor
+Šifrovanie
+End-to-end šifrovanie ponúka najvyššiu bezpečnosť, ale vyžaduje bezpečné uloženie šifrovacieho hesla. Štandardné šifrovanie používa kľúč spravovaný Obsiadianom, pre ochranu dát počas prenosu na naše servery.
+Táto možnosť sa nedá zmeniť v budúcnosti.
+End-to-end šifrovanie
+Štandardné šifrovanie
+Šifrovacie heslo
+Heslo nemôže byť neskôr zmenené.
+Ak zabudnete heslo, všetky vzdialené dáta budú navždy nepoužiteľné.
+Toto neovplyvní vaše lokálne dáta.
+Vzdialený trezor “{{name}}” je aktuálne zašifrovaný. Pre odblokovanie zadajte heslo.
+Vaše heslo
+Odomknúť váš vzdialený trezor
+Odomknúť trezor
+Vaše vzdialené trezory
+Vytvorené {{time}}
+Odstrániť
+Premenovať
+Premenovať vzdialený trezor "{{name}}"
+Vložte nový názov pre vzdialený trezor.
+Spravovať zdieľanie
+Potvrdiť odstránenie trezoru
+Ste si istý, že chcete odstrániť tento vzdialený trezor?
+Všetky dáta sú na našich serveroch, vrátane histórie verzií, budú odstránené. Vaše lokálne súbory zostanú nedotknuté.
+Táto akcia je trvalá a nezvratná.
+{{name}} bol odstránený.
+Obsidian Sync: Prepojený vzdialený trezor už neexistuje.
+Pripojiť
+Odpojiť
+Synchronizácia: {{status}}
+Nemáte žiadny vzdialený trezor.
+Nemáte aktívne predplatné Obsidian Sync.
+Navštívte
+Nie je možné zobraziť ukážku {{type}} súborov.
+Vytvoriť nový trezor
+Záznam synchronizácií
+Všetko
+Chyby
+Preskočené
+Zlúčiť konflikty
+Kopírovať záznam synchronizácie
+Úspešne skopírovaný záznam synchronizácie.
+Skúsiť znova
+Kúpiť
+Bola zistená konfliktná služba synchronizácie súborov
+Varovanie: Váš trezor používa {{service}} ako synchronizačnú službu tretej strany. Ak použijete Obsidian Sync s týmto trezorom, môžu sa vyskytnúť konflikty, poškodenie súboru alebo hrozí strata dát.
+Ak používate iCloud Drive, vaše Dokumenty a Priečinky pracovnej plochy môžu byť synchronizované cez iCloud. To môže spôsobiť konflikty s Obsidian Sync.
+Vzdialený trezor
+Vybrať
+Spravovať
+Aktuálne prepojené s "{{name}}" vzdialeným trezorom.
+Aktuálne nie je pripojené k žiadnemu vzdialenému trezoru.
+Stav synchronizácie
+Obsidian Sync je aktuálne pozastavený.
+Obsidian Sync aktuálne beží
+Názov zariadenia
+Tento názov zariadenia bude zobrazený v zázname synchronizácie. Nechajte prázdne, pre použitie predvoleného názvu.
+Pokračovať
+Pozastaviť
+Odstránené súbory
+Zobraziť a obnoviť odstránené súbory.
+Synchronizovať aktivitu
+Zobraziť nedávnu synchronizovanú aktivitu pre ladenie.
+Zobraziť
+Hromadné obnovenie
+Obnoviť súbory
+Obnoviť {{count}} súbor
+Obnoviť {{count}} súbory(ov)
+Obnovovanie...
+Obnova hotová: {{succeeded}} úspešných a {{failed}} neúspešných.
+Veľkosť trezoru
+Používate {{size}} mimo {{limit}}
+Nie je možné získať veľkosť trezoru.
+Získavanie veľkosti trezoru...
+Veľkosť trezoru je nad limit
+Veľkosť trezoru sa približuje k limitu
+Zobraziť najväčší súbor
+Toto sú vzdialené súbory, ktoré zaberajú najviac miesta. Po odstránení príloh, použite tlačidlo na vyčistenie k uvoľneniu miesta vzdialeného trezoru.
+Vylepšiť úložisko
+Vyčistiť
+Skryť zmeny
+Natrvalo vyčistiť odstránené prílohy z vzdialeného trezoru k ušetreniu miesta.
+Vyčistené.
+Zabrániť zariadeniu v prechode do režimu spánku
+Zabraňuje zariadeniu v prechode do režimu spánku, keď súbory ešte nie sú synchronizované.
+Selektívna synchronizácia
+Vylúčené priečinky
+Zabrániť synchronizácií určitých priečinkov.
+ Tieto súbory sú aktuálne vylúčené:
+Spravovať
+Synchronizovať obrázky
+Synchronizovať súbory obrázkov s týmito príponami: {{extensions}}.
+Synchronizovať audio
+Synchronizovať audio súbory s týmito príponami: {{extensions}}.
+Synchronizovať videá
+Synchronizovať video súbory s týmito príponami: {{extensions}}.
+Synchronizovať PDF
+Synchronizovať PDF súbory.
+Synchronizovať ostatné typy súborov
+Synchronizovať nepodporované typy súborov.
+Synchronizácia konfigurácie trezoru
+História verzií nastavení
+Zobrazenie a obnovenie histórie verzií súborov nastavení.
+Hlavné nastavenia
+Povoliť synchronizáciu nastavení editora, nastavení súborov a odkazov, vlastných skratiek, atď.
+Nastavenie vzhľadu
+Synchronizovať nastavenie vzhľadu ako tmavý režim, aktívna téma, a povolené snippety.
+Témy a snippety
+Synchronizovať stiahnuté témy a snippety. Ich povolenie závisí od predchádzajúcich nastavení.
+Klávesové skratky
+Synchronizovať vlastné klávesové skratky.
+Zoznam aktívnych vstavaných pluginov
+Synchronizovať, ktoré vstavané pluginy sú zapnuté.
+Nastavenia vstavaných pluginov
+Synchronizovať nastavenia vstavaných pluginov.
+Zoznam aktívnych komunitných pluginov
+Synchronizovať, ktoré komunitné pluginy sú zapnuté.
+Nainštalované komunitné pluginy
+Synchronizovať nainštalované komunitné pluginy (.js, .css, a manifest.json súbory) a ich nastavenia.
+Synchronizácia sa načíta, aktualizujte túto stránku neskôr.
+Obsidian Sync je doplnková synchronizačná služba Obsidianu s end-to-end šifrovaním a históriou verzií.
+Pre spustenie synchronizácie sa prosím prihláste alebo si vytvorte nový Obsidian účet.
+Aktuálny súbor
+Synchronizovať zmeny
+Dnes
+Včera
+Tento týždeň
+Staršie
+Posledná synchronizácia
+{{count}} viac
+Zaregistrovať
+Prihlásiť
+Spravovať vylúčené priečinky
+{{folders}} sú aktuálne vylúčené zo synchronizácie.
+Vylúčiť priečinok
+Môžete vylúčiť už existujúce priečinky aj priečinky, ktoré ešte neboli vytvorené.
+Odobrať zo zoznamu vylúčených priečinkov
+Nastaviť pripojenie
+Pripájanie...
+Pripojenie zlyhalo
+Nepodarilo sa pripojiť k vzdialenému trezoru.
+Teraz ste pripojený k "{{name}}".
+Spustiť synchronizáciu
+Potvrdiť zlúčenie trezoru
+Váš lokálny trezor už obsahuje nejaké poznámky.
+Ak sa pripojíte k vzdialenému trezoru "{{name}}", poznámky v lokálnom trezore budú zlúčené s poznámkami vzdialeného trezoru. V prípade konfliktu, bude zachovaná najnovšia verzia poznámky.
+Aktualizujte túto možnosť a reštartujte aplikáciu na všetkých zariadeniach, na ktorých chcete aby sa prejavila.
+Tento vzdialený trezor je aktuálne zdieľaný s nasledujúcimi ľuďmi.
+Tento vzdialený trezor aktuálne nie je zdieľaný s nikým.
+Trezory zdieľané s vami
+Prestať spolupracovať na tomto trezore
+Potvrdiť zastavenie spolupráce na trezore
+Týmto sa tento trezor odstráni zo zoznamu trezorov zdieľaných s vami. Túto akciu nie je možné vrátiť späť.
+Kontaktujte vlastníka trezoru, ak chcete spolupracovať na tomto trezore.
+Opustiť
+Nepodarilo sa načítať vzdialené trezory.
+Na pripojenie k tomuto trezoru potrebujete predplatné Obsidian Sync.
+Kontaktovať podporu
+Ak narazíte na nejaké problémy s Obsidian Sync, kontaktujte nás, aby sme vám mohli pomôcť! Kontaktovať nás môžete na adrese support@obsidian.md.
+Kopírovať ladiace informácie
+Emailová podpora
+Obsidian Sync nie je pripojený k vzdialenému trezoru.
+Obsidian Sync vám umožňuje vytvoriť až 5 vzdialených trezorov. Ak chcete vytvoriť nový vzdialený trezor, odstráňte existujúci.
+Aktualizovať trezor
+Aktualizovať šifrovanie trezoru
+Je dostupná nová verzia šifrovania pre vzdialené trezory.
+Migrovať vzdialený trezor
+Konfigurácia vzdialeného trezoru
+Migrovať
+Týmto sa odstráni váš vzdialený trezor a vytvorí sa znova s najnovším šifrovaním. Lokálne súbory sa nezmenia, ale stratí sa história verzií.
+Potvrdiť migráciu trezoru
+Pre aktualizáciu šifrovania, všetky dáta v trezore budú znovu nahrané na Obsidian synchronizačné servery s použitím novej metódy šifrovania. Tento proces natrvalo odstráni všetky dáta šifrované starou metódou šifrovania, vrátane histórie verzií vášho trezoru.
+Dôležité: pred pokračovaním odporúčame vytvorenie zálohy vášho trezoru, aby ste predišli potenciálnej strate dát.
+Po dokončení aktualizácie, budete musieť znova pripojiť všetky zariadenia k aktualizovanému vzdialenému trezoru.
+Migrácia vášho trezoru môže trvať nejaký čas. Obsidian budete musieť nechať aktívny na tomto zariadení, pre opätovné nahranie všetkých vašich poznámok a príloh. Najlepšie je na tento proces použiť vaše primárne zariadenie.
+Chcete pokračovať?
+Prebieha migrácia trezoru.
+Migrácia trezora dokončená.
+Riešenie konfliktov
+Vyberte, ako sa majú riešiť konflikty, keď je poznámka nezávisle upravená na viacerých zariadeniach.
+Automaticky zlúčiť
+Vytvoriť konfliktný súbor
+Obnova súboru
+Umožňuje obnoviť nedávne obrazy súborov po náhodnej strate údajov. Obrazy súborov sú ukladané iba pre Markdown súbory.
+Otvoriť uložené obrazy súborov
+Interval vytvorenia obrazu
+Minimálny interval medzi dvoma obrazmi v minútach.
+Dĺžka histórie
+Dĺžka uchovávania histórie obrazov v dňoch.
+Obrazy histórie
+Zobraziť a obnoviť uložené obrazy súborov.
+Zobraziť
+Vyčistiť históriu
+Odstrániť všetky obrazy.
+Vyčistiť
+Ste si istý, že chcete odstrániť celú históriu obrazov súborov? Odstránené budú obrazy súborov. Všetky súbory vo vašom trezore budú zachované.
+Obrazy boli odstránené.
+Nenašli sa žiadne obrazy súborov.
+Zvoľte súbor...
+Zvoľte súbor vľavo pre zobrazenie obrazu súborov.
+Zlučovač poznámok
+Zlúčenie, rozdelenie a refaktorovanie poznámok.
+Potvrdiť zlúčenie súboru
+Vyzvať pred zlúčením dvoch súborov.
+Text po extrakcií
+Čo zobraziť namiesto vybraného textu po jeho extrahovaní.
+Odkaz na nový súbor
+Vložiť nový súbor
+Žiadny
+Umiestnenie šablóny súboru
+Súbor šablóny, ktorý sa použije pri zlučovaní alebo extrahovaní. Dostupné premenné: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, napr. {{date:YYYY-MM-DD}}.
+Zlúčiť aktuálny súbor s ďalším súborom...
+Zlúčiť celý súbor s...
+Žiadne súbory neboli nájdené.
+navigovať
+zlúčiť
+vytvoriť nový
+zlúčiť navrchu
+odmietnuť
+Vyberte súbor, do ktorého sa má zlúčiť...
+Zlúčiť súbor
+Ste si istý, že chcete zlúčiť "{{file}}" do "{{destination}}"? "{{file}}" bude odstránený.
+Zlúčiť
+Extrahovať aktuálny výber...
+Extrahovať tento nadpis...
+presunúť nadol
+presunúť nahor
+Nepodarilo sa načítať súbor šablóny: "{{template}}" nebol nájdený.
+Nepodarilo sa nájsť nadpis
+Webový prehliadač
+História prehľadávania webu
+Otvoriť externé odkazy web stránok v Obsidiane.
+Otvoriť históriu prehľadávania webu
+Zobraziť históriu
+Prepínanie režimu čítania
+Kopírovať URL
+Odstrániť z histórie
+Odstrániť históriu
+Otvoriť odkaz
+Otvoriť odkaz v novej karte
+Otvoriť odkaz napravo
+Otvoriť odkaz v novom okne
+Otvoriť odkaz v predvolenom prehliadači
+Otvoriť odkaz vo webovom prehliadači
+Kopírovať adresu odkazu
+Uložiť odkaz do záložiek
+Hľadať “{{query}}”
+Extrahovať výber do novej poznámky
+Kopírovať
+Vystrihnúť
+Prilepiť
+Odstrániť
+Vybrať všetko
+Uložiť do trezoru
+Uložiť obrázok do trezoru
+Kopírovať odkaz na obrázok
+Dozadu
+Dopredu
+Znovu načítať
+Uložiť stránku do záložiek
+Otvoriť v predvolenom prehliadači
+Zamerať sa na adresný riadok
+Hľadať na webe
+Odstrániť údaje
+
+Môže vás odhlásiť z webstránok.
+Údaje v cache
+História
+Všetky údaje webového prehliadača
+Odstráni všetky vyššie uvedené položky, ako aj lokálne úložisko a aktívne relácie.
+Nový webový prehliadač
+Túto stránku nie je možné načítať.
+Skontrolujte, že ste zadali správnu adresu.
+Vyhľadávať na webe
+Údaje webového prehliadača
+Odstrániť údaje webového prehliadača
+Otvárať externé odkazy
+Otvárať odkazy v Obsidiane namiesto predvoleného prehliadača.
+Domovská stránka
+Akú stránku zobraziť po otvorení webového prehliadača
+Priečinok uložených stránok
+Tu budú uložené webstránky v Markdown formáte.
+Vyhľadávací nástroj
+Vyhľadávací nástroj používaný pri hľadaní z adresného riadku.
+Vlastný vyhľadávací nástroj
+Používať %s namiesto dotazu.
+Vlastný
+Povoliť blokovanie reklám
+Ak bude povolené, nižšie uvedené filtre sa použijú na všetky karty webového prehliadača.
+Pravidlá blokovania reklám
+Jedna adresa blokovanej reklamy na riadok. Nastavenie je zdieľané medzi všetkými trezormi.
+Frekvencia aktualizácie blokovania reklám
+Počet dní medzi aktualizáciou zoznamu filtrov. 0 znamená vypnuté. Nastavenie je zdieľané medzi všetkými trezormi.
+Odstrániť dáta webového prehliadača
+Neočakávaná chyba pri extrakcií obsahu.
+Nie je možné nájsť obsah na extrakciu.
+Plátno
+Usporiadať a prepojiť poznámky na nekonečnom plátne.
+Pridať poznámku z trezoru
+Pridať média z trezoru
+Pridať kartu
+Pridať webstránku
+Vytvoriť skupinu
+Vytvoriť kartu s určitou veľkosťou
+Konvertovať na súbor...
+Potiahnutím pridáte poznámku z trezoru
+Potiahnutím pridáte média z trezoru
+Potiahnutím pridáte kartu
+Upraviť štítok
+Odstrániť štítok
+Hľadať súbor
+Nastaviť farbu
+Zarovnať
+Zarovnať vľavo
+Zarovnať na stred
+Zarovnať vpravo
+Zarovnať navrch
+Zarovnať do stredu
+Zarovnať nadol
+Distribuovať horizontálne
+Distribuovať vertikálne
+Vyrovnať horizontálne
+Vyrovnať vertikálne
+Usporiadať do riadku
+Usporiadať do stĺpca
+Usporiadať do mriežky
+Exportovať ako obrázok
+Prejsť na skupinu
+Nastaviť pozadie
+Upraviť pozadie
+Nahradiť pozadie
+Odstrániť pozadie
+Neboli nájdené žiadne obrázky.
+Neboli nájdené žiadne média.
+Exportovať "{{title}}" ako PNG obrázok s nižšie uvedeným nastavením.
+Odhadované rozmery obrázku: {{dimensions}}
+Distribuovať
+Vyrovnať
+Usporiadať
+Vždy
+Pri nabehnutí myšou
+Nikdy
+Nebola nájdená žiadna sekcia
+Predvolené správanie kolečka myši
+Predvolené správanie {{key}}
+Zobraziť menu
+Predvolené umiestnenie pre nové súbory plátna
+Kde sú umiestnené novo vytvorené súbory plátna.
+Priečinok pre vytváranie nových súborov plátna
+Novo vytvorené súbory plátna sa zobrazia v tomto priečinku.
+Zobraziť štítok karty
+Prichytiť k mriežke
+Prichytiť karty k mriežke na pozadí pri presúvaní a zmene veľkosti.
+Prichytiť k objektom
+Prichytiť karty k blízkym objektom pri presúvaní a zmene veľkosti.
+Prah priblíženia pre skrytie obsahu karty
+Nižšie hodnoty zvýšia výkon pri načítaní, ale pri oddialení skôr skryjú obsah karty.
+Zobraziť logo
+Pridá logo Obsidianu do ľavého dolného rohu.
+Režim súkromia
+Skryje všetok text na plátne.
+Priblíženie
+Vyššia hodnota priblíženia vygeneruje obrázok s vyšším rozlíšením.
+Viditeľný priestor
+Vyberte, či chcete vykresliť celé plátno alebo iba aktuálne viditeľný priestor.
+Celé plátno
+Iba viditeľný priestor
+Krytie
+Zachovať pomer strán
+Opakovať
+Nové plátno
+Duplikovať
+Odstrániť
+Zmenšiť na nadpis...
+Zmenšiť na blok...
+Pripnuté zobrazenie...
+Vymeniť súbor...
+Zmeniť URL...
+Priblížiť na prispôsobenie oknu
+Priblížiť na výber
+Znovu načítať stránku
+Sledovať pripojenie
+Vytvoriť nové plátno
+Konvertovať na súbor...
+vložiť nadpis
+vložiť blok
+navigovať na skupinu
+Zadajte názov nadpisu
+Zadajte URL
+"{{linktext}}" sa nepodarilo nájsť.
+Pridať text...
+Píšte pre spustenie hľadania...
+Nápoveda pre plátno
+Nastavenie plátna
+Zobraziť celý súbor
+Zobraziť predvolené zobrazenie
+Iba pre čítanie
+Zakázať iba pre čítanie
+Posunúť
+Posunúť horizontálne
+Priblížiť
+Vybrať všetko
+Pridať / odobrať z výberu
+Klonovať kartu
+Obmedziť pohyb karty na os
+Vypnúť prichytávanie pri ťahaní
+Odstrániť kartu
+Potiahnite zospodu alebo dvakrát kliknite
+Dotykom a podržaním pridáte / presuniete / vyberiete
+Potiahnutím posuniete
+Posunom od seba priblížite
+Medzerník + Ťahaním posúvate
+Skrolovaním priblížite
+Skupina bez názvu
+Smer čiary
+Bez smeru
+Jednosmerné
+Obojsmerné
+Obrázok
+Štýl
+Neboli nájdené žiadne skupiny
+Nedá sa exportovať prázdne plátno
+Bolo zistené premenovanie súboru plátna, čo ovplyvňuje {{count}} súbor plátna, aktualizuje sa...
+Bolo zistené premenovanie súboru plátna, čo ovplyvňuje {{count}} súbory(ov) plátna, aktualizuje sa...
+Plátno aktualizovalo {{count}} vloženú kartu
+Plátno aktualizovalo {{count}} vložené karty
+Databázy
+Vytvorte databázy dotazovaním vlastností poznámok.
+Nová databáza
+Pridať "{{name}}" vlastnosť
+Pridať súhrn „{{name}}“
+Pridať vzorec
+Skryť všetko
+Prepnúť viditeľnosť
+Odstrániť vzorec
+Predvolené zobrazenie
+Duplikovať zobrazenie
+Odstrániť zobrazenie
+Odstrániť súhrn
+Exportovať CSV...
+Vytvoriť novú databázu
+Vložiť novú databázu
+Kopírovať tabuľku do schránky
+Zmeniť zobrazenie
+Pridať zobrazenie
+Pridať položku
+Pridať zobrazenie
+Pridať filter
+Pridať skupinu filtrov
+Zobraziť všetko
+Zobraziť všetkých ({{count}})
+Pridať súhrn
+Skryť súhrn
+Všetky zobrazenia
+Toto zobrazenie
+Nájsť alebo vytvoriť...
+Vypočítané vlastnosti
+Typ vlastnosti
+Skryť vlastnost
+Zobraziť vlastnosť
+Upraviť vlastnosť
+Upraviť {{name}}
+Konfigurovať zobrazenie
+Rozloženie
+Globálne filtre
+Zobraziť filtre
+Zobraziť meno
+Zobraziť
+Tabuľka
+Zobraziť meno
+Názov súhrnu
+Vzorec
+Zobrazenia
+Zoradiť
+
+Hľadať
+Vlastnosti
+Nový
+Zobrazené: {{count}}
+Nová položka šablóny
+Nový priečinok s položkami
+Niektoré z nasledovných sú pravdivé
+Všetky z nasledovných sú pravdivé
+Žiadne z nasledovných nie sú pravdivé
+kde
+alebo
+a
+Vlastnosť
+Bez názvu
+súbor
+názov súboru
+základný názov súboru
+plný názov súboru
+cesta k súboru
+priečinok
+prípona súboru
+čas vytvorenia
+čas upravenia
+veľkosť súboru
+spätné odkazy súboru
+odkazy na súbory
+vložené súbory
+značky súboru
+Pridať triedenie
+Zoskupiť podľa
+Zoradiť podľa
+Obmedziť počet výsledkov
+
+
+Od najstaršieho po najnovšie
+Od najnovšieho po najstaršie
+
+
+Názov nesmie obsahovať: 
+Názov zobrazenia už existuje.
+Názov zobrazenia nemôže byť prázdny.
+Tento filter nie je možné zastúpiť jednoduchým nástrojom na tvorbu filtrov.
+Filter nie je možné analyzovať. Základný nástroj na tvorbu filtrov nie je možné použiť.
+Neplatná konfigurácia vlastností.
+Neplatná konfigurácia vlastností pre "{{ name }}".
+Nepodarilo sa pridať nové zobrazenie databázy "{{ viewId }}". Zobrazenie s týmto ID už existuje.
+Nepodarilo sa analyzovať váš databázový súbor:
+Zobrazenie "{{ view }}" nebolo nájdené
+Databáza je konfigurovaná s neznámym typom zobrazenia: {{ viewtype }}
+Zobrazenia musia byť pole
+Zobrazované hodnoty musia byť reťazce. Hodnota pre vlastnosť {{ key }} nie je reťazec.
+"{{ key }}" musí byť {{ type }}
+"filters" musí byť reťazec alebo objekt
+"{{ conjunction }}" filter musí byť pole
+"filters" môže mať iba jeden z kľúčov "and", "or", alebo "not" keys.
+Nepodarilo sa vyhodnotiť filter: {{ message }}
+Vzorec hodnôt musí byť reťazec. Hodnota pre vlastnosť {{ key }} nie je reťazec.
+Nepodarilo sa vypočítať hodnotu pre vlastnosť "{{ key }}": {{ message }}
+Dotaz je v nesprávnom formáte. Správnym formátom je YAML objekt.
+"view" položky musia byť YAML objekt, avšak položka {{ index }} nie je
+Chýbajúci alebo neplatný "name" v zobrazení {{ index }}
+"{{ key }}" je požadovaný v zobrazení "{{ viewName }}"
+"{{ key }}" musí byť {{ type }} v zobrazení "{{ viewName }}"
+"{{ key }}" všetky hodnoty musia byť typu {{ type }} v zobrazení "{{ viewName }}"
+Nepodarilo sa analyzovať filtre v zobrazení "{{ viewName }}": {{ message }}
+Vo vzorci bola zistená nekonečná slučka
+Neplatná vlastnosť
+Táto poznámka bude odfiltrovaná pretože nespĺňa vaše kritéria
+Pokročilý filter
+napr. 10
+Pokročilý filter
+Jednoduchý filter
+Odobrať filter
+Žiadne
+Zoznam
+Značky
+Odsadenie vlastností
+Oddeľovač vlastností
+Odrážka
+Číslo
+Žiadne
+Karty
+Veľkosť karty
+Vlastnosť obrázka
+Prispôsobenie obrázka
+Obálka
+Obsah
+Pomer strán obrázka
+Tabuľka
+Skryť stĺcec
+Upraviť vlastnosť...
+Upraviť vzorec...
+Vyčistiť triedenie
+Zoradiť A → Z
+Zoradiť Z → A
+Výška riadka
+Nízka
+Stredná
+Vysoká
+Extra vysoká
+Zhrnúť...
+Zoskupiť podľa tejto vlastnosti
+Vymazať hodnoty
+Súhrn
+Nepodarilo sa analyzovať vzorec "{{ formula }}"
+Nepodarilo sa nájsť funkciu "{{ function }}"
+Nepodarilo sa "{{ function }}" typu {{ type }}
+Nepodarilo sa vyvolať funkciu "{{ function }}", málo argumentov.
+Nepodarilo sa vyvolať funkciu "{{ function }}", príliš veľa argumentov.
+Chyba typu parametra v "{{ function }}", parameter "{{ parameter }}". Očakávaný {{ expected }}, zadaný {{ given }}.
+Nepodarilo sa získať prístup k indexu {{ index }}, ktorý nie je hodnotou poľa
+Nepodarilo sa nájsť {{ index }} pre typ {{ type }}
+Zvýrazniť všetko
+Zhoda diakritiky
+Celé slová
+Miniatúry
+Obsah
+Zobraziť stranu v obsahu
+Prepnutie bočného panela
+Predchádzajúca stránka
+Nasledujúca stránka
+Prispôsobiť šírke
+Prispôsobiť výške
+Uložiť aktuálnu pozíciu v dokumente
+Kopírovať anotáciu
+Kopírovať ako citáciu
+Kopírovať odkaz na výber
+Kopírovať odkaz na anotáciu
+Kopírovať odkaz na sekciu
+Kopírovať odkaz na “{{title}}”
+Kopírovať odkaz na stranu {{page}}
+{{current}} z viac ako {{limit}} zhôd
+{{current}} z {{total}} zhoda
+{{current}} z {{total}} zhody(ôd)
+Tento PDF súbor je chránený heslom
+Neplatné heslo
+Zadajte heslo
+z {{count}}
+({{current}} z {{count}})
+Jedna strana
+Dve strany (nepárne)
+Dve strany (párne)
+Možnosti bočného panela
+Možnosti zobrazenia
+Prispôsobiť téme
+strana {{page}}
+Strana {{page}}
+Strana {{page}}
+Strana {{page}}
+[{{type}} Anotácia]
+
+Zoznam
+Neznámy
+
+Aliasy
+Značky
+Priečinok
+Súbor
+Vlastnosť
+Dátum
+Dátum a čas
+Číslo
+Zaškrtávacie políčko
+Typ [[
+odkazovať na poznámku
+odmietnuť
+Typ vlastnosti
+Zoradiť
+Názov vlastnosti nesmie byť prázdny.
+Vlastnosť už existuje
+Neplatný názov značky
+Neplatné číslo
+Nepodarilo sa načítať vlastnosti.
+Žiadna hodnota
+Vlastnosti
+Neplatné vlastnosti
+Zobraziť zdroj
+Chyba syntaxe. Váš frontmatter je neplatný.
+Pridať vlastnosť
+Nezhoda typu, očakávaný typ je {{type}}
+Nesúlad typov
+Zobraziť ako {{type}}?
+Vaše údaje {{oldType}} nie sú kompatibilné. Budú prevedené na nový formát.
+Stĺpec
+Riadok
+Pridať riadok za
+Pridať stĺpec za
+Pridať riadok pred
+Presunúť riadok nahor
+Presunúť riadok nadol
+Pridať stĺpec pred
+Presunúť stĺpec vľavo
+Presunúť stĺpec vpravo
+Duplikovať riadok
+Duplikovať stĺpec
+Odstrániť riadok
+Odstrániť stĺpec
+Zarovnať vľavo
+Zarovnať na stred
+Zarovnať vpravo
+Odstrániť bunky
+Vyčistiť bunky
+Zoradiť podľa stĺpca (od A po Z)
+Zoradiť podľa stĺpca (od Z po A)
+Tabuľka: {{command}}
+Typ upozornenia
+Informácia
+Dôležité
+
+Úspech
+Otázka
+Varovanie
+Citácia
+Príklad
+Žiadny
+Ďalšie...
+Typ upozornenia...
+
+{{count}} slovo
+{{count}} slová(ov)
+{{count}} výsledok
+{{count}} výsledky(ov)
+{{count}} znak
+{{count}} znaky(ov)
+{{count}} odkaz
+{{count}} odkazy(ov)
+{{count}} súbor
+{{count}} súbory(ov)
+{{count}} priečinok
+{{count}} priečinky(ov)
+{{count}} spätný odkaz
+{{count}} spätné(ých) odkazy(ov)
+{{count}} karta
+{{count}} karty(iet)
+{{count}} vlastnosť
+{{count}} vlastnosti(í)
+{{count}} stránka
+{{count}} stránky(ok)
+{{count}} doplnok
+{{count}} pluginy(ov)
+{{count}} aktívne
+{{count}} úryvok
+{{count}} snippety
+{{count}} téma
+{{count}} témy(m)

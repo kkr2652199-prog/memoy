@@ -1,0 +1,24 @@
+# 기억91 – 전략X 패턴형태뇌 구현 (2026-06-17)
+체인: …89→90→91
+
+## 작업
+- 전략X 3뇌 패턴형태뇌 구현
+- shape_profile top30/all 적재 (era_C)
+- API: POST `/api/lotto4/v13/strategy_x/shape/{target_draw_no}`
+
+## raw 핵심
+- sum6 top30 mean 134.53 vs all 138.15 (delta -3.62)
+- 형태 분포 판정: 약함, 필터로만 사용
+- 검증: shape/popularity/pair/predict API 200, 지표 5/5 일치
+
+## 변경 파일
+- app/lotto4/brains/shape_brain.py (신규)
+- app/lotto4/v13_routes.py (라우트 1건)
+- lotto4.db → shape_profile
+
+## 원칙
+- 1~3군 간섭 0건
+- ensemble 파이프라인 미변경
+
+## 다음
+- 전략 X UI 탭 연동

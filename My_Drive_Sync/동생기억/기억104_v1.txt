@@ -1,0 +1,19 @@
+# 기억104 — 전략X UI 두뇌예측 레이아웃 적용 (2026-06-18)
+
+## 지시
+- predict(두뇌예측) 탭 **읽기만** 참고, predict 미수정
+- 전략 X 탭만 재구성: 가로 5뇌+하이에나 탭, 선택 뇌 5세트만 표시
+- R2 준수, 1~3군 간섭 0
+
+## 완료
+- index.html: sxTabsRow + strategyXActiveTitle + strategyXSetsHost
+- lotto4.js: buildStrategyXTabs, lotto4SwitchStrategyXBrain, renderStrategyXSetsForBrain
+- CSS: tab-btn--hyena 금색 강조
+- 검증: 1228회 25행, 탭 전환·회차 이동 OK
+- 캐시 v=20260618d
+
+## 이전(기억103)
+- 전략 X 전용 탭, 5뇌 세로 블록 (UI연결_5뇌전체표시)
+
+## 다음
+- 형 지시 대기

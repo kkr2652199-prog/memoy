@@ -1,0 +1,66 @@
+---
+description: My_Library 프로젝트 전체 규칙
+alwaysApply: true
+---
+
+# My_Library 프로젝트 Rules
+
+## Stack
+- Python 3.12, FastAPI, SQLite (SQLAlchemy), Ollama (로컬 LLM)
+- 임베딩: nomic-embed-text-v2-moe (768차원)
+- LLM: Gemini 2.0 Flash (API) + Ollama 로컬 모델
+- 프론트엔드: Vanilla JS + marked.js + DOMPurify + D3.js
+- 프로젝트 경로: D:\MONEY lol\My_Library
+- DB: data/library.db
+
+## 언어
+- 모든 응답과 코드 주석은 한국어로 작성
+- 코드 변수명/함수명은 영어 snake_case 유지
+
+## 작업 원칙 (하네스 정신)
+1. 코드 수정 전 반드시 현재 코드를 먼저 읽어라 — 추측으로 코딩 금지
+2. 확인 안 된 사실은 "모름"이라고 말해라 — 거짓 보고 절대 금지
+3. 수정 범위를 최소화하라 — 관련 없는 파일 건드리지 않기
+4. DB 스키마 변경 시 반드시 마이그레이션 함수 작성 — ALTER TABLE을 init_db()에서 호출
+5. 임시 스크립트는 실행 후 삭제 — _tmp_ 또는 _temp_ 접두사 사용
+
+## 프로젝트 구조
+- app/main.py — FastAPI 앱 진입점
+- app/api/routes_library.py — 라이브러리 API (자료 CRUD, 번역)
+- app/api/routes_ingest.py — 자료 섭취 API (URL, 직접입력)
+- app/api/routes_knowledge.py — 지식 엔진 API (검색, 종합분석)
+- app/core/librarian.py — 자료 분석 로직 (_llm_analyze)
+- app/core/search.py — 검색 + 임베딩
+- app/core/synthesis.py — 종합 분석 페이지 생성
+- app/core/knowledge_engine.py — LLM 호출 추상화 (_llm_call)
+- app/core/url_fetchers.py — URL별 콘텐츠 추출
+- app/db/models.py — SQLAlchemy 모델
+- app/db/database.py — DB 세션, init_db, 마이그레이션
+- app/llm/gemini_client.py — Gemini API 클라이언트
+- app/llm/provider.py — LLM 프로바이더 선택
+- app/static/js/library.js — 프론트엔드 메인 JS
+- app/static/css/style.css — 메인 CSS
+- app/static/index.html — SPA 진입 HTML
+- Wiki/종합/ — 종합분석 마크다운 파일
+
+## 코딩 스타일
+- Python: type hints 사용, async def 우선, early return
+- 함수 최대 50줄 — 초과 시 헬퍼 함수 분리
+- 에러 핸들링: try-except에 구체적 예외 타입 + logging
+- JS: ES6+, const/let (var 금지), template literals
+- CSS: CSS 변수(--bg-primary 등) 사용, 하드코딩 색상 금지
+- Python 파일: 600행 초과 금지 — 초과 시 새 모듈로 분리
+- JavaScript 파일: 2000행 초과 금지 — 초과 시 기능별 분리
+
+## 검증 필수
+- 코드 수정 후 반드시: python -c "from app.main import app; print('app OK')"
+- DB 변경 시: sqlite3 data/library.db ".schema materials"
+- 프론트엔드 수정 시: index.html 캐시버스트 쿼리 업데이트
+
+## NEVER
+- content 원본 데이터를 수정/덮어쓰기하지 마라
+- wiki_body를 translated_content로 덮어쓰지 마라
+- LLM 프롬프트에 "요약" 지시를 번역 함수에 넣지 마라
+- 종합분석 LLM 출력에 YAML 프론트매터나 코드펜스를 포함시키지 마라
+- 전역 정규식으로 위키 파일 일괄 수정하지 마라
+- style.css에서 하드코딩 색상 새로 추가하지 마라

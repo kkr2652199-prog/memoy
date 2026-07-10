@@ -1,0 +1,25 @@
+# 기억88 – 전략X 인기신호 정밀정찰 (2026-06-17)
+체인: …86→87→88
+
+## 작업
+- 전략 X 확정, 연속수 인기신호 검증 정찰
+- `lotto4_winners_full` 1228행 (era A/B/C) 적재
+- `number_popularity` era_C 상위30% 빈도 45행
+- 정찰 스크립트: `tools/run_strategy_x_popularity_recon.py`
+
+## raw 핵심
+- era_C consec_pairs vs winner_cnt: r=-0.017 (재현 안 됨)
+- walk-forward |r|=0.063 → 약함, 단순참고
+- 인기번호 상위: 12,13,7 / 하위: 41,40,36
+
+## DB/파일
+- `lotto4.db` → lotto4_winners_full, number_popularity
+- 보고서: 20260617_4군_전략X_인기신호_정밀정찰
+
+## 원칙
+- 1~3군 간섭 0건
+- predict 파이프라인 미변경
+
+## 다음
+- 전략 X 제한적 구현 (인기도 테이블 + 기술통계)
+- winner_cnt 예측 주장 금지

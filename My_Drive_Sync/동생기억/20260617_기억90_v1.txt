@@ -1,0 +1,24 @@
+# 기억90 – 전략X 인기조합뇌 구현 (2026-06-17)
+체인: …88→89→90
+
+## 작업
+- 전략X 2뇌 인기조합뇌 구현
+- pair_popularity 990쌍 적재 (era_C winner_cnt≥11, 320회)
+- API: POST `/api/lotto4/v13/strategy_x/pair/{target_draw_no}`
+
+## raw 핵심
+- 상위쌍: 6-12(14), 7-12(13), 27-38(13)
+- 쌍 인기도 판정: 약한 유효 (CV=0.49)
+- 검증: pair/popularity/predict API 200, 점수 5/5 일치
+
+## 변경 파일
+- app/lotto4/brains/popularity_pair_brain.py (신규)
+- app/lotto4/v13_routes.py (라우트 1건)
+- lotto4.db → pair_popularity
+
+## 원칙
+- 1~3군 간섭 0건
+- ensemble 파이프라인 미변경
+
+## 다음
+- 전략 X UI 탭 연동
