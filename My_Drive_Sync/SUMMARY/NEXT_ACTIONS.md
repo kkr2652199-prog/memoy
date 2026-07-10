@@ -5,7 +5,7 @@
 | 우선 | 항목 | 군 |
 |------|------|-----|
 | 1 | **4군** 다음 작업 | 4군 (d:\3kweon, 별도 앱) |
-| 2 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 |
+| 2 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 (역질의 답변 완료, GO 아님) |
 | 3 | GITHUB_SSOT_RULES_20260710 형 컨펌 | 운영 |
 
 ## HOLD (수정·이식 보류)
@@ -22,3 +22,4 @@
 - GitHub memoy 초기 push + PRIVATE 전환
 - 20260710 보고서 md 정리 + 기억복원
 - PostMortem position/structure patterns.db 축적 (분석 WRITE only)
+- LSTM 누수 역질의 READ-ONLY 답변 (`20260710_LSTM누수_판단근거_역질의답변.md`)

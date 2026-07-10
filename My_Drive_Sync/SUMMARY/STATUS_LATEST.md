@@ -13,6 +13,7 @@
 | brain_weights @1231 | stat=4.9682 · markov=3.4103 · llm=7.8029 · **lstm=35.2036** · hyena=27.4894 |
 | 1군 실험 결론 | overlap grid ADOPT 없음 → **F1_V2_STRICT 유지** |
 | LSTM WF clean (1131~1231) | AVG matched=**0.766** (무작위 0.8) vs DB leaked **1.919** |
+| LSTM 역질의 (20260710) | READ-ONLY 완료 → **보류 유지** · 보고서 `20260710_LSTM누수_판단근거_역질의답변.md` |
 
 체크포인트: `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
