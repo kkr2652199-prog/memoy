@@ -18,15 +18,17 @@
 | LM 홀딩 (20260711) | **LOTTO_LLM_HOLD=True** · llm→stat 대체 · miss/snake **OFF** · 1회차 ~1.3s |
 | STEP1 정직성적 **확정** (20260711) | 1131~1231 DB채점 · stat=0.83 markov=0.82 llm=0.78 · lstm=**1.92** hyena=2.24 lead1=1.16 · **진짜 실력 축=stat/markov** |
 | STEP2 eta 시뮬 (20260710) | READ-ONLY · eta 1.5→0.1: lstm **44.6%→26.7%**, stat **6.3%→17.9%**, markov **4.3%→12.0%** · clean lstm@0.3: lstm **23.5%** |
+| 복원단일화 (20260710) | **`README_START.md` 신설** · gdoc/중복txt 삭제 · RULES R23/R31/R32 폐기 **제안**(형 승인 대기) |
 
-체크포인트: `DECISION_LOG.md` · `NEXT_ACTIONS.md`
+체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
 
 ## ★ 압축 복원 안내 (파트너용)
+- **진입점 1개**: [`README_START.md`](README_START.md) ← 여기부터 읽기
 - **복원 1순위**: GitHub [memoy/main](https://github.com/kkr2652199-prog/memoy) raw (`My_Drive_Sync/SUMMARY/`)
 - **복원 2순위**: 형 채팅 직접 붙여넣기
-- 구글 Docs export는 보조 (octet-stream 이슈 시 GitHub 우선)
+- 구글 Docs / 스프레드시트 / .txt / preview 경로 **폐기** (20260710 복원단일화)
 
 ## ★ 전략 X UI 두뇌예측 레이아웃 (기억104)
 - predict 탭 패턴 적용: 가로 5뇌+하이에나 탭, 선택 뇌 5세트만
