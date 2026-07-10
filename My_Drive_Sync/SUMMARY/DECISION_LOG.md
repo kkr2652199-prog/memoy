@@ -8,4 +8,5 @@
 | 2026-07-10 | LSTM 역질의 READ-ONLY 완료 → **수정 GO 아님, 보류 유지** | 20260710_LSTM누수_판단근거_역질의답변.md (화면 하락=추정, 68.5%/17.6x/20% 코드·DB fact) |
 | 2026-07-11 | LSTM 재학습 4방식 in-memory 비교 → **전부 0.8 수렴, 튜닝 가치 없음** | A/B/C/D p(greater)>0.05, per-set 0.77~0.81 |
 | 2026-07-11 | **LM Studio 홀딩 + miss/snake 정지** (렉 해소) | LOTTO_LLM_HOLD=True, ENABLE_SPECIAL_BRAINS=False, lead1 @1232 불변 |
+| 2026-07-11 | STEP1 DB 정직성적 1131~1231 READ-ONLY 완료 | stat/markov≈0.82, llm≈0.78, lstm DB=1.92 vs WF≈0.77 |
 | 2026-07-10 | 「1군 7뇌」실험 명칭 → 「1군 lead1/F1_V2_STRICT」정리 필요 | RULES_FIXED 1군=6뇌 동결 vs lead1 별도 |

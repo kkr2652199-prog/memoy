@@ -16,6 +16,7 @@
 | LSTM 역질의 (20260710) | READ-ONLY 완료 → **보류 유지** · 보고서 `20260710_LSTM누수_판단근거_역질의답변.md` |
 | LSTM 4방식 WF (20260711) | A/B/C/D 전부 0.8 수렴 · **재학습 튜닝 가치 없음** |
 | LM 홀딩 (20260711) | **LOTTO_LLM_HOLD=True** · llm→stat 대체 · miss/snake **OFF** · 1회차 ~1.3s |
+| STEP1 정직성적 (20260711) | 1131~1231 DB채점 · stat=0.83 markov=0.82 llm=0.78 · lstm=**1.92** hyena=2.24 lead1=1.16 |
 
 체크포인트: `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
