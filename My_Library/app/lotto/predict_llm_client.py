@@ -7,6 +7,8 @@ logger = logging.getLogger(__name__)
 # 로또 전용 LLM 설정 (하드코딩 — config.json 비의존)
 LOTTO_LLM_ENDPOINT = "http://localhost:1234"
 LOTTO_LLM_MODEL = "google/gemma-4-e2b"
+# True = LM Studio 홀딩(로컬AI 미호출, 통계 대체). 되돌리려면 False.
+LOTTO_LLM_HOLD = True
 
 
 async def lotto_llm_call(prompt: str, system: str = "") -> str | None:
@@ -49,6 +51,8 @@ async def lotto_llm_call(prompt: str, system: str = "") -> str | None:
 
 async def is_lotto_llm_available() -> bool:
     """LM Studio 로또 모델 사용 가능 여부 확인."""
+    if LOTTO_LLM_HOLD:
+        return False
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -56,5 +60,22 @@ async def is_lotto_llm_available() -> bool:
                 timeout=aiohttp.ClientTimeout(total=3),
             ) as resp:
                 return resp.status == 200
+    except Exception:
+        return False
+
+
+def is_lotto_llm_available_sync() -> bool:
+    """동기 환경(FastAPI/CLI)용 LM Studio 가용성 — 홀딩 시 즉시 False."""
+    if LOTTO_LLM_HOLD:
+        return False
+    try:
+        import urllib.request
+
+        req = urllib.request.Request(
+            f"{LOTTO_LLM_ENDPOINT}/v1/models",
+            method="GET",
+        )
+        with urllib.request.urlopen(req, timeout=3) as resp:
+            return resp.status == 200
     except Exception:
         return False

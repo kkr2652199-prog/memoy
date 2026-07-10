@@ -13,18 +13,39 @@ from app.lotto.predict_statistical import _statistical_predict
 logger = logging.getLogger(__name__)
 
 
+def _stat_replacement(
+    draws: list[dict], n_sets: int, source: str, reason: str
+) -> list[dict]:
+    """LLM 포지션 통계 대체 — brain_tag=llm 유지, source로 구분."""
+    fallback = _statistical_predict(draws, n_sets)
+    for x in fallback:
+        x["source"] = source
+        prev = x.get("reasoning") or ""
+        x["reasoning"] = f"[{reason}] {prev}"
+    return fallback
+
+
 def _llm_predict(draws: list[dict], target_draw_no: int, n_sets: int = 5) -> list[dict]:
     """LLM 두뇌: 로또 전용 LLM(LM Studio Gemma) 분석 예측.
     knowledge_engine 비의존 — lotto_llm_client 직접 호출.
     컨닝 방지: draws에는 target_draw_no 이전 데이터만 포함."""
     try:
-        from app.lotto.predict_llm_client import lotto_llm_call as _llm_call
+        from app.lotto.predict_llm_client import (
+            LOTTO_LLM_HOLD,
+            is_lotto_llm_available_sync,
+            lotto_llm_call as _llm_call,
+        )
     except ImportError:
         logger.warning("로또 LLM 클라이언트 없음 — 통계 두뇌로 대체")
-        fallback = _statistical_predict(draws, n_sets)
-        for x in fallback:
-            x["source"] = "statistical_fallback"
-        return fallback
+        return _stat_replacement(
+            draws, n_sets, "statistical_fallback", "LLM 클라이언트 없음"
+        )
+
+    if not is_lotto_llm_available_sync():
+        reason = "LM Studio 홀딩" if LOTTO_LLM_HOLD else "LM Studio 미연결"
+        source = "stat_hold_replacement" if LOTTO_LLM_HOLD else "statistical_fallback"
+        logger.info("llm → 통계 대체 (%s, timeout 대기 없음)", reason)
+        return _stat_replacement(draws, n_sets, source, reason)
 
     # 최근 50회차 데이터만 프롬프트에 포함 (토큰 절약)
     recent_50 = draws[-50:] if len(draws) > 50 else draws
@@ -161,16 +182,10 @@ SET5: ...
             response = asyncio.run(_llm_call(prompt))
     except Exception as e:
         logger.warning("LLM 예측 호출 실패: %s — 통계 두뇌로 대체", e)
-        fallback = _statistical_predict(draws, n_sets)
-        for x in fallback:
-            x["source"] = "statistical_fallback"
-        return fallback
+        return _stat_replacement(draws, n_sets, "statistical_fallback", f"LLM 호출 실패: {e}")
 
     if not response:
-        fallback = _statistical_predict(draws, n_sets)
-        for x in fallback:
-            x["source"] = "statistical_fallback"
-        return fallback
+        return _stat_replacement(draws, n_sets, "statistical_fallback", "LLM 응답 없음")
 
     # 파싱
     results = []

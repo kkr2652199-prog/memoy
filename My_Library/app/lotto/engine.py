@@ -34,6 +34,8 @@ BRAIN_REGISTRY: list[tuple[str, str]] = [
 BRAIN_METHODS = [m for m, _ in BRAIN_REGISTRY]
 METHOD_TO_BRAIN_TAG: dict[str, str] = dict(BRAIN_REGISTRY)  # UI·디버그용: method -> brain_tag
 SETS_PER_BRAIN = 5  # 두뇌당 5세트 → 총 25세트 중 상위 5세트(응답) 최종 선별
+# miss_analysis·snake 유령 두뇌 — False면 run_prediction에서 신규 생성 중단(되돌리기 가능)
+ENABLE_SPECIAL_BRAINS = False
 ELITE_THRESHOLDS = {3: "엘리트", 4: "천재", 5: "전설", 6: "신"}
 
 
@@ -318,10 +320,9 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
         llm_results = _llm_predict(draws, target_draw_no, SETS_PER_BRAIN)
         llm_list: list[dict] = []
         for i, r in enumerate(llm_results):
-            source = r.get("source", "llm")
-            brain_tag_value = "llm_fallback" if source == "statistical_fallback" else "llm"
+            # 홀딩·fallback 모두 brain_tag=llm 유지 (source/reasoning으로 구분)
             llm_list.append(
-                {**r, "method": "LLM두뇌", "brain_tag": brain_tag_value, "rank": i + 1}
+                {**r, "method": "LLM두뇌", "brain_tag": "llm", "rank": i + 1}
             )
         fresh_by_tag["llm"] = llm_list
 
@@ -378,8 +379,8 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
         except Exception as e:  # noqa: BLE001
             logger.warning("[하이에나] skip: %s", e)
 
-    # ===== 특수부대: 미당첨분석 AI =====
-    miss_should_run = (not bf) or ("miss_analysis" in bf)
+    # ===== 특수부대: 미당첨분석 AI (ENABLE_SPECIAL_BRAINS=False 시 skip) =====
+    miss_should_run = ENABLE_SPECIAL_BRAINS and ((not bf) or ("miss_analysis" in bf))
     if miss_should_run:
         try:
             from app.lotto.predict_missanalysis import miss_analysis_predict
@@ -396,8 +397,8 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
         except Exception as e:  # noqa: BLE001
             logger.warning("[미당첨분석] skip: %s", e)
 
-    # ===== 특수부대: 뱀 AI =====
-    snake_should_run = (not bf) or ("snake" in bf)
+    # ===== 특수부대: 뱀 AI (ENABLE_SPECIAL_BRAINS=False 시 skip) =====
+    snake_should_run = ENABLE_SPECIAL_BRAINS and ((not bf) or ("snake" in bf))
     if snake_should_run:
         try:
             from app.lotto.predict_missanalysis import get_miss_analysis_prob_vector

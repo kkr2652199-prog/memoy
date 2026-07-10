@@ -15,6 +15,8 @@
 | overlap grid / OVERLAP_BALANCE wheel | ADOPT 없음 (엄격 b 미달), F1_V2_STRICT 유지 |
 | span/consec/SETS_6/7 필터 | 전 arm HOLD |
 | LSTM 체크포인트 전역 재사용 | 누수 확정, WF clean≈0.8 |
+| LM Studio 로컬 LLM | **LOTTO_LLM_HOLD=True** — stat 대체 포지션 (되돌리기: False) |
+| miss_analysis / snake | **ENABLE_SPECIAL_BRAINS=False** — 신규 생성 중단 |
 | 「1군 7뇌」명칭 | lead1 vs 6뇌 혼선 — 명명 정리 대기 |
 
 ## 완료 (2026-07-10)
