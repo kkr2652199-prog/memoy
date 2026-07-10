@@ -16,7 +16,8 @@
 | LSTM 역질의 (20260710) | READ-ONLY 완료 → **보류 유지** · 보고서 `20260710_LSTM누수_판단근거_역질의답변.md` |
 | LSTM 4방식 WF (20260711) | A/B/C/D 전부 0.8 수렴 · **재학습 튜닝 가치 없음** |
 | LM 홀딩 (20260711) | **LOTTO_LLM_HOLD=True** · llm→stat 대체 · miss/snake **OFF** · 1회차 ~1.3s |
-| STEP1 정직성적 (20260711) | 1131~1231 DB채점 · stat=0.83 markov=0.82 llm=0.78 · lstm=**1.92** hyena=2.24 lead1=1.16 |
+| STEP1 정직성적 **확정** (20260711) | 1131~1231 DB채점 · stat=0.83 markov=0.82 llm=0.78 · lstm=**1.92** hyena=2.24 lead1=1.16 · **진짜 실력 축=stat/markov** |
+| STEP2 eta 시뮬 (20260710) | READ-ONLY · eta 1.5→0.1: lstm **44.6%→26.7%**, stat **6.3%→17.9%**, markov **4.3%→12.0%** · clean lstm@0.3: lstm **23.5%** |
 
 체크포인트: `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
@@ -46,4 +47,11 @@
 ## 4군 다음
 - **(형 지시 대기)**
 
-## 기억 체인: …102→103→**104(현재)**
+## ★ STEP1 확정 + STEP2 eta 시뮬 (기억105)
+- STEP1: stat/markov≈0.82(정직), lstm DB 1.92 vs clean 0.766(2.5배 부풀림), hyena/lead1 2차 오염
+- 결정: **진짜 실력 축 = stat/markov**, lstm 비중 재조정 방향
+- STEP2: eta↓ → lstm% 44.6→26.7%, stat/markov 회복 · clean lstm 치환 시 lstm 23.5%
+- 보고서: `20260710_STEP2_eta시뮬레이션_READONLY.md`
+- **STEP3 대기:** lstm 비중/eta 실제 조정 (형 결정)
+
+## 기억 체인: …103→104→**105(현재)**
