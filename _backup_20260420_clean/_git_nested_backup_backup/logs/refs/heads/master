@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 c5fbbe847abee6ec15ba2e3f60317fac7b22ea12 Your Name <kkr2652199@example.com> 1775701386 +0900	commit (initial): chore: savepoint vs1 - 지식 도서관 기준 스냅샷 (kweon.md)
-c5fbbe847abee6ec15ba2e3f60317fac7b22ea12 b7b9a95553db08f5b10777d111b8a49fabed6522 Your Name <kkr2652199@example.com> 1775701405 +0900	commit: chore(vs1): 세이브 포인트 메모 보강, DB 파일 Git 추적 제외
-b7b9a95553db08f5b10777d111b8a49fabed6522 07df63d7c14d814b3a6695ca67bea9a26b205862 Your Name <kkr2652199@example.com> 1775701415 +0900	commit: docs(kweon): vs1 커밋 해시 갱신
-07df63d7c14d814b3a6695ca67bea9a26b205862 1182fdd7779f483e54091b0b16492665dc9a161c Your Name <kkr2652199@example.com> 1775701439 +0900	commit (amend): docs(kweon): vs1 커밋 해시 갱신
-1182fdd7779f483e54091b0b16492665dc9a161c e7a528bc6afa6f1e43a5e99cd6509592432bbe2e Your Name <kkr2652199@example.com> 1775701468 +0900	commit (amend): docs(kweon): vs1 커밋 해시 갱신
-e7a528bc6afa6f1e43a5e99cd6509592432bbe2e 1f790e7c53a6e1ff840c5f61e9c76916f537184d Your Name <kkr2652199@example.com> 1775701481 +0900	commit (amend): docs(kweon): vs1 커밋 해시 갱신
-1f790e7c53a6e1ff840c5f61e9c76916f537184d e15126712a625944a20794d537cc610f336c94e9 Your Name <kkr2652199@example.com> 1775714139 +0900	commit: chore(savepoint): vs2 앱 코드 스냅샷 (DB는 .gitignore, Wiki/Raw 미스테이징)
-e15126712a625944a20794d537cc610f336c94e9 3c2d8f9223a3c859ea9ab7d76948b7acd3d8db15 Your Name <kkr2652199@example.com> 1776215452 +0900	commit: chore: add .cursor/rules harness (5 rules) — protected-files, change-scope, test-verify, graph-visual, reporting
