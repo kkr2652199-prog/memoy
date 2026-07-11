@@ -4,15 +4,17 @@
 
 | 우선 | 항목 | 군 |
 |------|------|-----|
-| 1 | **STEP3 lstm 비중/eta 실제 조정 결정** | 1군 (형 결정) |
-| 2 | **4군** 다음 작업 | 4군 (d:\3kweon, 별도 앱) |
-| 3 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 (역질의 GO 아님) |
-| 4 | GITHUB_SSOT_RULES_20260710 형 컨펌 (+ G3 README_START 갱신 추가) | 운영 |
+| 1 | **1.5군 독립 신설** (1군 복사 → 경로/DB `_v15` 격리 → 1군 무결성 SHA256 검증) | 1.5군 (형 이름 결정 대기) |
+| 2 | **1.5군 학습형 통계 엔진 설계** (뇌별 오답해부/번호전이/오답피드백) | 1.5군 |
+| 3 | **4군** 다음 작업 | 4군 (d:\3kweon, 별도 앱) |
+| 4 | LSTM walk-forward 재학습 패치 설계·형 컨펌 | 1군 (역질의 GO 아님) |
+| 5 | GITHUB_SSOT_RULES_20260710 형 컨펌 (+ G3 README_START 갱신 추가) | 운영 |
 
 ## HOLD (수정·이식 보류)
 
 | 항목 | 사유 |
 |------|------|
+| **STEP3 lstm 비중/eta 실제 조정** | 목적 재정의로 우선순위 하락 — 1.5군 신설·정직성 완성 우선 |
 | overlap grid / OVERLAP_BALANCE wheel | ADOPT 없음 (엄격 b 미달), F1_V2_STRICT 유지 |
 | span/consec/SETS_6/7 필터 | 전 arm HOLD |
 | LSTM 체크포인트 전역 재사용 | 누수 확정, WF clean≈0.8 |
@@ -31,3 +33,4 @@
 - **STEP2 eta 시뮬레이션 READ-ONLY** (`20260710_STEP2_eta시뮬레이션_READONLY.md`)
 - **복원 단일화** README_START 신설 + gdoc/중복txt 삭제 (`20260710_복원단일화_README신설_잔재삭제.md`)
 - **RULES R33 복원SSOT 확정** + R23/R31/R32 폐기 (`20260710_RULES_R33확정_R23R31R32폐기.md`)
+- **프로젝트 목적 재정의 + 구매 절제 합의** (20260711)
