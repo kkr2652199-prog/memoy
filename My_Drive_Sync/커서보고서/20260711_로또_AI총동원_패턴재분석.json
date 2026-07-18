@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "n": 1228,
+    "first": 1,
+    "last": 1228
+  },
+  "walk_forward": {
+    "random": {
+      "n": 1029,
+      "avg_match": 0.7959,
+      "stdev": 0.791,
+      "vs_random": -0.0041,
+      "hit3plus_rate": 0.0233
+    },
+    "hot_frequency": {
+      "n": 1029,
+      "avg_match": 0.7775,
+      "stdev": 0.794,
+      "vs_random": -0.0225,
+      "hit3plus_rate": 0.0262
+    },
+    "cold_gap_overdue": {
+      "n": 1029,
+      "avg_match": 0.792,
+      "stdev": 0.7456,
+      "vs_random": -0.008,
+      "hit3plus_rate": 0.0136
+    },
+    "cooccurrence_graph": {
+      "n": 1029,
+      "avg_match": 0.7784,
+      "stdev": 0.7825,
+      "vs_random": -0.0216,
+      "hit3plus_rate": 0.0194
+    },
+    "markov_zone": {
+      "n": 1029,
+      "avg_match": 0.792,
+      "stdev": 0.7611,
+      "vs_random": -0.008,
+      "hit3plus_rate": 0.0194
+    },
+    "kmeans_cluster": {
+      "n": 1029,
+      "avg_match": 0.8144,
+      "stdev": 0.7838,
+      "vs_random": 0.0144,
+      "hit3plus_rate": 0.0243
+    },
+    "logistic_regression": {
+      "n": 1029,
+      "avg_match": 0.8231,
+      "stdev": 0.779,
+      "vs_random": 0.0231,
+      "hit3plus_rate": 0.0204
+    },
+    "random_forest": {
+      "n": 1029,
+      "avg_match": 0.7755,
+      "stdev": 0.8104,
+      "vs_random": -0.0245,
+      "hit3plus_rate": 0.0321
+    },
+    "gradient_boosting": {
+      "n": 1029,
+      "avg_match": 0.7804,
+      "stdev": 0.7768,
+      "vs_random": -0.0196,
+      "hit3plus_rate": 0.0224
+    },
+    "lstm_walkforward_sampled": {
+      "n": 11,
+      "avg_match": 0.9091,
+      "vs_random": 0.1091,
+      "sample_draws": "every 100 from 200"
+    }
+  },
+  "info_theory": {
+    "mutual_info_sum_lag1": 0.06189,
+    "mutual_info_sum_lag5": 0.06542,
+    "fft_dominant_periods_draws": [
+      [
+        4.741312741312741,
+        2472.2530769412256
+      ],
+      [
+        4.991869918699187,
+        2560.019866672997
+      ],
+      [
+        13.494505494505493,
+        3642.2057800696357
+      ]
+    ],
+    "sum_autocorr_lag1": 0.00805,
+    "sum_autocorr_perm_p": 0.746,
+    "graph_centrality_top10": [
+      [
+        34,
+        1.0
+      ],
+      [
+        27,
+        0.9890710382513661
+      ],
+      [
+        12,
+        0.9672131147540983
+      ],
+      [
+        13,
+        0.9672131147540983
+      ],
+      [
+        18,
+        0.9562841530054644
+      ],
+      [
+        45,
+        0.9562841530054644
+      ],
+      [
+        33,
+        0.9508196721311475
+      ],
+      [
+        40,
+        0.9398907103825137
+      ],
+      [
+        3,
+        0.9344262295081968
+      ],
+      [
+        14,
+        0.9344262295081968
+      ]
+    ]
+  },
+  "random_baseline": 0.8
+}

@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "rows": 1228,
+    "draw_range": [
+      1,
+      1228
+    ]
+  },
+  "descriptive": {
+    "num_sum_mean": 138.29,
+    "num_sum_std": 30.8,
+    "first_prize_mean": 2635466219,
+    "first_winners_mean": 8.497,
+    "prize_per_winner_mean": 757803507,
+    "zero_winner_draws": 14
+  },
+  "correlations": {
+    "num_sum~first_prize": {
+      "r": 0.064,
+      "p": 0.024979,
+      "n": 1228
+    },
+    "num_sum~first_winners": {
+      "r": -0.0906,
+      "p": 0.001485,
+      "n": 1228
+    },
+    "num_sum~prize_per_winner": {
+      "r": 0.0324,
+      "p": 0.256367,
+      "n": 1228
+    },
+    "num_sum~total_sales": {
+      "r": NaN,
+      "p": NaN,
+      "n": 1228
+    },
+    "first_winners~first_prize": {
+      "r": -0.4364,
+      "p": 0.0,
+      "n": 1228
+    },
+    "first_winners~prize_per_winner": {
+      "r": -0.3319,
+      "p": 0.0,
+      "n": 1228
+    },
+    "formula_A~first_prize": {
+      "r": 0.064,
+      "p": 0.024979,
+      "n": 1228
+    },
+    "formula_B~first_prize": {
+      "r": -0.4027,
+      "p": 0.0,
+      "n": 1228
+    },
+    "formula_C~first_winners": {
+      "r": -0.4286,
+      "p": 0.0,
+      "n": 1228
+    },
+    "odd_count~first_winners": {
+      "r": 0.0048,
+      "p": 0.867295,
+      "n": 1228
+    },
+    "num_std~first_winners": {
+      "r": -0.0254,
+      "p": 0.373356,
+      "n": 1228
+    }
+  },
+  "lag_correlations": {
+    "sum_lag1_prize": {
+      "r": -0.0204,
+      "p": 0.476095,
+      "n": 1227
+    },
+    "sum_lag1_winners": {
+      "r": -0.0059,
+      "p": 0.83572,
+      "n": 1227
+    },
+    "prize_lag1_winners": {
+      "r": -0.0644,
+      "p": 0.024091,
+      "n": 1227
+    },
+    "winners_lag1_sum": {
+      "r": 0.0127,
+      "p": 0.657537,
+      "n": 1227
+    }
+  },
+  "sum_bucket_anova_winners": {
+    "f": 2.3971,
+    "p": 0.048553
+  },
+  "regression_prize~sum+winners": {
+    "intercept": 4052211208.0,
+    "coef_sum": 1872977.0,
+    "coef_winners": -197222770.0,
+    "r2": 0.1911
+  },
+  "yearly": [
+    {
+      "year": 2002,
+      "draws": 4,
+      "avg_num_sum": 155.75,
+      "total_first_prize": 4002006800,
+      "avg_first_winners": 0.5,
+      "total_winners": 2,
+      "avg_prize_per_winner": 1000501700.0,
+      "sum_num_sum": 623
+    },
+    {
+      "year": 2003,
+      "draws": 52,
+      "avg_num_sum": 139.69,
+      "total_first_prize": 321050749800,
+      "avg_first_winners": 4.019,
+      "total_winners": 209,
+      "avg_prize_per_winner": 3746108010.0,
+      "sum_num_sum": 7264
+    },
+    {
+      "year": 2004,
+      "draws": 52,
+      "avg_num_sum": 135.58,
+      "total_first_prize": 226931856418,
+      "avg_first_winners": 4.846,
+      "total_winners": 252,
+      "avg_prize_per_winner": 2099672650.0,
+      "sum_num_sum": 7050
+    },
+    {
+      "year": 2005,
+      "draws": 53,
+      "avg_num_sum": 142.17,
+      "total_first_prize": 123896645516,
+      "avg_first_winners": 6.434,
+      "total_winners": 341,
+      "avg_prize_per_winner": 594607439.0,
+      "sum_num_sum": 7535
+    },
+    {
+      "year": 2006,
+      "draws": 52,
+      "avg_num_sum": 137.06,
+      "total_first_prize": 128845534985,
+      "avg_first_winners": 5.808,
+      "total_winners": 302,
+      "avg_prize_per_winner": 799504790.0,
+      "sum_num_sum": 7127
+    },
+    {
+      "year": 2007,
+      "draws": 52,
+      "avg_num_sum": 137.75,
+      "total_first_prize": 124736479644,
+      "avg_first_winners": 5.808,
+      "total_winners": 302,
+      "avg_prize_per_winner": 927525916.0,
+      "sum_num_sum": 7163
+    },
+    {
+      "year": 2008,
+      "draws": 52,
+      "avg_num_sum": 134.25,
+      "total_first_prize": 131444682764,
+      "avg_first_winners": 5.481,
+      "total_winners": 285,
+      "avg_prize_per_winner": 1082071102.0,
+      "sum_num_sum": 6981
+    },
+    {
+      "year": 2009,
+      "draws": 52,
+      "avg_num_sum": 137.42,
+      "total_first_prize": 125409697935,
+      "avg_first_winners": 5.673,
+      "total_winners": 295,
+      "avg_prize_per_winner": 812664346.0,
+      "sum_num_sum": 7146
+    },
+    {
+      "year": 2010,
+      "draws": 52,
+      "avg_num_sum": 132.44,
+      "total_first_prize": 152512455011,
+      "avg_first_winners": 5.596,
+      "total_winners": 291,
+      "avg_prize_per_winner": 1364649896.0,
+      "sum_num_sum": 6887
+    },
+    {
+      "year": 2011,
+      "draws": 53,
+      "avg_num_sum": 142.94,
+      "total_first_prize": 119626626472,
+      "avg_first_winners": 6.906,
+      "total_winners": 366,
+      "avg_prize_per_winner": 639484331.0,
+      "sum_num_sum": 7576
+    },
+    {
+      "year": 2012,
+      "draws": 52,
+      "avg_num_sum": 141.69,
+      "total_first_prize": 129500302000,
+      "avg_first_winners": 6.654,
+      "total_winners": 346,
+      "avg_prize_per_winner": 709019452.0,
+      "sum_num_sum": 7368
+    },
+    {
+      "year": 2013,
+      "draws": 52,
+      "avg_num_sum": 139.6,
+      "total_first_prize": 138371682795,
+      "avg_first_winners": 7.75,
+      "total_winners": 403,
+      "avg_prize_per_winner": 1001661519.0,
+      "sum_num_sum": 7259
+    },
+    {
+      "year": 2014,
+      "draws": 52,
+      "avg_num_sum": 133.83,
+      "total_first_prize": 119103737889,
+      "avg_first_winners": 7.519,
+      "total_winners": 391,
+      "avg_prize_per_winner": 473425155.0,
+      "sum_num_sum": 6959
+    },
+    {
+      "year": 2015,
+      "draws": 52,
+      "avg_num_sum": 137.69,
+      "total_first_prize": 120936288143,
+      "avg_first_winners": 7.558,
+      "total_winners": 393,
+      "avg_prize_per_winner": 440377008.0,
+      "sum_num_sum": 7160
+    },
+    {
+      "year": 2016,
+      "draws": 53,
+      "avg_num_sum": 134.09,
+      "total_first_prize": 117345506660,
+      "avg_first_winners": 8.642,
+      "total_winners": 458,
+      "avg_prize_per_winner": 357106052.0,
+      "sum_num_sum": 7107
+    },
+    {
+      "year": 2017,
+      "draws": 52,
+      "avg_num_sum": 135.25,
+      "total_first_prize": 122415462231,
+      "avg_first_winners": 9.192,
+      "total_winners": 478,
+      "avg_prize_per_winner": 386017845.0,
+      "sum_num_sum": 7033
+    },
+    {
+      "year": 2018,
+      "draws": 52,
+      "avg_num_sum": 138.6,
+      "total_first_prize": 121057997249,
+      "avg_first_winners": 9.308,
+      "total_winners": 484,
+      "avg_prize_per_winner": 355766590.0,
+      "sum_num_sum": 7207
+    },
+    {
+      "year": 2019,
+      "draws": 52,
+      "avg_num_sum": 148.92,
+      "total_first_prize": 124620541180,
+      "avg_first_winners": 9.75,
+      "total_winners": 507,
+      "avg_prize_per_winner": 332375662.0,
+      "sum_num_sum": 7744
+    },
+    {
+      "year": 2020,
+      "draws": 52,
+      "avg_num_sum": 139.15,
+      "total_first_prize": 128000959593,
+      "avg_first_winners": 10.096,
+      "total_winners": 525,
+      "avg_prize_per_winner": 315144887.0,
+      "sum_num_sum": 7236
+    },
+    {
+      "year": 2021,
+      "draws": 52,
+      "avg_num_sum": 137.33,
+      "total_first_prize": 127669735819,
+      "avg_first_winners": 10.846,
+      "total_winners": 564,
+      "avg_prize_per_winner": 293395318.0,
+      "sum_num_sum": 7141
+    },
+    {
+      "year": 2022,
+      "draws": 53,
+      "avg_num_sum": 137.64,
+      "total_first_prize": 135386990310,
+      "avg_first_winners": 12.604,
+      "total_winners": 668,
+      "avg_prize_per_winner": 378075731.0,
+      "sum_num_sum": 7295
+    },
+    {
+      "year": 2023,
+      "draws": 52,
+      "avg_num_sum": 143.56,
+      "total_first_prize": 123175316741,
+      "avg_first_winners": 12.423,
+      "total_winners": 646,
+      "avg_prize_per_winner": 241125216.0,
+      "sum_num_sum": 7465
+    },
+    {
+      "year": 2024,
+      "draws": 52,
+      "avg_num_sum": 134.46,
+      "total_first_prize": 109234545293,
+      "avg_first_winners": 14.673,
+      "total_winners": 763,
+      "avg_prize_per_winner": 173475633.0,
+      "sum_num_sum": 6992
+    },
+    {
+      "year": 2025,
+      "draws": 52,
+      "avg_num_sum": 135.9,
+      "total_first_prize": 107188896692,
+      "avg_first_winners": 15.615,
+      "total_winners": 812,
+      "avg_prize_per_winner": 171319653.0,
+      "sum_num_sum": 7067
+    },
+    {
+      "year": 2026,
+      "draws": 24,
+      "avg_num_sum": 142.92,
+      "total_first_prize": 53887819278,
+      "avg_first_winners": 14.625,
+      "total_winners": 351,
+      "avg_prize_per_winner": 187232007.0,
+      "sum_num_sum": 3430
+    }
+  ],
+  "year_trend_spearman": {
+    "prize_total_vs_year": {
+      "rho": -0.3985,
+      "p": 0.0485
+    },
+    "winners_total_vs_year": {
+      "rho": 0.8906,
+      "p": 0.0
+    },
+    "sum_total_vs_year": {
+      "rho": 0.0238,
+      "p": 0.9099
+    }
+  }
+}

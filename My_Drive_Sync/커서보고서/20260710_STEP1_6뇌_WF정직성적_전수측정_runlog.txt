@@ -1,0 +1,29 @@
+LM Studio: OK (localhost:1234)
+6brain WF honest 1131~1231 READ-ONLY baseline=0.8
+  1131: t=58.1s lstm=[1, 1, 1, 2, 1] llm=llm wf_lstm=1.2 llm_fb_draws=0
+  1141: t=49.3s lstm=[1, 0, 1, 1, 2] llm=fallback wf_lstm=0.891 llm_fb_draws=4
+  1151: t=43.1s lstm=[0, 0, 2, 2, 1] llm=fallback wf_lstm=0.79 llm_fb_draws=14
+  1161: t=49.5s lstm=[0, 0, 0, 0, 0] llm=fallback wf_lstm=0.716 llm_fb_draws=24
+  1171: t=47.9s lstm=[2, 1, 1, 1, 1] llm=fallback wf_lstm=0.741 llm_fb_draws=34
+  1181: t=61.6s lstm=[1, 0, 0, 0, 1] llm=fallback wf_lstm=0.729 llm_fb_draws=44
+  1191: t=51.5s lstm=[1, 0, 1, 0, 0] llm=fallback wf_lstm=0.708 llm_fb_draws=54
+  1201: t=45.4s lstm=[0, 0, 0, 0, 0] llm=fallback wf_lstm=0.682 llm_fb_draws=64
+  1211: t=43.8s lstm=[1, 2, 2, 2, 1] llm=fallback wf_lstm=0.716 llm_fb_draws=74
+  1221: t=28.6s lstm=[0, 1, 3, 1, 2] llm=fallback wf_lstm=0.73 llm_fb_draws=84
+  1231: t=35.4s lstm=[2, 0, 0, 1, 0] llm=fallback wf_ls  1231: t=18.4s lstm=[1, 2, 1, 1, 1] llm=fallback wf_lstm=0.778 llm_fb_draws=101 CKPT
+
+=== WF CLEAN vs DB ===
+brain    WF per-set DB per-set    WF b5    DB b5 WF ge3 DB ge3
+stat         0.7406     0.8277   1.6139   1.7426     11     12
+markov       0.8911     0.8218   1.6931   1.7525     17     16
+llm          0.8356     0.7762   1.7030   1.8218     18     11
+lstm         0.7782     1.9188   1.5446   3.0000      6    145
+hyena        0.7802     2.2396   1.2376   2.8911      1    213
+lead1        0.9683     1.1584   1.9703   2.2673     23     38
+
+WF rank (per-set): lead1 > markov > llm > hyena > lstm > stat
+DB rank (per-set): hyena > lstm > lead1 > stat > markov > llm
+total_sec=4483.8 llm_fallback_draws=101/101
+
+Wrote D:\MONEY lol\My_Drive_Sync\커서보고서\20260710_STEP1_6뇌_WF정직성적_전수측정.json
+Log appended: D:\MONEY lol\My_Drive_Sync\커서보고서\20260710_STEP1_6뇌_WF정직성적_전수측정_runlog.txt

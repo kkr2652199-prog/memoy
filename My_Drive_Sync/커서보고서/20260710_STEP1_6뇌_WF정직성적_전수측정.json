@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "draw_range": [
+      1131,
+      1231
+    ],
+    "random_baseline": 0.8,
+    "n_sets": 5,
+    "total_sec": 4483.8,
+    "llm_fallback_draws": 101,
+    "command": "python tools/_temp_6brain_wf_honest.py",
+    "db_mode": "read-only"
+  },
+  "wf_clean": {
+    "stat": {
+      "per_set_avg": 0.7406,
+      "best_of5_avg": 1.6139,
+      "vs_random_delta": -0.0594,
+      "ge3_sets": 11,
+      "ge4_sets": 0,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "markov": {
+      "per_set_avg": 0.8911,
+      "best_of5_avg": 1.6931,
+      "vs_random_delta": 0.0911,
+      "ge3_sets": 17,
+      "ge4_sets": 2,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "llm": {
+      "per_set_avg": 0.8356,
+      "best_of5_avg": 1.703,
+      "vs_random_delta": 0.0356,
+      "ge3_sets": 18,
+      "ge4_sets": 1,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "lstm": {
+      "per_set_avg": 0.7782,
+      "best_of5_avg": 1.5446,
+      "vs_random_delta": -0.0218,
+      "ge3_sets": 6,
+      "ge4_sets": 0,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "hyena": {
+      "per_set_avg": 0.7802,
+      "best_of5_avg": 1.2376,
+      "vs_random_delta": -0.0198,
+      "ge3_sets": 1,
+      "ge4_sets": 0,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "lead1": {
+      "per_set_avg": 0.9683,
+      "best_of5_avg": 1.9703,
+      "vs_random_delta": 0.1683,
+      "ge3_sets": 23,
+      "ge4_sets": 2,
+      "n_sets": 505,
+      "n_draws": 101
+    }
+  },
+  "db_leaked": {
+    "stat": {
+      "per_set_avg": 0.8277,
+      "best_of5_avg": 1.7426,
+      "vs_random_delta": 0.0277,
+      "ge3_sets": 12,
+      "ge4_sets": 0,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "markov": {
+      "per_set_avg": 0.8218,
+      "best_of5_avg": 1.7525,
+      "vs_random_delta": 0.0218,
+      "ge3_sets": 16,
+      "ge4_sets": 2,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "llm": {
+      "per_set_avg": 0.7762,
+      "best_of5_avg": 1.8218,
+      "vs_random_delta": -0.0238,
+      "ge3_sets": 11,
+      "ge4_sets": 0,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "lstm": {
+      "per_set_avg": 1.9188,
+      "best_of5_avg": 3,
+      "vs_random_delta": 1.1188,
+      "ge3_sets": 145,
+      "ge4_sets": 33,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "hyena": {
+      "per_set_avg": 2.2396,
+      "best_of5_avg": 2.8911,
+      "vs_random_delta": 1.4396,
+      "ge3_sets": 213,
+      "ge4_sets": 55,
+      "n_sets": 505,
+      "n_draws": 101
+    },
+    "lead1": {
+      "per_set_avg": 1.1584,
+      "best_of5_avg": 2.2673,
+      "vs_random_delta": 0.3584,
+      "ge3_sets": 38,
+      "ge4_sets": 3,
+      "n_sets": 505,
+      "n_draws": 101
+    }
+  },
+  "wf_rank_per_set": [
+    "lead1",
+    "markov",
+    "llm",
+    "hyena",
+    "lstm",
+    "stat"
+  ],
+  "db_rank_per_set": [
+    "hyena",
+    "lstm",
+    "lead1",
+    "stat",
+    "markov",
+    "llm"
+  ]
+}

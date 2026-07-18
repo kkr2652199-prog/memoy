@@ -1,0 +1,1622 @@
+{
+  "draws": [
+    1213,
+    1214,
+    1215,
+    1216,
+    1217,
+    1218,
+    1219,
+    1220,
+    1221,
+    1222,
+    1223,
+    1224,
+    1225,
+    1226,
+    1227,
+    1228,
+    1229,
+    1230,
+    1231,
+    1232
+  ],
+  "n_draws": 20,
+  "ranking_top15": [
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 5,
+      "avg_match": 1.55,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 4,
+        "낙첨": 15
+      },
+      "match_dist": {
+        "0": 6,
+        "1": 3,
+        "2": 6,
+        "3": 4,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 4,
+      "avg_match": 1.45,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 4,
+        "낙첨": 16
+      },
+      "match_dist": {
+        "1": 3,
+        "0": 6,
+        "3": 4,
+        "2": 7
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 5,
+      "avg_match": 1.35,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 2,
+        "5등": 1,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 6,
+        "1": 4,
+        "3": 1,
+        "4": 2
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 3,
+      "avg_match": 1.35,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "1": 8,
+        "0": 3,
+        "2": 8,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 1,
+      "avg_match": 1.3,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 2,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 6,
+        "1": 6,
+        "2": 5,
+        "3": 2,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 3,
+      "avg_match": 1.3,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 0,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "0": 4,
+        "1": 8,
+        "2": 7,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 4,
+      "avg_match": 1.3,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 6,
+        "2": 8,
+        "1": 4,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 1,
+      "avg_match": 1.2,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 2,
+        "5등": 1,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 3,
+        "1": 7,
+        "4": 2,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 5,
+      "avg_match": 1.2,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 1,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 5,
+        "0": 7,
+        "2": 6,
+        "3": 1,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 3,
+      "avg_match": 1.2,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 10,
+        "0": 4,
+        "2": 4,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 2,
+      "avg_match": 1.2,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 7,
+        "1": 4,
+        "2": 7,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 1,
+      "avg_match": 1.2,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 3,
+        "1": 10,
+        "2": 7
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 4,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "1": 8,
+        "0": 5,
+        "2": 6,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 2,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 5,
+        "0": 7,
+        "3": 2,
+        "2": 6
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 1,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 6,
+        "1": 5,
+        "3": 2
+      }
+    }
+  ],
+  "ranking_all": [
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 5,
+      "avg_match": 1.55,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 4,
+        "낙첨": 15
+      },
+      "match_dist": {
+        "0": 6,
+        "1": 3,
+        "2": 6,
+        "3": 4,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 4,
+      "avg_match": 1.45,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 4,
+        "낙첨": 16
+      },
+      "match_dist": {
+        "1": 3,
+        "0": 6,
+        "3": 4,
+        "2": 7
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 5,
+      "avg_match": 1.35,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 2,
+        "5등": 1,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 6,
+        "1": 4,
+        "3": 1,
+        "4": 2
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 3,
+      "avg_match": 1.35,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "1": 8,
+        "0": 3,
+        "2": 8,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 1,
+      "avg_match": 1.3,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 2,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 6,
+        "1": 6,
+        "2": 5,
+        "3": 2,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 3,
+      "avg_match": 1.3,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 0,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "0": 4,
+        "1": 8,
+        "2": 7,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 4,
+      "avg_match": 1.3,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 6,
+        "2": 8,
+        "1": 4,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 1,
+      "avg_match": 1.2,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 2,
+        "5등": 1,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 3,
+        "1": 7,
+        "4": 2,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 5,
+      "avg_match": 1.2,
+      "max_match": 4,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 1,
+        "5등": 1,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 5,
+        "0": 7,
+        "2": 6,
+        "3": 1,
+        "4": 1
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 3,
+      "avg_match": 1.2,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 10,
+        "0": 4,
+        "2": 4,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 2,
+      "avg_match": 1.2,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 7,
+        "1": 4,
+        "2": 7,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 1,
+      "avg_match": 1.2,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 3,
+        "1": 10,
+        "2": 7
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 4,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "1": 8,
+        "0": 5,
+        "2": 6,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_hyena",
+      "brain_ko": "하이에나",
+      "set": 2,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 5,
+        "0": 7,
+        "3": 2,
+        "2": 6
+      }
+    },
+    {
+      "brain": "v12_snake",
+      "brain_ko": "뱀 합성두뇌",
+      "set": 1,
+      "avg_match": 1.15,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "0": 7,
+        "2": 6,
+        "1": 5,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 3,
+      "avg_match": 1.15,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 11,
+        "2": 6,
+        "0": 3
+      }
+    },
+    {
+      "brain": "v12_stat",
+      "brain_ko": "시간여행자(CDM)",
+      "set": 1,
+      "avg_match": 1.1,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 8,
+        "2": 10,
+        "1": 2
+      }
+    },
+    {
+      "brain": "v12_offset",
+      "brain_ko": "리듬분석가(합구간)",
+      "set": 1,
+      "avg_match": 1.05,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 3,
+        "낙첨": 17
+      },
+      "match_dist": {
+        "3": 3,
+        "0": 8,
+        "1": 6,
+        "2": 3
+      }
+    },
+    {
+      "brain": "v12_lstm",
+      "brain_ko": "예언자(LSTM)",
+      "set": 2,
+      "avg_match": 1.05,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "1": 9,
+        "0": 6,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 5,
+      "avg_match": 1.05,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 9,
+        "0": 5,
+        "2": 6
+      }
+    },
+    {
+      "brain": "v12_offset",
+      "brain_ko": "리듬분석가(합구간)",
+      "set": 4,
+      "avg_match": 1,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "3": 1,
+        "0": 7,
+        "2": 5,
+        "1": 7
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 2,
+      "avg_match": 0.95,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 9,
+        "2": 5,
+        "0": 6
+      }
+    },
+    {
+      "brain": "v12_stat",
+      "brain_ko": "시간여행자(CDM)",
+      "set": 3,
+      "avg_match": 0.9,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 2,
+        "낙첨": 18
+      },
+      "match_dist": {
+        "2": 2,
+        "0": 8,
+        "1": 8,
+        "3": 2
+      }
+    },
+    {
+      "brain": "v12_offset",
+      "brain_ko": "리듬분석가(합구간)",
+      "set": 5,
+      "avg_match": 0.85,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "2": 4,
+        "0": 9,
+        "1": 6,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_stat",
+      "brain_ko": "시간여행자(CDM)",
+      "set": 2,
+      "avg_match": 0.85,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 8,
+        "2": 5,
+        "1": 7
+      }
+    },
+    {
+      "brain": "v12_stat",
+      "brain_ko": "시간여행자(CDM)",
+      "set": 4,
+      "avg_match": 0.8,
+      "max_match": 3,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 1,
+        "낙첨": 19
+      },
+      "match_dist": {
+        "0": 8,
+        "1": 9,
+        "2": 2,
+        "3": 1
+      }
+    },
+    {
+      "brain": "v12_run",
+      "brain_ko": "사냥꾼(공동출현)",
+      "set": 1,
+      "avg_match": 0.8,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 10,
+        "0": 7,
+        "2": 3
+      }
+    },
+    {
+      "brain": "v12_contrarian",
+      "brain_ko": "역발상가(제약)",
+      "set": 1,
+      "avg_match": 0.8,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 9,
+        "2": 5,
+        "1": 6
+      }
+    },
+    {
+      "brain": "v12_contrarian",
+      "brain_ko": "역발상가(제약)",
+      "set": 2,
+      "avg_match": 0.8,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 7,
+        "1": 10,
+        "2": 3
+      }
+    },
+    {
+      "brain": "v12_contrarian",
+      "brain_ko": "역발상가(제약)",
+      "set": 4,
+      "avg_match": 0.8,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "2": 4,
+        "1": 8,
+        "0": 8
+      }
+    },
+    {
+      "brain": "v12_run",
+      "brain_ko": "사냥꾼(공동출현)",
+      "set": 3,
+      "avg_match": 0.75,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 11,
+        "0": 7,
+        "2": 2
+      }
+    },
+    {
+      "brain": "v12_run",
+      "brain_ko": "사냥꾼(공동출현)",
+      "set": 5,
+      "avg_match": 0.75,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 8,
+        "1": 9,
+        "2": 3
+      }
+    },
+    {
+      "brain": "v12_run",
+      "brain_ko": "사냥꾼(공동출현)",
+      "set": 4,
+      "avg_match": 0.7,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "1": 10,
+        "0": 8,
+        "2": 2
+      }
+    },
+    {
+      "brain": "v12_fusion",
+      "brain_ko": "작전본부장(퓨전)",
+      "set": 4,
+      "avg_match": 0.7,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 7,
+        "1": 12,
+        "2": 1
+      }
+    },
+    {
+      "brain": "v12_run",
+      "brain_ko": "사냥꾼(공동출현)",
+      "set": 2,
+      "avg_match": 0.65,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 9,
+        "1": 9,
+        "2": 2
+      }
+    },
+    {
+      "brain": "v12_contrarian",
+      "brain_ko": "역발상가(제약)",
+      "set": 3,
+      "avg_match": 0.65,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 9,
+        "2": 2,
+        "1": 9
+      }
+    },
+    {
+      "brain": "v12_contrarian",
+      "brain_ko": "역발상가(제약)",
+      "set": 5,
+      "avg_match": 0.65,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 11,
+        "1": 5,
+        "2": 4
+      }
+    },
+    {
+      "brain": "v12_offset",
+      "brain_ko": "리듬분석가(합구간)",
+      "set": 2,
+      "avg_match": 0.6,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 10,
+        "2": 2,
+        "1": 8
+      }
+    },
+    {
+      "brain": "v12_stat",
+      "brain_ko": "시간여행자(CDM)",
+      "set": 5,
+      "avg_match": 0.55,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "2": 1,
+        "0": 10,
+        "1": 9
+      }
+    },
+    {
+      "brain": "v12_offset",
+      "brain_ko": "리듬분석가(합구간)",
+      "set": 3,
+      "avg_match": 0.55,
+      "max_match": 2,
+      "tier_hits": {
+        "1등": 0,
+        "2등": 0,
+        "3등": 0,
+        "4등": 0,
+        "5등": 0,
+        "낙첨": 20
+      },
+      "match_dist": {
+        "0": 12,
+        "1": 5,
+        "2": 3
+      }
+    }
+  ],
+  "brain_avg_per_brain": {
+    "v12_stat": 0.84,
+    "v12_run": 0.73,
+    "v12_offset": 0.81,
+    "v12_contrarian": 0.74,
+    "v12_lstm": 1.19,
+    "v12_fusion": 1.01,
+    "v12_hyena": 1.33,
+    "v12_snake": 1.26
+  },
+  "brain_agg_match_dist": {
+    "v12_stat": {
+      "0": 42,
+      "2": 20,
+      "1": 35,
+      "3": 3
+    },
+    "v12_run": {
+      "1": 49,
+      "0": 39,
+      "2": 12
+    },
+    "v12_offset": {
+      "3": 5,
+      "0": 46,
+      "1": 32,
+      "2": 17
+    },
+    "v12_contrarian": {
+      "0": 44,
+      "2": 18,
+      "1": 38
+    },
+    "v12_lstm": {
+      "0": 25,
+      "1": 41,
+      "2": 26,
+      "3": 6,
+      "4": 2
+    },
+    "v12_fusion": {
+      "0": 28,
+      "2": 21,
+      "1": 48,
+      "4": 2,
+      "3": 1
+    },
+    "v12_hyena": {
+      "0": 28,
+      "1": 26,
+      "2": 33,
+      "3": 11,
+      "4": 2
+    },
+    "v12_snake": {
+      "0": 31,
+      "2": 33,
+      "1": 25,
+      "3": 9,
+      "4": 2
+    }
+  },
+  "combo_summary": [
+    {
+      "strategy": "oracle_best_of_40",
+      "avg_match": 2.8,
+      "max_match": 4,
+      "tier_counts": {
+        "5등": 10,
+        "낙첨": 7,
+        "4등": 3
+      },
+      "prize_rate": 0.65
+    },
+    {
+      "strategy": "8brain×1(WF-best,oracle)",
+      "avg_match": 2.65,
+      "max_match": 5,
+      "tier_counts": {
+        "낙첨": 10,
+        "5등": 7,
+        "4등": 2,
+        "3등": 1
+      },
+      "prize_rate": 0.5
+    },
+    {
+      "strategy": "8brain×1(set1,oracle)",
+      "avg_match": 2.6,
+      "max_match": 4,
+      "tier_counts": {
+        "낙첨": 9,
+        "5등": 7,
+        "4등": 4
+      },
+      "prize_rate": 0.55
+    },
+    {
+      "strategy": "6brain×1(core6 WF,oracle)",
+      "avg_match": 2.4,
+      "max_match": 4,
+      "tier_counts": {
+        "낙첨": 12,
+        "5등": 6,
+        "4등": 2
+      },
+      "prize_rate": 0.4
+    },
+    {
+      "strategy": "best_single_WF_set",
+      "avg_match": 2.3,
+      "max_match": 4,
+      "tier_counts": {
+        "5등": 5,
+        "낙첨": 13,
+        "4등": 2
+      },
+      "prize_rate": 0.35
+    },
+    {
+      "strategy": "3brain×2(stat,run,off WF,oracle)",
+      "avg_match": 1.5,
+      "max_match": 3,
+      "tier_counts": {
+        "5등": 2,
+        "낙첨": 18
+      },
+      "prize_rate": 0.1
+    },
+    {
+      "strategy": "2brain×3(stat,run WF,oracle)",
+      "avg_match": 1.15,
+      "max_match": 2,
+      "tier_counts": {
+        "낙첨": 20
+      },
+      "prize_rate": 0.0
+    },
+    {
+      "strategy": "8brain×1(WF-best,heuristic)",
+      "avg_match": 0.85,
+      "max_match": 3,
+      "tier_counts": {
+        "낙첨": 19,
+        "5등": 1
+      },
+      "prize_rate": 0.05
+    },
+    {
+      "strategy": "8brain×1(set1,heuristic)",
+      "avg_match": 0.8,
+      "max_match": 2,
+      "tier_counts": {
+        "낙첨": 20
+      },
+      "prize_rate": 0.0
+    },
+    {
+      "strategy": "6brain×1(core6 WF,heuristic)",
+      "avg_match": 0.7,
+      "max_match": 2,
+      "tier_counts": {
+        "낙첨": 20
+      },
+      "prize_rate": 0.0
+    },
+    {
+      "strategy": "3brain×2(stat,run,off WF,heuristic)",
+      "avg_match": 0.7,
+      "max_match": 2,
+      "tier_counts": {
+        "낙첨": 20
+      },
+      "prize_rate": 0.0
+    },
+    {
+      "strategy": "2brain×3(stat,run WF,heuristic)",
+      "avg_match": 0.65,
+      "max_match": 2,
+      "tier_counts": {
+        "낙첨": 20
+      },
+      "prize_rate": 0.0
+    }
+  ],
+  "wf_vs_set1": [
+    {
+      "draw_no": 1213,
+      "avg_set1": 0.5,
+      "avg_wf_best": 0.5,
+      "delta": 0.0
+    },
+    {
+      "draw_no": 1214,
+      "avg_set1": 1.12,
+      "avg_wf_best": 0.75,
+      "delta": -0.38
+    },
+    {
+      "draw_no": 1215,
+      "avg_set1": 0.12,
+      "avg_wf_best": 0.38,
+      "delta": 0.25
+    },
+    {
+      "draw_no": 1216,
+      "avg_set1": 1.38,
+      "avg_wf_best": 1.12,
+      "delta": -0.25
+    },
+    {
+      "draw_no": 1217,
+      "avg_set1": 1.12,
+      "avg_wf_best": 0.38,
+      "delta": -0.75
+    },
+    {
+      "draw_no": 1218,
+      "avg_set1": 0.62,
+      "avg_wf_best": 0.62,
+      "delta": 0.0
+    },
+    {
+      "draw_no": 1219,
+      "avg_set1": 0.38,
+      "avg_wf_best": 0.5,
+      "delta": 0.12
+    },
+    {
+      "draw_no": 1220,
+      "avg_set1": 1,
+      "avg_wf_best": 1,
+      "delta": 0
+    },
+    {
+      "draw_no": 1221,
+      "avg_set1": 2,
+      "avg_wf_best": 1.62,
+      "delta": -0.38
+    },
+    {
+      "draw_no": 1222,
+      "avg_set1": 1.38,
+      "avg_wf_best": 1.25,
+      "delta": -0.12
+    },
+    {
+      "draw_no": 1223,
+      "avg_set1": 1.62,
+      "avg_wf_best": 1.38,
+      "delta": -0.25
+    },
+    {
+      "draw_no": 1224,
+      "avg_set1": 1.62,
+      "avg_wf_best": 1.62,
+      "delta": 0.0
+    },
+    {
+      "draw_no": 1225,
+      "avg_set1": 0.75,
+      "avg_wf_best": 1,
+      "delta": 0.25
+    },
+    {
+      "draw_no": 1226,
+      "avg_set1": 1.88,
+      "avg_wf_best": 1.62,
+      "delta": -0.25
+    },
+    {
+      "draw_no": 1227,
+      "avg_set1": 0.75,
+      "avg_wf_best": 0.5,
+      "delta": -0.25
+    },
+    {
+      "draw_no": 1228,
+      "avg_set1": 1.12,
+      "avg_wf_best": 0.88,
+      "delta": -0.25
+    },
+    {
+      "draw_no": 1229,
+      "avg_set1": 1.25,
+      "avg_wf_best": 1.38,
+      "delta": 0.12
+    },
+    {
+      "draw_no": 1230,
+      "avg_set1": 1.5,
+      "avg_wf_best": 1.62,
+      "delta": 0.12
+    },
+    {
+      "draw_no": 1231,
+      "avg_set1": 0.25,
+      "avg_wf_best": 0.12,
+      "delta": -0.12
+    },
+    {
+      "draw_no": 1232,
+      "avg_set1": 1.12,
+      "avg_wf_best": 0.88,
+      "delta": -0.25
+    }
+  ],
+  "per_draw_best_set": [
+    {
+      "draw_no": 1213,
+      "brain": "v12_offset",
+      "set": 1,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1214,
+      "brain": "v12_offset",
+      "set": 1,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1215,
+      "brain": "v12_stat",
+      "set": 3,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1216,
+      "brain": "v12_hyena",
+      "set": 2,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1217,
+      "brain": "v12_offset",
+      "set": 1,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1218,
+      "brain": "v12_stat",
+      "set": 1,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1219,
+      "brain": "v12_stat",
+      "set": 4,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1220,
+      "brain": "v12_stat",
+      "set": 1,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1221,
+      "brain": "v12_fusion",
+      "set": 1,
+      "matched": 4,
+      "tier": "4등"
+    },
+    {
+      "draw_no": 1222,
+      "brain": "v12_lstm",
+      "set": 5,
+      "matched": 4,
+      "tier": "4등"
+    },
+    {
+      "draw_no": 1223,
+      "brain": "v12_lstm",
+      "set": 5,
+      "matched": 4,
+      "tier": "4등"
+    },
+    {
+      "draw_no": 1224,
+      "brain": "v12_lstm",
+      "set": 2,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1225,
+      "brain": "v12_offset",
+      "set": 5,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1226,
+      "brain": "v12_fusion",
+      "set": 1,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1227,
+      "brain": "v12_stat",
+      "set": 3,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1228,
+      "brain": "v12_stat",
+      "set": 1,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1229,
+      "brain": "v12_offset",
+      "set": 5,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1230,
+      "brain": "v12_stat",
+      "set": 1,
+      "matched": 2,
+      "tier": "낙첨"
+    },
+    {
+      "draw_no": 1231,
+      "brain": "v12_stat",
+      "set": 3,
+      "matched": 3,
+      "tier": "5등"
+    },
+    {
+      "draw_no": 1232,
+      "brain": "v12_stat",
+      "set": 4,
+      "matched": 3,
+      "tier": "5등"
+    }
+  ]
+}
