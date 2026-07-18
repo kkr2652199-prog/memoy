@@ -1,5 +1,5 @@
 # CURSOR_RULES.md — 커서 행동 강제 규칙
-# 최종 갱신: 2026-05-29
+# 최종 갱신: 2026-07-18 (R34 반영)
 # 이 파일은 READ-ONLY. 형(사용자)만 수정 가능.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -22,11 +22,24 @@
   파일 3: D:\MONEY lol\My_Drive_Sync\SUMMARY\CURSOR_RULES.md
 
 출력 형식:
-  ✅ RULES_FIXED.md 확인 (R1~R32)
-  ✅ STATUS_LATEST.md 확인 (기억XX, 4군 현황: ...)
+  ✅ RULES_FIXED.md 확인 (R1~R34)
+  ✅ STATUS_LATEST.md 확인 (기억XX, 1~3군 memoy SSOT)
   ✅ CURSOR_RULES.md 확인
 
 이 3줄이 없으면 작업을 시작하지 않는다.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 1-A. R34 절대 규칙 (2026-07-18)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1·2·3군 앱 보고서·작업현황 = **오직** GitHub memoy only
+    URL: https://github.com/kkr2652199-prog/memoy · branch main
+    로컬: D:\MONEY lol\My_Drive_Sync\SUMMARY\ + My_Drive_Sync\커서보고서\
+
+  4군·테스트로또·효도(kweon) = memoy STATUS/보고서에 **기록 금지**
+    → D:\3kweon\reports\ · kweon GitHub 별도
+
+  위반 시: 즉시 중단 + memoy STATUS 복원 + ⛔ 불완전 작업
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## 2. 절대 수정 금지 영역
@@ -48,21 +61,27 @@
 
 모든 작업/정찰/백테스트 완료 후 아래를 반드시 수행:
 
-### 3-1. 보고서 저장 (R7)
-  경로: d:\3kweon\reports\YYYYMMDD_4군_{작업명}_보고서.md
-  필수 포함:
-    - SHA256 비교 (변경 전 vs 후)
-    - 성적표 (해당 시)
-    - 변경 파일 목록
+### 3-1. 보고서 저장 (R7 + R34)
+
+  **[1~3군]** (memoy SSOT — 유일)
+    경로: D:\MONEY lol\My_Drive_Sync\커서보고서\YYYYMMDD_{작업명}.md
+    필수: git add → commit → push origin main (memoy)
+
+  **[4군·kweon]** (memoy ❌)
+    경로: d:\3kweon\reports\YYYYMMDD_4군_{작업명}_보고서.md
+    memoy 커서보고서/STATUS에 4군 현황 덮어쓰기 금지
+
+  공통 필수 포함:
+    - SHA256 비교 (변경 전 vs 후, 해당 시)
     - 1~3군 간섭 여부 (반드시 "0건" 확인)
 
-### 3-2. STATUS_LATEST.md 갱신 (R10)
+### 3-2. STATUS_LATEST.md 갱신 (R10 + R34)
   경로: D:\MONEY lol\My_Drive_Sync\SUMMARY\STATUS_LATEST.md
+  **1~3군 My_Library 앱 현황만** 기록 (4군 내용 금지)
   갱신 항목:
     - 기억 번호 업데이트
-    - 4군 현재 단계/상태
-    - 최신 백테스트 점수 (해당 시)
-    - 다음 작업 예고
+    - 1~3군 현재 STEP / draw_no / lead1
+    - 최신 분석·백테스트 (해당 시)
 
 ### 3-3. 기억 파일 저장 (R18/R25)
   경로: D:\MONEY lol\My_Drive_Sync\동생기억\YYYYMMDD_기억{N}_v1.md
@@ -78,12 +97,15 @@
 ### 3-5. 완료 확인 출력
   작업 마지막에 아래 체크리스트 출력:
 
-  📋 저장 체크리스트:
-  [ ] 보고서 저장 → d:\3kweon\reports\... (.md + .txt)
-  [ ] STATUS_LATEST 갱신 → 기억{N}, 상태: ... (.md + .txt)
-  [ ] 기억 파일 저장 → 기억{N}_v1.md + .txt
-  [ ] Drive 복사 완료 → 커서보고서\... (.md + .txt)
-  [ ] 1~3군 간섭: 0건
+  📋 저장 체크리스트 (1~3군 작업):
+  [ ] 보고서 → My_Drive_Sync\커서보고서\...
+  [ ] STATUS_LATEST 갱신 (1~3군만, 기억{N})
+  [ ] memoy git commit + push
+  [ ] 1~3군 코드 간섭: 0건
+
+  📋 저장 체크리스트 (4군 작업):
+  [ ] 보고서 → d:\3kweon\reports\...
+  [ ] memoy STATUS/커서보고서 미접촉 확인
 
   모든 항목 [✅] 확인 후에만 "작업 완료" 선언.
 
@@ -149,22 +171,18 @@
 ## 7. 폴더 구조 (저장 위치)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  d:\3kweon\
-  ├── app/lotto4/brains/    ← 4군 뇌 코드
-  ├── app/lotto4/           ← 엔진, 라우트
-  ├── app/static/           ← UI (js/css/html)
-  ├── tools/                ← 백테스트, 분석 스크립트
-  ├── models/               ← 학습 모델 파일 (.pt, .json)
-  ├── reports/              ← 보고서 저장
-  └── data/lotto4.db        ← DB
-
   D:\MONEY lol\My_Drive_Sync\
-  ├── SUMMARY/
-  │   ├── RULES_FIXED.md      ← 마스터 룰 (READ-ONLY)
-  │   ├── STATUS_LATEST.md    ← 현황 (매 작업 후 갱신)
-  │   └── CURSOR_RULES.md     ← 커서 행동 규칙 (READ-ONLY)
-  ├── 동생기억/               ← 기억N_v1.md 파일
-  └── 커서보고서/             ← 보고서 Drive 복사본
+  ├── SUMMARY/                  ← **1~3군 SSOT** (memoy push 필수)
+  │   ├── RULES_FIXED.md
+  │   ├── STATUS_LATEST.md      ← 1~3군만 (4군 금지)
+  │   └── CURSOR_RULES.md
+  └── 커서보고서/               ← 1~3군 보고서 (memoy)
+
+  d:\3kweon\                     ← **4군·kweon 별도** (memoy ❌)
+  ├── reports/
+  └── app/testlotto/ …
+
+  GitHub 1~3군: https://github.com/kkr2652199-prog/memoy
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## 8. 위반 시 처리

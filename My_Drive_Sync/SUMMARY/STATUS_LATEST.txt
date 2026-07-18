@@ -1,21 +1,13 @@
-# STATUS_LATEST.md — kweon 현재 상태
+# STATUS_LATEST (2026-07-10 SSOT 전환 · 기억107)
 
-📅 최종 갱신: 2026-07-18 KST (세트별 적중 분포 진단 1차)
+> R34 (2026-07-18): 1·2·3군 보고서·작업현황 = memoy only · https://github.com/kkr2652199-prog/memoy
+> 4군·테스트로또·효도 = kweon 별도 (이 STATUS에 기록 금지)
 
-## 테스트로또 — 최신
+## 스냅샷 (20260718)
+- SSOT 1~3군: memoy/main · My_Drive_Sync/SUMMARY/
+- draw_no 1232 · lead1 F1_V2_STRICT · LM홀딩 ON
+- 분석 push: 1·2·3군 뇌×세트 (커밋 0ee8df7)
+- R34: 1~3군 memoy 전용 · 4군 kweon 분리
 
-### 구간 모드 (`?v=20260718t`)
-- 적중 추세 · 약점 top3 · 구간 진단
-- **세트별 적중 분포** — 3뇌×5세트 · 랭킹 · 사후선택 경고
-- best vs 구간 사후 최고 세트 병렬 표시
-
-### API
-- `/detail/reviews` + `set_distribution`
-- `/detail/reviews/set-distribution`
-
-### 다음
-- 세트 분포 2차 (tier 분포)
-- Phase C learn_state
-
-## 최신 보고서
-- `reports/20260718_세트별_적중분포_진단_1차.md`
+현재 STEP: 1.5군 신설 준비
+기억 체인: …105→106→107(현재)

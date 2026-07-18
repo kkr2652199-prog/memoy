@@ -1,5 +1,8 @@
 # 효도로또 / 테스트로또 개발 PLAN — 단계별 체크리스트
 
+> ⚠️ **R34:** 이 파일은 **4군·kweon 참고용**. SSOT 아님.  
+> 1~3군 보고/현황 = `https://github.com/kkr2652199-prog/memoy` only.
+
 📅 확정: 2026-07-11 KST (7뇌·복습루프 방향 갱신)  
 저장소: kkr2652199-prog/kweon · 로컬 D:\3kweon
 

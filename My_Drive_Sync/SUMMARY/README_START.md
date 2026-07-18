@@ -18,7 +18,8 @@ GitHub raw 링크만 있으면 5분 내 현재 작업을 이해하고 이어갈 
 - 지금 STEP: **목적 재정의 완료** — 당첨보장 아님 → 정직한 분석앱 + 오락비 한도
 - 다음 STEP: **1.5군 독립 신설** (이름 결정 대기)
 
-## 복원 경로 규칙
-- 1순위: GitHub kkr2652199-prog/memoy · main · /My_Drive_Sync/SUMMARY/ raw
+## 복원 경로 규칙 (R33·R34 절대)
+- **1·2·3군 SSOT (유일):** [kkr2652199-prog/memoy](https://github.com/kkr2652199-prog/memoy) · main · `/My_Drive_Sync/SUMMARY/` + `/My_Drive_Sync/커서보고서/`
+- **4군·테스트로또·효도:** memoy ❌ → `D:\3kweon\` · kweon 저장소 별도
 - 2순위: 형 채팅 직접 붙여넣기
 - (구 구글드라이브/스프레드시트/.txt/preview 경로는 폐기됨 — 사용 안 함)

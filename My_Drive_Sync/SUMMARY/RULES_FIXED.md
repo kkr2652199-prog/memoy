@@ -264,3 +264,10 @@ R33 (복원 SSOT 확정, 2026-07-10):
 - 구글드라이브/스프레드시트/.txt/preview(구 R23·R31·R32)는 전면 폐기.
 - 복원 첫 보고 4줄: draw_no / lead1 공식 / LM홀딩·유령2뇌 상태 / 다음 STEP.
 
+R34 (절대 규칙, 2026-07-18 — 형 확정):
+- **1·2·3군 앱**의 보고서·작업현황·STATUS·DECISION·NEXT는 **오직** GitHub `https://github.com/kkr2652199-prog/memoy` · main 에만 기록한다.
+- 로컬 경로 SSOT: `D:\MONEY lol\My_Drive_Sync\SUMMARY\` + `My_Drive_Sync\커서보고서\` (1~3군 분석·정찰).
+- **4군·테스트로또·효도로또(kweon)** 보고/현황은 memoy에 넣지 않는다 → `D:\3kweon\` · kweon 저장소 별도.
+- 위반: memoy STATUS에 4군 내용 덮어쓰기 · 1~3군 보고서를 kweon/구글드라이브에만 저장 · memoy push 생략 → ⛔ 불완전.
+- 매 작업 종료: memoy `git add` → `commit` → `push` (G3 4종 세트).
+
