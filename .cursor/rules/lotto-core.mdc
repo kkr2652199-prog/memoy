@@ -30,6 +30,11 @@ alwaysApply: true
 3. `BOOT.md` §1 현재 스레드 3줄 갱신
 4. `git add` → commit → `push origin main`
 
+## 레포·경계
+
+- 이 레포는 `D:\MONEY lol` 전체 백업. 로또는 `app/lotto*` + `My_Drive_Sync/` 뿐.
+- 파일 소유권은 `SUMMARY/BOUNDARY.md` 참조. SHARED 파일은 양쪽 검증.
+
 ## 원칙
 
 - 추측 금지. 코드·DB·숫자는 파일에서만. 못 찾으면 **「미확인」**

@@ -17,6 +17,13 @@ FORBIDDEN_SEGMENTS = (
 )
 R34_KEYWORDS = ("4군", "kweon", "v13")
 STATUS_MARKERS = ("summary/status_latest.md", "my_drive_sync/summary/status_latest.md")
+SHARED_FILES = (
+    "my_library/app/main.py",
+    "my_library/app/core/lotto_engine.py",
+)
+SHARED_WARN = (
+    "[SHARED] 도서관·로또 공유 파일. 양쪽 영향 확인 + app OK 검증 필수"
+)
 
 
 def _norm(path: str) -> str:
@@ -62,6 +69,9 @@ def main() -> None:
         if any(kw in combined for kw in R34_KEYWORDS):
             sys.stderr.write("R34 위반: STATUS에 4군/kweon/v13 기록 금지\n")
             sys.exit(2)
+
+    if any(path_norm.endswith(s) or s in path_norm for s in SHARED_FILES):
+        sys.stderr.write(f"{SHARED_WARN}\n")
 
     sys.exit(0)
 

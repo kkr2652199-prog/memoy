@@ -1,0 +1,10 @@
+.obsidian/
+*.png
+*.jpg
+__pycache__/
+*.pyc
+*_backup*/
+_deleted/
+_git_nested_backup*/
+*.db
+*.db-journal
