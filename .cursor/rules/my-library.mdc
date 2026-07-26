@@ -1,6 +1,11 @@
 ---
 description: My_Library 프로젝트 전체 규칙
-alwaysApply: true
+alwaysApply: false
+globs:
+  - My_Library/app/api/**
+  - My_Library/app/core/**
+  - My_Library/app/llm/**
+  - My_Library/app/static/**
 ---
 
 # My_Library 프로젝트 Rules

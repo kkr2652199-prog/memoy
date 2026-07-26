@@ -1,4 +1,4 @@
-# STATUS_LATEST (2026-07-10 SSOT 전환 · 기억107)
+# STATUS_LATEST (2026-07-26 · 기억108)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
@@ -34,9 +34,20 @@
 - "당첨 보장" ❌ → **정직하고 완성도 높은 나만의 분석 앱**
 - **현재 STEP:** 1.5군 신설 준비 (이름 결정 대기)
 
+## ★ 20260726 1군 정직화 15항목 (기억108)
+- `honesty_flags.py` · `deterministic_sets.py` 신설
+- markov 결정론 전이 / stat·lstm·fusion·hyena top-k / N+1·postmortem·hyena OFF
+- v4·miss_analysis·snake 삭제 · 커밋 `2713250`
+- 보고서: `20260726_1군_정직화_15항목_순차적용.md`
+
+## ★ 20260726 기억영속화 인프라 (기억108)
+- `BOOT.md` · `FINDINGS.md` (F-A~F-H OPEN) · `lotto-core.mdc` · `.cursor/hooks/` 3종
+- `my-library.mdc` alwaysApply→false (도서관 전용 globs)
+- README_START §0-1 BOOT 진입점 추가
+
 ## ★ 20260718 분석 (기억107)
 - 1·2·3군 뇌×5세트 독립적중 + 우선조합 (1213~1232, 20회) READ-ONLY
 - 보고서: `20260718_1군2군3군_뇌셋트_요약.md` 외 커서보고서 20260718_*
 - 4군 v13 예시 분석은 **참고용** — SSOT는 kweon
 
-## 기억 체인: …105→106→**107(현재)**
+## 기억 체인: …105→106→107→**108(현재)**

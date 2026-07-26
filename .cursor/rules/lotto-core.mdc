@@ -1,0 +1,37 @@
+---
+description: 로또 1~3군 핵심 규칙 (SUMMARY 압축 사본)
+alwaysApply: true
+---
+
+# Lotto 1~3군 Core Rules (SUMMARY 원본의 압축 사본 — 충돌 시 SUMMARY/RULES_FIXED.md 우선)
+
+## 시작 시 (매 작업)
+
+1. `My_Drive_Sync/SUMMARY/BOOT.md` + `FINDINGS.md` 읽고 첫 응답에 확인 출력
+2. `RULES_FIXED.md` · `STATUS_LATEST.md` · `CURSOR_RULES.md` 확인 (R28)
+
+## 금지 영역
+
+- `My_Library/app/lotto/` (1군)
+- `My_Library/app/lotto2/` (2군)
+- `My_Library/app/lotto3/` (3군)
+
+**형이 명시 지시하지 않으면 수정 금지.** (환경변수 `MEMOY_ALLOW_ARMY=1` = 형 패치 승인 시에만)
+
+## R34 (절대)
+
+- **1~3군** 보고·STATUS·DECISION → **memoy only** (`https://github.com/kkr2652199-prog/memoy` · main)
+- **4군·kweon** → `D:\3kweon\` 별도. memoy STATUS/커서보고서에 **4군 내용 기록 금지**
+
+## 종료 4종 (1~3군 작업)
+
+1. 보고서 → `My_Drive_Sync/커서보고서/YYYYMMDD_*.md`
+2. `STATUS_LATEST.md` 갱신 (1~3군만)
+3. `BOOT.md` §1 현재 스레드 3줄 갱신
+4. `git add` → commit → `push origin main`
+
+## 원칙
+
+- 추측 금지. 코드·DB·숫자는 파일에서만. 못 찾으면 **「미확인」**
+- READ-ONLY 지시 시 DB 쓰기·백테스트 재실행 금지
+- FINDINGS(F-A~F-H)는 ID로 지시받을 때만 패치
