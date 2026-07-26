@@ -243,6 +243,23 @@ async def api_predict(target_draw_no: int):
     """특정 회차에 대한 두뇌 예측을 실행한다.
     컨닝 방지: target_draw_no 이전 데이터만 LLM에게 제공."""
     from app.lotto.engine import run_prediction
+    from app.lotto.honesty_flags import REJECT_FUTURE_DRAW_PREDICT
+    from app.lotto.models import get_lotto_db
+
+    if REJECT_FUTURE_DRAW_PREDICT:
+        conn = get_lotto_db()
+        try:
+            row = conn.execute("SELECT MAX(draw_no) FROM lotto_draws").fetchone()
+        finally:
+            conn.close()
+        max_draw = int(row[0]) if row and row[0] is not None else 0
+        if target_draw_no > max_draw + 1:
+            return {
+                "error": (
+                    f"미래 회차 예측 거부: target={target_draw_no}, "
+                    f"DB 최대={max_draw} (다음 회차={max_draw + 1}만 허용)"
+                )
+            }
 
     result = run_prediction(target_draw_no)
     return result

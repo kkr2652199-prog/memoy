@@ -5,7 +5,6 @@ from app.lotto.data_service import _get_draws_before, _user_message_fetch_all  #
 from app.lotto.predict_statistical import _statistical_predict  # noqa: F401
 from app.lotto.predict_llm import _llm_predict  # noqa: F401
 from app.lotto.predict_markov import _markov_predict  # noqa: F401
-from app.lotto.fusion import _hybrid_predict  # noqa: F401
 from app.lotto.engine import (  # noqa: F401
     ELITE_THRESHOLDS,
     _predictions_row_to_enriched,

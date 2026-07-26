@@ -8,13 +8,14 @@
 2026-04-20 Layer 5-A2: run_prediction/run_backtest brain_filter, 하이에나 입력 DB·신규 병합.
 """
 import logging
-import random
 from collections import Counter
 
 from app.lotto.data_service import _get_draws_before
+from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.feedback import _calculate_lottery_score
 from app.lotto.filters import tier1_filter
 from app.lotto.fusion import _vector_fusion_predict
+from app.lotto.honesty_flags import ENABLE_HYENA_BRAIN, USE_DETERMINISTIC_SET_BUILD
 from app.lotto.models import get_lotto_db, init_lotto_db
 from app.lotto.predict_llm import _llm_predict
 from app.lotto.predict_lstm import get_lstm_prob_vector
@@ -34,8 +35,6 @@ BRAIN_REGISTRY: list[tuple[str, str]] = [
 BRAIN_METHODS = [m for m, _ in BRAIN_REGISTRY]
 METHOD_TO_BRAIN_TAG: dict[str, str] = dict(BRAIN_REGISTRY)  # UI·디버그용: method -> brain_tag
 SETS_PER_BRAIN = 5  # 두뇌당 5세트 → 총 25세트 중 상위 5세트(응답) 최종 선별
-# miss_analysis·snake 유령 두뇌 — False면 run_prediction에서 신규 생성 중단(되돌리기 가능)
-ENABLE_SPECIAL_BRAINS = False
 ELITE_THRESHOLDS = {3: "엘리트", 4: "천재", 5: "전설", 6: "신"}
 
 
@@ -106,6 +105,29 @@ def _lstm_predict_sets(draws: list[dict], n_sets: int = 5) -> list[dict]:
     is_uniform = all(
         abs(lstm_vec.get(n, 0) - (1 / 45)) < 1e-6 for n in range(1, 46)
     )
+
+    if USE_DETERMINISTIC_SET_BUILD:
+
+        def _build_lstm(nums: list[int], prob_sum: float) -> dict:
+            confidence = round(min(prob_sum * 100 * 6, 99.9), 1)
+            return {
+                "nums": nums,
+                "confidence": confidence,
+                "reasoning": (
+                    f"LSTM딥러닝v2(결정론, {len(draws)}회차), "
+                    f"{'uniform fallback' if is_uniform else '정상추론'}, "
+                    f"prob_sum={prob_sum:.4f}"
+                ),
+            }
+
+        return build_weighted_topk_sets(
+            lstm_vec,
+            n_sets,
+            filter_fn=tier1_filter,
+            build_result=lambda nums, score: _build_lstm(nums, score),
+        )
+
+    import random
 
     results: list[dict] = []
     used: set[tuple[int, ...]] = set()
@@ -347,7 +369,7 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
         _delete_predictions_for_brain(conn, target_draw_no, tag)
         to_insert.extend(fresh_by_tag[tag])
 
-    hyena_should_run = (not bf) or ("hyena" in bf)
+    hyena_should_run = ENABLE_HYENA_BRAIN and ((not bf) or ("hyena" in bf))
     if hyena_should_run:
         if all(t in fresh_by_tag for t in _BASE_HYENA_SOURCE_TAGS):
             hyena_input: list[dict] = []
@@ -378,45 +400,6 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
                 )
         except Exception as e:  # noqa: BLE001
             logger.warning("[하이에나] skip: %s", e)
-
-    # ===== 특수부대: 미당첨분석 AI (ENABLE_SPECIAL_BRAINS=False 시 skip) =====
-    miss_should_run = ENABLE_SPECIAL_BRAINS and ((not bf) or ("miss_analysis" in bf))
-    if miss_should_run:
-        try:
-            from app.lotto.predict_missanalysis import miss_analysis_predict
-
-            _delete_predictions_for_brain(conn, target_draw_no, "miss_analysis")
-            miss_results = miss_analysis_predict(draws, SETS_PER_BRAIN)
-            if miss_results:
-                miss_tagged = [
-                    {**r, "method": "미당첨분석두뇌", "brain_tag": "miss_analysis", "rank": i + 1}
-                    for i, r in enumerate(miss_results)
-                ]
-                to_insert.extend(miss_tagged)
-                logger.info("[미당첨분석] %d세트 추가", len(miss_results))
-        except Exception as e:  # noqa: BLE001
-            logger.warning("[미당첨분석] skip: %s", e)
-
-    # ===== 특수부대: 뱀 AI (ENABLE_SPECIAL_BRAINS=False 시 skip) =====
-    snake_should_run = ENABLE_SPECIAL_BRAINS and ((not bf) or ("snake" in bf))
-    if snake_should_run:
-        try:
-            from app.lotto.predict_missanalysis import get_miss_analysis_prob_vector
-            from app.lotto.predict_snake import snake_predict_sets
-
-            _delete_predictions_for_brain(conn, target_draw_no, "snake")
-            miss_preds_for_snake = [p for p in to_insert if p.get("brain_tag") == "miss_analysis"]
-            miss_pmf = None
-            try:
-                miss_pmf = get_miss_analysis_prob_vector(draws)
-            except Exception:  # noqa: BLE001
-                pass
-            snake_results = snake_predict_sets(miss_preds_for_snake, miss_pmf, SETS_PER_BRAIN)
-            if snake_results:
-                to_insert.extend(snake_results)
-                logger.info("[뱀] %d세트 추가", len(snake_results))
-        except Exception as e:  # noqa: BLE001
-            logger.warning("[뱀] skip: %s", e)
 
     if not to_insert:
         conn.rollback()

@@ -5,7 +5,6 @@
 from __future__ import annotations
 
 import logging
-import random
 from itertools import combinations
 
 from app.lotto.feedback import _load_layer3_weights_5
@@ -190,34 +189,25 @@ def _build_sets_from_ranked(
         }
     )
 
-    # ----- 세트 2~5 -----
-    weights = [max(r[1], 1e-9) for r in top50]
+    # ----- 세트 2~5 (결정론: top50 순회) -----
     for k in range(2, n_sets + 1):
-        attempts = 0
         got: tuple[int, ...] | None = None
         tgot = 0.0
         bpass = False
-        while attempts < 30 and got is None:
-            attempts += 1
-            if not top50:
-                break
-            idxs = list(range(len(top50)))
-            pick = random.choices(
-                idxs, weights=weights[: len(top50)], k=1
-            )[0]
-            cmb, t = top50[pick]
+        for cmb, t in top50:
             if cmb in used:
                 continue
             nlist = list(cmb)
             if not tier1_filter(nlist):
                 continue
             got, tgot, bpass = cmb, t, False
+            break
         if got is None:
             for cmb, t in ranked[:5]:
                 if cmb in used:
                     continue
                 logger.warning(
-                    "하이에나: %d세트 30회 만료 → 상위5강제(필터 우회). combo=%s",
+                    "하이에나: %d세트 tier1 전부 실패 → 상위5강제(필터 우회). combo=%s",
                     k,
                     cmb,
                 )
@@ -234,16 +224,12 @@ def _build_sets_from_ranked(
                 "brain_tag": "hyena",
                 "method": "하이에나두뇌",
                 "confidence": _confidence_from_score(
-                    tgot, max_s, k, attempts, bpass
+                    tgot, max_s, k, 0, bpass
                 ),
                 "reasoning": (
                     f"하이에나 합의점수 상위 15후보, 합계 점수 {tgot:.2f}, "
-                    f"채택 {nbb}개 두뇌(세트{k})."
-                    + (
-                        f" (tier1_bypass, tries={attempts})"
-                        if bpass
-                        else f" (tries={attempts})"
-                    )
+                    f"채택 {nbb}개 두뇌(세트{k}, 결정론)."
+                    + (" (tier1_bypass)" if bpass else "")
                 ),
             }
         )

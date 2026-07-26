@@ -3,7 +3,13 @@ import logging
 import random
 from math import exp
 
+from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.filters import tier1_filter
+from app.lotto.honesty_flags import (
+    ENABLE_FEEDBACK_TRAP_HIT,
+    ENABLE_STAT_PAIR_LIVE_BOOST,
+    USE_DETERMINISTIC_SET_BUILD,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -68,19 +74,20 @@ def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
         freq[n] *= 1 + min(bonus, 0.5)
 
     # 피드백 반영
-    try:
-        from app.lotto.feedback import get_feedback_summary
+    if ENABLE_FEEDBACK_TRAP_HIT:
+        try:
+            from app.lotto.feedback import get_feedback_summary
 
-        fb = get_feedback_summary(last_n=20)
-        if fb.get("has_feedback"):
-            for trap_n in fb.get("frequent_traps", []):
-                if trap_n in freq:
-                    freq[trap_n] *= 0.8
-            for hit_n in fb.get("frequent_hits", []):
-                if hit_n in freq:
-                    freq[hit_n] *= 1.15
-    except Exception:
-        pass
+            fb = get_feedback_summary(last_n=20)
+            if fb.get("has_feedback"):
+                for trap_n in fb.get("frequent_traps", []):
+                    if trap_n in freq:
+                        freq[trap_n] *= 0.8
+                for hit_n in fb.get("frequent_hits", []):
+                    if hit_n in freq:
+                        freq[hit_n] *= 1.15
+        except Exception:
+            pass
 
     # 최종 정규화 (합계 정확히 1.0)
     total = sum(freq.values())
@@ -158,21 +165,60 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
     weights = {n: freq[n] / total for n in range(1, 46)}
 
     # ── 피드백 루프: 과거 적중/함정 패턴 반영 ──
-    try:
-        from app.lotto.feedback import get_feedback_summary
+    if ENABLE_FEEDBACK_TRAP_HIT:
+        try:
+            from app.lotto.feedback import get_feedback_summary
 
-        fb = get_feedback_summary(last_n=20)
-        if fb.get("has_feedback"):
-            # 함정 번호 가중치 20% 감소
-            for trap_n in fb.get("frequent_traps", []):
-                if trap_n in weights:
-                    weights[trap_n] *= 0.8
-            # 적중 번호 가중치 15% 증가
-            for hit_n in fb.get("frequent_hits", []):
-                if hit_n in weights:
-                    weights[hit_n] *= 1.15
-    except Exception as e:
-        logger.debug("피드백 반영 스킵: %s", e)
+            fb = get_feedback_summary(last_n=20)
+            if fb.get("has_feedback"):
+                for trap_n in fb.get("frequent_traps", []):
+                    if trap_n in weights:
+                        weights[trap_n] *= 0.8
+                for hit_n in fb.get("frequent_hits", []):
+                    if hit_n in weights:
+                        weights[hit_n] *= 1.15
+        except Exception as e:
+            logger.debug("피드백 반영 스킵: %s", e)
+
+    if USE_DETERMINISTIC_SET_BUILD:
+
+        def _build_stat(nums: list[int], _score: float) -> dict:
+            s = sum(nums)
+            odd_count = sum(1 for n in nums if n % 2 == 1)
+            ranges_hit = len({(n - 1) // 10 for n in nums})
+            consec = 1
+            max_consec = 1
+            for ci in range(1, len(nums)):
+                if nums[ci] == nums[ci - 1] + 1:
+                    consec += 1
+                    max_consec = max(max_consec, consec)
+                else:
+                    consec = 1
+            confidence = 50.0
+            if 100 <= s <= 175:
+                confidence += 15
+            if 2 <= odd_count <= 4:
+                confidence += 10
+            if ranges_hit >= 4:
+                confidence += 15
+            elif ranges_hit >= 3:
+                confidence += 8
+            avg_freq = sum(freq.get(n, 0) for n in nums) / 6
+            max_freq = max(freq.values()) if freq else 1
+            confidence += (avg_freq / max_freq) * 10
+            confidence = min(round(confidence, 1), 99.0)
+            return {
+                "nums": nums,
+                "confidence": confidence,
+                "reasoning": (
+                    f"1티어통계v6(결정론), 합계={s}, 홀{odd_count}짝{6 - odd_count}, "
+                    f"구간={ranges_hit}, 연속최대={max_consec}"
+                ),
+            }
+
+        return build_weighted_topk_sets(
+            weights, n_sets, filter_fn=tier1_filter, build_result=_build_stat
+        )
 
     results = []
     used_combos = set()
@@ -191,14 +237,12 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             pool.pop(idx)
             w.pop(idx)
 
-            # 동반출현 실시간 가중치 조정
-            # 방금 뽑은 번호와 자주 함께 나온 번호의 가중치를 올림
-            if pick_idx < 5:  # 마지막 번호 뽑은 후에는 불필요
+            if ENABLE_STAT_PAIR_LIVE_BOOST and pick_idx < 5:
                 for p_idx, p_num in enumerate(pool):
                     pair_key = (min(chosen, p_num), max(chosen, p_num))
                     p_count = pair_freq.get(pair_key, 0)
-                    if p_count >= 5:  # 최소 5회 이상 동반출현한 쌍만
-                        boost = 1 + min(p_count * 0.02, 0.4)  # 최대 40% 부스트
+                    if p_count >= 5:
+                        boost = 1 + min(p_count * 0.02, 0.4)
                         w[p_idx] *= boost
 
         nums.sort()

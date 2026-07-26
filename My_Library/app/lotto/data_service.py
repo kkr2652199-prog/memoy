@@ -570,16 +570,19 @@ def refresh_all_army_prediction_scores(target_draw_no: int) -> None:
     from app.lotto3.v12_models import maybe_update_v12_weights_after_scoring
 
     maybe_update_v12_weights_after_scoring(target_draw_no)
-    # 1군: N 당첨 확정 → N+1 예측 자동 생성 (6뇌+lead1, 멱등)
-    maybe_generate_army1_next_predictions(scored_draw_no=target_draw_no)
+    # 1군: N+1 자동 예측 (honesty_flags로 제어)
+    from app.lotto.honesty_flags import ENABLE_ARMY1_AUTO_NEXT_PRED, ENABLE_POSTMORTEM_HOOK
+
+    if ENABLE_ARMY1_AUTO_NEXT_PRED:
+        maybe_generate_army1_next_predictions(scored_draw_no=target_draw_no)
     # 2군: N 당첨 확정 → N+1 V11 예측 자동 생성 (7뇌×5, 멱등)
     maybe_generate_army2_next_predictions(scored_draw_no=target_draw_no)
     # 3군: N 당첨 확정 → N+1 V12 예측 자동 생성 (8뇌×5, 멱등)
     maybe_generate_army3_next_predictions(scored_draw_no=target_draw_no)
-    # PostMortem: N 회차 복기 UPSERT (lotto.db READ-ONLY, patterns.db만 WRITE)
-    from app.lotto.postmortem_engine import maybe_build_postmortem_after_scoring
+    if ENABLE_POSTMORTEM_HOOK:
+        from app.lotto.postmortem_engine import maybe_build_postmortem_after_scoring
 
-    maybe_build_postmortem_after_scoring(target_draw_no)
+        maybe_build_postmortem_after_scoring(target_draw_no)
 
 
 def backfill_unscored_army2_army3_predictions() -> dict:

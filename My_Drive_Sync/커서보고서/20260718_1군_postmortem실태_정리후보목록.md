@@ -132,21 +132,21 @@
 
 | # | 후보 항목 | 형 결정 |
 |---|----------|---------|
-| 1 | markov Random Walk 벡터 단계 난수 (`predict_markov.py:57-59,76`) | [ ] |
-| 2 | markov/stat/lstm/fusion2~5/hyena2~5 `random.choices` 조립 → top-k 결정론화 | [ ] |
-| 3 | `maybe_generate_army1_next_predictions` 자동 N+1 미래예측 (`data_service.py:263-358`) | [ ] |
-| 4 | `refresh_all_army_prediction_scores` 내 N+1·postmortem 연쇄 (`data_service.py:574-582`) | [ ] |
-| 5 | LLM 홀딩 슬롯 (`LOTTO_LLM_HOLD=True`, `predict_llm_client.py:11`) | [ ] |
-| 6 | LSTM uniform fallback 시 lstm 슬롯 유지 (`fusion.py:222-223`) | [ ] |
-| 7 | `_hybrid_predict` v4 데드 코드 (`fusion.py:22-136`) | [ ] |
-| 8 | miss_analysis/snake (`ENABLE_SPECIAL_BRAINS=False` 잔존 코드) | [ ] |
-| 9 | postmortem 자동 훅 (`data_service.py:579-582`) | [ ] |
-| 10 | postmortem_structure (훅 미연결, tools 전용) | [ ] |
-| 11 | feedback trap/hit 번호 가중 (stat/markov 이중 경로) | [ ] |
-| 12 | fusion entropy+cluster 이중 보정 | [ ] |
-| 13 | hyena 메타뇌 (fusion 산출물 재합의) | [ ] |
-| 14 | stat 샘플링 중 pair 실시간 boost (`predict_statistical.py:194-202`) | [ ] |
-| 15 | `POST /api/lotto/predict/{draw}` 미래 회차 허용 (`routes.py:241-248`) | [ ] |
+| 1 | markov Random Walk 벡터 단계 난수 (`predict_markov.py:57-59,76`) | **끄기** → 20260726 적용 |
+| 2 | markov/stat/lstm/fusion2~5/hyena2~5 `random.choices` 조립 → top-k 결정론화 | **끄기** → 20260726 적용 |
+| 3 | `maybe_generate_army1_next_predictions` 자동 N+1 미래예측 (`data_service.py:263-358`) | **끄기** → 20260726 적용 |
+| 4 | `refresh_all_army_prediction_scores` 내 N+1·postmortem 연쇄 (`data_service.py:574-582`) | **끄기** → 20260726 적용 |
+| 5 | LLM 홀딩 슬롯 (`LOTTO_LLM_HOLD=True`, `predict_llm_client.py:11`) | **유지** |
+| 6 | LSTM uniform fallback 시 lstm 슬롯 유지 (`fusion.py:222-223`) | **유지** |
+| 7 | `_hybrid_predict` v4 데드 코드 (`fusion.py:22-136`) | **삭제** → 20260726 적용 |
+| 8 | miss_analysis/snake (`ENABLE_SPECIAL_BRAINS=False` 잔존 코드) | **삭제** → 20260726 적용 |
+| 9 | postmortem 자동 훅 (`data_service.py:579-582`) | **끄기** → 20260726 적용 |
+| 10 | postmortem_structure (훅 미연결, tools 전용) | **유지** |
+| 11 | feedback trap/hit 번호 가중 (stat/markov 이중 경로) | **끄기** → 20260726 적용 |
+| 12 | fusion entropy+cluster 이중 보정 | **끄기**(cluster) → 20260726 적용 |
+| 13 | hyena 메타뇌 (fusion 산출물 재합의) | **끄기** → 20260726 적용 |
+| 14 | stat 샘플링 중 pair 실시간 boost (`predict_statistical.py:194-202`) | **끄기** → 20260726 적용 |
+| 15 | `POST /api/lotto/predict/{draw}` 미래 회차 허용 (`routes.py:241-248`) | **유지** (거부 wiring만, OFF) |
 
 ---
 
