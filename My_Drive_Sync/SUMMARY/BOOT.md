@@ -8,7 +8,7 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: BOUNDARY.md 확정 완료 (커밋 직후 해시 갱신)
+- 지금: BOUNDARY.md 확정 (커밋 `962b16a`)
 - 직전: 기억영속화 인프라 BOOT/FINDINGS/hooks (커밋 `0c4763c`)
 - 다음: F-A~F-H 형 ID 지시 대기
 
