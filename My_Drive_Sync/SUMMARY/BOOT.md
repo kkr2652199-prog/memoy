@@ -17,7 +17,7 @@
 MAX(draw_no)=1235 / PURCHASE_HOLD hidden={1236} / LLM_HOLD=True
 1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40(숨김)
 정직화+홀딩: `honesty_flags.py` — N+1 1·2·3군 OFF · postmortem·hyena OFF
-git HEAD: (push 후 갱신)
+git HEAD: `063b2e1`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
