@@ -9,7 +9,13 @@ router = APIRouter(prefix="/api/lotto2/v11", tags=["lotto2_v11"])
 
 @router.post("/predict/{target_draw_no}")
 async def api_predict_v11(target_draw_no: int):
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto2.v11_engine import run_prediction_v11
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        out = purchase_hold_hidden_response(target_draw_no)
+        out["error"] = out["message"]
+        return out
 
     return run_prediction_v11(target_draw_no)
 
@@ -93,7 +99,13 @@ async def api_v11_brain_elite_tags():
 @router.get("/predictions/draw/{target_draw_no}/tier-wins")
 async def api_v11_predictions_tier_wins(target_draw_no: int):
     """단일 회차: 1~5등 적중 예측 세트만 (읽기 전용, 2군 팝업용)."""
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto.routes import _tier_wins_items_from_rows
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        out = purchase_hold_hidden_response(target_draw_no)
+        out["items"] = []
+        return out
 
     from app.lotto2.models import get_lotto2_db
 
@@ -149,7 +161,11 @@ async def api_v11_predictions_tier_wins(target_draw_no: int):
 @router.get("/predictions/draw/{target_draw_no}")
 async def api_v11_predictions_for_draw(target_draw_no: int):
     """단일 회차의 v11 예측 전부(드롭다운·캐시 LIMIT로 과거 회차가 빠지는 문제 방지)."""
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto2.models import get_lotto2_db
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        return purchase_hold_hidden_response(target_draw_no)
 
     conn = get_lotto2_db()
     try:
@@ -190,7 +206,10 @@ async def api_v11_predictions(limit: int = 100):
             """,
             (limit,),
         ).fetchall()
-        return {"predictions": [dict(r) for r in rows]}
+        from app.lotto.honesty_flags import purchase_hold_blocks_draw
+
+        preds = [dict(r) for r in rows if not purchase_hold_blocks_draw(int(dict(r)["target_draw_no"]))]
+        return {"predictions": preds}
     finally:
         conn.close()
 

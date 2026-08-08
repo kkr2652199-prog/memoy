@@ -8,17 +8,16 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: GitHub+1군 정밀분석 · F-A~F-H CONFIRMED · F-I~F-L 신규
-- 직전: SUMMARY kweon 오염 발견 → memoy HEAD 복원
-- 다음: 형 ID 지시(예: F-E VERIFYING) 후 패치 · commit/push 대기
+- 지금: 구매 홀딩 · 1236 1~3군 UI/API 숨김 · 2·3군 N+1 OFF
+- 직전: GitHub+1군 정밀분석 · F-A~F-L · 기억109
+- 다음: 형 휴식 주간(구매 없음) · 홀딩 해제 시 honesty_flags 복원
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1234 (20260726 실측) / lead1=F1_V2_STRICT / LLM_HOLD=True
-실력축=stat·markov≈0.82 / lstm WF clean≈0.77 (DB 1.92는 누수, STEP1 보고서)
-가중치 실측: lstm33.5 · hyena25.4 · llm7.5 · stat5.1 · markov3.4 (last=1234)
-정직화: `honesty_flags.py` — top-k 결정론, N+1·postmortem·hyena OFF
-git HEAD: `c8cfefd`
+MAX(draw_no)=1235 / PURCHASE_HOLD hidden={1236} / LLM_HOLD=True
+1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40(숨김)
+정직화+홀딩: `honesty_flags.py` — N+1 1·2·3군 OFF · postmortem·hyena OFF
+git HEAD: (push 후 갱신)
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 

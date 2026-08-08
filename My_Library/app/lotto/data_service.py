@@ -575,10 +575,13 @@ def refresh_all_army_prediction_scores(target_draw_no: int) -> None:
 
     if ENABLE_ARMY1_AUTO_NEXT_PRED:
         maybe_generate_army1_next_predictions(scored_draw_no=target_draw_no)
-    # 2군: N 당첨 확정 → N+1 V11 예측 자동 생성 (7뇌×5, 멱등)
-    maybe_generate_army2_next_predictions(scored_draw_no=target_draw_no)
-    # 3군: N 당첨 확정 → N+1 V12 예측 자동 생성 (8뇌×5, 멱등)
-    maybe_generate_army3_next_predictions(scored_draw_no=target_draw_no)
+    # 2·3군 N+1 자동 예측 (honesty_flags로 제어)
+    from app.lotto.honesty_flags import ENABLE_ARMY2_AUTO_NEXT_PRED, ENABLE_ARMY3_AUTO_NEXT_PRED
+
+    if ENABLE_ARMY2_AUTO_NEXT_PRED:
+        maybe_generate_army2_next_predictions(scored_draw_no=target_draw_no)
+    if ENABLE_ARMY3_AUTO_NEXT_PRED:
+        maybe_generate_army3_next_predictions(scored_draw_no=target_draw_no)
     if ENABLE_POSTMORTEM_HOOK:
         from app.lotto.postmortem_engine import maybe_build_postmortem_after_scoring
 

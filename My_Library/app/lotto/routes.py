@@ -91,6 +91,14 @@ def _dashboard_hot_numbers(conn, last_draws: int = 50, top_n: int = 5) -> list[i
 # 데이터 수집
 # ═══════════════════════════════════════════
 
+@router.get("/purchase-hold")
+async def api_purchase_hold():
+    """구매 홀딩 상태 — 숨김 회차·자동예측 OFF 여부."""
+    from app.lotto.honesty_flags import purchase_hold_status
+
+    return purchase_hold_status()
+
+
 @router.get("/collection-hint")
 async def api_collection_hint():
     """DB 최대·다음 회차·예정 추첨일(자동) — 수집 전/후 안내."""
@@ -243,8 +251,17 @@ async def api_predict(target_draw_no: int):
     """특정 회차에 대한 두뇌 예측을 실행한다.
     컨닝 방지: target_draw_no 이전 데이터만 LLM에게 제공."""
     from app.lotto.engine import run_prediction
-    from app.lotto.honesty_flags import REJECT_FUTURE_DRAW_PREDICT
+    from app.lotto.honesty_flags import (
+        REJECT_FUTURE_DRAW_PREDICT,
+        purchase_hold_blocks_draw,
+        purchase_hold_hidden_response,
+    )
     from app.lotto.models import get_lotto_db
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        out = purchase_hold_hidden_response(target_draw_no)
+        out["error"] = out["message"]
+        return out
 
     if REJECT_FUTURE_DRAW_PREDICT:
         conn = get_lotto_db()
@@ -320,6 +337,13 @@ async def api_predictions_tier_wins(target_draw_no: int):
 
     집계 제외는 `/predictions/draw/{n}` 과 동일(`miss_analysis`, `snake`).
     """
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        out = purchase_hold_hidden_response(target_draw_no)
+        out["items"] = []
+        return out
+
     from app.lotto.models import get_lotto_db
 
     conn = get_lotto_db()
@@ -374,6 +398,11 @@ async def api_predictions_tier_wins(target_draw_no: int):
 @router.get("/predictions/draw/{target_draw_no}")
 async def api_predictions_for_draw(target_draw_no: int):
     """단일 회차의 기저 6뇌 예측 전부(드롭다운 선택 시 캐시 LIMIT·created_at 정렬로 과거 회차가 빠지는 문제 방지)."""
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
+
+    if purchase_hold_blocks_draw(target_draw_no):
+        return purchase_hold_hidden_response(target_draw_no)
+
     from app.lotto.models import get_lotto_db
 
     conn = get_lotto_db()
@@ -407,7 +436,10 @@ async def api_predictions(limit: int = 20):
         (limit,),
     ).fetchall()
     conn.close()
-    return {"predictions": [dict(r) for r in rows]}
+    from app.lotto.honesty_flags import purchase_hold_blocks_draw
+
+    preds = [dict(r) for r in rows if not purchase_hold_blocks_draw(int(dict(r)["target_draw_no"]))]
+    return {"predictions": preds}
 
 
 @router.get("/dashboard-summary")
