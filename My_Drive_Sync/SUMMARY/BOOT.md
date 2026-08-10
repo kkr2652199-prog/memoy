@@ -8,15 +8,15 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: 구매 홀딩 · 1236 1~3군 UI/API 숨김 · 2·3군 N+1 OFF
-- 직전: GitHub+1군 정밀분석 · F-A~F-L · 기억109
-- 다음: 형 휴식 주간(구매 없음) · 홀딩 해제 시 honesty_flags 복원
+- 지금: 구매 홀딩 **해제** (20260810) · 1236 1~3군 다시 표시
+- 직전: 홀딩 ON · 1236 숨김 · 2·3군 N+1 OFF
+- 다음: 서버 재시작 후 1236 UI 확인 · 1군 1236 예측 수동(0건)
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1235 / PURCHASE_HOLD hidden={1236} / LLM_HOLD=True
-1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40(숨김)
-정직화+홀딩: `honesty_flags.py` — N+1 1·2·3군 OFF · postmortem·hyena OFF
+MAX(draw_no)=1235 / PURCHASE_HOLD **OFF** / LLM_HOLD=True
+1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40
+정직화: `honesty_flags.py` — PURCHASE_HOLD OFF · N+1 2·3군 ON · 1군 OFF
 git HEAD: `063b2e1`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)

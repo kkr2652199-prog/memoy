@@ -31,14 +31,14 @@ ENABLE_STAT_PAIR_LIVE_BOOST = False
 # #15 POST /predict 미래 회차 — False=수동 허용(유지), True=거부
 REJECT_FUTURE_DRAW_PREDICT = False
 
-# ── 구매 홀딩 (형 휴식 주간 — 20260808) ─────────────────────────────
+# ── 구매 홀딩 (형 휴식 주간 — 20260808, 20260810 해제) ───────────────
 # True: HIDDEN_DRAWS 회차 번호를 UI/API에서 비표시 · POST /predict 차단
-PURCHASE_HOLD_ACTIVE = True
+PURCHASE_HOLD_ACTIVE = False
 PURCHASE_HOLD_HIDDEN_DRAWS: frozenset[int] = frozenset({1236})
 
 # 2·3군 N+1 자동 예측 (1군은 ENABLE_ARMY1_AUTO_NEXT_PRED)
-ENABLE_ARMY2_AUTO_NEXT_PRED = False
-ENABLE_ARMY3_AUTO_NEXT_PRED = False
+ENABLE_ARMY2_AUTO_NEXT_PRED = True
+ENABLE_ARMY3_AUTO_NEXT_PRED = True
 
 
 def purchase_hold_blocks_draw(draw_no: int) -> bool:
