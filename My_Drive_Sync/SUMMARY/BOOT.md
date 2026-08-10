@@ -17,7 +17,7 @@
 MAX(draw_no)=1235 / PURCHASE_HOLD **OFF** / LLM_HOLD=True
 1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40
 정직화: `honesty_flags.py` — PURCHASE_HOLD OFF · N+1 2·3군 ON · 1군 OFF
-git HEAD: `063b2e1`
+git HEAD: `875f942`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
