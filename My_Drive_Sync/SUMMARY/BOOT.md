@@ -8,16 +8,16 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: 구매 홀딩 **해제** (20260810) · 1236 1~3군 다시 표시
-- 직전: 홀딩 ON · 1236 숨김 · 2·3군 N+1 OFF
-- 다음: 서버 재시작 후 1236 UI 확인 · 1군 1236 예측 수동(0건)
+- 지금: 1군 1~3등 컨닝 정밀분석 — 181건 전부 백테 AFTER · 실전 1232~1235는 0건
+- 직전: 구매 홀딩 해제 (20260810) · 1236 표시
+- 다음: 2·3군 동일 프로토콜은 형 지시 시 · F-A~F-L 패치 대기
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1235 / PURCHASE_HOLD **OFF** / LLM_HOLD=True
-1235 예측: 1군35 · 2군35 · 3군40 / 1236 DB: 1군0 · 2군35 · 3군40
-정직화: `honesty_flags.py` — PURCHASE_HOLD OFF · N+1 2·3군 ON · 1군 OFF
-git HEAD: `875f942`
+MAX(draw_no)=1236 / PURCHASE_HOLD OFF / LSTM ckpt last_trained_on=1226
+1군 1~3등 181건(1등10/2등3/3등168) 전부 created 2026-04~07 · 실전 1~3등 0
+정직축 stat/markov 1~3등 0 · 1등은 fusion7+hyena2+lstm1만
+git HEAD: (push 후 갱신)
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
