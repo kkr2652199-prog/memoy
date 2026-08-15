@@ -9,7 +9,7 @@
 |------|-----|
 | SSOT (1~3군) | **kkr2652199-prog/memoy** · main |
 | MAX(draw_no) | **1236** (lotto.db 20260815 실측) |
-| 구매 홀딩 | OFF |
+| 구매 홀딩 | **ON** · 1237 · 1·3군만 (2군 표시) |
 | 1군 1~3등 | **181건 전부 백테 AFTER** · 실전 1232~1235 **0건** |
 | LSTM ckpt | last_trained_on=**1226** (누수 잔존) |
 | FINDINGS | F-A~F-L OPEN |
@@ -17,6 +17,11 @@
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260815 1·3군 1237 구매홀딩
+- `PURCHASE_HOLD_ACTIVE=True` · hidden **1237** · armies **1·3** (2군 제외)
+- 3군 N+1 auto OFF · 2군 auto ON
+- 보고서: `커서보고서/20260815_1·3군_구매홀딩_1237숨김.md`
 
 ## ★ 20260815 설계의도 vs 최근10회 브리핑
 - 설계: 당첨확인→패턴→학습→진화. 뼈대는 있음. 학습·진화 칸 오염/OFF

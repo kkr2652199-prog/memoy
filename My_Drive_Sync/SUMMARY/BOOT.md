@@ -8,13 +8,13 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: 설계의도(확인→분석→학습→진화) vs 최근10회+ 안맞음 브리핑
-- 직전: 손댈순서 1순위 ckpt·가중치·캐시
-- 다음: 학습루프 복원 전 거짓재료 제거 · 형 ID 대기
+- 지금: 1·3군 1237 구매홀딩 ON · 2군은 표시
+- 직전: 설계의도 vs 최근10회 브리핑
+- 다음: 서버 재시작 후 1·3군 1237 미표시 확인
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1236 / PURCHASE_HOLD OFF / LSTM ckpt last_trained_on=1226
+MAX(draw_no)=1236 / PURCHASE_HOLD ON hidden=1237 armies=1·3 / LSTM ckpt 1226
 1군 1~3등 181건(1등10/2등3/3등168) 전부 created 2026-04~07 · 실전 1~3등 0
 정직축 stat/markov 1~3등 0 · 1등은 fusion7+hyena2+lstm1만
 git HEAD: `2a0f497`

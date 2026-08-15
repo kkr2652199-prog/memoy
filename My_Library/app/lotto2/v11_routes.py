@@ -12,7 +12,7 @@ async def api_predict_v11(target_draw_no: int):
     from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto2.v11_engine import run_prediction_v11
 
-    if purchase_hold_blocks_draw(target_draw_no):
+    if purchase_hold_blocks_draw(target_draw_no, army=2):
         out = purchase_hold_hidden_response(target_draw_no)
         out["error"] = out["message"]
         return out
@@ -102,7 +102,7 @@ async def api_v11_predictions_tier_wins(target_draw_no: int):
     from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto.routes import _tier_wins_items_from_rows
 
-    if purchase_hold_blocks_draw(target_draw_no):
+    if purchase_hold_blocks_draw(target_draw_no, army=2):
         out = purchase_hold_hidden_response(target_draw_no)
         out["items"] = []
         return out
@@ -164,7 +164,7 @@ async def api_v11_predictions_for_draw(target_draw_no: int):
     from app.lotto.honesty_flags import purchase_hold_blocks_draw, purchase_hold_hidden_response
     from app.lotto2.models import get_lotto2_db
 
-    if purchase_hold_blocks_draw(target_draw_no):
+    if purchase_hold_blocks_draw(target_draw_no, army=2):
         return purchase_hold_hidden_response(target_draw_no)
 
     conn = get_lotto2_db()
@@ -208,7 +208,7 @@ async def api_v11_predictions(limit: int = 100):
         ).fetchall()
         from app.lotto.honesty_flags import purchase_hold_blocks_draw
 
-        preds = [dict(r) for r in rows if not purchase_hold_blocks_draw(int(dict(r)["target_draw_no"]))]
+        preds = [dict(r) for r in rows if not purchase_hold_blocks_draw(int(dict(r)["target_draw_no"]), army=2)]
         return {"predictions": preds}
     finally:
         conn.close()
