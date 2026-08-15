@@ -17,7 +17,7 @@
 MAX(draw_no)=1236 / PURCHASE_HOLD OFF / LSTM ckpt last_trained_on=1226
 1군 1~3등 181건(1등10/2등3/3등168) 전부 created 2026-04~07 · 실전 1~3등 0
 정직축 stat/markov 1~3등 0 · 1등은 fusion7+hyena2+lstm1만
-git HEAD: (push 후 갱신)
+git HEAD: `2a0f497`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
