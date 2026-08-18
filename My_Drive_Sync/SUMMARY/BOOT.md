@@ -8,13 +8,13 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: 1·2·3군 1237 구매홀딩 ON (2군도 숨김)
-- 직전: 1·3군만 1237 홀딩
-- 다음: 서버 재시작 후 전군 1237 미표시 확인
+- 지금: 1·2·3군 구매홀딩 OFF (1237 표시 복원)
+- 직전: 1·2·3군 1237 홀딩 ON
+- 다음: 형 UI 확인. 1군 1237은 DB 0건(수동 predict 여부 형 결정)
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1236 / PURCHASE_HOLD ON hidden=1237 armies=1·2·3 / LSTM ckpt 1226
+MAX(draw_no)=1237 / PURCHASE_HOLD OFF / LSTM ckpt 1226 (20260815 기록)
 1군 1~3등 181건(1등10/2등3/3등168) 전부 created 2026-04~07 · 실전 1~3등 0
 정직축 stat/markov 1~3등 0 · 1등은 fusion7+hyena2+lstm1만
 git HEAD: `2a0f497`
