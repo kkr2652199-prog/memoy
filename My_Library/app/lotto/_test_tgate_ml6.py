@@ -154,6 +154,38 @@ def test_ff_uniform_pool_not_1_to_18() -> None:
     assert max(union) >= 19, sorted(union)
 
 
+def test_fg_stat_single_pmf() -> None:
+    import inspect
+
+    from app.lotto.predict_statistical import (
+        _statistical_predict,
+        get_statistical_prob_vector,
+    )
+
+    src = inspect.getsource(_statistical_predict)
+    assert "get_statistical_prob_vector" in src
+    assert "recency_weight" not in src
+    draws = []
+    for i in range(40):
+        nums = [(i + k) % 45 + 1 for k in range(6)]
+        draws.append(
+            {
+                "draw_no": i + 1,
+                "num1": nums[0],
+                "num2": nums[1],
+                "num3": nums[2],
+                "num4": nums[3],
+                "num5": nums[4],
+                "num6": nums[5],
+            }
+        )
+    vec = get_statistical_prob_vector(draws)
+    assert abs(sum(vec.values()) - 1.0) < 1e-9
+    assert set(vec) == set(range(1, 46))
+    sets = _statistical_predict(draws, 5)
+    assert len(sets) == 5
+
+
 if __name__ == "__main__":
     test_future_ckpt_rejected()
     test_never_shrink_official_ckpt()
@@ -168,4 +200,5 @@ if __name__ == "__main__":
     test_fb_entropy_boosts_peak()
     test_fa_uniform_confidence_50()
     test_ff_uniform_pool_not_1_to_18()
+    test_fg_stat_single_pmf()
     print("T-GATE-ML6 unit OK")

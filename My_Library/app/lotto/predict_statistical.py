@@ -1,4 +1,7 @@
-"""로또 통계 두뇌 예측 — app.lotto 독립 패키지."""
+"""로또 통계 두뇌 예측 — app.lotto 독립 패키지.
+
+F-G: 빈도·PMF는 한 경로. 피드백은 정규화 전 freq에만 적용.
+"""
 import logging
 import random
 from math import exp
@@ -14,21 +17,18 @@ from app.lotto.honesty_flags import (
 
 logger = logging.getLogger(__name__)
 
+_NUM_KEYS = ("num1", "num2", "num3", "num4", "num5", "num6")
 
-def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
-    """통계 두뇌의 1~45 확률 벡터를 반환한다.
-    _statistical_predict 내부의 weights 계산 로직과 동일.
-    반환: {1: 0.025, 2: 0.018, ..., 45: 0.031} (합계 1.0)
-    """
-    from math import exp
 
+def _stat_raw_freq(draws: list[dict]) -> tuple[dict[int, float], dict[tuple[int, int], int]]:
+    """지수감쇠 빈도 + overdue/hot/pair 보너스. 피드백·정규화 전."""
     freq: dict[int, float] = {}
     last_seen: dict[int, int] = {}
     total_draws = len(draws)
 
     for idx, d in enumerate(draws):
         recency_weight = exp(-0.02 * (total_draws - 1 - idx))
-        for k in ["num1", "num2", "num3", "num4", "num5", "num6"]:
+        for k in _NUM_KEYS:
             n = d[k]
             freq[n] = freq.get(n, 0.0) + recency_weight
             last_seen[n] = d["draw_no"]
@@ -50,7 +50,7 @@ def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
     recent_5 = draws[-5:] if len(draws) >= 5 else draws
     hot_count: dict[int, int] = {}
     for d in recent_5:
-        for k in ["num1", "num2", "num3", "num4", "num5", "num6"]:
+        for k in _NUM_KEYS:
             n = d[k]
             hot_count[n] = hot_count.get(n, 0) + 1
     for n, cnt in hot_count.items():
@@ -60,7 +60,7 @@ def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
     recent_for_pairs = draws[-200:] if len(draws) >= 200 else draws
     pair_freq: dict[tuple[int, int], int] = {}
     for d in recent_for_pairs:
-        nums_in_draw = sorted([d["num1"], d["num2"], d["num3"], d["num4"], d["num5"], d["num6"]])
+        nums_in_draw = sorted([d[k] for k in _NUM_KEYS])
         for i in range(len(nums_in_draw)):
             for j in range(i + 1, len(nums_in_draw)):
                 pair = (nums_in_draw[i], nums_in_draw[j])
@@ -74,112 +74,55 @@ def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
     for n, bonus in pair_bonus_nums.items():
         freq[n] *= 1 + min(bonus, 0.5)
 
-    # 피드백 반영
-    if ENABLE_FEEDBACK_TRAP_HIT:
-        try:
-            from app.lotto.feedback import get_feedback_summary
+    return freq, pair_freq
 
-            fb = get_feedback_summary(last_n=20)
-            if fb.get("has_feedback"):
-                for trap_n in fb.get("frequent_traps", []):
-                    if trap_n in freq:
-                        freq[trap_n] *= 0.8
-                for hit_n in fb.get("frequent_hits", []):
-                    if hit_n in freq:
-                        freq[hit_n] *= 1.15
-        except Exception:
-            pass
 
-    # 최종 정규화 (합계 정확히 1.0)
+def _apply_stat_feedback_on_freq(freq: dict[int, float]) -> dict[int, float]:
+    """trap/hit은 정규화 전 freq에만. 벡터·예측이 같은 시점 (F-G)."""
+    out = dict(freq)
+    if not ENABLE_FEEDBACK_TRAP_HIT:
+        return out
+    try:
+        from app.lotto.feedback import get_feedback_summary
+
+        fb = get_feedback_summary(last_n=20)
+        if fb.get("has_feedback"):
+            for trap_n in fb.get("frequent_traps", []):
+                if trap_n in out:
+                    out[trap_n] *= 0.8
+            for hit_n in fb.get("frequent_hits", []):
+                if hit_n in out:
+                    out[hit_n] *= 1.15
+    except Exception as e:  # noqa: BLE001
+        logger.debug("피드백 반영 스킵: %s", e)
+    return out
+
+
+def _normalize_pmf(freq: dict[int, float]) -> dict[int, float]:
     total = sum(freq.values())
+    if total <= 0:
+        return {n: 1.0 / 45 for n in range(1, 46)}
     return {n: freq[n] / total for n in range(1, 46)}
 
 
+def _stat_pmf(draws: list[dict]) -> dict[int, float]:
+    if not draws:
+        return {n: 1.0 / 45 for n in range(1, 46)}
+    freq, _ = _stat_raw_freq(draws)
+    return _normalize_pmf(_apply_stat_feedback_on_freq(freq))
+
+
+def get_statistical_prob_vector(draws: list[dict]) -> dict[int, float]:
+    """통계 두뇌의 1~45 확률 벡터. _statistical_predict와 동일 PMF."""
+    return _stat_pmf(draws)
+
+
 def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
-    """통계 두뇌: 빈도·구간·홀짝·합계 기반 확률 가중 선택."""
+    """통계 두뇌: get_statistical_prob_vector와 같은 PMF로 세트 조립."""
     if not draws:
         return []
 
-    # ── 1티어 가중 빈도 (Exponential Decay + Hot/Cold/Overdue) ──
-    freq: dict[int, float] = {}  # 번호별 가중 빈도
-    last_seen: dict[int, int] = {}  # 번호별 마지막 출현 회차
-    total_draws = len(draws)
-
-    for idx, d in enumerate(draws):
-        # 지수 감쇠: 최근일수록 높은 가중치 (오래된=idx 0, 최신=idx total_draws-1)
-        recency_weight = exp(-0.02 * (total_draws - 1 - idx))
-
-        for k in ["num1", "num2", "num3", "num4", "num5", "num6"]:
-            n = d[k]
-            freq[n] = freq.get(n, 0.0) + recency_weight
-            last_seen[n] = d["draw_no"]
-
-    # 모든 번호 1~45 초기화
-    for n in range(1, 46):
-        if n not in freq:
-            freq[n] = 0.1  # 한 번도 안 나온 번호도 최소값
-        if n not in last_seen:
-            last_seen[n] = 0
-
-    # Overdue 보너스: 오래 안 나온 번호에 추가 가중치
-    latest_draw_no = draws[-1]["draw_no"] if draws else 0
-    for n in range(1, 46):
-        gap = latest_draw_no - last_seen[n]
-        if gap >= 50:
-            freq[n] *= 1.3  # 50회 이상 미출현: 30% 보너스
-        elif gap >= 30:
-            freq[n] *= 1.15  # 30회 이상 미출현: 15% 보너스
-
-    # Hot streak 보너스: 최근 5회 중 2회 이상 나온 번호
-    recent_5 = draws[-5:] if len(draws) >= 5 else draws
-    hot_count: dict[int, int] = {}
-    for d in recent_5:
-        for k in ["num1", "num2", "num3", "num4", "num5", "num6"]:
-            n = d[k]
-            hot_count[n] = hot_count.get(n, 0) + 1
-    for n, cnt in hot_count.items():
-        if cnt >= 2:
-            freq[n] *= 1.2  # 최근 5회 중 2회 이상: 20% 보너스
-
-    # ── 동반출현 쌍 보너스 ──
-    # 최근 200회에서 자주 같이 나온 쌍의 번호에 추가 가중치
-    recent_for_pairs = draws[-200:] if len(draws) >= 200 else draws
-    pair_freq: dict[tuple[int, int], int] = {}
-    for d in recent_for_pairs:
-        nums_in_draw = sorted([d["num1"], d["num2"], d["num3"], d["num4"], d["num5"], d["num6"]])
-        for i in range(len(nums_in_draw)):
-            for j in range(i + 1, len(nums_in_draw)):
-                pair = (nums_in_draw[i], nums_in_draw[j])
-                pair_freq[pair] = pair_freq.get(pair, 0) + 1
-    # 상위 30개 쌍에 포함된 번호에 보너스
-    top_pairs = sorted(pair_freq.items(), key=lambda x: x[1], reverse=True)[:30]
-    pair_bonus_nums: dict[int, float] = {}
-    for (a, b), cnt in top_pairs:
-        bonus = 0.05 * cnt  # 출현 횟수에 비례한 보너스
-        pair_bonus_nums[a] = pair_bonus_nums.get(a, 0) + bonus
-        pair_bonus_nums[b] = pair_bonus_nums.get(b, 0) + bonus
-    for n, bonus in pair_bonus_nums.items():
-        freq[n] *= 1 + min(bonus, 0.5)  # 최대 50% 보너스 상한
-
-    # 가중 확률 계산
-    total = sum(freq.values())
-    weights = {n: freq[n] / total for n in range(1, 46)}
-
-    # ── 피드백 루프: 과거 적중/함정 패턴 반영 ──
-    if ENABLE_FEEDBACK_TRAP_HIT:
-        try:
-            from app.lotto.feedback import get_feedback_summary
-
-            fb = get_feedback_summary(last_n=20)
-            if fb.get("has_feedback"):
-                for trap_n in fb.get("frequent_traps", []):
-                    if trap_n in weights:
-                        weights[trap_n] *= 0.8
-                for hit_n in fb.get("frequent_hits", []):
-                    if hit_n in weights:
-                        weights[hit_n] *= 1.15
-        except Exception as e:
-            logger.debug("피드백 반영 스킵: %s", e)
+    weights = get_statistical_prob_vector(draws)
 
     if USE_DETERMINISTIC_SET_BUILD:
 
@@ -209,6 +152,7 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             weights, n_sets, filter_fn=tier1_filter, build_result=_build_stat
         )
 
+    freq, pair_freq = _stat_raw_freq(draws)
     results = []
     used_combos = set()
     attempts = 0
@@ -236,11 +180,9 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
 
         nums.sort()
 
-        # ── 1티어 조합 필터: 과거 패턴에 벗어나는 조합 제거 ──
         s = sum(nums)
         odd_count = sum(1 for n in nums if n % 2 == 1)
         ranges_hit = len({(n - 1) // 10 for n in nums})
-        # 연속번호 개수 (예: [3,4,5] → 연속 3개)
         consec = 1
         max_consec = 1
         for ci in range(1, len(nums)):
@@ -258,7 +200,6 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             continue
         used_combos.add(key)
 
-        # 신뢰도: 합계 범위(100~175) + 홀짝 균형(2:4~4:2) + 구간 분산
         confidence = 50.0
         if 100 <= s <= 175:
             confidence += 15
@@ -268,7 +209,6 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             confidence += 15
         elif ranges_hit >= 3:
             confidence += 8
-        # 빈도 점수
         avg_freq = sum(freq.get(n, 0) for n in nums) / 6
         max_freq = max(freq.values()) if freq else 1
         confidence += (avg_freq / max_freq) * 10
@@ -279,7 +219,10 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             {
                 "nums": nums,
                 "confidence": confidence,
-                "reasoning": f"1티어통계v5(피드백반영), 합계={s}, 홀{odd_count}짝{6 - odd_count}, 구간{ranges_hit}, 연속최대{max_consec}",
+                "reasoning": (
+                    f"1티어통계v5(피드백반영), 합계={s}, 홀{odd_count}짝{6 - odd_count}, "
+                    f"구간{ranges_hit}, 연속최대{max_consec}"
+                ),
             }
         )
 
