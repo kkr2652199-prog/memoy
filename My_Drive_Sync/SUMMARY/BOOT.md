@@ -17,7 +17,7 @@
 MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 백테는 T-GATE 행만 채점 (구캐시 건너뛰기 금지)
 1군 아카이브 1등 10건 유지. tgate_rows=0 (전회차 백테 아직 안 함)
 HOLD fallback=llm_fallback · hyena는 준비판정에서 제외
-git HEAD: `(commit 후 갱신)`
+git HEAD: `6391def`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
