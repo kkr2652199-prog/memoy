@@ -6,13 +6,13 @@
 | F-B | OPEN | 1군 | predict_entropy.py | entropy_factor 부호 반전. p<1/e 구간에서 e=-p*log2p는 p에 단조증가 → 강자 -15%, 약자 +14%. docstring과 정반대. |
 | F-C | OPEN | 1군 | deterministic_sets.py | top-k 상위 n개는 서로 번호 1개만 다름 → 5세트 union 7~8개로 붕괴. lead1 _wheel_pick 방식 이식 검토. |
 | F-D | OPEN | 1군 | engine.py+predict_brain7.py | LLM_HOLD 시 fallback 세트를 brain_tag='llm'로 INSERT → _union_presence가 stat과 별개 뇌로 계수, 합의 k 부풀림 + brain_weights 오염. |
-| F-E | OPEN | 1군 | feedback.py | update_brain_weights eta=1.5로 노이즈 0.1이 16% 차이로 증폭. lotto_brain_weights에 누수기 오염값 잔존 가능(플래그로 안 꺼짐). SEED_WEIGHTS도 llm2.5/lstm2.0 > stat1.5/markov1.0 으로 STEP1 결론과 역행. |
+| F-E | PATCHED | 1군 | feedback.py | 20260903 T-GATE-ML6: SEED stat2.0>lstm1.0, η=0.3, Hedge는 추첨전 생성만, 가중치 시드 리셋. |
 | F-F | OPEN | 1군 | engine.py _lstm_predict_sets | uniform 시 tiebreak가 번호순 → pool=1~18 고정, 매번 동일 저번호 조합. 결정론화로 오히려 악화. |
 | F-G | OPEN | 1군 | predict_statistical.py | get_statistical_prob_vector와 _statistical_predict 로직 복붙 이중화. 피드백 적용 시점(정규화 전/후)이 이미 갈라짐. |
-| F-H | OPEN | 1군 | 다수 | run_backtest가 운영 가중치 변경(측정에 부작용) / pool_size 18·20·25 근거없음 / tier1 합계와 confidence 합계보너스 이중계산 / miss_analysis·snake 삭제됐으나 NOT IN 잔존 / run_prediction 캐시로 과거회차는 구버전 랜덤결과 반환. |
+| F-H | OPEN | 1군 | 다수 | **백테→가중치 덮기 PATCHED (ENABLE_BACKTEST_WEIGHT_UPDATE=False).** 잔여: 캐시 구버전 반환 / pool_size / tier1 이중계산. |
 | F-I | OPEN | 1군 | data_service.py | hyena OFF인데 `_ARMY1_AUTO_SIX`에 hyena 포함 → `_army1_predictions_ready`가 hyena 5세트 필수. N+1 OFF여도 readiness 판정 왜곡. |
 | F-J | OPEN | 1군 | engine.py | 캐시 path top5는 ORDER BY confidence 전체, fresh는 NOT IN(miss/snake). DB 잔존 시 경로별 top5 불일치. |
-| F-K | OPEN | 1군 | engine.py run_backtest | best_match 조회에 brain_tag 필터 없음 → 잔존 miss_analysis/snake가 백테스트 성적 부풀림 가능. |
+| F-K | PATCHED | 1군 | engine.py run_backtest | 20260903 best_match에 miss/snake NOT IN 추가. |
 | F-L | OPEN | 운영 | BOOT/STATUS | MAX(draw_no) 문서 1232 vs lotto.db 실측 1234. brain_weights last_updated=1234 미반영. |
 
 > 20260726 코드 재검증: F-A~F-H 전부 CONFIRMED (F-H tier1 이중계산만 PARTIAL). 보고서 `20260726_1군_GitHub진행_정밀분석_문제점.md`

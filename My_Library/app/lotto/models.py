@@ -87,11 +87,11 @@ def init_lotto_db():
 
     # 브레인 가중치 초기 시드 (최초 1회만)
     seeds = [
-        ("stat", 1.5),
-        ("markov", 1.0),
-        ("llm", 2.5),
-        ("lstm", 2.0),
-        ("hyena", 1.0),
+        ("stat", 2.0),
+        ("markov", 1.5),
+        ("llm", 0.5),
+        ("lstm", 1.0),
+        ("hyena", 0.5),
     ]
     for brain_tag, weight in seeds:
         conn.execute(

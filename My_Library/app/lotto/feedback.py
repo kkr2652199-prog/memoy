@@ -15,12 +15,13 @@ from app.lotto.models import get_lotto_db
 logger = logging.getLogger(__name__)
 
 # init_lotto_db 시드와 동일 (lotto_brain_weights 기본값; fusion fallback은 4뇌만 사용)
+# 정직축 시드 (STEP1: stat/markov ≈ 랜덤 소폭 우위). llm HOLD·hyena OFF라 낮게.
 SEED_WEIGHTS: dict[str, float] = {
-    "stat": 1.5,
-    "markov": 1.0,
-    "llm": 2.5,
-    "lstm": 2.0,
-    "hyena": 1.0,
+    "stat": 2.0,
+    "markov": 1.5,
+    "llm": 0.5,
+    "lstm": 1.0,
+    "hyena": 0.5,
 }
 # fusion.py 등: 4뇌만 (hyena 제외). _load_brain_weights_from_db 검증/반환에 사용 — LAYER3와 독립.
 _FUSION_DB_BRAIN_TAGS: tuple[str, ...] = ("stat", "markov", "llm", "lstm")
@@ -274,7 +275,17 @@ def _calculate_lottery_score(matched_count: int, bonus_matched: int) -> int:
     return 0
 
 
-def get_brain_tag_ranking(last_n: int = 50, max_draw_no: int | None = None) -> dict:
+_LIVE_BEFORE_DRAW_SQL = (
+    "datetime(p.created_at) < datetime(d.draw_date || ' 20:45:00')"
+)
+
+
+def get_brain_tag_ranking(
+    last_n: int = 50,
+    max_draw_no: int | None = None,
+    *,
+    live_only: bool | None = None,
+) -> dict:
     """
     brain_tag별 성적 집계 — Layer 3 동적 가중치 전용.
     lotto_predictions 테이블을 직접 집계 (JSON 우회).
@@ -301,24 +312,36 @@ def get_brain_tag_ranking(last_n: int = 50, max_draw_no: int | None = None) -> d
             'scored_draws': int,
         }
     """
+    from app.lotto.honesty_flags import ENABLE_HEDGE_LIVE_ONLY
     from app.lotto.models import get_lotto_db
 
+    use_live = ENABLE_HEDGE_LIVE_ONLY if live_only is None else live_only
     conn = get_lotto_db()
     try:
-        # 최근 N개 채점된 target_draw_no (컨닝 방지: matched_count >= 0만)
+        live_join = ""
+        live_and = ""
+        if use_live:
+            live_join = "JOIN lotto_draws d ON d.draw_no = p.target_draw_no"
+            live_and = f"AND {_LIVE_BEFORE_DRAW_SQL}"
+        exclude = "AND p.brain_tag NOT IN ('miss_analysis','snake')"
+
         if max_draw_no is not None:
             recent_targets = conn.execute(
-                """SELECT DISTINCT target_draw_no FROM lotto_predictions
-                   WHERE matched_count >= 0 AND target_draw_no <= ?
-                   ORDER BY target_draw_no DESC
+                f"""SELECT DISTINCT p.target_draw_no FROM lotto_predictions p
+                   {live_join}
+                   WHERE p.matched_count >= 0 AND p.target_draw_no <= ?
+                   {live_and} {exclude}
+                   ORDER BY p.target_draw_no DESC
                    LIMIT ?""",
                 (max_draw_no, last_n),
             ).fetchall()
         else:
             recent_targets = conn.execute(
-                """SELECT DISTINCT target_draw_no FROM lotto_predictions
-                   WHERE matched_count >= 0
-                   ORDER BY target_draw_no DESC
+                f"""SELECT DISTINCT p.target_draw_no FROM lotto_predictions p
+                   {live_join}
+                   WHERE p.matched_count >= 0
+                   {live_and} {exclude}
+                   ORDER BY p.target_draw_no DESC
                    LIMIT ?""",
                 (last_n,),
             ).fetchall()
@@ -330,10 +353,13 @@ def get_brain_tag_ranking(last_n: int = 50, max_draw_no: int | None = None) -> d
         placeholders = ",".join(["?"] * len(target_ids))
 
         rows = conn.execute(
-            f"""SELECT brain_tag, matched_count, bonus_matched
-                FROM lotto_predictions
-                WHERE target_draw_no IN ({placeholders})
-                  AND matched_count >= 0""",
+            f"""SELECT p.brain_tag, p.matched_count, p.bonus_matched
+                FROM lotto_predictions p
+                {"JOIN lotto_draws d ON d.draw_no = p.target_draw_no" if use_live else ""}
+                WHERE p.target_draw_no IN ({placeholders})
+                  AND p.matched_count >= 0
+                  {exclude}
+                  {live_and}""",
             target_ids,
         ).fetchall()
 
@@ -396,10 +422,30 @@ def get_brain_tag_ranking(last_n: int = 50, max_draw_no: int | None = None) -> d
         conn.close()
 
 
+def reset_brain_weights_to_seed() -> dict:
+    """운영 가중치를 T-GATE-ML6 시드로 되돌린다 (누수 Hedge 잔상 제거)."""
+    conn = get_lotto_db()
+    try:
+        for bt, w in SEED_WEIGHTS.items():
+            conn.execute(
+                """UPDATE lotto_brain_weights
+                   SET current_weight = ?,
+                       recent_avg_match = 0,
+                       last_updated_draw = 0,
+                       updated_at = datetime('now', 'localtime')
+                   WHERE brain_tag = ?""",
+                (float(w), bt),
+            )
+        conn.commit()
+        return {"reset": True, "weights": dict(SEED_WEIGHTS)}
+    finally:
+        conn.close()
+
+
 def update_brain_weights(
     target_draw_no: int,
     last_n: int = 50,
-    eta: float = 1.5,
+    eta: float | None = None,
     min_scored_draws: int = 10,
     *,
     force: bool = False,
@@ -413,6 +459,10 @@ def update_brain_weights(
     컨닝 방지: target_draw_no 이하 채점 데이터만 사용(max_draw_no=target_draw_no).
     멱등성: last_updated_draw >= target_draw_no 이면 skip(force=True 시 재갱신).
     """
+    from app.lotto.honesty_flags import HEDGE_ETA
+
+    if eta is None:
+        eta = HEDGE_ETA
     try:
         conn_chk = get_lotto_db()
         try:
@@ -526,7 +576,7 @@ def maybe_update_brain_weights_after_scoring(target_draw_no: int) -> dict:
         conn.close()
 
     result = update_brain_weights(
-        target_draw_no, last_n=50, eta=1.5, min_scored_draws=10,
+        target_draw_no, last_n=50, min_scored_draws=10,
     )
     if result.get("updated"):
         logger.info(

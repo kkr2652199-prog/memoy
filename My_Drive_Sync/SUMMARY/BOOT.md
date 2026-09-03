@@ -8,20 +8,20 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: 1군 뇌프로세스 정밀분석 (랜덤아님·181 AFTER·ckpt누수)
-- 직전: 1·2·3군 구매홀딩 OFF (1237 표시 복원)
-- 다음: 형 지시 시 「LSTM ckpt VERIFYING」부터 (패치 대기)
+- 지금: T-GATE-ML6 순번1~3 패치 (LSTM게이트·가중치시드·백테차단)
+- 직전: 1군 뇌프로세스 정밀분석
+- 다음: 순번4 캐시 분리 (F-H 잔여)
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1239 / PURCHASE_HOLD OFF / LSTM ckpt 1226 / 1~3등 181 AFTER·실전0
+MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 가중치 시드 stat2.0>lstm1.0 / 구 ckpt 로드거부
 1군 1~3등 181건(1등10/2등3/3등168) 전부 created 2026-04~07 · 실전 1~3등 0
 정직축 stat/markov 1~3등 0 · 1등은 fusion7+hyena2+lstm1만
 git HEAD: `fff2781`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
-F-A~F-L OPEN. 예: 「F-E VERIFYING」처럼 ID로 지시.
+F-E·F-K PATCHED, F-H 일부. 예: 「캐시 VERIFYING」.
 
 ## 4) 더 필요하면
 

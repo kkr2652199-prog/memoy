@@ -1,8 +1,16 @@
 """1군 정직·단순화 플래그 — 20260718 형 결정 대기 #1~15 반영.
 
 되돌리기: 각 상수를 True/False로 변경.
+
+명분 공식 T-GATE-ML6 (당첨 보장 아님):
+- 시점 t의 모든 입력은 draw_no < t.
+- 번호는 균등 난수가 아니라 빈도·전이·(시점이 맞을 때만) 다중라벨 LSTM.
+- 운영 가중치는 백테가 덮지 않음. Hedge는 추첨 전 생성 행만.
 """
 from __future__ import annotations
+
+# 1군 분석식 버전 — LSTM ckpt·보고서 대조용
+ARMY1_FORMULA_ID = "T-GATE-ML6"
 
 # #1 markov Random Walk → 결정론적 1-step 전이 집계
 USE_DETERMINISTIC_MARKOV = True
@@ -40,6 +48,13 @@ PURCHASE_HOLD_ARMIES: frozenset[int] = frozenset({1, 2, 3})
 # 2·3군 N+1 자동 예측 (1군은 ENABLE_ARMY1_AUTO_NEXT_PRED)
 ENABLE_ARMY2_AUTO_NEXT_PRED = True
 ENABLE_ARMY3_AUTO_NEXT_PRED = True
+
+# 순번2 F-H: 백테가 lotto_brain_weights를 덮지 않음
+ENABLE_BACKTEST_WEIGHT_UPDATE = False
+
+# 순번3 F-E: Hedge는 추첨 20:45 이전 생성 예측만 (백필 1등 제외)
+ENABLE_HEDGE_LIVE_ONLY = True
+HEDGE_ETA = 0.3  # 1.5는 누수 성적을 폭증시킴. Hedge 소η.
 
 
 def purchase_hold_blocks_draw(draw_no: int, army: int = 1) -> bool:

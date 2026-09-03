@@ -567,11 +567,12 @@ def run_backtest(
         if "error" in result:
             continue
 
-        # 최고 적중(동일 match 시 보너스 일치 우선) — 5적중 2·3등 구분
+        """최고 적중 — miss/snake 잔존 행은 측정에서 제외 (F-K)."""
         conn2 = get_lotto_db()
         row_best = conn2.execute(
             """SELECT matched_count, bonus_matched FROM lotto_predictions
                WHERE target_draw_no = ?
+                 AND brain_tag NOT IN ('miss_analysis','snake')
                ORDER BY matched_count DESC, bonus_matched DESC LIMIT 1""",
             (draw_no,),
         ).fetchone()
@@ -585,11 +586,14 @@ def run_backtest(
                 analyze_prediction_feedback(draw_no)
             except Exception as e:
                 logger.debug("피드백 생성 스킵 %d회차: %s", draw_no, e)
-            # Layer 3: 동적 가중치 갱신
-            try:
-                update_brain_weights(draw_no, last_n=50, eta=1.5, min_scored_draws=10)
-            except Exception as e:
-                logger.debug("가중치 갱신 스킵 %d회차: %s", draw_no, e)
+            # Layer 3: 운영 가중치는 백테가 덮지 않음 (F-H). 측정만.
+            from app.lotto.honesty_flags import ENABLE_BACKTEST_WEIGHT_UPDATE
+
+            if ENABLE_BACKTEST_WEIGHT_UPDATE:
+                try:
+                    update_brain_weights(draw_no, last_n=50, min_scored_draws=10)
+                except Exception as e:
+                    logger.debug("가중치 갱신 스킵 %d회차: %s", draw_no, e)
 
         results.append(
             {
