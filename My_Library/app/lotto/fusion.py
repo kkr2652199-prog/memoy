@@ -5,9 +5,9 @@
 import logging
 
 from app.lotto.confidence_scale import set_confidence_from_weights
-from app.lotto.deterministic_sets import build_weighted_topk_sets
+from app.lotto.deterministic_sets import DEFAULT_POOL_SIZE, build_weighted_topk_sets
 from app.lotto.feedback import _load_brain_weights_from_db
-from app.lotto.filters import tier1_filter
+from app.lotto.filters import combo_shape, tier1_filter
 from app.lotto.honesty_flags import ENABLE_FUSION_CLUSTER, USE_DETERMINISTIC_SET_BUILD
 from app.lotto.predict_entropy import get_entropy_weights
 from app.lotto.predict_lstm import get_lstm_prob_vector
@@ -108,9 +108,8 @@ def _vector_fusion_predict(
     if USE_DETERMINISTIC_SET_BUILD:
 
         def _build_fusion(nums: list[int], fusion_score: float) -> dict:
-            s = sum(nums)
-            odd_count = sum(1 for n in nums if n % 2 == 1)
-            ranges_hit = len({(n - 1) // 10 for n in nums})
+            sh = combo_shape(nums)
+            _ = fusion_score
             confidence = set_confidence_from_weights(fused_vec, nums)
             cluster_tag = "+클러스터" if ENABLE_FUSION_CLUSTER else ""
             return {
@@ -122,12 +121,16 @@ def _vector_fusion_predict(
                     f"+마르코프×{VECTOR_WEIGHTS.get('markov', 0)}"
                     f"+LSTM×{VECTOR_WEIGHTS.get('lstm', 0)}"
                     f"+엔트로피{cluster_tag}), "
-                    f"합계={s}, 홀{odd_count}짝{6 - odd_count}, 구간={ranges_hit}"
+                    f"합계={sh.total}, 홀{sh.odd_count}짝{6 - sh.odd_count}, 구간={sh.ranges_hit}"
                 ),
             }
 
         return build_weighted_topk_sets(
-            fused_vec, n_sets, pool_size=20, filter_fn=tier1_filter, build_result=_build_fusion
+            fused_vec,
+            n_sets,
+            pool_size=DEFAULT_POOL_SIZE,
+            filter_fn=tier1_filter,
+            build_result=_build_fusion,
         )
 
     # 레거시: 가중랜덤
@@ -156,17 +159,16 @@ def _vector_fusion_predict(
         if key in used:
             continue
         used.add(key)
-        s = sum(nums)
-        odd_count = sum(1 for n in nums if n % 2 == 1)
-        ranges_hit = len({(n - 1) // 10 for n in nums})
-        fusion_score = sum(fused_vec.get(n, 0) for n in nums)
-        _ = fusion_score
+        sh = combo_shape(nums)
         confidence = set_confidence_from_weights(fused_vec, nums)
         results.append(
             {
                 "nums": nums,
                 "confidence": confidence,
-                "reasoning": f"벡터퓨전v5(가중랜덤), 합계={s}, 홀{odd_count}짝{6 - odd_count}",
+                "reasoning": (
+                    f"벡터퓨전v5(가중랜덤), 합계={sh.total}, "
+                    f"홀{sh.odd_count}짝{6 - sh.odd_count}"
+                ),
             }
         )
 

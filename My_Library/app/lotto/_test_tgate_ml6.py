@@ -186,6 +186,29 @@ def test_fg_stat_single_pmf() -> None:
     assert len(sets) == 5
 
 
+def test_fh_pool_and_tier1_single_path() -> None:
+    import inspect
+
+    from app.lotto import fusion, predict_markov, predict_statistical
+    from app.lotto.deterministic_sets import DEFAULT_POOL_SIZE
+    from app.lotto.filters import combo_shape, tier1_filter
+
+    assert DEFAULT_POOL_SIZE == 18
+    assert "pool_size=20" not in inspect.getsource(fusion)
+    assert "pool_size=25" not in inspect.getsource(predict_markov)
+    assert "def _markov_tier1" not in inspect.getsource(predict_markov)
+    assert "get_markov_prob_vector" in inspect.getsource(predict_markov._markov_predict)
+    assert "confidence += 15" not in inspect.getsource(
+        predict_statistical._statistical_predict
+    )
+    assert tier1_filter([1, 2, 3, 4, 5, 6]) is False
+    assert tier1_filter([2, 4, 6, 8, 10, 12]) is False
+    assert tier1_filter([1, 10, 20, 30, 40, 45]) is True
+    sh = combo_shape([1, 10, 20, 30, 40, 45])
+    assert sh.total == 146
+    assert sh.odd_count == 2
+
+
 if __name__ == "__main__":
     test_future_ckpt_rejected()
     test_never_shrink_official_ckpt()
@@ -201,4 +224,5 @@ if __name__ == "__main__":
     test_fa_uniform_confidence_50()
     test_ff_uniform_pool_not_1_to_18()
     test_fg_stat_single_pmf()
+    test_fh_pool_and_tier1_single_path()
     print("T-GATE-ML6 unit OK")

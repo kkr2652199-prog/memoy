@@ -7,9 +7,9 @@ import logging
 from math import exp
 
 from app.lotto.confidence_scale import set_confidence_from_weights
-from app.lotto.deterministic_sets import build_weighted_topk_sets
+from app.lotto.deterministic_sets import DEFAULT_POOL_SIZE, build_weighted_topk_sets
 from app.lotto.honesty_flags import ENABLE_FEEDBACK_TRAP_HIT, USE_DETERMINISTIC_MARKOV, USE_DETERMINISTIC_SET_BUILD
-from app.lotto.filters import tier1_filter
+from app.lotto.filters import combo_shape, tier1_filter
 
 logger = logging.getLogger(__name__)
 
@@ -112,67 +112,42 @@ def get_markov_prob_vector(draws: list[dict]) -> dict[int, float]:
     return {n: visit_count[n] / total for n in range(1, 46)}
 
 
-def _markov_tier1(nums: list[int]) -> bool:
-    """마르코프 전용 1티어 (레거시 inline 조건)."""
-    s = sum(nums)
-    odd_count = sum(1 for n in nums if n % 2 == 1)
-    ranges_hit = len({(n - 1) // 10 for n in nums})
-    consec = 1
-    max_consec = 1
-    for ci in range(1, len(nums)):
-        if nums[ci] == nums[ci - 1] + 1:
-            consec += 1
-            max_consec = max(max_consec, consec)
-        else:
-            consec = 1
-    if s < 80 or s > 210:
-        return False
-    if odd_count == 0 or odd_count == 6:
-        return False
-    if ranges_hit <= 1:
-        return False
-    if max_consec >= 4:
-        return False
-    return True
-
-
 def _markov_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
-    """Markov Chain 기반 예측."""
+    """Markov Chain 기반 예측. PMF는 get_markov_prob_vector와 동일."""
     if len(draws) < 2:
         return []
 
-    matrix = build_transition_matrix(draws)
-    last_draw = draws[-1]
-    start_nums = [last_draw[f"num{k}"] for k in range(1, 7)]
-    visit_count = _visit_scores(matrix, start_nums)
-    _apply_markov_feedback(visit_count)
+    weights = get_markov_prob_vector(draws)
 
     if USE_DETERMINISTIC_SET_BUILD:
-        weights = {n: visit_count.get(n, 0.0) for n in range(1, 46)}
 
         def _build(nums: list[int], score: float) -> dict:
-            s = sum(nums)
-            odd_count = sum(1 for n in nums if n % 2 == 1)
-            ranges_hit = len({(n - 1) // 10 for n in nums})
+            _ = score
+            sh = combo_shape(nums)
             confidence = set_confidence_from_weights(weights, nums)
             return {
                 "nums": nums,
                 "confidence": confidence,
                 "reasoning": (
-                    f"마르코프v2(결정론), 합계={s}, 홀{odd_count}짝{6 - odd_count}, 구간{ranges_hit}"
+                    f"마르코프v2(결정론), 합계={sh.total}, "
+                    f"홀{sh.odd_count}짝{6 - sh.odd_count}, 구간{sh.ranges_hit}"
                 ),
             }
 
         return build_weighted_topk_sets(
-            weights, n_sets, pool_size=25, filter_fn=_markov_tier1, build_result=_build
+            weights,
+            n_sets,
+            pool_size=DEFAULT_POOL_SIZE,
+            filter_fn=tier1_filter,
+            build_result=_build,
         )
 
     # 레거시: 가중랜덤 (USE_DETERMINISTIC_SET_BUILD=False)
     import random
 
-    top_candidates = sorted(visit_count.items(), key=lambda x: x[1], reverse=True)[:25]
-    candidate_nums = [n for n, _ in top_candidates]
-    candidate_weights = [c for _, c in top_candidates]
+    ranked = sorted(weights.items(), key=lambda x: (-x[1], x[0]))[:DEFAULT_POOL_SIZE]
+    candidate_nums = [n for n, _ in ranked]
+    candidate_weights = [c for _, c in ranked]
 
     results = []
     used = set()
@@ -194,34 +169,22 @@ def _markov_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             nums = sorted(random.sample(range(1, 46), 6))
 
         nums.sort()
-        if not _markov_tier1(nums):
+        if not tier1_filter(nums):
             continue
         key = tuple(nums)
         if key in used:
             continue
         used.add(key)
-        s = sum(nums)
-        odd_count = sum(1 for n in nums if n % 2 == 1)
-        ranges_hit = len({(n - 1) // 10 for n in nums})
-        confidence = 50.0
-        if 100 <= s <= 175:
-            confidence += 12
-        if 2 <= odd_count <= 4:
-            confidence += 8
-        if ranges_hit >= 4:
-            confidence += 10
-        elif ranges_hit >= 3:
-            confidence += 5
-        total_visits = sum(visit_count[n] for n in nums)
-        max_visits = sum(sorted(visit_count.values(), reverse=True)[:6])
-        if max_visits > 0:
-            confidence += (total_visits / max_visits) * 15
-        confidence = min(round(confidence, 1), 99.0)
+        sh = combo_shape(nums)
+        confidence = set_confidence_from_weights(weights, nums)
         results.append(
             {
                 "nums": nums,
                 "confidence": confidence,
-                "reasoning": f"마르코프v1, 합계={s}, 홀{odd_count}짝{6 - odd_count}, 구간{ranges_hit}",
+                "reasoning": (
+                    f"마르코프v1, 합계={sh.total}, "
+                    f"홀{sh.odd_count}짝{6 - sh.odd_count}, 구간{sh.ranges_hit}"
+                ),
             }
         )
 

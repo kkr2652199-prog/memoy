@@ -1,22 +1,27 @@
-# STATUS_LATEST (2026-09-03 · 기억120)
+# STATUS_LATEST (2026-09-03 · 기억121)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
 
-## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE F-G)
+## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE F-H)
 
 | 항목 | 값 |
 |------|-----|
 | SSOT (1~3군) | **kkr2652199-prog/memoy** · main |
 | MAX(draw_no) | **1239** |
-| 명분 공식 | **T-GATE-ML6** · 세트조립 **H5-COVER** |
+| 명분 공식 | **T-GATE-ML6** · 세트조립 **H5-COVER** · pool **18** |
 | 백테 게이트 | 구캐시 건너뛰기 **OFF** · 채점=T-GATE만 |
 | 아카이브 1등 | **10건 유지** · tgate_rows **0** |
-| FINDINGS | F-A~F-G PATCHED · 다음 F-H잔여 |
+| FINDINGS | F-A~F-H PATCHED · 다음 F-L |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260903 T-GATE F-H pool·tier1 (기억121)
+- pool 18/20/25 → DEFAULT 18 (5세트 wheel 실측 폭). `_markov_tier1` 삭제=tier1_filter
+- 합·홀짝은 게이트만. 점수 가산 없음. markov 예측도 get_markov_prob_vector
+- 보고서: `커서보고서/20260903_T-GATE-ML6_FH_pool_tier1.md`
 
 ## ★ 20260903 T-GATE F-G stat PMF 단일화 (기억120)
 - 벡터·예측이 같은 `_stat_pmf`. 피드백은 정규화 전 freq. trap 플래그 OFF라 실측 PMF 불변
@@ -93,4 +98,4 @@
 ## ★ 20260808 구매 홀딩 (기억110)
 - 1236 숨김 후 해제됨
 
-## 기억 체인: …117→118→119→**120(현재)**
+## 기억 체인: …118→119→120→**121(현재)**

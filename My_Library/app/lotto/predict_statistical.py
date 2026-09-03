@@ -8,7 +8,7 @@ from math import exp
 
 from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.deterministic_sets import build_weighted_topk_sets
-from app.lotto.filters import tier1_filter
+from app.lotto.filters import combo_shape, tier1_filter
 from app.lotto.honesty_flags import (
     ENABLE_FEEDBACK_TRAP_HIT,
     ENABLE_STAT_PAIR_LIVE_BOOST,
@@ -127,24 +127,15 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
     if USE_DETERMINISTIC_SET_BUILD:
 
         def _build_stat(nums: list[int], _score: float) -> dict:
-            s = sum(nums)
-            odd_count = sum(1 for n in nums if n % 2 == 1)
-            ranges_hit = len({(n - 1) // 10 for n in nums})
-            consec = 1
-            max_consec = 1
-            for ci in range(1, len(nums)):
-                if nums[ci] == nums[ci - 1] + 1:
-                    consec += 1
-                    max_consec = max(max_consec, consec)
-                else:
-                    consec = 1
+            sh = combo_shape(nums)
             confidence = set_confidence_from_weights(weights, nums)
             return {
                 "nums": nums,
                 "confidence": confidence,
                 "reasoning": (
-                    f"1티어통계v6(결정론), 합계={s}, 홀{odd_count}짝{6 - odd_count}, "
-                    f"구간={ranges_hit}, 연속최대={max_consec}"
+                    f"1티어통계v6(결정론), 합계={sh.total}, "
+                    f"홀{sh.odd_count}짝{6 - sh.odd_count}, "
+                    f"구간={sh.ranges_hit}, 연속최대={sh.max_consec}"
                 ),
             }
 
@@ -152,7 +143,7 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             weights, n_sets, filter_fn=tier1_filter, build_result=_build_stat
         )
 
-    freq, pair_freq = _stat_raw_freq(draws)
+    _freq, pair_freq = _stat_raw_freq(draws)
     results = []
     used_combos = set()
     attempts = 0
@@ -179,19 +170,6 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
                         w[p_idx] *= boost
 
         nums.sort()
-
-        s = sum(nums)
-        odd_count = sum(1 for n in nums if n % 2 == 1)
-        ranges_hit = len({(n - 1) // 10 for n in nums})
-        consec = 1
-        max_consec = 1
-        for ci in range(1, len(nums)):
-            if nums[ci] == nums[ci - 1] + 1:
-                consec += 1
-                max_consec = max(max_consec, consec)
-            else:
-                consec = 1
-
         if not tier1_filter(nums):
             continue
 
@@ -200,28 +178,16 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             continue
         used_combos.add(key)
 
-        confidence = 50.0
-        if 100 <= s <= 175:
-            confidence += 15
-        if 2 <= odd_count <= 4:
-            confidence += 10
-        if ranges_hit >= 4:
-            confidence += 15
-        elif ranges_hit >= 3:
-            confidence += 8
-        avg_freq = sum(freq.get(n, 0) for n in nums) / 6
-        max_freq = max(freq.values()) if freq else 1
-        confidence += (avg_freq / max_freq) * 10
-
-        confidence = min(round(confidence, 1), 99.0)
-
+        sh = combo_shape(nums)
+        confidence = set_confidence_from_weights(weights, nums)
         results.append(
             {
                 "nums": nums,
                 "confidence": confidence,
                 "reasoning": (
-                    f"1티어통계v5(피드백반영), 합계={s}, 홀{odd_count}짝{6 - odd_count}, "
-                    f"구간{ranges_hit}, 연속최대{max_consec}"
+                    f"1티어통계v5(피드백반영), 합계={sh.total}, "
+                    f"홀{sh.odd_count}짝{6 - sh.odd_count}, "
+                    f"구간{sh.ranges_hit}, 연속최대={sh.max_consec}"
                 ),
             }
         )

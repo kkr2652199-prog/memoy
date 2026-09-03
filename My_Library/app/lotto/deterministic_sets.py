@@ -3,6 +3,10 @@
 점수 상위 n개는 번호 1개만 바뀌어 5세트 union이 7~8개로 붕괴했다.
 lead1 _wheel_pick과 같이: 1세트는 최강, 이후는 새 번호 커버를 우선한다.
 가중 동점 시 번호순 절단은 풀이 1~18로 고정된다 → 거리 분산으로 대체.
+
+5세트 wheel의 실측 union 폭은 약 18이다.
+fusion 20 / markov 25는 F-F 이전에 평탄 랭킹을 번호순으로 자르던 우회값.
+지금은 select_pool이 동점을 1~45에 퍼뜨리므로 풀 크기는 같다.
 """
 from __future__ import annotations
 
@@ -11,6 +15,8 @@ from itertools import combinations
 
 from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.filters import tier1_filter
+
+DEFAULT_POOL_SIZE = 18
 
 
 def _wheel_select(
@@ -98,7 +104,7 @@ def build_weighted_topk_sets(
     weights: dict[int, float],
     n_sets: int,
     *,
-    pool_size: int = 18,
+    pool_size: int = DEFAULT_POOL_SIZE,
     filter_fn: Callable[[list[int]], bool] | None = None,
     build_result: Callable[[list[int], float], dict] | None = None,
 ) -> list[dict]:
