@@ -84,6 +84,30 @@ def test_tgate_complete_ignores_archive() -> None:
     assert tgate_tags_complete(tgate, ("stat", "markov", "llm", "lstm", "fusion"), ARMY1_FORMULA_ID) is True
 
 
+def test_live_cache_requires_tgate() -> None:
+    import inspect
+
+    from app.lotto.engine import run_prediction
+    from app.lotto.predict_lstm import _ensure_model_ready
+
+    src = inspect.getsource(run_prediction)
+    assert "serve_cache = bool(tgate_ok)" in src
+    assert 'ORDER BY confidence DESC",' not in src or "formula_id" in src
+    assert "del_formula = ARMY1_FORMULA_ID" in src
+    lstm_src = inspect.getsource(_ensure_model_ready)
+    assert "not _MODEL_EPHEMERAL" in lstm_src
+
+
+def test_hedge_ranking_filters_formula() -> None:
+    import inspect
+
+    from app.lotto.feedback import get_brain_tag_ranking
+
+    src = inspect.getsource(get_brain_tag_ranking)
+    assert "ARMY1_FORMULA_ID" in src
+    assert "formula_id" in src
+
+
 def test_formula_id_column_exists() -> None:
     from app.lotto.models import get_lotto_db, init_lotto_db
 
@@ -218,6 +242,8 @@ if __name__ == "__main__":
     test_fd_llm_fallback_tag()
     test_fi_hyena_not_in_generation_tags()
     test_tgate_complete_ignores_archive()
+    test_live_cache_requires_tgate()
+    test_hedge_ranking_filters_formula()
     test_formula_id_column_exists()
     test_fc_wheel_union_not_collapsed()
     test_fb_entropy_boosts_peak()

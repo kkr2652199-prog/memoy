@@ -1,22 +1,26 @@
-# STATUS_LATEST (2026-09-03 · 기억121)
+# STATUS_LATEST (2026-09-03 · 기억122)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
 
-## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE F-H)
+## ★ 압축대비 스냅샷 (2026-09-03 KST · 감사 F-L/F-M)
 
 | 항목 | 값 |
 |------|-----|
 | SSOT (1~3군) | **kkr2652199-prog/memoy** · main |
-| MAX(draw_no) | **1239** |
-| 명분 공식 | **T-GATE-ML6** · 세트조립 **H5-COVER** · pool **18** |
-| 백테 게이트 | 구캐시 건너뛰기 **OFF** · 채점=T-GATE만 |
+| MAX(draw_no) | **1239** (2026-08-29) |
+| 명분 공식 | **T-GATE-ML6** · 캐시=T-GATE 완비만 |
+| 가중치 | 시드 stat2.0 / markov1.5 / lstm1.0 · last_updated_draw=0 |
 | 아카이브 1등 | **10건 유지** · tgate_rows **0** |
-| FINDINGS | F-A~F-H PATCHED · 다음 F-L |
+| FINDINGS | F-A~F-M PATCHED · 다음 백테 |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260903 뼈대감사 + F-L/F-M (기억122)
+- 캐시: 구행만 있으면 재생성. 응답은 T-GATE만. LSTM ephemeral은 실전 메모리 재사용 금지. Hedge formula_id
+- 보고서: `커서보고서/20260903_1군_뼈대부터_프로세스점검.md`
 
 ## ★ 20260903 T-GATE F-H pool·tier1 (기억121)
 - pool 18/20/25 → DEFAULT 18 (5세트 wheel 실측 폭). `_markov_tier1` 삭제=tier1_filter
@@ -98,4 +102,4 @@
 ## ★ 20260808 구매 홀딩 (기억110)
 - 1236 숨김 후 해제됨
 
-## 기억 체인: …118→119→120→**121(현재)**
+## 기억 체인: …119→120→121→**122(현재)**

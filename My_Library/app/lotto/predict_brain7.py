@@ -697,8 +697,10 @@ def ensure_brain7_for_draw(target_draw_no: int) -> bool:
     conn = get_lotto_db()
     try:
         cnt = conn.execute(
-            "SELECT COUNT(*) FROM lotto_predictions WHERE target_draw_no=? AND brain_tag=?",
-            (target_draw_no, BRAIN7_TAG),
+            """SELECT COUNT(*) FROM lotto_predictions
+               WHERE target_draw_no=? AND brain_tag=?
+                 AND IFNULL(formula_id,'')=?""",
+            (target_draw_no, BRAIN7_TAG, ARMY1_FORMULA_ID),
         ).fetchone()[0]
         if cnt >= 5:
             _score_rows_if_actual(conn, target_draw_no)

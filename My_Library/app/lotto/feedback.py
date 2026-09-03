@@ -317,7 +317,7 @@ def get_brain_tag_ranking(
             'scored_draws': int,
         }
     """
-    from app.lotto.honesty_flags import ENABLE_HEDGE_LIVE_ONLY
+    from app.lotto.honesty_flags import ARMY1_FORMULA_ID, ENABLE_HEDGE_LIVE_ONLY
     from app.lotto.models import get_lotto_db
 
     use_live = ENABLE_HEDGE_LIVE_ONLY if live_only is None else live_only
@@ -329,26 +329,28 @@ def get_brain_tag_ranking(
             live_join = "JOIN lotto_draws d ON d.draw_no = p.target_draw_no"
             live_and = f"AND {_LIVE_BEFORE_DRAW_SQL}"
         exclude = "AND p.brain_tag NOT IN ('miss_analysis','snake')"
+        formula_and = "AND IFNULL(p.formula_id,'') = ?"
+        fid = ARMY1_FORMULA_ID
 
         if max_draw_no is not None:
             recent_targets = conn.execute(
                 f"""SELECT DISTINCT p.target_draw_no FROM lotto_predictions p
                    {live_join}
                    WHERE p.matched_count >= 0 AND p.target_draw_no <= ?
-                   {live_and} {exclude}
+                   {live_and} {exclude} {formula_and}
                    ORDER BY p.target_draw_no DESC
                    LIMIT ?""",
-                (max_draw_no, last_n),
+                (max_draw_no, fid, last_n),
             ).fetchall()
         else:
             recent_targets = conn.execute(
                 f"""SELECT DISTINCT p.target_draw_no FROM lotto_predictions p
                    {live_join}
                    WHERE p.matched_count >= 0
-                   {live_and} {exclude}
+                   {live_and} {exclude} {formula_and}
                    ORDER BY p.target_draw_no DESC
                    LIMIT ?""",
-                (last_n,),
+                (fid, last_n),
             ).fetchall()
 
         if not recent_targets:
@@ -364,8 +366,9 @@ def get_brain_tag_ranking(
                 WHERE p.target_draw_no IN ({placeholders})
                   AND p.matched_count >= 0
                   {exclude}
-                  {live_and}""",
-            target_ids,
+                  {live_and}
+                  {formula_and}""",
+            (*target_ids, fid),
         ).fetchall()
 
         agg: dict = {}

@@ -284,8 +284,8 @@ def run_prediction(
 ) -> dict:
     """특정 회차에 대한 전체 두뇌 예측을 실행한다.
     - brain_filter가 빈 튜플이면 전체 두뇌; 지정 시 해당 두뇌만 재생성·INSERT한다.
-    - force_regenerate=False: 기존 행이 있으면 반환 (1회 실행 원칙).
-    - force_regenerate=True: T-GATE 행이 완비면 그것만 반환, 아니면 구행은 두고 T-GATE만 생성.
+    - force_regenerate=False: T-GATE 행이 완비면 그것만 반환. 구 아카이브만 있으면 생성.
+    - force_regenerate=True: 동일. 구행은 두고 T-GATE만 생성.
     """
     init_lotto_db()
     conn = get_lotto_db()
@@ -294,40 +294,22 @@ def run_prediction(
         (target_draw_no,),
     ).fetchall()
     existing_dicts = [dict(r) for r in existing] if existing else []
-    tags_in_db = {r.get("brain_tag") for r in existing_dicts}
     need_tags = brain_filter or army1_generation_tags()
     tgate_ok = tgate_tags_complete(existing_dicts, need_tags, ARMY1_FORMULA_ID)
 
-    def _tag_in_db(t: str) -> bool:
-        if t == "llm":
-            return "llm" in tags_in_db or "llm_fallback" in tags_in_db
-        return t in tags_in_db
-
-    serve_cache = False
-    if force_regenerate and tgate_ok:
-        serve_cache = True
-    elif (not force_regenerate) and existing_dicts:
-        cache_ok = (not brain_filter) or all(_tag_in_db(t) for t in brain_filter)
-        if cache_ok:
-            serve_cache = True
+    serve_cache = bool(tgate_ok)
 
     if serve_cache:
         conn.close()
         refresh_prediction_scores_for_target_draw(target_draw_no)
         _invoke_brain7_safe(target_draw_no)
         conn2 = get_lotto_db()
-        if force_regenerate:
-            rows = conn2.execute(
-                """SELECT * FROM lotto_predictions
-                   WHERE target_draw_no = ? AND IFNULL(formula_id,'') = ?
-                   ORDER BY confidence DESC""",
-                (target_draw_no, ARMY1_FORMULA_ID),
-            ).fetchall()
-        else:
-            rows = conn2.execute(
-                "SELECT * FROM lotto_predictions WHERE target_draw_no = ? ORDER BY confidence DESC",
-                (target_draw_no,),
-            ).fetchall()
+        rows = conn2.execute(
+            """SELECT * FROM lotto_predictions
+               WHERE target_draw_no = ? AND IFNULL(formula_id,'') = ?
+               ORDER BY confidence DESC""",
+            (target_draw_no, ARMY1_FORMULA_ID),
+        ).fetchall()
         conn2.close()
         predictions = [dict(r) for r in rows]
         draws_n = len(_get_draws_before(target_draw_no))
@@ -350,15 +332,14 @@ def run_prediction(
         kind = cache_kind_from_timings(timings)
         enriched = [_predictions_row_to_enriched(r) for r in predictions]
         st = cache_status_message(kind, bool(actual_nums))
-        if force_regenerate:
-            st = f"T-GATE 기존 행 반환 ({ARMY1_FORMULA_ID})"
-            if actual_nums:
-                st += " · 당첨·적중 자동 반영"
+        st = f"T-GATE 기존 행 반환 ({ARMY1_FORMULA_ID})"
+        if actual_nums:
+            st += " · 당첨·적중 자동 반영"
         out: dict = {
             "target_draw_no": target_draw_no,
             "status": st,
             "cache_kind": kind,
-            "formula_id": ARMY1_FORMULA_ID if force_regenerate else None,
+            "formula_id": ARMY1_FORMULA_ID,
             "generation_scope_note": "명예의전당·대시보드 기본은 추첨 전 생성(live)",
             "total_sets": len(enriched),
             "predictions": predictions,
@@ -426,7 +407,7 @@ def run_prediction(
         ]
 
     to_insert: list[dict] = []
-    del_formula = ARMY1_FORMULA_ID if force_regenerate else None
+    del_formula = ARMY1_FORMULA_ID
     for tag in _BASE_HYENA_SOURCE_TAGS:
         if tag not in fresh_by_tag:
             continue

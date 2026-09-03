@@ -13,6 +13,7 @@
 | F-I | PATCHED | 1군 | data_service.py | 20260903 army1_generation_tags() hyena OFF 시 제외. |
 | F-J | PATCHED | 1군 | engine.py | 20260903 캐시 top5도 miss/snake 제외. 명예의전당·대시보드 기본 live. |
 | F-K | PATCHED | 1군 | engine.py run_backtest | 20260903 best_match에 miss/snake NOT IN 추가. |
-| F-L | OPEN | 운영 | BOOT/STATUS | MAX(draw_no) 문서 1232 vs lotto.db 실측 1234. brain_weights last_updated=1234 미반영. |
+| F-L | PATCHED | 운영 | BOOT/STATUS | 20260903 실측 MAX(draw_no)=1239, weights last_updated_draw=0(시드). |
+| F-M | PATCHED | 1군 | engine+lstm+feedback | 20260903 캐시는 T-GATE 완비만. ephemeral LSTM 메모리 단기리턴 금지. Hedge·lead1 COUNT도 formula_id. |
 
-> 20260903 F-H PATCHED. 남은 OPEN: F-L 문서 MAX.
+> 20260903 F-L·F-M PATCHED. 1군 FINDINGS 열린 코드 이슈 없음. 다음=전 회차 백테(형 지시).

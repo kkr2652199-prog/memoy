@@ -250,6 +250,7 @@ if _TORCH_OK:
 
         mem_ok = (
             _MODEL is not None
+            and not _MODEL_EPHEMERAL
             and ckpt_usable_for_horizon(n_draws, _LAST_TRAINED_LEN)
         )
         if mem_ok and n_draws - _LAST_TRAINED_LEN < RETRAIN_INTERVAL:
