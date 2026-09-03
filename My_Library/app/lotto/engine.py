@@ -113,6 +113,7 @@ def refresh_prediction_scores_for_target_draw(target_draw_no: int) -> bool:
 def _lstm_predict_sets(draws: list[dict], n_sets: int = 5) -> list[dict]:
     """LSTM 확률 벡터를 n_sets개의 {nums, confidence, reasoning} 세트로 변환.
     fusion.py의 가중 비복원 샘플링 로직을 LSTM 단독 벡터에 적용.
+    F-F: uniform 풀은 deterministic_sets.select_pool이 1~18 번호순 절단을 쓰지 않음.
     """
     try:
         lstm_vec = get_lstm_prob_vector(draws)

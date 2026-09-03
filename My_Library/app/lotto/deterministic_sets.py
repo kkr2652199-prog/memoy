@@ -1,7 +1,8 @@
-"""결정론적 세트 조립 — 점수순 top-k 대신 커버리지 wheel (F-C).
+"""결정론적 세트 조립 — wheel(F-C) + 동점 풀 분산(F-F).
 
 점수 상위 n개는 번호 1개만 바뀌어 5세트 union이 7~8개로 붕괴했다.
 lead1 _wheel_pick과 같이: 1세트는 최강, 이후는 새 번호 커버를 우선한다.
+가중 동점 시 번호순 절단은 풀이 1~18로 고정된다 → 거리 분산으로 대체.
 """
 from __future__ import annotations
 
@@ -46,6 +47,53 @@ def _wheel_select(
     return selected
 
 
+_POOL_CENTER = 23  # (1+45)//2
+_TIE_EPS = 1e-6
+
+
+def _pick_spread(group: list[int], selected: list[int]) -> int:
+    """동점 번호 중 이미 고른 번호와 가장 먼 것. 첫 선택은 중앙(23)."""
+    if not group:
+        raise ValueError("empty group")
+    if not selected:
+        return min(group, key=lambda n: (abs(n - _POOL_CENTER), n))
+    return max(group, key=lambda n: (min(abs(n - s) for s in selected), n))
+
+
+def select_pool(weights: dict[int, float], pool_size: int) -> list[int]:
+    """가중 상위 pool. 동점은 번호순이 아니라 1~45 분산 (F-F)."""
+    if pool_size <= 0:
+        return []
+    ranked = sorted(
+        ((n, float(weights.get(n, 0.0))) for n in range(1, 46)),
+        key=lambda x: -x[1],
+    )
+    selected: list[int] = []
+    i = 0
+    n_all = len(ranked)
+    while len(selected) < pool_size and i < n_all:
+        top_w = ranked[i][1]
+        group: list[int] = []
+        j = i
+        while j < n_all and abs(ranked[j][1] - top_w) <= _TIE_EPS:
+            n = ranked[j][0]
+            if n not in selected:
+                group.append(n)
+            j += 1
+        while group and len(selected) < pool_size:
+            pick = _pick_spread(group, selected)
+            selected.append(pick)
+            group.remove(pick)
+        i = j
+    if len(selected) < 6:
+        for n in range(1, 46):
+            if n not in selected:
+                selected.append(n)
+            if len(selected) >= 6:
+                break
+    return selected[: max(pool_size, 6)] if len(selected) >= 6 else selected
+
+
 def build_weighted_topk_sets(
     weights: dict[int, float],
     n_sets: int,
@@ -59,13 +107,9 @@ def build_weighted_topk_sets(
         return []
 
     filt = filter_fn or tier1_filter
-    ranked = sorted(
-        ((n, float(weights.get(n, 0.0))) for n in range(1, 46)),
-        key=lambda x: (-x[1], x[0]),
-    )
-    pool = [n for n, _ in ranked[:pool_size]]
+    pool = select_pool(weights, pool_size)
     if len(pool) < 6:
-        pool = [n for n, _ in ranked[:6]]
+        pool = select_pool(weights, 6)
 
     scored: list[tuple[float, tuple[int, ...]]] = []
     for combo in combinations(pool, 6):

@@ -136,6 +136,24 @@ def test_fa_uniform_confidence_50() -> None:
     assert strong <= CONF_CAP
 
 
+def test_ff_uniform_pool_not_1_to_18() -> None:
+    from app.lotto.deterministic_sets import build_weighted_topk_sets, select_pool
+
+    u = {n: 1 / 45 for n in range(1, 46)}
+    pool = select_pool(u, 18)
+    assert len(pool) == 18
+    assert max(pool) >= 19, pool
+    assert min(pool) <= 10, pool
+    assert pool != list(range(1, 19))
+    peaked = {n: float(46 - n) for n in range(1, 46)}
+    assert select_pool(peaked, 18) == list(range(1, 19))
+    sets = build_weighted_topk_sets(u, 5, filter_fn=lambda nums: True)
+    union: set[int] = set()
+    for s in sets:
+        union |= set(s["nums"])
+    assert max(union) >= 19, sorted(union)
+
+
 if __name__ == "__main__":
     test_future_ckpt_rejected()
     test_never_shrink_official_ckpt()
@@ -149,4 +167,5 @@ if __name__ == "__main__":
     test_fc_wheel_union_not_collapsed()
     test_fb_entropy_boosts_peak()
     test_fa_uniform_confidence_50()
+    test_ff_uniform_pool_not_1_to_18()
     print("T-GATE-ML6 unit OK")

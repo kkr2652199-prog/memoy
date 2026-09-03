@@ -8,20 +8,20 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: T-GATE 순번6 F-C/A/B (H5-COVER wheel·conf 40~85·entropy부호)
-- 직전: 순번5 + 백테 게이트
-- 다음: F-F LSTM 1~18 고정 (전 회차 백테는 형 지시)
+- 지금: F-F LSTM 동점 풀 분산 (1~18 번호순 절단 제거)
+- 직전: 순번6 H5-COVER (F-C/A/B)
+- 다음: F-G stat 이중화 (전 회차 백테는 형 지시)
 
 ## 2) 숫자 (근거 없으면 미확인)
 
 MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 백테는 T-GATE 행만 채점 (구캐시 건너뛰기 금지)
 1군 아카이브 1등 10건 유지. tgate_rows=0 (전회차 백테 아직 안 함)
 HOLD fallback=llm_fallback · hyena는 준비판정에서 제외
-git HEAD: `6df5bcc`
+git HEAD: (F-F 커밋 후 갱신)
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
-F-A·F-B·F-C PATCHED. 예: 「F-F LSTM 풀」.
+F-A·F-B·F-C·F-F PATCHED. 예: 「F-G stat 이중화」.
 
 ## 4) 더 필요하면
 

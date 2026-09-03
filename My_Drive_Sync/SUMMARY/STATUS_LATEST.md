@@ -1,9 +1,9 @@
-# STATUS_LATEST (2026-09-03 · 기억118)
+# STATUS_LATEST (2026-09-03 · 기억119)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
 
-## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE 순번6)
+## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE F-F)
 
 | 항목 | 값 |
 |------|-----|
@@ -12,11 +12,15 @@
 | 명분 공식 | **T-GATE-ML6** · 세트조립 **H5-COVER** |
 | 백테 게이트 | 구캐시 건너뛰기 **OFF** · 채점=T-GATE만 |
 | 아카이브 1등 | **10건 유지** · tgate_rows **0** |
-| FINDINGS | F-A·F-B·F-C PATCHED · 다음 F-F |
+| FINDINGS | F-A·F-B·F-C·F-F PATCHED · 다음 F-G |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260903 T-GATE F-F 동점 풀 분산 (기억119)
+- uniform 풀 1~18 번호순 절단 제거. 거리분산: 1,4,…,45. 가중 유니크면 기존 상위18 유지
+- 보고서: `커서보고서/20260903_T-GATE-ML6_FF_풀분산.md`
 
 ## ★ 20260903 T-GATE 순번6 H5-COVER (기억118)
 - F-C wheel: 5세트 union 18 (옛 7~8). F-A conf 40~85, uniform=50. F-B entropy 강자 증폭
@@ -85,4 +89,4 @@
 ## ★ 20260808 구매 홀딩 (기억110)
 - 1236 숨김 후 해제됨
 
-## 기억 체인: …115→116→117→**118(현재)**
+## 기억 체인: …116→117→118→**119(현재)**
