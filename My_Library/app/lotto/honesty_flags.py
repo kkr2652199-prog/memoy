@@ -59,6 +59,17 @@ HEDGE_ETA = 0.3  # 1.5는 누수 성적을 폭증시킴. Hedge 소η.
 # 순번4: 명예의전당·대시보드 기본은 추첨 전 생성(live). DB는 유지, 표시만 분리.
 HALL_DEFAULT_SCOPE = "live"
 
+# 순번5 게이트: 백테는 구캐시 건너뛰지 않음. 채점·lead1은 formula_id=T-GATE만.
+FORCE_BACKTEST_REGENERATE = True
+
+
+def army1_generation_tags() -> tuple[str, ...]:
+    """1군 생성·준비 판정 태그. hyena OFF면 제외 (F-I)."""
+    tags = ["stat", "markov", "llm", "lstm", "fusion"]
+    if ENABLE_HYENA_BRAIN:
+        tags.append("hyena")
+    return tuple(tags)
+
 
 def purchase_hold_blocks_draw(draw_no: int, army: int = 1) -> bool:
     return (

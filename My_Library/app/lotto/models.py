@@ -56,6 +56,7 @@ def init_lotto_db():
             matched_count  INTEGER DEFAULT -1,
             bonus_matched  INTEGER DEFAULT 0,
             brain_tag      TEXT DEFAULT 'legacy',
+            formula_id     TEXT DEFAULT '',
             created_at     TEXT DEFAULT (datetime('now','localtime'))
         );
 
@@ -84,6 +85,9 @@ def init_lotto_db():
     if "brain_tag" not in existing_cols:
         conn.execute("ALTER TABLE lotto_predictions ADD COLUMN brain_tag TEXT DEFAULT 'legacy'")
         logger.info("brain_tag 컬럼 추가됨")
+    if "formula_id" not in existing_cols:
+        conn.execute("ALTER TABLE lotto_predictions ADD COLUMN formula_id TEXT DEFAULT ''")
+        logger.info("formula_id 컬럼 추가됨")
 
     # 브레인 가중치 초기 시드 (최초 1회만)
     seeds = [

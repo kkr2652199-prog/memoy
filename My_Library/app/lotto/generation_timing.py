@@ -132,3 +132,32 @@ def query_hall_of_fame(scope: str = "live") -> dict:
         "generation_scope": scope,
         "formula_id": "T-GATE-ML6",
     }
+
+
+def is_tgate_row(row: dict, formula_id: str) -> bool:
+    return (row.get("formula_id") or "") == formula_id
+
+
+def tgate_tags_complete(
+    rows: list[dict], need_tags: tuple[str, ...], formula_id: str, min_sets: int = 5
+) -> bool:
+    """need_tags의 각 뇌가 formula_id 행 min_sets 이상인지. llm 슬롯은 llm_fallback도 인정."""
+    counts: dict[str, int] = {}
+    for r in rows:
+        if not is_tgate_row(r, formula_id):
+            continue
+        tag = r.get("brain_tag") or ""
+        counts[tag] = counts.get(tag, 0) + 1
+    for t in need_tags:
+        if t == "llm":
+            n = counts.get("llm", 0) + counts.get("llm_fallback", 0)
+        else:
+            n = counts.get(t, 0)
+        if n < min_sets:
+            return False
+    return True
+
+
+def filter_formula_rows(rows: list[dict], formula_id: str) -> list[dict]:
+    return [r for r in rows if is_tgate_row(r, formula_id)]
+

@@ -8,20 +8,20 @@
 
 ## 1) 현재 스레드 (매턴 3줄만 갱신)
 
-- 지금: T-GATE-ML6 순번4 캐시/명예의전당 실전분리
-- 직전: 순번1~3 LSTM게이트·가중치시드·백테차단
-- 다음: 순번5 F-D llm 태그 · F-I hyena 잔여
+- 지금: T-GATE 순번5 + 백테 게이트 (llm_fallback·hyena준비·구행분리)
+- 직전: 순번4 캐시/명예의전당 실전분리
+- 다음: 순번6 F-C/A/B (전 회차 백테는 그 다음)
 
 ## 2) 숫자 (근거 없으면 미확인)
 
-MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 가중치 시드 stat2.0>lstm1.0 / 구 ckpt 로드거부
-1군 1~3등 181건은 AFTER 아카이브. 실전 명예의전당 1~3등 **0** (live hall 4건=4·5등)
-대시보드 실전 1등 0 · 백필 1등10/2등3/3등168 · 두뇌등급 천재(최고4개)
-git HEAD: `0d233df`
+MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 백테는 T-GATE 행만 채점 (구캐시 건너뛰기 금지)
+1군 아카이브 1등 10건 유지. tgate_rows=0 (전회차 백테 아직 안 함)
+HOLD fallback=llm_fallback · hyena는 준비판정에서 제외
+git HEAD: `(commit 후 갱신)`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
-F-E·F-K·F-J PATCHED, F-H 캐시 분리. 예: 「순번5 F-D llm 태그」.
+F-E·F-K·F-J·F-D·F-I PATCHED. 예: 「순번6 F-C top-k」.
 
 ## 4) 더 필요하면
 

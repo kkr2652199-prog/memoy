@@ -58,6 +58,11 @@ def analyze_prediction_feedback(target_draw_no: int) -> dict | None:
         conn.close()
         return None
     preds = [dict(p) for p in preds]
+    from app.lotto.honesty_flags import ARMY1_FORMULA_ID
+
+    tgate = [p for p in preds if (p.get("formula_id") or "") == ARMY1_FORMULA_ID]
+    if tgate:
+        preds = tgate
 
     # 두뇌별 성적
     method_stats = {}

@@ -16,6 +16,7 @@ import random
 import statistics
 from collections import Counter, defaultdict
 
+from app.lotto.honesty_flags import ARMY1_FORMULA_ID
 from app.lotto.models import get_lotto_db, init_lotto_db
 
 logger = logging.getLogger(__name__)
@@ -44,17 +45,31 @@ SUM_CENTER = 138
 STRICT_REFILL_ATTEMPTS = 60
 
 
+def _active_pool_brains() -> tuple[str, ...]:
+    """HOLD면 가짜 llm 슬롯 제외 — fallback을 합의 k에 넣지 않음 (F-D)."""
+    try:
+        from app.lotto.predict_llm_client import LOTTO_LLM_HOLD
+
+        if LOTTO_LLM_HOLD:
+            return ("stat", "markov", "lstm", "fusion")
+    except ImportError:
+        pass
+    return POOL_BRAINS
+
+
 def _load_flat_sets(conn, target_draw_no: int) -> list[tuple[str, tuple[int, ...]]]:
-    """5뇌 25세트 (brain_tag, nums) — hyena 제외, READ-ONLY."""
-    placeholders = ",".join("?" * len(POOL_BRAINS))
+    """5뇌(또는 HOLD 시 4뇌) T-GATE 세트 — hyena·아카이브 제외, READ-ONLY."""
+    pool = _active_pool_brains()
+    placeholders = ",".join("?" * len(pool))
     rows = conn.execute(
         f"""
         SELECT brain_tag, num1, num2, num3, num4, num5, num6
         FROM lotto_predictions
         WHERE target_draw_no = ? AND brain_tag IN ({placeholders})
+          AND IFNULL(formula_id,'') = ?
         ORDER BY brain_tag, id
         """,
-        (target_draw_no, *POOL_BRAINS),
+        (target_draw_no, *pool, ARMY1_FORMULA_ID),
     ).fetchall()
     out: list[tuple[str, tuple[int, ...]]] = []
     for r in rows:
@@ -65,19 +80,21 @@ def _load_flat_sets(conn, target_draw_no: int) -> list[tuple[str, tuple[int, ...
 
 
 def _pool_brains_ready(conn, target_draw_no: int) -> bool:
-    """5뇌 각 5세트 이상 — hyena 불필요."""
-    placeholders = ",".join("?" * len(POOL_BRAINS))
+    """활성 풀 각 5세트 이상 — hyena 불필요. HOLD면 llm 불필요."""
+    pool = _active_pool_brains()
+    placeholders = ",".join("?" * len(pool))
     rows = conn.execute(
         f"""
         SELECT brain_tag, COUNT(*) AS c
         FROM lotto_predictions
         WHERE target_draw_no = ? AND brain_tag IN ({placeholders})
+          AND IFNULL(formula_id,'') = ?
         GROUP BY brain_tag
         HAVING c >= 5
         """,
-        (target_draw_no, *POOL_BRAINS),
+        (target_draw_no, *pool, ARMY1_FORMULA_ID),
     ).fetchall()
-    return len(rows) >= len(POOL_BRAINS)
+    return len(rows) >= len(pool)
 
 
 def _six_brain_ready(conn, target_draw_no: int) -> bool:
@@ -287,9 +304,10 @@ def _union_presence(
 
 def _brain_number_reliability(conn, target_draw_no: int) -> dict[str, float]:
     """N-1까지 뇌별 번호 정밀도 (walk-forward, 라플라스). 컨닝 금지."""
-    pick = {b: 0 for b in POOL_BRAINS}
-    win = {b: 0 for b in POOL_BRAINS}
-    placeholders = ",".join("?" * len(POOL_BRAINS))
+    pool = _active_pool_brains()
+    pick = {b: 0 for b in pool}
+    win = {b: 0 for b in pool}
+    placeholders = ",".join("?" * len(pool))
     rows = conn.execute(
         f"""
         SELECT p.target_draw_no dn, p.brain_tag,
@@ -298,8 +316,9 @@ def _brain_number_reliability(conn, target_draw_no: int) -> dict[str, float]:
         FROM lotto_predictions p
         INNER JOIN lotto_draws d ON d.draw_no = p.target_draw_no
         WHERE p.target_draw_no < ? AND p.brain_tag IN ({placeholders})
+          AND IFNULL(p.formula_id,'') = ?
         """,
-        (target_draw_no, *POOL_BRAINS),
+        (target_draw_no, *pool, ARMY1_FORMULA_ID),
     ).fetchall()
     seen: dict[tuple[int, str], set[int]] = defaultdict(set)
     wins_by_draw: dict[int, set[int]] = {}
@@ -313,10 +332,12 @@ def _brain_number_reliability(conn, target_draw_no: int) -> dict[str, float]:
     for (dn, tag), s in seen.items():
         wset = wins_by_draw.get(dn, set())
         for n in s:
+            if tag not in pick:
+                continue
             pick[tag] += 1
             if n in wset:
                 win[tag] += 1
-    return {b: (win[b] + 1) / (pick[b] + 2) for b in POOL_BRAINS}
+    return {b: (win[b] + 1) / (pick[b] + 2) for b in pool}
 
 
 def _f1_weights(
@@ -553,7 +574,8 @@ def compute_brain7_sets(conn, target_draw_no: int) -> list[dict]:
         return []
 
     flat = _load_flat_sets(conn, target_draw_no)
-    if len(flat) < MIN_POOL_SETS:
+    min_sets = 5 * len(_active_pool_brains())
+    if len(flat) < min_sets:
         return []
 
     rel = _brain_number_reliability(conn, target_draw_no)
@@ -622,8 +644,8 @@ def save_brain7_predictions(conn, target_draw_no: int) -> int:
             """
             INSERT INTO lotto_predictions
             (target_draw_no, method, brain_tag, num1, num2, num3, num4, num5, num6,
-             confidence, reasoning, matched_count, bonus_matched)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+             confidence, reasoning, matched_count, bonus_matched, formula_id)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 target_draw_no,
@@ -639,6 +661,7 @@ def save_brain7_predictions(conn, target_draw_no: int) -> int:
                 pred["reasoning"],
                 -1,
                 0,
+                ARMY1_FORMULA_ID,
             ),
         )
 

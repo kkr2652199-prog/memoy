@@ -12,11 +12,20 @@ from app.lotto.predict_statistical import _statistical_predict
 
 logger = logging.getLogger(__name__)
 
+FALLBACK_SOURCES = frozenset({"stat_hold_replacement", "statistical_fallback"})
+
+
+def llm_insert_tag(source: str | None) -> str:
+    """HOLD·미연결 통계대체는 llm_fallback. 실제 LLM만 llm (F-D)."""
+    if (source or "") in FALLBACK_SOURCES:
+        return "llm_fallback"
+    return "llm"
+
 
 def _stat_replacement(
     draws: list[dict], n_sets: int, source: str, reason: str
 ) -> list[dict]:
-    """LLM 포지션 통계 대체 — brain_tag=llm 유지, source로 구분."""
+    """LLM 포지션 통계 대체 — source로 구분. INSERT 태그는 llm_fallback (F-D)."""
     fallback = _statistical_predict(draws, n_sets)
     for x in fallback:
         x["source"] = source

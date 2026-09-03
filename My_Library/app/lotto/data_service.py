@@ -228,9 +228,14 @@ def save_draw(draw: dict) -> bool:
         conn.close()
 
 
-# 1군 자동 예측 생성 대상 (6뇌 + lead1, miss/snake 제외)
-_ARMY1_AUTO_SIX: tuple[str, ...] = ("stat", "markov", "llm", "lstm", "fusion", "hyena")
+# 1군 자동 예측 생성 대상 (hyena는 플래그 ON일 때만 — F-I)
 _ARMY1_MIN_SETS = 5
+
+
+def _army1_auto_tags() -> tuple[str, ...]:
+    from app.lotto.honesty_flags import army1_generation_tags
+
+    return army1_generation_tags()
 
 
 def _army1_brain_set_count(conn, draw_no: int, brain_tag: str) -> int:
@@ -250,7 +255,7 @@ def _army1_brain_set_count(conn, draw_no: int, brain_tag: str) -> int:
 
 def _army1_predictions_ready(conn, draw_no: int) -> bool:
     """6뇌×5 + lead1×5 준비 여부."""
-    for tag in _ARMY1_AUTO_SIX:
+    for tag in _army1_auto_tags():
         if _army1_brain_set_count(conn, draw_no, tag) < _ARMY1_MIN_SETS:
             return False
     lead1 = conn.execute(
@@ -314,7 +319,7 @@ def maybe_generate_army1_next_predictions(scored_draw_no: int) -> dict:
     try:
         need_six = not all(
             _army1_brain_set_count(conn_pre, next_no, t) >= _ARMY1_MIN_SETS
-            for t in _ARMY1_AUTO_SIX
+            for t in _army1_auto_tags()
         )
         lead1_cnt = int(conn_pre.execute(
             "SELECT COUNT(*) FROM lotto_predictions WHERE target_draw_no=? AND brain_tag='lead1'",
@@ -325,7 +330,7 @@ def maybe_generate_army1_next_predictions(scored_draw_no: int) -> dict:
 
     six_result: dict | str = "skipped_already_complete"
     if need_six:
-        pred = run_prediction(next_no, brain_filter=_ARMY1_AUTO_SIX)
+        pred = run_prediction(next_no, brain_filter=_army1_auto_tags())
         if "error" in pred:
             return {
                 "generated": False,

@@ -1,23 +1,27 @@
-# STATUS_LATEST (2026-09-03 · 기억116)
+# STATUS_LATEST (2026-09-03 · 기억117)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
 
-## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE-ML6 순번4)
+## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE 순번5)
 
 | 항목 | 값 |
 |------|-----|
 | SSOT (1~3군) | **kkr2652199-prog/memoy** · main |
-| MAX(draw_no) | **1239** (lotto.db 20260903 실측, date 2026-08-29) |
-| 구매 홀딩 | **OFF** |
-| 명분 공식 | **T-GATE-ML6** |
-| 실전 명예의전당 | live **4건** · 1~3등 **0** · 두뇌등급 **천재**(최고 4개) |
-| 백필 1~3등 | 1등10 / 2등3 / 3등168 (scope=after, 실전 아님) |
-| FINDINGS | F-E·F-K·F-J PATCHED · F-H 캐시 PATCHED · 잔여 pool_size/tier1 |
+| MAX(draw_no) | **1239** |
+| 명분 공식 | **T-GATE-ML6** · INSERT `formula_id` |
+| 백테 게이트 | 구캐시 건너뛰기 **OFF** · 채점=T-GATE만 |
+| 아카이브 1등 | **10건 유지** · tgate_rows **0** |
+| FINDINGS | F-D·F-I·F-E·F-K·F-J PATCHED · 다음 F-C/A/B |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260903 T-GATE 순번5 + 백테 게이트 (기억117)
+- HOLD=llm_fallback. hyena 준비판정 제외. 백테는 T-GATE 재생성·채점. 구행 삭제 없음
+- 전 회차 백테는 순번6 후 형 지시 시
+- 보고서: `커서보고서/20260903_T-GATE-ML6_순번5_백테게이트.md`
 
 ## ★ 20260903 T-GATE-ML6 순번4 캐시 분리 (기억116)
 - 명예의전당·대시보드·elite 기본=추첨 전 생성. DB 삭제안함. 캐시 top5 miss/snake 제외
@@ -76,4 +80,4 @@
 ## ★ 20260808 구매 홀딩 (기억110)
 - 1236 숨김 후 해제됨
 
-## 기억 체인: …113→114→115→**116(현재)**
+## 기억 체인: …114→115→116→**117(현재)**
