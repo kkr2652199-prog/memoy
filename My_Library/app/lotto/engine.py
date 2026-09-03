@@ -15,6 +15,14 @@ from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.feedback import _calculate_lottery_score
 from app.lotto.filters import tier1_filter
 from app.lotto.fusion import _vector_fusion_predict
+from app.lotto.generation_timing import (
+    LIVE_PRED_SQL,
+    attach_generation_timing,
+    cache_kind_from_timings,
+    cache_status_message,
+    filter_top5_rows,
+    query_hall_of_fame,
+)
 from app.lotto.honesty_flags import ENABLE_HYENA_BRAIN, USE_DETERMINISTIC_SET_BUILD
 from app.lotto.models import get_lotto_db, init_lotto_db
 from app.lotto.predict_llm import _llm_predict
@@ -48,6 +56,8 @@ def _predictions_row_to_enriched(r: dict) -> dict:
         or METHOD_TO_BRAIN_TAG.get(r.get("method", ""), "legacy"),
         "matched_count": r["matched_count"],
         "bonus_matched": r.get("bonus_matched", 0),
+        "generation_timing": r.get("generation_timing"),
+        "created_at": r.get("created_at"),
     }
 
 
@@ -283,23 +293,27 @@ def run_prediction(target_draw_no: int, brain_filter: tuple[str, ...] = ()) -> d
             ar2.close()
             actual_nums: list[int] | None = None
             actual_b: int | None = None
+            draw_date = None
             if drow:
                 dd = dict(drow)
                 actual_nums = sorted(
                     [dd["num1"], dd["num2"], dd["num3"], dd["num4"], dd["num5"], dd["num6"]]
                 )
                 actual_b = dd["bonus"]
+                draw_date = dd.get("draw_date")
+            timings = attach_generation_timing(predictions, draw_date)
+            kind = cache_kind_from_timings(timings)
             enriched = [_predictions_row_to_enriched(r) for r in predictions]
-            st = "기존 예측 반환 (1회 실행 원칙)"
-            if actual_nums:
-                st += " · 당첨·적중 자동 반영"
+            st = cache_status_message(kind, bool(actual_nums))
             out: dict = {
                 "target_draw_no": target_draw_no,
                 "status": st,
+                "cache_kind": kind,
+                "generation_scope_note": "명예의전당·대시보드 기본은 추첨 전 생성(live)",
                 "total_sets": len(enriched),
                 "predictions": predictions,
                 "all_predictions": enriched,
-                "top5": enriched[:5],
+                "top5": filter_top5_rows(enriched),
                 "actual_numbers": actual_nums,
                 "actual_bonus": actual_b,
             }
@@ -661,21 +675,30 @@ def run_backtest(
 
 
 def get_brain_status() -> dict:
-    """두뇌 엘리트 현황."""
+    """두뇌 엘리트 현황 — 등급·최고기록은 실전(추첨 전 생성) 기준."""
     conn = get_lotto_db()
 
-    # 전체 예측 통계
+    # 전체 예측 건수(아카이브) vs 실전 채점
     _total = conn.execute("SELECT COUNT(*) FROM lotto_predictions").fetchone()[0]
+    live_from = f"""FROM lotto_predictions p
+           JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+           WHERE p.matched_count >= 0 AND {LIVE_PRED_SQL}"""
+
     by_method = conn.execute(
-        """SELECT method, COUNT(*) as cnt, AVG(matched_count) as avg_match,
-                  MAX(matched_count) as best_match
-           FROM lotto_predictions
-           WHERE matched_count >= 0
-           GROUP BY method"""
+        f"""SELECT p.method, COUNT(*) as cnt, AVG(p.matched_count) as avg_match,
+                  MAX(p.matched_count) as best_match
+           {live_from}
+           GROUP BY p.method"""
     ).fetchall()
 
-    # 최고 적중 기록
     best = conn.execute(
+        f"""SELECT p.*
+           {live_from}
+           ORDER BY p.matched_count DESC, p.bonus_matched DESC, p.confidence DESC
+           LIMIT 1"""
+    ).fetchone()
+
+    best_all = conn.execute(
         """SELECT * FROM lotto_predictions
            WHERE matched_count >= 0
            ORDER BY matched_count DESC, bonus_matched DESC, confidence DESC
@@ -724,33 +747,13 @@ def get_brain_status() -> dict:
         }.get(grade, "🧠"),
         "total_predictions": _total,
         "best_record": dict(best) if best else None,
+        "best_record_all": dict(best_all) if best_all else None,
         "brain_profiles": brain_profiles,
         "elite_thresholds": ELITE_THRESHOLDS,
+        "generation_scope": "live",
     }
 
 
-def get_hall_of_fame() -> dict:
-    """적중 명예의 전당 — 3개 이상 적중한 모든 예측."""
-    conn = get_lotto_db()
-    rows = conn.execute(
-        """SELECT p.*, d.num1 AS actual_1, d.num2 AS actual_2, d.num3 AS actual_3,
-                  d.num4 AS actual_4, d.num5 AS actual_5, d.num6 AS actual_6,
-                  d.bonus AS actual_bonus, d.draw_date
-           FROM lotto_predictions p
-           JOIN lotto_draws d ON p.target_draw_no = d.draw_no
-           WHERE p.matched_count >= 3 AND p.brain_tag NOT IN ('miss_analysis','snake')
-           ORDER BY p.matched_count DESC, p.bonus_matched DESC, p.target_draw_no DESC, p.confidence DESC"""
-    ).fetchall()
-    conn.close()
-
-    hall: list[dict] = []
-    for r in rows:
-        r = dict(r)
-        grade = "일반"
-        for _threshold, name in sorted(ELITE_THRESHOLDS.items()):
-            if r["matched_count"] >= _threshold:
-                grade = name
-        r["grade"] = grade
-        hall.append(r)
-
-    return {"hall_of_fame": hall}
+def get_hall_of_fame(scope: str = "live") -> dict:
+    """적중 명예의 전당. 기본 live=추첨 전 생성만. scope=after|all 로 백필 조회."""
+    return query_hall_of_fame(scope)

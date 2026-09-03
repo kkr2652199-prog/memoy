@@ -56,6 +56,9 @@ ENABLE_BACKTEST_WEIGHT_UPDATE = False
 ENABLE_HEDGE_LIVE_ONLY = True
 HEDGE_ETA = 0.3  # 1.5는 누수 성적을 폭증시킴. Hedge 소η.
 
+# 순번4: 명예의전당·대시보드 기본은 추첨 전 생성(live). DB는 유지, 표시만 분리.
+HALL_DEFAULT_SCOPE = "live"
+
 
 def purchase_hold_blocks_draw(draw_no: int, army: int = 1) -> bool:
     return (

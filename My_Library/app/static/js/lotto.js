@@ -101,7 +101,7 @@ function lottoKakaoBrainRecordLine(tag) {
   const n4 = Number(b.rank4 || 0);
   const n5 = Number(b.rank5 || 0);
   return (
-    `  📊 역대 전적: 🥇1등 ${n1}회 🥈2등 ${n2}회 🥉3등 ${n3}회 🎯4등 ${n4}회 ✅5등 ${n5}회\n`
+    `  📊 실전 전적(추첨 전 생성): 🥇1등 ${n1}회 🥈2등 ${n2}회 🥉3등 ${n3}회 🎯4등 ${n4}회 ✅5등 ${n5}회\n`
   );
 }
 
@@ -117,7 +117,7 @@ function lottoBrainTierNanoHtml(tag) {
   const n5 = Number(b.rank5 || 0);
   const txt = [n1, n2, n3, n4, n5].join('·');
   return (
-    '<span class="lotto-brain-nano" title="역대 적중: 1등·2등·3등·4등·5등(3개일치)">' +
+    '<span class="lotto-brain-nano" title="실전 적중(추첨 전 생성): 1등·2등·3등·4등·5등">' +
     txt +
     '</span>'
   );
@@ -1163,7 +1163,7 @@ async function loadBrainStatus() {
     document.getElementById('brainGradeText').textContent = '두뇌 등급: ' + (data.grade || '일반');
 
     // 기본 통계
-    var statsHtml = '총 예측: ' + (data.total_predictions || 0) + '건 | 최고 기록: ';
+    var statsHtml = '실전(추첨 전 생성) 기준 | 총 예측(아카이브): ' + (data.total_predictions || 0) + '건 | 최고 기록: ';
     if (data.best_record) {
       var mc = data.best_record.matched_count;
       var bm = data.best_record.bonus_matched;
@@ -1216,10 +1216,11 @@ async function loadBrainStatus() {
 var _fameAllData = [];
 var _fameCurrentRank = 'all';
 var _fameShowCount = {};  // 두뇌별 표시 건수
+var _fameScope = 'live';  // live | after | all — 기본 실전(추첨 전 생성)
 
 async function loadHallOfFame() {
   try {
-    const res = await fetch(resolveApiUrl('/api/lotto/brain/hall-of-fame'));
+    const res = await fetch(resolveApiUrl('/api/lotto/brain/hall-of-fame?scope=' + _fameScope));
     const data = await res.json();
     _fameAllData = data.hall_of_fame || [];
     _fameCurrentRank = '1';
@@ -1251,8 +1252,25 @@ function getFameRankColor(rank) {
 
 function renderHallOfFame() {
   var container = document.getElementById('hallOfFame');
+  if (!container) return;
+  var html = '<div class="fame-scope-bar">';
+  var scopes = [
+    { key: 'live', label: '실전 (추첨 전)' },
+    { key: 'after', label: '백필 (추첨 후)' },
+    { key: 'all', label: '전체 아카이브' }
+  ];
+  scopes.forEach(function(sc) {
+    var active = _fameScope === sc.key ? ' active' : '';
+    html += '<button class="fame-filter-btn' + active + '" onclick="fameFilterScope(\'' + sc.key + '\')">' + sc.label + '</button>';
+  });
+  html += '</div>';
+  html += '<p class="fame-scope-note">기본은 실전만 표시합니다. 04월 백테 1등은 백필 탭에 있습니다. (당첨 보장이 아닙니다)</p>';
+
   if (!_fameAllData.length) {
-    container.innerHTML = '<p class="fame-empty">🏆 3개 이상 적중한 예측이 없습니다.</p>';
+    var emptyMsg = _fameScope === 'live'
+      ? '실전(추첨 20:45 이전 생성) 3개 이상 적중이 없습니다. 백필 탭에서 추첨 후 생성 기록을 볼 수 있습니다.'
+      : '🏆 3개 이상 적중한 예측이 없습니다.';
+    container.innerHTML = html + '<p class="fame-empty">' + emptyMsg + '</p>';
     return;
   }
 
@@ -1272,8 +1290,8 @@ function renderHallOfFame() {
   });
   var totalCount = _fameAllData.length;
 
-  // 필터 바
-  var html = '<div class="fame-filter-bar">';
+  // 등수 필터 바
+  html += '<div class="fame-filter-bar">';
   var ranks = [
     { key: 'all', label: '전체 (' + totalCount + ')' },
     { key: '1', label: '1등 (' + rankCounts['1'] + ')' },
@@ -1333,6 +1351,9 @@ function renderHallOfFame() {
       html += '<div class="card-header">';
       html += '<span class="draw-info">' + record.target_draw_no + '회' + drawDate + '</span>';
       html += '<span class="rank-badge" style="color:' + rankColor + '">' + getFameRankText(rank) + '</span>';
+      if (record.generation_timing === 'after_draw') {
+        html += '<span class="fame-timing-badge">백필</span>';
+      }
       html += '</div>';
       // 예측 번호
       html += '<div class="nums-row"><span class="label">예측: </span>';
@@ -1377,6 +1398,11 @@ function fameFilterRank(rank) {
   _fameCurrentRank = rank;
   _fameShowCount = {};
   renderHallOfFame();
+}
+
+function fameFilterScope(scope) {
+  _fameScope = scope;
+  loadHallOfFame();
 }
 
 function fameShowMore(brain) {
@@ -1593,7 +1619,7 @@ async function loadDashboard() {
     renderRankings(data.rankings);
     renderPowerMeter(data.brain_power);
     renderProgress(data.learning_range, data.total_predictions);
-    renderScores(data.scores);
+    renderScores(data.scores, data.after_draw_counts);
   } catch (e) {
     console.error('Dashboard load failed:', e);
   }
@@ -1650,7 +1676,7 @@ function renderRankings(rankings) {
     if (countEl) countEl.textContent = String(list.length);
     if (listEl) {
       if (list.length === 0) {
-        listEl.innerHTML = '<div style="padding:8px;color:#666">아직 없음</div>';
+        listEl.innerHTML = '<div style="padding:8px;color:#666">실전(추첨 전 생성) 기준 아직 없음</div>';
       } else {
         const state = window._lottoRankState[key] || { limit: 20 };
         const limit = Math.max(20, Number(state.limit || 20));
@@ -1751,9 +1777,10 @@ function renderProgress(range, totalPreds) {
 }
 
 // === 등수별 적중 점수 ===
-function renderScores(scores) {
+function renderScores(scores, afterCounts) {
   const el = document.getElementById('scoresContent');
   if (!el || !scores) return;
+  const after = afterCounts || {};
   const rows = [
     { label: '🥇 1등', pct: scores.rank1_pct, cnt: scores.rank1_cnt, color: '#ffd700' },
     { label: '🥈 2등', pct: scores.rank2_pct, cnt: scores.rank2_cnt, color: '#c0c0c0' },
@@ -1761,7 +1788,11 @@ function renderScores(scores) {
     { label: '4등', pct: scores.rank4_pct, cnt: scores.rank4_cnt, color: '#74b9ff' },
     { label: '5등', pct: scores.rank5_pct, cnt: scores.rank5_cnt, color: '#a0a0b0' },
   ];
-  el.innerHTML = rows.map((r) =>
+  el.innerHTML =
+  '<div style="padding:6px 0 10px;color:#aaa;font-size:12px">실전(추첨 20:45 이전 생성)만 집계. 백필 1등 ' +
+    Number(after.rank1 || 0) + ' · 2등 ' + Number(after.rank2 || 0) + ' · 3등 ' + Number(after.rank3 || 0) +
+    ' (실전 성적 아님)</div>' +
+  rows.map((r) =>
     '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #0f3460">' +
       '<span style="color:' + r.color + '">' + r.label + '</span>' +
       '<span style="color:#fff">' + Number(r.pct || 0).toFixed(3) + '% (' + Number(r.cnt || 0) + '건)</span>' +

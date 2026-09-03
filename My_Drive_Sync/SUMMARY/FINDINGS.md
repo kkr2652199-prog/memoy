@@ -9,9 +9,9 @@
 | F-E | PATCHED | 1군 | feedback.py | 20260903 T-GATE-ML6: SEED stat2.0>lstm1.0, η=0.3, Hedge는 추첨전 생성만, 가중치 시드 리셋. |
 | F-F | OPEN | 1군 | engine.py _lstm_predict_sets | uniform 시 tiebreak가 번호순 → pool=1~18 고정, 매번 동일 저번호 조합. 결정론화로 오히려 악화. |
 | F-G | OPEN | 1군 | predict_statistical.py | get_statistical_prob_vector와 _statistical_predict 로직 복붙 이중화. 피드백 적용 시점(정규화 전/후)이 이미 갈라짐. |
-| F-H | OPEN | 1군 | 다수 | **백테→가중치 덮기 PATCHED (ENABLE_BACKTEST_WEIGHT_UPDATE=False).** 잔여: 캐시 구버전 반환 / pool_size / tier1 이중계산. |
+| F-H | OPEN | 1군 | 다수 | **백테→가중치 덮기 PATCHED. 캐시/명예의전당 실전분리 PATCHED (20260903 순번4).** 잔여: pool_size / tier1 이중계산. |
 | F-I | OPEN | 1군 | data_service.py | hyena OFF인데 `_ARMY1_AUTO_SIX`에 hyena 포함 → `_army1_predictions_ready`가 hyena 5세트 필수. N+1 OFF여도 readiness 판정 왜곡. |
-| F-J | OPEN | 1군 | engine.py | 캐시 path top5는 ORDER BY confidence 전체, fresh는 NOT IN(miss/snake). DB 잔존 시 경로별 top5 불일치. |
+| F-J | PATCHED | 1군 | engine.py | 20260903 캐시 top5도 miss/snake 제외. 명예의전당·대시보드 기본 live. |
 | F-K | PATCHED | 1군 | engine.py run_backtest | 20260903 best_match에 miss/snake NOT IN 추가. |
 | F-L | OPEN | 운영 | BOOT/STATUS | MAX(draw_no) 문서 1232 vs lotto.db 실측 1234. brain_weights last_updated=1234 미반영. |
 

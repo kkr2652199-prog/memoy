@@ -290,11 +290,12 @@ async def api_brain_status():
     return get_brain_status()
 
 @router.get("/brain/hall-of-fame")
-async def api_hall_of_fame():
-    """적중 명예의 전당 — 가장 많이 맞춘 예측 TOP 10."""
+async def api_hall_of_fame(scope: str = "live"):
+    """적중 명예의 전당. 기본 live(추첨 전 생성). scope=after|all 은 백필 포함."""
     from app.lotto.engine import get_hall_of_fame
+    from app.lotto.honesty_flags import HALL_DEFAULT_SCOPE
 
-    return get_hall_of_fame()
+    return get_hall_of_fame(scope or HALL_DEFAULT_SCOPE)
 
 
 @router.get("/brain/elite-tags")
@@ -312,17 +313,19 @@ async def api_brain_elite_tags():
     try:
         rows = conn.execute(
             """
-            SELECT brain_tag,
-              SUM(CASE WHEN matched_count=6 THEN 1 ELSE 0 END) AS r1,
-              SUM(CASE WHEN matched_count=5 AND bonus_matched=1 THEN 1 ELSE 0 END) AS r2,
-              SUM(CASE WHEN matched_count=5 AND (bonus_matched=0 OR bonus_matched IS NULL)
+            SELECT p.brain_tag,
+              SUM(CASE WHEN p.matched_count=6 THEN 1 ELSE 0 END) AS r1,
+              SUM(CASE WHEN p.matched_count=5 AND p.bonus_matched=1 THEN 1 ELSE 0 END) AS r2,
+              SUM(CASE WHEN p.matched_count=5 AND (p.bonus_matched=0 OR p.bonus_matched IS NULL)
                   THEN 1 ELSE 0 END) AS r3
-            FROM lotto_predictions
-            WHERE brain_tag NOT IN ('llm_fallback','miss_analysis','snake')
-            GROUP BY brain_tag
+            FROM lotto_predictions p
+            JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+            WHERE p.brain_tag NOT IN ('llm_fallback','miss_analysis','snake')
+              AND datetime(p.created_at) < datetime(d.draw_date || ' 20:45:00')
+            GROUP BY p.brain_tag
             HAVING (r1 >= 1 AND r2 >= 1 AND r3 >= 5)
                 OR (r3 >= 15)
-            ORDER BY brain_tag
+            ORDER BY p.brain_tag
             """
         ).fetchall()
         tags = [str(r[0]) for r in rows if r[0]]
@@ -408,7 +411,8 @@ async def api_predictions_for_draw(target_draw_no: int):
     conn = get_lotto_db()
     rows = conn.execute(
         """SELECT p.*, d.num1 AS actual_1, d.num2 AS actual_2, d.num3 AS actual_3,
-                  d.num4 AS actual_4, d.num5 AS actual_5, d.num6 AS actual_6, d.bonus AS actual_bonus
+                  d.num4 AS actual_4, d.num5 AS actual_5, d.num6 AS actual_6,
+                  d.bonus AS actual_bonus, d.draw_date
            FROM lotto_predictions p
            LEFT JOIN lotto_draws d ON p.target_draw_no = d.draw_no
            WHERE p.brain_tag NOT IN ('miss_analysis','snake')
@@ -417,7 +421,14 @@ async def api_predictions_for_draw(target_draw_no: int):
         (target_draw_no,),
     ).fetchall()
     conn.close()
-    return {"predictions": [dict(r) for r in rows]}
+    from app.lotto.generation_timing import classify_generation
+
+    preds = []
+    for r in rows:
+        d = dict(r)
+        d["generation_timing"] = classify_generation(d.get("created_at"), d.get("draw_date"))
+        preds.append(d)
+    return {"predictions": preds}
 
 
 @router.get("/predictions")
@@ -502,15 +513,20 @@ async def api_dashboard_summary():
         # 최신 회차는 MAX(draw_no)가 더 정확하다(중간 결측이 있어도 최신값 유지).
         total_draws = conn.execute("SELECT MAX(draw_no) FROM lotto_draws").fetchone()[0] or 0
 
-        def _rank_rows(where_sql: str, params: tuple = ()) -> list[dict]:
+        def _rank_rows(where_sql: str, timing_sql: str) -> list[dict]:
+            from app.lotto.generation_timing import EXCLUDE_AUX_SQL
+
             q = f"""
-            SELECT target_draw_no, brain_tag, method, num1, num2, num3, num4, num5, num6
-            FROM lotto_predictions
-            WHERE {where_sql} AND brain_tag NOT IN ('miss_analysis','snake')
-            ORDER BY target_draw_no DESC, confidence DESC
+            SELECT p.target_draw_no, p.brain_tag, p.method,
+                   p.num1, p.num2, p.num3, p.num4, p.num5, p.num6
+            FROM lotto_predictions p
+            JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+            WHERE {where_sql} AND {EXCLUDE_AUX_SQL}
+            {timing_sql}
+            ORDER BY p.target_draw_no DESC, p.confidence DESC
             """
             out = []
-            for r in conn.execute(q, params).fetchall():
+            for r in conn.execute(q).fetchall():
                 d = dict(r)
                 out.append(
                     {
@@ -528,24 +544,52 @@ async def api_dashboard_summary():
                 )
             return out
 
+        from app.lotto.generation_timing import AFTER_PRED_SQL, LIVE_PRED_SQL
+
+        live_and = f"AND {LIVE_PRED_SQL}"
+        after_and = f"AND {AFTER_PRED_SQL}"
         rankings = {
-            "rank1": _rank_rows("matched_count = 6"),
-            "rank2": _rank_rows("matched_count = 5 AND bonus_matched = 1"),
-            "rank3": _rank_rows("matched_count = 5 AND (bonus_matched = 0 OR bonus_matched IS NULL)"),
+            "rank1": _rank_rows("p.matched_count = 6", live_and),
+            "rank2": _rank_rows("p.matched_count = 5 AND p.bonus_matched = 1", live_and),
+            "rank3": _rank_rows(
+                "p.matched_count = 5 AND (p.bonus_matched = 0 OR p.bonus_matched IS NULL)",
+                live_and,
+            ),
         }
 
-        # brain power
+        def _cnt(where_sql: str, timing_sql: str) -> int:
+            from app.lotto.generation_timing import EXCLUDE_AUX_SQL
+
+            q = f"""SELECT COUNT(1)
+                FROM lotto_predictions p
+                JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+                WHERE {where_sql} AND {EXCLUDE_AUX_SQL}
+                {timing_sql}"""
+            return int(conn.execute(q).fetchone()[0] or 0)
+
+        after_draw_counts = {
+            "rank1": _cnt("p.matched_count = 6", after_and),
+            "rank2": _cnt("p.matched_count = 5 AND p.bonus_matched = 1", after_and),
+            "rank3": _cnt(
+                "p.matched_count = 5 AND (p.bonus_matched = 0 OR p.bonus_matched IS NULL)",
+                after_and,
+            ),
+        }
+
+        # brain power — 실전(추첨 전 생성)만
         bp_rows = conn.execute(
-            """
-            SELECT brain_tag,
-              SUM(CASE WHEN matched_count=6 THEN 1 ELSE 0 END) AS r1,
-              SUM(CASE WHEN matched_count=5 AND bonus_matched=1 THEN 1 ELSE 0 END) AS r2,
-              SUM(CASE WHEN matched_count=5 AND (bonus_matched=0 OR bonus_matched IS NULL) THEN 1 ELSE 0 END) AS r3,
-              SUM(CASE WHEN matched_count=4 THEN 1 ELSE 0 END) AS r4,
-              SUM(CASE WHEN matched_count=3 THEN 1 ELSE 0 END) AS r5
-            FROM lotto_predictions
-            WHERE brain_tag NOT IN ('llm_fallback','miss_analysis','snake')
-            GROUP BY brain_tag
+            f"""
+            SELECT p.brain_tag,
+              SUM(CASE WHEN p.matched_count=6 THEN 1 ELSE 0 END) AS r1,
+              SUM(CASE WHEN p.matched_count=5 AND p.bonus_matched=1 THEN 1 ELSE 0 END) AS r2,
+              SUM(CASE WHEN p.matched_count=5 AND (p.bonus_matched=0 OR p.bonus_matched IS NULL) THEN 1 ELSE 0 END) AS r3,
+              SUM(CASE WHEN p.matched_count=4 THEN 1 ELSE 0 END) AS r4,
+              SUM(CASE WHEN p.matched_count=3 THEN 1 ELSE 0 END) AS r5
+            FROM lotto_predictions p
+            JOIN lotto_draws d ON p.target_draw_no = d.draw_no
+            WHERE p.brain_tag NOT IN ('llm_fallback','miss_analysis','snake')
+              AND {LIVE_PRED_SQL}
+            GROUP BY p.brain_tag
             ORDER BY r1 DESC, r2 DESC, r3 DESC, r4 DESC, r5 DESC
             """
         ).fetchall()
@@ -579,40 +623,32 @@ async def api_dashboard_summary():
                 }
             )
 
-        # scores
-        if total_predictions <= 0:
-            total_predictions = 1
-        c6 = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count=6 AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
-        c5b = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count=5 AND bonus_matched=1 AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
-        c5 = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count=5 AND (bonus_matched=0 OR bonus_matched IS NULL) AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
-        c4 = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count=4 AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
-        c3 = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count=3 AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
-        c3p = conn.execute(
-            "SELECT COUNT(1) FROM lotto_predictions WHERE matched_count>=3 AND brain_tag NOT IN ('miss_analysis','snake')"
-        ).fetchone()[0]
+        # scores — 분모도 실전 채점 행
+        live_n = _cnt("p.matched_count >= 0", live_and)
+        live_denom = live_n if live_n > 0 else 1
+        c6 = _cnt("p.matched_count=6", live_and)
+        c5b = _cnt("p.matched_count=5 AND p.bonus_matched=1", live_and)
+        c5 = _cnt(
+            "p.matched_count=5 AND (p.bonus_matched=0 OR p.bonus_matched IS NULL)",
+            live_and,
+        )
+        c4 = _cnt("p.matched_count=4", live_and)
+        c3 = _cnt("p.matched_count=3", live_and)
+        c3p = _cnt("p.matched_count>=3", live_and)
 
         scores = {
-            "rank1_pct": c6 / total_predictions * 100.0,
+            "rank1_pct": c6 / live_denom * 100.0,
             "rank1_cnt": int(c6),
-            "rank2_pct": c5b / total_predictions * 100.0,
+            "rank2_pct": c5b / live_denom * 100.0,
             "rank2_cnt": int(c5b),
-            "rank3_pct": c5 / total_predictions * 100.0,
+            "rank3_pct": c5 / live_denom * 100.0,
             "rank3_cnt": int(c5),
-            "rank4_pct": c4 / total_predictions * 100.0,
+            "rank4_pct": c4 / live_denom * 100.0,
             "rank4_cnt": int(c4),
-            "rank5_pct": c3 / total_predictions * 100.0,
+            "rank5_pct": c3 / live_denom * 100.0,
             "rank5_cnt": int(c3),
-            "total_hit_pct": c3p / total_predictions * 100.0,
+            "total_hit_pct": c3p / live_denom * 100.0,
+            "live_scored": int(live_n),
         }
 
         return {
@@ -624,6 +660,8 @@ async def api_dashboard_summary():
             "rankings": rankings,
             "brain_power": brain_power,
             "scores": scores,
+            "generation_scope": "live",
+            "after_draw_counts": after_draw_counts,
         }
     finally:
         conn.close()
