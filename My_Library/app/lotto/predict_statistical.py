@@ -3,6 +3,7 @@ import logging
 import random
 from math import exp
 
+from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.filters import tier1_filter
 from app.lotto.honesty_flags import (
@@ -194,19 +195,7 @@ def _statistical_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
                     max_consec = max(max_consec, consec)
                 else:
                     consec = 1
-            confidence = 50.0
-            if 100 <= s <= 175:
-                confidence += 15
-            if 2 <= odd_count <= 4:
-                confidence += 10
-            if ranges_hit >= 4:
-                confidence += 15
-            elif ranges_hit >= 3:
-                confidence += 8
-            avg_freq = sum(freq.get(n, 0) for n in nums) / 6
-            max_freq = max(freq.values()) if freq else 1
-            confidence += (avg_freq / max_freq) * 10
-            confidence = min(round(confidence, 1), 99.0)
+            confidence = set_confidence_from_weights(weights, nums)
             return {
                 "nums": nums,
                 "confidence": confidence,

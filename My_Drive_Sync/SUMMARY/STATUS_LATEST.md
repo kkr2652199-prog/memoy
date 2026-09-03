@@ -1,22 +1,27 @@
-# STATUS_LATEST (2026-09-03 · 기억117)
+# STATUS_LATEST (2026-09-03 · 기억118)
 
 > **R34 (2026-07-18):** 1·2·3군 보고서·작업현황 = **memoy only** · `https://github.com/kkr2652199-prog/memoy`  
 > 4군·테스트로또·효도 = **kweon 별도** (이 STATUS에 기록 금지)
 
-## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE 순번5)
+## ★ 압축대비 스냅샷 (2026-09-03 KST · T-GATE 순번6)
 
 | 항목 | 값 |
 |------|-----|
 | SSOT (1~3군) | **kkr2652199-prog/memoy** · main |
 | MAX(draw_no) | **1239** |
-| 명분 공식 | **T-GATE-ML6** · INSERT `formula_id` |
+| 명분 공식 | **T-GATE-ML6** · 세트조립 **H5-COVER** |
 | 백테 게이트 | 구캐시 건너뛰기 **OFF** · 채점=T-GATE만 |
 | 아카이브 1등 | **10건 유지** · tgate_rows **0** |
-| FINDINGS | F-D·F-I·F-E·F-K·F-J PATCHED · 다음 F-C/A/B |
+| FINDINGS | F-A·F-B·F-C PATCHED · 다음 F-F |
 
 체크포인트: `README_START.md` · `DECISION_LOG.md` · `NEXT_ACTIONS.md`
 
 ---
+
+## ★ 20260903 T-GATE 순번6 H5-COVER (기억118)
+- F-C wheel: 5세트 union 18 (옛 7~8). F-A conf 40~85, uniform=50. F-B entropy 강자 증폭
+- 새 뇌 없음. 전 회차 백테는 형 지시 시
+- 보고서: `커서보고서/20260903_T-GATE-ML6_순번6_H5COVER.md`
 
 ## ★ 20260903 T-GATE 순번5 + 백테 게이트 (기억117)
 - HOLD=llm_fallback. hyena 준비판정 제외. 백테는 T-GATE 재생성·채점. 구행 삭제 없음
@@ -80,4 +85,4 @@
 ## ★ 20260808 구매 홀딩 (기억110)
 - 1236 숨김 후 해제됨
 
-## 기억 체인: …114→115→116→**117(현재)**
+## 기억 체인: …115→116→117→**118(현재)**

@@ -4,6 +4,7 @@
 """
 import logging
 
+from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.feedback import _load_brain_weights_from_db
 from app.lotto.filters import tier1_filter
@@ -110,17 +111,7 @@ def _vector_fusion_predict(
             s = sum(nums)
             odd_count = sum(1 for n in nums if n % 2 == 1)
             ranges_hit = len({(n - 1) // 10 for n in nums})
-            max_possible = sum(sorted(fused_vec.values(), reverse=True)[:6])
-            confidence = (fusion_score / max(max_possible, 0.001)) * 70
-            if 100 <= s <= 175:
-                confidence += 10
-            if 2 <= odd_count <= 4:
-                confidence += 7
-            if ranges_hit >= 4:
-                confidence += 8
-            elif ranges_hit >= 3:
-                confidence += 5
-            confidence = min(round(confidence, 1), 99.0)
+            confidence = set_confidence_from_weights(fused_vec, nums)
             cluster_tag = "+클러스터" if ENABLE_FUSION_CLUSTER else ""
             return {
                 "nums": nums,
@@ -169,17 +160,8 @@ def _vector_fusion_predict(
         odd_count = sum(1 for n in nums if n % 2 == 1)
         ranges_hit = len({(n - 1) // 10 for n in nums})
         fusion_score = sum(fused_vec.get(n, 0) for n in nums)
-        max_possible = sum(sorted(fused_vec.values(), reverse=True)[:6])
-        confidence = (fusion_score / max(max_possible, 0.001)) * 70
-        if 100 <= s <= 175:
-            confidence += 10
-        if 2 <= odd_count <= 4:
-            confidence += 7
-        if ranges_hit >= 4:
-            confidence += 8
-        elif ranges_hit >= 3:
-            confidence += 5
-        confidence = min(round(confidence, 1), 99.0)
+        _ = fusion_score
+        confidence = set_confidence_from_weights(fused_vec, nums)
         results.append(
             {
                 "nums": nums,

@@ -6,6 +6,7 @@
 import logging
 from math import exp
 
+from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.honesty_flags import ENABLE_FEEDBACK_TRAP_HIT, USE_DETERMINISTIC_MARKOV, USE_DETERMINISTIC_SET_BUILD
 from app.lotto.filters import tier1_filter
@@ -153,19 +154,7 @@ def _markov_predict(draws: list[dict], n_sets: int = 5) -> list[dict]:
             s = sum(nums)
             odd_count = sum(1 for n in nums if n % 2 == 1)
             ranges_hit = len({(n - 1) // 10 for n in nums})
-            confidence = 50.0
-            if 100 <= s <= 175:
-                confidence += 12
-            if 2 <= odd_count <= 4:
-                confidence += 8
-            if ranges_hit >= 4:
-                confidence += 10
-            elif ranges_hit >= 3:
-                confidence += 5
-            max_visits = sum(sorted(visit_count.values(), reverse=True)[:6])
-            if max_visits > 0:
-                confidence += (score / max_visits) * 15
-            confidence = min(round(confidence, 1), 99.0)
+            confidence = set_confidence_from_weights(weights, nums)
             return {
                 "nums": nums,
                 "confidence": confidence,

@@ -10,8 +10,8 @@ logger = logging.getLogger(__name__)
 def get_entropy_weights(prob_vector: dict[int, float]) -> dict[int, float]:
     """확률 벡터에 Shannon 엔트로피 가중치를 적용한다.
 
-    엔트로피가 높은 번호(불확실한) → 가중치 감소
-    엔트로피가 낮은 번호(확실한) → 가중치 유지/증가
+    로또 p≪1/e 에서 e=-p*log2(p)는 강자(고p)가 더 크다.
+    강자 → 가중치 증가, 약자 → 감소 (F-B 부호 수정).
 
     입력: {1: 0.025, ..., 45: 0.031} (합계 1.0)
     출력: {1: 0.024, ..., 45: 0.033} (합계 1.0, 엔트로피 반영)
@@ -32,17 +32,17 @@ def get_entropy_weights(prob_vector: dict[int, float]) -> dict[int, float]:
     if total_entropy == 0:
         return prob_vector.copy()
 
-    # 엔트로피 역수 가중: 불확실한 번호는 낮추고 확실한 번호는 높임
-    # 정보량(information content) = -log2(p) 가 높을수록 희귀
-    # 확률 × (1 - 정규화된 엔트로피 기여도) 로 조정
+    # F-B: 기여 e=-p*log2(p)는 이 구간에서 고p(강자)가 더 크다 → 강자 증폭.
     adjusted = {}
     for n in range(1, 46):
         p = prob_vector.get(n, 0.0)
         e = entropy_contrib.get(n, 0.0)
-        # 엔트로피 기여가 평균보다 높으면 감소, 낮으면 증가
         avg_entropy = total_entropy / 45
         if avg_entropy > 0:
-            entropy_factor = 1.0 - 0.3 * (e - avg_entropy) / avg_entropy
+            # F-B: 로또 p≪1/e 에서 e=-p*log2(p)는 p에 단조증가.
+            # 옛 부호(1-0.3*(e-avg)/avg)는 강자를 깎고 약자를 올렸다.
+            # 지금: 기여가 평균보다 큰 번호(상대적 강자)를 올리고 약자를 내린다.
+            entropy_factor = 1.0 + 0.3 * (e - avg_entropy) / avg_entropy
             entropy_factor = max(0.85, min(1.5, entropy_factor))
         else:
             entropy_factor = 1.0

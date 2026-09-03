@@ -16,6 +16,7 @@ import random
 import statistics
 from collections import Counter, defaultdict
 
+from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.honesty_flags import ARMY1_FORMULA_ID
 from app.lotto.models import get_lotto_db, init_lotto_db
 
@@ -584,11 +585,13 @@ def compute_brain7_sets(conn, target_draw_no: int) -> list[dict]:
     if len(f1_sets) < SETS_TO_PICK:
         return []
 
+    pres = _union_presence(flat)
+    f1_w = _f1_weights(pres, rel)
     results: list[dict] = []
     for rank, (nums, score, ov) in enumerate(f1_sets, 1):
         results.append({
             "nums": list(nums),
-            "confidence": round(min(score * 10, 99.9), 1),
+            "confidence": set_confidence_from_weights(f1_w, list(nums)),
             "reasoning": (
                 f"출처:{F1_FORMULA} | popavoid→wheel | 가중={score:.2f} | max겹침={ov}"
             ),

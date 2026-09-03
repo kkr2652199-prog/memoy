@@ -94,6 +94,48 @@ def test_formula_id_column_exists() -> None:
     assert "formula_id" in cols
 
 
+def test_fc_wheel_union_not_collapsed() -> None:
+    from app.lotto.deterministic_sets import build_weighted_topk_sets
+
+    w = {n: float(46 - n) for n in range(1, 46)}
+    sets = build_weighted_topk_sets(w, 5, filter_fn=lambda nums: True)
+    assert len(sets) == 5
+    union: set[int] = set()
+    for s in sets:
+        assert len(s["nums"]) == 6
+        union |= set(s["nums"])
+    assert len(union) >= 12, f"union={sorted(union)} size={len(union)}"
+
+
+def test_fb_entropy_boosts_peak() -> None:
+    from app.lotto.predict_entropy import get_entropy_weights
+
+    rest = (1.0 - 0.10) / 44
+    p = {1: 0.10}
+    for n in range(2, 46):
+        p[n] = rest
+    out = get_entropy_weights(p)
+    assert out[1] > p[1]
+    assert out[45] < p[45]
+
+
+def test_fa_uniform_confidence_50() -> None:
+    from app.lotto.confidence_scale import CONF_CAP, CONF_UNINFORMATIVE, set_confidence_from_weights
+
+    u = {n: 1 / 45 for n in range(1, 46)}
+    assert set_confidence_from_weights(u, [1, 2, 3, 4, 5, 6]) == CONF_UNINFORMATIVE
+    peaked = {n: 0.001 for n in range(1, 46)}
+    for n in range(1, 7):
+        peaked[n] = 0.15
+    total = sum(peaked.values())
+    peaked = {n: v / total for n, v in peaked.items()}
+    strong = set_confidence_from_weights(peaked, [1, 2, 3, 4, 5, 6])
+    weak = set_confidence_from_weights(peaked, [40, 41, 42, 43, 44, 45])
+    assert strong > 70
+    assert weak < strong
+    assert strong <= CONF_CAP
+
+
 if __name__ == "__main__":
     test_future_ckpt_rejected()
     test_never_shrink_official_ckpt()
@@ -104,4 +146,7 @@ if __name__ == "__main__":
     test_fi_hyena_not_in_generation_tags()
     test_tgate_complete_ignores_archive()
     test_formula_id_column_exists()
+    test_fc_wheel_union_not_collapsed()
+    test_fb_entropy_boosts_peak()
+    test_fa_uniform_confidence_50()
     print("T-GATE-ML6 unit OK")

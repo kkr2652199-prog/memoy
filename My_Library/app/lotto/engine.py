@@ -10,6 +10,7 @@
 import logging
 from collections import Counter
 
+from app.lotto.confidence_scale import set_confidence_from_weights
 from app.lotto.data_service import _get_draws_before
 from app.lotto.deterministic_sets import build_weighted_topk_sets
 from app.lotto.feedback import _calculate_lottery_score
@@ -126,7 +127,7 @@ def _lstm_predict_sets(draws: list[dict], n_sets: int = 5) -> list[dict]:
     if USE_DETERMINISTIC_SET_BUILD:
 
         def _build_lstm(nums: list[int], prob_sum: float) -> dict:
-            confidence = round(min(prob_sum * 100 * 6, 99.9), 1)
+            confidence = set_confidence_from_weights(lstm_vec, nums)
             return {
                 "nums": nums,
                 "confidence": confidence,
@@ -173,7 +174,7 @@ def _lstm_predict_sets(draws: list[dict], n_sets: int = 5) -> list[dict]:
         used.add(key)
 
         prob_sum = sum(lstm_vec.get(n, 0) for n in nums)
-        confidence = round(min(prob_sum * 100 * 6, 99.9), 1)
+        confidence = set_confidence_from_weights(lstm_vec, nums)
 
         reasoning = (
             f"LSTM딥러닝v1(GPU, {len(draws)}회차학습), "
@@ -312,6 +313,7 @@ def run_prediction(
     if serve_cache:
         conn.close()
         refresh_prediction_scores_for_target_draw(target_draw_no)
+        _invoke_brain7_safe(target_draw_no)
         conn2 = get_lotto_db()
         if force_regenerate:
             rows = conn2.execute(
@@ -366,7 +368,6 @@ def run_prediction(
         }
         if draws_n < 10:
             out["warning"] = f"데이터 부족으로 신뢰도가 낮습니다 (이전 데이터: {draws_n}회차)"
-        _invoke_brain7_safe(target_draw_no)
         return out
 
     draws = _get_draws_before(target_draw_no)
@@ -525,7 +526,9 @@ def run_prediction(
     conn.commit()
     conn.close()
 
-    # 응답에 적중 정보 포함
+    _invoke_brain7_safe(target_draw_no)
+
+    # 응답에 적중 정보 포함 (lead1 포함 후 top5)
     conn2 = get_lotto_db()
     saved = conn2.execute(
         """SELECT method, brain_tag, num1, num2, num3, num4, num5, num6,
@@ -590,7 +593,6 @@ def run_prediction(
     }
     if low_data_warning:
         result["warning"] = low_data_warning
-    _invoke_brain7_safe(target_draw_no)
     return result
 
 
