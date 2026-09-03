@@ -17,7 +17,7 @@
 MAX(draw_no)=1239 / 공식 T-GATE-ML6 / 가중치 시드 stat2.0>lstm1.0 / 구 ckpt 로드거부
 1군 1~3등 181건은 AFTER 아카이브. 실전 명예의전당 1~3등 **0** (live hall 4건=4·5등)
 대시보드 실전 1등 0 · 백필 1등10/2등3/3등168 · 두뇌등급 천재(최고4개)
-git HEAD: `(commit 후 갱신)`
+git HEAD: `0d233df`
 
 ## 3) 열린 과제 → FINDINGS.md 참조 (ID로 지시)
 
